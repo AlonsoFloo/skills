@@ -1,6 +1,7 @@
 # Security Policy
 
-This repository contains engineering guidance, not production credentials or secrets.
+This repository contains engineering guidance, not production credentials or
+secrets.
 
 Never commit:
 
@@ -11,4 +12,5 @@ Never commit:
 - customer data
 - proprietary source code
 
-Supply-chain rules in the skills repository should be written conservatively and should distinguish recommendations from guarantees.
+Supply-chain rules in the skills repository should be written conservatively and
+should distinguish recommendations from guarantees.

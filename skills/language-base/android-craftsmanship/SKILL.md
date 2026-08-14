@@ -5,16 +5,21 @@ description: Android architecture, Kotlin UI state management & Jetpack Compose 
 
 # Android Craftsmanship
 
-> Modern Android architecture, Kotlin UI state management & Jetpack Compose craftsmanship
+> Modern Android architecture, Kotlin UI state management & Jetpack Compose
+> craftsmanship
 
-Treat the rules below as engineering guidance for AI coding assistants, code reviewers, and software engineers.
-For comprehensive examples and deep dives, see [references/examples.md](references/examples.md).
+Treat the rules below as engineering guidance for AI coding assistants, code
+reviewers, and software engineers. For comprehensive examples and deep dives,
+see [references/examples.md](references/examples.md).
 
 ## Rule 1: Never Duplicate UI State Variables
 
-**Description:** A single property within the unified UI state object must serve as the sole source of truth. Duplicating state variables between ViewModel properties and UI state object creates state drift and UI rendering bugs.
+**Description:** A single property within the unified UI state object must serve
+as the sole source of truth. Duplicating state variables between ViewModel
+properties and UI state object creates state drift and UI rendering bugs.
 
 **❌ DON'T**
+
 ```kotlin
 class UserListViewModel : ViewModel() {
     var searchQueryInput: String = "" // Duplicate local property!
@@ -24,6 +29,7 @@ class UserListViewModel : ViewModel() {
 ```
 
 **✅ DO**
+
 ```kotlin
 class UserListViewModel : ViewModel() {
     private val _uiState = MutableStateFlow(UserListState())
@@ -35,15 +41,19 @@ class UserListViewModel : ViewModel() {
 }
 ```
 
-*See [references/examples.md#rule-1-never-duplicate-ui-state-variables](references/examples.md#rule-1-never-duplicate-ui-state-variables) for detailed reference cases.*
+*See
+[references/examples.md#rule-1-never-duplicate-ui-state-variables](references/examples.md#rule-1-never-duplicate-ui-state-variables)
+for detailed reference cases.*
 
----
+______________________________________________________________________
 
 ## Rule 2: Strictly Follow Modern Android Standard Architecture
 
-**Description:** Android codebases must strictly adhere to **Unidirectional Data Flow (UDF)** across UI, ViewModel, Domain, and Data layers.
+**Description:** Android codebases must strictly adhere to **Unidirectional Data
+Flow (UDF)** across UI, ViewModel, Domain, and Data layers.
 
 **❌ DON'T**
+
 ```kotlin
 @Composable
 fun UserScreen() {
@@ -55,6 +65,7 @@ fun UserScreen() {
 ```
 
 **✅ DO**
+
 ```kotlin
 @Composable
 fun UserScreen(viewModel: UserViewModel = hiltViewModel()) {
@@ -67,23 +78,31 @@ fun UserScreen(viewModel: UserViewModel = hiltViewModel()) {
 }
 ```
 
-*See [references/examples.md#rule-2-strictly-follow-modern-android-standard-architecture](references/examples.md#rule-2-strictly-follow-modern-android-standard-architecture) for detailed reference cases.*
+*See
+[references/examples.md#rule-2-strictly-follow-modern-android-standard-architecture](references/examples.md#rule-2-strictly-follow-modern-android-standard-architecture)
+for detailed reference cases.*
 
----
+______________________________________________________________________
 
 ## Rule 3: Stateless ViewModifiers Belong in Extension Helpers (Compose)
 
-**Description:** Creating a `@Composable` modifier function that holds no internal state adds unnecessary framework allocation overhead. Plain stateless modifier chains should be declared as standard extension functions.
+**Description:** Creating a `@Composable` modifier function that holds no
+internal state adds unnecessary framework allocation overhead. Plain stateless
+modifier chains should be declared as standard extension functions.
 
 **❌ DON'T**
+
 ```kotlin
 @Composable
 fun Modifier.defaultPadding(): Modifier = this.padding(16.dp)
 ```
 
 **✅ DO**
+
 ```kotlin
 fun Modifier.defaultPadding(): Modifier = this.padding(16.dp)
 ```
 
-*See [references/examples.md#rule-3-stateless-viewmodifiers-belong-in-extension-helpers-compose](references/examples.md#rule-3-stateless-viewmodifiers-belong-in-extension-helpers-compose) for detailed reference cases.*
+*See
+[references/examples.md#rule-3-stateless-viewmodifiers-belong-in-extension-helpers-compose](references/examples.md#rule-3-stateless-viewmodifiers-belong-in-extension-helpers-compose)
+for detailed reference cases.*

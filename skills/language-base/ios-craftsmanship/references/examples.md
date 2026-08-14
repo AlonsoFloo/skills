@@ -1,8 +1,9 @@
 # iOS Craftsmanship - Deep Dives & Reference Examples
 
-This document provides extended examples and memory management guidelines for [SKILL.md](../SKILL.md).
+This document provides extended examples and memory management guidelines for
+[SKILL.md](../SKILL.md).
 
----
+______________________________________________________________________
 
 ## Rule 1: Prevent Memory Leaks (`self` and `weak` references)
 
@@ -20,7 +21,7 @@ cancellable = publisher
     }
 ```
 
----
+______________________________________________________________________
 
 ## Rule 2: Stateless ViewModifiers Belong in Extension Helpers (SwiftUI)
 

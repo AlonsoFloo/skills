@@ -1,13 +1,17 @@
 # Testing Craftsmanship - Deep Dives & Reference Examples
 
-This document provides detailed examples, test pattern structures, and reactive stream test guidance for [SKILL.md](../SKILL.md).
+This document provides detailed examples, test pattern structures, and reactive
+stream test guidance for [SKILL.md](../SKILL.md).
 
----
+______________________________________________________________________
 
 ## Rule 1: Standardize Unit Test Naming Conventions
 
 ### Behavioral Naming Pattern
-Using BDD-inspired naming (`given <context> - on <action> - it should <expected behavior>`) clarifies expectations when tests fail in CI logs.
+
+Using BDD-inspired naming
+(`given <context> - on <action> - it should <expected behavior>`) clarifies
+expectations when tests fail in CI logs.
 
 #### Comprehensive Examples
 
@@ -23,11 +27,12 @@ fun `given empty search query - on search - it should emit cached default result
 fun `given network disconnection - on order checkout - it should retry 3 times before failing`() { ... }
 ```
 
----
+______________________________________________________________________
 
 ## Rule 2: Structure Unit Tests with SETUP, RUN, ASSERT
 
 ### AAA (Arrange-Act-Assert) Structural Pattern
+
 Explicit section markers ensure readable unit tests across engineering teams.
 
 #### Comprehensive Example
@@ -52,12 +57,14 @@ fun `given user with insufficient balance - on withdraw - it should return Insuf
 }
 ```
 
----
+______________________________________________________________________
 
 ## Rule 3: Use Turbine for Testing Kotlin Flows
 
 ### Reactive Stream Assertion Guidance
-Turbine isolates state emission streams, allowing item-by-item verification without thread race conditions.
+
+Turbine isolates state emission streams, allowing item-by-item verification
+without thread race conditions.
 
 #### Comprehensive Example
 

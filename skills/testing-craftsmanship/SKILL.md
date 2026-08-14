@@ -7,34 +7,43 @@ description: Testing conventions, behavioral naming, structured test layout & re
 
 > Testing conventions, structured behavioral layout & reactive stream testing
 
-Treat the rules below as engineering guidance for AI coding assistants, code reviewers, and software engineers.
-For comprehensive examples and deep dives, see [references/examples.md](references/examples.md).
+Treat the rules below as engineering guidance for AI coding assistants, code
+reviewers, and software engineers. For comprehensive examples and deep dives,
+see [references/examples.md](references/examples.md).
 
 ## Rule 1: Standardize Unit Test Naming Conventions
 
-**Description:** Unit tests serve as living documentation. Test names must be highly descriptive and follow a strict behavioral format: `given <context> - on <action> - it should <expected behavior>`.
+**Description:** Unit tests serve as living documentation. Test names must be
+highly descriptive and follow a strict behavioral format:
+`given <context> - on <action> - it should <expected behavior>`.
 
 **❌ DON'T**
+
 ```kotlin
 @Test
 fun testUserLogin() { ... }
 ```
 
 **✅ DO**
+
 ```kotlin
 @Test
 fun `given valid credentials - on login - it should emit success state`() { ... }
 ```
 
-*See [references/examples.md#rule-1-standardize-unit-test-naming-conventions](references/examples.md#rule-1-standardize-unit-test-naming-conventions) for detailed reference cases.*
+*See
+[references/examples.md#rule-1-standardize-unit-test-naming-conventions](references/examples.md#rule-1-standardize-unit-test-naming-conventions)
+for detailed reference cases.*
 
----
+______________________________________________________________________
 
 ## Rule 2: Structure Unit Tests with SETUP, RUN, ASSERT
 
-**Description:** Every unit test must be visually divided into three distinct phases using explicit block comments: `// SETUP`, `// RUN`, and `// ASSERT`.
+**Description:** Every unit test must be visually divided into three distinct
+phases using explicit block comments: `// SETUP`, `// RUN`, and `// ASSERT`.
 
 **❌ DON'T**
+
 ```kotlin
 @Test
 fun `given active user - on get profile - it should return profile data`() {
@@ -47,6 +56,7 @@ fun `given active user - on get profile - it should return profile data`() {
 ```
 
 **✅ DO**
+
 ```kotlin
 @Test
 fun `given active user - on get profile - it should return profile data`() {
@@ -66,15 +76,21 @@ fun `given active user - on get profile - it should return profile data`() {
 }
 ```
 
-*See [references/examples.md#rule-2-structure-unit-tests-with-setup-run-assert](references/examples.md#rule-2-structure-unit-tests-with-setup-run-assert) for detailed reference cases.*
+*See
+[references/examples.md#rule-2-structure-unit-tests-with-setup-run-assert](references/examples.md#rule-2-structure-unit-tests-with-setup-run-assert)
+for detailed reference cases.*
 
----
+______________________________________________________________________
 
 ## Rule 3: Use Turbine for Testing Kotlin Flows
 
-**Description:** Testing asynchronous reactive streams (like `Flow` or `StateFlow` in Kotlin) using raw coroutine builders, manual lists, or `delay()` is flaky and leads to race conditions. Always use the **Turbine** library to test Flows sequentially and deterministically.
+**Description:** Testing asynchronous reactive streams (like `Flow` or
+`StateFlow` in Kotlin) using raw coroutine builders, manual lists, or `delay()`
+is flaky and leads to race conditions. Always use the **Turbine** library to
+test Flows sequentially and deterministically.
 
 **❌ DON'T**
+
 ```kotlin
 @Test
 fun `given data - on load - it should emit loading then success`() = runTest {
@@ -88,6 +104,7 @@ fun `given data - on load - it should emit loading then success`() = runTest {
 ```
 
 **✅ DO**
+
 ```kotlin
 @Test
 fun `given data - on load - it should emit loading then success`() = runTest {
@@ -105,4 +122,6 @@ fun `given data - on load - it should emit loading then success`() = runTest {
 }
 ```
 
-*See [references/examples.md#rule-3-use-turbine-for-testing-kotlin-flows](references/examples.md#rule-3-use-turbine-for-testing-kotlin-flows) for detailed reference cases.*
+*See
+[references/examples.md#rule-3-use-turbine-for-testing-kotlin-flows](references/examples.md#rule-3-use-turbine-for-testing-kotlin-flows)
+for detailed reference cases.*

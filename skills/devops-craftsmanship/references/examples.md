@@ -1,13 +1,16 @@
 # DevOps Craftsmanship - Deep Dives & Reference Examples
 
-This document provides extended examples and security verification specifications for [SKILL.md](../SKILL.md).
+This document provides extended examples and security verification
+specifications for [SKILL.md](../SKILL.md).
 
----
+______________________________________________________________________
 
 ## Rule 1: Enforce Detailed Commit Messages for AI-Assisted Code
 
 ### AI Commits Audit Format
-To maintain clear engineering history when using AI tools, commit bodies must explain changes thoroughly.
+
+To maintain clear engineering history when using AI tools, commit bodies must
+explain changes thoroughly.
 
 ```text
 refactor(database): AI. migrate Room database schema to v4 with auto-migration
@@ -18,12 +21,14 @@ refactor(database): AI. migrate Room database schema to v4 with auto-migration
 - AI generated code reviewed and verified by database guild
 ```
 
----
+______________________________________________________________________
 
 ## Rule 2: Pin Dependencies and Enforce Cryptographic Digests
 
 ### Gradle Dependency Verification Example
-Gradle allows pinning artifacts by exact checksum in `verification-metadata.xml`.
+
+Gradle allows pinning artifacts by exact checksum in
+`verification-metadata.xml`.
 
 ```xml
 <verification-metadata>

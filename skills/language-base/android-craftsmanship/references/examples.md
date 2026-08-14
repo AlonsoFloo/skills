@@ -1,13 +1,16 @@
 # Android Craftsmanship - Deep Dives & Reference Examples
 
-This document provides extended examples and pattern references for [SKILL.md](../SKILL.md).
+This document provides extended examples and pattern references for
+[SKILL.md](../SKILL.md).
 
----
+______________________________________________________________________
 
 ## Rule 1: Never Duplicate UI State Variables
 
 ### Single Source of Truth
-ViewModel state should be driven entirely through explicit data streams like `StateFlow`.
+
+ViewModel state should be driven entirely through explicit data streams like
+`StateFlow`.
 
 ```kotlin
 data class UserListUiState(
@@ -40,12 +43,17 @@ class UserListViewModel(
 }
 ```
 
----
+______________________________________________________________________
 
 ## Rule 2: Strictly Follow Modern Android Standard Architecture
 
 ### Layer Responsibilities
-- **UI Layer**: Jetpack Compose screens rendering state and delegating user interactions to ViewModels.
-- **ViewModel Layer**: Handles events, transforms domain state into immutable UI state streams.
-- **Domain Layer**: Contains pure Kotlin UseCases encapsulating complex business requirements.
-- **Data Layer**: Repositories managing offline caching (Room) and remote synchronization (Retrofit).
+
+- **UI Layer**: Jetpack Compose screens rendering state and delegating user
+  interactions to ViewModels.
+- **ViewModel Layer**: Handles events, transforms domain state into immutable UI
+  state streams.
+- **Domain Layer**: Contains pure Kotlin UseCases encapsulating complex business
+  requirements.
+- **Data Layer**: Repositories managing offline caching (Room) and remote
+  synchronization (Retrofit).
