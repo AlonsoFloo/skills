@@ -2,49 +2,36 @@
 
 A personal, agent-friendly repository of engineering rules, patterns, and practices for software development.
 
-The repository is designed around the **Agent Skills** convention: each skill is a focused directory containing a `SKILL.md` with the instructions an AI coding assistant or reviewer can load when the domain is relevant.
+The repository is designed around the **Agent Skills** convention: each craftsmanship skill is a focused directory containing a concise `SKILL.md` (with 1 example per rule) and a `references/` subfolder with additional deep-dive examples.
 
-## Install via API
+## Install via APM
 
 ```bash
 apm install AlonsoFloo/skills
 ```
 
+## Available Skills
+
+- **`software-craftsmanship`**: Software architecture, domain modeling, pragmatic code logic & design principles.
+- **`testing-craftsmanship`**: Standardized behavioral unit testing and reactive stream testing.
+- **`android-craftsmanship`**: Modern Android UDF architecture, UI state management & Jetpack Compose best practices.
+- **`ios-craftsmanship`**: Swift memory safety, retain cycle prevention & SwiftUI best practices.
+- **`devops-craftsmanship`**: AI commit message standards and dependency checksum pinning.
+
 ## Design principles
 
 ### 1. One domain per skill
 
-A skill should answer one question well. Keep framework-specific advice out of the core skill unless the rule genuinely depends on that framework.
+A skill answers one domain well. Keep framework-specific advice inside dedicated language/platform skills.
 
-### 2. Rules are explicit
+### 2. Numbered & explicit rules with light SKILL.md
 
-Prefer:
+Rules are explicitly numbered starting from `Rule 1` in each skill. `SKILL.md` contains 1 concise example per rule to stay light, while detailed edge cases and deep dives reside in `references/examples.md`.
 
-- a short rule statement
-- why the rule exists
-- `❌ DON'T`
-- `✅ DO`
+### 3. APM Integration
 
-This makes the material useful to both humans and coding agents.
+Integrated dependencies like Anthropic's `skill-creator` are declared in `apm.yml`.
 
-### 3. Examples matter
+### 4. Composability
 
-Examples should demonstrate the intended design, not merely describe it.
-
-### 4. Skills should be composable
-
-A task can use several skills at once. For example, an Android feature may need:
-
-`core-engineering` + `code-logic` + `testing` + `android-kotlin`
-
-### 5. Prefer evidence over dogma
-
-Rules are defaults, not substitutes for engineering judgment. A documented exception is better than a clever violation that nobody understands.
-
-## How to use the skills
-
-For an AI coding assistant that supports the Agent Skills convention, make the `skills/` directory available as the assistant's skills source.
-
-For agents without automatic discovery, explicitly provide the relevant `SKILL.md` files as context.
-
-For a human developer, the same files are intended to work as a searchable engineering handbook.
+Tasks can compose multiple skills (e.g. `software-craftsmanship` + `testing-craftsmanship` + `android-craftsmanship`).
