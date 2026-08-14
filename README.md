@@ -48,3 +48,18 @@ For an AI coding assistant that supports the Agent Skills convention, make the `
 For agents without automatic discovery, explicitly provide the relevant `SKILL.md` files as context.
 
 For a human developer, the same files are intended to work as a searchable engineering handbook.
+
+## Troubleshooting
+
+### `release-please` error: "GitHub Actions is not permitted to create or approve pull requests"
+
+This error occurs when the default `GITHUB_TOKEN` is restricted from creating or approving pull requests by repository settings or organization policy.
+
+To resolve this issue:
+
+1. In your GitHub repository, go to **Settings** > **Actions** > **General**.
+1. Under **Workflow permissions**, select **Read and write permissions**.
+1. Check the box for **Allow GitHub Actions to create and approve pull requests**.
+1. Click **Save**.
+
+If organization policies prohibit enabling this setting for `GITHUB_TOKEN`, you can create a Personal Access Token (PAT) with `repo` scopes (or use a GitHub App token) and add it to your repository secrets as `RELEASE_PLEASE_TOKEN`.
