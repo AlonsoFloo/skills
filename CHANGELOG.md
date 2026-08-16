@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/AlonsoFloo/skills/compare/v1.0.0...v1.1.0) (2026-08-16)
+
+
+### Features
+
+* added caveman as deps ([1b74d21](https://github.com/AlonsoFloo/skills/commit/1b74d21fcbc901c169b17f273f2f3d7c1e22f0d8))
+
 ## [1.0.0](https://github.com/AlonsoFloo/skills/compare/v0.1.0...v1.0.0) (2026-08-16)
 
 
