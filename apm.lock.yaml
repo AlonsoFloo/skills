@@ -1,0 +1,1084 @@
+lockfile_version: '2'
+generated_at: '2026-08-16T07:50:20.828515+00:00'
+apm_version: 0.28.0
+dependencies:
+- repo_url: android/skills
+  name: skills
+  host: github.com
+  resolved_commit: 1e5e7ae6138bebd0835d0d5854b0b9adfeed3181
+  resolved_ref: v1.0.7
+  version: 1e5e7ae
+  package_type: marketplace_plugin
+  content_hash: sha256:c279dfbb10968d243d278807f3a17cbb05ab84b951a001ec47f160bf0b8dac36
+- repo_url: anthropics/skills
+  name: skills
+  host: github.com
+  resolved_commit: f6656c1256d5a8adfa37db9110046ef20bac644c
+  resolved_ref: f6656c1256d5a8adfa37db9110046ef20bac644c
+  version: f6656c1
+  package_type: marketplace_plugin
+  deployed_files:
+  - .agents/skills/skill-creator
+  - .agents/skills/skill-creator/LICENSE.txt
+  - .agents/skills/skill-creator/SKILL.md
+  - .agents/skills/skill-creator/agents/analyzer.md
+  - .agents/skills/skill-creator/agents/comparator.md
+  - .agents/skills/skill-creator/agents/grader.md
+  - .agents/skills/skill-creator/assets/eval_review.html
+  - .agents/skills/skill-creator/eval-viewer/generate_review.py
+  - .agents/skills/skill-creator/eval-viewer/viewer.html
+  - .agents/skills/skill-creator/references/schemas.md
+  - .agents/skills/skill-creator/scripts/__init__.py
+  - .agents/skills/skill-creator/scripts/aggregate_benchmark.py
+  - .agents/skills/skill-creator/scripts/generate_report.py
+  - .agents/skills/skill-creator/scripts/improve_description.py
+  - .agents/skills/skill-creator/scripts/package_skill.py
+  - .agents/skills/skill-creator/scripts/quick_validate.py
+  - .agents/skills/skill-creator/scripts/run_eval.py
+  - .agents/skills/skill-creator/scripts/run_loop.py
+  - .agents/skills/skill-creator/scripts/utils.py
+  deployed_file_hashes:
+    .agents/skills/skill-creator/LICENSE.txt: sha256:bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362
+    .agents/skills/skill-creator/SKILL.md: sha256:dcd4803e61e913e6fc27294184cd3a71f09f5e924ff20c8a9a20173e7b3c2bcf
+    .agents/skills/skill-creator/agents/analyzer.md: sha256:bf68f4cac5a56c673a928c2e6d619586c5b93ea364026ab37547772cb45a663a
+    .agents/skills/skill-creator/agents/comparator.md: sha256:fe1fc9787c495d864c5d6eada47396478572325fde1b33a96d78bf4b849b7a3e
+    .agents/skills/skill-creator/agents/grader.md: sha256:57134da0c1a4eea33fbd74a1c9c44aa814f07d6bc64de303edb586f941e5d21a
+    .agents/skills/skill-creator/assets/eval_review.html: sha256:ce477dcc74dc1c0d1d3352646a79167b5a63634e936b1019160025065974e452
+    .agents/skills/skill-creator/eval-viewer/generate_review.py: sha256:fc9d1b9243fe5ab6012ebd579bd76d0035de1b79fd3b969de114defab26478fb
+    .agents/skills/skill-creator/eval-viewer/viewer.html: sha256:a53213426ee1100441d701a3a0d49cda7a842f992d2c36463f4d3cc0258575fa
+    .agents/skills/skill-creator/references/schemas.md: sha256:8e8876180a8989b406a4d3edddf875b04cdfd5805cc8616686d552b11ce4455f
+    .agents/skills/skill-creator/scripts/__init__.py: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    .agents/skills/skill-creator/scripts/aggregate_benchmark.py: sha256:123ef128ea5ccc01a4b1ac212ef5567f21e9c13d3d240609780beeb3200c49aa
+    .agents/skills/skill-creator/scripts/generate_report.py: sha256:13df7118a3c50c83c4c3250a606d5f2b20b25a3d44cbc392b3d669ec75281453
+    .agents/skills/skill-creator/scripts/improve_description.py: sha256:87d864570220b699fac52da309d2d6efdb060647bfebc74f768128e646accf80
+    .agents/skills/skill-creator/scripts/package_skill.py: sha256:1a33059b0db1ef73375d46d513e5ea81369d2e8838c970597b0d52ddef8d1c0f
+    .agents/skills/skill-creator/scripts/quick_validate.py: sha256:67cf5703402013936c8fb75ad6a1afecd8841d45cc5e606b634eb05825fde365
+    .agents/skills/skill-creator/scripts/run_eval.py: sha256:43e3b8f80dbf69c343967ba77e268fae991d9fa3ed68b32a0ff02532cd48657f
+    .agents/skills/skill-creator/scripts/run_loop.py: sha256:7bd6f674203168520517eec94c55f493c0d154339b061b4d7c0f0dad187d0f21
+    .agents/skills/skill-creator/scripts/utils.py: sha256:3af8ae62c40c73ab712207436a0d9a981e845f25c5a7040229eb189cc8e45bb1
+  content_hash: sha256:cedf08aec3870812a8b89ab44e701b6029535eb0ac79c62ea1c6d3c20da60c18
+  is_dev: true
+  skill_subset:
+  - skill-creator
+- repo_url: avdlee/swift-concurrency-agent-skill
+  materialization_repo_url: AvdLee/Swift-Concurrency-Agent-Skill
+  name: swift-concurrency
+  host: github.com
+  resolved_commit: 45fa49e4e0b2af4d43b1cb458903f8030ac993bd
+  resolved_ref: 2.3.0
+  version: 2.3.0
+  package_type: marketplace_plugin
+  deployed_files:
+  - .agents/skills/swift-concurrency
+  - .agents/skills/swift-concurrency/SKILL.md
+  - .agents/skills/swift-concurrency/agents/openai.yaml
+  - .agents/skills/swift-concurrency/assets/logo-small.png
+  - .agents/skills/swift-concurrency/assets/logo.png
+  - .agents/skills/swift-concurrency/references/_index.md
+  - .agents/skills/swift-concurrency/references/actors.md
+  - .agents/skills/swift-concurrency/references/async-algorithms.md
+  - .agents/skills/swift-concurrency/references/async-await-basics.md
+  - .agents/skills/swift-concurrency/references/async-sequences.md
+  - .agents/skills/swift-concurrency/references/core-data.md
+  - .agents/skills/swift-concurrency/references/glossary.md
+  - .agents/skills/swift-concurrency/references/linting.md
+  - .agents/skills/swift-concurrency/references/memory-management.md
+  - .agents/skills/swift-concurrency/references/migration.md
+  - .agents/skills/swift-concurrency/references/observation.md
+  - .agents/skills/swift-concurrency/references/performance.md
+  - .agents/skills/swift-concurrency/references/sendable.md
+  - .agents/skills/swift-concurrency/references/tasks.md
+  - .agents/skills/swift-concurrency/references/testing.md
+  - .agents/skills/swift-concurrency/references/threading.md
+  deployed_file_hashes:
+    .agents/skills/swift-concurrency/SKILL.md: sha256:8c667b2ff988251c7c291abe046b77d7b8fcfbe3b5ed36961e25e224b1ead491
+    .agents/skills/swift-concurrency/agents/openai.yaml: sha256:ee6afe3f6c048fa77f73510f5536abc8f399bc48c8641dc308343ed37ee53cfc
+    .agents/skills/swift-concurrency/assets/logo-small.png: sha256:f1f69d278df362306d16809151486fad79fc08d6b3018aeabea4580507392f93
+    .agents/skills/swift-concurrency/assets/logo.png: sha256:7eeb6005c4ce9d1ab514418cc645c463fa6b84536527dfac715676ee878cf7b1
+    .agents/skills/swift-concurrency/references/_index.md: sha256:7e9e076d885ef05402a67aa8a84b83e63a3c29b3d005816f6acb4c30b6d76531
+    .agents/skills/swift-concurrency/references/actors.md: sha256:2de7cebbdd1cbc2b7c9312c7b59a3f44ada0456b6e74579aae7fba3e02b0b5fe
+    .agents/skills/swift-concurrency/references/async-algorithms.md: sha256:9e16790e9b81850a37b3de995220074491f3efd5accab1f5daa0a633625fed40
+    .agents/skills/swift-concurrency/references/async-await-basics.md: sha256:e550aba692af77cf660ad6f754a65c52b01505cad234d159a6d47a919faaf536
+    .agents/skills/swift-concurrency/references/async-sequences.md: sha256:33d853118e37c1ac380c253200571efa44fe7127b9b6512ba95b43e670a5f453
+    .agents/skills/swift-concurrency/references/core-data.md: sha256:c89c4846fa64a2389abf807684ed373a6c0e6d16351dfa051e1fd71b85444d00
+    .agents/skills/swift-concurrency/references/glossary.md: sha256:20dd1f05717810944af675db215d758efa5d1c7b487ee007faae1ec4e2a7c36f
+    .agents/skills/swift-concurrency/references/linting.md: sha256:ead994f6e254208acf298a588ad9a49bbd9779530f31e01c74c4d32d06a7bd4a
+    .agents/skills/swift-concurrency/references/memory-management.md: sha256:28dcb8a7ff7411390ca0b7f1b0db16d6b00c3705bd6ed1f9b649c476bf0a7554
+    .agents/skills/swift-concurrency/references/migration.md: sha256:9115da8228d3a19426869627c28b7ed444f8d783723039293cceb46a1fc1c570
+    .agents/skills/swift-concurrency/references/observation.md: sha256:940c085d43e2e067848d7caf95731fb1335c3f16f83ebe43b06549021a29f1b1
+    .agents/skills/swift-concurrency/references/performance.md: sha256:dfd74c1c592ce42c520b54a309ba2b50e228608efa055fd6b597067e9ad71668
+    .agents/skills/swift-concurrency/references/sendable.md: sha256:af8e026b3c205d3c3acb58bf9a59e456f063f564845f38020a91cac511a08ca8
+    .agents/skills/swift-concurrency/references/tasks.md: sha256:0401a762683454149d5ca532684901f4fb5597a6821acacc8d49d037db9a37e9
+    .agents/skills/swift-concurrency/references/testing.md: sha256:3df9e839b3338dd473115d9ac8787a42d91b50a537fe40c55cf66d21034679db
+    .agents/skills/swift-concurrency/references/threading.md: sha256:0a4e44bd27fdf852cf5f8f5aa64cfe15ba229fb7c885b3f69ed2afdbfac8752a
+  content_hash: sha256:4c4bbce1fea27b4969a4b808ce8e13b4ad82c60170d3478d9878ca4419d4abd9
+  skill_subset:
+  - swift-concurrency
+  constraint: 2.3.0
+  resolved_tag: 2.3.0
+  resolved_at: '2026-08-16T07:50:17+00:00'
+  declared_license: MIT
+- repo_url: chrisbanes/skills
+  name: chrisbanes-skills
+  host: github.com
+  resolved_commit: 8d019ed3b8e634a14198709ec22e01afb121ea07
+  resolved_ref: 2026.8.5
+  version: 2026.8.5
+  package_type: marketplace_plugin
+  content_hash: sha256:a95cafffc4e8299da48ad13e70071e19fd6804c72394015a1b09cb0216fdfe28
+  skill_subset:
+  - compose-animations
+  - kotlin-control-flow
+  constraint: 2026.8.5
+  resolved_tag: 2026.8.5
+  resolved_at: '2026-08-16T07:50:17+00:00'
+  declared_license: Apache-2.0
+- repo_url: kotlin/kotlin-agent-skills
+  materialization_repo_url: Kotlin/kotlin-agent-skills
+  name: kotlin-agent-skills
+  host: github.com
+  resolved_commit: 08d7ad0d74a9a5a548287b2bd4926180fab56cac
+  resolved_ref: 08d7ad0d74a9a5a548287b2bd4926180fab56cac
+  version: 08d7ad0
+  package_type: marketplace_plugin
+  deployed_files:
+  - .agents/skills/kotlin-backend-jpa-entity-mapping
+  - .agents/skills/kotlin-backend-jpa-entity-mapping/SKILL.md
+  - .agents/skills/kotlin-tooling-agp9-migration
+  - .agents/skills/kotlin-tooling-agp9-migration/SKILL.md
+  - .agents/skills/kotlin-tooling-agp9-migration/assets/checklist.md
+  - .agents/skills/kotlin-tooling-agp9-migration/references/DSL-REFERENCE.md
+  - .agents/skills/kotlin-tooling-agp9-migration/references/KNOWN-ISSUES.md
+  - .agents/skills/kotlin-tooling-agp9-migration/references/MIGRATION-APP-SPLIT.md
+  - .agents/skills/kotlin-tooling-agp9-migration/references/MIGRATION-FULL-RESTRUCTURE.md
+  - .agents/skills/kotlin-tooling-agp9-migration/references/MIGRATION-LIBRARY.md
+  - .agents/skills/kotlin-tooling-agp9-migration/references/PLUGIN-COMPATIBILITY.md
+  - .agents/skills/kotlin-tooling-agp9-migration/references/VERSION-MATRIX.md
+  - .agents/skills/kotlin-tooling-agp9-migration/scripts/analyze-project.sh
+  - .agents/skills/kotlin-tooling-cocoapods-spm-migration
+  - .agents/skills/kotlin-tooling-cocoapods-spm-migration/SKILL.md
+  - .agents/skills/kotlin-tooling-cocoapods-spm-migration/references/cocoapods-extras-patterns.md
+  - .agents/skills/kotlin-tooling-cocoapods-spm-migration/references/common-pods-mapping.md
+  - .agents/skills/kotlin-tooling-cocoapods-spm-migration/references/dsl-reference.md
+  - .agents/skills/kotlin-tooling-cocoapods-spm-migration/references/migration-report-template.md
+  - .agents/skills/kotlin-tooling-cocoapods-spm-migration/references/troubleshooting.md
+  - .agents/skills/kotlin-tooling-immutable-collections-0-5-x-migration
+  - .agents/skills/kotlin-tooling-immutable-collections-0-5-x-migration/SKILL.md
+  - .agents/skills/kotlin-tooling-java-to-kotlin
+  - .agents/skills/kotlin-tooling-java-to-kotlin/SKILL.md
+  - .agents/skills/kotlin-tooling-java-to-kotlin/assets/checklist.md
+  - .agents/skills/kotlin-tooling-java-to-kotlin/references/CONVERSION-METHODOLOGY.md
+  - .agents/skills/kotlin-tooling-java-to-kotlin/references/KNOWN-ISSUES.md
+  - .agents/skills/kotlin-tooling-java-to-kotlin/references/frameworks/DAGGER-HILT.md
+  - .agents/skills/kotlin-tooling-java-to-kotlin/references/frameworks/GUICE.md
+  - .agents/skills/kotlin-tooling-java-to-kotlin/references/frameworks/HIBERNATE.md
+  - .agents/skills/kotlin-tooling-java-to-kotlin/references/frameworks/JACKSON.md
+  - .agents/skills/kotlin-tooling-java-to-kotlin/references/frameworks/JUNIT.md
+  - .agents/skills/kotlin-tooling-java-to-kotlin/references/frameworks/LOMBOK.md
+  - .agents/skills/kotlin-tooling-java-to-kotlin/references/frameworks/MICRONAUT.md
+  - .agents/skills/kotlin-tooling-java-to-kotlin/references/frameworks/MOCKITO.md
+  - .agents/skills/kotlin-tooling-java-to-kotlin/references/frameworks/QUARKUS.md
+  - .agents/skills/kotlin-tooling-java-to-kotlin/references/frameworks/RETROFIT.md
+  - .agents/skills/kotlin-tooling-java-to-kotlin/references/frameworks/RXJAVA.md
+  - .agents/skills/kotlin-tooling-java-to-kotlin/references/frameworks/SPRING.md
+  - .agents/skills/kotlin-tooling-native-build-performance
+  - .agents/skills/kotlin-tooling-native-build-performance/SKILL.md
+  - .agents/skills/kotlin-tooling-native-build-performance/evals/EVALUATION.md
+  - .agents/skills/kotlin-tooling-native-build-performance/references/artifacts-and-targets.md
+  - .agents/skills/kotlin-tooling-native-build-performance/references/caching-and-gradle.md
+  - .agents/skills/kotlin-tooling-native-build-performance/references/experimental.md
+  - .agents/skills/kotlin-tooling-native-build-performance/references/exports-and-generated-code.md
+  - .agents/skills/kotlin-tooling-native-build-performance/scripts/audit-native-build.sh
+  deployed_file_hashes:
+    .agents/skills/kotlin-backend-jpa-entity-mapping/SKILL.md: sha256:5d9c864a55c5ad29f54a807820672a9b5e0360ee33006c63a396a31bef0d8f4e
+    .agents/skills/kotlin-tooling-agp9-migration/SKILL.md: sha256:eec4224102bdea5779f7a181a4f3dc946efee5b7398b207c1467f1f84aeaa0a6
+    .agents/skills/kotlin-tooling-agp9-migration/assets/checklist.md: sha256:bccb1adb33a00368e09b94d4cce19b3f3b60da0dab6441664249c078d3dce31c
+    .agents/skills/kotlin-tooling-agp9-migration/references/DSL-REFERENCE.md: sha256:aeeb39d3c4ce1d901e9e4d2b5be3b815b9e43169bb488e0c6661cba0ef5220d4
+    .agents/skills/kotlin-tooling-agp9-migration/references/KNOWN-ISSUES.md: sha256:5b15e61f34e3821f40fb26d1a5a9cdce4c9cea1915b6be147df2d43ed883027f
+    .agents/skills/kotlin-tooling-agp9-migration/references/MIGRATION-APP-SPLIT.md: sha256:77b614b62dd495d4954414cfbafdbd1ee4c888ead08ee8c4df20db64ad23f2bb
+    .agents/skills/kotlin-tooling-agp9-migration/references/MIGRATION-FULL-RESTRUCTURE.md: sha256:3cb0f06dd7c213603b39b086fe33685fa00d56d14bfbd59c53569a5faa1e21ef
+    .agents/skills/kotlin-tooling-agp9-migration/references/MIGRATION-LIBRARY.md: sha256:381928ff702602d6384b3fc08402f74dc48f1b20a2085419202ce4191f8caaaf
+    .agents/skills/kotlin-tooling-agp9-migration/references/PLUGIN-COMPATIBILITY.md: sha256:ec47b996d9459c435fb2ca0588bb35189bc81370c533fee8f38cec93755e92a8
+    .agents/skills/kotlin-tooling-agp9-migration/references/VERSION-MATRIX.md: sha256:81537c09a682c476beec70fe7b0075799b7393857f2227164709b66a2446c256
+    .agents/skills/kotlin-tooling-agp9-migration/scripts/analyze-project.sh: sha256:6f3929ae06341793e373f24bf868f4aa026efc3a0b819e03473e28c84da57f5d
+    .agents/skills/kotlin-tooling-cocoapods-spm-migration/SKILL.md: sha256:06d75416ed876c18d950493a5aefe6ef5dd5cb955ec0c1d6c1c45cac8ab839ca
+    .agents/skills/kotlin-tooling-cocoapods-spm-migration/references/cocoapods-extras-patterns.md: sha256:38e9886bc1a3706b4b9fdfd51f38940ce47708e8d524276df160ca8af530f629
+    .agents/skills/kotlin-tooling-cocoapods-spm-migration/references/common-pods-mapping.md: sha256:6f3cb5a2c2a0b096720ad4cb97a744e004e9598b3b4e26b5b8420633c14e5791
+    .agents/skills/kotlin-tooling-cocoapods-spm-migration/references/dsl-reference.md: sha256:67b05e2de0f117463f8d743e624a9241f6820bea0380292b5b026a58050b5145
+    .agents/skills/kotlin-tooling-cocoapods-spm-migration/references/migration-report-template.md: sha256:ea0d1fa2f4db039ad04f919a964f634ccd1b890336852574399eeaa74e84e7f5
+    .agents/skills/kotlin-tooling-cocoapods-spm-migration/references/troubleshooting.md: sha256:aee1e42d1f4dd6e8fafba6de59896e1d6b667ada352de6d0e8c0bdc2971108da
+    .agents/skills/kotlin-tooling-immutable-collections-0-5-x-migration/SKILL.md: sha256:7b161da34a28fc5a6855b6e1b6c1749fbc754eaa29b911ec0cc8bb532b0c9d26
+    .agents/skills/kotlin-tooling-java-to-kotlin/SKILL.md: sha256:5b372715adac4df37e3261040ead2d0c937a5e06a55178fa5ff0fcc95adc1944
+    .agents/skills/kotlin-tooling-java-to-kotlin/assets/checklist.md: sha256:b2cafa681d87c3d6b9ce730954943ccc306e0c3c5d96f3f7eb0d6726d108bb40
+    .agents/skills/kotlin-tooling-java-to-kotlin/references/CONVERSION-METHODOLOGY.md: sha256:b83aaed4331d632065008872bb5db9898f4bb3c14a76b73e166b2509ab48f4ea
+    .agents/skills/kotlin-tooling-java-to-kotlin/references/KNOWN-ISSUES.md: sha256:581cce6cb0b8c353c2f573435c9b2ba36a0f3768aee755680c652dd4067e5e34
+    .agents/skills/kotlin-tooling-java-to-kotlin/references/frameworks/DAGGER-HILT.md: sha256:ed52d352e63f7675677fa2ffb5f37ef97554a34b5176c34861031839031ac4b9
+    .agents/skills/kotlin-tooling-java-to-kotlin/references/frameworks/GUICE.md: sha256:7ca1991006f3e009a18f4bf5276a02873c87c75201b34ba69eb0cc5c2cdcf0f5
+    .agents/skills/kotlin-tooling-java-to-kotlin/references/frameworks/HIBERNATE.md: sha256:02cf14d4d56cba141682bd8bfd5154d2018822a3aca6f477d8fb48bb91e08277
+    .agents/skills/kotlin-tooling-java-to-kotlin/references/frameworks/JACKSON.md: sha256:c407201a3629f1af4117e3b6b99a0cbebb7f7b62ef14fb9c3bb7e55250ea86ef
+    .agents/skills/kotlin-tooling-java-to-kotlin/references/frameworks/JUNIT.md: sha256:58141f5f63afe96944366bcd2e4d462f6ba4d55e2cfe5e8fd29e77ff51604c78
+    .agents/skills/kotlin-tooling-java-to-kotlin/references/frameworks/LOMBOK.md: sha256:b7f2e11b740261ebec3a9afcd2fa4a7a0c82f082433986c4ba1ba62c64b0bf25
+    .agents/skills/kotlin-tooling-java-to-kotlin/references/frameworks/MICRONAUT.md: sha256:4d5f9ba64acc694cdade9d374e43548f083bacb40d2995ce424c4ff8c7836edd
+    .agents/skills/kotlin-tooling-java-to-kotlin/references/frameworks/MOCKITO.md: sha256:221bdf1fae8def5ca083e84cf829b252baceea065eca10a42fa7279d6f8be23e
+    .agents/skills/kotlin-tooling-java-to-kotlin/references/frameworks/QUARKUS.md: sha256:d0c708e5cf05598fa04760a1696bf2ad396f67933324ebaae51f475f4ec88d5a
+    .agents/skills/kotlin-tooling-java-to-kotlin/references/frameworks/RETROFIT.md: sha256:b79fd49230bb9cf2b9a2b05ddb772de8ba4b5d80ddc00dc7b3a33550e2988f22
+    .agents/skills/kotlin-tooling-java-to-kotlin/references/frameworks/RXJAVA.md: sha256:87cad42db77a79c9c2a8bc24d051f0526300fb0682de239e30bbd88748608b82
+    .agents/skills/kotlin-tooling-java-to-kotlin/references/frameworks/SPRING.md: sha256:b07412f7dbcd9cb7d543370e69e6e9d0faf4f4bd74608a0586fa0be93c881ae8
+    .agents/skills/kotlin-tooling-native-build-performance/SKILL.md: sha256:948fcecafa9fd0dcd447682e1fef7046b542be710ee27c2f25eade31c182455e
+    .agents/skills/kotlin-tooling-native-build-performance/evals/EVALUATION.md: sha256:f7f4a9c7412e6e40e9b9fc66f4654fbc35c790c8a89a4ec77e1f3eeaf0219e7c
+    .agents/skills/kotlin-tooling-native-build-performance/references/artifacts-and-targets.md: sha256:5dceccd55aa6b517b1f2e48b76b585958244ee66818ecbb4cfa056c0f8cc66ff
+    .agents/skills/kotlin-tooling-native-build-performance/references/caching-and-gradle.md: sha256:2f7f316e62d3b79adc9b80348b0f25b1ded3d9871d3a528dd1db3af3ecd792cf
+    .agents/skills/kotlin-tooling-native-build-performance/references/experimental.md: sha256:e0e83e36ebdd41f393082680ed06ff396077540544c5723cace80a2058a5eb1f
+    .agents/skills/kotlin-tooling-native-build-performance/references/exports-and-generated-code.md: sha256:76d94b9a08e933f09eaae66e8a613f79726dbabc65f765e2130fabf93c0f87d3
+    .agents/skills/kotlin-tooling-native-build-performance/scripts/audit-native-build.sh: sha256:94af58014fb24aaf1e7757ce804ea19e4023cc778da77ac0d725bd19aa0ba9e7
+  content_hash: sha256:f804c6eafecfd7e99324f960d3691acc0a234aff3323920899710ef91f4f2a8b
+- repo_url: skydoves/compose-performance-skills
+  name: ordering-modifier-chains
+  host: github.com
+  resolved_commit: 1b32f81724c0d71fe9ef093ca44697f559fdab6e
+  resolved_ref: main
+  version: unknown
+  virtual_path: modifiers/ordering-modifier-chains
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/ordering-modifier-chains
+  - .agents/skills/ordering-modifier-chains/SKILL.md
+  deployed_file_hashes:
+    .agents/skills/ordering-modifier-chains/SKILL.md: sha256:57b72424fb4f25e33b8a4144e9eaaae01b11fff2d375514e00b56e5fa0934c8a
+  content_hash: sha256:962358a48cabb3897a56ecd46997fbd8094bf2b0722086e26f17e7c7dbaf70bf
+- repo_url: skydoves/compose-performance-skills
+  name: using-efficient-effects
+  host: github.com
+  resolved_commit: 1b32f81724c0d71fe9ef093ca44697f559fdab6e
+  resolved_ref: main
+  version: unknown
+  virtual_path: side-effects/using-efficient-effects
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/using-efficient-effects
+  - .agents/skills/using-efficient-effects/SKILL.md
+  deployed_file_hashes:
+    .agents/skills/using-efficient-effects/SKILL.md: sha256:f5f891478683cb1eb0d07aef277606135560f0491993a45181a141627d080362
+  content_hash: sha256:30de443599bceda2de9c7c6de5e8cf7ac6e94c7d3bc8ceecb55698b34f020f68
+deployments:
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-backend-jpa-entity-mapping
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-backend-jpa-entity-mapping/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: sha256:5d9c864a55c5ad29f54a807820672a9b5e0360ee33006c63a396a31bef0d8f4e
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-agp9-migration
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-agp9-migration/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: sha256:eec4224102bdea5779f7a181a4f3dc946efee5b7398b207c1467f1f84aeaa0a6
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-agp9-migration/assets/checklist.md
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: sha256:bccb1adb33a00368e09b94d4cce19b3f3b60da0dab6441664249c078d3dce31c
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-agp9-migration/references/DSL-REFERENCE.md
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: sha256:aeeb39d3c4ce1d901e9e4d2b5be3b815b9e43169bb488e0c6661cba0ef5220d4
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-agp9-migration/references/KNOWN-ISSUES.md
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: sha256:5b15e61f34e3821f40fb26d1a5a9cdce4c9cea1915b6be147df2d43ed883027f
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-agp9-migration/references/MIGRATION-APP-SPLIT.md
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: sha256:77b614b62dd495d4954414cfbafdbd1ee4c888ead08ee8c4df20db64ad23f2bb
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-agp9-migration/references/MIGRATION-FULL-RESTRUCTURE.md
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: sha256:3cb0f06dd7c213603b39b086fe33685fa00d56d14bfbd59c53569a5faa1e21ef
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-agp9-migration/references/MIGRATION-LIBRARY.md
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: sha256:381928ff702602d6384b3fc08402f74dc48f1b20a2085419202ce4191f8caaaf
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-agp9-migration/references/PLUGIN-COMPATIBILITY.md
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: sha256:ec47b996d9459c435fb2ca0588bb35189bc81370c533fee8f38cec93755e92a8
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-agp9-migration/references/VERSION-MATRIX.md
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: sha256:81537c09a682c476beec70fe7b0075799b7393857f2227164709b66a2446c256
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-agp9-migration/scripts/analyze-project.sh
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: sha256:6f3929ae06341793e373f24bf868f4aa026efc3a0b819e03473e28c84da57f5d
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-cocoapods-spm-migration
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-cocoapods-spm-migration/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: sha256:06d75416ed876c18d950493a5aefe6ef5dd5cb955ec0c1d6c1c45cac8ab839ca
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-cocoapods-spm-migration/references/cocoapods-extras-patterns.md
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: sha256:38e9886bc1a3706b4b9fdfd51f38940ce47708e8d524276df160ca8af530f629
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-cocoapods-spm-migration/references/common-pods-mapping.md
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: sha256:6f3cb5a2c2a0b096720ad4cb97a744e004e9598b3b4e26b5b8420633c14e5791
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-cocoapods-spm-migration/references/dsl-reference.md
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: sha256:67b05e2de0f117463f8d743e624a9241f6820bea0380292b5b026a58050b5145
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-cocoapods-spm-migration/references/migration-report-template.md
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: sha256:ea0d1fa2f4db039ad04f919a964f634ccd1b890336852574399eeaa74e84e7f5
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-cocoapods-spm-migration/references/troubleshooting.md
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: sha256:aee1e42d1f4dd6e8fafba6de59896e1d6b667ada352de6d0e8c0bdc2971108da
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-immutable-collections-0-5-x-migration
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-immutable-collections-0-5-x-migration/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: sha256:7b161da34a28fc5a6855b6e1b6c1749fbc754eaa29b911ec0cc8bb532b0c9d26
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-java-to-kotlin
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-java-to-kotlin/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: sha256:5b372715adac4df37e3261040ead2d0c937a5e06a55178fa5ff0fcc95adc1944
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-java-to-kotlin/assets/checklist.md
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: sha256:b2cafa681d87c3d6b9ce730954943ccc306e0c3c5d96f3f7eb0d6726d108bb40
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-java-to-kotlin/references/CONVERSION-METHODOLOGY.md
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: sha256:b83aaed4331d632065008872bb5db9898f4bb3c14a76b73e166b2509ab48f4ea
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-java-to-kotlin/references/KNOWN-ISSUES.md
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: sha256:581cce6cb0b8c353c2f573435c9b2ba36a0f3768aee755680c652dd4067e5e34
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-java-to-kotlin/references/frameworks/DAGGER-HILT.md
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: sha256:ed52d352e63f7675677fa2ffb5f37ef97554a34b5176c34861031839031ac4b9
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-java-to-kotlin/references/frameworks/GUICE.md
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: sha256:7ca1991006f3e009a18f4bf5276a02873c87c75201b34ba69eb0cc5c2cdcf0f5
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-java-to-kotlin/references/frameworks/HIBERNATE.md
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: sha256:02cf14d4d56cba141682bd8bfd5154d2018822a3aca6f477d8fb48bb91e08277
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-java-to-kotlin/references/frameworks/JACKSON.md
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: sha256:c407201a3629f1af4117e3b6b99a0cbebb7f7b62ef14fb9c3bb7e55250ea86ef
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-java-to-kotlin/references/frameworks/JUNIT.md
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: sha256:58141f5f63afe96944366bcd2e4d462f6ba4d55e2cfe5e8fd29e77ff51604c78
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-java-to-kotlin/references/frameworks/LOMBOK.md
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: sha256:b7f2e11b740261ebec3a9afcd2fa4a7a0c82f082433986c4ba1ba62c64b0bf25
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-java-to-kotlin/references/frameworks/MICRONAUT.md
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: sha256:4d5f9ba64acc694cdade9d374e43548f083bacb40d2995ce424c4ff8c7836edd
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-java-to-kotlin/references/frameworks/MOCKITO.md
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: sha256:221bdf1fae8def5ca083e84cf829b252baceea065eca10a42fa7279d6f8be23e
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-java-to-kotlin/references/frameworks/QUARKUS.md
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: sha256:d0c708e5cf05598fa04760a1696bf2ad396f67933324ebaae51f475f4ec88d5a
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-java-to-kotlin/references/frameworks/RETROFIT.md
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: sha256:b79fd49230bb9cf2b9a2b05ddb772de8ba4b5d80ddc00dc7b3a33550e2988f22
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-java-to-kotlin/references/frameworks/RXJAVA.md
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: sha256:87cad42db77a79c9c2a8bc24d051f0526300fb0682de239e30bbd88748608b82
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-java-to-kotlin/references/frameworks/SPRING.md
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: sha256:b07412f7dbcd9cb7d543370e69e6e9d0faf4f4bd74608a0586fa0be93c881ae8
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-native-build-performance
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-native-build-performance/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: sha256:948fcecafa9fd0dcd447682e1fef7046b542be710ee27c2f25eade31c182455e
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-native-build-performance/evals/EVALUATION.md
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: sha256:f7f4a9c7412e6e40e9b9fc66f4654fbc35c790c8a89a4ec77e1f3eeaf0219e7c
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-native-build-performance/references/artifacts-and-targets.md
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: sha256:5dceccd55aa6b517b1f2e48b76b585958244ee66818ecbb4cfa056c0f8cc66ff
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-native-build-performance/references/caching-and-gradle.md
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: sha256:2f7f316e62d3b79adc9b80348b0f25b1ded3d9871d3a528dd1db3af3ecd792cf
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-native-build-performance/references/experimental.md
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: sha256:e0e83e36ebdd41f393082680ed06ff396077540544c5723cace80a2058a5eb1f
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-native-build-performance/references/exports-and-generated-code.md
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: sha256:76d94b9a08e933f09eaae66e8a613f79726dbabc65f765e2130fabf93c0f87d3
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-native-build-performance/scripts/audit-native-build.sh
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: sha256:94af58014fb24aaf1e7757ce804ea19e4023cc778da77ac0d725bd19aa0ba9e7
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/ordering-modifier-chains
+  runtime: null
+  scope: project
+  owners:
+  - skydoves/compose-performance-skills/modifiers/ordering-modifier-chains
+  active_owner: skydoves/compose-performance-skills/modifiers/ordering-modifier-chains
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/ordering-modifier-chains/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - skydoves/compose-performance-skills/modifiers/ordering-modifier-chains
+  active_owner: skydoves/compose-performance-skills/modifiers/ordering-modifier-chains
+  content_hash: sha256:57b72424fb4f25e33b8a4144e9eaaae01b11fff2d375514e00b56e5fa0934c8a
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-creator
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills
+  active_owner: anthropics/skills
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-creator/LICENSE.txt
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills
+  active_owner: anthropics/skills
+  content_hash: sha256:bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-creator/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills
+  active_owner: anthropics/skills
+  content_hash: sha256:dcd4803e61e913e6fc27294184cd3a71f09f5e924ff20c8a9a20173e7b3c2bcf
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-creator/agents/analyzer.md
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills
+  active_owner: anthropics/skills
+  content_hash: sha256:bf68f4cac5a56c673a928c2e6d619586c5b93ea364026ab37547772cb45a663a
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-creator/agents/comparator.md
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills
+  active_owner: anthropics/skills
+  content_hash: sha256:fe1fc9787c495d864c5d6eada47396478572325fde1b33a96d78bf4b849b7a3e
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-creator/agents/grader.md
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills
+  active_owner: anthropics/skills
+  content_hash: sha256:57134da0c1a4eea33fbd74a1c9c44aa814f07d6bc64de303edb586f941e5d21a
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-creator/assets/eval_review.html
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills
+  active_owner: anthropics/skills
+  content_hash: sha256:ce477dcc74dc1c0d1d3352646a79167b5a63634e936b1019160025065974e452
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-creator/eval-viewer/generate_review.py
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills
+  active_owner: anthropics/skills
+  content_hash: sha256:fc9d1b9243fe5ab6012ebd579bd76d0035de1b79fd3b969de114defab26478fb
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-creator/eval-viewer/viewer.html
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills
+  active_owner: anthropics/skills
+  content_hash: sha256:a53213426ee1100441d701a3a0d49cda7a842f992d2c36463f4d3cc0258575fa
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-creator/references/schemas.md
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills
+  active_owner: anthropics/skills
+  content_hash: sha256:8e8876180a8989b406a4d3edddf875b04cdfd5805cc8616686d552b11ce4455f
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-creator/scripts/__init__.py
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills
+  active_owner: anthropics/skills
+  content_hash: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-creator/scripts/aggregate_benchmark.py
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills
+  active_owner: anthropics/skills
+  content_hash: sha256:123ef128ea5ccc01a4b1ac212ef5567f21e9c13d3d240609780beeb3200c49aa
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-creator/scripts/generate_report.py
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills
+  active_owner: anthropics/skills
+  content_hash: sha256:13df7118a3c50c83c4c3250a606d5f2b20b25a3d44cbc392b3d669ec75281453
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-creator/scripts/improve_description.py
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills
+  active_owner: anthropics/skills
+  content_hash: sha256:87d864570220b699fac52da309d2d6efdb060647bfebc74f768128e646accf80
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-creator/scripts/package_skill.py
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills
+  active_owner: anthropics/skills
+  content_hash: sha256:1a33059b0db1ef73375d46d513e5ea81369d2e8838c970597b0d52ddef8d1c0f
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-creator/scripts/quick_validate.py
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills
+  active_owner: anthropics/skills
+  content_hash: sha256:67cf5703402013936c8fb75ad6a1afecd8841d45cc5e606b634eb05825fde365
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-creator/scripts/run_eval.py
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills
+  active_owner: anthropics/skills
+  content_hash: sha256:43e3b8f80dbf69c343967ba77e268fae991d9fa3ed68b32a0ff02532cd48657f
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-creator/scripts/run_loop.py
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills
+  active_owner: anthropics/skills
+  content_hash: sha256:7bd6f674203168520517eec94c55f493c0d154339b061b4d7c0f0dad187d0f21
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/skill-creator/scripts/utils.py
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills
+  active_owner: anthropics/skills
+  content_hash: sha256:3af8ae62c40c73ab712207436a0d9a981e845f25c5a7040229eb189cc8e45bb1
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swift-concurrency
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swift-concurrency-agent-skill
+  active_owner: avdlee/swift-concurrency-agent-skill
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swift-concurrency/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swift-concurrency-agent-skill
+  active_owner: avdlee/swift-concurrency-agent-skill
+  content_hash: sha256:8c667b2ff988251c7c291abe046b77d7b8fcfbe3b5ed36961e25e224b1ead491
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swift-concurrency/agents/openai.yaml
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swift-concurrency-agent-skill
+  active_owner: avdlee/swift-concurrency-agent-skill
+  content_hash: sha256:ee6afe3f6c048fa77f73510f5536abc8f399bc48c8641dc308343ed37ee53cfc
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swift-concurrency/assets/logo-small.png
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swift-concurrency-agent-skill
+  active_owner: avdlee/swift-concurrency-agent-skill
+  content_hash: sha256:f1f69d278df362306d16809151486fad79fc08d6b3018aeabea4580507392f93
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swift-concurrency/assets/logo.png
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swift-concurrency-agent-skill
+  active_owner: avdlee/swift-concurrency-agent-skill
+  content_hash: sha256:7eeb6005c4ce9d1ab514418cc645c463fa6b84536527dfac715676ee878cf7b1
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swift-concurrency/references/_index.md
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swift-concurrency-agent-skill
+  active_owner: avdlee/swift-concurrency-agent-skill
+  content_hash: sha256:7e9e076d885ef05402a67aa8a84b83e63a3c29b3d005816f6acb4c30b6d76531
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swift-concurrency/references/actors.md
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swift-concurrency-agent-skill
+  active_owner: avdlee/swift-concurrency-agent-skill
+  content_hash: sha256:2de7cebbdd1cbc2b7c9312c7b59a3f44ada0456b6e74579aae7fba3e02b0b5fe
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swift-concurrency/references/async-algorithms.md
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swift-concurrency-agent-skill
+  active_owner: avdlee/swift-concurrency-agent-skill
+  content_hash: sha256:9e16790e9b81850a37b3de995220074491f3efd5accab1f5daa0a633625fed40
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swift-concurrency/references/async-await-basics.md
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swift-concurrency-agent-skill
+  active_owner: avdlee/swift-concurrency-agent-skill
+  content_hash: sha256:e550aba692af77cf660ad6f754a65c52b01505cad234d159a6d47a919faaf536
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swift-concurrency/references/async-sequences.md
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swift-concurrency-agent-skill
+  active_owner: avdlee/swift-concurrency-agent-skill
+  content_hash: sha256:33d853118e37c1ac380c253200571efa44fe7127b9b6512ba95b43e670a5f453
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swift-concurrency/references/core-data.md
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swift-concurrency-agent-skill
+  active_owner: avdlee/swift-concurrency-agent-skill
+  content_hash: sha256:c89c4846fa64a2389abf807684ed373a6c0e6d16351dfa051e1fd71b85444d00
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swift-concurrency/references/glossary.md
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swift-concurrency-agent-skill
+  active_owner: avdlee/swift-concurrency-agent-skill
+  content_hash: sha256:20dd1f05717810944af675db215d758efa5d1c7b487ee007faae1ec4e2a7c36f
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swift-concurrency/references/linting.md
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swift-concurrency-agent-skill
+  active_owner: avdlee/swift-concurrency-agent-skill
+  content_hash: sha256:ead994f6e254208acf298a588ad9a49bbd9779530f31e01c74c4d32d06a7bd4a
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swift-concurrency/references/memory-management.md
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swift-concurrency-agent-skill
+  active_owner: avdlee/swift-concurrency-agent-skill
+  content_hash: sha256:28dcb8a7ff7411390ca0b7f1b0db16d6b00c3705bd6ed1f9b649c476bf0a7554
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swift-concurrency/references/migration.md
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swift-concurrency-agent-skill
+  active_owner: avdlee/swift-concurrency-agent-skill
+  content_hash: sha256:9115da8228d3a19426869627c28b7ed444f8d783723039293cceb46a1fc1c570
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swift-concurrency/references/observation.md
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swift-concurrency-agent-skill
+  active_owner: avdlee/swift-concurrency-agent-skill
+  content_hash: sha256:940c085d43e2e067848d7caf95731fb1335c3f16f83ebe43b06549021a29f1b1
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swift-concurrency/references/performance.md
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swift-concurrency-agent-skill
+  active_owner: avdlee/swift-concurrency-agent-skill
+  content_hash: sha256:dfd74c1c592ce42c520b54a309ba2b50e228608efa055fd6b597067e9ad71668
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swift-concurrency/references/sendable.md
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swift-concurrency-agent-skill
+  active_owner: avdlee/swift-concurrency-agent-skill
+  content_hash: sha256:af8e026b3c205d3c3acb58bf9a59e456f063f564845f38020a91cac511a08ca8
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swift-concurrency/references/tasks.md
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swift-concurrency-agent-skill
+  active_owner: avdlee/swift-concurrency-agent-skill
+  content_hash: sha256:0401a762683454149d5ca532684901f4fb5597a6821acacc8d49d037db9a37e9
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swift-concurrency/references/testing.md
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swift-concurrency-agent-skill
+  active_owner: avdlee/swift-concurrency-agent-skill
+  content_hash: sha256:3df9e839b3338dd473115d9ac8787a42d91b50a537fe40c55cf66d21034679db
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swift-concurrency/references/threading.md
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swift-concurrency-agent-skill
+  active_owner: avdlee/swift-concurrency-agent-skill
+  content_hash: sha256:0a4e44bd27fdf852cf5f8f5aa64cfe15ba229fb7c885b3f69ed2afdbfac8752a
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/using-efficient-effects
+  runtime: null
+  scope: project
+  owners:
+  - skydoves/compose-performance-skills/side-effects/using-efficient-effects
+  active_owner: skydoves/compose-performance-skills/side-effects/using-efficient-effects
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/using-efficient-effects/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - skydoves/compose-performance-skills/side-effects/using-efficient-effects
+  active_owner: skydoves/compose-performance-skills/side-effects/using-efficient-effects
+  content_hash: sha256:f5f891478683cb1eb0d07aef277606135560f0491993a45181a141627d080362

@@ -1,0 +1,49 @@
+fail_fast: true
+default_install_hook_types: [pre-commit, commit-msg]
+exclude: |
+  (?x)^(
+    CHANGELOG\.md$
+    | \.agents/skills/
+  )
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: check-json
+      - id: check-xml
+      - id: check-yaml
+      - id: check-toml
+      - id: check-added-large-files
+      - id: requirements-txt-fixer
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: check-executables-have-shebangs
+      - id: check-shebang-scripts-are-executable
+      - id: check-case-conflict
+      - id: check-illegal-windows-names
+      - id: check-symlinks
+      - id: destroyed-symlinks
+      - id: check-merge-conflict
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.30.1
+    hooks:
+      - id: gitleaks
+  - repo: https://github.com/hukkin/mdformat
+    rev: 1.0.0
+    hooks:
+      - id: mdformat
+        additional_dependencies:
+          - mdformat-gfm
+          - mdformat-ruff
+          - mdformat-frontmatter
+          - ruff
+  - repo: https://github.com/commitizen-tools/commitizen
+    rev: v4.17.0
+    hooks:
+      - id: commitizen
+        stages: [commit-msg]
+  - repo: https://github.com/shellcheck-py/shellcheck-py
+    rev: v0.11.0.1
+    hooks:
+      - id: shellcheck
+        args: ["--severity=warning"]

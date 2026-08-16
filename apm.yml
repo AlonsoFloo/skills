@@ -1,0 +1,44 @@
+name: AlonsoFlooSkills
+version: "0.1.0" # x-release-please-version
+description: Personal, agent-friendly engineering skills for architecture, code
+  quality, testing, mobile development, and DevOps.
+license: MIT
+
+targets:
+  - agent-skills
+
+dependencies:
+  apm:
+    # Kotlin development best practices and Kotlin-specific agent guidance.
+    - git: https://github.com/Kotlin/kotlin-agent-skills.git#08d7ad0d74a9a5a548287b2bd4926180fab56cac
+
+    # Android development skills and best practices.
+    - git: https://github.com/android/skills.git#v1.0.7
+
+    # Swift concurrency: async/await, actors, Sendable, structured concurrency,
+    # and modern Swift concurrency patterns.
+    - git: https://github.com/AvdLee/Swift-Concurrency-Agent-Skill.git#2.3.0
+      skills:
+        - swift-concurrency
+
+    # Jetpack Compose animations and Kotlin control-flow best practices.
+    - git: https://github.com/chrisbanes/skills.git#2026.8.5
+      skills:
+        - compose-animations
+        - kotlin-control-flow
+
+    # Jetpack Compose modifier ordering and efficient modifier chains.
+    - git: https://github.com/skydoves/compose-performance-skills.git#main
+      path: modifiers/ordering-modifier-chains
+
+    # Efficient handling of side effects in Jetpack Compose.
+    - git: https://github.com/skydoves/compose-performance-skills.git#main
+      path: side-effects/using-efficient-effects
+
+devDependencies:
+  apm:
+    # Skill development: guidance for creating, validating, and maintaining
+    # agent skills.
+    - git: https://github.com/anthropics/skills.git#f6656c1256d5a8adfa37db9110046ef20bac644c
+      skills:
+        - skill-creator
