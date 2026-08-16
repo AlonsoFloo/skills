@@ -5,9 +5,8 @@
       "release-type": "simple",
       "extra-files": [
         {
-          "type": "yaml",
-          "path": "apm.yml",
-          "jsonpath": "$.version"
+          "type": "generic",
+          "path": "apm.yml"
         },
         {
           "type": "generic",
