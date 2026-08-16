@@ -1,5 +1,5 @@
 lockfile_version: '2'
-generated_at: '2026-08-16T07:50:20.828515+00:00'
+generated_at: '2026-08-16T09:22:00.507642+00:00'
 apm_version: 0.28.0
 dependencies:
 - repo_url: android/skills
@@ -133,6 +133,24 @@ dependencies:
   resolved_tag: 2026.8.5
   resolved_at: '2026-08-16T07:50:17+00:00'
   declared_license: Apache-2.0
+- repo_url: juliusbrussee/caveman
+  materialization_repo_url: JuliusBrussee/caveman
+  name: caveman
+  host: github.com
+  resolved_commit: 2c67abb9833689b48c7abba88afaa77c39a18657
+  resolved_ref: v2.0.0
+  version: 2c67abb
+  package_type: marketplace_plugin
+  deployed_files:
+  - .agents/skills/caveman
+  - .agents/skills/caveman/README.md
+  - .agents/skills/caveman/SKILL.md
+  deployed_file_hashes:
+    .agents/skills/caveman/README.md: sha256:b42e4bb26e14d7ae97f36fdf71c4f100ab25945c36ac12ee31efc27cdd90d309
+    .agents/skills/caveman/SKILL.md: sha256:daf9cec496ebd039809d8236f99f17fa1b4beaadf8ce4e2d532d0da51d70afce
+  content_hash: sha256:0b5a2ea1c6da37402e10dc0881c4846a92bfbd8027c442ec2105d809d36e53bd
+  skill_subset:
+  - caveman
 - repo_url: kotlin/kotlin-agent-skills
   materialization_repo_url: Kotlin/kotlin-agent-skills
   name: kotlin-agent-skills
@@ -263,6 +281,33 @@ dependencies:
     .agents/skills/using-efficient-effects/SKILL.md: sha256:f5f891478683cb1eb0d07aef277606135560f0491993a45181a141627d080362
   content_hash: sha256:30de443599bceda2de9c7c6de5e8cf7ac6e94c7d3bc8ceecb55698b34f020f68
 deployments:
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/caveman
+  runtime: null
+  scope: project
+  owners:
+  - juliusbrussee/caveman
+  active_owner: juliusbrussee/caveman
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/caveman/README.md
+  runtime: null
+  scope: project
+  owners:
+  - juliusbrussee/caveman
+  active_owner: juliusbrussee/caveman
+  content_hash: sha256:b42e4bb26e14d7ae97f36fdf71c4f100ab25945c36ac12ee31efc27cdd90d309
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/caveman/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - juliusbrussee/caveman
+  active_owner: juliusbrussee/caveman
+  content_hash: sha256:daf9cec496ebd039809d8236f99f17fa1b4beaadf8ce4e2d532d0da51d70afce
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/kotlin-backend-jpa-entity-mapping

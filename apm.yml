@@ -9,6 +9,11 @@ targets:
 
 dependencies:
   apm:
+    # Caveman to compress context and AI answers into a single, concise, and relevant response.
+    - git: https://github.com/JuliusBrussee/caveman.git#v2.0.0
+      skills:
+        - caveman
+
     # Kotlin development best practices and Kotlin-specific agent guidance.
     - git: https://github.com/Kotlin/kotlin-agent-skills.git#08d7ad0d74a9a5a548287b2bd4926180fab56cac
 
