@@ -1,5 +1,5 @@
 lockfile_version: '2'
-generated_at: '2026-08-16T09:22:00.507642+00:00'
+generated_at: '2026-08-16T10:01:58.439123+00:00'
 apm_version: 0.28.0
 dependencies:
 - repo_url: android/skills
@@ -121,17 +121,33 @@ dependencies:
 - repo_url: chrisbanes/skills
   name: chrisbanes-skills
   host: github.com
-  resolved_commit: 8d019ed3b8e634a14198709ec22e01afb121ea07
-  resolved_ref: 2026.8.5
-  version: 2026.8.5
+  resolved_commit: a354bb0230d43396bdd3bd7c82aa7276aa1e1fae
+  resolved_ref: 2026.8.16
+  version: 2026.8.16
   package_type: marketplace_plugin
-  content_hash: sha256:a95cafffc4e8299da48ad13e70071e19fd6804c72394015a1b09cb0216fdfe28
+  deployed_files:
+  - .agents/skills/compose-animations
+  - .agents/skills/compose-animations/SKILL.md
+  - .agents/skills/kotlin-concurrency-and-flow
+  - .agents/skills/kotlin-concurrency-and-flow/SKILL.md
+  - .agents/skills/kotlin-concurrency-and-flow/references/flow-state-events.md
+  - .agents/skills/kotlin-concurrency-and-flow/references/structured-concurrency.md
+  - .agents/skills/kotlin-control-flow
+  - .agents/skills/kotlin-control-flow/SKILL.md
+  deployed_file_hashes:
+    .agents/skills/compose-animations/SKILL.md: sha256:0d1344b1b4874ceb7f7c45d94fb6f354527bb4a3549e6bc69105877ee155a2c1
+    .agents/skills/kotlin-concurrency-and-flow/SKILL.md: sha256:0d26e6df0c11f27928304fd0aa97b28a4c4e0f61ac3de900872382dff3875fea
+    .agents/skills/kotlin-concurrency-and-flow/references/flow-state-events.md: sha256:c83f9bf66755ee3e797c42a15332121b2de53b18d12c9de92a13b6561b307113
+    .agents/skills/kotlin-concurrency-and-flow/references/structured-concurrency.md: sha256:b1b3321a9fa0d59c982229361f63a6485fc2a8db59f75a8ff87b7859a470cb32
+    .agents/skills/kotlin-control-flow/SKILL.md: sha256:abbba8f1b21a24bea16e83a560d6fe67dc41bcc754b05029e76711f2a40a213d
+  content_hash: sha256:e18a5c1cd77542ca2f61357faa189e65dd9720900e24805427f5ecd7e3b45469
   skill_subset:
   - compose-animations
+  - kotlin-concurrency-and-flow
   - kotlin-control-flow
-  constraint: 2026.8.5
-  resolved_tag: 2026.8.5
-  resolved_at: '2026-08-16T07:50:17+00:00'
+  constraint: 2026.8.16
+  resolved_tag: 2026.8.16
+  resolved_at: '2026-08-16T10:01:50+00:00'
   declared_license: Apache-2.0
 - repo_url: juliusbrussee/caveman
   materialization_repo_url: JuliusBrussee/caveman
@@ -310,6 +326,24 @@ deployments:
   content_hash: sha256:daf9cec496ebd039809d8236f99f17fa1b4beaadf8ce4e2d532d0da51d70afce
 - kind: project-relative
   target: agent-skills
+  value: .agents/skills/compose-animations
+  runtime: null
+  scope: project
+  owners:
+  - chrisbanes/skills
+  active_owner: chrisbanes/skills
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/compose-animations/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - chrisbanes/skills
+  active_owner: chrisbanes/skills
+  content_hash: sha256:0d1344b1b4874ceb7f7c45d94fb6f354527bb4a3549e6bc69105877ee155a2c1
+- kind: project-relative
+  target: agent-skills
   value: .agents/skills/kotlin-backend-jpa-entity-mapping
   runtime: null
   scope: project
@@ -326,6 +360,60 @@ deployments:
   - kotlin/kotlin-agent-skills
   active_owner: kotlin/kotlin-agent-skills
   content_hash: sha256:5d9c864a55c5ad29f54a807820672a9b5e0360ee33006c63a396a31bef0d8f4e
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-concurrency-and-flow
+  runtime: null
+  scope: project
+  owners:
+  - chrisbanes/skills
+  active_owner: chrisbanes/skills
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-concurrency-and-flow/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - chrisbanes/skills
+  active_owner: chrisbanes/skills
+  content_hash: sha256:0d26e6df0c11f27928304fd0aa97b28a4c4e0f61ac3de900872382dff3875fea
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-concurrency-and-flow/references/flow-state-events.md
+  runtime: null
+  scope: project
+  owners:
+  - chrisbanes/skills
+  active_owner: chrisbanes/skills
+  content_hash: sha256:c83f9bf66755ee3e797c42a15332121b2de53b18d12c9de92a13b6561b307113
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-concurrency-and-flow/references/structured-concurrency.md
+  runtime: null
+  scope: project
+  owners:
+  - chrisbanes/skills
+  active_owner: chrisbanes/skills
+  content_hash: sha256:b1b3321a9fa0d59c982229361f63a6485fc2a8db59f75a8ff87b7859a470cb32
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-control-flow
+  runtime: null
+  scope: project
+  owners:
+  - chrisbanes/skills
+  active_owner: chrisbanes/skills
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-control-flow/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - chrisbanes/skills
+  active_owner: chrisbanes/skills
+  content_hash: sha256:abbba8f1b21a24bea16e83a560d6fe67dc41bcc754b05029e76711f2a40a213d
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/kotlin-tooling-agp9-migration

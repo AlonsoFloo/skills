@@ -27,10 +27,11 @@ dependencies:
         - swift-concurrency
 
     # Jetpack Compose animations and Kotlin control-flow best practices.
-    - git: https://github.com/chrisbanes/skills.git#2026.8.5
+    - git: https://github.com/chrisbanes/skills.git#2026.8.16
       skills:
         - compose-animations
         - kotlin-control-flow
+        - kotlin-concurrency-and-flow
 
     # Jetpack Compose modifier ordering and efficient modifier chains.
     - git: https://github.com/skydoves/compose-performance-skills.git#main

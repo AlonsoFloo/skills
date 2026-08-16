@@ -190,5 +190,5 @@ Before finishing a control-flow change, verify:
 
 ## Related
 
-- [`kotlin-flow-state-event-modeling`](../../../apm_modules/chrisbanes/skills/skills/kotlin-flow-state-event-modeling/SKILL.md) - flow state and event primitive choices.
-- [`kotlin-multiplatform-expect-actual`](../../../apm_modules/chrisbanes/skills/skills/kotlin-multiplatform-expect-actual/SKILL.md) - keeping business branching in common code and platform actuals thin.
+- [Kotlin concurrency and Flow](../../../apm_modules/chrisbanes/skills/skills/kotlin-concurrency-and-flow/SKILL.md) - flow state and event primitive choices.
+- [Kotlin API design](../../../apm_modules/chrisbanes/skills/skills/kotlin-api-design/SKILL.md) - keeping business branching in common code and platform actuals thin.
