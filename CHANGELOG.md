@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/AlonsoFloo/skills/compare/v1.1.0...v1.2.0) (2026-08-16)
+
+
+### Features
+
+* added skills for kotlin-concurrency-and-flow ([8a38e2b](https://github.com/AlonsoFloo/skills/commit/8a38e2b168443a31207640f5e8f3199b8fccd800))
+
 ## [1.1.0](https://github.com/AlonsoFloo/skills/compare/v1.0.0...v1.1.0) (2026-08-16)
 
 
