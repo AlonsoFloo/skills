@@ -3,7 +3,11 @@ name: AlonsoFlooSkills
 version: "1.0.0" # x-release-please-version
 description: Personal, agent-friendly engineering skills for architecture, code quality, testing, mobile development, and DevOps.
 license: MIT
+
+targets:
+  - agent-skills
+
 dependencies:
   apm:
-    - git: https://github.com/anthropics/skills.git
+    - git: https://github.com/anthropics/skills.git#f6656c1256d5a8adfa37db9110046ef20bac644c
       path: skills/skill-creator

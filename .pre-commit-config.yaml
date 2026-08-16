@@ -1,6 +1,10 @@
 fail_fast: true
 default_install_hook_types: [pre-commit, commit-msg]
-exclude: '^CHANGELOG.md'
+exclude: |
+  (?x)^(
+    CHANGELOG\.md$
+    | \.agents/skills/
+  )
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v6.0.0
