@@ -279,17 +279,7 @@ payloads rigidly adhere to schema specifications.
 
 ______________________________________________________________________
 
-## Rule 9: Restrain Extension Function Overuse
-
-### Architectural Deep Dive
-
-Global extension functions pollutes auto-completion scope and exposes private
-formatting or conversion routines across unrelated modules. Keep utility helpers
-package-private or object-scoped.
-
-______________________________________________________________________
-
-## Rule 10: Isolate Quirky Workarounds in Dedicated Spaces
+## Rule 9: Isolate Quirky Workarounds in Dedicated Spaces
 
 ### Architectural Deep Dive
 
@@ -299,7 +289,7 @@ and target platform versions.
 
 ______________________________________________________________________
 
-## Rule 11: Knuth's Optimization Principle
+## Rule 10: Knuth's Optimization Principle
 
 ### Architectural Deep Dive
 
@@ -309,7 +299,7 @@ measurable user benefit.
 
 ______________________________________________________________________
 
-## Rule 12: YAGNI (You Aren't Gonna Need It)
+## Rule 11: YAGNI (You Aren't Gonna Need It)
 
 ### Architectural Deep Dive
 

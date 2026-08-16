@@ -259,33 +259,7 @@ for detailed reference cases.*
 
 ______________________________________________________________________
 
-## Rule 9: Restrain Extension Function Overuse
-
-**Description:** Adding extension methods everywhere pollutes IDE autocompletion
-and obscures core class boundaries. Do not turn internal implementation details
-into global extension functions.
-
-**❌ DON'T**
-
-```kotlin
-fun String.formatMySpecificInternalDatabaseKey(): String = "DB_KEY_$this"
-```
-
-**✅ DO**
-
-```kotlin
-internal object DatabaseKeyFormatter {
-    fun formatKey(rawKey: String): String = "DB_KEY_$rawKey"
-}
-```
-
-*See
-[references/examples.md#rule-9-restrain-extension-function-overuse](references/examples.md#rule-9-restrain-extension-function-overuse)
-for detailed reference cases.*
-
-______________________________________________________________________
-
-## Rule 10: Isolate Quirky Workarounds in Dedicated Spaces
+## Rule 9: Isolate Quirky Workarounds in Dedicated Spaces
 
 **Description:** When a hack or vendor workaround is strictly unavoidable,
 isolate it in a dedicated file and document the exact reason, bug ticket
@@ -306,12 +280,12 @@ reference, and condition for removal.
 ```
 
 *See
-[references/examples.md#rule-10-isolate-quirky-workarounds-in-dedicated-spaces](references/examples.md#rule-10-isolate-quirky-workarounds-in-dedicated-spaces)
+[references/examples.md#rule-9-isolate-quirky-workarounds-in-dedicated-spaces](references/examples.md#rule-9-isolate-quirky-workarounds-in-dedicated-spaces)
 for detailed reference cases.*
 
 ______________________________________________________________________
 
-## Rule 11: Knuth's Optimization Principle
+## Rule 10: Knuth's Optimization Principle
 
 **Description:** Premature optimization is the root of all evil. Write clean,
 readable, correct code first. Do not add complex caching or manual memory hacks
@@ -330,12 +304,12 @@ until empirical benchmarks prove a bottleneck exists.
 ```
 
 *See
-[references/examples.md#rule-11-knuths-optimization-principle](references/examples.md#rule-11-knuths-optimization-principle)
+[references/examples.md#rule-10-knuths-optimization-principle](references/examples.md#rule-10-knuths-optimization-principle)
 for detailed reference cases.*
 
 ______________________________________________________________________
 
-## Rule 12: YAGNI (You Aren't Gonna Need It)
+## Rule 11: YAGNI (You Aren't Gonna Need It)
 
 **Description:** Implement features only when you actually need them, never when
 you merely foresee that you might need them. Unused abstraction layers add
@@ -354,5 +328,5 @@ class SimpleUserRepository(private val api: UserApi) { ... }
 ```
 
 *See
-[references/examples.md#rule-12-yagni-you-arent-gonna-need-it](references/examples.md#rule-12-yagni-you-arent-gonna-need-it)
+[references/examples.md#rule-11-yagni-you-arent-gonna-need-it](references/examples.md#rule-11-yagni-you-arent-gonna-need-it)
 for detailed reference cases.*
