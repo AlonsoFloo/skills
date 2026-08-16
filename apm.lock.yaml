@@ -1,5 +1,5 @@
 lockfile_version: '2'
-generated_at: '2026-08-16T10:01:58.439123+00:00'
+generated_at: '2026-08-16T13:56:40.409598+00:00'
 apm_version: 0.28.0
 dependencies:
 - repo_url: android/skills
@@ -149,6 +149,29 @@ dependencies:
   resolved_tag: 2026.8.16
   resolved_at: '2026-08-16T10:01:50+00:00'
   declared_license: Apache-2.0
+- repo_url: github/awesome-copilot
+  name: awesome-copilot
+  host: github.com
+  resolved_commit: a80885b76044550770f60f360f8a0e5ae3524a31
+  resolved_ref: main
+  version: unknown
+  package_type: skill_bundle
+  deployed_files:
+  - .agents/skills/apple-appstore-reviewer
+  - .agents/skills/apple-appstore-reviewer/SKILL.md
+  - .agents/skills/conventional-branch
+  - .agents/skills/conventional-branch/SKILL.md
+  - .agents/skills/conventional-commit
+  - .agents/skills/conventional-commit/SKILL.md
+  deployed_file_hashes:
+    .agents/skills/apple-appstore-reviewer/SKILL.md: sha256:8e24825ff85137d497119bff6c2b91ce37238cad67493e44af7c5ca95b4e4058
+    .agents/skills/conventional-branch/SKILL.md: sha256:94b962ff93ac639c8b760a29465ca48f51d6af1ad1b4bdd242d52f1260959b07
+    .agents/skills/conventional-commit/SKILL.md: sha256:250235f71b8c501a7744ded911281292324bcd1a2d014e34b25041e2d2c8bf73
+  content_hash: sha256:ed51dad97e496f9c6696eb7283fc7880f607a165e1ed3fe928977c72eaf46e9a
+  skill_subset:
+  - apple-appstore-reviewer
+  - conventional-branch
+  - conventional-commit
 - repo_url: juliusbrussee/caveman
   materialization_repo_url: JuliusBrussee/caveman
   name: caveman
@@ -299,6 +322,24 @@ dependencies:
 deployments:
 - kind: project-relative
   target: agent-skills
+  value: .agents/skills/apple-appstore-reviewer
+  runtime: null
+  scope: project
+  owners:
+  - github/awesome-copilot
+  active_owner: github/awesome-copilot
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/apple-appstore-reviewer/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - github/awesome-copilot
+  active_owner: github/awesome-copilot
+  content_hash: sha256:8e24825ff85137d497119bff6c2b91ce37238cad67493e44af7c5ca95b4e4058
+- kind: project-relative
+  target: agent-skills
   value: .agents/skills/caveman
   runtime: null
   scope: project
@@ -342,6 +383,42 @@ deployments:
   - chrisbanes/skills
   active_owner: chrisbanes/skills
   content_hash: sha256:0d1344b1b4874ceb7f7c45d94fb6f354527bb4a3549e6bc69105877ee155a2c1
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/conventional-branch
+  runtime: null
+  scope: project
+  owners:
+  - github/awesome-copilot
+  active_owner: github/awesome-copilot
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/conventional-branch/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - github/awesome-copilot
+  active_owner: github/awesome-copilot
+  content_hash: sha256:94b962ff93ac639c8b760a29465ca48f51d6af1ad1b4bdd242d52f1260959b07
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/conventional-commit
+  runtime: null
+  scope: project
+  owners:
+  - github/awesome-copilot
+  active_owner: github/awesome-copilot
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/conventional-commit/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - github/awesome-copilot
+  active_owner: github/awesome-copilot
+  content_hash: sha256:250235f71b8c501a7744ded911281292324bcd1a2d014e34b25041e2d2c8bf73
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/kotlin-backend-jpa-entity-mapping

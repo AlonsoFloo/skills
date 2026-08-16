@@ -41,6 +41,13 @@ dependencies:
     - git: https://github.com/skydoves/compose-performance-skills.git#main
       path: side-effects/using-efficient-effects
 
+    # Efficient handling of side effects in Jetpack Compose.
+    - git: https://github.com/github/awesome-copilot.git#main
+      skills:
+        - apple-appstore-reviewer
+        - conventional-branch
+        - conventional-commit
+
 devDependencies:
   apm:
     # Skill development: guidance for creating, validating, and maintaining
