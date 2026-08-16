@@ -13,7 +13,7 @@ examples.
 <!-- x-release-please-start-version -->
 
 ```bash
-apm install https://github.com/AlonsoFloo/skills.git#v1.2.0
+apm install https://github.com/AlonsoFloo/skills.git#v1.3.0
 ```
 
 ## Available Skills

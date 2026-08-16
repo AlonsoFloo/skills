@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.3.0](https://github.com/AlonsoFloo/skills/compare/v1.2.0...v1.3.0) (2026-08-16)
+
+
+### Features
+
+* Added conventional-comments ([64d9ed8](https://github.com/AlonsoFloo/skills/commit/64d9ed81009e889edc70c436392e6611fa512e91))
+* added skills from github, specificaly conventional-commit ([6c09c0c](https://github.com/AlonsoFloo/skills/commit/6c09c0c29f37b011398c9ccfc64c31895515a065))
+
 ## [1.2.0](https://github.com/AlonsoFloo/skills/compare/v1.1.0...v1.2.0) (2026-08-16)
 
 
