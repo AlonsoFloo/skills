@@ -10,8 +10,10 @@ examples.
 
 ## Install via APM
 
+<!-- x-release-please-start-version -->
+
 ```bash
-apm install AlonsoFloo/skills
+apm install https://github.com/AlonsoFloo/skills.git#v0.1.0
 ```
 
 ## Available Skills

@@ -7,6 +7,9 @@
         {
           "type": "generic",
           "path": "apm.yml"
+        },
+        {
+          "path": "README.md"
         }
       ]
     }
