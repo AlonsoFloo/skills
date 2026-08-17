@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.4.0](https://github.com/AlonsoFloo/skills/compare/v1.3.0...v1.4.0) (2026-08-17)
+
+
+### Features
+
+* added rules for scoped declaration over global declaration ([ee8aae2](https://github.com/AlonsoFloo/skills/commit/ee8aae245ab7b8c86844441e9b8bbf1f8dd005b5))
+* improved readme for syntax ([8978bc8](https://github.com/AlonsoFloo/skills/commit/8978bc8a365451482a27d07233d95f3b35404033))
+
 ## [1.3.0](https://github.com/AlonsoFloo/skills/compare/v1.2.0...v1.3.0) (2026-08-16)
 
 

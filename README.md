@@ -8,7 +8,7 @@ practices for software development.
 <!-- x-release-please-start-version -->
 
 ```bash
-apm install https://github.com/AlonsoFloo/skills.git#v1.3.0
+apm install https://github.com/AlonsoFloo/skills.git#v1.4.0
 ```
 
 <!-- x-release-please-end -->
