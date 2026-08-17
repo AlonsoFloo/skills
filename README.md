@@ -15,4 +15,4 @@ apm install https://github.com/AlonsoFloo/skills.git#v1.3.0
 
 ## Purpose
 
-Personal use for me, but you are welcome to view, and propose new stuffs
+Personal use for me, but you are welcome to view, and propose new stuffs.
