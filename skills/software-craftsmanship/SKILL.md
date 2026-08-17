@@ -330,3 +330,54 @@ class SimpleUserRepository(private val api: UserApi) { ... }
 *See
 [references/examples.md#rule-11-yagni-you-arent-gonna-need-it](references/examples.md#rule-11-yagni-you-arent-gonna-need-it)
 for detailed reference cases.*
+
+______________________________________________________________________
+
+## Rule 12: Prefer Scoped Declarations Over Top-Level State and Behavior
+
+**Description:** Do not place variables or functions at the top level by default.
+
+Top-level declarations are reserved for things that are explicitly intended to be general, shared, and independent of a specific feature, type, or domain object.
+
+All feature-specific or contextual code must have an explicit owner or scope: an extension, private helper, feature/module scope, data type, object, class, namespace, or another cohesive abstraction.
+
+The goal is not to ban top-level declarations. The goal is to make scope intentional: if a variable or function belongs to a concept, that concept should own it.
+
+**❌ DON'T**
+
+```kotlin
+val maxRetries = 3
+
+fun formatUserName(user: User): String =
+    "${user.firstName} ${user.lastName}"
+
+fun calculateOrderTotal(order: Order): Money =
+    /* ... */
+```
+
+**✅ DO**
+
+```kotlin
+private const val MAX_RETRIES = 3
+
+fun User.formatName(): String =
+    "$firstName $lastName"
+
+class OrderTotals {
+    fun calculate(order: Order): Money =
+        /* ... */
+}
+```
+
+Use the most natural scope for the language and domain:
+
+- `private` for implementation details
+- extensions for behavior that naturally belongs to an existing type
+- feature/module scopes for feature-specific behavior
+- data/value types when state and behavior form a cohesive concept
+- objects/namespaces when a concept requires a named singleton or namespace
+- top-level declarations only when the declaration is intentionally general
+
+A top-level declaration should therefore be treated as an explicit architectural decision, not the default place to put code.
+
+*See [references/examples.md#rule-12-prefer-scoped-declarations-over-top-level-state-and-behavior](references/examples.md#rule-12-prefer-scoped-declarations-over-top-level-state-and-behavior) for examples in Swift, Kotlin, JavaScript, Java, and Python.*
