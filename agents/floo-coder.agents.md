@@ -1,7 +1,7 @@
 ---
-id: coder
-name: Coder
-description: Coding agent
+id: floo-coder
+name: Floo-Coder
+description: Coding agent based on Florian preferences
 role: delegation-target
 connection-type: internal
 ---

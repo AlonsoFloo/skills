@@ -6,6 +6,7 @@ license: MIT
 
 targets:
   - agent-skills
+  - copilot
 
 dependencies:
   apm:
