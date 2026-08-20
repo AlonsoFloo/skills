@@ -4,6 +4,7 @@ exclude: |
   (?x)^(
     CHANGELOG\.md$
     | \.agents/skills/
+    | \.gemini/
     | \.github/agents/
     | \.github/hooks/
     | \.github/prompts/

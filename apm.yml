@@ -8,6 +8,7 @@ license: MIT
 targets:
   - agent-skills
   - copilot
+  - gemini
 
 dependencies:
   apm:
