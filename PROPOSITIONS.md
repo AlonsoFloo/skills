@@ -52,7 +52,7 @@ Below is the curated selection of the 30 best AI primitives discovered across th
 | **7** | `caveman-mode-tracker` | Hook | `JuliusBrussee/caveman` | Runtime & Token Economy |
 | **8** | `se-system-architecture-reviewer` | Agent / Instruction | `github/awesome-copilot` | Software Craftsmanship |
 | **9** | `adr-generator` | Agent / Instruction | `github/awesome-copilot` | Architecture Governance |
-| **10** | `pull-request-reviewer` | Agent / Instruction | `github/awesome-copilot` | Code Quality & Audit |
+| **10** | `se-security-reviewer` | Agent / Instruction | `github/awesome-copilot` | Code Quality & Audit |
 | **11** | `conventional-commit` | Skill | `github/awesome-copilot` | DevOps & Release Please |
 | **12** | `conventional-branch` | Skill | `github/awesome-copilot` | Git Workflow |
 | **13** | `code-quality-auditor` | Skill | `github/awesome-copilot` | Software Craftsmanship |
@@ -197,16 +197,16 @@ Below is the curated selection of the 30 best AI primitives discovered across th
 
 ---
 
-### Proposition 10: `pull-request-reviewer`
+### Proposition 10: `se-security-reviewer`
 * **APM Primitive Type**: Agent / Instruction
-* **Source Repo**: `github/awesome-copilot` (`agents/pull-request-reviewer.agent.md`)
-* **Description**: Automated agent persona analyzing PR diffs against security standards, edge-case coverage, breaking changes, and style guides.
-* **Relevance to AlonsoFlooSkills**: Automates first-pass code reviews for pull requests.
+* **Source Repo**: `github/awesome-copilot` (`agents/se-security-reviewer.agent.md`)
+* **Description**: Security-focused code review specialist agent persona prioritizing OWASP Top 10, Zero Trust principles, LLM security risks, and data leakage protection.
+* **Relevance to AlonsoFlooSkills**: Extends code review capabilities with dedicated security-first auditing for pull requests.
 * **Pros**:
-  * Catches regressions, security risks, and missing tests prior to human review.
-  * Integrates smoothly into GitHub Agentic Workflows.
+  * Catches security vulnerabilities, injection flaws, and credentials exposure prior to production deployment.
+  * Integrates OWASP Top 10 and modern LLM security standards into code reviews.
 * **Cons**:
-  * May produce false positives on intentional non-standard implementations.
+  * Strict security rules may trigger warnings on non-production test stubs.
 
 ---
 
