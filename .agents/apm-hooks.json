@@ -1,0 +1,20 @@
+{
+  "SessionStart": [
+    {
+      "type": "command",
+      "statusMessage": "Loading caveman mode...",
+      "command": "node \".agents/hooks/caveman/src/hooks/caveman-activate.js\"",
+      "timeout": 5,
+      "_apm_source": "juliusbrussee/caveman"
+    }
+  ],
+  "UserPromptSubmit": [
+    {
+      "type": "command",
+      "statusMessage": "Tracking caveman mode...",
+      "command": "node \".agents/hooks/caveman/src/hooks/caveman-mode-tracker.js\"",
+      "timeout": 5,
+      "_apm_source": "juliusbrussee/caveman"
+    }
+  ]
+}

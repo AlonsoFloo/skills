@@ -1,5 +1,5 @@
 lockfile_version: '2'
-generated_at: '2026-08-20T18:37:54.293763+00:00'
+generated_at: '2026-08-20T19:46:22.498043+00:00'
 apm_version: 0.28.0
 dependencies:
 - repo_url: android/skills
@@ -181,29 +181,24 @@ dependencies:
   version: 2c67abb
   package_type: marketplace_plugin
   deployed_files:
+  - .agents/hooks/caveman/src/hooks/README.md
+  - .agents/hooks/caveman/src/hooks/cavecrew-model-overrides.js
+  - .agents/hooks/caveman/src/hooks/caveman-activate.js
+  - .agents/hooks/caveman/src/hooks/caveman-config.js
+  - .agents/hooks/caveman/src/hooks/caveman-mode-tracker.js
+  - .agents/hooks/caveman/src/hooks/caveman-parse.js
+  - .agents/hooks/caveman/src/hooks/caveman-stats.js
+  - .agents/hooks/caveman/src/hooks/caveman-statusline.ps1
+  - .agents/hooks/caveman/src/hooks/caveman-statusline.sh
+  - .agents/hooks/caveman/src/hooks/checksums.sha256
+  - .agents/hooks/caveman/src/hooks/install.ps1
+  - .agents/hooks/caveman/src/hooks/install.sh
+  - .agents/hooks/caveman/src/hooks/package.json
+  - .agents/hooks/caveman/src/hooks/uninstall.ps1
+  - .agents/hooks/caveman/src/hooks/uninstall.sh
   - .agents/skills/caveman
   - .agents/skills/caveman/README.md
   - .agents/skills/caveman/SKILL.md
-  - .gemini/commands/caveman-commit.toml
-  - .gemini/commands/caveman-init.toml
-  - .gemini/commands/caveman-review.toml
-  - .gemini/commands/caveman-stats.toml
-  - .gemini/commands/caveman.toml
-  - .gemini/hooks/caveman/src/hooks/README.md
-  - .gemini/hooks/caveman/src/hooks/cavecrew-model-overrides.js
-  - .gemini/hooks/caveman/src/hooks/caveman-activate.js
-  - .gemini/hooks/caveman/src/hooks/caveman-config.js
-  - .gemini/hooks/caveman/src/hooks/caveman-mode-tracker.js
-  - .gemini/hooks/caveman/src/hooks/caveman-parse.js
-  - .gemini/hooks/caveman/src/hooks/caveman-stats.js
-  - .gemini/hooks/caveman/src/hooks/caveman-statusline.ps1
-  - .gemini/hooks/caveman/src/hooks/caveman-statusline.sh
-  - .gemini/hooks/caveman/src/hooks/checksums.sha256
-  - .gemini/hooks/caveman/src/hooks/install.ps1
-  - .gemini/hooks/caveman/src/hooks/install.sh
-  - .gemini/hooks/caveman/src/hooks/package.json
-  - .gemini/hooks/caveman/src/hooks/uninstall.ps1
-  - .gemini/hooks/caveman/src/hooks/uninstall.sh
   - .github/agents/AGENTS.agent.md
   - .github/agents/CLAUDE.agent.md
   - .github/agents/cavecrew-builder.agent.md
@@ -230,28 +225,23 @@ dependencies:
   - .github/prompts/caveman-stats.prompt.md
   - .github/prompts/caveman.prompt.md
   deployed_file_hashes:
+    .agents/hooks/caveman/src/hooks/README.md: sha256:155ebe1ccb4c6cb2e2537d2848a1fe07d1eb26b20b8f97f9f2b15e7fbe8c4b28
+    .agents/hooks/caveman/src/hooks/cavecrew-model-overrides.js: sha256:9b72e18343a5487acde46d795f4871abfae21212b6eeb853d54981aae260bdf1
+    .agents/hooks/caveman/src/hooks/caveman-activate.js: sha256:0431368e2acc28e058ad172d7ed11d709990a18d630f4de95bbd217b00fd794a
+    .agents/hooks/caveman/src/hooks/caveman-config.js: sha256:bece20e2d95b2502606dedc8b3bc329ac769a2f3638e3013d8477cabeab13f34
+    .agents/hooks/caveman/src/hooks/caveman-mode-tracker.js: sha256:07a16ec91be50900eaaa5cb24d0518fc77c98b6159102e27c37d43aae1d70640
+    .agents/hooks/caveman/src/hooks/caveman-parse.js: sha256:397cf3d243fae04859e0c135f87f456a4972256ae425ee66457da4631ffa509a
+    .agents/hooks/caveman/src/hooks/caveman-stats.js: sha256:f598dde3cc7b701c68547c103a56d566ccc2f75d1c1f3484883ab9f396032b5d
+    .agents/hooks/caveman/src/hooks/caveman-statusline.ps1: sha256:1690c639f05940cbff39e0383a27053898b30c224aa651043db29b2842cb524a
+    .agents/hooks/caveman/src/hooks/caveman-statusline.sh: sha256:4b22120731be5a23f08d0b87d627cd5ac1833d994077d554aa78d7c51a212435
+    .agents/hooks/caveman/src/hooks/checksums.sha256: sha256:b36ff69f3c050eb0a11fc79fd9841415a3d134812b28560846745b06f447c573
+    .agents/hooks/caveman/src/hooks/install.ps1: sha256:fbcef25d358ae671631df914288954cf6f9bb1314a23d2c78102d1f0d85ffacd
+    .agents/hooks/caveman/src/hooks/install.sh: sha256:7ef5a6a9eb31a913e0ed45a3861224ac21d0232c50f1e7d72757e86874da3bf0
+    .agents/hooks/caveman/src/hooks/package.json: sha256:8005a3491db7d92f36ac66369861589f9c47123d3a7c71e643fc2c06168cd45a
+    .agents/hooks/caveman/src/hooks/uninstall.ps1: sha256:b4f14fa4938b52a6e94ca02b851d3b643e1a34aaab55db42c59f2dd4ac6608e2
+    .agents/hooks/caveman/src/hooks/uninstall.sh: sha256:6d1d357156a8eecd14dc1e46652f15effa45eb246f8bca5d9520c444eb2a6614
     .agents/skills/caveman/README.md: sha256:b42e4bb26e14d7ae97f36fdf71c4f100ab25945c36ac12ee31efc27cdd90d309
     .agents/skills/caveman/SKILL.md: sha256:daf9cec496ebd039809d8236f99f17fa1b4beaadf8ce4e2d532d0da51d70afce
-    .gemini/commands/caveman-commit.toml: sha256:7e8b8a070bc825d0b8764a8f060e618860697c951bb0c26a42bfb1129935630d
-    .gemini/commands/caveman-init.toml: sha256:15a2416b66fbdbb58670d6f9ebdd7c2a3254f1c72ba52563979e89feda9216ea
-    .gemini/commands/caveman-review.toml: sha256:7571e79f0eb7a207be6eb6b38e4a46b7c2e3e6bfa90a577af53f2bc4084c2128
-    .gemini/commands/caveman-stats.toml: sha256:3c1502def163a5673af8bdf28a97ba2a9f58a673b182bdb42d23e91f764156da
-    .gemini/commands/caveman.toml: sha256:8148075e2f42a45441f57c654b381703b4f4efb5ea7b918e3e44ca5aa60dc0c5
-    .gemini/hooks/caveman/src/hooks/README.md: sha256:155ebe1ccb4c6cb2e2537d2848a1fe07d1eb26b20b8f97f9f2b15e7fbe8c4b28
-    .gemini/hooks/caveman/src/hooks/cavecrew-model-overrides.js: sha256:9b72e18343a5487acde46d795f4871abfae21212b6eeb853d54981aae260bdf1
-    .gemini/hooks/caveman/src/hooks/caveman-activate.js: sha256:0431368e2acc28e058ad172d7ed11d709990a18d630f4de95bbd217b00fd794a
-    .gemini/hooks/caveman/src/hooks/caveman-config.js: sha256:bece20e2d95b2502606dedc8b3bc329ac769a2f3638e3013d8477cabeab13f34
-    .gemini/hooks/caveman/src/hooks/caveman-mode-tracker.js: sha256:07a16ec91be50900eaaa5cb24d0518fc77c98b6159102e27c37d43aae1d70640
-    .gemini/hooks/caveman/src/hooks/caveman-parse.js: sha256:397cf3d243fae04859e0c135f87f456a4972256ae425ee66457da4631ffa509a
-    .gemini/hooks/caveman/src/hooks/caveman-stats.js: sha256:f598dde3cc7b701c68547c103a56d566ccc2f75d1c1f3484883ab9f396032b5d
-    .gemini/hooks/caveman/src/hooks/caveman-statusline.ps1: sha256:1690c639f05940cbff39e0383a27053898b30c224aa651043db29b2842cb524a
-    .gemini/hooks/caveman/src/hooks/caveman-statusline.sh: sha256:4b22120731be5a23f08d0b87d627cd5ac1833d994077d554aa78d7c51a212435
-    .gemini/hooks/caveman/src/hooks/checksums.sha256: sha256:b36ff69f3c050eb0a11fc79fd9841415a3d134812b28560846745b06f447c573
-    .gemini/hooks/caveman/src/hooks/install.ps1: sha256:fbcef25d358ae671631df914288954cf6f9bb1314a23d2c78102d1f0d85ffacd
-    .gemini/hooks/caveman/src/hooks/install.sh: sha256:7ef5a6a9eb31a913e0ed45a3861224ac21d0232c50f1e7d72757e86874da3bf0
-    .gemini/hooks/caveman/src/hooks/package.json: sha256:8005a3491db7d92f36ac66369861589f9c47123d3a7c71e643fc2c06168cd45a
-    .gemini/hooks/caveman/src/hooks/uninstall.ps1: sha256:b4f14fa4938b52a6e94ca02b851d3b643e1a34aaab55db42c59f2dd4ac6608e2
-    .gemini/hooks/caveman/src/hooks/uninstall.sh: sha256:6d1d357156a8eecd14dc1e46652f15effa45eb246f8bca5d9520c444eb2a6614
     .github/agents/AGENTS.agent.md: sha256:40198c604339da324db47fc5276dbb9fd4f33ad1fb50ae39c5cbda399c27badd
     .github/agents/CLAUDE.agent.md: sha256:2a57a441013b5cce8b4bca6a2390191829d06f46369dcb88e01aa35b21b74f44
     .github/agents/cavecrew-builder.agent.md: sha256:135af639b287ed7534b66d01390c4dc48d98683af52232728a0e87db9c558b3e
@@ -1617,53 +1607,8 @@ deployments:
   active_owner: juliusbrussee/caveman
   content_hash: sha256:8af4143fb97260ce19c92be5113bc832afb0a29c2baca867da0db8a15056cdf5
 - kind: project-relative
-  target: gemini
-  value: .gemini/commands/caveman-commit.toml
-  runtime: null
-  scope: project
-  owners:
-  - juliusbrussee/caveman
-  active_owner: juliusbrussee/caveman
-  content_hash: sha256:7e8b8a070bc825d0b8764a8f060e618860697c951bb0c26a42bfb1129935630d
-- kind: project-relative
-  target: gemini
-  value: .gemini/commands/caveman-init.toml
-  runtime: null
-  scope: project
-  owners:
-  - juliusbrussee/caveman
-  active_owner: juliusbrussee/caveman
-  content_hash: sha256:15a2416b66fbdbb58670d6f9ebdd7c2a3254f1c72ba52563979e89feda9216ea
-- kind: project-relative
-  target: gemini
-  value: .gemini/commands/caveman-review.toml
-  runtime: null
-  scope: project
-  owners:
-  - juliusbrussee/caveman
-  active_owner: juliusbrussee/caveman
-  content_hash: sha256:7571e79f0eb7a207be6eb6b38e4a46b7c2e3e6bfa90a577af53f2bc4084c2128
-- kind: project-relative
-  target: gemini
-  value: .gemini/commands/caveman-stats.toml
-  runtime: null
-  scope: project
-  owners:
-  - juliusbrussee/caveman
-  active_owner: juliusbrussee/caveman
-  content_hash: sha256:3c1502def163a5673af8bdf28a97ba2a9f58a673b182bdb42d23e91f764156da
-- kind: project-relative
-  target: gemini
-  value: .gemini/commands/caveman.toml
-  runtime: null
-  scope: project
-  owners:
-  - juliusbrussee/caveman
-  active_owner: juliusbrussee/caveman
-  content_hash: sha256:8148075e2f42a45441f57c654b381703b4f4efb5ea7b918e3e44ca5aa60dc0c5
-- kind: project-relative
-  target: gemini
-  value: .gemini/hooks/caveman/src/hooks/README.md
+  target: legacy
+  value: .agents/hooks/caveman/src/hooks/README.md
   runtime: null
   scope: project
   owners:
@@ -1671,8 +1616,8 @@ deployments:
   active_owner: juliusbrussee/caveman
   content_hash: sha256:155ebe1ccb4c6cb2e2537d2848a1fe07d1eb26b20b8f97f9f2b15e7fbe8c4b28
 - kind: project-relative
-  target: gemini
-  value: .gemini/hooks/caveman/src/hooks/cavecrew-model-overrides.js
+  target: legacy
+  value: .agents/hooks/caveman/src/hooks/cavecrew-model-overrides.js
   runtime: null
   scope: project
   owners:
@@ -1680,8 +1625,8 @@ deployments:
   active_owner: juliusbrussee/caveman
   content_hash: sha256:9b72e18343a5487acde46d795f4871abfae21212b6eeb853d54981aae260bdf1
 - kind: project-relative
-  target: gemini
-  value: .gemini/hooks/caveman/src/hooks/caveman-activate.js
+  target: legacy
+  value: .agents/hooks/caveman/src/hooks/caveman-activate.js
   runtime: null
   scope: project
   owners:
@@ -1689,8 +1634,8 @@ deployments:
   active_owner: juliusbrussee/caveman
   content_hash: sha256:0431368e2acc28e058ad172d7ed11d709990a18d630f4de95bbd217b00fd794a
 - kind: project-relative
-  target: gemini
-  value: .gemini/hooks/caveman/src/hooks/caveman-config.js
+  target: legacy
+  value: .agents/hooks/caveman/src/hooks/caveman-config.js
   runtime: null
   scope: project
   owners:
@@ -1698,8 +1643,8 @@ deployments:
   active_owner: juliusbrussee/caveman
   content_hash: sha256:bece20e2d95b2502606dedc8b3bc329ac769a2f3638e3013d8477cabeab13f34
 - kind: project-relative
-  target: gemini
-  value: .gemini/hooks/caveman/src/hooks/caveman-mode-tracker.js
+  target: legacy
+  value: .agents/hooks/caveman/src/hooks/caveman-mode-tracker.js
   runtime: null
   scope: project
   owners:
@@ -1707,8 +1652,8 @@ deployments:
   active_owner: juliusbrussee/caveman
   content_hash: sha256:07a16ec91be50900eaaa5cb24d0518fc77c98b6159102e27c37d43aae1d70640
 - kind: project-relative
-  target: gemini
-  value: .gemini/hooks/caveman/src/hooks/caveman-parse.js
+  target: legacy
+  value: .agents/hooks/caveman/src/hooks/caveman-parse.js
   runtime: null
   scope: project
   owners:
@@ -1716,8 +1661,8 @@ deployments:
   active_owner: juliusbrussee/caveman
   content_hash: sha256:397cf3d243fae04859e0c135f87f456a4972256ae425ee66457da4631ffa509a
 - kind: project-relative
-  target: gemini
-  value: .gemini/hooks/caveman/src/hooks/caveman-stats.js
+  target: legacy
+  value: .agents/hooks/caveman/src/hooks/caveman-stats.js
   runtime: null
   scope: project
   owners:
@@ -1725,8 +1670,8 @@ deployments:
   active_owner: juliusbrussee/caveman
   content_hash: sha256:f598dde3cc7b701c68547c103a56d566ccc2f75d1c1f3484883ab9f396032b5d
 - kind: project-relative
-  target: gemini
-  value: .gemini/hooks/caveman/src/hooks/caveman-statusline.ps1
+  target: legacy
+  value: .agents/hooks/caveman/src/hooks/caveman-statusline.ps1
   runtime: null
   scope: project
   owners:
@@ -1734,8 +1679,8 @@ deployments:
   active_owner: juliusbrussee/caveman
   content_hash: sha256:1690c639f05940cbff39e0383a27053898b30c224aa651043db29b2842cb524a
 - kind: project-relative
-  target: gemini
-  value: .gemini/hooks/caveman/src/hooks/caveman-statusline.sh
+  target: legacy
+  value: .agents/hooks/caveman/src/hooks/caveman-statusline.sh
   runtime: null
   scope: project
   owners:
@@ -1743,8 +1688,8 @@ deployments:
   active_owner: juliusbrussee/caveman
   content_hash: sha256:4b22120731be5a23f08d0b87d627cd5ac1833d994077d554aa78d7c51a212435
 - kind: project-relative
-  target: gemini
-  value: .gemini/hooks/caveman/src/hooks/checksums.sha256
+  target: legacy
+  value: .agents/hooks/caveman/src/hooks/checksums.sha256
   runtime: null
   scope: project
   owners:
@@ -1752,8 +1697,8 @@ deployments:
   active_owner: juliusbrussee/caveman
   content_hash: sha256:b36ff69f3c050eb0a11fc79fd9841415a3d134812b28560846745b06f447c573
 - kind: project-relative
-  target: gemini
-  value: .gemini/hooks/caveman/src/hooks/install.ps1
+  target: legacy
+  value: .agents/hooks/caveman/src/hooks/install.ps1
   runtime: null
   scope: project
   owners:
@@ -1761,8 +1706,8 @@ deployments:
   active_owner: juliusbrussee/caveman
   content_hash: sha256:fbcef25d358ae671631df914288954cf6f9bb1314a23d2c78102d1f0d85ffacd
 - kind: project-relative
-  target: gemini
-  value: .gemini/hooks/caveman/src/hooks/install.sh
+  target: legacy
+  value: .agents/hooks/caveman/src/hooks/install.sh
   runtime: null
   scope: project
   owners:
@@ -1770,8 +1715,8 @@ deployments:
   active_owner: juliusbrussee/caveman
   content_hash: sha256:7ef5a6a9eb31a913e0ed45a3861224ac21d0232c50f1e7d72757e86874da3bf0
 - kind: project-relative
-  target: gemini
-  value: .gemini/hooks/caveman/src/hooks/package.json
+  target: legacy
+  value: .agents/hooks/caveman/src/hooks/package.json
   runtime: null
   scope: project
   owners:
@@ -1779,8 +1724,8 @@ deployments:
   active_owner: juliusbrussee/caveman
   content_hash: sha256:8005a3491db7d92f36ac66369861589f9c47123d3a7c71e643fc2c06168cd45a
 - kind: project-relative
-  target: gemini
-  value: .gemini/hooks/caveman/src/hooks/uninstall.ps1
+  target: legacy
+  value: .agents/hooks/caveman/src/hooks/uninstall.ps1
   runtime: null
   scope: project
   owners:
@@ -1788,8 +1733,8 @@ deployments:
   active_owner: juliusbrussee/caveman
   content_hash: sha256:b4f14fa4938b52a6e94ca02b851d3b643e1a34aaab55db42c59f2dd4ac6608e2
 - kind: project-relative
-  target: gemini
-  value: .gemini/hooks/caveman/src/hooks/uninstall.sh
+  target: legacy
+  value: .agents/hooks/caveman/src/hooks/uninstall.sh
   runtime: null
   scope: project
   owners:
