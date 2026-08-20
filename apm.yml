@@ -45,6 +45,7 @@ dependencies:
         - apple-appstore-reviewer
         - conventional-branch
         - conventional-commit
+        - security-review
 
 devDependencies:
   apm:

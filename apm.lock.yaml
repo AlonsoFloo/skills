@@ -1,5 +1,5 @@
 lockfile_version: '2'
-generated_at: '2026-08-20T19:55:36.171688+00:00'
+generated_at: '2026-08-20T20:04:47.713417+00:00'
 apm_version: 0.28.0
 dependencies:
 - repo_url: android/skills
@@ -163,15 +163,29 @@ dependencies:
   - .agents/skills/conventional-branch/SKILL.md
   - .agents/skills/conventional-commit
   - .agents/skills/conventional-commit/SKILL.md
+  - .agents/skills/security-review
+  - .agents/skills/security-review/SKILL.md
+  - .agents/skills/security-review/references/language-patterns.md
+  - .agents/skills/security-review/references/report-format.md
+  - .agents/skills/security-review/references/secret-patterns.md
+  - .agents/skills/security-review/references/vuln-categories.md
+  - .agents/skills/security-review/references/vulnerable-packages.md
   deployed_file_hashes:
     .agents/skills/apple-appstore-reviewer/SKILL.md: sha256:8e24825ff85137d497119bff6c2b91ce37238cad67493e44af7c5ca95b4e4058
     .agents/skills/conventional-branch/SKILL.md: sha256:94b962ff93ac639c8b760a29465ca48f51d6af1ad1b4bdd242d52f1260959b07
     .agents/skills/conventional-commit/SKILL.md: sha256:250235f71b8c501a7744ded911281292324bcd1a2d014e34b25041e2d2c8bf73
+    .agents/skills/security-review/SKILL.md: sha256:002392d88637b89e4cbc409a0531834970937f3b57c0b448a17e04b5ca6d356c
+    .agents/skills/security-review/references/language-patterns.md: sha256:ddfbcbb68b9d605789c85a168a274219f0ad86f5fc76b46b5332eb42f0c042b3
+    .agents/skills/security-review/references/report-format.md: sha256:688ef9f2862303527314eb17a090a72d512b907a685f5d1f122d6ebd5ae66db1
+    .agents/skills/security-review/references/secret-patterns.md: sha256:38f84f60021490d785f33fc70f2ce784888d2a751781a881372e6862e7e11288
+    .agents/skills/security-review/references/vuln-categories.md: sha256:d06159479bd92b9dcf3a2842e09f7712f1fd297c0bc9792fe20bc3cb69188df5
+    .agents/skills/security-review/references/vulnerable-packages.md: sha256:8693a6a258bad18a8a1d0925bc1eae9c744071ff37a36b8f1da83adca93608af
   content_hash: sha256:ed51dad97e496f9c6696eb7283fc7880f607a165e1ed3fe928977c72eaf46e9a
   skill_subset:
   - apple-appstore-reviewer
   - conventional-branch
   - conventional-commit
+  - security-review
 - repo_url: kotlin/kotlin-agent-skills
   materialization_repo_url: Kotlin/kotlin-agent-skills
   name: kotlin-agent-skills
@@ -869,6 +883,69 @@ deployments:
   - skydoves/compose-performance-skills/modifiers/ordering-modifier-chains
   active_owner: skydoves/compose-performance-skills/modifiers/ordering-modifier-chains
   content_hash: sha256:57b72424fb4f25e33b8a4144e9eaaae01b11fff2d375514e00b56e5fa0934c8a
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/security-review
+  runtime: null
+  scope: project
+  owners:
+  - github/awesome-copilot
+  active_owner: github/awesome-copilot
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/security-review/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - github/awesome-copilot
+  active_owner: github/awesome-copilot
+  content_hash: sha256:002392d88637b89e4cbc409a0531834970937f3b57c0b448a17e04b5ca6d356c
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/security-review/references/language-patterns.md
+  runtime: null
+  scope: project
+  owners:
+  - github/awesome-copilot
+  active_owner: github/awesome-copilot
+  content_hash: sha256:ddfbcbb68b9d605789c85a168a274219f0ad86f5fc76b46b5332eb42f0c042b3
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/security-review/references/report-format.md
+  runtime: null
+  scope: project
+  owners:
+  - github/awesome-copilot
+  active_owner: github/awesome-copilot
+  content_hash: sha256:688ef9f2862303527314eb17a090a72d512b907a685f5d1f122d6ebd5ae66db1
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/security-review/references/secret-patterns.md
+  runtime: null
+  scope: project
+  owners:
+  - github/awesome-copilot
+  active_owner: github/awesome-copilot
+  content_hash: sha256:38f84f60021490d785f33fc70f2ce784888d2a751781a881372e6862e7e11288
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/security-review/references/vuln-categories.md
+  runtime: null
+  scope: project
+  owners:
+  - github/awesome-copilot
+  active_owner: github/awesome-copilot
+  content_hash: sha256:d06159479bd92b9dcf3a2842e09f7712f1fd297c0bc9792fe20bc3cb69188df5
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/security-review/references/vulnerable-packages.md
+  runtime: null
+  scope: project
+  owners:
+  - github/awesome-copilot
+  active_owner: github/awesome-copilot
+  content_hash: sha256:8693a6a258bad18a8a1d0925bc1eae9c744071ff37a36b8f1da83adca93608af
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/skill-creator
