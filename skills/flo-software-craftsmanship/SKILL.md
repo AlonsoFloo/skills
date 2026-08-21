@@ -1,5 +1,5 @@
 ---
-name: software-craftsmanship
+name: flo-software-craftsmanship
 description: Software architecture, domain modeling, code logic & engineering patterns
 ---
 

@@ -1,5 +1,5 @@
 ---
-name: testing-craftsmanship
+name: flo-testing-craftsmanship
 description: Testing conventions, behavioral naming, structured test layout & reactive stream testing
 ---
 

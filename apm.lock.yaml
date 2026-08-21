@@ -1332,8 +1332,8 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:ae7e49eb74c8f5550e5b5589f224bbf42c7c042799cfd3b8ea1d10d0b939fee4
+  content_hash: sha256:bfa0bab4b9bcdd7e383e25e9a5019f52910f15a4e8019bbdac93f5736b5b4a70
 local_deployed_files:
 - .github/agents/floo-coder.agent.md
 local_deployed_file_hashes:
-  .github/agents/floo-coder.agent.md: sha256:ae7e49eb74c8f5550e5b5589f224bbf42c7c042799cfd3b8ea1d10d0b939fee4
+  .github/agents/floo-coder.agent.md: sha256:bfa0bab4b9bcdd7e383e25e9a5019f52910f15a4e8019bbdac93f5736b5b4a70

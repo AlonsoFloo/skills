@@ -9,11 +9,11 @@ assistants and software engineers.
 
 1. **Skill Selection**:
 
-   - Software Architecture & Code Logic → `software-craftsmanship`
-   - Unit & Flow Testing → `testing-craftsmanship`
-   - Android & Kotlin Development → `android-craftsmanship`
-   - iOS & Swift Development → `ios-craftsmanship`
-   - DevOps & Security → `devops-craftsmanship`
+   - Software Architecture & Code Logic → `flo-software-craftsmanship`
+   - Unit & Flow Testing → `flo-testing-craftsmanship`
+   - Android & Kotlin Development → `flo-android-craftsmanship`
+   - iOS & Swift Development → `flo-ios-craftsmanship`
+   - DevOps & Security → `flo-devops-craftsmanship`
 
 1. **Usage**:
 

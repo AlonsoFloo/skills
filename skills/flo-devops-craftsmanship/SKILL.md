@@ -1,5 +1,5 @@
 ---
-name: devops-craftsmanship
+name: flo-devops-craftsmanship
 description: DevOps, AI-assisted development conventions & supply-chain security
 ---
 

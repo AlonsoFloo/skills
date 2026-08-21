@@ -1,5 +1,5 @@
 ---
-name: android-craftsmanship
+name: flo-android-craftsmanship
 description: Android architecture, Kotlin UI state management & Jetpack Compose best practices
 ---
 

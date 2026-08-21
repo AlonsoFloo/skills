@@ -1,5 +1,5 @@
 ---
-name: ios-craftsmanship
+name: flo-ios-craftsmanship
 description: iOS architecture, Swift memory management & SwiftUI best practices
 ---
 

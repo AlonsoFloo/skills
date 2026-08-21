@@ -1,5 +1,5 @@
 ---
-name: conventional-comments
+name: flo-conventional-comments
 description: Use whenever commenting on a pull request or merge request, writing PR review feedback, creating Conventional Comments badge markdown, or choosing blocking/non-blocking comment decorations.
 ---
 
