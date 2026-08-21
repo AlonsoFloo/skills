@@ -1332,8 +1332,19 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:bfa0bab4b9bcdd7e383e25e9a5019f52910f15a4e8019bbdac93f5736b5b4a70
+  content_hash: sha256:3bf65acf6121f9bc8cbb4f74dff3d2cf1bb7f1461eceb34cb2c3581b0d35a4a7
+- kind: project-relative
+  target: copilot
+  value: .github/prompts/flo-precommit-all.prompt.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:97cc554d414ae2b326ab1a477386632128f82345dd2801b79ebaa4ccb5e2dadb
 local_deployed_files:
 - .github/agents/floo-coder.agent.md
+- .github/prompts/flo-precommit-all.prompt.md
 local_deployed_file_hashes:
-  .github/agents/floo-coder.agent.md: sha256:bfa0bab4b9bcdd7e383e25e9a5019f52910f15a4e8019bbdac93f5736b5b4a70
+  .github/agents/floo-coder.agent.md: sha256:3bf65acf6121f9bc8cbb4f74dff3d2cf1bb7f1461eceb34cb2c3581b0d35a4a7
+  .github/prompts/flo-precommit-all.prompt.md: sha256:97cc554d414ae2b326ab1a477386632128f82345dd2801b79ebaa4ccb5e2dadb

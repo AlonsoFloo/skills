@@ -1,7 +1,7 @@
 ---
 id: floo-coder
 name: Floo-Coder
-description: Coding agent based on Florian preferences
+description: Coding agent based on Florian persona preferences
 role: delegation-target
 connection-type: internal
 ---
