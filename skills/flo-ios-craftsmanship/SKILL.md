@@ -5,14 +5,14 @@ license: Complete terms in LICENSE
 metadata:
   author: github.com/AlonsoFloo
   keywords:
-  - AlonsoFloo
-  - flo
-  - ios
-  - swift
-  - swiftui
-  - memory-management
-  - viewmodifier
-  - architecture
+    - AlonsoFloo
+    - flo
+    - ios
+    - swift
+    - swiftui
+    - memory-management
+    - viewmodifier
+    - architecture
 ---
 
 # iOS Craftsmanship

@@ -5,14 +5,14 @@ license: Complete terms in LICENSE
 metadata:
   author: github.com/AlonsoFloo
   keywords:
-  - AlonsoFloo
-  - flo
-  - software-architecture
-  - domain-modeling
-  - solid
-  - design-patterns
-  - clean-code
-  - refactoring
+    - AlonsoFloo
+    - flo
+    - software-architecture
+    - domain-modeling
+    - solid
+    - design-patterns
+    - clean-code
+    - refactoring
 ---
 
 # Software Craftsmanship

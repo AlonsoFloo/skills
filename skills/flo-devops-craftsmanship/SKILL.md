@@ -5,13 +5,13 @@ license: Complete terms in LICENSE
 metadata:
   author: github.com/AlonsoFloo
   keywords:
-  - AlonsoFloo
-  - flo
-  - devops
-  - ci-cd
-  - supply-chain-security
-  - git-commit
-  - dependencies
+    - AlonsoFloo
+    - flo
+    - devops
+    - ci-cd
+    - supply-chain-security
+    - git-commit
+    - dependencies
 ---
 
 # DevOps Craftsmanship

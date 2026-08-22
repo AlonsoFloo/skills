@@ -5,14 +5,14 @@ license: Complete terms in LICENSE
 metadata:
   author: github.com/AlonsoFloo
   keywords:
-  - AlonsoFloo
-  - flo
-  - testing
-  - unit-testing
-  - test-naming
-  - turbine
-  - reactive-streams
-  - kotlin-flow
+    - AlonsoFloo
+    - flo
+    - testing
+    - unit-testing
+    - test-naming
+    - turbine
+    - reactive-streams
+    - kotlin-flow
 ---
 
 # Testing Craftsmanship

@@ -10,13 +10,13 @@ license: Complete terms in LICENSE
 metadata:
   author: github.com/AlonsoFloo
   keywords:
-  - AlonsoFloo
-  - flo
-  - caveman
-  - token-optimization
-  - concise
-  - communication
-  - prompt-engineering
+    - AlonsoFloo
+    - flo
+    - caveman
+    - token-optimization
+    - concise
+    - communication
+    - prompt-engineering
 ---
 
 Respond terse like smart caveman. All technical substance stay. Only fluff die.

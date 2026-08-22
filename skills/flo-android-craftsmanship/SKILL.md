@@ -5,14 +5,14 @@ license: Complete terms in LICENSE
 metadata:
   author: github.com/AlonsoFloo
   keywords:
-  - AlonsoFloo
-  - flo
-  - android
-  - kotlin
-  - jetpack-compose
-  - ui-state
-  - architecture
-  - viewmodel
+    - AlonsoFloo
+    - flo
+    - android
+    - kotlin
+    - jetpack-compose
+    - ui-state
+    - architecture
+    - viewmodel
 ---
 
 # Android Craftsmanship

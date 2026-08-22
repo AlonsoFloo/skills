@@ -5,13 +5,13 @@ license: Complete terms in LICENSE
 metadata:
   author: github.com/AlonsoFloo
   keywords:
-  - AlonsoFloo
-  - flo
-  - conventional-comments
-  - code-review
-  - pull-request
-  - shields-io
-  - badges
+    - AlonsoFloo
+    - flo
+    - conventional-comments
+    - code-review
+    - pull-request
+    - shields-io
+    - badges
 ---
 
 # Conventional Comments
