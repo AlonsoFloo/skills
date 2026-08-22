@@ -1327,6 +1327,15 @@ deployments:
   content_hash: sha256:f5f891478683cb1eb0d07aef277606135560f0491993a45181a141627d080362
 - kind: project-relative
   target: copilot
+  value: .github/agents/flo-devops.agent.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:f879077f5694c84739150c599ff7c7895b32c979037a51b9d09ac9ab1a12329c
+- kind: project-relative
+  target: copilot
   value: .github/agents/floo-coder.agent.md
   runtime: null
   scope: project
@@ -1334,6 +1343,15 @@ deployments:
   - .
   active_owner: .
   content_hash: sha256:4eabd21b88dbdb584dd8b43fdf8fc15695083e69514dfaabb1a275bc6fd4cf4f
+- kind: project-relative
+  target: copilot
+  value: .github/prompts/flo-boilerplategit.prompt.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:223c1d251f0ecad9ae4e9485c566b59dafac3700021d9a2dac9ab33e8fbce8c7
 - kind: project-relative
   target: copilot
   value: .github/prompts/flo-precommit-all.prompt.md
@@ -1344,8 +1362,12 @@ deployments:
   active_owner: .
   content_hash: sha256:9205424b92f91826c51c4b324deb61925f4839ccfbd470866e0aa1c4207ec6f2
 local_deployed_files:
+- .github/agents/flo-devops.agent.md
 - .github/agents/floo-coder.agent.md
+- .github/prompts/flo-boilerplategit.prompt.md
 - .github/prompts/flo-precommit-all.prompt.md
 local_deployed_file_hashes:
+  .github/agents/flo-devops.agent.md: sha256:f879077f5694c84739150c599ff7c7895b32c979037a51b9d09ac9ab1a12329c
   .github/agents/floo-coder.agent.md: sha256:4eabd21b88dbdb584dd8b43fdf8fc15695083e69514dfaabb1a275bc6fd4cf4f
+  .github/prompts/flo-boilerplategit.prompt.md: sha256:223c1d251f0ecad9ae4e9485c566b59dafac3700021d9a2dac9ab33e8fbce8c7
   .github/prompts/flo-precommit-all.prompt.md: sha256:9205424b92f91826c51c4b324deb61925f4839ccfbd470866e0aa1c4207ec6f2
