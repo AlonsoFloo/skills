@@ -13,6 +13,7 @@ metadata:
     - design-patterns
     - clean-code
     - refactoring
+    - development-principles
 ---
 
 # Software Craftsmanship
