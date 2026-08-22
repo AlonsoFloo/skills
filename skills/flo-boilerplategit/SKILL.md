@@ -17,7 +17,7 @@ metadata:
 
 > Standardization, cross-checking, and automated setup of Git repositories
 
-Treat the rules below as operational guidance for AI coding agents and DevOps engineers when initializing new Git repositories or cross-checking established ones against organizational standards. For reference configurations and templates, see [references/templates.md](references/templates.md).
+Treat the rules below as operational guidance for AI coding agents and DevOps engineers when initializing new Git repositories or cross-checking established ones against organizational standards.
 
 ## Main Goal
 
@@ -45,17 +45,17 @@ ______________________________________________________________________
 
 **Boilerplate Components Matrix:**
 
-1. **README (`README.md`)**: Project overview, feature summary, quickstart, installation, usage, pre-commit instructions, and badges.
-1. **AGENTS (`AGENTS.md`)**: Guidance, index, and constraints for AI coding agents.
-1. **Release Please (`release-please-config.json` & `.release-please-manifest.json`)**: Automated semantic releases and changelog generation.
-1. **Renovate (`renovate.json`)**: Automated dependency update management.
-1. **Pre-commit (`.pre-commit-config.yaml`)**: Git pre-commit hooks for linting, secret scanning, formatting, and commit validation.
-1. **GitHub Workflows (`.github/workflows/`)**: Actions workflows for PR validation (`pr-checks.yml`) and releases (`release-please.yml`).
-1. **GitHub Templates (`.github/ISSUE_TEMPLATE/` & `.github/PULL_REQUEST_TEMPLATE.md`)**: Standard issue and pull request templates.
-1. **Gitignore (`.gitignore`)**: Environment, OS, IDE, and build artifact exclusion patterns.
-1. **Gitconfig / Git Attributes (`.gitattributes` & `.gitconfig`)**: Line endings, diff drivers, and Git settings.
-1. **Code Owners (`.github/CODEOWNERS`)**: Repository ownership and review requirements.
-1. **EditorConfig (`.editorconfig`)**: Cross-editor indentation, character set, and trailing whitespace rules.
+1. **README (`README.md`)**: Overview, feature summary, quickstart, pre-commit instructions, and badges. See [references/readme.md](references/readme.md).
+1. **AGENTS (`AGENTS.md`)**: Guidance, index, and constraints for AI coding agents. See [references/agents.md](references/agents.md).
+1. **Release Please (`release-please-config.json` & `.release-please-manifest.json`)**: Automated semantic releases and changelog generation. See [references/release-please.md](references/release-please.md).
+1. **Renovate (`renovate.json`)**: Automated dependency update management. See [references/renovate.md](references/renovate.md).
+1. **Pre-commit (`.pre-commit-config.yaml`)**: Git pre-commit hooks for linting, secret scanning, formatting, and commit validation. See [references/pre-commit.md](references/pre-commit.md).
+1. **GitHub Workflows (`.github/workflows/`)**: Actions workflows for PR validation (`pr-checks.yml`) and releases (`release-please.yml`). See [references/workflows.md](references/workflows.md).
+1. **GitHub Templates (`.github/ISSUE_TEMPLATE/` & `.github/PULL_REQUEST_TEMPLATE.md`)**: Standard issue and pull request templates. See [references/github-templates.md](references/github-templates.md).
+1. **Gitignore (`.gitignore`)**: Environment, OS, IDE, and build artifact exclusion patterns. See [references/gitignore.md](references/gitignore.md).
+1. **Gitconfig / Git Attributes (`.gitattributes` & `.gitconfig`)**: Line endings, diff drivers, and Git settings. See [references/gitconfig.md](references/gitconfig.md).
+1. **Code Owners (`.github/CODEOWNERS`)**: Repository ownership and review requirements. See [references/codeowners.md](references/codeowners.md).
+1. **EditorConfig (`.editorconfig`)**: Cross-editor indentation, character set, and trailing whitespace rules. See [references/editorconfig.md](references/editorconfig.md).
 
 ______________________________________________________________________
 
@@ -75,7 +75,19 @@ ______________________________________________________________________
 
 ## Rule 4: Load Reference Configurations
 
-**Description:** Use standardized reference configurations defined in [references/templates.md](references/templates.md) when generating or updating boilerplate files. Ensure pinned versions, secure defaults, and valid syntax across JSON, YAML, and Markdown files.
+**Description:** Use standardized reference configurations defined in individual reference files under `references/` when generating or updating boilerplate files. Ensure pinned versions, secure defaults, and valid syntax across JSON, YAML, and Markdown files.
+
+- [references/readme.md](references/readme.md)
+- [references/agents.md](references/agents.md)
+- [references/release-please.md](references/release-please.md)
+- [references/renovate.md](references/renovate.md)
+- [references/pre-commit.md](references/pre-commit.md)
+- [references/workflows.md](references/workflows.md)
+- [references/github-templates.md](references/github-templates.md)
+- [references/gitignore.md](references/gitignore.md)
+- [references/gitconfig.md](references/gitconfig.md)
+- [references/codeowners.md](references/codeowners.md)
+- [references/editorconfig.md](references/editorconfig.md)
 
 ______________________________________________________________________
 
