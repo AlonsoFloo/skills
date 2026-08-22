@@ -3,10 +3,9 @@
 A personal, agent-friendly repository of engineering rules, patterns, and
 practices for software development.
 
-[![apm](https://img.shields.io/apm/v/skills?label=apm&color=blue)](https://apm.microsoft.com/)
+[![Release](https://img.shields.io/github/v/release/AlonsoFloo/skills)](https://github.com/AlonsoFloo/skills/releases)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![renovate](https://img.shields.io/badge/renovate-enabled-brightgreen)](renovate.json)
-[!\[release-please\](https://img.shields.io/badge/release-please- orange)](.github/workflows/release-please.yml)
+[![release-please](https://github.com/AlonsoFloo/skills/actions/workflows/release-please.yml/badge.svg)](https://github.com/AlonsoFloo/skills/actions)
 
 ## Purpose
 
