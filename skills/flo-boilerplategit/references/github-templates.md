@@ -18,6 +18,8 @@ A clear and concise description of the bug.
 2.
 3.
 
+Actual behavior:
+
 ## Expected Behavior
 A description of what you expected to happen.
 
@@ -34,5 +36,4 @@ Provide a concise summary of the changes made in this pull request.
 ## Dependencies
 
 - Link to other PR or issue that are related
-
 ```

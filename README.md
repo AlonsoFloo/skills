@@ -7,7 +7,13 @@ practices for software development.
 
 Personal use for me, but you are welcome to view, and propose new stuffs.
 
-## Install via APM
+## Getting Started
+
+### Prerequisites
+
+- APM (Agent Package Manager) installed
+
+### Installation
 
 <!-- x-release-please-start-version -->
 
@@ -37,6 +43,14 @@ apm install https://github.com/AlonsoFloo/skills.git#v2.0.0
     └── agents [auto-generated]     # ⚠️ Managed by Microsoft APM (Do not edit)
     └── prompts [auto-generated]    # ⚠️ Managed by Microsoft APM (Do not edit)
 ```
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md)
+
+## License
+
+[MIT](LICENSE)
 
 ## References
 
