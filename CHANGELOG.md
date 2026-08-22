@@ -1,5 +1,22 @@
 # Changelog
 
+## [2.1.0](https://github.com/AlonsoFloo/skills/compare/v2.0.0...v2.1.0) (2026-08-22)
+
+
+### Features
+
+* add flo-boilerplategit agent, skill, and prompt ([#20](https://github.com/AlonsoFloo/skills/issues/20)) ([bd4808a](https://github.com/AlonsoFloo/skills/commit/bd4808aedfc6e66273fedf02d1fe34194ca908de))
+* added opencode as target ([078c9b6](https://github.com/AlonsoFloo/skills/commit/078c9b62176e253eb9e232bc7de46ea743c68b54))
+* added thinking skill ([898b2fb](https://github.com/AlonsoFloo/skills/commit/898b2fbb3dcc44d84594fe7ea6e54e20697b4a54))
+* Improved agent coder with more skills load ([105fa31](https://github.com/AlonsoFloo/skills/commit/105fa31e34c1e1541c9ccf88a99d61353fcb8959))
+* **skills:** add license and metadata keywords to skill frontmatter ([#17](https://github.com/AlonsoFloo/skills/issues/17)) ([1b81dc7](https://github.com/AlonsoFloo/skills/commit/1b81dc76576716b0477e03b336216946c00d9d1f))
+
+
+### Bug Fixes
+
+* agent auto commit ([082bb92](https://github.com/AlonsoFloo/skills/commit/082bb92070817c2fd34468afb90f2a8f59460796))
+* agent auto commit ([80adecc](https://github.com/AlonsoFloo/skills/commit/80adecc5cd752849e159465fe1a84533db2f6614))
+
 ## [2.0.0](https://github.com/AlonsoFloo/skills/compare/v1.4.0...v2.0.0) (2026-08-21)
 
 

@@ -23,7 +23,7 @@ Personal use for me, but you are welcome to view, and propose new stuffs.
 <!-- x-release-please-start-version -->
 
 ```bash
-apm install https://github.com/AlonsoFloo/skills.git#v2.0.0
+apm install https://github.com/AlonsoFloo/skills.git#v2.1.0
 ```
 
 <!-- x-release-please-end -->
