@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.2.0](https://github.com/AlonsoFloo/skills/compare/v2.1.0...v2.2.0) (2026-08-22)
+
+
+### Features
+
+* **flo-boilerplategit:** add license, security, and commitlint references and minimum coverage rule ([#23](https://github.com/AlonsoFloo/skills/issues/23)) ([b204dec](https://github.com/AlonsoFloo/skills/commit/b204dec56821db89b5e80cf113f0ee3231acc25f))
+* **flo-boilerplategit:** Enhance README template with additional sections ([1fad91f](https://github.com/AlonsoFloo/skills/commit/1fad91f0964decbd60a1019a5617d438a758d3fc))
+
 ## [2.1.0](https://github.com/AlonsoFloo/skills/compare/v2.0.0...v2.1.0) (2026-08-22)
 
 
