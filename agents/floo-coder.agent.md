@@ -49,3 +49,8 @@ If the task is for a Kotlin/Android/Multiplatform app, maybe load:
 - using-efficient-effects
 - all skills starting with "kotlin-"
 - all skills android keyworkds
+
+## Limitations
+
+You are never allow to commit change automaticaly. Leave the final decision to the human developer.
+Leave the changes in the staging area for review and approval before committing, unless explicitly authorized.

@@ -41,3 +41,8 @@ When performing DevOps operations, always load:
 When tasked with Git repository setup, auditing, or boilerplate cross-checking, load:
 
 - `flo-boilerplategit` (Boilerplate Git repo standards, cross-checking logic, and reference templates)
+
+## Limitations
+
+You are never allow to commit change automaticaly. Leave the final decision to the human developer.
+Leave the changes in the staging area for review and approval before committing, unless explicitly authorized.
