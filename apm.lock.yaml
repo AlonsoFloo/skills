@@ -1,5 +1,5 @@
 lockfile_version: '2'
-generated_at: '2026-08-20T20:04:47.713417+00:00'
+generated_at: '2026-08-22T07:33:36.260731+00:00'
 apm_version: 0.28.0
 dependencies:
 - repo_url: android/skills
@@ -182,6 +182,7 @@ dependencies:
     .agents/skills/security-review/references/vulnerable-packages.md: sha256:8693a6a258bad18a8a1d0925bc1eae9c744071ff37a36b8f1da83adca93608af
   content_hash: sha256:ed51dad97e496f9c6696eb7283fc7880f607a165e1ed3fe928977c72eaf46e9a
   skill_subset:
+  - Thinking-Beast-Mode
   - apple-appstore-reviewer
   - conventional-branch
   - conventional-commit
@@ -1332,7 +1333,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:3bf65acf6121f9bc8cbb4f74dff3d2cf1bb7f1461eceb34cb2c3581b0d35a4a7
+  content_hash: sha256:4eabd21b88dbdb584dd8b43fdf8fc15695083e69514dfaabb1a275bc6fd4cf4f
 - kind: project-relative
   target: copilot
   value: .github/prompts/flo-precommit-all.prompt.md
@@ -1341,10 +1342,10 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:97cc554d414ae2b326ab1a477386632128f82345dd2801b79ebaa4ccb5e2dadb
+  content_hash: sha256:9205424b92f91826c51c4b324deb61925f4839ccfbd470866e0aa1c4207ec6f2
 local_deployed_files:
 - .github/agents/floo-coder.agent.md
 - .github/prompts/flo-precommit-all.prompt.md
 local_deployed_file_hashes:
-  .github/agents/floo-coder.agent.md: sha256:3bf65acf6121f9bc8cbb4f74dff3d2cf1bb7f1461eceb34cb2c3581b0d35a4a7
-  .github/prompts/flo-precommit-all.prompt.md: sha256:97cc554d414ae2b326ab1a477386632128f82345dd2801b79ebaa4ccb5e2dadb
+  .github/agents/floo-coder.agent.md: sha256:4eabd21b88dbdb584dd8b43fdf8fc15695083e69514dfaabb1a275bc6fd4cf4f
+  .github/prompts/flo-precommit-all.prompt.md: sha256:9205424b92f91826c51c4b324deb61925f4839ccfbd470866e0aa1c4207ec6f2
