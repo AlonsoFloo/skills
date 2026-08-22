@@ -8,7 +8,6 @@ name: Bug Report
 about: Create a report to help us improve
 title: 'fix: '
 labels: bug
-assignees: ''
 ---
 
 ## Description
@@ -32,14 +31,8 @@ Add any other context or screenshots about the problem here.
 ## Description
 Provide a concise summary of the changes made in this pull request.
 
-## Type of Change
-- [ ] `feat`: New feature
-- [ ] `fix`: Bug fix
-- [ ] `refactor`: Refactoring
-- [ ] `docs`: Documentation
-- [ ] `chore`: Build/tooling maintenance
+## Dependencies
 
-## Verification
-- [ ] Pre-commit hooks passed locally (`pre-commit run --all-files`).
-- [ ] Added or updated relevant tests.
+- Link to other PR or issue that are related
+
 ```

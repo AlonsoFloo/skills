@@ -2,15 +2,14 @@
 
 ## `release-please-config.json`
 
+Adapt the type of release with the current repo needs
+
 ```json
 {
   "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
   "packages": {
     ".": {
-      "release-type": "node",
-      "bump-minor-pre-major": true,
-      "bump-patch-for-minor-pre-major": true,
-      "changelog-path": "CHANGELOG.md"
+      "release-type": "simple",
     }
   }
 }

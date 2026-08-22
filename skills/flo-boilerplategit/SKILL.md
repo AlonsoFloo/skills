@@ -53,7 +53,6 @@ ______________________________________________________________________
 1. **GitHub Workflows (`.github/workflows/`)**: Actions workflows for PR validation (`pr-checks.yml`) and releases (`release-please.yml`). See [references/workflows.md](references/workflows.md).
 1. **GitHub Templates (`.github/ISSUE_TEMPLATE/` & `.github/PULL_REQUEST_TEMPLATE.md`)**: Standard issue and pull request templates. See [references/github-templates.md](references/github-templates.md).
 1. **Gitignore (`.gitignore`)**: Environment, OS, IDE, and build artifact exclusion patterns. See [references/gitignore.md](references/gitignore.md).
-1. **Gitconfig / Git Attributes (`.gitattributes` & `.gitconfig`)**: Line endings, diff drivers, and Git settings. See [references/gitconfig.md](references/gitconfig.md).
 1. **Code Owners (`.github/CODEOWNERS`)**: Repository ownership and review requirements. See [references/codeowners.md](references/codeowners.md).
 1. **EditorConfig (`.editorconfig`)**: Cross-editor indentation, character set, and trailing whitespace rules. See [references/editorconfig.md](references/editorconfig.md).
 
@@ -85,7 +84,6 @@ ______________________________________________________________________
 - [references/workflows.md](references/workflows.md)
 - [references/github-templates.md](references/github-templates.md)
 - [references/gitignore.md](references/gitignore.md)
-- [references/gitconfig.md](references/gitconfig.md)
 - [references/codeowners.md](references/codeowners.md)
 - [references/editorconfig.md](references/editorconfig.md)
 

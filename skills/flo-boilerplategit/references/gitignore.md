@@ -1,43 +1,47 @@
 # Gitignore Reference Template (`.gitignore`)
 
+Gitignore file must be fetch based on the API [https://www.toptal.com/developers/gitignore/api/](https://www.toptal.com/developers/gitignore/api/)
+A basic example is [https://www.toptal.com/developers/gitignore/api/visualstudiocode,macos,linux,windows](https://www.toptal.com/developers/gitignore/api/visualstudiocode,macos,linux,windows)
+
+## Rule 1: Scan the current repository
+
+Scan the current repository for software, tools, language and pattern.
+Load the Toptal api with the base key + the local repo needs :
+
+Base keys :
+
+- visualstudiocode
+- macos
+- linux
+- windows
+- zsh
+
+## Rule 2: Merge with existing
+
+Check the exisitng gitignore, and merge it with the provided result of Toptal API
+
+## Rule 3: Formatting
+
+The local and Toptal config must be explicit the final format must be like this example
+
 ```gitignore
-# Operating System Files
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
+################
+## REPO NEED
+################
+# --------------------------------
+# Some configs
+# --------------------------------
+[....]
 
-# IDE & Editor Files
-.vscode/
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-.idea/
-*.swp
-*.swo
 
-# Node & JS Build Artifacts
-node_modules/
-dist/
-build/
-*.log
+# --------------------------------
+# APM
+# --------------------------------
+[....]
 
-# Python Build Artifacts
-__pycache__/
-*.py[cod]
-*$py.class
-.venv/
-env/
-venv/
-.pytest_cache/
 
-# Environment Variables & Secrets
-.env
-.env.local
-*.pem
-*.key
+################
+## GENERATED
+################
+{Toptal output}
 ```

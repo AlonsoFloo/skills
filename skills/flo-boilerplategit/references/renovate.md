@@ -2,16 +2,34 @@
 
 ```json
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:recommended",
-    ":semanticCommits"
-  ],
-  "packageRules": [
-    {
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-      "automerge": true
-    }
-  ]
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": [
+        "config:best-practices",
+        ":maintainLockFilesWeekly",
+        "abandonments:recommended",
+        "security:minimumReleaseAgeNpm",
+        "group:allNonMajor",
+        ":assignAndReview(AlonsoFloo)"
+    ],
+    "automerge": false,
+    "pinDigests": true,
+    "recreateWhen": "auto",
+    "minimumReleaseAge": "10 days",
+    "internalChecksFilter": "strict",
+    "rebaseWhen": "behind-base-branch",
+    "prHourlyLimit": 6,
+    "prConcurrentLimit": 6,
+    "labels": [
+        "renovate"
+    ],
+    "pre-commit": {
+        "enabled": true
+    },
+    "packageRules": [
+        {
+            "matchManagers": ["pre-commit"],
+            "pinDigests": false
+        }
+    ]
 }
 ```
