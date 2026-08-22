@@ -1,6 +1,17 @@
 ---
 name: flo-conventional-comments
 description: Use whenever commenting on a pull request or merge request, writing PR review feedback, creating Conventional Comments badge markdown, or choosing blocking/non-blocking comment decorations.
+license: Complete terms in LICENSE
+metadata:
+  author: github.com/AlonsoFloo
+  keywords:
+    - AlonsoFloo
+    - flo
+    - conventional-comments
+    - code-review
+    - pull-request
+    - shields-io
+    - badges
 ---
 
 # Conventional Comments

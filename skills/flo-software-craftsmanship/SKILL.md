@@ -1,6 +1,18 @@
 ---
 name: flo-software-craftsmanship
 description: Software architecture, domain modeling, code logic & engineering patterns
+license: Complete terms in LICENSE
+metadata:
+  author: github.com/AlonsoFloo
+  keywords:
+    - AlonsoFloo
+    - flo
+    - software-architecture
+    - domain-modeling
+    - solid
+    - design-patterns
+    - clean-code
+    - refactoring
 ---
 
 # Software Craftsmanship
