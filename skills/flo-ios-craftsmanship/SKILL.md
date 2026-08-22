@@ -1,6 +1,18 @@
 ---
 name: flo-ios-craftsmanship
 description: iOS architecture, Swift memory management & SwiftUI best practices
+license: Complete terms in LICENSE
+metadata:
+  author: github.com/AlonsoFloo
+  keywords:
+  - AlonsoFloo
+  - flo
+  - ios
+  - swift
+  - swiftui
+  - memory-management
+  - viewmodifier
+  - architecture
 ---
 
 # iOS Craftsmanship

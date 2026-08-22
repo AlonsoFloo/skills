@@ -1,6 +1,18 @@
 ---
 name: flo-testing-craftsmanship
 description: Testing conventions, behavioral naming, structured test layout & reactive stream testing
+license: Complete terms in LICENSE
+metadata:
+  author: github.com/AlonsoFloo
+  keywords:
+  - AlonsoFloo
+  - flo
+  - testing
+  - unit-testing
+  - test-naming
+  - turbine
+  - reactive-streams
+  - kotlin-flow
 ---
 
 # Testing Craftsmanship

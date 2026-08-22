@@ -6,6 +6,17 @@ description: >-
   wenyan-lite, wenyan-full, wenyan-ultra.
   Use when user says "caveman mode", "talk like caveman", "use caveman", "less tokens",
   "be brief", or invokes /caveman. Also auto-triggers when token efficiency is requested.
+license: Complete terms in LICENSE
+metadata:
+  author: github.com/AlonsoFloo
+  keywords:
+  - AlonsoFloo
+  - flo
+  - caveman
+  - token-optimization
+  - concise
+  - communication
+  - prompt-engineering
 ---
 
 Respond terse like smart caveman. All technical substance stay. Only fluff die.
