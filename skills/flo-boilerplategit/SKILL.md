@@ -23,7 +23,7 @@ Treat the rules below as operational guidance for AI coding agents and DevOps en
 
 Establish and enforce a consistent, high-quality, secure DevOps baseline for all Git repositories, ensuring proper CI/CD workflows, automated dependency updates, release automation, code quality hooks, and standard documentation.
 
-## Step Order & Workflow Rules
+## Execution Order & Step Rules
 
 ______________________________________________________________________
 
@@ -41,11 +41,11 @@ ______________________________________________________________________
 
 ## Rule 2: Cross-Check Against Standard Boilerplate Matrix
 
-**Description:** Compare the repository against the 11 core DevOps boilerplate components. Report missing or outdated configurations before applying updates.
+**Description:** Audit the repository against all 11 core DevOps boilerplate components. Report missing, incomplete, or outdated configurations before applying updates.
 
 **Boilerplate Components Matrix:**
 
-1. **README (`README.md`)**: Project overview, feature summary, quickstart, installation, usage, and badges.
+1. **README (`README.md`)**: Project overview, feature summary, quickstart, installation, usage, pre-commit instructions, and badges.
 1. **AGENTS (`AGENTS.md`)**: Guidance, index, and constraints for AI coding agents.
 1. **Release Please (`release-please-config.json` & `.release-please-manifest.json`)**: Automated semantic releases and changelog generation.
 1. **Renovate (`renovate.json`)**: Automated dependency update management.
@@ -59,17 +59,17 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-## Rule 3: Apply Smart Incremental Updates
+## Rule 3: Apply Smart Incremental Updates & Non-Destructive Merging
 
-**Description:** When operating on an already setupped repository, perform non-destructive updates. Merge missing keys, append missing sections, or create missing boilerplate files without overwriting customized project settings.
+**Description:** When operating on an already setupped repository, perform non-destructive updates. Merge missing keys into JSON/YAML files, append missing sections or patterns to text/Markdown files, or create missing boilerplate files without overwriting customized project settings.
 
 **❌ DON'T**
 
-Overwriting an existing `README.md` or `.gitignore` without checking project-specific content.
+Overwriting an existing `README.md`, `renovate.json`, or `.gitignore` without checking project-specific content.
 
 **✅ DO**
 
-Preserve existing project description in `README.md` while adding missing sections (e.g., pre-commit instructions or status badges). Append missing patterns to `.gitignore`.
+Preserve existing project description in `README.md` while adding missing sections (e.g., pre-commit instructions or status badges). Append missing patterns to `.gitignore`. Merge missing hook definitions into `.pre-commit-config.yaml`.
 
 ______________________________________________________________________
 
@@ -79,12 +79,15 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-## Rule 5: Validate Setup and Execute Pre-Commit Hooks
+## Rule 5: Validate Setup and Generate Summary Report
 
-**Description:** After generating or updating boilerplate files, run validation tools to confirm syntactical correctness and verify that pre-commit hooks pass across all files.
+**Description:** After generating or updating boilerplate files, run validation tools to confirm syntactical correctness, execute pre-commit hooks, and return a summary report.
 
 **Execution Steps:**
 
-1. Validate JSON and YAML file syntax.
-1. Ensure pre-commit is installed and execute `pre-commit run --all-files`.
-1. Auto-fix any formatting issues introduced during boilerplate generation.
+1. Validate syntax across modified JSON, YAML, and configuration files.
+1. Ensure pre-commit is installed and execute `pre-commit run --all-files`. Auto-fix any formatting issues introduced during boilerplate generation.
+1. Output a summary audit report detailing:
+   - Repository state (New or Established).
+   - List of boilerplate components created or updated.
+   - Final status of pre-commit checks and verification.
