@@ -27,6 +27,15 @@ apm install https://github.com/AlonsoFloo/skills.git#v2.1.0
 
 <!-- x-release-please-end -->
 
+### Contribution setup
+
+When working on this repository a few setup are required.
+
+```bash
+pre-commit install
+apm install
+```
+
 ## 📂 Repository Structure
 
 ```text
