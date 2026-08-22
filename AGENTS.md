@@ -14,6 +14,7 @@ assistants and software engineers.
    - Android & Kotlin Development → `flo-android-craftsmanship`
    - iOS & Swift Development → `flo-ios-craftsmanship`
    - DevOps & Security → `flo-devops-craftsmanship`
+   - Git Repository Setup & Boilerplate → `flo-boilerplategit`
 
 1. **Usage**:
 
