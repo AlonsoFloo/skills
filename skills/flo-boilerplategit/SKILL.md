@@ -99,7 +99,7 @@ ______________________________________________________________________
 
 1. Validate syntax across modified JSON, YAML, and configuration files.
 1. Ensure pre-commit is installed and execute `pre-commit run --all-files`. Auto-fix any formatting issues introduced during boilerplate generation.
-1. Output a summary audit report detailing:
+1. Output in the chat a summary audit report detailing:
    - Repository state (New or Established).
    - List of boilerplate components created or updated.
    - Final status of pre-commit checks and verification.

@@ -3,6 +3,11 @@
 A personal, agent-friendly repository of engineering rules, patterns, and
 practices for software development.
 
+[![apm](https://img.shields.io/apm/v/skills?label=apm&color=blue)](https://apm.microsoft.com/)
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![renovate](https://img.shields.io/badge/renovate-enabled-brightgreen)](renovate.json)
+[!\[release-please\](https://img.shields.io/badge/release-please- orange)](.github/workflows/release-please.yml)
+
 ## Purpose
 
 Personal use for me, but you are welcome to view, and propose new stuffs.
