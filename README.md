@@ -3,6 +3,10 @@
 A personal, agent-friendly repository of engineering rules, patterns, and
 practices for software development.
 
+## Purpose
+
+Personal use for me, but you are welcome to view, and propose new stuffs.
+
 ## Install via APM
 
 <!-- x-release-please-start-version -->
@@ -13,6 +17,29 @@ apm install https://github.com/AlonsoFloo/skills.git#v2.0.0
 
 <!-- x-release-please-end -->
 
-## Purpose
+## 📂 Repository Structure
 
-Personal use for me, but you are welcome to view, and propose new stuffs.
+```text
+.
+├── agents/                         # Active working folder for agent definitions
+│   └── [agent files..]
+├── prompts/                        # Active working folder for prompt templates
+│   └── [prompt files..]
+├── skills/                         # Active working folder for skill modules
+│   ├── [skills files..]
+├── .apm/
+│   └── [symlinks]                  # ⚠️ Simlinks based on root folders (Do not edit)
+├── .agents/
+│   └── [auto-generated]            # ⚠️ Managed by Microsoft APM (Do not edit)
+└── .github/
+    └── workflows
+    └── ISSUE_TEMPLATE
+    └── agents [auto-generated]     # ⚠️ Managed by Microsoft APM (Do not edit)
+    └── prompts [auto-generated]    # ⚠️ Managed by Microsoft APM (Do not edit)
+```
+
+## References
+
+APM documentation : [https://microsoft.github.io/apm/](https://microsoft.github.io/apm/)
+Agents.md documentation : [https://agents.md/](https://agents.md/)
+DotAgentProtocol for `.agents` documentation : [https://dotagentsprotocol.com/](https://dotagentsprotocol.com/)

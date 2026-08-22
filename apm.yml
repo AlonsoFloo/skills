@@ -46,6 +46,7 @@ dependencies:
         - conventional-branch
         - conventional-commit
         - security-review
+        - Thinking-Beast-Mode
 
 devDependencies:
   apm:

@@ -5,20 +5,10 @@
 This repository provides agent-friendly craftsmanship skills for AI coding
 assistants and software engineers.
 
-## Instructions
+## APM Compatibility
 
-1. **Skill Selection**:
+Some folder are generated and handled by Microsoft Agent Package Manager (APM).
+Theses folder must not be edited directly since they are automaticaly generated
+The folder `.apm` is also mainly symlinks of root folder for the APM to detects agents, skills, prompts, etc..
 
-   - Software Architecture & Code Logic → `flo-software-craftsmanship`
-   - Unit & Flow Testing → `flo-testing-craftsmanship`
-   - Android & Kotlin Development → `flo-android-craftsmanship`
-   - iOS & Swift Development → `flo-ios-craftsmanship`
-   - DevOps & Security → `flo-devops-craftsmanship`
-   - Git Repository Setup & Boilerplate → `flo-boilerplategit`
-
-1. **Usage**:
-
-   - Read the relevant skill's `SKILL.md` for core rules (numbered from `Rule 1`
-     onwards, keeping instructions light with 1 concise example).
-   - Refer to `references/examples.md` in each skill directory for detailed
-     examples and deep dives when needed.
+All details in the doc : [https://microsoft.github.io/apm/producer/author-primitives/](https://microsoft.github.io/apm/producer/author-primitives/)

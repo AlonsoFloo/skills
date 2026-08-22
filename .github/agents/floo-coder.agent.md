@@ -32,11 +32,20 @@ When asked to perform coding task, always load the following skills:
 - flo-software-craftsmanship
 - flo-devops-craftsmanship
 - flo-testing-craftsmanship
+- conventional-branch
+- conventional-commit
 
-If the task is for an iOS app, load:
+If the task is for an iOS app, maybe load:
 
 - flo-ios-craftsmanship
+- swift-concurrency
+- apple-appstore-reviewer
 
-If the task is for a Kotlin/Android/Multiplatform app, load:
+If the task is for a Kotlin/Android/Multiplatform app, maybe load:
 
 - flo-android-craftsmanship
+- compose-animations
+- ordering-modifier-chains
+- using-efficient-effects
+- all skills starting with "kotlin-"
+- all skills android keyworkds

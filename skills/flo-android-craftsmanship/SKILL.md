@@ -1,6 +1,18 @@
 ---
 name: flo-android-craftsmanship
 description: Android architecture, Kotlin UI state management & Jetpack Compose best practices
+license: Complete terms in LICENSE
+metadata:
+  author: github.com/AlonsoFloo
+  keywords:
+    - AlonsoFloo
+    - flo
+    - android
+    - kotlin
+    - jetpack-compose
+    - ui-state
+    - architecture
+    - viewmodel
 ---
 
 # Android Craftsmanship
