@@ -22,6 +22,9 @@ Treat the rules below as engineering guidance for AI coding assistants, code
 reviewers, and software engineers. For comprehensive examples and deep dives,
 see [references/examples.md](references/examples.md).
 
+You are never allow to commit change automaticaly. Leave the final decision to the human developer.
+Leave the changes in the staging area for review and approval before committing, unless explicitly authorized.
+
 ## Rule 1: Enforce Detailed Commit Messages for AI-Assisted Code
 
 **Description:** When utilizing AI coding assistants, git commit messages must

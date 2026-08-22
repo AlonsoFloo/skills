@@ -22,6 +22,8 @@ Treat the rules below as operational guidance for AI coding agents and DevOps en
 ## Main Goal
 
 Establish and enforce a consistent, high-quality, secure DevOps baseline for all Git repositories, ensuring proper CI/CD workflows, automated dependency updates, release automation, code quality hooks, and standard documentation.
+You are never allow to commit change automaticaly. Leave the final decision to the human developer.
+Leave the changes in the staging area for review and approval before committing, unless explicitly authorized.
 
 ## Execution Order & Step Rules
 
