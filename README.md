@@ -58,6 +58,6 @@ See [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## References
 
-APM documentation : [https://microsoft.github.io/apm/](https://microsoft.github.io/apm/)
-Agents.md documentation : [https://agents.md/](https://agents.md/)
-DotAgentProtocol for `.agents` documentation : [https://dotagentsprotocol.com/](https://dotagentsprotocol.com/)
+- APM documentation : [https://microsoft.github.io/apm/](https://microsoft.github.io/apm/)
+- Agents.md documentation : [https://agents.md/](https://agents.md/)
+- DotAgentProtocol for `.agents` documentation : [https://dotagentsprotocol.com/](https://dotagentsprotocol.com/)
