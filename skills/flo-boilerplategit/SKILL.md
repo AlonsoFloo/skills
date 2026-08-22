@@ -43,7 +43,7 @@ ______________________________________________________________________
 
 ## Rule 2: Cross-Check Against Standard Boilerplate Matrix
 
-**Description:** Audit the repository against all 11 core DevOps boilerplate components. Report missing, incomplete, or outdated configurations before applying updates.
+**Description:** Audit the repository against all core DevOps boilerplate components. Report missing, incomplete, or outdated configurations before applying updates.
 
 **Boilerplate Components Matrix:**
 
@@ -51,18 +51,20 @@ ______________________________________________________________________
 1. **AGENTS (`AGENTS.md`)**: Guidance, index, and constraints for AI coding agents. See [references/agents.md](references/agents.md).
 1. **Release Please (`release-please-config.json` & `.release-please-manifest.json`)**: Automated semantic releases and changelog generation. See [references/release-please.md](references/release-please.md).
 1. **Renovate (`renovate.json`)**: Automated dependency update management. See [references/renovate.md](references/renovate.md).
-1. **Pre-commit (`.pre-commit-config.yaml`)**: Git pre-commit hooks for linting, secret scanning, formatting, and commit validation. See [references/pre-commit.md](references/pre-commit.md).
+1. **Pre-commit & Commitlint (`.pre-commit-config.yaml` & `.commitlintrc.js`)**: Git pre-commit hooks for linting, secret scanning, formatting, and commit validation with commitlint. See [references/pre-commit.md](references/pre-commit.md) and [references/commitlintrc.md](references/commitlintrc.md).
 1. **GitHub Workflows (`.github/workflows/`)**: Actions workflows for PR validation (`pr-checks.yml`) and releases (`release-please.yml`). See [references/workflows.md](references/workflows.md).
 1. **GitHub Templates (`.github/ISSUE_TEMPLATE/` & `.github/PULL_REQUEST_TEMPLATE.md`)**: Standard issue and pull request templates. See [references/github-templates.md](references/github-templates.md).
 1. **Gitignore (`.gitignore`)**: Environment, OS, IDE, and build artifact exclusion patterns. See [references/gitignore.md](references/gitignore.md).
 1. **Code Owners (`.github/CODEOWNERS`)**: Repository ownership and review requirements. See [references/codeowners.md](references/codeowners.md).
 1. **EditorConfig (`.editorconfig`)**: Cross-editor indentation, character set, and trailing whitespace rules. See [references/editorconfig.md](references/editorconfig.md).
+1. **License (`LICENSE`)**: Repository open source license text. See [references/license.md](references/license.md).
+1. **Security Policy (`SECURITY.md`)**: Security guidelines and vulnerability disclosure instructions. See [references/security.md](references/security.md).
 
 ______________________________________________________________________
 
 ## Rule 3: Apply Smart Incremental Updates & Non-Destructive Merging
 
-**Description:** When operating on an already setupped repository, perform non-destructive updates. Merge missing keys into JSON/YAML files, append missing sections or patterns to text/Markdown files, or create missing boilerplate files without overwriting customized project settings.
+**Description:** When operating on an already setupped repository, perform non-destructive updates. Merge missing keys into JSON/YAML files, append missing sections or patterns to text/Markdown files, or create missing boilerplate files without overwriting customized project settings. If existing files or code are found, ensure the minimum baseline set defined across all reference templates is covered.
 
 **❌ DON'T**
 
@@ -70,7 +72,7 @@ Overwriting an existing `README.md`, `renovate.json`, or `.gitignore` without ch
 
 **✅ DO**
 
-Preserve existing project description in `README.md` while adding missing sections (e.g., pre-commit instructions or status badges). Append missing patterns to `.gitignore`. Merge missing hook definitions into `.pre-commit-config.yaml`.
+Preserve existing project description in `README.md` while adding missing sections (e.g., pre-commit instructions or status badges). Append missing patterns to `.gitignore`. Merge missing hook definitions into `.pre-commit-config.yaml`. Ensure existing code/files cover the minimum baseline set of standard boilerplate elements defined in the reference templates.
 
 ______________________________________________________________________
 
@@ -83,11 +85,14 @@ ______________________________________________________________________
 - [references/release-please.md](references/release-please.md)
 - [references/renovate.md](references/renovate.md)
 - [references/pre-commit.md](references/pre-commit.md)
+- [references/commitlintrc.md](references/commitlintrc.md)
 - [references/workflows.md](references/workflows.md)
 - [references/github-templates.md](references/github-templates.md)
 - [references/gitignore.md](references/gitignore.md)
 - [references/codeowners.md](references/codeowners.md)
 - [references/editorconfig.md](references/editorconfig.md)
+- [references/license.md](references/license.md)
+- [references/security.md](references/security.md)
 
 ______________________________________________________________________
 
