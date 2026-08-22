@@ -19,6 +19,8 @@ Personal use for me, but you are welcome to view, and propose new stuffs.
 
 ### Installation
 
+To install this tool on your machine or repo, run:
+
 <!-- x-release-please-start-version -->
 
 ```bash
@@ -27,9 +29,9 @@ apm install https://github.com/AlonsoFloo/skills.git#v2.1.0
 
 <!-- x-release-please-end -->
 
-### Contribution setup
+### Contribution setup (CONTRIBUTOR ONLY)
 
-When working on this repository a few setup are required.
+When working on this repository a few setup are required, you need to run:
 
 ```bash
 pre-commit install
