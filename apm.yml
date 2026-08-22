@@ -9,6 +9,7 @@ targets:
   - agent-skills
   - copilot
   - antigravity
+  - opencode
 
 dependencies:
   apm:
