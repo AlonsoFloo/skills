@@ -6,6 +6,7 @@ on:
       - 'apm.lock.yaml'
       - '.apm/**'
       - '.github/**'
+      - '.opencode/**'
       - '.claude/**'
       - '.cursor/**'
 
