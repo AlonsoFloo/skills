@@ -5,6 +5,10 @@ on:
     branches:
       - main
 
+concurrency:
+  group: apm-audit-main-${{ github.workflow }}
+  cancel-in-progress: true
+
 permissions:
   contents: write
   pull-requests: write
