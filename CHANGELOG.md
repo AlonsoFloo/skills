@@ -1,5 +1,20 @@
 # Changelog
 
+## [2.2.0](https://github.com/AlonsoFloo/skills/compare/v2.1.0...v2.2.0) (2026-08-23)
+
+
+### Features
+
+* added submodules into git references ([611ffc7](https://github.com/AlonsoFloo/skills/commit/611ffc79ba7b56d708028a9b84745853d721e72a))
+* **boilerplategit:** Improved editor config ([ae7b24f](https://github.com/AlonsoFloo/skills/commit/ae7b24f31856336262d8284f912012328805540c))
+* **flo-boilerplategit:** add license, security, and commitlint references and minimum coverage rule ([#23](https://github.com/AlonsoFloo/skills/issues/23)) ([b204dec](https://github.com/AlonsoFloo/skills/commit/b204dec56821db89b5e80cf113f0ee3231acc25f))
+* **flo-boilerplategit:** Enhance README template with additional sections ([1fad91f](https://github.com/AlonsoFloo/skills/commit/1fad91f0964decbd60a1019a5617d438a758d3fc))
+
+
+### Bug Fixes
+
+* improved agents ([9e6b5ae](https://github.com/AlonsoFloo/skills/commit/9e6b5ae7ee26c4e1ed1389c3d82fe6035749bec5))
+
 ## [2.1.0](https://github.com/AlonsoFloo/skills/compare/v2.0.0...v2.1.0) (2026-08-22)
 
 
