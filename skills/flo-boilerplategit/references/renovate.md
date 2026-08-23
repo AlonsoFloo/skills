@@ -17,12 +17,16 @@
     "minimumReleaseAge": "10 days",
     "internalChecksFilter": "strict",
     "rebaseWhen": "behind-base-branch",
+    "timezone": "UTC",
     "prHourlyLimit": 6,
     "prConcurrentLimit": 6,
     "labels": [
         "renovate"
     ],
     "pre-commit": {
+        "enabled": true
+    },
+    "git-submodules": {
         "enabled": true
     },
     "packageRules": [
