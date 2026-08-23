@@ -9,6 +9,10 @@ permissions:
       pull-requests: write
       issues: write
 
+concurrency:
+  group: pr-check-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   pre-commit:
     runs-on: ubuntu-latest

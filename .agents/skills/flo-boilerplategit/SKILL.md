@@ -47,18 +47,17 @@ ______________________________________________________________________
 
 **Boilerplate Components Matrix:**
 
-1. **README (`README.md`)**: Overview, feature summary, quickstart, pre-commit instructions, and badges. See [references/readme.md](references/readme.md).
-1. **AGENTS (`AGENTS.md`)**: Guidance, index, and constraints for AI coding agents. See [references/agents.md](references/agents.md).
+1. **README**: Overview, feature summary, quickstart, pre-commit instructions, and badges. See [references/readme.md](references/readme.md).
+1. **AGENTS**: Guidance, index, and constraints for AI coding agents. See [references/agents.md](references/agents.md).
 1. **Release Please (`release-please-config.json` & `.release-please-manifest.json`)**: Automated semantic releases and changelog generation. See [references/release-please.md](references/release-please.md).
-1. **Renovate (`renovate.json`)**: Automated dependency update management. See [references/renovate.md](references/renovate.md).
-1. **Pre-commit & Commitlint (`.pre-commit-config.yaml` & `.commitlintrc.js`)**: Git pre-commit hooks for linting, secret scanning, formatting, and commit validation with commitlint. See [references/pre-commit.md](references/pre-commit.md) and [references/commitlintrc.md](references/commitlintrc.md).
-1. **GitHub Workflows (`.github/workflows/`)**: Actions workflows for PR validation (`pr-checks.yml`) and releases (`release-please.yml`). See [references/workflows.md](references/workflows.md).
+1. **Renovate**: Automated dependency update management. See [references/renovate.md](references/renovate.md).
+1. **Pre-commit**: Git pre-commit hooks for linting, secret scanning, formatting, and commit validation with commitlint. See [references/pre-commit.md](references/pre-commit.md).
 1. **GitHub Templates (`.github/ISSUE_TEMPLATE/` & `.github/PULL_REQUEST_TEMPLATE.md`)**: Standard issue and pull request templates. See [references/github-templates.md](references/github-templates.md).
-1. **Gitignore (`.gitignore`)**: Environment, OS, IDE, and build artifact exclusion patterns. See [references/gitignore.md](references/gitignore.md).
-1. **Code Owners (`.github/CODEOWNERS`)**: Repository ownership and review requirements. See [references/codeowners.md](references/codeowners.md).
-1. **EditorConfig (`.editorconfig`)**: Cross-editor indentation, character set, and trailing whitespace rules. See [references/editorconfig.md](references/editorconfig.md).
-1. **License (`LICENSE`)**: Repository open source license text. See [references/license.md](references/license.md).
-1. **Security Policy (`SECURITY.md`)**: Security guidelines and vulnerability disclosure instructions. See [references/security.md](references/security.md).
+1. **Gitignore**: Environment, OS, IDE, and build artifact exclusion patterns. See [references/gitignore.md](references/gitignore.md).
+1. **Code Owners**: Repository ownership and review requirements. See [references/codeowners.md](references/codeowners.md).
+1. **EditorConfig**: Cross-editor indentation, character set, and trailing whitespace rules. See [references/editorconfig.md](references/editorconfig.md).
+1. **License**: Repository open source license text. See [references/license.md](references/license.md).
+1. **Security Policy**: Security guidelines and vulnerability disclosure instructions. See [references/security.md](references/security.md).
 
 ______________________________________________________________________
 
@@ -85,8 +84,6 @@ ______________________________________________________________________
 - [references/release-please.md](references/release-please.md)
 - [references/renovate.md](references/renovate.md)
 - [references/pre-commit.md](references/pre-commit.md)
-- [references/commitlintrc.md](references/commitlintrc.md)
-- [references/workflows.md](references/workflows.md)
 - [references/github-templates.md](references/github-templates.md)
 - [references/gitignore.md](references/gitignore.md)
 - [references/codeowners.md](references/codeowners.md)
