@@ -18,6 +18,6 @@ jobs:
       - uses: microsoft/apm-action@d723bb64ed70c135bbaf87d126b721dd2dae0439 # v1.10.0
         with:
           setup-only: 'true'
-          apm-version: '0.28.0'
+          apm-version: 'latest'
 
       - run: apm audit --ci --no-fail-fast --no-cache
