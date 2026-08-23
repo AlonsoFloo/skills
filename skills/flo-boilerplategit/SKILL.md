@@ -72,7 +72,7 @@ Overwriting an existing `README.md`, `renovate.json`, or `.gitignore` without ch
 
 **✅ DO**
 
-Preserve existing project description in `README.md` while adding missing sections (e.g., pre-commit instructions or status badges). Append missing patterns to `.gitignore`. Merge missing hook definitions into `.pre-commit-config.yaml`. Ensure existing code/files cover the minimum baseline set of standard boilerplate elements defined in the reference templates.
+Preserve existing project description in `README.md` while adding missing sections (e.g., pre-commit instructions or status badges). Append missing patterns or definition. Ensure existing code/files cover the minimum baseline set of standard boilerplate elements defined in the reference templates, without overwriting customized project settings.
 
 ______________________________________________________________________
 

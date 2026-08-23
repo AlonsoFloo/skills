@@ -8,7 +8,6 @@ root = true
 # ---
 # | General Settings
 # ---
-
 [*]
 end_of_line = lf
 insert_final_newline = true
@@ -23,3 +22,21 @@ indent_size = 4
 # YAML Files
 [*.{yml,yaml}]
 indent_size = 2
+
+[*.{md,mdx}]
+indent_size = 2
+
+[*.{json,json5}]
+indent_size = 2
+
+[*.{xml,config}]
+indent_size = 2
+
+[*.{cmd,bat}]
+end_of_line = crlf
+
+[*.sh]
+end_of_line = lf
+
+[Makefile]
+indent_style = tab
