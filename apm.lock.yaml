@@ -1,5 +1,5 @@
 lockfile_version: '2'
-generated_at: '2026-08-22T07:33:36.260731+00:00'
+generated_at: '2026-08-23T12:19:19.316304+00:00'
 apm_version: 0.28.0
 dependencies:
 - repo_url: android/skills
@@ -116,7 +116,7 @@ dependencies:
   - swift-concurrency
   constraint: 2.3.0
   resolved_tag: 2.3.0
-  resolved_at: '2026-08-16T07:50:17+00:00'
+  resolved_at: '2026-08-23T12:18:58+00:00'
   declared_license: MIT
 - repo_url: chrisbanes/skills
   name: chrisbanes-skills
@@ -147,14 +147,14 @@ dependencies:
   - kotlin-control-flow
   constraint: 2026.8.16
   resolved_tag: 2026.8.16
-  resolved_at: '2026-08-16T10:01:50+00:00'
+  resolved_at: '2026-08-23T12:18:58+00:00'
   declared_license: Apache-2.0
 - repo_url: github/awesome-copilot
   name: awesome-copilot
   host: github.com
-  resolved_commit: a80885b76044550770f60f360f8a0e5ae3524a31
+  resolved_commit: 83561bd7d8a46fcda0581aedabdf8eac7cb196b6
   resolved_ref: main
-  version: unknown
+  version: 0.0.0
   package_type: skill_bundle
   deployed_files:
   - .agents/skills/apple-appstore-reviewer
@@ -180,7 +180,7 @@ dependencies:
     .agents/skills/security-review/references/secret-patterns.md: sha256:38f84f60021490d785f33fc70f2ce784888d2a751781a881372e6862e7e11288
     .agents/skills/security-review/references/vuln-categories.md: sha256:d06159479bd92b9dcf3a2842e09f7712f1fd297c0bc9792fe20bc3cb69188df5
     .agents/skills/security-review/references/vulnerable-packages.md: sha256:8693a6a258bad18a8a1d0925bc1eae9c744071ff37a36b8f1da83adca93608af
-  content_hash: sha256:ed51dad97e496f9c6696eb7283fc7880f607a165e1ed3fe928977c72eaf46e9a
+  content_hash: sha256:ba4972cafe6b350bafffa5e579d3c1ad94dbda052bcd7172c4b91bb947c2500a
   skill_subset:
   - Thinking-Beast-Mode
   - apple-appstore-reviewer
