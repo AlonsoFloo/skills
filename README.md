@@ -25,7 +25,7 @@ To install this tool on your machine or repo, run:
 <!-- x-release-please-start-version -->
 
 ```bash
-apm install https://github.com/AlonsoFloo/skills.git#v2.2.0
+apm install https://github.com/AlonsoFloo/skills.git#v2.2.1
 ```
 
 <!-- x-release-please-end -->

@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.1](https://github.com/AlonsoFloo/skills/compare/v2.2.0...v2.2.1) (2026-08-25)
+
+
+### Bug Fixes
+
+* **caveman:** made caveman shorter and simplier ([730c6a5](https://github.com/AlonsoFloo/skills/commit/730c6a5225f6b4f4c8a1c2e2eb36abd42911261e))
+
 ## [2.2.0](https://github.com/AlonsoFloo/skills/compare/v2.1.0...v2.2.0) (2026-08-23)
 
 
