@@ -2,7 +2,7 @@ name: Release Assets
 
 on:
   release:
-    types: [created]
+    types: [released]
 
 concurrency:
   group: release-assets-${{ github.event.release.tag_name }}
