@@ -15,14 +15,21 @@ the product contract.
 
 1. Identify each coroutine owner, cancellation boundary, producer, consumer,
    durable state, and transient event.
-2. Select a scope whose lifecycle owns the work; do not retain arbitrary scopes
+2. Before changing an API, compare its existing caller-visible contract with
+   the required owner and lifetime. If a suspend API already gives its caller
+   cancellation, result, and failure ownership, finish with no change; do not
+   add a scope, `launch`, callback, or deferred wrapper merely for convenience.
+3. Select a scope whose lifecycle owns the work; do not retain arbitrary scopes
    or hide unstructured launches behind non-suspending APIs.
-3. Model renderable, current data as state and imperative one-shot work as an
+4. Model renderable, current data as state and imperative one-shot work as an
    event only when its loss and replay behavior are explicitly acceptable.
-4. Choose Flow sharing and buffering semantics from the producer and consumer
+   For a one-consumer navigation handoff that must survive a collector gap,
+   choose a buffered `Channel` exposed as `receiveAsFlow()`; do not preserve a
+   replay-zero `SharedFlow` after identifying event loss as the defect.
+5. Choose Flow sharing and buffering semantics from the producer and consumer
    lifetimes rather than from a default.
-5. Read the focused reference for the material concern below.
-6. Finish when cancellation, restart, replay, and failure behavior are all
+6. Read the focused reference for the material concern below.
+7. Finish when cancellation, restart, replay, and failure behavior are all
    observable from the public API and no caller must guess who owns the work.
 
 ## Topic router
@@ -32,14 +39,3 @@ the product contract.
 | Stored `CoroutineScope`, `init { launch }`, fire-and-forget API, `runBlocking`, broad catch, or cancellation boundary | [Structured concurrency](references/structured-concurrency.md) |
 | `StateFlow`, `SharedFlow`, `Channel`, `stateIn`, `SharingStarted`, `.value`, state updates, sentinel values, or one-shot events | [Flow state and events](references/flow-state-events.md) |
 | Compose collection or UI effect handling | [Compose state and effects](../../../apm_modules/chrisbanes/skills/skills/compose-state-and-effects/SKILL.md) |
-
-## RED/GREEN agent scenarios
-
-1. RED stores a long-lived `CoroutineScope` in a service and launches from
-   arbitrary callers. GREEN makes ownership and cancellation follow a defined
-   lifecycle boundary.
-2. Novel case: a screen needs replayable loading state and non-replayable
-   navigation. GREEN uses distinct state and event contracts with documented
-   delivery semantics.
-3. Counterexample: a suspend function already has a caller-owned scope. GREEN
-   does not add an internal scope merely to make the API look asynchronous.

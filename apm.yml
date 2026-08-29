@@ -17,7 +17,7 @@ dependencies:
     - git: https://github.com/Kotlin/kotlin-agent-skills.git#08d7ad0d74a9a5a548287b2bd4926180fab56cac
 
     # Android development skills and best practices.
-    - git: https://github.com/android/skills.git#v1.0.7
+    - git: https://github.com/android/skills.git#v1.0.10
 
     # Swift concurrency: async/await, actors, Sendable, structured concurrency,
     # and modern Swift concurrency patterns.
@@ -26,22 +26,22 @@ dependencies:
         - swift-concurrency
 
     # Jetpack Compose animations and Kotlin control-flow best practices.
-    - git: https://github.com/chrisbanes/skills.git#2026.8.16
+    - git: https://github.com/chrisbanes/skills.git#2026.8.27
       skills:
         - compose-animations
         - kotlin-control-flow
         - kotlin-concurrency-and-flow
 
     # Jetpack Compose modifier ordering and efficient modifier chains.
-    - git: https://github.com/skydoves/compose-performance-skills.git#main
+    - git: https://github.com/skydoves/compose-performance-skills.git#1b32f81724c0d71fe9ef093ca44697f559fdab6e
       path: modifiers/ordering-modifier-chains
 
     # Efficient handling of side effects in Jetpack Compose.
-    - git: https://github.com/skydoves/compose-performance-skills.git#main
+    - git: https://github.com/skydoves/compose-performance-skills.git#1b32f81724c0d71fe9ef093ca44697f559fdab6e
       path: side-effects/using-efficient-effects
 
     # Efficient handling of side effects in Jetpack Compose.
-    - git: https://github.com/github/awesome-copilot.git#main
+    - git: https://github.com/github/awesome-copilot.git#f11a4e441c5ff061b4f8ae37952be8c602e4034e
       skills:
         - apple-appstore-reviewer
         - conventional-branch
@@ -53,6 +53,6 @@ devDependencies:
   apm:
     # Skill development: guidance for creating, validating, and maintaining
     # agent skills.
-    - git: https://github.com/anthropics/skills.git#f6656c1256d5a8adfa37db9110046ef20bac644c
+    - git: https://github.com/anthropics/skills.git#3b3fad96af16a10759d930941b4520ba0c40edae
       skills:
         - skill-creator

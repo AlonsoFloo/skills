@@ -1,21 +1,21 @@
 lockfile_version: '2'
-generated_at: '2026-08-25T17:51:27.757724+00:00'
+generated_at: '2026-08-29T18:04:01.507264+00:00'
 apm_version: 0.28.0
 dependencies:
 - repo_url: android/skills
   name: skills
   host: github.com
-  resolved_commit: 1e5e7ae6138bebd0835d0d5854b0b9adfeed3181
-  resolved_ref: v1.0.7
-  version: 1e5e7ae
+  resolved_commit: aaca635061a4befdd3890d63c4a02963f2e8d925
+  resolved_ref: v1.0.10
+  version: aaca635
   package_type: marketplace_plugin
-  content_hash: sha256:c279dfbb10968d243d278807f3a17cbb05ab84b951a001ec47f160bf0b8dac36
+  content_hash: sha256:a902783a7914962c59bda0057888b8cf28801b97d00407a7f40b1df636b00f3a
 - repo_url: anthropics/skills
   name: skills
   host: github.com
-  resolved_commit: f6656c1256d5a8adfa37db9110046ef20bac644c
-  resolved_ref: f6656c1256d5a8adfa37db9110046ef20bac644c
-  version: f6656c1
+  resolved_commit: 3b3fad96af16a10759d930941b4520ba0c40edae
+  resolved_ref: 3b3fad96af16a10759d930941b4520ba0c40edae
+  version: 3b3fad9
   package_type: marketplace_plugin
   deployed_files:
   - .agents/skills/skill-creator
@@ -56,7 +56,7 @@ dependencies:
     .agents/skills/skill-creator/scripts/run_eval.py: sha256:43e3b8f80dbf69c343967ba77e268fae991d9fa3ed68b32a0ff02532cd48657f
     .agents/skills/skill-creator/scripts/run_loop.py: sha256:7bd6f674203168520517eec94c55f493c0d154339b061b4d7c0f0dad187d0f21
     .agents/skills/skill-creator/scripts/utils.py: sha256:3af8ae62c40c73ab712207436a0d9a981e845f25c5a7040229eb189cc8e45bb1
-  content_hash: sha256:cedf08aec3870812a8b89ab44e701b6029535eb0ac79c62ea1c6d3c20da60c18
+  content_hash: sha256:77b57e5359dca74de5cc0d5f7768a9f2acd3474683443718d3605ce5b0a1e2f9
   is_dev: true
   skill_subset:
   - skill-creator
@@ -121,13 +121,14 @@ dependencies:
 - repo_url: chrisbanes/skills
   name: chrisbanes-skills
   host: github.com
-  resolved_commit: a354bb0230d43396bdd3bd7c82aa7276aa1e1fae
-  resolved_ref: 2026.8.16
-  version: 2026.8.16
+  resolved_commit: 2d202c722c1815007619ee0b667401b9d42e456e
+  resolved_ref: 2026.8.27
+  version: 2026.8.27
   package_type: marketplace_plugin
   deployed_files:
   - .agents/skills/compose-animations
   - .agents/skills/compose-animations/SKILL.md
+  - .agents/skills/compose-animations/references/animated-content.md
   - .agents/skills/kotlin-concurrency-and-flow
   - .agents/skills/kotlin-concurrency-and-flow/SKILL.md
   - .agents/skills/kotlin-concurrency-and-flow/references/flow-state-events.md
@@ -135,26 +136,27 @@ dependencies:
   - .agents/skills/kotlin-control-flow
   - .agents/skills/kotlin-control-flow/SKILL.md
   deployed_file_hashes:
-    .agents/skills/compose-animations/SKILL.md: sha256:0d1344b1b4874ceb7f7c45d94fb6f354527bb4a3549e6bc69105877ee155a2c1
-    .agents/skills/kotlin-concurrency-and-flow/SKILL.md: sha256:0d26e6df0c11f27928304fd0aa97b28a4c4e0f61ac3de900872382dff3875fea
-    .agents/skills/kotlin-concurrency-and-flow/references/flow-state-events.md: sha256:c83f9bf66755ee3e797c42a15332121b2de53b18d12c9de92a13b6561b307113
-    .agents/skills/kotlin-concurrency-and-flow/references/structured-concurrency.md: sha256:b1b3321a9fa0d59c982229361f63a6485fc2a8db59f75a8ff87b7859a470cb32
-    .agents/skills/kotlin-control-flow/SKILL.md: sha256:abbba8f1b21a24bea16e83a560d6fe67dc41bcc754b05029e76711f2a40a213d
-  content_hash: sha256:e18a5c1cd77542ca2f61357faa189e65dd9720900e24805427f5ecd7e3b45469
+    .agents/skills/compose-animations/SKILL.md: sha256:854685a8e0184b347fc88015728fa6ad1f6f49c9b71f833fca694d92a8fcf382
+    .agents/skills/compose-animations/references/animated-content.md: sha256:5e2886bd7f1c0e8884fe60d38ac04e0c23b45f5693026da38cfaf5e1cc31b1df
+    .agents/skills/kotlin-concurrency-and-flow/SKILL.md: sha256:fe05d8f5459c2f60926b9c9e9034447fa96b1b743b36c3f848a79d2b434b46a0
+    .agents/skills/kotlin-concurrency-and-flow/references/flow-state-events.md: sha256:21bb442d00695d5f742625da2075a9313e55a367d87d7a2899ac1f9eeb4d263c
+    .agents/skills/kotlin-concurrency-and-flow/references/structured-concurrency.md: sha256:9a3df9ec8aa844fbb87e91cf66b6abf5ee0b440df63203c34f6cd72dd723355d
+    .agents/skills/kotlin-control-flow/SKILL.md: sha256:f1d5b0f679a7c95f08e5ec0503c2436ccb444e96f6079b0ccaada627c5c00724
+  content_hash: sha256:8e9c0227017472087e4d862d0ff724d55c0953a5d9dc22bd33ede00e5357772e
   skill_subset:
   - compose-animations
   - kotlin-concurrency-and-flow
   - kotlin-control-flow
-  constraint: 2026.8.16
-  resolved_tag: 2026.8.16
-  resolved_at: '2026-08-23T15:48:20+00:00'
+  constraint: 2026.8.27
+  resolved_tag: 2026.8.27
+  resolved_at: '2026-08-29T18:03:23+00:00'
   declared_license: Apache-2.0
 - repo_url: github/awesome-copilot
   name: awesome-copilot
   host: github.com
-  resolved_commit: a80885b76044550770f60f360f8a0e5ae3524a31
-  resolved_ref: main
-  version: unknown
+  resolved_commit: f11a4e441c5ff061b4f8ae37952be8c602e4034e
+  resolved_ref: f11a4e441c5ff061b4f8ae37952be8c602e4034e
+  version: 0.0.0
   package_type: skill_bundle
   deployed_files:
   - .agents/skills/apple-appstore-reviewer
@@ -171,7 +173,7 @@ dependencies:
   - .agents/skills/security-review/references/vuln-categories.md
   - .agents/skills/security-review/references/vulnerable-packages.md
   deployed_file_hashes:
-    .agents/skills/apple-appstore-reviewer/SKILL.md: sha256:8e24825ff85137d497119bff6c2b91ce37238cad67493e44af7c5ca95b4e4058
+    .agents/skills/apple-appstore-reviewer/SKILL.md: sha256:d469ef904074f79b729479814835c62256cea68405aa30271bb52f779c183d30
     .agents/skills/conventional-branch/SKILL.md: sha256:94b962ff93ac639c8b760a29465ca48f51d6af1ad1b4bdd242d52f1260959b07
     .agents/skills/conventional-commit/SKILL.md: sha256:250235f71b8c501a7744ded911281292324bcd1a2d014e34b25041e2d2c8bf73
     .agents/skills/security-review/SKILL.md: sha256:002392d88637b89e4cbc409a0531834970937f3b57c0b448a17e04b5ca6d356c
@@ -180,7 +182,7 @@ dependencies:
     .agents/skills/security-review/references/secret-patterns.md: sha256:38f84f60021490d785f33fc70f2ce784888d2a751781a881372e6862e7e11288
     .agents/skills/security-review/references/vuln-categories.md: sha256:d06159479bd92b9dcf3a2842e09f7712f1fd297c0bc9792fe20bc3cb69188df5
     .agents/skills/security-review/references/vulnerable-packages.md: sha256:8693a6a258bad18a8a1d0925bc1eae9c744071ff37a36b8f1da83adca93608af
-  content_hash: sha256:ed51dad97e496f9c6696eb7283fc7880f607a165e1ed3fe928977c72eaf46e9a
+  content_hash: sha256:0e8b20973ccae6fba4fa504cb76620d5c94426f77d44748a4d26b3ad34774d4a
   skill_subset:
   - Thinking-Beast-Mode
   - apple-appstore-reviewer
@@ -290,7 +292,7 @@ dependencies:
   name: ordering-modifier-chains
   host: github.com
   resolved_commit: 1b32f81724c0d71fe9ef093ca44697f559fdab6e
-  resolved_ref: main
+  resolved_ref: 1b32f81724c0d71fe9ef093ca44697f559fdab6e
   version: unknown
   virtual_path: modifiers/ordering-modifier-chains
   is_virtual: true
@@ -305,7 +307,7 @@ dependencies:
   name: using-efficient-effects
   host: github.com
   resolved_commit: 1b32f81724c0d71fe9ef093ca44697f559fdab6e
-  resolved_ref: main
+  resolved_ref: 1b32f81724c0d71fe9ef093ca44697f559fdab6e
   version: unknown
   virtual_path: side-effects/using-efficient-effects
   is_virtual: true
@@ -334,7 +336,7 @@ deployments:
   owners:
   - github/awesome-copilot
   active_owner: github/awesome-copilot
-  content_hash: sha256:8e24825ff85137d497119bff6c2b91ce37238cad67493e44af7c5ca95b4e4058
+  content_hash: sha256:d469ef904074f79b729479814835c62256cea68405aa30271bb52f779c183d30
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/compose-animations
@@ -352,7 +354,16 @@ deployments:
   owners:
   - chrisbanes/skills
   active_owner: chrisbanes/skills
-  content_hash: sha256:0d1344b1b4874ceb7f7c45d94fb6f354527bb4a3549e6bc69105877ee155a2c1
+  content_hash: sha256:854685a8e0184b347fc88015728fa6ad1f6f49c9b71f833fca694d92a8fcf382
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/compose-animations/references/animated-content.md
+  runtime: null
+  scope: project
+  owners:
+  - chrisbanes/skills
+  active_owner: chrisbanes/skills
+  content_hash: sha256:5e2886bd7f1c0e8884fe60d38ac04e0c23b45f5693026da38cfaf5e1cc31b1df
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/conventional-branch
@@ -424,7 +435,7 @@ deployments:
   owners:
   - chrisbanes/skills
   active_owner: chrisbanes/skills
-  content_hash: sha256:0d26e6df0c11f27928304fd0aa97b28a4c4e0f61ac3de900872382dff3875fea
+  content_hash: sha256:fe05d8f5459c2f60926b9c9e9034447fa96b1b743b36c3f848a79d2b434b46a0
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/kotlin-concurrency-and-flow/references/flow-state-events.md
@@ -433,7 +444,7 @@ deployments:
   owners:
   - chrisbanes/skills
   active_owner: chrisbanes/skills
-  content_hash: sha256:c83f9bf66755ee3e797c42a15332121b2de53b18d12c9de92a13b6561b307113
+  content_hash: sha256:21bb442d00695d5f742625da2075a9313e55a367d87d7a2899ac1f9eeb4d263c
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/kotlin-concurrency-and-flow/references/structured-concurrency.md
@@ -442,7 +453,7 @@ deployments:
   owners:
   - chrisbanes/skills
   active_owner: chrisbanes/skills
-  content_hash: sha256:b1b3321a9fa0d59c982229361f63a6485fc2a8db59f75a8ff87b7859a470cb32
+  content_hash: sha256:9a3df9ec8aa844fbb87e91cf66b6abf5ee0b440df63203c34f6cd72dd723355d
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/kotlin-control-flow
@@ -460,7 +471,7 @@ deployments:
   owners:
   - chrisbanes/skills
   active_owner: chrisbanes/skills
-  content_hash: sha256:abbba8f1b21a24bea16e83a560d6fe67dc41bcc754b05029e76711f2a40a213d
+  content_hash: sha256:f1d5b0f679a7c95f08e5ec0503c2436ccb444e96f6079b0ccaada627c5c00724
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/kotlin-tooling-agp9-migration
