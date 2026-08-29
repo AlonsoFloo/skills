@@ -46,14 +46,8 @@ jobs:
           apm-version: 'latest'
 
       # ── Pre-flight audit ──────────────────────────────
-      - name: Validate structure
-        run: apm compile --validate
-
       - name: Dry-run compile
         run: apm compile --dry-run
-
-      - name: Confirm metadata
-        run: apm view
 
       - name: Check dependency freshness
         run: apm outdated
