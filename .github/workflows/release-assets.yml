@@ -1,8 +1,9 @@
 name: Release Assets
 
 on:
-  release:
-    types: [released]
+  push:
+    tags:
+      - 'v*'
 
 concurrency:
   group: release-assets-${{ github.event.release.tag_name }}
