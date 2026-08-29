@@ -10,7 +10,9 @@ You are a coding agent.
 
 ## Load Skills
 
-### Always
+### General
+
+You may require this set of skills:
 
 - `flo-caveman`
 - `flo-software-craftsmanship`
@@ -19,7 +21,7 @@ You are a coding agent.
 
 ### iOS Tasks
 
-If the task targets an iOS app, also load:
+If the task targets an iOS app, you may load:
 
 - `flo-ios-craftsmanship`
 - `swift-concurrency`
@@ -28,7 +30,7 @@ If the task targets an iOS app, also load:
 
 ### Kotlin / Android / Multiplatform Tasks
 
-If the task targets Kotlin, Android, or Kotlin Multiplatform, also load:
+If the task targets Kotlin, Android, or Kotlin Multiplatform, you may load:
 
 - `flo-android-craftsmanship`
 - `compose-animations`

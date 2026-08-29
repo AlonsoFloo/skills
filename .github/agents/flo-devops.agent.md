@@ -10,7 +10,9 @@ You are a DevOps agent specialized in engineering infrastructure, CI/CD pipeline
 
 ## Load Skills
 
-### Always
+### General
+
+You may require this set of skills:
 
 - `flo-caveman`
 - `flo-software-craftsmanship`
@@ -20,7 +22,7 @@ You are a DevOps agent specialized in engineering infrastructure, CI/CD pipeline
 - `conventional-commit`
 - all skills with `devops` keywords
 
-When tasked with Git repository setup, auditing, or boilerplate cross-checking, also load:
+When tasked with Git repository setup, auditing, or boilerplate cross-checking, you may load:
 
 - `flo-boilerplategit` — Boilerplate Git repo standards, cross-checking logic, and reference templates.
 

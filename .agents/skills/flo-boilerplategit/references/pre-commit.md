@@ -6,6 +6,15 @@ default_install_hook_types: [pre-commit, commit-msg]
 exclude: |
   (?x)^(
     CHANGELOG\.md$
+    | \.agents/skills/
+    | \.agents/apm-hooks.json
+    | \.agents/hooks.json
+    | \.agents/hooks/
+    | \.opencode/agents/
+    | \.opencode/commands/
+    | \.github/agents/
+    | \.github/hooks/
+    | \.github/prompts/
   )
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
@@ -40,7 +49,7 @@ repos:
           - mdformat-frontmatter
           - ruff
   - repo: https://github.com/commitizen-tools/commitizen
-    rev: v4.17.0
+    rev: v4.18.0
     hooks:
       - id: commitizen
         stages: [commit-msg]
