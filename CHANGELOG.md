@@ -1,5 +1,19 @@
 # Changelog
 
+## [2.3.0](https://github.com/AlonsoFloo/skills/compare/v2.2.1...v2.3.0) (2026-08-29)
+
+
+### Features
+
+* **agents:** Improve instruction to load less skills ([28c6d67](https://github.com/AlonsoFloo/skills/commit/28c6d67c7e5ab760546ff39da1469cecf39f9529))
+* **deps:** Updated referenced skills ([5c44978](https://github.com/AlonsoFloo/skills/commit/5c449782c16be11b956548a94a78fb5516ccd591))
+* **github:** Now packing APM with releasee ([e7202e9](https://github.com/AlonsoFloo/skills/commit/e7202e9f700bb48fe3c7992a3fe9f03a77ba54f5))
+
+
+### Bug Fixes
+
+* **boilerplategit:** Improved default precommit files ([adbb05d](https://github.com/AlonsoFloo/skills/commit/adbb05d1277003be1abfb4051351de76009fe2d4))
+
 ## [2.2.1](https://github.com/AlonsoFloo/skills/compare/v2.2.0...v2.2.1) (2026-08-25)
 
 
