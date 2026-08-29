@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.3.1](https://github.com/AlonsoFloo/skills/compare/v2.3.0...v2.3.1) (2026-08-29)
+
+
+### Bug Fixes
+
+* **github:** Updated release asset trigger ([9147321](https://github.com/AlonsoFloo/skills/commit/91473215d7130ef193310bafee1a6b03195d0d58))
+
 ## [2.3.0](https://github.com/AlonsoFloo/skills/compare/v2.2.1...v2.3.0) (2026-08-29)
 
 
