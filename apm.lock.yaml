@@ -1,6 +1,6 @@
 lockfile_version: '2'
-generated_at: '2026-08-29T18:04:01.507264+00:00'
-apm_version: 0.28.0
+generated_at: '2026-08-30T16:51:58.986268+00:00'
+apm_version: 0.29.0
 dependencies:
 - repo_url: android/skills
   name: skills
@@ -9,7 +9,7 @@ dependencies:
   resolved_ref: v1.0.10
   version: aaca635
   package_type: marketplace_plugin
-  content_hash: sha256:a902783a7914962c59bda0057888b8cf28801b97d00407a7f40b1df636b00f3a
+  content_hash: sha256:aaeb5016668f14e71db0b2c93ed37b7870ac1fbf22e72edee6384cae28c62959
 - repo_url: anthropics/skills
   name: skills
   host: github.com
@@ -56,7 +56,7 @@ dependencies:
     .agents/skills/skill-creator/scripts/run_eval.py: sha256:43e3b8f80dbf69c343967ba77e268fae991d9fa3ed68b32a0ff02532cd48657f
     .agents/skills/skill-creator/scripts/run_loop.py: sha256:7bd6f674203168520517eec94c55f493c0d154339b061b4d7c0f0dad187d0f21
     .agents/skills/skill-creator/scripts/utils.py: sha256:3af8ae62c40c73ab712207436a0d9a981e845f25c5a7040229eb189cc8e45bb1
-  content_hash: sha256:77b57e5359dca74de5cc0d5f7768a9f2acd3474683443718d3605ce5b0a1e2f9
+  content_hash: sha256:a8278652bb9a6c5e613ac107fd77fb4901be5aff8445ec8aa6b3918c3bd1fda2
   is_dev: true
   skill_subset:
   - skill-creator
@@ -67,56 +67,13 @@ dependencies:
   resolved_commit: 45fa49e4e0b2af4d43b1cb458903f8030ac993bd
   resolved_ref: 2.3.0
   version: 2.3.0
-  package_type: marketplace_plugin
-  deployed_files:
-  - .agents/skills/swift-concurrency
-  - .agents/skills/swift-concurrency/SKILL.md
-  - .agents/skills/swift-concurrency/agents/openai.yaml
-  - .agents/skills/swift-concurrency/assets/logo-small.png
-  - .agents/skills/swift-concurrency/assets/logo.png
-  - .agents/skills/swift-concurrency/references/_index.md
-  - .agents/skills/swift-concurrency/references/actors.md
-  - .agents/skills/swift-concurrency/references/async-algorithms.md
-  - .agents/skills/swift-concurrency/references/async-await-basics.md
-  - .agents/skills/swift-concurrency/references/async-sequences.md
-  - .agents/skills/swift-concurrency/references/core-data.md
-  - .agents/skills/swift-concurrency/references/glossary.md
-  - .agents/skills/swift-concurrency/references/linting.md
-  - .agents/skills/swift-concurrency/references/memory-management.md
-  - .agents/skills/swift-concurrency/references/migration.md
-  - .agents/skills/swift-concurrency/references/observation.md
-  - .agents/skills/swift-concurrency/references/performance.md
-  - .agents/skills/swift-concurrency/references/sendable.md
-  - .agents/skills/swift-concurrency/references/tasks.md
-  - .agents/skills/swift-concurrency/references/testing.md
-  - .agents/skills/swift-concurrency/references/threading.md
-  deployed_file_hashes:
-    .agents/skills/swift-concurrency/SKILL.md: sha256:8c667b2ff988251c7c291abe046b77d7b8fcfbe3b5ed36961e25e224b1ead491
-    .agents/skills/swift-concurrency/agents/openai.yaml: sha256:ee6afe3f6c048fa77f73510f5536abc8f399bc48c8641dc308343ed37ee53cfc
-    .agents/skills/swift-concurrency/assets/logo-small.png: sha256:f1f69d278df362306d16809151486fad79fc08d6b3018aeabea4580507392f93
-    .agents/skills/swift-concurrency/assets/logo.png: sha256:7eeb6005c4ce9d1ab514418cc645c463fa6b84536527dfac715676ee878cf7b1
-    .agents/skills/swift-concurrency/references/_index.md: sha256:7e9e076d885ef05402a67aa8a84b83e63a3c29b3d005816f6acb4c30b6d76531
-    .agents/skills/swift-concurrency/references/actors.md: sha256:2de7cebbdd1cbc2b7c9312c7b59a3f44ada0456b6e74579aae7fba3e02b0b5fe
-    .agents/skills/swift-concurrency/references/async-algorithms.md: sha256:9e16790e9b81850a37b3de995220074491f3efd5accab1f5daa0a633625fed40
-    .agents/skills/swift-concurrency/references/async-await-basics.md: sha256:e550aba692af77cf660ad6f754a65c52b01505cad234d159a6d47a919faaf536
-    .agents/skills/swift-concurrency/references/async-sequences.md: sha256:33d853118e37c1ac380c253200571efa44fe7127b9b6512ba95b43e670a5f453
-    .agents/skills/swift-concurrency/references/core-data.md: sha256:c89c4846fa64a2389abf807684ed373a6c0e6d16351dfa051e1fd71b85444d00
-    .agents/skills/swift-concurrency/references/glossary.md: sha256:20dd1f05717810944af675db215d758efa5d1c7b487ee007faae1ec4e2a7c36f
-    .agents/skills/swift-concurrency/references/linting.md: sha256:ead994f6e254208acf298a588ad9a49bbd9779530f31e01c74c4d32d06a7bd4a
-    .agents/skills/swift-concurrency/references/memory-management.md: sha256:28dcb8a7ff7411390ca0b7f1b0db16d6b00c3705bd6ed1f9b649c476bf0a7554
-    .agents/skills/swift-concurrency/references/migration.md: sha256:9115da8228d3a19426869627c28b7ed444f8d783723039293cceb46a1fc1c570
-    .agents/skills/swift-concurrency/references/observation.md: sha256:940c085d43e2e067848d7caf95731fb1335c3f16f83ebe43b06549021a29f1b1
-    .agents/skills/swift-concurrency/references/performance.md: sha256:dfd74c1c592ce42c520b54a309ba2b50e228608efa055fd6b597067e9ad71668
-    .agents/skills/swift-concurrency/references/sendable.md: sha256:af8e026b3c205d3c3acb58bf9a59e456f063f564845f38020a91cac511a08ca8
-    .agents/skills/swift-concurrency/references/tasks.md: sha256:0401a762683454149d5ca532684901f4fb5597a6821acacc8d49d037db9a37e9
-    .agents/skills/swift-concurrency/references/testing.md: sha256:3df9e839b3338dd473115d9ac8787a42d91b50a537fe40c55cf66d21034679db
-    .agents/skills/swift-concurrency/references/threading.md: sha256:0a4e44bd27fdf852cf5f8f5aa64cfe15ba229fb7c885b3f69ed2afdbfac8752a
-  content_hash: sha256:4c4bbce1fea27b4969a4b808ce8e13b4ad82c60170d3478d9878ca4419d4abd9
+  package_type: agent_plugin
+  content_hash: sha256:f437b376d77519bc682b7e6e27b466a29d9e724636f28c3135531209ef89d019
   skill_subset:
   - swift-concurrency
   constraint: 2.3.0
   resolved_tag: 2.3.0
-  resolved_at: '2026-08-23T15:48:20+00:00'
+  resolved_at: '2026-08-30T16:51:34+00:00'
   declared_license: MIT
 - repo_url: chrisbanes/skills
   name: chrisbanes-skills
@@ -125,38 +82,21 @@ dependencies:
   resolved_ref: 2026.8.27
   version: 2026.8.27
   package_type: marketplace_plugin
-  deployed_files:
-  - .agents/skills/compose-animations
-  - .agents/skills/compose-animations/SKILL.md
-  - .agents/skills/compose-animations/references/animated-content.md
-  - .agents/skills/kotlin-concurrency-and-flow
-  - .agents/skills/kotlin-concurrency-and-flow/SKILL.md
-  - .agents/skills/kotlin-concurrency-and-flow/references/flow-state-events.md
-  - .agents/skills/kotlin-concurrency-and-flow/references/structured-concurrency.md
-  - .agents/skills/kotlin-control-flow
-  - .agents/skills/kotlin-control-flow/SKILL.md
-  deployed_file_hashes:
-    .agents/skills/compose-animations/SKILL.md: sha256:854685a8e0184b347fc88015728fa6ad1f6f49c9b71f833fca694d92a8fcf382
-    .agents/skills/compose-animations/references/animated-content.md: sha256:5e2886bd7f1c0e8884fe60d38ac04e0c23b45f5693026da38cfaf5e1cc31b1df
-    .agents/skills/kotlin-concurrency-and-flow/SKILL.md: sha256:fe05d8f5459c2f60926b9c9e9034447fa96b1b743b36c3f848a79d2b434b46a0
-    .agents/skills/kotlin-concurrency-and-flow/references/flow-state-events.md: sha256:21bb442d00695d5f742625da2075a9313e55a367d87d7a2899ac1f9eeb4d263c
-    .agents/skills/kotlin-concurrency-and-flow/references/structured-concurrency.md: sha256:9a3df9ec8aa844fbb87e91cf66b6abf5ee0b440df63203c34f6cd72dd723355d
-    .agents/skills/kotlin-control-flow/SKILL.md: sha256:f1d5b0f679a7c95f08e5ec0503c2436ccb444e96f6079b0ccaada627c5c00724
-  content_hash: sha256:8e9c0227017472087e4d862d0ff724d55c0953a5d9dc22bd33ede00e5357772e
+  content_hash: sha256:f5892c5acf469d4192a79279cdf73a82ddf6b3416e6a00496149c2d2a37eab6d
   skill_subset:
   - compose-animations
   - kotlin-concurrency-and-flow
   - kotlin-control-flow
   constraint: 2026.8.27
   resolved_tag: 2026.8.27
-  resolved_at: '2026-08-29T18:03:23+00:00'
+  resolved_at: '2026-08-30T16:51:34+00:00'
   declared_license: Apache-2.0
 - repo_url: github/awesome-copilot
   name: awesome-copilot
   host: github.com
   resolved_commit: f11a4e441c5ff061b4f8ae37952be8c602e4034e
   resolved_ref: f11a4e441c5ff061b4f8ae37952be8c602e4034e
-  version: 0.0.0
+  version: unknown
   package_type: skill_bundle
   deployed_files:
   - .agents/skills/apple-appstore-reviewer
@@ -287,7 +227,7 @@ dependencies:
     .agents/skills/kotlin-tooling-native-build-performance/references/experimental.md: sha256:e0e83e36ebdd41f393082680ed06ff396077540544c5723cace80a2058a5eb1f
     .agents/skills/kotlin-tooling-native-build-performance/references/exports-and-generated-code.md: sha256:76d94b9a08e933f09eaae66e8a613f79726dbabc65f765e2130fabf93c0f87d3
     .agents/skills/kotlin-tooling-native-build-performance/scripts/audit-native-build.sh: sha256:94af58014fb24aaf1e7757ce804ea19e4023cc778da77ac0d725bd19aa0ba9e7
-  content_hash: sha256:f804c6eafecfd7e99324f960d3691acc0a234aff3323920899710ef91f4f2a8b
+  content_hash: sha256:689bc8cbee07421c97c5c323e2cf191b145aeffff3ac764fd60875e5fd3cdd68
 - repo_url: skydoves/compose-performance-skills
   name: ordering-modifier-chains
   host: github.com
@@ -337,33 +277,6 @@ deployments:
   - github/awesome-copilot
   active_owner: github/awesome-copilot
   content_hash: sha256:d469ef904074f79b729479814835c62256cea68405aa30271bb52f779c183d30
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/compose-animations
-  runtime: null
-  scope: project
-  owners:
-  - chrisbanes/skills
-  active_owner: chrisbanes/skills
-  content_hash: null
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/compose-animations/SKILL.md
-  runtime: null
-  scope: project
-  owners:
-  - chrisbanes/skills
-  active_owner: chrisbanes/skills
-  content_hash: sha256:854685a8e0184b347fc88015728fa6ad1f6f49c9b71f833fca694d92a8fcf382
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/compose-animations/references/animated-content.md
-  runtime: null
-  scope: project
-  owners:
-  - chrisbanes/skills
-  active_owner: chrisbanes/skills
-  content_hash: sha256:5e2886bd7f1c0e8884fe60d38ac04e0c23b45f5693026da38cfaf5e1cc31b1df
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/conventional-branch
@@ -418,60 +331,6 @@ deployments:
   - kotlin/kotlin-agent-skills
   active_owner: kotlin/kotlin-agent-skills
   content_hash: sha256:5d9c864a55c5ad29f54a807820672a9b5e0360ee33006c63a396a31bef0d8f4e
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/kotlin-concurrency-and-flow
-  runtime: null
-  scope: project
-  owners:
-  - chrisbanes/skills
-  active_owner: chrisbanes/skills
-  content_hash: null
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/kotlin-concurrency-and-flow/SKILL.md
-  runtime: null
-  scope: project
-  owners:
-  - chrisbanes/skills
-  active_owner: chrisbanes/skills
-  content_hash: sha256:fe05d8f5459c2f60926b9c9e9034447fa96b1b743b36c3f848a79d2b434b46a0
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/kotlin-concurrency-and-flow/references/flow-state-events.md
-  runtime: null
-  scope: project
-  owners:
-  - chrisbanes/skills
-  active_owner: chrisbanes/skills
-  content_hash: sha256:21bb442d00695d5f742625da2075a9313e55a367d87d7a2899ac1f9eeb4d263c
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/kotlin-concurrency-and-flow/references/structured-concurrency.md
-  runtime: null
-  scope: project
-  owners:
-  - chrisbanes/skills
-  active_owner: chrisbanes/skills
-  content_hash: sha256:9a3df9ec8aa844fbb87e91cf66b6abf5ee0b440df63203c34f6cd72dd723355d
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/kotlin-control-flow
-  runtime: null
-  scope: project
-  owners:
-  - chrisbanes/skills
-  active_owner: chrisbanes/skills
-  content_hash: null
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/kotlin-control-flow/SKILL.md
-  runtime: null
-  scope: project
-  owners:
-  - chrisbanes/skills
-  active_owner: chrisbanes/skills
-  content_hash: sha256:f1d5b0f679a7c95f08e5ec0503c2436ccb444e96f6079b0ccaada627c5c00724
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/kotlin-tooling-agp9-migration
@@ -1131,195 +990,6 @@ deployments:
   content_hash: sha256:3af8ae62c40c73ab712207436a0d9a981e845f25c5a7040229eb189cc8e45bb1
 - kind: project-relative
   target: agent-skills
-  value: .agents/skills/swift-concurrency
-  runtime: null
-  scope: project
-  owners:
-  - avdlee/swift-concurrency-agent-skill
-  active_owner: avdlee/swift-concurrency-agent-skill
-  content_hash: null
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/swift-concurrency/SKILL.md
-  runtime: null
-  scope: project
-  owners:
-  - avdlee/swift-concurrency-agent-skill
-  active_owner: avdlee/swift-concurrency-agent-skill
-  content_hash: sha256:8c667b2ff988251c7c291abe046b77d7b8fcfbe3b5ed36961e25e224b1ead491
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/swift-concurrency/agents/openai.yaml
-  runtime: null
-  scope: project
-  owners:
-  - avdlee/swift-concurrency-agent-skill
-  active_owner: avdlee/swift-concurrency-agent-skill
-  content_hash: sha256:ee6afe3f6c048fa77f73510f5536abc8f399bc48c8641dc308343ed37ee53cfc
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/swift-concurrency/assets/logo-small.png
-  runtime: null
-  scope: project
-  owners:
-  - avdlee/swift-concurrency-agent-skill
-  active_owner: avdlee/swift-concurrency-agent-skill
-  content_hash: sha256:f1f69d278df362306d16809151486fad79fc08d6b3018aeabea4580507392f93
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/swift-concurrency/assets/logo.png
-  runtime: null
-  scope: project
-  owners:
-  - avdlee/swift-concurrency-agent-skill
-  active_owner: avdlee/swift-concurrency-agent-skill
-  content_hash: sha256:7eeb6005c4ce9d1ab514418cc645c463fa6b84536527dfac715676ee878cf7b1
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/swift-concurrency/references/_index.md
-  runtime: null
-  scope: project
-  owners:
-  - avdlee/swift-concurrency-agent-skill
-  active_owner: avdlee/swift-concurrency-agent-skill
-  content_hash: sha256:7e9e076d885ef05402a67aa8a84b83e63a3c29b3d005816f6acb4c30b6d76531
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/swift-concurrency/references/actors.md
-  runtime: null
-  scope: project
-  owners:
-  - avdlee/swift-concurrency-agent-skill
-  active_owner: avdlee/swift-concurrency-agent-skill
-  content_hash: sha256:2de7cebbdd1cbc2b7c9312c7b59a3f44ada0456b6e74579aae7fba3e02b0b5fe
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/swift-concurrency/references/async-algorithms.md
-  runtime: null
-  scope: project
-  owners:
-  - avdlee/swift-concurrency-agent-skill
-  active_owner: avdlee/swift-concurrency-agent-skill
-  content_hash: sha256:9e16790e9b81850a37b3de995220074491f3efd5accab1f5daa0a633625fed40
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/swift-concurrency/references/async-await-basics.md
-  runtime: null
-  scope: project
-  owners:
-  - avdlee/swift-concurrency-agent-skill
-  active_owner: avdlee/swift-concurrency-agent-skill
-  content_hash: sha256:e550aba692af77cf660ad6f754a65c52b01505cad234d159a6d47a919faaf536
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/swift-concurrency/references/async-sequences.md
-  runtime: null
-  scope: project
-  owners:
-  - avdlee/swift-concurrency-agent-skill
-  active_owner: avdlee/swift-concurrency-agent-skill
-  content_hash: sha256:33d853118e37c1ac380c253200571efa44fe7127b9b6512ba95b43e670a5f453
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/swift-concurrency/references/core-data.md
-  runtime: null
-  scope: project
-  owners:
-  - avdlee/swift-concurrency-agent-skill
-  active_owner: avdlee/swift-concurrency-agent-skill
-  content_hash: sha256:c89c4846fa64a2389abf807684ed373a6c0e6d16351dfa051e1fd71b85444d00
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/swift-concurrency/references/glossary.md
-  runtime: null
-  scope: project
-  owners:
-  - avdlee/swift-concurrency-agent-skill
-  active_owner: avdlee/swift-concurrency-agent-skill
-  content_hash: sha256:20dd1f05717810944af675db215d758efa5d1c7b487ee007faae1ec4e2a7c36f
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/swift-concurrency/references/linting.md
-  runtime: null
-  scope: project
-  owners:
-  - avdlee/swift-concurrency-agent-skill
-  active_owner: avdlee/swift-concurrency-agent-skill
-  content_hash: sha256:ead994f6e254208acf298a588ad9a49bbd9779530f31e01c74c4d32d06a7bd4a
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/swift-concurrency/references/memory-management.md
-  runtime: null
-  scope: project
-  owners:
-  - avdlee/swift-concurrency-agent-skill
-  active_owner: avdlee/swift-concurrency-agent-skill
-  content_hash: sha256:28dcb8a7ff7411390ca0b7f1b0db16d6b00c3705bd6ed1f9b649c476bf0a7554
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/swift-concurrency/references/migration.md
-  runtime: null
-  scope: project
-  owners:
-  - avdlee/swift-concurrency-agent-skill
-  active_owner: avdlee/swift-concurrency-agent-skill
-  content_hash: sha256:9115da8228d3a19426869627c28b7ed444f8d783723039293cceb46a1fc1c570
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/swift-concurrency/references/observation.md
-  runtime: null
-  scope: project
-  owners:
-  - avdlee/swift-concurrency-agent-skill
-  active_owner: avdlee/swift-concurrency-agent-skill
-  content_hash: sha256:940c085d43e2e067848d7caf95731fb1335c3f16f83ebe43b06549021a29f1b1
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/swift-concurrency/references/performance.md
-  runtime: null
-  scope: project
-  owners:
-  - avdlee/swift-concurrency-agent-skill
-  active_owner: avdlee/swift-concurrency-agent-skill
-  content_hash: sha256:dfd74c1c592ce42c520b54a309ba2b50e228608efa055fd6b597067e9ad71668
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/swift-concurrency/references/sendable.md
-  runtime: null
-  scope: project
-  owners:
-  - avdlee/swift-concurrency-agent-skill
-  active_owner: avdlee/swift-concurrency-agent-skill
-  content_hash: sha256:af8e026b3c205d3c3acb58bf9a59e456f063f564845f38020a91cac511a08ca8
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/swift-concurrency/references/tasks.md
-  runtime: null
-  scope: project
-  owners:
-  - avdlee/swift-concurrency-agent-skill
-  active_owner: avdlee/swift-concurrency-agent-skill
-  content_hash: sha256:0401a762683454149d5ca532684901f4fb5597a6821acacc8d49d037db9a37e9
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/swift-concurrency/references/testing.md
-  runtime: null
-  scope: project
-  owners:
-  - avdlee/swift-concurrency-agent-skill
-  active_owner: avdlee/swift-concurrency-agent-skill
-  content_hash: sha256:3df9e839b3338dd473115d9ac8787a42d91b50a537fe40c55cf66d21034679db
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/swift-concurrency/references/threading.md
-  runtime: null
-  scope: project
-  owners:
-  - avdlee/swift-concurrency-agent-skill
-  active_owner: avdlee/swift-concurrency-agent-skill
-  content_hash: sha256:0a4e44bd27fdf852cf5f8f5aa64cfe15ba229fb7c885b3f69ed2afdbfac8752a
-- kind: project-relative
-  target: agent-skills
   value: .agents/skills/using-efficient-effects
   runtime: null
   scope: project
@@ -1651,78 +1321,6 @@ deployments:
   - .
   active_owner: .
   content_hash: sha256:eae4ebad9f9e892283a890f7072159dd918922bce297e76278a3aababda1d40a
-- kind: project-relative
-  target: copilot
-  value: .github/agents/flo-devops.agent.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:5604736291e92e64e27dc71f00a12fef1ce6fd3737d227bfe1e3a7a8a76991b4
-- kind: project-relative
-  target: copilot
-  value: .github/agents/floo-coder.agent.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:c031da6cc17e25b1872b6d69181c037807430bacb1bf277c7a702c801f561f97
-- kind: project-relative
-  target: copilot
-  value: .github/prompts/flo-boilerplategit.prompt.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:223c1d251f0ecad9ae4e9485c566b59dafac3700021d9a2dac9ab33e8fbce8c7
-- kind: project-relative
-  target: copilot
-  value: .github/prompts/flo-precommit-all.prompt.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:9205424b92f91826c51c4b324deb61925f4839ccfbd470866e0aa1c4207ec6f2
-- kind: project-relative
-  target: opencode
-  value: .opencode/agents/flo-devops.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:5604736291e92e64e27dc71f00a12fef1ce6fd3737d227bfe1e3a7a8a76991b4
-- kind: project-relative
-  target: opencode
-  value: .opencode/agents/floo-coder.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:c031da6cc17e25b1872b6d69181c037807430bacb1bf277c7a702c801f561f97
-- kind: project-relative
-  target: opencode
-  value: .opencode/commands/flo-boilerplategit.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:4af1b00169bf2c08b0e7aaf2b53e42d5eb0e1aeb7368ff284b179c3aa8e0c535
-- kind: project-relative
-  target: opencode
-  value: .opencode/commands/flo-precommit-all.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:b4debd14b419859b860b54d695dd81f1911667478775a61d975feb94a9b5cef2
 local_deployed_files:
 - .agents/skills/flo-android-craftsmanship
 - .agents/skills/flo-android-craftsmanship/SKILL.md
@@ -1759,14 +1357,6 @@ local_deployed_files:
 - .agents/skills/flo-testing-craftsmanship/references/examples.md
 - .agents/skills/flo-verify-precommitall
 - .agents/skills/flo-verify-precommitall/SKILL.md
-- .github/agents/flo-devops.agent.md
-- .github/agents/floo-coder.agent.md
-- .github/prompts/flo-boilerplategit.prompt.md
-- .github/prompts/flo-precommit-all.prompt.md
-- .opencode/agents/flo-devops.md
-- .opencode/agents/floo-coder.md
-- .opencode/commands/flo-boilerplategit.md
-- .opencode/commands/flo-precommit-all.md
 local_deployed_file_hashes:
   .agents/skills/flo-android-craftsmanship/SKILL.md: sha256:faa6297ad79ace8f9372f3a6d89c905bc613cbcc9083402bba62a76e5b274ae9
   .agents/skills/flo-android-craftsmanship/references/examples.md: sha256:3900d2c5dfba5673bd3b3d7c6d6c23aacf0579702708ebde4108d7933c127430
@@ -1794,11 +1384,3 @@ local_deployed_file_hashes:
   .agents/skills/flo-testing-craftsmanship/SKILL.md: sha256:c2d650460436717a30fbbf04648f47f8d272efd286f1d1f29354bcac2696fe78
   .agents/skills/flo-testing-craftsmanship/references/examples.md: sha256:0a9cf62cc6549e2075686b000c97d712d461daf03bebfbd5ed0a7f76aa71eba4
   .agents/skills/flo-verify-precommitall/SKILL.md: sha256:eae4ebad9f9e892283a890f7072159dd918922bce297e76278a3aababda1d40a
-  .github/agents/flo-devops.agent.md: sha256:5604736291e92e64e27dc71f00a12fef1ce6fd3737d227bfe1e3a7a8a76991b4
-  .github/agents/floo-coder.agent.md: sha256:c031da6cc17e25b1872b6d69181c037807430bacb1bf277c7a702c801f561f97
-  .github/prompts/flo-boilerplategit.prompt.md: sha256:223c1d251f0ecad9ae4e9485c566b59dafac3700021d9a2dac9ab33e8fbce8c7
-  .github/prompts/flo-precommit-all.prompt.md: sha256:9205424b92f91826c51c4b324deb61925f4839ccfbd470866e0aa1c4207ec6f2
-  .opencode/agents/flo-devops.md: sha256:5604736291e92e64e27dc71f00a12fef1ce6fd3737d227bfe1e3a7a8a76991b4
-  .opencode/agents/floo-coder.md: sha256:c031da6cc17e25b1872b6d69181c037807430bacb1bf277c7a702c801f561f97
-  .opencode/commands/flo-boilerplategit.md: sha256:4af1b00169bf2c08b0e7aaf2b53e42d5eb0e1aeb7368ff284b179c3aa8e0c535
-  .opencode/commands/flo-precommit-all.md: sha256:b4debd14b419859b860b54d695dd81f1911667478775a61d975feb94a9b5cef2
