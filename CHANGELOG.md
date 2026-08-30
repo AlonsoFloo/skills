@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.3.8](https://github.com/AlonsoFloo/skills/compare/v2.3.7...v2.3.8) (2026-08-30)
+
+
+### Bug Fixes
+
+* **apm:** Agentic format is not supproted yet, packing in plugin normal ([060b460](https://github.com/AlonsoFloo/skills/commit/060b460cbf184dd8f729c684fe6624b502821592))
+
 ## [2.3.7](https://github.com/AlonsoFloo/skills/compare/v2.3.6...v2.3.7) (2026-08-30)
 
 
