@@ -21,9 +21,8 @@ dependencies:
 
     # Swift concurrency: async/await, actors, Sendable, structured concurrency,
     # and modern Swift concurrency patterns.
-    - git: https://github.com/AvdLee/Swift-Concurrency-Agent-Skill.git#2.3.0
-      skills:
-        - swift-concurrency
+    # Starting 2.1.1 it introduced Agent portable plugin that miss behave with APM 0.29.0
+    - git: https://github.com/AvdLee/Swift-Concurrency-Agent-Skill.git#2.1.1
 
     # Jetpack Compose animations and Kotlin control-flow best practices.
     - git: https://github.com/chrisbanes/skills.git#2026.8.27

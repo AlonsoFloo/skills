@@ -58,7 +58,7 @@ jobs:
 
       # ── Pack & release ────────────────────────────────
       - name: Pack skill
-        run: apm pack --archive
+        run: apm pack --archive --format agent-plugin
 
       - name: Upload assets to release
         env:
