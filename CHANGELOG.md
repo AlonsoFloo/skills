@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.3.7](https://github.com/AlonsoFloo/skills/compare/v2.3.6...v2.3.7) (2026-08-30)
+
+
+### Bug Fixes
+
+* **apm:** latest version of APM with agent plugin of SwiftConcurency ([b678e19](https://github.com/AlonsoFloo/skills/commit/b678e19dc4956aab2eddea6e07f2d4239e86a3db))
+* **github:** Updated release with apm pack and zip ([a89b0a3](https://github.com/AlonsoFloo/skills/commit/a89b0a3ae3851191802114ee9a3fa2430f12670a))
+* **SKILL_Swift-Concurency:** Reverted to 2.1.1 package ([2aad9ad](https://github.com/AlonsoFloo/skills/commit/2aad9adfb4b4470f050f2195f30d0c0835074b34))
+
 ## [2.3.6](https://github.com/AlonsoFloo/skills/compare/v2.3.5...v2.3.6) (2026-08-29)
 
 
