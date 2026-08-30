@@ -94,6 +94,6 @@ jobs:
             table+="| [${filename}](${url}) | ${size} | \`${sha}\` |"$'\n'
           done
 
-          table+='\n\n---\n\n'
+          table+=$'\n\n---\n\n'
 
           gh release edit "$TAG" --notes "${table}${existing_body}"
