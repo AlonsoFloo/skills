@@ -14,6 +14,8 @@ Personal use for me, but you are welcome to view, and propose new stuffs.
 This repository is a APM package to provide easy skills, agents, prompts, etc...
 See: [https://microsoft.github.io/apm/reference/package-types/](https://microsoft.github.io/apm/reference/package-types/)
 
+All sources are in the folder `.apm/..`
+
 ## Getting Started
 
 ### Prerequisites
