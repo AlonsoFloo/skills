@@ -11,6 +11,8 @@ targets:
   - antigravity
   - opencode
 
+includes: auto
+
 dependencies:
   apm:
     # Kotlin development best practices and Kotlin-specific agent guidance.
