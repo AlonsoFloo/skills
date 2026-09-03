@@ -1,21 +1,20 @@
-lockfile_version: '2'
-generated_at: '2026-08-30T17:17:00.299288+00:00'
+lockfile_version: '1'
+generated_at: '2026-09-03T17:25:20.043929+00:00'
 apm_version: 0.29.0
 dependencies:
 - repo_url: android/skills
   name: skills
   host: github.com
   resolved_commit: aaca635061a4befdd3890d63c4a02963f2e8d925
-  resolved_ref: v1.0.10
+  resolved_ref: aaca635061a4befdd3890d63c4a02963f2e8d925
   version: aaca635
   package_type: marketplace_plugin
-  content_hash: sha256:aaeb5016668f14e71db0b2c93ed37b7870ac1fbf22e72edee6384cae28c62959
+  content_hash: sha256:a33e6a0ab1368f7e7f2be41d6b120408fc368785f61e87e3dcef872322f56395
 - repo_url: anthropics/skills
   name: skills
   host: github.com
-  resolved_commit: 3b3fad96af16a10759d930941b4520ba0c40edae
-  resolved_ref: 3b3fad96af16a10759d930941b4520ba0c40edae
-  version: 3b3fad9
+  resolved_commit: 41bbe19d1a1a7eaab5e7bb9050a417e5c6cffc8f
+  version: 41bbe19
   package_type: marketplace_plugin
   deployed_files:
   - .agents/skills/skill-creator
@@ -56,7 +55,7 @@ dependencies:
     .agents/skills/skill-creator/scripts/run_eval.py: sha256:43e3b8f80dbf69c343967ba77e268fae991d9fa3ed68b32a0ff02532cd48657f
     .agents/skills/skill-creator/scripts/run_loop.py: sha256:7bd6f674203168520517eec94c55f493c0d154339b061b4d7c0f0dad187d0f21
     .agents/skills/skill-creator/scripts/utils.py: sha256:3af8ae62c40c73ab712207436a0d9a981e845f25c5a7040229eb189cc8e45bb1
-  content_hash: sha256:a8278652bb9a6c5e613ac107fd77fb4901be5aff8445ec8aa6b3918c3bd1fda2
+  content_hash: sha256:042650498609b4f0f336add85b8bc36f0cc695cda190cec435b15a4a757e4e19
   is_dev: true
   skill_subset:
   - skill-creator
@@ -65,7 +64,7 @@ dependencies:
   name: swift-concurrency
   host: github.com
   resolved_commit: faa595ee186dbd23a390dc1e7b06df40948941ab
-  resolved_ref: 2.1.1
+  resolved_ref: faa595ee186dbd23a390dc1e7b06df40948941ab
   version: 2.1.1
   package_type: marketplace_plugin
   deployed_files:
@@ -104,15 +103,12 @@ dependencies:
     .agents/skills/swift-concurrency/references/testing.md: sha256:3df9e839b3338dd473115d9ac8787a42d91b50a537fe40c55cf66d21034679db
     .agents/skills/swift-concurrency/references/threading.md: sha256:0a4e44bd27fdf852cf5f8f5aa64cfe15ba229fb7c885b3f69ed2afdbfac8752a
   content_hash: sha256:868581bfa6cd07bb7f52d0619e3a73a872f462d2fbfe83b8386ab0b69ce89ad5
-  constraint: 2.1.1
-  resolved_tag: 2.1.1
-  resolved_at: '2026-08-30T17:16:50+00:00'
   declared_license: MIT
 - repo_url: chrisbanes/skills
   name: chrisbanes-skills
   host: github.com
   resolved_commit: 2d202c722c1815007619ee0b667401b9d42e456e
-  resolved_ref: 2026.8.27
+  resolved_ref: 2d202c722c1815007619ee0b667401b9d42e456e
   version: 2026.8.27
   package_type: marketplace_plugin
   deployed_files:
@@ -137,16 +133,12 @@ dependencies:
   - compose-animations
   - kotlin-concurrency-and-flow
   - kotlin-control-flow
-  constraint: 2026.8.27
-  resolved_tag: 2026.8.27
-  resolved_at: '2026-08-30T17:16:50+00:00'
   declared_license: Apache-2.0
 - repo_url: github/awesome-copilot
   name: awesome-copilot
   host: github.com
-  resolved_commit: f11a4e441c5ff061b4f8ae37952be8c602e4034e
-  resolved_ref: f11a4e441c5ff061b4f8ae37952be8c602e4034e
-  version: unknown
+  resolved_commit: 2ba72cd14253500bbb747b5f01e72dd03fbafcb0
+  version: 0.0.0
   package_type: skill_bundle
   deployed_files:
   - .agents/skills/apple-appstore-reviewer
@@ -172,7 +164,7 @@ dependencies:
     .agents/skills/security-review/references/secret-patterns.md: sha256:38f84f60021490d785f33fc70f2ce784888d2a751781a881372e6862e7e11288
     .agents/skills/security-review/references/vuln-categories.md: sha256:d06159479bd92b9dcf3a2842e09f7712f1fd297c0bc9792fe20bc3cb69188df5
     .agents/skills/security-review/references/vulnerable-packages.md: sha256:8693a6a258bad18a8a1d0925bc1eae9c744071ff37a36b8f1da83adca93608af
-  content_hash: sha256:0e8b20973ccae6fba4fa504cb76620d5c94426f77d44748a4d26b3ad34774d4a
+  content_hash: sha256:cfb44980b3b8ea8b33726b5f3366749ce2196476b02c260198bd7b85ca4849a7
   skill_subset:
   - Thinking-Beast-Mode
   - apple-appstore-reviewer
@@ -184,7 +176,6 @@ dependencies:
   name: kotlin-agent-skills
   host: github.com
   resolved_commit: 08d7ad0d74a9a5a548287b2bd4926180fab56cac
-  resolved_ref: 08d7ad0d74a9a5a548287b2bd4926180fab56cac
   version: 08d7ad0
   package_type: marketplace_plugin
   deployed_files:
@@ -277,12 +268,11 @@ dependencies:
     .agents/skills/kotlin-tooling-native-build-performance/references/experimental.md: sha256:e0e83e36ebdd41f393082680ed06ff396077540544c5723cace80a2058a5eb1f
     .agents/skills/kotlin-tooling-native-build-performance/references/exports-and-generated-code.md: sha256:76d94b9a08e933f09eaae66e8a613f79726dbabc65f765e2130fabf93c0f87d3
     .agents/skills/kotlin-tooling-native-build-performance/scripts/audit-native-build.sh: sha256:94af58014fb24aaf1e7757ce804ea19e4023cc778da77ac0d725bd19aa0ba9e7
-  content_hash: sha256:689bc8cbee07421c97c5c323e2cf191b145aeffff3ac764fd60875e5fd3cdd68
+  content_hash: sha256:5b133a69d79a6df3b390767d0d3141f24d35d9e0954611e274a739145533c4ac
 - repo_url: skydoves/compose-performance-skills
   name: ordering-modifier-chains
   host: github.com
   resolved_commit: 1b32f81724c0d71fe9ef093ca44697f559fdab6e
-  resolved_ref: 1b32f81724c0d71fe9ef093ca44697f559fdab6e
   version: unknown
   virtual_path: modifiers/ordering-modifier-chains
   is_virtual: true
@@ -297,7 +287,6 @@ dependencies:
   name: using-efficient-effects
   host: github.com
   resolved_commit: 1b32f81724c0d71fe9ef093ca44697f559fdab6e
-  resolved_ref: 1b32f81724c0d71fe9ef093ca44697f559fdab6e
   version: unknown
   virtual_path: side-effects/using-efficient-effects
   is_virtual: true
