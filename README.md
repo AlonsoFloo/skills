@@ -11,6 +11,8 @@ practices for software development.
 ## Purpose
 
 Personal use for me, but you are welcome to view, and propose new stuffs.
+This repository is a APM package to provide easy skills, agents, prompts, etc...
+See: [https://microsoft.github.io/apm/reference/package-types/](https://microsoft.github.io/apm/reference/package-types/)
 
 ## Getting Started
 
@@ -43,14 +45,13 @@ apm install
 
 ```text
 .
-├── agents/                         # Active working folder for agent definitions
-│   └── [agent files..]
-├── prompts/                        # Active working folder for prompt templates
-│   └── [prompt files..]
-├── skills/                         # Active working folder for skill modules
-│   ├── [skills files..]
 ├── .apm/
-│   └── [symlinks]                  # ⚠️ Simlinks based on root folders (Do not edit)
+│   ├── agents/                         # Active working folder for agent definitions
+│   │   └── [agent files..]
+│   ├── prompts/                        # Active working folder for prompt templates
+│   │   └── [prompt files..]
+│   ├── skills/                         # Active working folder for skill modules
+│   │   └── [skills files..]
 ├── .agents/
 │   └── [auto-generated]            # ⚠️ Managed by Microsoft APM (Do not edit)
 └── .github/

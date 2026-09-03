@@ -1,5 +1,5 @@
 lockfile_version: '1'
-generated_at: '2026-09-03T17:35:27.848273+00:00'
+generated_at: '2026-09-03T18:14:08.547635+00:00'
 apm_version: 0.29.0
 dependencies:
 - repo_url: android/skills
@@ -7,14 +7,14 @@ dependencies:
   host: github.com
   resolved_commit: aaca635061a4befdd3890d63c4a02963f2e8d925
   resolved_ref: aaca635061a4befdd3890d63c4a02963f2e8d925
-  version: 0.0.0
+  version: aaca635
   package_type: marketplace_plugin
-  content_hash: sha256:a33e6a0ab1368f7e7f2be41d6b120408fc368785f61e87e3dcef872322f56395
+  content_hash: sha256:aaeb5016668f14e71db0b2c93ed37b7870ac1fbf22e72edee6384cae28c62959
 - repo_url: anthropics/skills
   name: skills
   host: github.com
   resolved_commit: 41bbe19d1a1a7eaab5e7bb9050a417e5c6cffc8f
-  version: 0.0.0
+  version: 41bbe19
   package_type: marketplace_plugin
   deployed_files:
   - .agents/skills/skill-creator
@@ -138,7 +138,7 @@ dependencies:
   name: awesome-copilot
   host: github.com
   resolved_commit: 2ba72cd14253500bbb747b5f01e72dd03fbafcb0
-  version: unknown
+  version: 0.0.0
   package_type: skill_bundle
   deployed_files:
   - .agents/skills/apple-appstore-reviewer
@@ -176,7 +176,7 @@ dependencies:
   name: kotlin-agent-skills
   host: github.com
   resolved_commit: 08d7ad0d74a9a5a548287b2bd4926180fab56cac
-  version: 0.0.0
+  version: 08d7ad0
   package_type: marketplace_plugin
   deployed_files:
   - .agents/skills/kotlin-backend-jpa-entity-mapping
@@ -1413,7 +1413,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:fcd363d94fa55dddd402f8fd9626b4080afc746f246d5e7dc56a4ad4e6ff9e52
+  content_hash: sha256:352620b5d81cc589078a618b81ae01442434564e8e1cdaa6af77ecaaffe7e874
 - kind: project-relative
   target: agents
   value: .agents/skills/flo-boilerplategit/references/security.md
@@ -1594,6 +1594,78 @@ deployments:
   - .
   active_owner: .
   content_hash: sha256:eae4ebad9f9e892283a890f7072159dd918922bce297e76278a3aababda1d40a
+- kind: project-relative
+  target: copilot
+  value: .github/agents/flo-devops.agent.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:5604736291e92e64e27dc71f00a12fef1ce6fd3737d227bfe1e3a7a8a76991b4
+- kind: project-relative
+  target: copilot
+  value: .github/agents/floo-coder.agent.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:c031da6cc17e25b1872b6d69181c037807430bacb1bf277c7a702c801f561f97
+- kind: project-relative
+  target: copilot
+  value: .github/prompts/flo-boilerplategit.prompt.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:223c1d251f0ecad9ae4e9485c566b59dafac3700021d9a2dac9ab33e8fbce8c7
+- kind: project-relative
+  target: copilot
+  value: .github/prompts/flo-precommit-all.prompt.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:9205424b92f91826c51c4b324deb61925f4839ccfbd470866e0aa1c4207ec6f2
+- kind: project-relative
+  target: opencode
+  value: .opencode/agents/flo-devops.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:5604736291e92e64e27dc71f00a12fef1ce6fd3737d227bfe1e3a7a8a76991b4
+- kind: project-relative
+  target: opencode
+  value: .opencode/agents/floo-coder.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:c031da6cc17e25b1872b6d69181c037807430bacb1bf277c7a702c801f561f97
+- kind: project-relative
+  target: opencode
+  value: .opencode/commands/flo-boilerplategit.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:4af1b00169bf2c08b0e7aaf2b53e42d5eb0e1aeb7368ff284b179c3aa8e0c535
+- kind: project-relative
+  target: opencode
+  value: .opencode/commands/flo-precommit-all.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:b4debd14b419859b860b54d695dd81f1911667478775a61d975feb94a9b5cef2
 local_deployed_files:
 - .agents/skills/flo-android-craftsmanship
 - .agents/skills/flo-android-craftsmanship/SKILL.md
@@ -1630,6 +1702,14 @@ local_deployed_files:
 - .agents/skills/flo-testing-craftsmanship/references/examples.md
 - .agents/skills/flo-verify-precommitall
 - .agents/skills/flo-verify-precommitall/SKILL.md
+- .github/agents/flo-devops.agent.md
+- .github/agents/floo-coder.agent.md
+- .github/prompts/flo-boilerplategit.prompt.md
+- .github/prompts/flo-precommit-all.prompt.md
+- .opencode/agents/flo-devops.md
+- .opencode/agents/floo-coder.md
+- .opencode/commands/flo-boilerplategit.md
+- .opencode/commands/flo-precommit-all.md
 local_deployed_file_hashes:
   .agents/skills/flo-android-craftsmanship/SKILL.md: sha256:faa6297ad79ace8f9372f3a6d89c905bc613cbcc9083402bba62a76e5b274ae9
   .agents/skills/flo-android-craftsmanship/references/examples.md: sha256:3900d2c5dfba5673bd3b3d7c6d6c23aacf0579702708ebde4108d7933c127430
@@ -1643,7 +1723,7 @@ local_deployed_file_hashes:
   .agents/skills/flo-boilerplategit/references/pre-commit.md: sha256:9962b3f4e25d2511eb5fa4911b7388a314d0614dfa1d95b214529eca4ee5a0c7
   .agents/skills/flo-boilerplategit/references/readme.md: sha256:574ea958878945d7d4fb790eec905de979cf08bc00016df3401773ae73c2c6f0
   .agents/skills/flo-boilerplategit/references/release-please.md: sha256:62efaaa97449b2dd509e39ebf556f29ac83f20f3d207579fd3c82fb08ae23145
-  .agents/skills/flo-boilerplategit/references/renovate.md: sha256:fcd363d94fa55dddd402f8fd9626b4080afc746f246d5e7dc56a4ad4e6ff9e52
+  .agents/skills/flo-boilerplategit/references/renovate.md: sha256:352620b5d81cc589078a618b81ae01442434564e8e1cdaa6af77ecaaffe7e874
   .agents/skills/flo-boilerplategit/references/security.md: sha256:d36f39b124ceb68a354c1c22a4cda2d3845e59d82dbe71345c4c47afa8b29abf
   .agents/skills/flo-caveman/SKILL.md: sha256:6d2e8d888212fe198a76cd1c28c8bc1e74b25642f9f0a9636060086ba01acf85
   .agents/skills/flo-conventional-comments/SKILL.md: sha256:388808e2149c7e956d40980294c4edc75b2badeb9dfc37874249ca20657601e3
@@ -1657,3 +1737,11 @@ local_deployed_file_hashes:
   .agents/skills/flo-testing-craftsmanship/SKILL.md: sha256:c2d650460436717a30fbbf04648f47f8d272efd286f1d1f29354bcac2696fe78
   .agents/skills/flo-testing-craftsmanship/references/examples.md: sha256:0a9cf62cc6549e2075686b000c97d712d461daf03bebfbd5ed0a7f76aa71eba4
   .agents/skills/flo-verify-precommitall/SKILL.md: sha256:eae4ebad9f9e892283a890f7072159dd918922bce297e76278a3aababda1d40a
+  .github/agents/flo-devops.agent.md: sha256:5604736291e92e64e27dc71f00a12fef1ce6fd3737d227bfe1e3a7a8a76991b4
+  .github/agents/floo-coder.agent.md: sha256:c031da6cc17e25b1872b6d69181c037807430bacb1bf277c7a702c801f561f97
+  .github/prompts/flo-boilerplategit.prompt.md: sha256:223c1d251f0ecad9ae4e9485c566b59dafac3700021d9a2dac9ab33e8fbce8c7
+  .github/prompts/flo-precommit-all.prompt.md: sha256:9205424b92f91826c51c4b324deb61925f4839ccfbd470866e0aa1c4207ec6f2
+  .opencode/agents/flo-devops.md: sha256:5604736291e92e64e27dc71f00a12fef1ce6fd3737d227bfe1e3a7a8a76991b4
+  .opencode/agents/floo-coder.md: sha256:c031da6cc17e25b1872b6d69181c037807430bacb1bf277c7a702c801f561f97
+  .opencode/commands/flo-boilerplategit.md: sha256:4af1b00169bf2c08b0e7aaf2b53e42d5eb0e1aeb7368ff284b179c3aa8e0c535
+  .opencode/commands/flo-precommit-all.md: sha256:b4debd14b419859b860b54d695dd81f1911667478775a61d975feb94a9b5cef2
