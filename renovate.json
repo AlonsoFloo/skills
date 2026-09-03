@@ -30,6 +30,9 @@
     "apm": {
         "enabled": true
     },
+    "vulnerabilityAlerts": {
+      "enabled": true
+    },
     "packageRules": [
         {
             "matchManagers": ["pre-commit"],
