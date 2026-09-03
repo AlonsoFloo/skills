@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.4.0](https://github.com/AlonsoFloo/skills/compare/v2.3.8...v2.4.0) (2026-09-03)
+
+
+### Features
+
+* **apm:** Following full APM package specification to avoid conflicts ([#37](https://github.com/AlonsoFloo/skills/issues/37)) ([082dd81](https://github.com/AlonsoFloo/skills/commit/082dd811fffba4e3cfb09caa29f7911cf90f9435))
+* **boilerplategit:** Updated reference of renovate with new config ([a6ab5c2](https://github.com/AlonsoFloo/skills/commit/a6ab5c2b7ad9ab11887bb24a2f876b43ba53d4e9))
+
 ## [2.3.8](https://github.com/AlonsoFloo/skills/compare/v2.3.7...v2.3.8) (2026-08-30)
 
 
