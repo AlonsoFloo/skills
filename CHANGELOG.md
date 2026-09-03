@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.4.1](https://github.com/AlonsoFloo/skills/compare/v2.4.0...v2.4.1) (2026-09-03)
+
+
+### Bug Fixes
+
+* **apm:** incorrect spacing in file ([f0dadec](https://github.com/AlonsoFloo/skills/commit/f0dadece0499e0e33c91121f0fc441c9fe597be6))
+* **boilerplategit:** Added more exclusion for apm generated file ([33fb0e5](https://github.com/AlonsoFloo/skills/commit/33fb0e55d07084104a300558fd4ae09845487571))
+
 ## [2.4.0](https://github.com/AlonsoFloo/skills/compare/v2.3.8...v2.4.0) (2026-09-03)
 
 
