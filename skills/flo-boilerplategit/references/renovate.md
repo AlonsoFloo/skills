@@ -16,6 +16,7 @@
     "recreateWhen": "auto",
     "minimumReleaseAge": "10 days",
     "internalChecksFilter": "strict",
+    "semanticCommits": "enabled",
     "rebaseWhen": "behind-base-branch",
     "timezone": "UTC",
     "prHourlyLimit": 6,
@@ -28,6 +29,12 @@
     },
     "git-submodules": {
         "enabled": true
+    },
+    "apm": {
+        "enabled": true
+    },
+    "vulnerabilityAlerts": {
+      "enabled": true
     },
     "packageRules": [
         {
