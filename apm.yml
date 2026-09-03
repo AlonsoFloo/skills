@@ -1,6 +1,6 @@
 name: AlonsoFlooSkills
 author: AlonsoFloo
-version: "2.4.0" # x-release-please-version
+version: "2.4.1" # x-release-please-version
 description: Personal, agent-friendly engineering skills for architecture, code
   quality, testing, mobile development, and DevOps.
 license: MIT
