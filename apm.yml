@@ -14,33 +14,33 @@ targets:
 dependencies:
   apm:
     # Kotlin development best practices and Kotlin-specific agent guidance.
-    - git: https://github.com/Kotlin/kotlin-agent-skills.git#08d7ad0d74a9a5a548287b2bd4926180fab56cac
+    - git: https://github.com/Kotlin/kotlin-agent-skills.git
 
     # Android development skills and best practices.
-    - git: https://github.com/android/skills.git#v1.0.10
+    - git: https://github.com/android/skills.git#aaca635061a4befdd3890d63c4a02963f2e8d925 #v1.0.10
 
     # Swift concurrency: async/await, actors, Sendable, structured concurrency,
     # and modern Swift concurrency patterns.
     # Starting 2.1.1 it introduced Agent portable plugin that miss behave with APM 0.29.0
-    - git: https://github.com/AvdLee/Swift-Concurrency-Agent-Skill.git#2.1.1
+    - git: https://github.com/AvdLee/Swift-Concurrency-Agent-Skill.git#faa595ee186dbd23a390dc1e7b06df40948941ab #2.1.1
 
     # Jetpack Compose animations and Kotlin control-flow best practices.
-    - git: https://github.com/chrisbanes/skills.git#2026.8.27
+    - git: https://github.com/chrisbanes/skills.git#2d202c722c1815007619ee0b667401b9d42e456e #2026.8.27
       skills:
         - compose-animations
         - kotlin-control-flow
         - kotlin-concurrency-and-flow
 
     # Jetpack Compose modifier ordering and efficient modifier chains.
-    - git: https://github.com/skydoves/compose-performance-skills.git#1b32f81724c0d71fe9ef093ca44697f559fdab6e
+    - git: https://github.com/skydoves/compose-performance-skills.git
       path: modifiers/ordering-modifier-chains
 
     # Efficient handling of side effects in Jetpack Compose.
-    - git: https://github.com/skydoves/compose-performance-skills.git#1b32f81724c0d71fe9ef093ca44697f559fdab6e
+    - git: https://github.com/skydoves/compose-performance-skills.git
       path: side-effects/using-efficient-effects
 
     # Efficient handling of side effects in Jetpack Compose.
-    - git: https://github.com/github/awesome-copilot.git#f11a4e441c5ff061b4f8ae37952be8c602e4034e
+    - git: https://github.com/github/awesome-copilot.git
       skills:
         - apple-appstore-reviewer
         - conventional-branch
@@ -52,6 +52,6 @@ devDependencies:
   apm:
     # Skill development: guidance for creating, validating, and maintaining
     # agent skills.
-    - git: https://github.com/anthropics/skills.git#3b3fad96af16a10759d930941b4520ba0c40edae
+    - git: https://github.com/anthropics/skills.git
       skills:
         - skill-creator

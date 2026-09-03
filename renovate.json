@@ -13,6 +13,7 @@
     "recreateWhen": "auto",
     "minimumReleaseAge": "10 days",
     "internalChecksFilter": "strict",
+    "semanticCommits": "enabled",
     "rebaseWhen": "behind-base-branch",
     "schedule": "on monday before 5:00pm",
     "timezone": "UTC",
