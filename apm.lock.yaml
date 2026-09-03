@@ -1,5 +1,5 @@
 lockfile_version: '1'
-generated_at: '2026-09-03T18:14:08.547635+00:00'
+generated_at: '2026-09-03T18:32:46.076419+00:00'
 apm_version: 0.29.0
 dependencies:
 - repo_url: android/skills
@@ -14,7 +14,7 @@ dependencies:
   name: skills
   host: github.com
   resolved_commit: 41bbe19d1a1a7eaab5e7bb9050a417e5c6cffc8f
-  version: 41bbe19
+  version: 0.0.0
   package_type: marketplace_plugin
   deployed_files:
   - .agents/skills/skill-creator
@@ -138,7 +138,7 @@ dependencies:
   name: awesome-copilot
   host: github.com
   resolved_commit: 2ba72cd14253500bbb747b5f01e72dd03fbafcb0
-  version: 0.0.0
+  version: unknown
   package_type: skill_bundle
   deployed_files:
   - .agents/skills/apple-appstore-reviewer
@@ -176,7 +176,7 @@ dependencies:
   name: kotlin-agent-skills
   host: github.com
   resolved_commit: 08d7ad0d74a9a5a548287b2bd4926180fab56cac
-  version: 08d7ad0
+  version: 0.0.0
   package_type: marketplace_plugin
   deployed_files:
   - .agents/skills/kotlin-backend-jpa-entity-mapping
@@ -1386,7 +1386,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:9962b3f4e25d2511eb5fa4911b7388a314d0614dfa1d95b214529eca4ee5a0c7
+  content_hash: sha256:60cedb5b647b44bf3ca80a965ff09d76140a5b380f61b2f1a928284341ed01b3
 - kind: project-relative
   target: agents
   value: .agents/skills/flo-boilerplategit/references/readme.md
@@ -1720,7 +1720,7 @@ local_deployed_file_hashes:
   .agents/skills/flo-boilerplategit/references/github-templates.md: sha256:4fea4421102ac9c3d793666db27522bb7ce2b5cb66da6269f583fd40a5d1d482
   .agents/skills/flo-boilerplategit/references/gitignore.md: sha256:1ad6f5e425874a8fddac2dd09435f601b83a9c9618ea392202411e42043e4aa2
   .agents/skills/flo-boilerplategit/references/license.md: sha256:0f32542d8a01518c8e75df2f11708a669e0f6bd51b2dd8ed6bb7ca3a5b7ba6d8
-  .agents/skills/flo-boilerplategit/references/pre-commit.md: sha256:9962b3f4e25d2511eb5fa4911b7388a314d0614dfa1d95b214529eca4ee5a0c7
+  .agents/skills/flo-boilerplategit/references/pre-commit.md: sha256:60cedb5b647b44bf3ca80a965ff09d76140a5b380f61b2f1a928284341ed01b3
   .agents/skills/flo-boilerplategit/references/readme.md: sha256:574ea958878945d7d4fb790eec905de979cf08bc00016df3401773ae73c2c6f0
   .agents/skills/flo-boilerplategit/references/release-please.md: sha256:62efaaa97449b2dd509e39ebf556f29ac83f20f3d207579fd3c82fb08ae23145
   .agents/skills/flo-boilerplategit/references/renovate.md: sha256:352620b5d81cc589078a618b81ae01442434564e8e1cdaa6af77ecaaffe7e874

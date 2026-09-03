@@ -10,11 +10,14 @@ exclude: |
     | \.agents/apm-hooks.json
     | \.agents/hooks.json
     | \.agents/hooks/
+    | \.agents/mcp_config.json
     | \.opencode/agents/
     | \.opencode/commands/
+    | opencode.json
     | \.github/agents/
     | \.github/hooks/
     | \.github/prompts/
+    | \.github/mcp.json
   )
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
