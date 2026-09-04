@@ -1,5 +1,5 @@
 lockfile_version: '1'
-generated_at: '2026-09-04T07:53:17.196196+00:00'
+generated_at: '2026-09-04T08:52:52.196125+00:00'
 apm_version: 0.29.0
 dependencies:
 - repo_url: android/skills
@@ -11,7 +11,7 @@ dependencies:
   package_type: marketplace_plugin
   content_hash: sha256:aaeb5016668f14e71db0b2c93ed37b7870ac1fbf22e72edee6384cae28c62959
 - repo_url: anthropics/skills
-  name: skills
+  name: anthropics-skills
   host: github.com
   resolved_commit: 41bbe19d1a1a7eaab5e7bb9050a417e5c6cffc8f
   resolved_ref: main
@@ -56,7 +56,7 @@ dependencies:
     .agents/skills/skill-creator/scripts/run_eval.py: sha256:43e3b8f80dbf69c343967ba77e268fae991d9fa3ed68b32a0ff02532cd48657f
     .agents/skills/skill-creator/scripts/run_loop.py: sha256:7bd6f674203168520517eec94c55f493c0d154339b061b4d7c0f0dad187d0f21
     .agents/skills/skill-creator/scripts/utils.py: sha256:3af8ae62c40c73ab712207436a0d9a981e845f25c5a7040229eb189cc8e45bb1
-  content_hash: sha256:8df43c6b5e4c19597bdda0a525dd9035574ef214a1bc871566878dc2b8d4fc78
+  content_hash: sha256:70a133bd8b910d8dd7522e8379ecc20a0a6ce26d01c536f510b7aaf0512688ec
   is_dev: true
   skill_subset:
   - skill-creator
@@ -136,11 +136,11 @@ dependencies:
   - kotlin-control-flow
   declared_license: Apache-2.0
 - repo_url: github/awesome-copilot
-  name: awesome-copilot
+  name: github-awesome-copilot
   host: github.com
   resolved_commit: 7b1ebe6333397841ca918dec904d24d4695fe953
   resolved_ref: main
-  version: unknown
+  version: 0.0.0
   package_type: skill_bundle
   deployed_files:
   - .agents/skills/apple-appstore-reviewer

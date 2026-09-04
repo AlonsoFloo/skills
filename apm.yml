@@ -31,7 +31,7 @@ dependencies:
     - AvdLee/Swift-Concurrency-Agent-Skill#faa595ee186dbd23a390dc1e7b06df40948941ab #2.1.1
 
     # Jetpack Compose animations and Kotlin control-flow best practices.
-    - git: chrisbanes/skills
+    - git: https://github.com/chrisbanes/skills.git
       ref: 2d202c722c1815007619ee0b667401b9d42e456e #2026.8.27
       skills:
         - compose-animations
@@ -39,17 +39,17 @@ dependencies:
         - kotlin-concurrency-and-flow
 
     # Jetpack Compose modifier ordering and efficient modifier chains.
-    - git: skydoves/compose-performance-skills
+    - git: https://github.com/skydoves/compose-performance-skills.git
       ref: main
       path: modifiers/ordering-modifier-chains
 
     # Efficient handling of side effects in Jetpack Compose.
-    - git: skydoves/compose-performance-skills
+    - git: https://github.com/skydoves/compose-performance-skills.git
       ref: main
       path: side-effects/using-efficient-effects
 
     # Curated skills from awesome-copilot.
-    - git: github/awesome-copilot
+    - git: https://github.com/github/awesome-copilot.git
       ref: main
       skills:
         - apple-appstore-reviewer
@@ -57,6 +57,7 @@ dependencies:
         - conventional-commit
         - security-review
         - Thinking-Beast-Mode
+      alias: github-awesome-copilot
 
 devDependencies:
   apm:
@@ -66,3 +67,4 @@ devDependencies:
       ref: main
       skills:
         - skill-creator
+      alias: anthropics-skills
