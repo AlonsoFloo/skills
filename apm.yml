@@ -1,8 +1,12 @@
 name: AlonsoFlooSkills
+
 author: AlonsoFloo
+
 version: "2.4.1" # x-release-please-version
+
 description: Personal, agent-friendly engineering skills for architecture, code
   quality, testing, mobile development, and DevOps.
+
 license: MIT
 
 targets:
@@ -16,33 +20,37 @@ includes: auto
 dependencies:
   apm:
     # Kotlin development best practices and Kotlin-specific agent guidance.
-    - git: https://github.com/Kotlin/kotlin-agent-skills.git
+    - Kotlin/kotlin-agent-skills#08d7ad0d74a9a5a548287b2bd4926180fab56cac # main
 
     # Android development skills and best practices.
-    - git: https://github.com/android/skills.git#aaca635061a4befdd3890d63c4a02963f2e8d925 #v1.0.10
+    - android/skills#aaca635061a4befdd3890d63c4a02963f2e8d925 #v1.0.10
 
     # Swift concurrency: async/await, actors, Sendable, structured concurrency,
     # and modern Swift concurrency patterns.
     # Starting 2.1.1 it introduced Agent portable plugin that miss behave with APM 0.29.0
-    - git: https://github.com/AvdLee/Swift-Concurrency-Agent-Skill.git#faa595ee186dbd23a390dc1e7b06df40948941ab #2.1.1
+    - AvdLee/Swift-Concurrency-Agent-Skill#faa595ee186dbd23a390dc1e7b06df40948941ab #2.1.1
 
     # Jetpack Compose animations and Kotlin control-flow best practices.
-    - git: https://github.com/chrisbanes/skills.git#2d202c722c1815007619ee0b667401b9d42e456e #2026.8.27
+    - git: chrisbanes/skills
+      ref: 2d202c722c1815007619ee0b667401b9d42e456e #2026.8.27
       skills:
         - compose-animations
         - kotlin-control-flow
         - kotlin-concurrency-and-flow
 
     # Jetpack Compose modifier ordering and efficient modifier chains.
-    - git: https://github.com/skydoves/compose-performance-skills.git
+    - git: skydoves/compose-performance-skills
+      ref: 1b32f81724c0d71fe9ef093ca44697f559fdab6e # main
       path: modifiers/ordering-modifier-chains
 
     # Efficient handling of side effects in Jetpack Compose.
-    - git: https://github.com/skydoves/compose-performance-skills.git
+    - git: skydoves/compose-performance-skills
+      ref: 1b32f81724c0d71fe9ef093ca44697f559fdab6e # main
       path: side-effects/using-efficient-effects
 
-    # Efficient handling of side effects in Jetpack Compose.
-    - git: https://github.com/github/awesome-copilot.git
+    # Curated skills from awesome-copilot.
+    - git: github/awesome-copilot
+      ref: 7b1ebe6333397841ca918dec904d24d4695fe953 # main
       skills:
         - apple-appstore-reviewer
         - conventional-branch
@@ -54,6 +62,7 @@ devDependencies:
   apm:
     # Skill development: guidance for creating, validating, and maintaining
     # agent skills.
-    - git: https://github.com/anthropics/skills.git
+    - git: anthropics/skills
+      ref: 41bbe19d1a1a7eaab5e7bb9050a417e5c6cffc8f # main
       skills:
         - skill-creator

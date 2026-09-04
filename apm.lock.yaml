@@ -1,5 +1,5 @@
 lockfile_version: '1'
-generated_at: '2026-09-03T18:32:46.076419+00:00'
+generated_at: '2026-09-04T06:29:11.386005+00:00'
 apm_version: 0.29.0
 dependencies:
 - repo_url: android/skills
@@ -14,7 +14,8 @@ dependencies:
   name: skills
   host: github.com
   resolved_commit: 41bbe19d1a1a7eaab5e7bb9050a417e5c6cffc8f
-  version: 0.0.0
+  resolved_ref: 41bbe19d1a1a7eaab5e7bb9050a417e5c6cffc8f
+  version: 41bbe19
   package_type: marketplace_plugin
   deployed_files:
   - .agents/skills/skill-creator
@@ -137,8 +138,9 @@ dependencies:
 - repo_url: github/awesome-copilot
   name: awesome-copilot
   host: github.com
-  resolved_commit: 2ba72cd14253500bbb747b5f01e72dd03fbafcb0
-  version: unknown
+  resolved_commit: 7b1ebe6333397841ca918dec904d24d4695fe953
+  resolved_ref: 7b1ebe6333397841ca918dec904d24d4695fe953
+  version: 0.0.0
   package_type: skill_bundle
   deployed_files:
   - .agents/skills/apple-appstore-reviewer
@@ -164,7 +166,7 @@ dependencies:
     .agents/skills/security-review/references/secret-patterns.md: sha256:38f84f60021490d785f33fc70f2ce784888d2a751781a881372e6862e7e11288
     .agents/skills/security-review/references/vuln-categories.md: sha256:d06159479bd92b9dcf3a2842e09f7712f1fd297c0bc9792fe20bc3cb69188df5
     .agents/skills/security-review/references/vulnerable-packages.md: sha256:8693a6a258bad18a8a1d0925bc1eae9c744071ff37a36b8f1da83adca93608af
-  content_hash: sha256:cfb44980b3b8ea8b33726b5f3366749ce2196476b02c260198bd7b85ca4849a7
+  content_hash: sha256:2d9c3b415fb680253102f6c656c94871fdab99037230509748e6c44275254cb9
   skill_subset:
   - Thinking-Beast-Mode
   - apple-appstore-reviewer
@@ -176,7 +178,8 @@ dependencies:
   name: kotlin-agent-skills
   host: github.com
   resolved_commit: 08d7ad0d74a9a5a548287b2bd4926180fab56cac
-  version: 0.0.0
+  resolved_ref: 08d7ad0d74a9a5a548287b2bd4926180fab56cac
+  version: 08d7ad0
   package_type: marketplace_plugin
   deployed_files:
   - .agents/skills/kotlin-backend-jpa-entity-mapping
@@ -273,6 +276,7 @@ dependencies:
   name: ordering-modifier-chains
   host: github.com
   resolved_commit: 1b32f81724c0d71fe9ef093ca44697f559fdab6e
+  resolved_ref: 1b32f81724c0d71fe9ef093ca44697f559fdab6e
   version: unknown
   virtual_path: modifiers/ordering-modifier-chains
   is_virtual: true
@@ -287,6 +291,7 @@ dependencies:
   name: using-efficient-effects
   host: github.com
   resolved_commit: 1b32f81724c0d71fe9ef093ca44697f559fdab6e
+  resolved_ref: 1b32f81724c0d71fe9ef093ca44697f559fdab6e
   version: unknown
   virtual_path: side-effects/using-efficient-effects
   is_virtual: true
