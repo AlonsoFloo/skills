@@ -20,7 +20,7 @@ includes: auto
 dependencies:
   apm:
     # Kotlin development best practices and Kotlin-specific agent guidance.
-    - Kotlin/kotlin-agent-skills#08d7ad0d74a9a5a548287b2bd4926180fab56cac # main
+    - Kotlin/kotlin-agent-skills#main
 
     # Android development skills and best practices.
     - android/skills#aaca635061a4befdd3890d63c4a02963f2e8d925 #v1.0.10
@@ -40,17 +40,17 @@ dependencies:
 
     # Jetpack Compose modifier ordering and efficient modifier chains.
     - git: skydoves/compose-performance-skills
-      ref: 1b32f81724c0d71fe9ef093ca44697f559fdab6e # main
+      ref: main
       path: modifiers/ordering-modifier-chains
 
     # Efficient handling of side effects in Jetpack Compose.
     - git: skydoves/compose-performance-skills
-      ref: 1b32f81724c0d71fe9ef093ca44697f559fdab6e # main
+      ref: main
       path: side-effects/using-efficient-effects
 
     # Curated skills from awesome-copilot.
     - git: github/awesome-copilot
-      ref: 7b1ebe6333397841ca918dec904d24d4695fe953 # main
+      ref: main
       skills:
         - apple-appstore-reviewer
         - conventional-branch
@@ -63,6 +63,6 @@ devDependencies:
     # Skill development: guidance for creating, validating, and maintaining
     # agent skills.
     - git: anthropics/skills
-      ref: 41bbe19d1a1a7eaab5e7bb9050a417e5c6cffc8f # main
+      ref: main
       skills:
         - skill-creator
