@@ -1587,7 +1587,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:62efaaa97449b2dd509e39ebf556f29ac83f20f3d207579fd3c82fb08ae23145
+  content_hash: sha256:a25b03bfda5a876a6eabe98cb235bde651562e4f7377f7b59b7c067cab1f35b0
 - kind: project-relative
   target: agents
   value: .agents/skills/flo-boilerplategit/references/renovate.md
@@ -1905,7 +1905,7 @@ local_deployed_file_hashes:
   .agents/skills/flo-boilerplategit/references/license.md: sha256:0f32542d8a01518c8e75df2f11708a669e0f6bd51b2dd8ed6bb7ca3a5b7ba6d8
   .agents/skills/flo-boilerplategit/references/pre-commit.md: sha256:95dde9c91fb1649a4ecd8a668156fc496eb0dced14a60d3ee8b27c893845409b
   .agents/skills/flo-boilerplategit/references/readme.md: sha256:574ea958878945d7d4fb790eec905de979cf08bc00016df3401773ae73c2c6f0
-  .agents/skills/flo-boilerplategit/references/release-please.md: sha256:62efaaa97449b2dd509e39ebf556f29ac83f20f3d207579fd3c82fb08ae23145
+  .agents/skills/flo-boilerplategit/references/release-please.md: sha256:a25b03bfda5a876a6eabe98cb235bde651562e4f7377f7b59b7c067cab1f35b0
   .agents/skills/flo-boilerplategit/references/renovate.md: sha256:352620b5d81cc589078a618b81ae01442434564e8e1cdaa6af77ecaaffe7e874
   .agents/skills/flo-boilerplategit/references/security.md: sha256:d36f39b124ceb68a354c1c22a4cda2d3845e59d82dbe71345c4c47afa8b29abf
   .agents/skills/flo-caveman/SKILL.md: sha256:6d2e8d888212fe198a76cd1c28c8bc1e74b25642f9f0a9636060086ba01acf85

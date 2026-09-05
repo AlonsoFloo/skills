@@ -7,9 +7,21 @@ Adapt the type of release with the current repo needs
 ```json
 {
   "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
+  "plugins": [
+    {
+      "type": "sentence-case"
+    }
+  ],
+  "include-commit-authors": true,
   "packages": {
     ".": {
       "release-type": "simple",
+      "extra-files": [
+        {
+          "type": "generic",
+          "path": "README.md"
+        }
+      ]
     }
   }
 }
