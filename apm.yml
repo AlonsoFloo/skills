@@ -25,10 +25,10 @@ dependencies:
     # Android development skills and best practices.
     - android/skills#aaca635061a4befdd3890d63c4a02963f2e8d925 #v1.0.10
 
-    # Swift concurrency: async/await, actors, Sendable, structured concurrency,
-    # and modern Swift concurrency patterns.
-    # Starting 2.1.1 it introduced Agent portable plugin that miss behave with APM 0.29.0
-    - AvdLee/Swift-Concurrency-Agent-Skill#faa595ee186dbd23a390dc1e7b06df40948941ab #2.1.1
+    # Swift concurrency: async/await, actors, Sendable, structured concurrency, and modern Swift concurrency patterns.
+    # Starting 2.2.0 it introduced Agent portable plugin that miss behave with APM 0.29.0
+    # Since then, the skill folder is pinned
+    - AvdLee/Swift-Concurrency-Agent-Skill/skills/swift-concurrency#45fa49e4e0b2af4d43b1cb458903f8030ac993bd #2.3.0
 
     # Jetpack Compose animations and Kotlin control-flow best practices.
     - git: https://github.com/chrisbanes/skills.git
