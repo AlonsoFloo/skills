@@ -1,5 +1,20 @@
 # Changelog
 
+## [2.5.0](https://github.com/AlonsoFloo/skills/compare/v2.4.1...v2.5.0) (2026-09-05)
+
+
+### Features
+
+* **SKILL:** Added several skills of mattpocock/skills ([e7ce839](https://github.com/AlonsoFloo/skills/commit/e7ce839398314711ae5ad1bcd853e27bb1f3569a))
+
+
+### Bug Fixes
+
+* **flo-boilerplategit:** Updated ReleasePlease reference for better changelog ([93f4d2a](https://github.com/AlonsoFloo/skills/commit/93f4d2a5de5a0737e829c3ac5662aa4a09003974))
+* **renovate:** Renovate cannot pin digest with branch refs, so I removed the pin ([c9fa28c](https://github.com/AlonsoFloo/skills/commit/c9fa28c3e2ac1d41f407933f6c90a8eae53adc83))
+* **renovate:** Trying several format for apm manager ([dbec315](https://github.com/AlonsoFloo/skills/commit/dbec31545cd44f77acb9ca6526136a7a191ab46c))
+* **renovate:** Updating format of apm.yml for renovate apm manager ([3aa31d2](https://github.com/AlonsoFloo/skills/commit/3aa31d23931e05f73266c0328657dc4966396a67))
+
 ## [2.4.1](https://github.com/AlonsoFloo/skills/compare/v2.4.0...v2.4.1) (2026-09-03)
 
 
