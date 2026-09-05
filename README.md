@@ -26,10 +26,22 @@ All sources are in the folder `.apm/..`
 
 To install this tool on your machine or repo, run:
 
+#### A. All deps
+
 <!-- x-release-please-start-version -->
 
 ```bash
 apm install AlonsoFloo/skills.git#v2.4.1
+```
+
+<!-- x-release-please-end -->
+
+#### B. Isolated SKILL
+
+<!-- x-release-please-start-version -->
+
+```bash
+apm install AlonsoFloo/skills/.apm/skills/flo-software-craftsmanship#v2.4.1
 ```
 
 <!-- x-release-please-end -->
