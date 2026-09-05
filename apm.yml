@@ -59,6 +59,14 @@ dependencies:
         - Thinking-Beast-Mode
       alias: github-awesome-copilot
 
+    # Engeneering skills curated by Matt Pocock
+    - git: mattpocock/skills
+      ref: 6acc160e4e0cd062dbbbd7a1b26ae92855edf07e #v1.2.3
+      skills:
+        - grill-me
+        - grilling
+        - domain-modeling
+
 devDependencies:
   apm:
     # Skill development: guidance for creating, validating, and maintaining
