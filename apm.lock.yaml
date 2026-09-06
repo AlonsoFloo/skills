@@ -1,5 +1,5 @@
 lockfile_version: '1'
-generated_at: '2026-09-05T10:47:32.142819+00:00'
+generated_at: '2026-09-06T10:05:05.747251+00:00'
 apm_version: 0.29.0
 dependencies:
 - repo_url: android/skills
@@ -145,11 +145,11 @@ dependencies:
   - kotlin-control-flow
   declared_license: Apache-2.0
 - repo_url: github/awesome-copilot
-  name: awesome-copilot
+  name: github-awesome-copilot
   host: github.com
   resolved_commit: 7b1ebe6333397841ca918dec904d24d4695fe953
   resolved_ref: main
-  version: unknown
+  version: 0.0.0
   package_type: skill_bundle
   deployed_files:
   - .agents/skills/apple-appstore-reviewer
