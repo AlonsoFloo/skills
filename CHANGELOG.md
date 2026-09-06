@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.5.1](https://github.com/AlonsoFloo/skills/compare/v2.5.0...v2.5.1) (2026-09-06)
+
+
+### Bug Fixes
+
+* **apm:** APM drifts ([7969954](https://github.com/AlonsoFloo/skills/commit/7969954b2a875f2686b1dd4af4999d1f49d76dcf))
+* **apm:** APM drifts 2 ([ffac755](https://github.com/AlonsoFloo/skills/commit/ffac7554678f2c27ae617ca3c371737b145a47f6))
+* **apm:** Imrpoved definition after 0.29.1 update ([1b54040](https://github.com/AlonsoFloo/skills/commit/1b5404005be2a812878df7d78ad30b2a61c2d0be))
+* **apm:** Updated config for apm 0.29.1 ([a0f7834](https://github.com/AlonsoFloo/skills/commit/a0f78348937da0626db5c512150021ea2ac640de))
+* **flo-boilerplategit:** Improved pre-commit pr checks ([176fc93](https://github.com/AlonsoFloo/skills/commit/176fc9337de69e1b852f2a7f6f125af9ac6b8af2))
+* **flo-boilerplategit:** Removed duplicate definition of the workflow precommit in reference ([3083f3e](https://github.com/AlonsoFloo/skills/commit/3083f3ec6f649822e8e514ef6340f8e4b9becffe))
+
 ## [2.5.0](https://github.com/AlonsoFloo/skills/compare/v2.4.1...v2.5.0) (2026-09-05)
 
 
