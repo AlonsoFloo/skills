@@ -63,17 +63,17 @@ repos:
         args: ["--severity=warning"]
 ```
 
-## `.github/workflows/pr-checks.yml`
+## `.github/workflows/pr-precommit-checks.yml`
 
 ```yaml
-name: PR Checks
+name: PR Precommit Checks
 
 on:
   pull_request:
     types: [opened, edited, synchronize]
 
 concurrency:
-  group: pr-checks-${{ github.workflow }}-${{ github.ref }}
+  group: pr-precommit-checks-${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
 permissions:
