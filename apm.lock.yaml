@@ -2,20 +2,218 @@ lockfile_version: '1'
 apm_version: 0.29.1
 dependencies:
 - repo_url: android/skills
-  name: d163e50742586a9d17baa24ff146b8f36a4e6c23fa4a85f7ecef9725037eefad
+  name: appfunctions
   host: github.com
   resolved_commit: aaca635061a4befdd3890d63c4a02963f2e8d925
   resolved_ref: aaca635061a4befdd3890d63c4a02963f2e8d925
-  version: aaca635
-  package_type: apm_package
-  content_hash: sha256:79e95cb80b396c78e06fcd35cbc9777a2b154eae98cf3dca43e424316db995a5
+  version: unknown
+  virtual_path: device-ai/appfunctions
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/appfunctions
+  - .agents/skills/appfunctions/SKILL.md
+  - .agents/skills/appfunctions/references/adb-interaction-testing.md
+  - .agents/skills/appfunctions/references/context.md
+  - .agents/skills/appfunctions/references/feature-discovery-analysis.md
+  - .agents/skills/appfunctions/references/implementation-configuration.md
+  - .agents/skills/appfunctions/references/kdoc-refinement-optimization.md
+  - .agents/skills/appfunctions/references/migrate-to-service-entry-point.md
+  deployed_file_hashes:
+    .agents/skills/appfunctions/SKILL.md: sha256:d41b75cb243dd48a661d787e9b6eb37ebf6ac8ccb9f215f090f5f72fe515c8bb
+    .agents/skills/appfunctions/references/adb-interaction-testing.md: sha256:085267c8a1bee76922bbece47e0b27775f8cce9f8af0a0b04ba5ed3c147eb4a9
+    .agents/skills/appfunctions/references/context.md: sha256:27214efd9f9f3c97c81f3f8905e949f45162b21b4f6ba8625f3907563450bd19
+    .agents/skills/appfunctions/references/feature-discovery-analysis.md: sha256:fbfe1281c75c54f1e4f2c5f797378ad4e8d73cdd47e92d0b2d8a236616eaa496
+    .agents/skills/appfunctions/references/implementation-configuration.md: sha256:677698642fcc13c0382a961690896d9403c3d16b4021a522c031a0ebd5b9d2fe
+    .agents/skills/appfunctions/references/kdoc-refinement-optimization.md: sha256:09e71fb060b3619e14a26c982f113a7d60d28c599b233c6c992438469cfbc2fb
+    .agents/skills/appfunctions/references/migrate-to-service-entry-point.md: sha256:9f7944fbab543e01b32589b90032d547340ab8370e4c1d31c4a923a840462311
+  content_hash: sha256:ed6ba26322f5e564971323a852ff21d80c3eee4c22dea7890741bd1ff00fe7e9
+- repo_url: android/skills
+  name: adaptive
+  host: github.com
+  resolved_commit: aaca635061a4befdd3890d63c4a02963f2e8d925
+  resolved_ref: aaca635061a4befdd3890d63c4a02963f2e8d925
+  version: unknown
+  virtual_path: jetpack-compose/adaptive
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/adaptive
+  - .agents/skills/adaptive/SKILL.md
+  - .agents/skills/adaptive/references/android/develop/ui/compose/layouts/adaptive/flexbox/container-behavior.md
+  - .agents/skills/adaptive/references/android/develop/ui/compose/layouts/adaptive/flexbox/get-started.md
+  - .agents/skills/adaptive/references/android/develop/ui/compose/layouts/adaptive/flexbox/index.md
+  - .agents/skills/adaptive/references/android/develop/ui/compose/layouts/adaptive/flexbox/item-behavior.md
+  - .agents/skills/adaptive/references/android/develop/ui/compose/layouts/adaptive/grid/container-properties.md
+  - .agents/skills/adaptive/references/android/develop/ui/compose/layouts/adaptive/grid/get-started.md
+  - .agents/skills/adaptive/references/android/develop/ui/compose/layouts/adaptive/grid/index.md
+  - .agents/skills/adaptive/references/android/develop/ui/compose/layouts/adaptive/grid/item-properties.md
+  - .agents/skills/adaptive/references/android/develop/ui/compose/layouts/adaptive/mediaquery/index.md
+  - .agents/skills/adaptive/references/android/develop/ui/compose/tooling/debug.md
+  - .agents/skills/adaptive/references/android/guide/navigation/navigation-3/recipes/material-listdetail.md
+  deployed_file_hashes:
+    .agents/skills/adaptive/SKILL.md: sha256:31eac36bc6f750470b516ccb498a8b7b78128af3732b7d671d0fbef111a7a787
+    .agents/skills/adaptive/references/android/develop/ui/compose/layouts/adaptive/flexbox/container-behavior.md: sha256:7a33b15b827dbf21557a2ac808d3e0c2653cf33cc4c58277f2eb94ebfa41aa5f
+    .agents/skills/adaptive/references/android/develop/ui/compose/layouts/adaptive/flexbox/get-started.md: sha256:e1e0a6c95ce3d9914e3a2a2017c882f825e3cd93f6f0ba329fbc39d86d301b04
+    .agents/skills/adaptive/references/android/develop/ui/compose/layouts/adaptive/flexbox/index.md: sha256:6323d0edb988ada38596508c520efc99ae8f9ab8f3954f5bfbfe8ee373e0afc7
+    .agents/skills/adaptive/references/android/develop/ui/compose/layouts/adaptive/flexbox/item-behavior.md: sha256:94e894a59857662ed784913774a4d0c5bcec7d16468c4c910962a7d806a0e562
+    .agents/skills/adaptive/references/android/develop/ui/compose/layouts/adaptive/grid/container-properties.md: sha256:fb12005053f5f040c26c5b74a93c11825d5a27f1802ec7748859b24ee2c030c7
+    .agents/skills/adaptive/references/android/develop/ui/compose/layouts/adaptive/grid/get-started.md: sha256:f5535a0ebcdb1ad3f2d65c833507b9f09430b97c6351c26095059a0d96b6e908
+    .agents/skills/adaptive/references/android/develop/ui/compose/layouts/adaptive/grid/index.md: sha256:97b1e85bc765b97c1930014a554977abddb12bfd0d638b13ab75932dc287a6d0
+    .agents/skills/adaptive/references/android/develop/ui/compose/layouts/adaptive/grid/item-properties.md: sha256:ef0a67039918022d01ac26983b3cc06c798050736d42ffe692c98e3c4517b45a
+    .agents/skills/adaptive/references/android/develop/ui/compose/layouts/adaptive/mediaquery/index.md: sha256:1e79df59c053569d5376a618c414b793670fdf35e337d7c8aecce81bf09f90d7
+    .agents/skills/adaptive/references/android/develop/ui/compose/tooling/debug.md: sha256:ba62982a079cd1535f904bc784d4a64b1c77bd9ccede9f1e675c48fa44a95397
+    .agents/skills/adaptive/references/android/guide/navigation/navigation-3/recipes/material-listdetail.md: sha256:e4781cf0fc691f92c202400a07ebc80424666681f9547e757f660388252cdb29
+  content_hash: sha256:15a7f884cfc2d9b50ad43c4e242d04927cb77ccbf717e3069935d7bdb178d19e
+- repo_url: android/skills
+  name: styles
+  host: github.com
+  resolved_commit: aaca635061a4befdd3890d63c4a02963f2e8d925
+  resolved_ref: aaca635061a4befdd3890d63c4a02963f2e8d925
+  version: unknown
+  virtual_path: jetpack-compose/theming/styles
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/styles
+  - .agents/skills/styles/SKILL.md
+  - .agents/skills/styles/references/android/develop/ui/compose/designsystems/custom.md
+  - .agents/skills/styles/references/android/develop/ui/compose/styles/fundamentals.md
+  - .agents/skills/styles/references/android/develop/ui/compose/styles/state-animations.md
+  - .agents/skills/styles/references/android/develop/ui/compose/styles/styles-vs-modifiers.md
+  - .agents/skills/styles/references/android/develop/ui/compose/styles/theming.md
+  deployed_file_hashes:
+    .agents/skills/styles/SKILL.md: sha256:c75a42ebc8185e8dd595548bafedad47f8ba44ac31965c91ea57a93f38ed991b
+    .agents/skills/styles/references/android/develop/ui/compose/designsystems/custom.md: sha256:80f55504d5ad0685a4c0f8d2b10866225998a42acd4677a5861bd55bab452d85
+    .agents/skills/styles/references/android/develop/ui/compose/styles/fundamentals.md: sha256:79aec0b42ea4ab3a3125f4bf6c60d8acd2d1dd5e78377b7de49e5a1cb8447ca8
+    .agents/skills/styles/references/android/develop/ui/compose/styles/state-animations.md: sha256:414386ab0d230300b9a0d56b0ffac7b11df5b3478f735874b8cd669501e0b7b2
+    .agents/skills/styles/references/android/develop/ui/compose/styles/styles-vs-modifiers.md: sha256:6171322b69fecfd33b7fcecbffd9228647ec2ba5893525981108b3048d065423
+    .agents/skills/styles/references/android/develop/ui/compose/styles/theming.md: sha256:eab2049ca3019be592794fb4272607ac4ed509778de91d04d6321934a8a8c382
+  content_hash: sha256:16412835b3a985d8718316890df984558a108468d50c6cf83aadecbd7bdaf4e6
+- repo_url: android/skills
+  name: navigation-3
+  host: github.com
+  resolved_commit: aaca635061a4befdd3890d63c4a02963f2e8d925
+  resolved_ref: aaca635061a4befdd3890d63c4a02963f2e8d925
+  version: unknown
+  virtual_path: navigation/navigation-3
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/navigation-3
+  - .agents/skills/navigation-3/SKILL.md
+  - .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/index.md
+  - .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/migration-guide.md
+  - .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/animations.md
+  - .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/basic.md
+  - .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/basicdsl.md
+  - .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/basicsaveable.md
+  - .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/bottomsheet.md
+  - .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/common-ui.md
+  - .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/conditional-transitions.md
+  - .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/conditional.md
+  - .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/deeplinks-custommatcher.md
+  - .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/deeplinks-staticuri.md
+  - .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/deeplinks-syntheticbackstack.md
+  - .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/deeplinks-uriarguments.md
+  - .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/dialog.md
+  - .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/lifecycle-owner.md
+  - .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/material-listdetail.md
+  - .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/material-supportingpane.md
+  - .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/modular-hilt.md
+  - .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/modular-koin.md
+  - .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/multiple-backstacks.md
+  - .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/passingarguments.md
+  - .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/results-event.md
+  - .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/results-state.md
+  - .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/scenes-listdetail.md
+  - .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/scenes-twopane.md
+  - .agents/skills/navigation-3/references/android/guide/navigation/type-safe-destinations.md
+  deployed_file_hashes:
+    .agents/skills/navigation-3/SKILL.md: sha256:38d660f7d8987b81055691d36baf1b2410a931b80ef4c15b63b2e4fe5e612d91
+    .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/index.md: sha256:e34c3c6d0a133878cd1c87badfa7ea3c4dfa85e754b5a99eacc8a917bba40ccb
+    .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/migration-guide.md: sha256:3eaed34b739e2a69d93852b43ae5da95db034c546dc1fde7287cd56150e2d846
+    .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/animations.md: sha256:50c54d09fe14cb28f27d02cd9aaad4204dfe975a14bc8292b0bd40f61ad5300d
+    .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/basic.md: sha256:f96b02408f311d07c8df16c1867e25598c4bcc1794b52aaaa290a3b377727495
+    .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/basicdsl.md: sha256:d077507172cbf9ed6916899ef2d17b5f9aebcc9d3b46d51725d30166949daa14
+    .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/basicsaveable.md: sha256:93f01733db02f06a66c54bc5372a88688831bad14ded07ad181a16a12b848110
+    .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/bottomsheet.md: sha256:24ac29f14deb7912df58cc1bb504b65e9f31b30dd7daa35a3446f2682a8e57a5
+    .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/common-ui.md: sha256:835be092ff7114870543b4f7fb1f0893157c0ad07e00d70682a1256e95f5f3db
+    .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/conditional-transitions.md: sha256:bb41f81b08f422aaa201d2716f0feaa22705ebc9154d914ade0c25b3d3052063
+    .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/conditional.md: sha256:1197b80637b7f670d7f7a426e1c5e47958139954888ddbe5cad68a82dda0fe2f
+    .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/deeplinks-custommatcher.md: sha256:9fbfccbf29e03d24de0caa667c826d8971984e5c6b5aba2e3ed9c057357c2fac
+    .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/deeplinks-staticuri.md: sha256:f131fe946f25f108601b66dcdb62be6add8cf685437fc78621d8b92dd67bd201
+    .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/deeplinks-syntheticbackstack.md: sha256:12bf69439480fab3111f4b513118be0128ad574dd9d0aecd199ea37d0f75c4b2
+    .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/deeplinks-uriarguments.md: sha256:bb8afb2616dfc7202376175752bdb5c99b19a64642b7a1b1f6f651527dfdf129
+    .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/dialog.md: sha256:b8ac45054125a6aed66c5df682200c74440336d0584d7e1894078954c719200a
+    .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/lifecycle-owner.md: sha256:45e204c1494179deadb56e9b544c78c6f6f17be4d3d660d841a5db5e4245038f
+    .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/material-listdetail.md: sha256:e4781cf0fc691f92c202400a07ebc80424666681f9547e757f660388252cdb29
+    .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/material-supportingpane.md: sha256:f0dc47a8d0aaceeefc6a48bf73563b3f9449e608c2ef71140acd5dcd13377e6d
+    .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/modular-hilt.md: sha256:1c306c7f687148c9455d6df7be1f692dda9308b85f0ab40b400b9e0926a898a2
+    .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/modular-koin.md: sha256:6d8a7925dba9eb06d7e0fbcb9aa92f025cb58fdc09b42c0496f52cf77266f6cd
+    .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/multiple-backstacks.md: sha256:571f6147f90e1b16aa883ef790b27b6bce58fc7250158077f1d5e5624470fca4
+    .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/passingarguments.md: sha256:bc53a9bbabb799865bf8bc3130faeae6e6d2b2838c3e44f48574443b6467e0a5
+    .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/results-event.md: sha256:e3f3371d6c5f06a3696c2f90f095bd5c530abd1a8dc59e666631b4e1d2926589
+    .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/results-state.md: sha256:17fbf45258b3c928e300adfa07ec320ffbd591e3209236499c74bbb736a1acec
+    .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/scenes-listdetail.md: sha256:2a19b4d03973c179eb4e4be8f95f9b728af34b55015619dde73dcd72af916e8c
+    .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/scenes-twopane.md: sha256:d0cb99ae3054cf463a598fd348d3d9a07aa4b6805ab22121bdc11561a60b1f64
+    .agents/skills/navigation-3/references/android/guide/navigation/type-safe-destinations.md: sha256:ad5f13e3d5ee1bc849d2da5941d4f99a3e2a5748d52fcdfde96d1bc21bf47acb
+  content_hash: sha256:1f6a5a6b2ef6826d5d3081f06159f170c28e87cbbded90213c3977e102b75f18
+- repo_url: android/skills
+  name: r8-analyzer
+  host: github.com
+  resolved_commit: aaca635061a4befdd3890d63c4a02963f2e8d925
+  resolved_ref: aaca635061a4befdd3890d63c4a02963f2e8d925
+  version: unknown
+  virtual_path: performance/r8-analyzer
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/r8-analyzer
+  - .agents/skills/r8-analyzer/SKILL.md
+  - .agents/skills/r8-analyzer/references/CONFIGURATION-ANALYZER.md
+  - .agents/skills/r8-analyzer/references/CONFIGURATION.md
+  - .agents/skills/r8-analyzer/references/KEEP-RULES-IMPACT-HIERARCHY.md
+  - .agents/skills/r8-analyzer/references/REDUNDANT-RULES.md
+  - .agents/skills/r8-analyzer/references/REFLECTION-GUIDE.md
+  - .agents/skills/r8-analyzer/references/REPORT_FORMAT.md
+  - .agents/skills/r8-analyzer/references/android/topic/performance/app-optimization/enable-app-optimization.md
+  - .agents/skills/r8-analyzer/references/android/training/testing/other-components/ui-automator.md
+  deployed_file_hashes:
+    .agents/skills/r8-analyzer/SKILL.md: sha256:16e5a9831b00fa637e1d3b079c545ece52a7b76692767655a56b6e384f794e6e
+    .agents/skills/r8-analyzer/references/CONFIGURATION-ANALYZER.md: sha256:7c2cf0537fab3db2f1dde6aef31c3b416f188ab18cccbf12a2c0eebcbaac9b35
+    .agents/skills/r8-analyzer/references/CONFIGURATION.md: sha256:c7bbacde8b8c047be16896f0fc9a55aa805c1dd8abc51c42339deeb3b3a173f1
+    .agents/skills/r8-analyzer/references/KEEP-RULES-IMPACT-HIERARCHY.md: sha256:d383eb1673fb6e5ce9b50a633160b0b249529ec61922527302c7cc4bc2f6097e
+    .agents/skills/r8-analyzer/references/REDUNDANT-RULES.md: sha256:282ac09478adc085612d1333229a7a61adabe5c4977807cd2a20e69bb3927bb0
+    .agents/skills/r8-analyzer/references/REFLECTION-GUIDE.md: sha256:68ce8bdd6f29614b1c19093a9a3c7663ed96dec2740159dcaa718fac27647d69
+    .agents/skills/r8-analyzer/references/REPORT_FORMAT.md: sha256:6db6de4b91db7e0e21f22967c24a7f535bfdcfa728f06bf91802983ded4fdee2
+    .agents/skills/r8-analyzer/references/android/topic/performance/app-optimization/enable-app-optimization.md: sha256:e5378bc9f080387a30900a570e756e895b20c8e532474136da1ca4758c58e830
+    .agents/skills/r8-analyzer/references/android/training/testing/other-components/ui-automator.md: sha256:384da2bdff16d8f553acb3aeb9aac93962c4b8d160b40faf4939f4de53a06e92
+  content_hash: sha256:27994166f1a87f20ceee9e017ac4a6a438f2d9ce69f2fbd808414a29a67217d0
+- repo_url: android/skills
+  name: edge-to-edge
+  host: github.com
+  resolved_commit: aaca635061a4befdd3890d63c4a02963f2e8d925
+  resolved_ref: aaca635061a4befdd3890d63c4a02963f2e8d925
+  version: unknown
+  virtual_path: system/edge-to-edge
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/edge-to-edge
+  - .agents/skills/edge-to-edge/SKILL.md
+  deployed_file_hashes:
+    .agents/skills/edge-to-edge/SKILL.md: sha256:dce851187b2557e59e6bf6af64cc576d0fdda2bfb27f9e57ac608d00f5230567
+  content_hash: sha256:12e71605ddb1d7a237edaf26184b795561c9b78b8fd925604fb21c250604bd1c
 - repo_url: anthropics/skills
-  name: f2db8404c222e36c8e02f933c816d92cbef85613dfa47bc8a4656a776a601059
+  name: skill-creator
   host: github.com
   resolved_commit: 41bbe19d1a1a7eaab5e7bb9050a417e5c6cffc8f
   resolved_ref: main
-  version: 41bbe19
-  package_type: skill_bundle
+  version: unknown
+  virtual_path: skills/skill-creator
+  is_virtual: true
+  package_type: claude_skill
   deployed_files:
   - .agents/skills/skill-creator
   - .agents/skills/skill-creator/LICENSE.txt
@@ -55,10 +253,8 @@ dependencies:
     .agents/skills/skill-creator/scripts/run_eval.py: sha256:43e3b8f80dbf69c343967ba77e268fae991d9fa3ed68b32a0ff02532cd48657f
     .agents/skills/skill-creator/scripts/run_loop.py: sha256:7bd6f674203168520517eec94c55f493c0d154339b061b4d7c0f0dad187d0f21
     .agents/skills/skill-creator/scripts/utils.py: sha256:3af8ae62c40c73ab712207436a0d9a981e845f25c5a7040229eb189cc8e45bb1
-  content_hash: sha256:df60b7a020268c91608f9a8b2a7ed95fd0b6098f68a92b6166922d91d084de5d
+  content_hash: sha256:b2bfe91d69ca99994c0566baede889e7d2b9bb8791c6b6106c5d387392f717f6
   is_dev: true
-  skill_subset:
-  - skill-creator
 - repo_url: avdlee/swift-concurrency-agent-skill
   materialization_repo_url: AvdLee/Swift-Concurrency-Agent-Skill
   name: swift-concurrency
@@ -114,35 +310,56 @@ dependencies:
     .agents/skills/swift-concurrency/references/threading.md: sha256:0a4e44bd27fdf852cf5f8f5aa64cfe15ba229fb7c885b3f69ed2afdbfac8752a
   content_hash: sha256:1bb4ef9485915c8012302552f5f13be2b3a1df268d66524573328691c860ec8d
 - repo_url: chrisbanes/skills
-  name: chrisbanes-skills
+  name: compose-animations
   host: github.com
   resolved_commit: 2d202c722c1815007619ee0b667401b9d42e456e
   resolved_ref: 2d202c722c1815007619ee0b667401b9d42e456e
-  version: 2026.8.27
-  package_type: skill_bundle
+  version: unknown
+  virtual_path: skills/compose-animations
+  is_virtual: true
+  package_type: claude_skill
   deployed_files:
   - .agents/skills/compose-animations
   - .agents/skills/compose-animations/SKILL.md
   - .agents/skills/compose-animations/references/animated-content.md
+  deployed_file_hashes:
+    .agents/skills/compose-animations/SKILL.md: sha256:a10961d3251f680a57c4481b75ea0111ea78dcb373aac6b308ee55f9d2a7676d
+    .agents/skills/compose-animations/references/animated-content.md: sha256:5e2886bd7f1c0e8884fe60d38ac04e0c23b45f5693026da38cfaf5e1cc31b1df
+  content_hash: sha256:35f160167855251068ce9a91a65d4c2a11df16114b3f0e5cd51e3e198210dc97
+- repo_url: chrisbanes/skills
+  name: kotlin-concurrency-and-flow
+  host: github.com
+  resolved_commit: 2d202c722c1815007619ee0b667401b9d42e456e
+  resolved_ref: 2d202c722c1815007619ee0b667401b9d42e456e
+  version: unknown
+  virtual_path: skills/kotlin-concurrency-and-flow
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
   - .agents/skills/kotlin-concurrency-and-flow
   - .agents/skills/kotlin-concurrency-and-flow/SKILL.md
   - .agents/skills/kotlin-concurrency-and-flow/references/flow-state-events.md
   - .agents/skills/kotlin-concurrency-and-flow/references/structured-concurrency.md
+  deployed_file_hashes:
+    .agents/skills/kotlin-concurrency-and-flow/SKILL.md: sha256:a89234e41a04b6e4cca7eecc55625f4474f7224cd3a6afef5789774843e90b54
+    .agents/skills/kotlin-concurrency-and-flow/references/flow-state-events.md: sha256:dcbbe576d065061049504c94145cd3250e33b54e1ff49143fcd23d8329e43278
+    .agents/skills/kotlin-concurrency-and-flow/references/structured-concurrency.md: sha256:9a3df9ec8aa844fbb87e91cf66b6abf5ee0b440df63203c34f6cd72dd723355d
+  content_hash: sha256:827b7e3101bb49a951d5154742f10b1e149d3e763b0d7e5f99ae8abc179f2ebd
+- repo_url: chrisbanes/skills
+  name: kotlin-control-flow
+  host: github.com
+  resolved_commit: 2d202c722c1815007619ee0b667401b9d42e456e
+  resolved_ref: 2d202c722c1815007619ee0b667401b9d42e456e
+  version: unknown
+  virtual_path: skills/kotlin-control-flow
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
   - .agents/skills/kotlin-control-flow
   - .agents/skills/kotlin-control-flow/SKILL.md
   deployed_file_hashes:
-    .agents/skills/compose-animations/SKILL.md: sha256:854685a8e0184b347fc88015728fa6ad1f6f49c9b71f833fca694d92a8fcf382
-    .agents/skills/compose-animations/references/animated-content.md: sha256:5e2886bd7f1c0e8884fe60d38ac04e0c23b45f5693026da38cfaf5e1cc31b1df
-    .agents/skills/kotlin-concurrency-and-flow/SKILL.md: sha256:fe05d8f5459c2f60926b9c9e9034447fa96b1b743b36c3f848a79d2b434b46a0
-    .agents/skills/kotlin-concurrency-and-flow/references/flow-state-events.md: sha256:21bb442d00695d5f742625da2075a9313e55a367d87d7a2899ac1f9eeb4d263c
-    .agents/skills/kotlin-concurrency-and-flow/references/structured-concurrency.md: sha256:9a3df9ec8aa844fbb87e91cf66b6abf5ee0b440df63203c34f6cd72dd723355d
-    .agents/skills/kotlin-control-flow/SKILL.md: sha256:f1d5b0f679a7c95f08e5ec0503c2436ccb444e96f6079b0ccaada627c5c00724
-  content_hash: sha256:f5892c5acf469d4192a79279cdf73a82ddf6b3416e6a00496149c2d2a37eab6d
-  skill_subset:
-  - compose-animations
-  - kotlin-concurrency-and-flow
-  - kotlin-control-flow
-  declared_license: Apache-2.0
+    .agents/skills/kotlin-control-flow/SKILL.md: sha256:ac3286ea293dcd3bc5e716a368ac9b4be328bb036d029c114a8e1cca25e24220
+  content_hash: sha256:0509d23aea4c33ce0cdd6f8d9663f083e8a8c975a4e1e12133963491caadcbd0
 - repo_url: github/awesome-copilot
   name: apple-appstore-reviewer
   host: github.com
@@ -313,39 +530,60 @@ dependencies:
     .agents/skills/kotlin-tooling-native-build-performance/scripts/audit-native-build.sh: sha256:94af58014fb24aaf1e7757ce804ea19e4023cc778da77ac0d725bd19aa0ba9e7
   content_hash: sha256:be5df4103646c3d4b23b2125e4c1f353c5738c3923094c4fd778003b53b13b33
 - repo_url: mattpocock/skills
-  name: mattpocock-skills
+  name: domain-modeling
   host: github.com
   resolved_commit: 6acc160e4e0cd062dbbbd7a1b26ae92855edf07e
   resolved_ref: 6acc160e4e0cd062dbbbd7a1b26ae92855edf07e
-  version: 1.2.3
-  package_type: apm_package
+  version: unknown
+  virtual_path: skills/engineering/domain-modeling
+  is_virtual: true
+  package_type: claude_skill
   deployed_files:
   - .agents/skills/domain-modeling
   - .agents/skills/domain-modeling/ADR-FORMAT.md
   - .agents/skills/domain-modeling/CONTEXT-FORMAT.md
   - .agents/skills/domain-modeling/SKILL.md
   - .agents/skills/domain-modeling/agents/openai.yaml
-  - .agents/skills/grill-me
-  - .agents/skills/grill-me/SKILL.md
-  - .agents/skills/grill-me/agents/openai.yaml
-  - .agents/skills/grilling
-  - .agents/skills/grilling/SKILL.md
-  - .agents/skills/grilling/agents/openai.yaml
   deployed_file_hashes:
     .agents/skills/domain-modeling/ADR-FORMAT.md: sha256:f1f36cd3f8d3b6474ddd5855da4e233bfc4ae1a1c5024909ccf11871819a41b2
     .agents/skills/domain-modeling/CONTEXT-FORMAT.md: sha256:b8cc318f2a4285b530e908b6bc43901c3c5cd11100362636bbc4216639bef597
     .agents/skills/domain-modeling/SKILL.md: sha256:152e2c97239affb12a60c5f4a7e74ab546a49ae169688c81f4e2ccc42dafa579
     .agents/skills/domain-modeling/agents/openai.yaml: sha256:f6bf2aa996c6e6f53fdd0708e18a0d16a56aed8322cca59fedbe3c0d2c75f06b
+  content_hash: sha256:bd6324a1e2522ac9245c6840e74e8d1293884c96b720084858fb737bd3451b1a
+- repo_url: mattpocock/skills
+  name: grill-me
+  host: github.com
+  resolved_commit: 6acc160e4e0cd062dbbbd7a1b26ae92855edf07e
+  resolved_ref: 6acc160e4e0cd062dbbbd7a1b26ae92855edf07e
+  version: unknown
+  virtual_path: skills/productivity/grill-me
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/grill-me
+  - .agents/skills/grill-me/SKILL.md
+  - .agents/skills/grill-me/agents/openai.yaml
+  deployed_file_hashes:
     .agents/skills/grill-me/SKILL.md: sha256:6189dfceb7304a6e5558f75d87e68fa3bc7fcf7ba120e44f21f8a61fe01eba54
     .agents/skills/grill-me/agents/openai.yaml: sha256:c061e39c3e0f9d865fb1b97556d485704af2a8a58f4b8221a8917a5c2074a32b
+  content_hash: sha256:0ac1a28d5e7ab05c4a51046c9d74fd7bfc070ba6a3b9ec8451bd274e746d67b6
+- repo_url: mattpocock/skills
+  name: grilling
+  host: github.com
+  resolved_commit: 6acc160e4e0cd062dbbbd7a1b26ae92855edf07e
+  resolved_ref: 6acc160e4e0cd062dbbbd7a1b26ae92855edf07e
+  version: unknown
+  virtual_path: skills/productivity/grilling
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/grilling
+  - .agents/skills/grilling/SKILL.md
+  - .agents/skills/grilling/agents/openai.yaml
+  deployed_file_hashes:
     .agents/skills/grilling/SKILL.md: sha256:fa5c1e5ee76b1c8f1ae56101f52c9e239de75d5c578adc61227b92d10b7e52ef
     .agents/skills/grilling/agents/openai.yaml: sha256:1411d7df7d99b7e621a1ff8283c8133cc2464be63d064e52d8ce169c6800ee9b
-  content_hash: sha256:24f1330cd410d84bbddbca8fcc754ac8ce08a1bd52fac097444e11616e9eaf9e
-  skill_subset:
-  - domain-modeling
-  - grill-me
-  - grilling
-  declared_license: MIT
+  content_hash: sha256:6f3a681f493ac92bf3c0f1263a9bf89f10f8f406623f3fbe5c87268e6d09e91e
 - repo_url: skydoves/compose-performance-skills
   name: ordering-modifier-chains
   host: github.com
@@ -379,6 +617,195 @@ dependencies:
 deployments:
 - kind: project-relative
   target: agent-skills
+  value: .agents/skills/adaptive
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/jetpack-compose/adaptive
+  active_owner: android/skills/jetpack-compose/adaptive
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/adaptive/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/jetpack-compose/adaptive
+  active_owner: android/skills/jetpack-compose/adaptive
+  content_hash: sha256:31eac36bc6f750470b516ccb498a8b7b78128af3732b7d671d0fbef111a7a787
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/adaptive/references/android/develop/ui/compose/layouts/adaptive/flexbox/container-behavior.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/jetpack-compose/adaptive
+  active_owner: android/skills/jetpack-compose/adaptive
+  content_hash: sha256:7a33b15b827dbf21557a2ac808d3e0c2653cf33cc4c58277f2eb94ebfa41aa5f
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/adaptive/references/android/develop/ui/compose/layouts/adaptive/flexbox/get-started.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/jetpack-compose/adaptive
+  active_owner: android/skills/jetpack-compose/adaptive
+  content_hash: sha256:e1e0a6c95ce3d9914e3a2a2017c882f825e3cd93f6f0ba329fbc39d86d301b04
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/adaptive/references/android/develop/ui/compose/layouts/adaptive/flexbox/index.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/jetpack-compose/adaptive
+  active_owner: android/skills/jetpack-compose/adaptive
+  content_hash: sha256:6323d0edb988ada38596508c520efc99ae8f9ab8f3954f5bfbfe8ee373e0afc7
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/adaptive/references/android/develop/ui/compose/layouts/adaptive/flexbox/item-behavior.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/jetpack-compose/adaptive
+  active_owner: android/skills/jetpack-compose/adaptive
+  content_hash: sha256:94e894a59857662ed784913774a4d0c5bcec7d16468c4c910962a7d806a0e562
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/adaptive/references/android/develop/ui/compose/layouts/adaptive/grid/container-properties.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/jetpack-compose/adaptive
+  active_owner: android/skills/jetpack-compose/adaptive
+  content_hash: sha256:fb12005053f5f040c26c5b74a93c11825d5a27f1802ec7748859b24ee2c030c7
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/adaptive/references/android/develop/ui/compose/layouts/adaptive/grid/get-started.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/jetpack-compose/adaptive
+  active_owner: android/skills/jetpack-compose/adaptive
+  content_hash: sha256:f5535a0ebcdb1ad3f2d65c833507b9f09430b97c6351c26095059a0d96b6e908
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/adaptive/references/android/develop/ui/compose/layouts/adaptive/grid/index.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/jetpack-compose/adaptive
+  active_owner: android/skills/jetpack-compose/adaptive
+  content_hash: sha256:97b1e85bc765b97c1930014a554977abddb12bfd0d638b13ab75932dc287a6d0
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/adaptive/references/android/develop/ui/compose/layouts/adaptive/grid/item-properties.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/jetpack-compose/adaptive
+  active_owner: android/skills/jetpack-compose/adaptive
+  content_hash: sha256:ef0a67039918022d01ac26983b3cc06c798050736d42ffe692c98e3c4517b45a
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/adaptive/references/android/develop/ui/compose/layouts/adaptive/mediaquery/index.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/jetpack-compose/adaptive
+  active_owner: android/skills/jetpack-compose/adaptive
+  content_hash: sha256:1e79df59c053569d5376a618c414b793670fdf35e337d7c8aecce81bf09f90d7
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/adaptive/references/android/develop/ui/compose/tooling/debug.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/jetpack-compose/adaptive
+  active_owner: android/skills/jetpack-compose/adaptive
+  content_hash: sha256:ba62982a079cd1535f904bc784d4a64b1c77bd9ccede9f1e675c48fa44a95397
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/adaptive/references/android/guide/navigation/navigation-3/recipes/material-listdetail.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/jetpack-compose/adaptive
+  active_owner: android/skills/jetpack-compose/adaptive
+  content_hash: sha256:e4781cf0fc691f92c202400a07ebc80424666681f9547e757f660388252cdb29
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/appfunctions
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/device-ai/appfunctions
+  active_owner: android/skills/device-ai/appfunctions
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/appfunctions/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/device-ai/appfunctions
+  active_owner: android/skills/device-ai/appfunctions
+  content_hash: sha256:d41b75cb243dd48a661d787e9b6eb37ebf6ac8ccb9f215f090f5f72fe515c8bb
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/appfunctions/references/adb-interaction-testing.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/device-ai/appfunctions
+  active_owner: android/skills/device-ai/appfunctions
+  content_hash: sha256:085267c8a1bee76922bbece47e0b27775f8cce9f8af0a0b04ba5ed3c147eb4a9
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/appfunctions/references/context.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/device-ai/appfunctions
+  active_owner: android/skills/device-ai/appfunctions
+  content_hash: sha256:27214efd9f9f3c97c81f3f8905e949f45162b21b4f6ba8625f3907563450bd19
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/appfunctions/references/feature-discovery-analysis.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/device-ai/appfunctions
+  active_owner: android/skills/device-ai/appfunctions
+  content_hash: sha256:fbfe1281c75c54f1e4f2c5f797378ad4e8d73cdd47e92d0b2d8a236616eaa496
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/appfunctions/references/implementation-configuration.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/device-ai/appfunctions
+  active_owner: android/skills/device-ai/appfunctions
+  content_hash: sha256:677698642fcc13c0382a961690896d9403c3d16b4021a522c031a0ebd5b9d2fe
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/appfunctions/references/kdoc-refinement-optimization.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/device-ai/appfunctions
+  active_owner: android/skills/device-ai/appfunctions
+  content_hash: sha256:09e71fb060b3619e14a26c982f113a7d60d28c599b233c6c992438469cfbc2fb
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/appfunctions/references/migrate-to-service-entry-point.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/device-ai/appfunctions
+  active_owner: android/skills/device-ai/appfunctions
+  content_hash: sha256:9f7944fbab543e01b32589b90032d547340ab8370e4c1d31c4a923a840462311
+- kind: project-relative
+  target: agent-skills
   value: .agents/skills/apple-appstore-reviewer
   runtime: null
   scope: project
@@ -401,8 +828,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - chrisbanes/skills
-  active_owner: chrisbanes/skills
+  - chrisbanes/skills/skills/compose-animations
+  active_owner: chrisbanes/skills/skills/compose-animations
   content_hash: null
 - kind: project-relative
   target: agent-skills
@@ -410,17 +837,17 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - chrisbanes/skills
-  active_owner: chrisbanes/skills
-  content_hash: sha256:854685a8e0184b347fc88015728fa6ad1f6f49c9b71f833fca694d92a8fcf382
+  - chrisbanes/skills/skills/compose-animations
+  active_owner: chrisbanes/skills/skills/compose-animations
+  content_hash: sha256:a10961d3251f680a57c4481b75ea0111ea78dcb373aac6b308ee55f9d2a7676d
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/compose-animations/references/animated-content.md
   runtime: null
   scope: project
   owners:
-  - chrisbanes/skills
-  active_owner: chrisbanes/skills
+  - chrisbanes/skills/skills/compose-animations
+  active_owner: chrisbanes/skills/skills/compose-animations
   content_hash: sha256:5e2886bd7f1c0e8884fe60d38ac04e0c23b45f5693026da38cfaf5e1cc31b1df
 - kind: project-relative
   target: agent-skills
@@ -464,8 +891,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - mattpocock/skills
-  active_owner: mattpocock/skills
+  - mattpocock/skills/skills/engineering/domain-modeling
+  active_owner: mattpocock/skills/skills/engineering/domain-modeling
   content_hash: null
 - kind: project-relative
   target: agent-skills
@@ -473,8 +900,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - mattpocock/skills
-  active_owner: mattpocock/skills
+  - mattpocock/skills/skills/engineering/domain-modeling
+  active_owner: mattpocock/skills/skills/engineering/domain-modeling
   content_hash: sha256:f1f36cd3f8d3b6474ddd5855da4e233bfc4ae1a1c5024909ccf11871819a41b2
 - kind: project-relative
   target: agent-skills
@@ -482,8 +909,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - mattpocock/skills
-  active_owner: mattpocock/skills
+  - mattpocock/skills/skills/engineering/domain-modeling
+  active_owner: mattpocock/skills/skills/engineering/domain-modeling
   content_hash: sha256:b8cc318f2a4285b530e908b6bc43901c3c5cd11100362636bbc4216639bef597
 - kind: project-relative
   target: agent-skills
@@ -491,8 +918,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - mattpocock/skills
-  active_owner: mattpocock/skills
+  - mattpocock/skills/skills/engineering/domain-modeling
+  active_owner: mattpocock/skills/skills/engineering/domain-modeling
   content_hash: sha256:152e2c97239affb12a60c5f4a7e74ab546a49ae169688c81f4e2ccc42dafa579
 - kind: project-relative
   target: agent-skills
@@ -500,17 +927,35 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - mattpocock/skills
-  active_owner: mattpocock/skills
+  - mattpocock/skills/skills/engineering/domain-modeling
+  active_owner: mattpocock/skills/skills/engineering/domain-modeling
   content_hash: sha256:f6bf2aa996c6e6f53fdd0708e18a0d16a56aed8322cca59fedbe3c0d2c75f06b
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/edge-to-edge
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/system/edge-to-edge
+  active_owner: android/skills/system/edge-to-edge
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/edge-to-edge/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/system/edge-to-edge
+  active_owner: android/skills/system/edge-to-edge
+  content_hash: sha256:dce851187b2557e59e6bf6af64cc576d0fdda2bfb27f9e57ac608d00f5230567
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/grill-me
   runtime: null
   scope: project
   owners:
-  - mattpocock/skills
-  active_owner: mattpocock/skills
+  - mattpocock/skills/skills/productivity/grill-me
+  active_owner: mattpocock/skills/skills/productivity/grill-me
   content_hash: null
 - kind: project-relative
   target: agent-skills
@@ -518,8 +963,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - mattpocock/skills
-  active_owner: mattpocock/skills
+  - mattpocock/skills/skills/productivity/grill-me
+  active_owner: mattpocock/skills/skills/productivity/grill-me
   content_hash: sha256:6189dfceb7304a6e5558f75d87e68fa3bc7fcf7ba120e44f21f8a61fe01eba54
 - kind: project-relative
   target: agent-skills
@@ -527,8 +972,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - mattpocock/skills
-  active_owner: mattpocock/skills
+  - mattpocock/skills/skills/productivity/grill-me
+  active_owner: mattpocock/skills/skills/productivity/grill-me
   content_hash: sha256:c061e39c3e0f9d865fb1b97556d485704af2a8a58f4b8221a8917a5c2074a32b
 - kind: project-relative
   target: agent-skills
@@ -536,8 +981,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - mattpocock/skills
-  active_owner: mattpocock/skills
+  - mattpocock/skills/skills/productivity/grilling
+  active_owner: mattpocock/skills/skills/productivity/grilling
   content_hash: null
 - kind: project-relative
   target: agent-skills
@@ -545,8 +990,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - mattpocock/skills
-  active_owner: mattpocock/skills
+  - mattpocock/skills/skills/productivity/grilling
+  active_owner: mattpocock/skills/skills/productivity/grilling
   content_hash: sha256:fa5c1e5ee76b1c8f1ae56101f52c9e239de75d5c578adc61227b92d10b7e52ef
 - kind: project-relative
   target: agent-skills
@@ -554,8 +999,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - mattpocock/skills
-  active_owner: mattpocock/skills
+  - mattpocock/skills/skills/productivity/grilling
+  active_owner: mattpocock/skills/skills/productivity/grilling
   content_hash: sha256:1411d7df7d99b7e621a1ff8283c8133cc2464be63d064e52d8ce169c6800ee9b
 - kind: project-relative
   target: agent-skills
@@ -581,8 +1026,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - chrisbanes/skills
-  active_owner: chrisbanes/skills
+  - chrisbanes/skills/skills/kotlin-concurrency-and-flow
+  active_owner: chrisbanes/skills/skills/kotlin-concurrency-and-flow
   content_hash: null
 - kind: project-relative
   target: agent-skills
@@ -590,26 +1035,26 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - chrisbanes/skills
-  active_owner: chrisbanes/skills
-  content_hash: sha256:fe05d8f5459c2f60926b9c9e9034447fa96b1b743b36c3f848a79d2b434b46a0
+  - chrisbanes/skills/skills/kotlin-concurrency-and-flow
+  active_owner: chrisbanes/skills/skills/kotlin-concurrency-and-flow
+  content_hash: sha256:a89234e41a04b6e4cca7eecc55625f4474f7224cd3a6afef5789774843e90b54
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/kotlin-concurrency-and-flow/references/flow-state-events.md
   runtime: null
   scope: project
   owners:
-  - chrisbanes/skills
-  active_owner: chrisbanes/skills
-  content_hash: sha256:21bb442d00695d5f742625da2075a9313e55a367d87d7a2899ac1f9eeb4d263c
+  - chrisbanes/skills/skills/kotlin-concurrency-and-flow
+  active_owner: chrisbanes/skills/skills/kotlin-concurrency-and-flow
+  content_hash: sha256:dcbbe576d065061049504c94145cd3250e33b54e1ff49143fcd23d8329e43278
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/kotlin-concurrency-and-flow/references/structured-concurrency.md
   runtime: null
   scope: project
   owners:
-  - chrisbanes/skills
-  active_owner: chrisbanes/skills
+  - chrisbanes/skills/skills/kotlin-concurrency-and-flow
+  active_owner: chrisbanes/skills/skills/kotlin-concurrency-and-flow
   content_hash: sha256:9a3df9ec8aa844fbb87e91cf66b6abf5ee0b440df63203c34f6cd72dd723355d
 - kind: project-relative
   target: agent-skills
@@ -617,8 +1062,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - chrisbanes/skills
-  active_owner: chrisbanes/skills
+  - chrisbanes/skills/skills/kotlin-control-flow
+  active_owner: chrisbanes/skills/skills/kotlin-control-flow
   content_hash: null
 - kind: project-relative
   target: agent-skills
@@ -626,9 +1071,9 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - chrisbanes/skills
-  active_owner: chrisbanes/skills
-  content_hash: sha256:f1d5b0f679a7c95f08e5ec0503c2436ccb444e96f6079b0ccaada627c5c00724
+  - chrisbanes/skills/skills/kotlin-control-flow
+  active_owner: chrisbanes/skills/skills/kotlin-control-flow
+  content_hash: sha256:ac3286ea293dcd3bc5e716a368ac9b4be328bb036d029c114a8e1cca25e24220
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/kotlin-tooling-agp9-migration
@@ -1036,6 +1481,267 @@ deployments:
   content_hash: sha256:94af58014fb24aaf1e7757ce804ea19e4023cc778da77ac0d725bd19aa0ba9e7
 - kind: project-relative
   target: agent-skills
+  value: .agents/skills/navigation-3
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/navigation/navigation-3
+  active_owner: android/skills/navigation/navigation-3
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/navigation-3/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/navigation/navigation-3
+  active_owner: android/skills/navigation/navigation-3
+  content_hash: sha256:38d660f7d8987b81055691d36baf1b2410a931b80ef4c15b63b2e4fe5e612d91
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/index.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/navigation/navigation-3
+  active_owner: android/skills/navigation/navigation-3
+  content_hash: sha256:e34c3c6d0a133878cd1c87badfa7ea3c4dfa85e754b5a99eacc8a917bba40ccb
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/migration-guide.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/navigation/navigation-3
+  active_owner: android/skills/navigation/navigation-3
+  content_hash: sha256:3eaed34b739e2a69d93852b43ae5da95db034c546dc1fde7287cd56150e2d846
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/animations.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/navigation/navigation-3
+  active_owner: android/skills/navigation/navigation-3
+  content_hash: sha256:50c54d09fe14cb28f27d02cd9aaad4204dfe975a14bc8292b0bd40f61ad5300d
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/basic.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/navigation/navigation-3
+  active_owner: android/skills/navigation/navigation-3
+  content_hash: sha256:f96b02408f311d07c8df16c1867e25598c4bcc1794b52aaaa290a3b377727495
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/basicdsl.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/navigation/navigation-3
+  active_owner: android/skills/navigation/navigation-3
+  content_hash: sha256:d077507172cbf9ed6916899ef2d17b5f9aebcc9d3b46d51725d30166949daa14
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/basicsaveable.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/navigation/navigation-3
+  active_owner: android/skills/navigation/navigation-3
+  content_hash: sha256:93f01733db02f06a66c54bc5372a88688831bad14ded07ad181a16a12b848110
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/bottomsheet.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/navigation/navigation-3
+  active_owner: android/skills/navigation/navigation-3
+  content_hash: sha256:24ac29f14deb7912df58cc1bb504b65e9f31b30dd7daa35a3446f2682a8e57a5
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/common-ui.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/navigation/navigation-3
+  active_owner: android/skills/navigation/navigation-3
+  content_hash: sha256:835be092ff7114870543b4f7fb1f0893157c0ad07e00d70682a1256e95f5f3db
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/conditional-transitions.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/navigation/navigation-3
+  active_owner: android/skills/navigation/navigation-3
+  content_hash: sha256:bb41f81b08f422aaa201d2716f0feaa22705ebc9154d914ade0c25b3d3052063
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/conditional.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/navigation/navigation-3
+  active_owner: android/skills/navigation/navigation-3
+  content_hash: sha256:1197b80637b7f670d7f7a426e1c5e47958139954888ddbe5cad68a82dda0fe2f
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/deeplinks-custommatcher.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/navigation/navigation-3
+  active_owner: android/skills/navigation/navigation-3
+  content_hash: sha256:9fbfccbf29e03d24de0caa667c826d8971984e5c6b5aba2e3ed9c057357c2fac
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/deeplinks-staticuri.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/navigation/navigation-3
+  active_owner: android/skills/navigation/navigation-3
+  content_hash: sha256:f131fe946f25f108601b66dcdb62be6add8cf685437fc78621d8b92dd67bd201
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/deeplinks-syntheticbackstack.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/navigation/navigation-3
+  active_owner: android/skills/navigation/navigation-3
+  content_hash: sha256:12bf69439480fab3111f4b513118be0128ad574dd9d0aecd199ea37d0f75c4b2
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/deeplinks-uriarguments.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/navigation/navigation-3
+  active_owner: android/skills/navigation/navigation-3
+  content_hash: sha256:bb8afb2616dfc7202376175752bdb5c99b19a64642b7a1b1f6f651527dfdf129
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/dialog.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/navigation/navigation-3
+  active_owner: android/skills/navigation/navigation-3
+  content_hash: sha256:b8ac45054125a6aed66c5df682200c74440336d0584d7e1894078954c719200a
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/lifecycle-owner.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/navigation/navigation-3
+  active_owner: android/skills/navigation/navigation-3
+  content_hash: sha256:45e204c1494179deadb56e9b544c78c6f6f17be4d3d660d841a5db5e4245038f
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/material-listdetail.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/navigation/navigation-3
+  active_owner: android/skills/navigation/navigation-3
+  content_hash: sha256:e4781cf0fc691f92c202400a07ebc80424666681f9547e757f660388252cdb29
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/material-supportingpane.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/navigation/navigation-3
+  active_owner: android/skills/navigation/navigation-3
+  content_hash: sha256:f0dc47a8d0aaceeefc6a48bf73563b3f9449e608c2ef71140acd5dcd13377e6d
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/modular-hilt.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/navigation/navigation-3
+  active_owner: android/skills/navigation/navigation-3
+  content_hash: sha256:1c306c7f687148c9455d6df7be1f692dda9308b85f0ab40b400b9e0926a898a2
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/modular-koin.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/navigation/navigation-3
+  active_owner: android/skills/navigation/navigation-3
+  content_hash: sha256:6d8a7925dba9eb06d7e0fbcb9aa92f025cb58fdc09b42c0496f52cf77266f6cd
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/multiple-backstacks.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/navigation/navigation-3
+  active_owner: android/skills/navigation/navigation-3
+  content_hash: sha256:571f6147f90e1b16aa883ef790b27b6bce58fc7250158077f1d5e5624470fca4
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/passingarguments.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/navigation/navigation-3
+  active_owner: android/skills/navigation/navigation-3
+  content_hash: sha256:bc53a9bbabb799865bf8bc3130faeae6e6d2b2838c3e44f48574443b6467e0a5
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/results-event.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/navigation/navigation-3
+  active_owner: android/skills/navigation/navigation-3
+  content_hash: sha256:e3f3371d6c5f06a3696c2f90f095bd5c530abd1a8dc59e666631b4e1d2926589
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/results-state.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/navigation/navigation-3
+  active_owner: android/skills/navigation/navigation-3
+  content_hash: sha256:17fbf45258b3c928e300adfa07ec320ffbd591e3209236499c74bbb736a1acec
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/scenes-listdetail.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/navigation/navigation-3
+  active_owner: android/skills/navigation/navigation-3
+  content_hash: sha256:2a19b4d03973c179eb4e4be8f95f9b728af34b55015619dde73dcd72af916e8c
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/scenes-twopane.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/navigation/navigation-3
+  active_owner: android/skills/navigation/navigation-3
+  content_hash: sha256:d0cb99ae3054cf463a598fd348d3d9a07aa4b6805ab22121bdc11561a60b1f64
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/navigation-3/references/android/guide/navigation/type-safe-destinations.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/navigation/navigation-3
+  active_owner: android/skills/navigation/navigation-3
+  content_hash: sha256:ad5f13e3d5ee1bc849d2da5941d4f99a3e2a5748d52fcdfde96d1bc21bf47acb
+- kind: project-relative
+  target: agent-skills
   value: .agents/skills/ordering-modifier-chains
   runtime: null
   scope: project
@@ -1052,6 +1758,96 @@ deployments:
   - skydoves/compose-performance-skills/modifiers/ordering-modifier-chains
   active_owner: skydoves/compose-performance-skills/modifiers/ordering-modifier-chains
   content_hash: sha256:57b72424fb4f25e33b8a4144e9eaaae01b11fff2d375514e00b56e5fa0934c8a
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/r8-analyzer
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/performance/r8-analyzer
+  active_owner: android/skills/performance/r8-analyzer
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/r8-analyzer/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/performance/r8-analyzer
+  active_owner: android/skills/performance/r8-analyzer
+  content_hash: sha256:16e5a9831b00fa637e1d3b079c545ece52a7b76692767655a56b6e384f794e6e
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/r8-analyzer/references/CONFIGURATION-ANALYZER.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/performance/r8-analyzer
+  active_owner: android/skills/performance/r8-analyzer
+  content_hash: sha256:7c2cf0537fab3db2f1dde6aef31c3b416f188ab18cccbf12a2c0eebcbaac9b35
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/r8-analyzer/references/CONFIGURATION.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/performance/r8-analyzer
+  active_owner: android/skills/performance/r8-analyzer
+  content_hash: sha256:c7bbacde8b8c047be16896f0fc9a55aa805c1dd8abc51c42339deeb3b3a173f1
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/r8-analyzer/references/KEEP-RULES-IMPACT-HIERARCHY.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/performance/r8-analyzer
+  active_owner: android/skills/performance/r8-analyzer
+  content_hash: sha256:d383eb1673fb6e5ce9b50a633160b0b249529ec61922527302c7cc4bc2f6097e
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/r8-analyzer/references/REDUNDANT-RULES.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/performance/r8-analyzer
+  active_owner: android/skills/performance/r8-analyzer
+  content_hash: sha256:282ac09478adc085612d1333229a7a61adabe5c4977807cd2a20e69bb3927bb0
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/r8-analyzer/references/REFLECTION-GUIDE.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/performance/r8-analyzer
+  active_owner: android/skills/performance/r8-analyzer
+  content_hash: sha256:68ce8bdd6f29614b1c19093a9a3c7663ed96dec2740159dcaa718fac27647d69
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/r8-analyzer/references/REPORT_FORMAT.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/performance/r8-analyzer
+  active_owner: android/skills/performance/r8-analyzer
+  content_hash: sha256:6db6de4b91db7e0e21f22967c24a7f535bfdcfa728f06bf91802983ded4fdee2
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/r8-analyzer/references/android/topic/performance/app-optimization/enable-app-optimization.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/performance/r8-analyzer
+  active_owner: android/skills/performance/r8-analyzer
+  content_hash: sha256:e5378bc9f080387a30900a570e756e895b20c8e532474136da1ca4758c58e830
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/r8-analyzer/references/android/training/testing/other-components/ui-automator.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/performance/r8-analyzer
+  active_owner: android/skills/performance/r8-analyzer
+  content_hash: sha256:384da2bdff16d8f553acb3aeb9aac93962c4b8d160b40faf4939f4de53a06e92
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/security-review
@@ -1121,8 +1917,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - anthropics/skills
-  active_owner: anthropics/skills
+  - anthropics/skills/skills/skill-creator
+  active_owner: anthropics/skills/skills/skill-creator
   content_hash: null
 - kind: project-relative
   target: agent-skills
@@ -1130,8 +1926,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - anthropics/skills
-  active_owner: anthropics/skills
+  - anthropics/skills/skills/skill-creator
+  active_owner: anthropics/skills/skills/skill-creator
   content_hash: sha256:bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362
 - kind: project-relative
   target: agent-skills
@@ -1139,8 +1935,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - anthropics/skills
-  active_owner: anthropics/skills
+  - anthropics/skills/skills/skill-creator
+  active_owner: anthropics/skills/skills/skill-creator
   content_hash: sha256:dcd4803e61e913e6fc27294184cd3a71f09f5e924ff20c8a9a20173e7b3c2bcf
 - kind: project-relative
   target: agent-skills
@@ -1148,8 +1944,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - anthropics/skills
-  active_owner: anthropics/skills
+  - anthropics/skills/skills/skill-creator
+  active_owner: anthropics/skills/skills/skill-creator
   content_hash: sha256:bf68f4cac5a56c673a928c2e6d619586c5b93ea364026ab37547772cb45a663a
 - kind: project-relative
   target: agent-skills
@@ -1157,8 +1953,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - anthropics/skills
-  active_owner: anthropics/skills
+  - anthropics/skills/skills/skill-creator
+  active_owner: anthropics/skills/skills/skill-creator
   content_hash: sha256:fe1fc9787c495d864c5d6eada47396478572325fde1b33a96d78bf4b849b7a3e
 - kind: project-relative
   target: agent-skills
@@ -1166,8 +1962,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - anthropics/skills
-  active_owner: anthropics/skills
+  - anthropics/skills/skills/skill-creator
+  active_owner: anthropics/skills/skills/skill-creator
   content_hash: sha256:57134da0c1a4eea33fbd74a1c9c44aa814f07d6bc64de303edb586f941e5d21a
 - kind: project-relative
   target: agent-skills
@@ -1175,8 +1971,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - anthropics/skills
-  active_owner: anthropics/skills
+  - anthropics/skills/skills/skill-creator
+  active_owner: anthropics/skills/skills/skill-creator
   content_hash: sha256:ce477dcc74dc1c0d1d3352646a79167b5a63634e936b1019160025065974e452
 - kind: project-relative
   target: agent-skills
@@ -1184,8 +1980,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - anthropics/skills
-  active_owner: anthropics/skills
+  - anthropics/skills/skills/skill-creator
+  active_owner: anthropics/skills/skills/skill-creator
   content_hash: sha256:fc9d1b9243fe5ab6012ebd579bd76d0035de1b79fd3b969de114defab26478fb
 - kind: project-relative
   target: agent-skills
@@ -1193,8 +1989,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - anthropics/skills
-  active_owner: anthropics/skills
+  - anthropics/skills/skills/skill-creator
+  active_owner: anthropics/skills/skills/skill-creator
   content_hash: sha256:a53213426ee1100441d701a3a0d49cda7a842f992d2c36463f4d3cc0258575fa
 - kind: project-relative
   target: agent-skills
@@ -1202,8 +1998,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - anthropics/skills
-  active_owner: anthropics/skills
+  - anthropics/skills/skills/skill-creator
+  active_owner: anthropics/skills/skills/skill-creator
   content_hash: sha256:8e8876180a8989b406a4d3edddf875b04cdfd5805cc8616686d552b11ce4455f
 - kind: project-relative
   target: agent-skills
@@ -1211,8 +2007,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - anthropics/skills
-  active_owner: anthropics/skills
+  - anthropics/skills/skills/skill-creator
+  active_owner: anthropics/skills/skills/skill-creator
   content_hash: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 - kind: project-relative
   target: agent-skills
@@ -1220,8 +2016,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - anthropics/skills
-  active_owner: anthropics/skills
+  - anthropics/skills/skills/skill-creator
+  active_owner: anthropics/skills/skills/skill-creator
   content_hash: sha256:123ef128ea5ccc01a4b1ac212ef5567f21e9c13d3d240609780beeb3200c49aa
 - kind: project-relative
   target: agent-skills
@@ -1229,8 +2025,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - anthropics/skills
-  active_owner: anthropics/skills
+  - anthropics/skills/skills/skill-creator
+  active_owner: anthropics/skills/skills/skill-creator
   content_hash: sha256:13df7118a3c50c83c4c3250a606d5f2b20b25a3d44cbc392b3d669ec75281453
 - kind: project-relative
   target: agent-skills
@@ -1238,8 +2034,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - anthropics/skills
-  active_owner: anthropics/skills
+  - anthropics/skills/skills/skill-creator
+  active_owner: anthropics/skills/skills/skill-creator
   content_hash: sha256:87d864570220b699fac52da309d2d6efdb060647bfebc74f768128e646accf80
 - kind: project-relative
   target: agent-skills
@@ -1247,8 +2043,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - anthropics/skills
-  active_owner: anthropics/skills
+  - anthropics/skills/skills/skill-creator
+  active_owner: anthropics/skills/skills/skill-creator
   content_hash: sha256:1a33059b0db1ef73375d46d513e5ea81369d2e8838c970597b0d52ddef8d1c0f
 - kind: project-relative
   target: agent-skills
@@ -1256,8 +2052,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - anthropics/skills
-  active_owner: anthropics/skills
+  - anthropics/skills/skills/skill-creator
+  active_owner: anthropics/skills/skills/skill-creator
   content_hash: sha256:67cf5703402013936c8fb75ad6a1afecd8841d45cc5e606b634eb05825fde365
 - kind: project-relative
   target: agent-skills
@@ -1265,8 +2061,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - anthropics/skills
-  active_owner: anthropics/skills
+  - anthropics/skills/skills/skill-creator
+  active_owner: anthropics/skills/skills/skill-creator
   content_hash: sha256:43e3b8f80dbf69c343967ba77e268fae991d9fa3ed68b32a0ff02532cd48657f
 - kind: project-relative
   target: agent-skills
@@ -1274,8 +2070,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - anthropics/skills
-  active_owner: anthropics/skills
+  - anthropics/skills/skills/skill-creator
+  active_owner: anthropics/skills/skills/skill-creator
   content_hash: sha256:7bd6f674203168520517eec94c55f493c0d154339b061b4d7c0f0dad187d0f21
 - kind: project-relative
   target: agent-skills
@@ -1283,9 +2079,72 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - anthropics/skills
-  active_owner: anthropics/skills
+  - anthropics/skills/skills/skill-creator
+  active_owner: anthropics/skills/skills/skill-creator
   content_hash: sha256:3af8ae62c40c73ab712207436a0d9a981e845f25c5a7040229eb189cc8e45bb1
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/styles
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/jetpack-compose/theming/styles
+  active_owner: android/skills/jetpack-compose/theming/styles
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/styles/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/jetpack-compose/theming/styles
+  active_owner: android/skills/jetpack-compose/theming/styles
+  content_hash: sha256:c75a42ebc8185e8dd595548bafedad47f8ba44ac31965c91ea57a93f38ed991b
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/styles/references/android/develop/ui/compose/designsystems/custom.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/jetpack-compose/theming/styles
+  active_owner: android/skills/jetpack-compose/theming/styles
+  content_hash: sha256:80f55504d5ad0685a4c0f8d2b10866225998a42acd4677a5861bd55bab452d85
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/styles/references/android/develop/ui/compose/styles/fundamentals.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/jetpack-compose/theming/styles
+  active_owner: android/skills/jetpack-compose/theming/styles
+  content_hash: sha256:79aec0b42ea4ab3a3125f4bf6c60d8acd2d1dd5e78377b7de49e5a1cb8447ca8
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/styles/references/android/develop/ui/compose/styles/state-animations.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/jetpack-compose/theming/styles
+  active_owner: android/skills/jetpack-compose/theming/styles
+  content_hash: sha256:414386ab0d230300b9a0d56b0ffac7b11df5b3478f735874b8cd669501e0b7b2
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/styles/references/android/develop/ui/compose/styles/styles-vs-modifiers.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/jetpack-compose/theming/styles
+  active_owner: android/skills/jetpack-compose/theming/styles
+  content_hash: sha256:6171322b69fecfd33b7fcecbffd9228647ec2ba5893525981108b3048d065423
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/styles/references/android/develop/ui/compose/styles/theming.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/jetpack-compose/theming/styles
+  active_owner: android/skills/jetpack-compose/theming/styles
+  content_hash: sha256:eab2049ca3019be592794fb4272607ac4ed509778de91d04d6321934a8a8c382
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/swift-concurrency

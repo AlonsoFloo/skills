@@ -24,7 +24,13 @@ dependencies:
     - Kotlin/kotlin-agent-skills#main
 
     # Android development skills and best practices.
-    - android/skills#aaca635061a4befdd3890d63c4a02963f2e8d925 #v1.0.10
+    # Repo format weird, have to load manually from the skills folder, since the root repo is not a skill.
+    - android/skills/system/edge-to-edge#aaca635061a4befdd3890d63c4a02963f2e8d925 #v1.0.10
+    - android/skills/performance/r8-analyzer#aaca635061a4befdd3890d63c4a02963f2e8d925 #v1.0.10
+    - android/skills/navigation/navigation-3#aaca635061a4befdd3890d63c4a02963f2e8d925 #v1.0.10
+    - android/skills/jetpack-compose/adaptive#aaca635061a4befdd3890d63c4a02963f2e8d925 #v1.0.10
+    - android/skills/jetpack-compose/theming/styles#aaca635061a4befdd3890d63c4a02963f2e8d925 #v1.0.10
+    - android/skills/device-ai/appfunctions#aaca635061a4befdd3890d63c4a02963f2e8d925 #v1.0.10
 
     # Swift concurrency: async/await, actors, Sendable, structured concurrency, and modern Swift concurrency patterns.
     # Starting 2.2.0 it introduced Agent portable plugin that miss behave with APM 0.29.0
@@ -32,22 +38,13 @@ dependencies:
     - AvdLee/Swift-Concurrency-Agent-Skill/skills/swift-concurrency#45fa49e4e0b2af4d43b1cb458903f8030ac993bd #2.3.0
 
     # Jetpack Compose animations and Kotlin control-flow best practices.
-    - git: https://github.com/chrisbanes/skills.git
-      ref: 2d202c722c1815007619ee0b667401b9d42e456e #2026.8.27
-      skills:
-        - compose-animations
-        - kotlin-control-flow
-        - kotlin-concurrency-and-flow
+    - chrisbanes/skills/skills/compose-animations#2d202c722c1815007619ee0b667401b9d42e456e #2026.8.27
+    - chrisbanes/skills/skills/kotlin-control-flow#2d202c722c1815007619ee0b667401b9d42e456e #2026.8.27
+    - chrisbanes/skills/skills/kotlin-concurrency-and-flow#2d202c722c1815007619ee0b667401b9d42e456e #2026.8.27
 
     # Jetpack Compose modifier ordering and efficient modifier chains.
-    - git: https://github.com/skydoves/compose-performance-skills.git
-      ref: main
-      path: modifiers/ordering-modifier-chains
-
-    # Efficient handling of side effects in Jetpack Compose.
-    - git: https://github.com/skydoves/compose-performance-skills.git
-      ref: main
-      path: side-effects/using-efficient-effects
+    - skydoves/compose-performance-skills/modifiers/ordering-modifier-chains#main
+    - skydoves/compose-performance-skills/side-effects/using-efficient-effects#main
 
     # Curated skills from awesome-copilot.
     - github/awesome-copilot/skills/apple-appstore-reviewer#main
@@ -56,18 +53,11 @@ dependencies:
     - github/awesome-copilot/skills/security-review#main
 
     # Engeneering skills curated by Matt Pocock
-    - git: mattpocock/skills
-      ref: 6acc160e4e0cd062dbbbd7a1b26ae92855edf07e #v1.2.3
-      skills:
-        - grill-me
-        - grilling
-        - domain-modeling
+    - mattpocock/skills/skills/productivity/grill-me#6acc160e4e0cd062dbbbd7a1b26ae92855edf07e #v1.2.3
+    - mattpocock/skills/skills/productivity/grilling#6acc160e4e0cd062dbbbd7a1b26ae92855edf07e #v1.2.3
+    - mattpocock/skills/skills/engineering/domain-modeling#6acc160e4e0cd062dbbbd7a1b26ae92855edf07e #v1.2.3
 
 devDependencies:
   apm:
-    # Skill development: guidance for creating, validating, and maintaining
-    # agent skills.
-    - git: anthropics/skills
-      ref: main
-      skills:
-        - skill-creator
+    # Skill development: guidance for creating, validating, and maintaining agent skills.
+    - anthropics/skills/skills/skill-creator#main

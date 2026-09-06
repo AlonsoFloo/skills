@@ -74,5 +74,5 @@ that obscures cleanup, transactions, or errors.
 
 ## Related
 
-- [Kotlin concurrency and Flow](../../../apm_modules/chrisbanes/skills/skills/kotlin-concurrency-and-flow/SKILL.md) — state/event primitives.
-- [Kotlin API design](../../../apm_modules/chrisbanes/skills/skills/kotlin-api-design/SKILL.md) — explicit common-code branching.
+- [Kotlin concurrency and Flow](../kotlin-concurrency-and-flow/SKILL.md) — state/event primitives.
+- [Kotlin API design](../kotlin-api-design/SKILL.md) — explicit common-code branching.

@@ -64,6 +64,6 @@ and `.value` requirements. If any is unknown, do not choose a primitive yet.
 
 ## Related
 
-- [Kotlin control flow](../../../../apm_modules/chrisbanes/skills/skills/kotlin-control-flow/SKILL.md) — state and event branching.
+- [Kotlin control flow](../../kotlin-control-flow/SKILL.md) — state and event branching.
 - [Structured concurrency](structured-concurrency.md) — scope and cancellation ownership.
-- [Compose state and effects](../../../../apm_modules/chrisbanes/skills/skills/compose-state-and-effects/SKILL.md) — UI collection.
+- [Compose state and effects](../../compose-state-and-effects/SKILL.md) — UI collection.

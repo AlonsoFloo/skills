@@ -15,7 +15,7 @@ Pick the smallest API that expresses the motion and its lifecycle.
 2. Choose the matching API from the table. Prefer target-state APIs; use `Animatable` only when gestures, interruption, or imperative control require it.
 3. Check lifecycle: an alpha animation keeps content composed; `AnimatedVisibility` removes it after exit. Do not use a fade when unmounting is required.
 4. For `AnimatedContent`, render from the content lambda target and choose a `contentKey` only when visual identity differs from payload equality. Read [AnimatedContent identity](references/animated-content.md) for state-holder details.
-5. Keep animated `State` in layout or draw block modifiers when it changes at frame rate; route deeper diagnosis to [Compose performance](../../../apm_modules/chrisbanes/skills/skills/compose-performance/SKILL.md).
+5. Keep animated `State` in layout or draw block modifiers when it changes at frame rate; route deeper diagnosis to [Compose performance](../compose-performance/SKILL.md).
 6. Use Navigation Compose transitions for destination swaps it owns, and dedicated libraries for art-based motion.
 7. Finish when the API, lifecycle, and content identity match the UI, no simpler API fits, and the relevant behavior is verified.
 
@@ -56,5 +56,5 @@ For animated fills, prefer `drawBehind { drawRect(color.value) }` over a value-f
 
 ## When not to use this skill
 
-- For side-effect timing or click-launched work, use [Compose state and effects](../../../apm_modules/chrisbanes/skills/skills/compose-state-and-effects/SKILL.md).
-- For deep state-read or recomposition diagnosis, use [Compose performance](../../../apm_modules/chrisbanes/skills/skills/compose-performance/SKILL.md).
+- For side-effect timing or click-launched work, use [Compose state and effects](../compose-state-and-effects/SKILL.md).
+- For deep state-read or recomposition diagnosis, use [Compose performance](../compose-performance/SKILL.md).
