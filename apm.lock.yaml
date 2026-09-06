@@ -1,22 +1,21 @@
 lockfile_version: '1'
-generated_at: '2026-09-06T10:05:05.747251+00:00'
-apm_version: 0.29.0
+apm_version: 0.29.1
 dependencies:
 - repo_url: android/skills
-  name: skills
+  name: d163e50742586a9d17baa24ff146b8f36a4e6c23fa4a85f7ecef9725037eefad
   host: github.com
   resolved_commit: aaca635061a4befdd3890d63c4a02963f2e8d925
   resolved_ref: aaca635061a4befdd3890d63c4a02963f2e8d925
   version: aaca635
-  package_type: marketplace_plugin
-  content_hash: sha256:aaeb5016668f14e71db0b2c93ed37b7870ac1fbf22e72edee6384cae28c62959
+  package_type: apm_package
+  content_hash: sha256:79e95cb80b396c78e06fcd35cbc9777a2b154eae98cf3dca43e424316db995a5
 - repo_url: anthropics/skills
-  name: anthropics-skills
+  name: f2db8404c222e36c8e02f933c816d92cbef85613dfa47bc8a4656a776a601059
   host: github.com
   resolved_commit: 41bbe19d1a1a7eaab5e7bb9050a417e5c6cffc8f
   resolved_ref: main
   version: 41bbe19
-  package_type: marketplace_plugin
+  package_type: skill_bundle
   deployed_files:
   - .agents/skills/skill-creator
   - .agents/skills/skill-creator/LICENSE.txt
@@ -56,7 +55,7 @@ dependencies:
     .agents/skills/skill-creator/scripts/run_eval.py: sha256:43e3b8f80dbf69c343967ba77e268fae991d9fa3ed68b32a0ff02532cd48657f
     .agents/skills/skill-creator/scripts/run_loop.py: sha256:7bd6f674203168520517eec94c55f493c0d154339b061b4d7c0f0dad187d0f21
     .agents/skills/skill-creator/scripts/utils.py: sha256:3af8ae62c40c73ab712207436a0d9a981e845f25c5a7040229eb189cc8e45bb1
-  content_hash: sha256:70a133bd8b910d8dd7522e8379ecc20a0a6ce26d01c536f510b7aaf0512688ec
+  content_hash: sha256:df60b7a020268c91608f9a8b2a7ed95fd0b6098f68a92b6166922d91d084de5d
   is_dev: true
   skill_subset:
   - skill-creator
@@ -120,7 +119,7 @@ dependencies:
   resolved_commit: 2d202c722c1815007619ee0b667401b9d42e456e
   resolved_ref: 2d202c722c1815007619ee0b667401b9d42e456e
   version: 2026.8.27
-  package_type: marketplace_plugin
+  package_type: skill_bundle
   deployed_files:
   - .agents/skills/compose-animations
   - .agents/skills/compose-animations/SKILL.md
@@ -145,19 +144,60 @@ dependencies:
   - kotlin-control-flow
   declared_license: Apache-2.0
 - repo_url: github/awesome-copilot
-  name: github-awesome-copilot
+  name: apple-appstore-reviewer
   host: github.com
   resolved_commit: 7b1ebe6333397841ca918dec904d24d4695fe953
   resolved_ref: main
-  version: 0.0.0
-  package_type: skill_bundle
+  version: unknown
+  virtual_path: skills/apple-appstore-reviewer
+  is_virtual: true
+  package_type: claude_skill
   deployed_files:
   - .agents/skills/apple-appstore-reviewer
   - .agents/skills/apple-appstore-reviewer/SKILL.md
+  deployed_file_hashes:
+    .agents/skills/apple-appstore-reviewer/SKILL.md: sha256:d469ef904074f79b729479814835c62256cea68405aa30271bb52f779c183d30
+  content_hash: sha256:25cb84d301e17fb5840a4d2409e9a7d341d6e195fb2272b110518512a7f0dbc3
+- repo_url: github/awesome-copilot
+  name: conventional-branch
+  host: github.com
+  resolved_commit: 7b1ebe6333397841ca918dec904d24d4695fe953
+  resolved_ref: main
+  version: unknown
+  virtual_path: skills/conventional-branch
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
   - .agents/skills/conventional-branch
   - .agents/skills/conventional-branch/SKILL.md
+  deployed_file_hashes:
+    .agents/skills/conventional-branch/SKILL.md: sha256:94b962ff93ac639c8b760a29465ca48f51d6af1ad1b4bdd242d52f1260959b07
+  content_hash: sha256:62d556675f48fd45ebe77b13ce7cac1e37a4982e648f389b4db237864f6702c4
+- repo_url: github/awesome-copilot
+  name: conventional-commit
+  host: github.com
+  resolved_commit: 7b1ebe6333397841ca918dec904d24d4695fe953
+  resolved_ref: main
+  version: unknown
+  virtual_path: skills/conventional-commit
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
   - .agents/skills/conventional-commit
   - .agents/skills/conventional-commit/SKILL.md
+  deployed_file_hashes:
+    .agents/skills/conventional-commit/SKILL.md: sha256:250235f71b8c501a7744ded911281292324bcd1a2d014e34b25041e2d2c8bf73
+  content_hash: sha256:f29c9486cede6c7b2df0cfb0a2e4aa67446552b991bcf17d1b309e903171f03d
+- repo_url: github/awesome-copilot
+  name: security-review
+  host: github.com
+  resolved_commit: 7b1ebe6333397841ca918dec904d24d4695fe953
+  resolved_ref: main
+  version: unknown
+  virtual_path: skills/security-review
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
   - .agents/skills/security-review
   - .agents/skills/security-review/SKILL.md
   - .agents/skills/security-review/references/language-patterns.md
@@ -166,30 +206,21 @@ dependencies:
   - .agents/skills/security-review/references/vuln-categories.md
   - .agents/skills/security-review/references/vulnerable-packages.md
   deployed_file_hashes:
-    .agents/skills/apple-appstore-reviewer/SKILL.md: sha256:d469ef904074f79b729479814835c62256cea68405aa30271bb52f779c183d30
-    .agents/skills/conventional-branch/SKILL.md: sha256:94b962ff93ac639c8b760a29465ca48f51d6af1ad1b4bdd242d52f1260959b07
-    .agents/skills/conventional-commit/SKILL.md: sha256:250235f71b8c501a7744ded911281292324bcd1a2d014e34b25041e2d2c8bf73
     .agents/skills/security-review/SKILL.md: sha256:002392d88637b89e4cbc409a0531834970937f3b57c0b448a17e04b5ca6d356c
     .agents/skills/security-review/references/language-patterns.md: sha256:ddfbcbb68b9d605789c85a168a274219f0ad86f5fc76b46b5332eb42f0c042b3
     .agents/skills/security-review/references/report-format.md: sha256:688ef9f2862303527314eb17a090a72d512b907a685f5d1f122d6ebd5ae66db1
     .agents/skills/security-review/references/secret-patterns.md: sha256:38f84f60021490d785f33fc70f2ce784888d2a751781a881372e6862e7e11288
     .agents/skills/security-review/references/vuln-categories.md: sha256:d06159479bd92b9dcf3a2842e09f7712f1fd297c0bc9792fe20bc3cb69188df5
     .agents/skills/security-review/references/vulnerable-packages.md: sha256:8693a6a258bad18a8a1d0925bc1eae9c744071ff37a36b8f1da83adca93608af
-  content_hash: sha256:2d9c3b415fb680253102f6c656c94871fdab99037230509748e6c44275254cb9
-  skill_subset:
-  - Thinking-Beast-Mode
-  - apple-appstore-reviewer
-  - conventional-branch
-  - conventional-commit
-  - security-review
+  content_hash: sha256:a0fc25587c016178c9cf6238ac8702695fa761694965192472487f92093db571
 - repo_url: kotlin/kotlin-agent-skills
   materialization_repo_url: Kotlin/kotlin-agent-skills
-  name: kotlin-agent-skills
+  name: c4201117800b20d83a22974a0bcc41ecff6fb783c0c1b6eb2462844f74196d44
   host: github.com
   resolved_commit: 08d7ad0d74a9a5a548287b2bd4926180fab56cac
   resolved_ref: main
   version: 08d7ad0
-  package_type: marketplace_plugin
+  package_type: skill_bundle
   deployed_files:
   - .agents/skills/kotlin-backend-jpa-entity-mapping
   - .agents/skills/kotlin-backend-jpa-entity-mapping/SKILL.md
@@ -280,14 +311,14 @@ dependencies:
     .agents/skills/kotlin-tooling-native-build-performance/references/experimental.md: sha256:e0e83e36ebdd41f393082680ed06ff396077540544c5723cace80a2058a5eb1f
     .agents/skills/kotlin-tooling-native-build-performance/references/exports-and-generated-code.md: sha256:76d94b9a08e933f09eaae66e8a613f79726dbabc65f765e2130fabf93c0f87d3
     .agents/skills/kotlin-tooling-native-build-performance/scripts/audit-native-build.sh: sha256:94af58014fb24aaf1e7757ce804ea19e4023cc778da77ac0d725bd19aa0ba9e7
-  content_hash: sha256:689bc8cbee07421c97c5c323e2cf191b145aeffff3ac764fd60875e5fd3cdd68
+  content_hash: sha256:be5df4103646c3d4b23b2125e4c1f353c5738c3923094c4fd778003b53b13b33
 - repo_url: mattpocock/skills
   name: mattpocock-skills
   host: github.com
   resolved_commit: 6acc160e4e0cd062dbbbd7a1b26ae92855edf07e
   resolved_ref: 6acc160e4e0cd062dbbbd7a1b26ae92855edf07e
   version: 1.2.3
-  package_type: marketplace_plugin
+  package_type: apm_package
   deployed_files:
   - .agents/skills/domain-modeling
   - .agents/skills/domain-modeling/ADR-FORMAT.md
@@ -352,8 +383,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - github/awesome-copilot
-  active_owner: github/awesome-copilot
+  - github/awesome-copilot/skills/apple-appstore-reviewer
+  active_owner: github/awesome-copilot/skills/apple-appstore-reviewer
   content_hash: null
 - kind: project-relative
   target: agent-skills
@@ -361,8 +392,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - github/awesome-copilot
-  active_owner: github/awesome-copilot
+  - github/awesome-copilot/skills/apple-appstore-reviewer
+  active_owner: github/awesome-copilot/skills/apple-appstore-reviewer
   content_hash: sha256:d469ef904074f79b729479814835c62256cea68405aa30271bb52f779c183d30
 - kind: project-relative
   target: agent-skills
@@ -397,8 +428,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - github/awesome-copilot
-  active_owner: github/awesome-copilot
+  - github/awesome-copilot/skills/conventional-branch
+  active_owner: github/awesome-copilot/skills/conventional-branch
   content_hash: null
 - kind: project-relative
   target: agent-skills
@@ -406,8 +437,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - github/awesome-copilot
-  active_owner: github/awesome-copilot
+  - github/awesome-copilot/skills/conventional-branch
+  active_owner: github/awesome-copilot/skills/conventional-branch
   content_hash: sha256:94b962ff93ac639c8b760a29465ca48f51d6af1ad1b4bdd242d52f1260959b07
 - kind: project-relative
   target: agent-skills
@@ -415,8 +446,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - github/awesome-copilot
-  active_owner: github/awesome-copilot
+  - github/awesome-copilot/skills/conventional-commit
+  active_owner: github/awesome-copilot/skills/conventional-commit
   content_hash: null
 - kind: project-relative
   target: agent-skills
@@ -424,8 +455,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - github/awesome-copilot
-  active_owner: github/awesome-copilot
+  - github/awesome-copilot/skills/conventional-commit
+  active_owner: github/awesome-copilot/skills/conventional-commit
   content_hash: sha256:250235f71b8c501a7744ded911281292324bcd1a2d014e34b25041e2d2c8bf73
 - kind: project-relative
   target: agent-skills
@@ -1027,8 +1058,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - github/awesome-copilot
-  active_owner: github/awesome-copilot
+  - github/awesome-copilot/skills/security-review
+  active_owner: github/awesome-copilot/skills/security-review
   content_hash: null
 - kind: project-relative
   target: agent-skills
@@ -1036,8 +1067,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - github/awesome-copilot
-  active_owner: github/awesome-copilot
+  - github/awesome-copilot/skills/security-review
+  active_owner: github/awesome-copilot/skills/security-review
   content_hash: sha256:002392d88637b89e4cbc409a0531834970937f3b57c0b448a17e04b5ca6d356c
 - kind: project-relative
   target: agent-skills
@@ -1045,8 +1076,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - github/awesome-copilot
-  active_owner: github/awesome-copilot
+  - github/awesome-copilot/skills/security-review
+  active_owner: github/awesome-copilot/skills/security-review
   content_hash: sha256:ddfbcbb68b9d605789c85a168a274219f0ad86f5fc76b46b5332eb42f0c042b3
 - kind: project-relative
   target: agent-skills
@@ -1054,8 +1085,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - github/awesome-copilot
-  active_owner: github/awesome-copilot
+  - github/awesome-copilot/skills/security-review
+  active_owner: github/awesome-copilot/skills/security-review
   content_hash: sha256:688ef9f2862303527314eb17a090a72d512b907a685f5d1f122d6ebd5ae66db1
 - kind: project-relative
   target: agent-skills
@@ -1063,8 +1094,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - github/awesome-copilot
-  active_owner: github/awesome-copilot
+  - github/awesome-copilot/skills/security-review
+  active_owner: github/awesome-copilot/skills/security-review
   content_hash: sha256:38f84f60021490d785f33fc70f2ce784888d2a751781a881372e6862e7e11288
 - kind: project-relative
   target: agent-skills
@@ -1072,8 +1103,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - github/awesome-copilot
-  active_owner: github/awesome-copilot
+  - github/awesome-copilot/skills/security-review
+  active_owner: github/awesome-copilot/skills/security-review
   content_hash: sha256:d06159479bd92b9dcf3a2842e09f7712f1fd297c0bc9792fe20bc3cb69188df5
 - kind: project-relative
   target: agent-skills
@@ -1081,8 +1112,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - github/awesome-copilot
-  active_owner: github/awesome-copilot
+  - github/awesome-copilot/skills/security-review
+  active_owner: github/awesome-copilot/skills/security-review
   content_hash: sha256:8693a6a258bad18a8a1d0925bc1eae9c744071ff37a36b8f1da83adca93608af
 - kind: project-relative
   target: agent-skills
@@ -1463,321 +1494,6 @@ deployments:
   active_owner: skydoves/compose-performance-skills/side-effects/using-efficient-effects
   content_hash: sha256:f5f891478683cb1eb0d07aef277606135560f0491993a45181a141627d080362
 - kind: project-relative
-  target: agents
-  value: .agents/skills/flo-android-craftsmanship
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: null
-- kind: project-relative
-  target: agents
-  value: .agents/skills/flo-android-craftsmanship/SKILL.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:faa6297ad79ace8f9372f3a6d89c905bc613cbcc9083402bba62a76e5b274ae9
-- kind: project-relative
-  target: agents
-  value: .agents/skills/flo-android-craftsmanship/references/examples.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:3900d2c5dfba5673bd3b3d7c6d6c23aacf0579702708ebde4108d7933c127430
-- kind: project-relative
-  target: agents
-  value: .agents/skills/flo-boilerplategit
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: null
-- kind: project-relative
-  target: agents
-  value: .agents/skills/flo-boilerplategit/SKILL.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:f9ab5e024cc7584605cf2391aa73dd5c967753aea35d5abd4db8ec3f34e6dc77
-- kind: project-relative
-  target: agents
-  value: .agents/skills/flo-boilerplategit/references/agents.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:de3c136c8ce8878f88e3fb8b53d8010ed6567a6161d28b86a3900f6d257efaac
-- kind: project-relative
-  target: agents
-  value: .agents/skills/flo-boilerplategit/references/codeowners.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:6d365f87616bc2d2fc6589daebe105dffd79af91d0fcc65453055738a59fe0eb
-- kind: project-relative
-  target: agents
-  value: .agents/skills/flo-boilerplategit/references/editorconfig.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:0c2e7f20fb17c032ea4b50fe7efe71b317a370797f7331c6c3b9f69df9dbea85
-- kind: project-relative
-  target: agents
-  value: .agents/skills/flo-boilerplategit/references/github-templates.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:4fea4421102ac9c3d793666db27522bb7ce2b5cb66da6269f583fd40a5d1d482
-- kind: project-relative
-  target: agents
-  value: .agents/skills/flo-boilerplategit/references/gitignore.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:1ad6f5e425874a8fddac2dd09435f601b83a9c9618ea392202411e42043e4aa2
-- kind: project-relative
-  target: agents
-  value: .agents/skills/flo-boilerplategit/references/license.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:0f32542d8a01518c8e75df2f11708a669e0f6bd51b2dd8ed6bb7ca3a5b7ba6d8
-- kind: project-relative
-  target: agents
-  value: .agents/skills/flo-boilerplategit/references/pre-commit.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:b2afcaa9de7c87186b2fc2e2cd0bb354653ef4c5ff18f70b513496ce1aac33d6
-- kind: project-relative
-  target: agents
-  value: .agents/skills/flo-boilerplategit/references/readme.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:574ea958878945d7d4fb790eec905de979cf08bc00016df3401773ae73c2c6f0
-- kind: project-relative
-  target: agents
-  value: .agents/skills/flo-boilerplategit/references/release-please.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:a25b03bfda5a876a6eabe98cb235bde651562e4f7377f7b59b7c067cab1f35b0
-- kind: project-relative
-  target: agents
-  value: .agents/skills/flo-boilerplategit/references/renovate.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:352620b5d81cc589078a618b81ae01442434564e8e1cdaa6af77ecaaffe7e874
-- kind: project-relative
-  target: agents
-  value: .agents/skills/flo-boilerplategit/references/security.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:d36f39b124ceb68a354c1c22a4cda2d3845e59d82dbe71345c4c47afa8b29abf
-- kind: project-relative
-  target: agents
-  value: .agents/skills/flo-caveman
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: null
-- kind: project-relative
-  target: agents
-  value: .agents/skills/flo-caveman/SKILL.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:6d2e8d888212fe198a76cd1c28c8bc1e74b25642f9f0a9636060086ba01acf85
-- kind: project-relative
-  target: agents
-  value: .agents/skills/flo-conventional-comments
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: null
-- kind: project-relative
-  target: agents
-  value: .agents/skills/flo-conventional-comments/SKILL.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:388808e2149c7e956d40980294c4edc75b2badeb9dfc37874249ca20657601e3
-- kind: project-relative
-  target: agents
-  value: .agents/skills/flo-conventional-comments/refrences/matrix.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:89de6d4c36c175a644c5dec7ececa96f2cf06501ebcfbe3e3cbb51aeb9610488
-- kind: project-relative
-  target: agents
-  value: .agents/skills/flo-devops-craftsmanship
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: null
-- kind: project-relative
-  target: agents
-  value: .agents/skills/flo-devops-craftsmanship/SKILL.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:fd3196beb5f68510d17e982c2d3f811ce5796032e2b22164fc93b18cf0cae422
-- kind: project-relative
-  target: agents
-  value: .agents/skills/flo-devops-craftsmanship/references/examples.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:1e89ce761164862d2f31c41c6392d737ac4c84d5fbbc0af939fb241aa4fe8978
-- kind: project-relative
-  target: agents
-  value: .agents/skills/flo-ios-craftsmanship
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: null
-- kind: project-relative
-  target: agents
-  value: .agents/skills/flo-ios-craftsmanship/SKILL.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:cb702d63b1db7718f9479d7f53e23739f1d9ed511efcdae24c29794a232fe7cc
-- kind: project-relative
-  target: agents
-  value: .agents/skills/flo-ios-craftsmanship/references/examples.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:578cfbb9f3338687fce0ad4b84c9088787388e4a19a8e966513071ece00b96af
-- kind: project-relative
-  target: agents
-  value: .agents/skills/flo-software-craftsmanship
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: null
-- kind: project-relative
-  target: agents
-  value: .agents/skills/flo-software-craftsmanship/SKILL.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:d0911325d4fcaa0a9bbe11c3a4e3614b6bd284767d2c7904a8b5074f29a4e154
-- kind: project-relative
-  target: agents
-  value: .agents/skills/flo-software-craftsmanship/references/examples.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:4604eece7de28e5281bfcf092dd79cac84df5607b7906b90a4f18333f1ffa3ef
-- kind: project-relative
-  target: agents
-  value: .agents/skills/flo-testing-craftsmanship
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: null
-- kind: project-relative
-  target: agents
-  value: .agents/skills/flo-testing-craftsmanship/SKILL.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:c2d650460436717a30fbbf04648f47f8d272efd286f1d1f29354bcac2696fe78
-- kind: project-relative
-  target: agents
-  value: .agents/skills/flo-testing-craftsmanship/references/examples.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:0a9cf62cc6549e2075686b000c97d712d461daf03bebfbd5ed0a7f76aa71eba4
-- kind: project-relative
-  target: agents
-  value: .agents/skills/flo-verify-precommitall
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: null
-- kind: project-relative
-  target: agents
-  value: .agents/skills/flo-verify-precommitall/SKILL.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:eae4ebad9f9e892283a890f7072159dd918922bce297e76278a3aababda1d40a
-- kind: project-relative
   target: codex
   value: .codex/agents/flo-devops.toml
   runtime: null
@@ -1831,6 +1547,321 @@ deployments:
   - .
   active_owner: .
   content_hash: sha256:9205424b92f91826c51c4b324deb61925f4839ccfbd470866e0aa1c4207ec6f2
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/flo-android-craftsmanship
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/flo-android-craftsmanship/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:faa6297ad79ace8f9372f3a6d89c905bc613cbcc9083402bba62a76e5b274ae9
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/flo-android-craftsmanship/references/examples.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:3900d2c5dfba5673bd3b3d7c6d6c23aacf0579702708ebde4108d7933c127430
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/flo-boilerplategit
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/flo-boilerplategit/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:f9ab5e024cc7584605cf2391aa73dd5c967753aea35d5abd4db8ec3f34e6dc77
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/flo-boilerplategit/references/agents.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:de3c136c8ce8878f88e3fb8b53d8010ed6567a6161d28b86a3900f6d257efaac
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/flo-boilerplategit/references/codeowners.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:6d365f87616bc2d2fc6589daebe105dffd79af91d0fcc65453055738a59fe0eb
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/flo-boilerplategit/references/editorconfig.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:0c2e7f20fb17c032ea4b50fe7efe71b317a370797f7331c6c3b9f69df9dbea85
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/flo-boilerplategit/references/github-templates.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:4fea4421102ac9c3d793666db27522bb7ce2b5cb66da6269f583fd40a5d1d482
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/flo-boilerplategit/references/gitignore.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:1ad6f5e425874a8fddac2dd09435f601b83a9c9618ea392202411e42043e4aa2
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/flo-boilerplategit/references/license.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:0f32542d8a01518c8e75df2f11708a669e0f6bd51b2dd8ed6bb7ca3a5b7ba6d8
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/flo-boilerplategit/references/pre-commit.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:b2afcaa9de7c87186b2fc2e2cd0bb354653ef4c5ff18f70b513496ce1aac33d6
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/flo-boilerplategit/references/readme.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:574ea958878945d7d4fb790eec905de979cf08bc00016df3401773ae73c2c6f0
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/flo-boilerplategit/references/release-please.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:a25b03bfda5a876a6eabe98cb235bde651562e4f7377f7b59b7c067cab1f35b0
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/flo-boilerplategit/references/renovate.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:352620b5d81cc589078a618b81ae01442434564e8e1cdaa6af77ecaaffe7e874
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/flo-boilerplategit/references/security.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:d36f39b124ceb68a354c1c22a4cda2d3845e59d82dbe71345c4c47afa8b29abf
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/flo-caveman
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/flo-caveman/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:6d2e8d888212fe198a76cd1c28c8bc1e74b25642f9f0a9636060086ba01acf85
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/flo-conventional-comments
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/flo-conventional-comments/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:388808e2149c7e956d40980294c4edc75b2badeb9dfc37874249ca20657601e3
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/flo-conventional-comments/refrences/matrix.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:89de6d4c36c175a644c5dec7ececa96f2cf06501ebcfbe3e3cbb51aeb9610488
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/flo-devops-craftsmanship
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/flo-devops-craftsmanship/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:fd3196beb5f68510d17e982c2d3f811ce5796032e2b22164fc93b18cf0cae422
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/flo-devops-craftsmanship/references/examples.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:1e89ce761164862d2f31c41c6392d737ac4c84d5fbbc0af939fb241aa4fe8978
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/flo-ios-craftsmanship
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/flo-ios-craftsmanship/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:cb702d63b1db7718f9479d7f53e23739f1d9ed511efcdae24c29794a232fe7cc
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/flo-ios-craftsmanship/references/examples.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:578cfbb9f3338687fce0ad4b84c9088787388e4a19a8e966513071ece00b96af
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/flo-software-craftsmanship
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/flo-software-craftsmanship/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:d0911325d4fcaa0a9bbe11c3a4e3614b6bd284767d2c7904a8b5074f29a4e154
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/flo-software-craftsmanship/references/examples.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:4604eece7de28e5281bfcf092dd79cac84df5607b7906b90a4f18333f1ffa3ef
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/flo-testing-craftsmanship
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/flo-testing-craftsmanship/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:c2d650460436717a30fbbf04648f47f8d272efd286f1d1f29354bcac2696fe78
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/flo-testing-craftsmanship/references/examples.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:0a9cf62cc6549e2075686b000c97d712d461daf03bebfbd5ed0a7f76aa71eba4
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/flo-verify-precommitall
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/flo-verify-precommitall/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:eae4ebad9f9e892283a890f7072159dd918922bce297e76278a3aababda1d40a
 - kind: project-relative
   target: opencode
   value: .opencode/agents/flo-devops.md

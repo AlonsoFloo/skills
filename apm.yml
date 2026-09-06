@@ -50,15 +50,10 @@ dependencies:
       path: side-effects/using-efficient-effects
 
     # Curated skills from awesome-copilot.
-    - git: https://github.com/github/awesome-copilot.git
-      ref: main
-      skills:
-        - apple-appstore-reviewer
-        - conventional-branch
-        - conventional-commit
-        - security-review
-        - Thinking-Beast-Mode
-      alias: github-awesome-copilot
+    - github/awesome-copilot/skills/apple-appstore-reviewer#main
+    - github/awesome-copilot/skills/conventional-branch#main
+    - github/awesome-copilot/skills/conventional-commit#main
+    - github/awesome-copilot/skills/security-review#main
 
     # Engeneering skills curated by Matt Pocock
     - git: mattpocock/skills
@@ -76,4 +71,3 @@ devDependencies:
       ref: main
       skills:
         - skill-creator
-      alias: anthropics-skills
