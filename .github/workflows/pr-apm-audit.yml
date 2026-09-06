@@ -1,4 +1,4 @@
-name: APM audit on PR
+name: PR APM Audit
 on:
   pull_request:
     paths:
