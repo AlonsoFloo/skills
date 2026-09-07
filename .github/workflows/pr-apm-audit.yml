@@ -5,6 +5,8 @@ on:
       - 'apm.yml'
       - 'apm.lock.yaml'
       - '.apm/**'
+      - '.agents/**'
+      - '.codex/**'
       - '.github/**'
       - '.opencode/**'
       - '.claude/**'
