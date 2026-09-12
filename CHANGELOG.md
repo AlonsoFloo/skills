@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.6.0](https://github.com/AlonsoFloo/skills/compare/v2.5.1...v2.6.0) (2026-09-12)
+
+
+### Features
+
+* **SKILL:** Added android new android skill android/skills/identity/restore-credentials ([#43](https://github.com/AlonsoFloo/skills/issues/43)) ([9e77b3d](https://github.com/AlonsoFloo/skills/commit/9e77b3de07c1db9f9fed31501408458727d10bd7))
+
 ## [2.5.1](https://github.com/AlonsoFloo/skills/compare/v2.5.0...v2.5.1) (2026-09-06)
 
 
