@@ -31,6 +31,7 @@ dependencies:
     - android/skills/jetpack-compose/adaptive#aaca635061a4befdd3890d63c4a02963f2e8d925 #v1.0.10
     - android/skills/jetpack-compose/theming/styles#aaca635061a4befdd3890d63c4a02963f2e8d925 #v1.0.10
     - android/skills/device-ai/appfunctions#aaca635061a4befdd3890d63c4a02963f2e8d925 #v1.0.10
+    - android/skills/identity/restore-credentials#aaca635061a4befdd3890d63c4a02963f2e8d925 #v1.0.10
 
     # Swift concurrency: async/await, actors, Sendable, structured concurrency, and modern Swift concurrency patterns.
     # Starting 2.2.0 it introduced Agent portable plugin that miss behave with APM 0.29.0
