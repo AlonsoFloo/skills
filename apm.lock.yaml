@@ -1,5 +1,5 @@
 lockfile_version: '1'
-apm_version: 0.29.1
+apm_version: 0.30.0
 dependencies:
 - repo_url: android/skills
   name: appfunctions
@@ -28,6 +28,27 @@ dependencies:
     .agents/skills/appfunctions/references/kdoc-refinement-optimization.md: sha256:09e71fb060b3619e14a26c982f113a7d60d28c599b233c6c992438469cfbc2fb
     .agents/skills/appfunctions/references/migrate-to-service-entry-point.md: sha256:9f7944fbab543e01b32589b90032d547340ab8370e4c1d31c4a923a840462311
   content_hash: sha256:ed6ba26322f5e564971323a852ff21d80c3eee4c22dea7890741bd1ff00fe7e9
+- repo_url: android/skills
+  name: restore-credentials
+  host: github.com
+  resolved_commit: aaca635061a4befdd3890d63c4a02963f2e8d925
+  resolved_ref: aaca635061a4befdd3890d63c4a02963f2e8d925
+  version: unknown
+  virtual_path: identity/restore-credentials
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/restore-credentials
+  - .agents/skills/restore-credentials/SKILL.md
+  - .agents/skills/restore-credentials/references/android/guide/topics/manifest/application-element.md
+  - .agents/skills/restore-credentials/references/android/identity/passkeys/create-passkeys.md
+  - .agents/skills/restore-credentials/references/android/identity/passkeys/sign-in-with-passkeys.md
+  deployed_file_hashes:
+    .agents/skills/restore-credentials/SKILL.md: sha256:a8fdc3c14029bf7c9d7cb593f2a174ab3da198b135b0fb12a95fdfcd60b0ddd8
+    .agents/skills/restore-credentials/references/android/guide/topics/manifest/application-element.md: sha256:4ae9445ff82dcbad38ba2a118d71d17ef844727639a93a281041e1117b2c7e59
+    .agents/skills/restore-credentials/references/android/identity/passkeys/create-passkeys.md: sha256:c96a08a2ef4ed3312ae05547dd5a28492755cfaf1cc395bc5f50376f151757e1
+    .agents/skills/restore-credentials/references/android/identity/passkeys/sign-in-with-passkeys.md: sha256:cc504df4f900e4118c93b1047805bd32d1b471b09c8e60996e219060749961a0
+  content_hash: sha256:42e3bee5875ca271f1b85859ca6d7af860b920fb3c82bdb6ca8ca4317cf1c873
 - repo_url: android/skills
   name: adaptive
   host: github.com
@@ -1848,6 +1869,51 @@ deployments:
   - android/skills/performance/r8-analyzer
   active_owner: android/skills/performance/r8-analyzer
   content_hash: sha256:384da2bdff16d8f553acb3aeb9aac93962c4b8d160b40faf4939f4de53a06e92
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/restore-credentials
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/identity/restore-credentials
+  active_owner: android/skills/identity/restore-credentials
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/restore-credentials/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/identity/restore-credentials
+  active_owner: android/skills/identity/restore-credentials
+  content_hash: sha256:a8fdc3c14029bf7c9d7cb593f2a174ab3da198b135b0fb12a95fdfcd60b0ddd8
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/restore-credentials/references/android/guide/topics/manifest/application-element.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/identity/restore-credentials
+  active_owner: android/skills/identity/restore-credentials
+  content_hash: sha256:4ae9445ff82dcbad38ba2a118d71d17ef844727639a93a281041e1117b2c7e59
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/restore-credentials/references/android/identity/passkeys/create-passkeys.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/identity/restore-credentials
+  active_owner: android/skills/identity/restore-credentials
+  content_hash: sha256:c96a08a2ef4ed3312ae05547dd5a28492755cfaf1cc395bc5f50376f151757e1
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/restore-credentials/references/android/identity/passkeys/sign-in-with-passkeys.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/identity/restore-credentials
+  active_owner: android/skills/identity/restore-credentials
+  content_hash: sha256:cc504df4f900e4118c93b1047805bd32d1b471b09c8e60996e219060749961a0
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/security-review
