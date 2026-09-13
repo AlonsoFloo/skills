@@ -330,6 +330,108 @@ dependencies:
     .agents/skills/swift-concurrency/references/testing.md: sha256:3df9e839b3338dd473115d9ac8787a42d91b50a537fe40c55cf66d21034679db
     .agents/skills/swift-concurrency/references/threading.md: sha256:0a4e44bd27fdf852cf5f8f5aa64cfe15ba229fb7c885b3f69ed2afdbfac8752a
   content_hash: sha256:1bb4ef9485915c8012302552f5f13be2b3a1df268d66524573328691c860ec8d
+- repo_url: avdlee/swiftui-agent-skill
+  materialization_repo_url: AvdLee/SwiftUI-Agent-Skill
+  name: swiftui-expert-skill
+  host: github.com
+  resolved_commit: 9692ec5c3e78a0acc7757de2dbe8e64e519a72fb
+  resolved_ref: 9692ec5c3e78a0acc7757de2dbe8e64e519a72fb
+  version: unknown
+  virtual_path: skills/swiftui-expert-skill
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/swiftui-expert-skill
+  - .agents/skills/swiftui-expert-skill/SKILL.md
+  - .agents/skills/swiftui-expert-skill/agents/openai.yaml
+  - .agents/skills/swiftui-expert-skill/assets/logo-small.png
+  - .agents/skills/swiftui-expert-skill/assets/logo.png
+  - .agents/skills/swiftui-expert-skill/assets/logo.svg
+  - .agents/skills/swiftui-expert-skill/references/accessibility-patterns.md
+  - .agents/skills/swiftui-expert-skill/references/animation-advanced.md
+  - .agents/skills/swiftui-expert-skill/references/animation-basics.md
+  - .agents/skills/swiftui-expert-skill/references/animation-transitions.md
+  - .agents/skills/swiftui-expert-skill/references/charts-accessibility.md
+  - .agents/skills/swiftui-expert-skill/references/charts.md
+  - .agents/skills/swiftui-expert-skill/references/focus-patterns.md
+  - .agents/skills/swiftui-expert-skill/references/image-optimization.md
+  - .agents/skills/swiftui-expert-skill/references/latest-apis.md
+  - .agents/skills/swiftui-expert-skill/references/layout-best-practices.md
+  - .agents/skills/swiftui-expert-skill/references/liquid-glass.md
+  - .agents/skills/swiftui-expert-skill/references/list-patterns.md
+  - .agents/skills/swiftui-expert-skill/references/localization.md
+  - .agents/skills/swiftui-expert-skill/references/macos-scenes.md
+  - .agents/skills/swiftui-expert-skill/references/macos-views.md
+  - .agents/skills/swiftui-expert-skill/references/macos-window-styling.md
+  - .agents/skills/swiftui-expert-skill/references/performance-patterns.md
+  - .agents/skills/swiftui-expert-skill/references/previews.md
+  - .agents/skills/swiftui-expert-skill/references/scroll-patterns.md
+  - .agents/skills/swiftui-expert-skill/references/sheet-navigation-patterns.md
+  - .agents/skills/swiftui-expert-skill/references/soft-deprecation.md
+  - .agents/skills/swiftui-expert-skill/references/state-management.md
+  - .agents/skills/swiftui-expert-skill/references/text-patterns.md
+  - .agents/skills/swiftui-expert-skill/references/trace-analysis.md
+  - .agents/skills/swiftui-expert-skill/references/trace-recording.md
+  - .agents/skills/swiftui-expert-skill/references/view-structure.md
+  - .agents/skills/swiftui-expert-skill/scripts/analyze_trace.py
+  - .agents/skills/swiftui-expert-skill/scripts/instruments_parser/__init__.py
+  - .agents/skills/swiftui-expert-skill/scripts/instruments_parser/causes.py
+  - .agents/skills/swiftui-expert-skill/scripts/instruments_parser/correlate.py
+  - .agents/skills/swiftui-expert-skill/scripts/instruments_parser/events.py
+  - .agents/skills/swiftui-expert-skill/scripts/instruments_parser/hangs.py
+  - .agents/skills/swiftui-expert-skill/scripts/instruments_parser/hitches.py
+  - .agents/skills/swiftui-expert-skill/scripts/instruments_parser/summary.py
+  - .agents/skills/swiftui-expert-skill/scripts/instruments_parser/swiftui.py
+  - .agents/skills/swiftui-expert-skill/scripts/instruments_parser/time_profiler.py
+  - .agents/skills/swiftui-expert-skill/scripts/instruments_parser/xctrace.py
+  - .agents/skills/swiftui-expert-skill/scripts/instruments_parser/xml_utils.py
+  - .agents/skills/swiftui-expert-skill/scripts/record_trace.py
+  deployed_file_hashes:
+    .agents/skills/swiftui-expert-skill/SKILL.md: sha256:9fe4bb06a2b17e74acb4ccfdf9044de593c10c1ecf359dc24ef058000d5b447e
+    .agents/skills/swiftui-expert-skill/agents/openai.yaml: sha256:a7c17cfff5c29e32b11296b63edba0da92e612f9de55f2319b59cb64143b2793
+    .agents/skills/swiftui-expert-skill/assets/logo-small.png: sha256:befad5069b4c95bbb3612e41e2b7fde601de7e022d8cc0d07570f0c7ec234d11
+    .agents/skills/swiftui-expert-skill/assets/logo.png: sha256:ab58235e3739a6c83ea8e29f5847ddc65895a6aa3772e17e901dacee101258a6
+    .agents/skills/swiftui-expert-skill/assets/logo.svg: sha256:d51b96d6df3ba250f7a47e7d74f9491ab891363e130cdd3f4e35b3fe132178d4
+    .agents/skills/swiftui-expert-skill/references/accessibility-patterns.md: sha256:bb942dd3b31fa24aa051943a6b7754a2de45a263dda0da3ac9dc2c7ce43b14d2
+    .agents/skills/swiftui-expert-skill/references/animation-advanced.md: sha256:1a9ce32735047f3b4c82bdac15ef34793d2ffb936d96039b1779514f37248cb2
+    .agents/skills/swiftui-expert-skill/references/animation-basics.md: sha256:5c6e8911c4011d772db061d3438ec07491bf1c467ab87af4d56e21720a189c9f
+    .agents/skills/swiftui-expert-skill/references/animation-transitions.md: sha256:d8ebbd5f25de519128151146a989d9b0677f1232c22ada2f99be3f8c361b65dd
+    .agents/skills/swiftui-expert-skill/references/charts-accessibility.md: sha256:772d1c1099a5cc7eef172a206ae60c9269da5d8b6c6a1f885854a1b04f6f619b
+    .agents/skills/swiftui-expert-skill/references/charts.md: sha256:32dd76aae9ccfafa817bb5d6862e509ee3966d40653ab28d715348b3859c3158
+    .agents/skills/swiftui-expert-skill/references/focus-patterns.md: sha256:ae5773a18de2c4b48d43319c7f7a201ce8c996b5274a99fccebb78a17aeb72c6
+    .agents/skills/swiftui-expert-skill/references/image-optimization.md: sha256:879a0fc5b7d99bd0ed445ca295e280dbd8324fe53b1757eb363697301de31b9a
+    .agents/skills/swiftui-expert-skill/references/latest-apis.md: sha256:5beb6d03610bfd9921f166fdb523eedb4c6f9a292643e8d38701c169ba456b46
+    .agents/skills/swiftui-expert-skill/references/layout-best-practices.md: sha256:81a1c2ce0356e2beefbc03801afad91dc087963859b774e517a9b78a0e6973ac
+    .agents/skills/swiftui-expert-skill/references/liquid-glass.md: sha256:c865fef7950cdfcf3cbf9ae28e5f3381a9973c5fe654259d6952dd18660896f3
+    .agents/skills/swiftui-expert-skill/references/list-patterns.md: sha256:dffb66ca2df6403a959e0de2429ca4585925cb21dc6bd28ed889e0c9cce358d2
+    .agents/skills/swiftui-expert-skill/references/localization.md: sha256:f6adcf85da40bd011e9aa585cd45cca96223f2d8f9ec4f55b5bda87c2538d574
+    .agents/skills/swiftui-expert-skill/references/macos-scenes.md: sha256:5449fe886e08c51cbec4f5e6f97040ceed149bee86020acc58151409d9125f84
+    .agents/skills/swiftui-expert-skill/references/macos-views.md: sha256:f2e932cecab66a6a6643111e4f7f5eb7d132bcb140b3e796dd82b0400ca5fde6
+    .agents/skills/swiftui-expert-skill/references/macos-window-styling.md: sha256:0c9fc677599d5488e9c58a05d6a5a4a61001d439db4cf7626c222601493437bf
+    .agents/skills/swiftui-expert-skill/references/performance-patterns.md: sha256:ac61edb9871da7924959816eaf68fc625d900c1e316f3296f84621cfe7e106c8
+    .agents/skills/swiftui-expert-skill/references/previews.md: sha256:fdf50f169607ddb7e9c03218957df2b2d733e211f591ac86c99816ca058ede01
+    .agents/skills/swiftui-expert-skill/references/scroll-patterns.md: sha256:82bc253cccc9f4ff11fe7af49259246dfaf8ad4d06960c90dfdeacaa97ab5bd6
+    .agents/skills/swiftui-expert-skill/references/sheet-navigation-patterns.md: sha256:eda4200c089b0baeb77d29a0ad94ed99062a1c79a78fdd7dfa59b00347d701e8
+    .agents/skills/swiftui-expert-skill/references/soft-deprecation.md: sha256:ac907d3729e75747c6b19e9cc6a911337c05b8ff1c25695495ce7cda9d2f5548
+    .agents/skills/swiftui-expert-skill/references/state-management.md: sha256:0f6d4949e57afeeb77e93378e56af21a0e29a3885f59ae0774a6ebf0681b6469
+    .agents/skills/swiftui-expert-skill/references/text-patterns.md: sha256:0621f15e8112e6ad3ecc2af6c5a9cce4ff5b41b91d1108cb76c22bca104ffebe
+    .agents/skills/swiftui-expert-skill/references/trace-analysis.md: sha256:7b0aba8e633a079bad03597c51657fc9b744035ea064fe4198b55e41e5ec4bc1
+    .agents/skills/swiftui-expert-skill/references/trace-recording.md: sha256:8035631402352b8682ef64155ee7462365de5eea0dd2de7dbcda61bfaa8541a9
+    .agents/skills/swiftui-expert-skill/references/view-structure.md: sha256:be84f1ae78ebd03d921131aa86befc703e69d0ea9ea50739c20b9b659810eb7b
+    .agents/skills/swiftui-expert-skill/scripts/analyze_trace.py: sha256:f40d49cfd4b5afcea717560787c34dcef1574f831a55a7d846303910df539636
+    .agents/skills/swiftui-expert-skill/scripts/instruments_parser/__init__.py: sha256:fdf7c99bed236e0fb71524b155be864a00a71af4997d6848c6c33f49fce62861
+    .agents/skills/swiftui-expert-skill/scripts/instruments_parser/causes.py: sha256:cf6e067e5f47130562522ed27ca4f2551d0b2de669b5063db950e220e19cbd1f
+    .agents/skills/swiftui-expert-skill/scripts/instruments_parser/correlate.py: sha256:c4bd0c6d14cc96e03cf058ae134c661ace6de5d9b95d417e742278a9c86d064b
+    .agents/skills/swiftui-expert-skill/scripts/instruments_parser/events.py: sha256:e389fed14c398732aadb04bddeed399d4856eca24741396e3c845d4a4a95be57
+    .agents/skills/swiftui-expert-skill/scripts/instruments_parser/hangs.py: sha256:af779727b7342186606021acad8f38dfb88778ee068a95d0a9b119f415bc5162
+    .agents/skills/swiftui-expert-skill/scripts/instruments_parser/hitches.py: sha256:39c4a6d96fa4447709eeff98f033a2a6cac1a70b205fd543b7711e1d4759dd2f
+    .agents/skills/swiftui-expert-skill/scripts/instruments_parser/summary.py: sha256:dc856a29008aa2218cf30fc82db133f75efc1f67580b27fb3077f17ccc365296
+    .agents/skills/swiftui-expert-skill/scripts/instruments_parser/swiftui.py: sha256:f499b222b24c2129208284ccc61d6d0ac27bfe67831a5f7db51848f83d20fdd5
+    .agents/skills/swiftui-expert-skill/scripts/instruments_parser/time_profiler.py: sha256:dd3ab3f6e8e41b8ad00bbbd38ac96ada12a945bd82e51c923ac912fc46bff9b6
+    .agents/skills/swiftui-expert-skill/scripts/instruments_parser/xctrace.py: sha256:b680bddb80d7f63ff97b7ba69b1c9ddda57d4080d601e9a1a47f09e81c2870ce
+    .agents/skills/swiftui-expert-skill/scripts/instruments_parser/xml_utils.py: sha256:f0f4476f0f1f0ce9ad5779509b59c2c77b0f7438a57d358aa76e715e7a23b4d6
+    .agents/skills/swiftui-expert-skill/scripts/record_trace.py: sha256:7d9c33de1146a274f6ca45790a25f4421ea697893e18a0a6b2ccfb401e245891
+  content_hash: sha256:37bd4111b9616f066ea27900c4795fd7681ffdd27b92d820f347f173ba77eb9f
 - repo_url: chrisbanes/skills
   name: compose-animations
   host: github.com
@@ -2400,6 +2502,411 @@ deployments:
   - avdlee/swift-concurrency-agent-skill/skills/swift-concurrency
   active_owner: avdlee/swift-concurrency-agent-skill/skills/swift-concurrency
   content_hash: sha256:0a4e44bd27fdf852cf5f8f5aa64cfe15ba229fb7c885b3f69ed2afdbfac8752a
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swiftui-expert-skill
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swiftui-expert-skill/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  content_hash: sha256:9fe4bb06a2b17e74acb4ccfdf9044de593c10c1ecf359dc24ef058000d5b447e
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swiftui-expert-skill/agents/openai.yaml
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  content_hash: sha256:a7c17cfff5c29e32b11296b63edba0da92e612f9de55f2319b59cb64143b2793
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swiftui-expert-skill/assets/logo-small.png
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  content_hash: sha256:befad5069b4c95bbb3612e41e2b7fde601de7e022d8cc0d07570f0c7ec234d11
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swiftui-expert-skill/assets/logo.png
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  content_hash: sha256:ab58235e3739a6c83ea8e29f5847ddc65895a6aa3772e17e901dacee101258a6
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swiftui-expert-skill/assets/logo.svg
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  content_hash: sha256:d51b96d6df3ba250f7a47e7d74f9491ab891363e130cdd3f4e35b3fe132178d4
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swiftui-expert-skill/references/accessibility-patterns.md
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  content_hash: sha256:bb942dd3b31fa24aa051943a6b7754a2de45a263dda0da3ac9dc2c7ce43b14d2
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swiftui-expert-skill/references/animation-advanced.md
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  content_hash: sha256:1a9ce32735047f3b4c82bdac15ef34793d2ffb936d96039b1779514f37248cb2
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swiftui-expert-skill/references/animation-basics.md
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  content_hash: sha256:5c6e8911c4011d772db061d3438ec07491bf1c467ab87af4d56e21720a189c9f
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swiftui-expert-skill/references/animation-transitions.md
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  content_hash: sha256:d8ebbd5f25de519128151146a989d9b0677f1232c22ada2f99be3f8c361b65dd
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swiftui-expert-skill/references/charts-accessibility.md
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  content_hash: sha256:772d1c1099a5cc7eef172a206ae60c9269da5d8b6c6a1f885854a1b04f6f619b
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swiftui-expert-skill/references/charts.md
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  content_hash: sha256:32dd76aae9ccfafa817bb5d6862e509ee3966d40653ab28d715348b3859c3158
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swiftui-expert-skill/references/focus-patterns.md
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  content_hash: sha256:ae5773a18de2c4b48d43319c7f7a201ce8c996b5274a99fccebb78a17aeb72c6
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swiftui-expert-skill/references/image-optimization.md
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  content_hash: sha256:879a0fc5b7d99bd0ed445ca295e280dbd8324fe53b1757eb363697301de31b9a
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swiftui-expert-skill/references/latest-apis.md
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  content_hash: sha256:5beb6d03610bfd9921f166fdb523eedb4c6f9a292643e8d38701c169ba456b46
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swiftui-expert-skill/references/layout-best-practices.md
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  content_hash: sha256:81a1c2ce0356e2beefbc03801afad91dc087963859b774e517a9b78a0e6973ac
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swiftui-expert-skill/references/liquid-glass.md
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  content_hash: sha256:c865fef7950cdfcf3cbf9ae28e5f3381a9973c5fe654259d6952dd18660896f3
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swiftui-expert-skill/references/list-patterns.md
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  content_hash: sha256:dffb66ca2df6403a959e0de2429ca4585925cb21dc6bd28ed889e0c9cce358d2
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swiftui-expert-skill/references/localization.md
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  content_hash: sha256:f6adcf85da40bd011e9aa585cd45cca96223f2d8f9ec4f55b5bda87c2538d574
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swiftui-expert-skill/references/macos-scenes.md
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  content_hash: sha256:5449fe886e08c51cbec4f5e6f97040ceed149bee86020acc58151409d9125f84
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swiftui-expert-skill/references/macos-views.md
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  content_hash: sha256:f2e932cecab66a6a6643111e4f7f5eb7d132bcb140b3e796dd82b0400ca5fde6
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swiftui-expert-skill/references/macos-window-styling.md
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  content_hash: sha256:0c9fc677599d5488e9c58a05d6a5a4a61001d439db4cf7626c222601493437bf
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swiftui-expert-skill/references/performance-patterns.md
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  content_hash: sha256:ac61edb9871da7924959816eaf68fc625d900c1e316f3296f84621cfe7e106c8
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swiftui-expert-skill/references/previews.md
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  content_hash: sha256:fdf50f169607ddb7e9c03218957df2b2d733e211f591ac86c99816ca058ede01
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swiftui-expert-skill/references/scroll-patterns.md
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  content_hash: sha256:82bc253cccc9f4ff11fe7af49259246dfaf8ad4d06960c90dfdeacaa97ab5bd6
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swiftui-expert-skill/references/sheet-navigation-patterns.md
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  content_hash: sha256:eda4200c089b0baeb77d29a0ad94ed99062a1c79a78fdd7dfa59b00347d701e8
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swiftui-expert-skill/references/soft-deprecation.md
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  content_hash: sha256:ac907d3729e75747c6b19e9cc6a911337c05b8ff1c25695495ce7cda9d2f5548
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swiftui-expert-skill/references/state-management.md
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  content_hash: sha256:0f6d4949e57afeeb77e93378e56af21a0e29a3885f59ae0774a6ebf0681b6469
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swiftui-expert-skill/references/text-patterns.md
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  content_hash: sha256:0621f15e8112e6ad3ecc2af6c5a9cce4ff5b41b91d1108cb76c22bca104ffebe
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swiftui-expert-skill/references/trace-analysis.md
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  content_hash: sha256:7b0aba8e633a079bad03597c51657fc9b744035ea064fe4198b55e41e5ec4bc1
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swiftui-expert-skill/references/trace-recording.md
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  content_hash: sha256:8035631402352b8682ef64155ee7462365de5eea0dd2de7dbcda61bfaa8541a9
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swiftui-expert-skill/references/view-structure.md
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  content_hash: sha256:be84f1ae78ebd03d921131aa86befc703e69d0ea9ea50739c20b9b659810eb7b
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swiftui-expert-skill/scripts/analyze_trace.py
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  content_hash: sha256:f40d49cfd4b5afcea717560787c34dcef1574f831a55a7d846303910df539636
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swiftui-expert-skill/scripts/instruments_parser/__init__.py
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  content_hash: sha256:fdf7c99bed236e0fb71524b155be864a00a71af4997d6848c6c33f49fce62861
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swiftui-expert-skill/scripts/instruments_parser/causes.py
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  content_hash: sha256:cf6e067e5f47130562522ed27ca4f2551d0b2de669b5063db950e220e19cbd1f
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swiftui-expert-skill/scripts/instruments_parser/correlate.py
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  content_hash: sha256:c4bd0c6d14cc96e03cf058ae134c661ace6de5d9b95d417e742278a9c86d064b
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swiftui-expert-skill/scripts/instruments_parser/events.py
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  content_hash: sha256:e389fed14c398732aadb04bddeed399d4856eca24741396e3c845d4a4a95be57
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swiftui-expert-skill/scripts/instruments_parser/hangs.py
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  content_hash: sha256:af779727b7342186606021acad8f38dfb88778ee068a95d0a9b119f415bc5162
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swiftui-expert-skill/scripts/instruments_parser/hitches.py
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  content_hash: sha256:39c4a6d96fa4447709eeff98f033a2a6cac1a70b205fd543b7711e1d4759dd2f
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swiftui-expert-skill/scripts/instruments_parser/summary.py
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  content_hash: sha256:dc856a29008aa2218cf30fc82db133f75efc1f67580b27fb3077f17ccc365296
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swiftui-expert-skill/scripts/instruments_parser/swiftui.py
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  content_hash: sha256:f499b222b24c2129208284ccc61d6d0ac27bfe67831a5f7db51848f83d20fdd5
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swiftui-expert-skill/scripts/instruments_parser/time_profiler.py
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  content_hash: sha256:dd3ab3f6e8e41b8ad00bbbd38ac96ada12a945bd82e51c923ac912fc46bff9b6
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swiftui-expert-skill/scripts/instruments_parser/xctrace.py
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  content_hash: sha256:b680bddb80d7f63ff97b7ba69b1c9ddda57d4080d601e9a1a47f09e81c2870ce
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swiftui-expert-skill/scripts/instruments_parser/xml_utils.py
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  content_hash: sha256:f0f4476f0f1f0ce9ad5779509b59c2c77b0f7438a57d358aa76e715e7a23b4d6
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swiftui-expert-skill/scripts/record_trace.py
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  content_hash: sha256:7d9c33de1146a274f6ca45790a25f4421ea697893e18a0a6b2ccfb401e245891
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/using-efficient-effects

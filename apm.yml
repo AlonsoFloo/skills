@@ -37,6 +37,7 @@ dependencies:
     # Starting 2.2.0 it introduced Agent portable plugin that miss behave with APM 0.29.0
     # Since then, the skill folder is pinned
     - AvdLee/Swift-Concurrency-Agent-Skill/skills/swift-concurrency#45fa49e4e0b2af4d43b1cb458903f8030ac993bd #2.3.0
+    - AvdLee/SwiftUI-Agent-Skill/skills/swiftui-expert-skill#9692ec5c3e78a0acc7757de2dbe8e64e519a72fb # 4.2.0
 
     # Jetpack Compose animations and Kotlin control-flow best practices.
     - chrisbanes/skills/skills/compose-animations#2be6d3ed0d4c4d996fb4c3389120be43d63f6d6b # 2026.9.2
