@@ -3212,7 +3212,16 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:cb702d63b1db7718f9479d7f53e23739f1d9ed511efcdae24c29794a232fe7cc
+  content_hash: sha256:fb295b2d4619b168132ce8e61d425fbf4aaf1b71d9da37ab053f777576b2e06c
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/flo-ios-craftsmanship/references/example-inline.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:f7e52879085b638b0dcb6a47e869e1922c0adc7418afe4fa0933ba568f818549
 - kind: project-relative
   target: legacy
   value: .agents/skills/flo-ios-craftsmanship/references/examples.md
@@ -3357,6 +3366,7 @@ local_deployed_files:
 - .agents/skills/flo-devops-craftsmanship/references/examples.md
 - .agents/skills/flo-ios-craftsmanship
 - .agents/skills/flo-ios-craftsmanship/SKILL.md
+- .agents/skills/flo-ios-craftsmanship/references/example-inline.md
 - .agents/skills/flo-ios-craftsmanship/references/examples.md
 - .agents/skills/flo-software-craftsmanship
 - .agents/skills/flo-software-craftsmanship/SKILL.md
@@ -3396,7 +3406,8 @@ local_deployed_file_hashes:
   .agents/skills/flo-conventional-comments/refrences/matrix.md: sha256:89de6d4c36c175a644c5dec7ececa96f2cf06501ebcfbe3e3cbb51aeb9610488
   .agents/skills/flo-devops-craftsmanship/SKILL.md: sha256:fd3196beb5f68510d17e982c2d3f811ce5796032e2b22164fc93b18cf0cae422
   .agents/skills/flo-devops-craftsmanship/references/examples.md: sha256:1e89ce761164862d2f31c41c6392d737ac4c84d5fbbc0af939fb241aa4fe8978
-  .agents/skills/flo-ios-craftsmanship/SKILL.md: sha256:cb702d63b1db7718f9479d7f53e23739f1d9ed511efcdae24c29794a232fe7cc
+  .agents/skills/flo-ios-craftsmanship/SKILL.md: sha256:fb295b2d4619b168132ce8e61d425fbf4aaf1b71d9da37ab053f777576b2e06c
+  .agents/skills/flo-ios-craftsmanship/references/example-inline.md: sha256:f7e52879085b638b0dcb6a47e869e1922c0adc7418afe4fa0933ba568f818549
   .agents/skills/flo-ios-craftsmanship/references/examples.md: sha256:578cfbb9f3338687fce0ad4b84c9088787388e4a19a8e966513071ece00b96af
   .agents/skills/flo-software-craftsmanship/SKILL.md: sha256:d0911325d4fcaa0a9bbe11c3a4e3614b6bd284767d2c7904a8b5074f29a4e154
   .agents/skills/flo-software-craftsmanship/references/examples.md: sha256:4604eece7de28e5281bfcf092dd79cac84df5607b7906b90a4f18333f1ffa3ef
