@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.6.0](https://github.com/AlonsoFloo/skills/compare/v2.5.1...v2.6.0) (2026-09-13)
+
+
+### Features
+
+* **flo-ios-craftsmanship:** Added  [@inline](https://github.com/inline) specificatiions ([28a59b0](https://github.com/AlonsoFloo/skills/commit/28a59b0c9bb5108bd0054ae4c3829c6deb02a989))
+* **SKILL:** Added android new android skill android/skills/identity/restore-credentials ([#43](https://github.com/AlonsoFloo/skills/issues/43)) ([9e77b3d](https://github.com/AlonsoFloo/skills/commit/9e77b3de07c1db9f9fed31501408458727d10bd7))
+* **SKILL:** Added iOS SwiftUI Skill AvdLee/SwiftUI-Agent-Skill ([e89d714](https://github.com/AlonsoFloo/skills/commit/e89d714f8f813b491aa5f0a1e529ad05213b355a))
+
 ## [2.5.1](https://github.com/AlonsoFloo/skills/compare/v2.5.0...v2.5.1) (2026-09-06)
 
 
