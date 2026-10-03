@@ -1,5 +1,5 @@
 lockfile_version: '1'
-apm_version: 0.30.0
+apm_version: 0.33.0
 dependencies:
 - repo_url: android/skills
   name: appfunctions
@@ -229,7 +229,7 @@ dependencies:
 - repo_url: anthropics/skills
   name: skill-creator
   host: github.com
-  resolved_commit: 41bbe19d1a1a7eaab5e7bb9050a417e5c6cffc8f
+  resolved_commit: 8a1541c4a3ffa5a20a5a91de0dcf3f0bab1d1ef4
   resolved_ref: main
   version: unknown
   virtual_path: skills/skill-creator
@@ -486,7 +486,7 @@ dependencies:
 - repo_url: github/awesome-copilot
   name: apple-appstore-reviewer
   host: github.com
-  resolved_commit: 7b1ebe6333397841ca918dec904d24d4695fe953
+  resolved_commit: 143a3d976b3c1603cc8932984d5e1f28501cb5fc
   resolved_ref: main
   version: unknown
   virtual_path: skills/apple-appstore-reviewer
@@ -501,7 +501,7 @@ dependencies:
 - repo_url: github/awesome-copilot
   name: conventional-branch
   host: github.com
-  resolved_commit: 7b1ebe6333397841ca918dec904d24d4695fe953
+  resolved_commit: 143a3d976b3c1603cc8932984d5e1f28501cb5fc
   resolved_ref: main
   version: unknown
   virtual_path: skills/conventional-branch
@@ -516,7 +516,7 @@ dependencies:
 - repo_url: github/awesome-copilot
   name: conventional-commit
   host: github.com
-  resolved_commit: 7b1ebe6333397841ca918dec904d24d4695fe953
+  resolved_commit: 143a3d976b3c1603cc8932984d5e1f28501cb5fc
   resolved_ref: main
   version: unknown
   virtual_path: skills/conventional-commit
@@ -531,7 +531,7 @@ dependencies:
 - repo_url: github/awesome-copilot
   name: security-review
   host: github.com
-  resolved_commit: 7b1ebe6333397841ca918dec904d24d4695fe953
+  resolved_commit: 143a3d976b3c1603cc8932984d5e1f28501cb5fc
   resolved_ref: main
   version: unknown
   virtual_path: skills/security-review
@@ -555,12 +555,12 @@ dependencies:
   content_hash: sha256:a0fc25587c016178c9cf6238ac8702695fa761694965192472487f92093db571
 - repo_url: kotlin/kotlin-agent-skills
   materialization_repo_url: Kotlin/kotlin-agent-skills
-  name: c4201117800b20d83a22974a0bcc41ecff6fb783c0c1b6eb2462844f74196d44
+  name: kotlin-agent-skills
   host: github.com
-  resolved_commit: 08d7ad0d74a9a5a548287b2bd4926180fab56cac
+  resolved_commit: c2f90697bf71966a117a13340d5fff787f004140
   resolved_ref: main
-  version: 08d7ad0
-  package_type: skill_bundle
+  version: c2f9069
+  package_type: marketplace_plugin
   deployed_files:
   - .agents/skills/kotlin-backend-jpa-entity-mapping
   - .agents/skills/kotlin-backend-jpa-entity-mapping/SKILL.md
@@ -582,6 +582,12 @@ dependencies:
   - .agents/skills/kotlin-tooling-cocoapods-spm-migration/references/dsl-reference.md
   - .agents/skills/kotlin-tooling-cocoapods-spm-migration/references/migration-report-template.md
   - .agents/skills/kotlin-tooling-cocoapods-spm-migration/references/troubleshooting.md
+  - .agents/skills/kotlin-tooling-gradle-to-kotlin-toolchain-plugin
+  - .agents/skills/kotlin-tooling-gradle-to-kotlin-toolchain-plugin/SKILL.md
+  - .agents/skills/kotlin-tooling-gradle-to-kotlin-toolchain-plugin/references/examples.md
+  - .agents/skills/kotlin-tooling-gradle-to-kotlin-toolchain-project
+  - .agents/skills/kotlin-tooling-gradle-to-kotlin-toolchain-project/SKILL.md
+  - .agents/skills/kotlin-tooling-gradle-to-kotlin-toolchain-project/references/examples.md
   - .agents/skills/kotlin-tooling-immutable-collections-0-5-x-migration
   - .agents/skills/kotlin-tooling-immutable-collections-0-5-x-migration/SKILL.md
   - .agents/skills/kotlin-tooling-java-to-kotlin
@@ -601,6 +607,14 @@ dependencies:
   - .agents/skills/kotlin-tooling-java-to-kotlin/references/frameworks/RETROFIT.md
   - .agents/skills/kotlin-tooling-java-to-kotlin/references/frameworks/RXJAVA.md
   - .agents/skills/kotlin-tooling-java-to-kotlin/references/frameworks/SPRING.md
+  - .agents/skills/kotlin-tooling-kotlin-toolchain
+  - .agents/skills/kotlin-tooling-kotlin-toolchain-plugin-authoring
+  - .agents/skills/kotlin-tooling-kotlin-toolchain-plugin-authoring/SKILL.md
+  - .agents/skills/kotlin-tooling-kotlin-toolchain-plugin-authoring/references/examples.md
+  - .agents/skills/kotlin-tooling-kotlin-toolchain/SKILL.md
+  - .agents/skills/kotlin-tooling-kotlin-toolchain/evals/EVALUATION.md
+  - .agents/skills/kotlin-tooling-kotlin-toolchain/evals/evals.json
+  - .agents/skills/kotlin-tooling-kotlin-toolchain/references/examples.md
   - .agents/skills/kotlin-tooling-native-build-performance
   - .agents/skills/kotlin-tooling-native-build-performance/SKILL.md
   - .agents/skills/kotlin-tooling-native-build-performance/evals/EVALUATION.md
@@ -627,6 +641,10 @@ dependencies:
     .agents/skills/kotlin-tooling-cocoapods-spm-migration/references/dsl-reference.md: sha256:67b05e2de0f117463f8d743e624a9241f6820bea0380292b5b026a58050b5145
     .agents/skills/kotlin-tooling-cocoapods-spm-migration/references/migration-report-template.md: sha256:ea0d1fa2f4db039ad04f919a964f634ccd1b890336852574399eeaa74e84e7f5
     .agents/skills/kotlin-tooling-cocoapods-spm-migration/references/troubleshooting.md: sha256:aee1e42d1f4dd6e8fafba6de59896e1d6b667ada352de6d0e8c0bdc2971108da
+    .agents/skills/kotlin-tooling-gradle-to-kotlin-toolchain-plugin/SKILL.md: sha256:fed52bd5f8f62a7d72a65f51f5eaeabaceb589e7a22796ae20a7bc47e4bc0c40
+    .agents/skills/kotlin-tooling-gradle-to-kotlin-toolchain-plugin/references/examples.md: sha256:e5e38dc31ea60cd2da058906d7f4ba32729c1db4dfb4f62f11e9286c9e1ed9b9
+    .agents/skills/kotlin-tooling-gradle-to-kotlin-toolchain-project/SKILL.md: sha256:e385a8611479fba258f330da0a188dc95313759d3a41b4f128f110856a21516c
+    .agents/skills/kotlin-tooling-gradle-to-kotlin-toolchain-project/references/examples.md: sha256:1509ed330079ce1276e1c9ef3dba006eaaecedca7afafa71e066201423363c5e
     .agents/skills/kotlin-tooling-immutable-collections-0-5-x-migration/SKILL.md: sha256:7b161da34a28fc5a6855b6e1b6c1749fbc754eaa29b911ec0cc8bb532b0c9d26
     .agents/skills/kotlin-tooling-java-to-kotlin/SKILL.md: sha256:5b372715adac4df37e3261040ead2d0c937a5e06a55178fa5ff0fcc95adc1944
     .agents/skills/kotlin-tooling-java-to-kotlin/assets/checklist.md: sha256:b2cafa681d87c3d6b9ce730954943ccc306e0c3c5d96f3f7eb0d6726d108bb40
@@ -644,6 +662,12 @@ dependencies:
     .agents/skills/kotlin-tooling-java-to-kotlin/references/frameworks/RETROFIT.md: sha256:b79fd49230bb9cf2b9a2b05ddb772de8ba4b5d80ddc00dc7b3a33550e2988f22
     .agents/skills/kotlin-tooling-java-to-kotlin/references/frameworks/RXJAVA.md: sha256:87cad42db77a79c9c2a8bc24d051f0526300fb0682de239e30bbd88748608b82
     .agents/skills/kotlin-tooling-java-to-kotlin/references/frameworks/SPRING.md: sha256:b07412f7dbcd9cb7d543370e69e6e9d0faf4f4bd74608a0586fa0be93c881ae8
+    .agents/skills/kotlin-tooling-kotlin-toolchain-plugin-authoring/SKILL.md: sha256:ff5cf4de344a0643ecca5679f4462431faf8d98436fbe16a885807cb46e773ef
+    .agents/skills/kotlin-tooling-kotlin-toolchain-plugin-authoring/references/examples.md: sha256:fbadc3b768150d8dbcc3cf7484d07853b516ae2d71cfff3e21574175de40635f
+    .agents/skills/kotlin-tooling-kotlin-toolchain/SKILL.md: sha256:664b3e263c0eff58b400f21a770c87bbac39e248a85e62342c9406f4626de5bc
+    .agents/skills/kotlin-tooling-kotlin-toolchain/evals/EVALUATION.md: sha256:28b476aa482974bddf537da334544cfe59d1de3779bbd2b8d140d057f9ac7107
+    .agents/skills/kotlin-tooling-kotlin-toolchain/evals/evals.json: sha256:5028e04c72a6f477ad5da26a052203f7fd8a94ecfc94bcc1d6de30c55597b894
+    .agents/skills/kotlin-tooling-kotlin-toolchain/references/examples.md: sha256:0da9fa2ff2dd1c29e3b1e5ca3d6fea44c411a01e809cb5ba5c0a6b9ef0a9a7e6
     .agents/skills/kotlin-tooling-native-build-performance/SKILL.md: sha256:948fcecafa9fd0dcd447682e1fef7046b542be710ee27c2f25eade31c182455e
     .agents/skills/kotlin-tooling-native-build-performance/evals/EVALUATION.md: sha256:f7f4a9c7412e6e40e9b9fc66f4654fbc35c790c8a89a4ec77e1f3eeaf0219e7c
     .agents/skills/kotlin-tooling-native-build-performance/references/artifacts-and-targets.md: sha256:5dceccd55aa6b517b1f2e48b76b585958244ee66818ecbb4cfa056c0f8cc66ff
@@ -651,7 +675,7 @@ dependencies:
     .agents/skills/kotlin-tooling-native-build-performance/references/experimental.md: sha256:e0e83e36ebdd41f393082680ed06ff396077540544c5723cace80a2058a5eb1f
     .agents/skills/kotlin-tooling-native-build-performance/references/exports-and-generated-code.md: sha256:76d94b9a08e933f09eaae66e8a613f79726dbabc65f765e2130fabf93c0f87d3
     .agents/skills/kotlin-tooling-native-build-performance/scripts/audit-native-build.sh: sha256:94af58014fb24aaf1e7757ce804ea19e4023cc778da77ac0d725bd19aa0ba9e7
-  content_hash: sha256:be5df4103646c3d4b23b2125e4c1f353c5738c3923094c4fd778003b53b13b33
+  content_hash: sha256:53c57eb8594e66c5973d6948e86181f35b0cde4cd270fdace10d5b32af81cd3f
 - repo_url: mattpocock/skills
   name: domain-modeling
   host: github.com
@@ -1361,6 +1385,60 @@ deployments:
   content_hash: sha256:aee1e42d1f4dd6e8fafba6de59896e1d6b667ada352de6d0e8c0bdc2971108da
 - kind: project-relative
   target: agent-skills
+  value: .agents/skills/kotlin-tooling-gradle-to-kotlin-toolchain-plugin
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-gradle-to-kotlin-toolchain-plugin/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: sha256:fed52bd5f8f62a7d72a65f51f5eaeabaceb589e7a22796ae20a7bc47e4bc0c40
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-gradle-to-kotlin-toolchain-plugin/references/examples.md
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: sha256:e5e38dc31ea60cd2da058906d7f4ba32729c1db4dfb4f62f11e9286c9e1ed9b9
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-gradle-to-kotlin-toolchain-project
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-gradle-to-kotlin-toolchain-project/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: sha256:e385a8611479fba258f330da0a188dc95313759d3a41b4f128f110856a21516c
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-gradle-to-kotlin-toolchain-project/references/examples.md
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: sha256:1509ed330079ce1276e1c9ef3dba006eaaecedca7afafa71e066201423363c5e
+- kind: project-relative
+  target: agent-skills
   value: .agents/skills/kotlin-tooling-immutable-collections-0-5-x-migration
   runtime: null
   scope: project
@@ -1530,6 +1608,78 @@ deployments:
   - kotlin/kotlin-agent-skills
   active_owner: kotlin/kotlin-agent-skills
   content_hash: sha256:b07412f7dbcd9cb7d543370e69e6e9d0faf4f4bd74608a0586fa0be93c881ae8
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-kotlin-toolchain
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-kotlin-toolchain-plugin-authoring
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-kotlin-toolchain-plugin-authoring/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: sha256:ff5cf4de344a0643ecca5679f4462431faf8d98436fbe16a885807cb46e773ef
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-kotlin-toolchain-plugin-authoring/references/examples.md
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: sha256:fbadc3b768150d8dbcc3cf7484d07853b516ae2d71cfff3e21574175de40635f
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-kotlin-toolchain/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: sha256:664b3e263c0eff58b400f21a770c87bbac39e248a85e62342c9406f4626de5bc
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-kotlin-toolchain/evals/EVALUATION.md
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: sha256:28b476aa482974bddf537da334544cfe59d1de3779bbd2b8d140d057f9ac7107
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-kotlin-toolchain/evals/evals.json
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: sha256:5028e04c72a6f477ad5da26a052203f7fd8a94ecfc94bcc1d6de30c55597b894
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-kotlin-toolchain/references/examples.md
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills
+  content_hash: sha256:0da9fa2ff2dd1c29e3b1e5ca3d6fea44c411a01e809cb5ba5c0a6b9ef0a9a7e6
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/kotlin-tooling-native-build-performance
@@ -3113,7 +3263,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:352620b5d81cc589078a618b81ae01442434564e8e1cdaa6af77ecaaffe7e874
+  content_hash: sha256:876c65d9fbd0c4f1d1a956913a8e0ff6f7c72c857b8385e64e31435d0ec13d0c
 - kind: project-relative
   target: legacy
   value: .agents/skills/flo-boilerplategit/references/security.md
@@ -3399,7 +3549,7 @@ local_deployed_file_hashes:
   .agents/skills/flo-boilerplategit/references/pre-commit.md: sha256:b2afcaa9de7c87186b2fc2e2cd0bb354653ef4c5ff18f70b513496ce1aac33d6
   .agents/skills/flo-boilerplategit/references/readme.md: sha256:574ea958878945d7d4fb790eec905de979cf08bc00016df3401773ae73c2c6f0
   .agents/skills/flo-boilerplategit/references/release-please.md: sha256:a25b03bfda5a876a6eabe98cb235bde651562e4f7377f7b59b7c067cab1f35b0
-  .agents/skills/flo-boilerplategit/references/renovate.md: sha256:352620b5d81cc589078a618b81ae01442434564e8e1cdaa6af77ecaaffe7e874
+  .agents/skills/flo-boilerplategit/references/renovate.md: sha256:876c65d9fbd0c4f1d1a956913a8e0ff6f7c72c857b8385e64e31435d0ec13d0c
   .agents/skills/flo-boilerplategit/references/security.md: sha256:d36f39b124ceb68a354c1c22a4cda2d3845e59d82dbe71345c4c47afa8b29abf
   .agents/skills/flo-caveman/SKILL.md: sha256:6d2e8d888212fe198a76cd1c28c8bc1e74b25642f9f0a9636060086ba01acf85
   .agents/skills/flo-conventional-comments/SKILL.md: sha256:388808e2149c7e956d40980294c4edc75b2badeb9dfc37874249ca20657601e3
