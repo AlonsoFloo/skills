@@ -45,14 +45,27 @@
       "enabled": true
     },
     "packageRules": [
-        {
-            "matchManagers": ["pre-commit"],
-            "pinDigests": false
-        },
-        {
-            "matchManagers": ["apm"],
-            "groupName": "APM dependencies"
-        }
+      {
+        "matchManagers": ["pre-commit"],
+        "pinDigests": false
+      },
+      {
+        "matchUpdateTypes": ["patch"],
+        "matchManagers": ["npm", "pip", "dockerfile"],
+        "automerge": true,
+        "automergeType": "pr"
+      },
+      {
+        "matchManagers": ["github-actions", "pre-commit", "apm"],
+        "matchUpdateTypes": ["minor", "patch"],
+        "automerge": true,
+        "automergeType": "pr"
+      },
+      {
+        "matchManagers": ["apm"],
+        "automerge": true,
+        "groupName": "APM dependencies"
+      }
     ]
 }
 ```
