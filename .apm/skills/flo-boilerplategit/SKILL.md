@@ -58,6 +58,7 @@ ______________________________________________________________________
 1. **EditorConfig**: Cross-editor indentation, character set, and trailing whitespace rules. See [references/editorconfig.md](references/editorconfig.md).
 1. **License**: Repository open source license text. See [references/license.md](references/license.md).
 1. **Security Policy**: Security guidelines and vulnerability disclosure instructions. See [references/security.md](references/security.md).
+1. **APM (Agent Package Manager)**: Configuration for Microsoft Agent Package Manager to manage agent skills and dependencies. See [references/apm.md](references/apm.md).
 
 ______________________________________________________________________
 
@@ -90,6 +91,7 @@ ______________________________________________________________________
 - [references/editorconfig.md](references/editorconfig.md)
 - [references/license.md](references/license.md)
 - [references/security.md](references/security.md)
+- [references/apm.md](references/apm.md)
 
 ______________________________________________________________________
 
