@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.7.0](https://github.com/AlonsoFloo/skills/compare/v2.6.0...v2.7.0) (2026-10-03)
+
+
+### Features
+
+* **flo-boilerplategit:** Added APM in boilerplate ([#52](https://github.com/AlonsoFloo/skills/issues/52)) ([e02bcf6](https://github.com/AlonsoFloo/skills/commit/e02bcf684cc18f52e60d03a9df7184dc31f67fb5))
+
 ## [2.6.0](https://github.com/AlonsoFloo/skills/compare/v2.5.1...v2.6.0) (2026-09-13)
 
 
