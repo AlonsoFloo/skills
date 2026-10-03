@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.8.0](https://github.com/AlonsoFloo/skills/compare/v2.7.0...v2.8.0) (2026-10-03)
+
+
+### Features
+
+* **flo-boilerplategit:** Improved automerge ([920df0e](https://github.com/AlonsoFloo/skills/commit/920df0ed1e83923dc18184c0f533fd61d6ba879f))
+
 ## [2.7.0](https://github.com/AlonsoFloo/skills/compare/v2.6.0...v2.7.0) (2026-10-03)
 
 
