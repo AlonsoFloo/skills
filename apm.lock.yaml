@@ -3239,7 +3239,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:f9ab5e024cc7584605cf2391aa73dd5c967753aea35d5abd4db8ec3f34e6dc77
+  content_hash: sha256:66c2e2ead2e41a8ca9c90f7d4a54710549d1f034cd4cef2cbc2bd7cbe74c0189
 - kind: project-relative
   target: legacy
   value: .agents/skills/flo-boilerplategit/references/agents.md
@@ -3249,6 +3249,15 @@ deployments:
   - .
   active_owner: .
   content_hash: sha256:de3c136c8ce8878f88e3fb8b53d8010ed6567a6161d28b86a3900f6d257efaac
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/flo-boilerplategit/references/apm.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:f203115ac74f175ade4ab3252f0390c68f7ade626044a089fabad7f54d0f557c
 - kind: project-relative
   target: legacy
   value: .agents/skills/flo-boilerplategit/references/codeowners.md
@@ -3562,6 +3571,7 @@ local_deployed_files:
 - .agents/skills/flo-boilerplategit
 - .agents/skills/flo-boilerplategit/SKILL.md
 - .agents/skills/flo-boilerplategit/references/agents.md
+- .agents/skills/flo-boilerplategit/references/apm.md
 - .agents/skills/flo-boilerplategit/references/codeowners.md
 - .agents/skills/flo-boilerplategit/references/editorconfig.md
 - .agents/skills/flo-boilerplategit/references/github-templates.md
@@ -3605,8 +3615,9 @@ local_deployed_files:
 local_deployed_file_hashes:
   .agents/skills/flo-android-craftsmanship/SKILL.md: sha256:faa6297ad79ace8f9372f3a6d89c905bc613cbcc9083402bba62a76e5b274ae9
   .agents/skills/flo-android-craftsmanship/references/examples.md: sha256:3900d2c5dfba5673bd3b3d7c6d6c23aacf0579702708ebde4108d7933c127430
-  .agents/skills/flo-boilerplategit/SKILL.md: sha256:f9ab5e024cc7584605cf2391aa73dd5c967753aea35d5abd4db8ec3f34e6dc77
+  .agents/skills/flo-boilerplategit/SKILL.md: sha256:66c2e2ead2e41a8ca9c90f7d4a54710549d1f034cd4cef2cbc2bd7cbe74c0189
   .agents/skills/flo-boilerplategit/references/agents.md: sha256:de3c136c8ce8878f88e3fb8b53d8010ed6567a6161d28b86a3900f6d257efaac
+  .agents/skills/flo-boilerplategit/references/apm.md: sha256:f203115ac74f175ade4ab3252f0390c68f7ade626044a089fabad7f54d0f557c
   .agents/skills/flo-boilerplategit/references/codeowners.md: sha256:6d365f87616bc2d2fc6589daebe105dffd79af91d0fcc65453055738a59fe0eb
   .agents/skills/flo-boilerplategit/references/editorconfig.md: sha256:0c2e7f20fb17c032ea4b50fe7efe71b317a370797f7331c6c3b9f69df9dbea85
   .agents/skills/flo-boilerplategit/references/github-templates.md: sha256:4fea4421102ac9c3d793666db27522bb7ce2b5cb66da6269f583fd40a5d1d482
