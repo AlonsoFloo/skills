@@ -567,12 +567,12 @@ dependencies:
   content_hash: sha256:a0fc25587c016178c9cf6238ac8702695fa761694965192472487f92093db571
 - repo_url: kotlin/kotlin-agent-skills
   materialization_repo_url: Kotlin/kotlin-agent-skills
-  name: c4201117800b20d8
+  name: kotlin-agent-skills
   host: github.com
   resolved_commit: c2f90697bf71966a117a13340d5fff787f004140
   resolved_ref: main
   version: c2f9069
-  package_type: skill_bundle
+  package_type: marketplace_plugin
   deployed_files:
   - .agents/skills/kotlin-backend-jpa-entity-mapping
   - .agents/skills/kotlin-backend-jpa-entity-mapping/SKILL.md
@@ -687,7 +687,7 @@ dependencies:
     .agents/skills/kotlin-tooling-native-build-performance/references/experimental.md: sha256:e0e83e36ebdd41f393082680ed06ff396077540544c5723cace80a2058a5eb1f
     .agents/skills/kotlin-tooling-native-build-performance/references/exports-and-generated-code.md: sha256:76d94b9a08e933f09eaae66e8a613f79726dbabc65f765e2130fabf93c0f87d3
     .agents/skills/kotlin-tooling-native-build-performance/scripts/audit-native-build.sh: sha256:94af58014fb24aaf1e7757ce804ea19e4023cc778da77ac0d725bd19aa0ba9e7
-  content_hash: sha256:a318980887d63fccd2eb1ef10a4ec3c85e1286ae52cc596f0d2a2c513026969d
+  content_hash: sha256:53c57eb8594e66c5973d6948e86181f35b0cde4cd270fdace10d5b32af81cd3f
 - repo_url: mattpocock/skills
   name: domain-modeling
   host: github.com
