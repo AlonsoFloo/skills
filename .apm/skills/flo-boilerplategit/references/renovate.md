@@ -31,7 +31,15 @@
         "enabled": true
     },
     "apm": {
-        "enabled": true
+        "enabled": true,
+        "lockFileMaintenance": {
+            "enabled": false
+        }
+    },
+    "npm": {
+        "lockFileMaintenance": {
+            "enabled": false
+        }
     },
     "vulnerabilityAlerts": {
       "enabled": true
@@ -40,6 +48,10 @@
         {
             "matchManagers": ["pre-commit"],
             "pinDigests": false
+        },
+        {
+            "matchManagers": ["apm"],
+            "groupName": "APM dependencies"
         }
     ]
 }
