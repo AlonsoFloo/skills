@@ -18,6 +18,7 @@ exclude: |
     | \.github/hooks/
     | \.github/prompts/
     | \.github/mcp.json
+    | \.claude/
   )
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
