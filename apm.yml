@@ -12,9 +12,8 @@ license: MIT
 targets:
   - agent-skills
   - copilot
-  - antigravity
-  - opencode
   - codex
+  - claude
 
 includes: auto
 
@@ -63,3 +62,12 @@ devDependencies:
   apm:
     # Skill development: guidance for creating, validating, and maintaining agent skills.
     - anthropics/skills/skills/skill-creator#main
+
+marketplace:
+  owner:
+    name: AlonsoFloo
+    url: https://github.com/AlonsoFloo
+
+  outputs:
+    claude: {}
+    codex: {}
