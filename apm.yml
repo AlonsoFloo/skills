@@ -70,6 +70,4 @@ marketplace:
 
   outputs:
     claude: {}
-
-  claude:
-    output: .claude-plugin/marketplace.json
+    codex: {}
