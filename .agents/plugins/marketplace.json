@@ -3,5 +3,18 @@
   "interface": {
     "displayName": "AlonsoFlooSkills"
   },
-  "plugins": []
+  "plugins": [
+    {
+      "name": "alonsoflooskills",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "skills"
+    }
+  ]
 }
