@@ -1,5 +1,15 @@
 # Changelog
 
+## [2.8.0](https://github.com/AlonsoFloo/skills/compare/v2.7.0...v2.8.0) (2026-10-06)
+
+
+### Features
+
+* Added claude plugins ([#55](https://github.com/AlonsoFloo/skills/issues/55)) ([c6b9f25](https://github.com/AlonsoFloo/skills/commit/c6b9f25fcd917213b5678c7a954956f635e81c79))
+* Added marketplace with source and skill ([#56](https://github.com/AlonsoFloo/skills/issues/56)) ([8191182](https://github.com/AlonsoFloo/skills/commit/819118286074a3f9847c1db96456c546e45864c8))
+* **claude:** Declared the skills and agents now ([70653da](https://github.com/AlonsoFloo/skills/commit/70653da8f756956901cb93b6548d9db5c89377cd))
+* **flo-boilerplategit:** Improved automerge ([920df0e](https://github.com/AlonsoFloo/skills/commit/920df0ed1e83923dc18184c0f533fd61d6ba879f))
+
 ## [2.7.0](https://github.com/AlonsoFloo/skills/compare/v2.6.0...v2.7.0) (2026-10-03)
 
 
