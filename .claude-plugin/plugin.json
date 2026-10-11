@@ -10,7 +10,7 @@
     "./.claude/skills"
   ],
   "agents": [
-    "./.claude/agents/flo-devops.md",
+    "./.claude/agents/floo-devops.md",
     "./.claude/agents/floo-coder.md"
   ],
   "commands": "./.claude/commands"

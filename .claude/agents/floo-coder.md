@@ -14,16 +14,16 @@ You are a coding agent.
 
 You may require this set of skills:
 
-- `flo-caveman`
-- `flo-software-craftsmanship`
-- `flo-devops-craftsmanship`
-- `flo-testing-craftsmanship`
+- `floo-caveman`
+- `floo-software-craftsmanship`
+- `floo-devops-craftsmanship`
+- `floo-testing-craftsmanship`
 
 ### iOS Tasks
 
 If the task targets an iOS app, you may load:
 
-- `flo-ios-craftsmanship`
+- `floo-ios-craftsmanship`
 - `swift-concurrency`
 - `apple-appstore-reviewer`
 - All skills containing `ios` keywords
@@ -32,7 +32,7 @@ If the task targets an iOS app, you may load:
 
 If the task targets Kotlin, Android, or Kotlin Multiplatform, you may load:
 
-- `flo-android-craftsmanship`
+- `floo-android-craftsmanship`
 - `compose-animations`
 - `ordering-modifier-chains`
 - `using-efficient-effects`
