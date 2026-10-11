@@ -3655,15 +3655,6 @@ deployments:
   content_hash: sha256:b8b5627961d0db8cefe345e7e4011275e1fa3513c3f76d186e87664834c03270
 - kind: project-relative
   target: claude
-  value: .claude/commands/floo-precommit-all.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:a9685b0221e6639a6ec484bbf3a1b3d23176f5f0c0ead5441ed9b2169dea2352
-- kind: project-relative
-  target: claude
   value: .claude/commands/floo-run-boilerplategit.md
   runtime: null
   scope: project
@@ -3671,6 +3662,15 @@ deployments:
   - .
   active_owner: .
   content_hash: sha256:bdefaee9b6fc256b2abb5bcdeb99193afb4c8de2b3b0b0b0cef2ea0df1878085
+- kind: project-relative
+  target: claude
+  value: .claude/commands/floo-run-precommit-all.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:a9685b0221e6639a6ec484bbf3a1b3d23176f5f0c0ead5441ed9b2169dea2352
 - kind: project-relative
   target: claude
   value: .claude/skills/adaptive
@@ -6409,15 +6409,6 @@ deployments:
   content_hash: sha256:b8b5627961d0db8cefe345e7e4011275e1fa3513c3f76d186e87664834c03270
 - kind: project-relative
   target: copilot
-  value: .github/prompts/floo-precommit-all.prompt.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:c3102993230b1e00cde58cc63aaf1352527ddc7dd1cd343a08322c0c4d9455b7
-- kind: project-relative
-  target: copilot
   value: .github/prompts/floo-run-boilerplategit.prompt.md
   runtime: null
   scope: project
@@ -6425,6 +6416,15 @@ deployments:
   - .
   active_owner: .
   content_hash: sha256:f84cf31d795e9665c57804ae1a4e3af4e75bbd2b26f1d150d4e7d4c254a568ab
+- kind: project-relative
+  target: copilot
+  value: .github/prompts/floo-run-precommit-all.prompt.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:c3102993230b1e00cde58cc63aaf1352527ddc7dd1cd343a08322c0c4d9455b7
 - kind: project-relative
   target: legacy
   value: .agents/skills/floo-android-craftsmanship
@@ -6798,8 +6798,8 @@ local_deployed_files:
 - .agents/skills/floo-verify-precommitall/SKILL.md
 - .claude/agents/floo-coder.md
 - .claude/agents/floo-devops.md
-- .claude/commands/floo-precommit-all.md
 - .claude/commands/floo-run-boilerplategit.md
+- .claude/commands/floo-run-precommit-all.md
 - .claude/skills/floo-android-craftsmanship
 - .claude/skills/floo-android-craftsmanship/SKILL.md
 - .claude/skills/floo-android-craftsmanship/references/examples.md
@@ -6841,8 +6841,8 @@ local_deployed_files:
 - .codex/agents/floo-devops.toml
 - .github/agents/floo-coder.agent.md
 - .github/agents/floo-devops.agent.md
-- .github/prompts/floo-precommit-all.prompt.md
 - .github/prompts/floo-run-boilerplategit.prompt.md
+- .github/prompts/floo-run-precommit-all.prompt.md
 local_deployed_file_hashes:
   .agents/skills/floo-android-craftsmanship/SKILL.md: sha256:eff53ecb4a50916c9cb5e59be983fefbfe6551fb556f5f28d9586fdaf1bfe6b5
   .agents/skills/floo-android-craftsmanship/references/examples.md: sha256:3900d2c5dfba5673bd3b3d7c6d6c23aacf0579702708ebde4108d7933c127430
@@ -6874,8 +6874,8 @@ local_deployed_file_hashes:
   .agents/skills/floo-verify-precommitall/SKILL.md: sha256:e51eb4aaac64551a6f21135253d2896ba83e43d0ec2a02a914249808674b5941
   .claude/agents/floo-coder.md: sha256:1e31108eb4505babd56492447a34d24ac2b5f7c0a3c97a0d59a9c6b92ca466fb
   .claude/agents/floo-devops.md: sha256:b8b5627961d0db8cefe345e7e4011275e1fa3513c3f76d186e87664834c03270
-  .claude/commands/floo-precommit-all.md: sha256:a9685b0221e6639a6ec484bbf3a1b3d23176f5f0c0ead5441ed9b2169dea2352
   .claude/commands/floo-run-boilerplategit.md: sha256:bdefaee9b6fc256b2abb5bcdeb99193afb4c8de2b3b0b0b0cef2ea0df1878085
+  .claude/commands/floo-run-precommit-all.md: sha256:a9685b0221e6639a6ec484bbf3a1b3d23176f5f0c0ead5441ed9b2169dea2352
   .claude/skills/floo-android-craftsmanship/SKILL.md: sha256:eff53ecb4a50916c9cb5e59be983fefbfe6551fb556f5f28d9586fdaf1bfe6b5
   .claude/skills/floo-android-craftsmanship/references/examples.md: sha256:3900d2c5dfba5673bd3b3d7c6d6c23aacf0579702708ebde4108d7933c127430
   .claude/skills/floo-boilerplategit/SKILL.md: sha256:c4077c3a25e6916719649571306e9e5c52d5b8fbc96a60a94258d291fc9ab5a8
@@ -6908,5 +6908,5 @@ local_deployed_file_hashes:
   .codex/agents/floo-devops.toml: sha256:5da69c58b8c7693b00da805f2c996b480f3ca1a6187843f72d384f385f29f3cc
   .github/agents/floo-coder.agent.md: sha256:1e31108eb4505babd56492447a34d24ac2b5f7c0a3c97a0d59a9c6b92ca466fb
   .github/agents/floo-devops.agent.md: sha256:b8b5627961d0db8cefe345e7e4011275e1fa3513c3f76d186e87664834c03270
-  .github/prompts/floo-precommit-all.prompt.md: sha256:c3102993230b1e00cde58cc63aaf1352527ddc7dd1cd343a08322c0c4d9455b7
   .github/prompts/floo-run-boilerplategit.prompt.md: sha256:f84cf31d795e9665c57804ae1a4e3af4e75bbd2b26f1d150d4e7d4c254a568ab
+  .github/prompts/floo-run-precommit-all.prompt.md: sha256:c3102993230b1e00cde58cc63aaf1352527ddc7dd1cd343a08322c0c4d9455b7
