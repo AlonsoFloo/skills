@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.8.1](https://github.com/AlonsoFloo/skills/compare/v2.8.0...v2.8.1) (2026-10-11)
+
+
+### Bug Fixes
+
+* **floo-run-boilerplategit:** Rename boilerplategit command to avoid skill name collision ([#58](https://github.com/AlonsoFloo/skills/issues/58)) ([3a431ab](https://github.com/AlonsoFloo/skills/commit/3a431abb9ed604dcf633e04a3c3264b05d4d7943))
+
 ## [2.8.0](https://github.com/AlonsoFloo/skills/compare/v2.7.0...v2.8.0) (2026-10-11)
 
 
