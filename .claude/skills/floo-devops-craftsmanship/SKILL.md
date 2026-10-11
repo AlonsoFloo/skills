@@ -6,7 +6,7 @@ metadata:
   author: github.com/AlonsoFloo
   keywords:
     - AlonsoFloo
-    - flo
+    - floo
     - devops
     - ci-cd
     - supply-chain-security

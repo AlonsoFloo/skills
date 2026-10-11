@@ -6,7 +6,7 @@ metadata:
   author: github.com/AlonsoFloo
   keywords:
     - AlonsoFloo
-    - flo
+    - floo
     - boilerplate
     - git
     - devops
