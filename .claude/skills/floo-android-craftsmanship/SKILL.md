@@ -6,7 +6,7 @@ metadata:
   author: github.com/AlonsoFloo
   keywords:
     - AlonsoFloo
-    - flo
+    - floo
     - android
     - kotlin
     - jetpack-compose

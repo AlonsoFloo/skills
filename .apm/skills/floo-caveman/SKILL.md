@@ -9,7 +9,7 @@ metadata:
   author: github.com/AlonsoFloo
   keywords:
     - AlonsoFloo
-    - flo
+    - floo
     - caveman
     - token-optimization
     - concise
