@@ -3637,40 +3637,40 @@ deployments:
   content_hash: sha256:f5f891478683cb1eb0d07aef277606135560f0491993a45181a141627d080362
 - kind: project-relative
   target: claude
-  value: .claude/agents/flo-devops.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:5604736291e92e64e27dc71f00a12fef1ce6fd3737d227bfe1e3a7a8a76991b4
-- kind: project-relative
-  target: claude
   value: .claude/agents/floo-coder.md
   runtime: null
   scope: project
   owners:
   - .
   active_owner: .
-  content_hash: sha256:c031da6cc17e25b1872b6d69181c037807430bacb1bf277c7a702c801f561f97
+  content_hash: sha256:1e31108eb4505babd56492447a34d24ac2b5f7c0a3c97a0d59a9c6b92ca466fb
 - kind: project-relative
   target: claude
-  value: .claude/commands/flo-boilerplategit.md
+  value: .claude/agents/floo-devops.md
   runtime: null
   scope: project
   owners:
   - .
   active_owner: .
-  content_hash: sha256:4af1b00169bf2c08b0e7aaf2b53e42d5eb0e1aeb7368ff284b179c3aa8e0c535
+  content_hash: sha256:b8b5627961d0db8cefe345e7e4011275e1fa3513c3f76d186e87664834c03270
 - kind: project-relative
   target: claude
-  value: .claude/commands/flo-precommit-all.md
+  value: .claude/commands/floo-boilerplategit.md
   runtime: null
   scope: project
   owners:
   - .
   active_owner: .
-  content_hash: sha256:b4debd14b419859b860b54d695dd81f1911667478775a61d975feb94a9b5cef2
+  content_hash: sha256:bdefaee9b6fc256b2abb5bcdeb99193afb4c8de2b3b0b0b0cef2ea0df1878085
+- kind: project-relative
+  target: claude
+  value: .claude/commands/floo-precommit-all.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:a9685b0221e6639a6ec484bbf3a1b3d23176f5f0c0ead5441ed9b2169dea2352
 - kind: project-relative
   target: claude
   value: .claude/skills/adaptive
@@ -4006,7 +4006,7 @@ deployments:
   content_hash: sha256:4ca04cb6a5330b96e51410bc815f878b4ca642fba46fe5e1ad724c94e04d6eb8
 - kind: project-relative
   target: claude
-  value: .claude/skills/flo-android-craftsmanship
+  value: .claude/skills/floo-android-craftsmanship
   runtime: null
   scope: project
   owners:
@@ -4015,16 +4015,16 @@ deployments:
   content_hash: null
 - kind: project-relative
   target: claude
-  value: .claude/skills/flo-android-craftsmanship/SKILL.md
+  value: .claude/skills/floo-android-craftsmanship/SKILL.md
   runtime: null
   scope: project
   owners:
   - .
   active_owner: .
-  content_hash: sha256:faa6297ad79ace8f9372f3a6d89c905bc613cbcc9083402bba62a76e5b274ae9
+  content_hash: sha256:eff53ecb4a50916c9cb5e59be983fefbfe6551fb556f5f28d9586fdaf1bfe6b5
 - kind: project-relative
   target: claude
-  value: .claude/skills/flo-android-craftsmanship/references/examples.md
+  value: .claude/skills/floo-android-craftsmanship/references/examples.md
   runtime: null
   scope: project
   owners:
@@ -4033,7 +4033,7 @@ deployments:
   content_hash: sha256:3900d2c5dfba5673bd3b3d7c6d6c23aacf0579702708ebde4108d7933c127430
 - kind: project-relative
   target: claude
-  value: .claude/skills/flo-boilerplategit
+  value: .claude/skills/floo-boilerplategit
   runtime: null
   scope: project
   owners:
@@ -4042,16 +4042,16 @@ deployments:
   content_hash: null
 - kind: project-relative
   target: claude
-  value: .claude/skills/flo-boilerplategit/SKILL.md
+  value: .claude/skills/floo-boilerplategit/SKILL.md
   runtime: null
   scope: project
   owners:
   - .
   active_owner: .
-  content_hash: sha256:66c2e2ead2e41a8ca9c90f7d4a54710549d1f034cd4cef2cbc2bd7cbe74c0189
+  content_hash: sha256:c4077c3a25e6916719649571306e9e5c52d5b8fbc96a60a94258d291fc9ab5a8
 - kind: project-relative
   target: claude
-  value: .claude/skills/flo-boilerplategit/references/agents.md
+  value: .claude/skills/floo-boilerplategit/references/agents.md
   runtime: null
   scope: project
   owners:
@@ -4060,7 +4060,7 @@ deployments:
   content_hash: sha256:de3c136c8ce8878f88e3fb8b53d8010ed6567a6161d28b86a3900f6d257efaac
 - kind: project-relative
   target: claude
-  value: .claude/skills/flo-boilerplategit/references/apm.md
+  value: .claude/skills/floo-boilerplategit/references/apm.md
   runtime: null
   scope: project
   owners:
@@ -4069,7 +4069,7 @@ deployments:
   content_hash: sha256:f203115ac74f175ade4ab3252f0390c68f7ade626044a089fabad7f54d0f557c
 - kind: project-relative
   target: claude
-  value: .claude/skills/flo-boilerplategit/references/codeowners.md
+  value: .claude/skills/floo-boilerplategit/references/codeowners.md
   runtime: null
   scope: project
   owners:
@@ -4078,7 +4078,7 @@ deployments:
   content_hash: sha256:6d365f87616bc2d2fc6589daebe105dffd79af91d0fcc65453055738a59fe0eb
 - kind: project-relative
   target: claude
-  value: .claude/skills/flo-boilerplategit/references/editorconfig.md
+  value: .claude/skills/floo-boilerplategit/references/editorconfig.md
   runtime: null
   scope: project
   owners:
@@ -4087,7 +4087,7 @@ deployments:
   content_hash: sha256:0c2e7f20fb17c032ea4b50fe7efe71b317a370797f7331c6c3b9f69df9dbea85
 - kind: project-relative
   target: claude
-  value: .claude/skills/flo-boilerplategit/references/github-templates.md
+  value: .claude/skills/floo-boilerplategit/references/github-templates.md
   runtime: null
   scope: project
   owners:
@@ -4096,7 +4096,7 @@ deployments:
   content_hash: sha256:4fea4421102ac9c3d793666db27522bb7ce2b5cb66da6269f583fd40a5d1d482
 - kind: project-relative
   target: claude
-  value: .claude/skills/flo-boilerplategit/references/gitignore.md
+  value: .claude/skills/floo-boilerplategit/references/gitignore.md
   runtime: null
   scope: project
   owners:
@@ -4105,7 +4105,7 @@ deployments:
   content_hash: sha256:1ad6f5e425874a8fddac2dd09435f601b83a9c9618ea392202411e42043e4aa2
 - kind: project-relative
   target: claude
-  value: .claude/skills/flo-boilerplategit/references/license.md
+  value: .claude/skills/floo-boilerplategit/references/license.md
   runtime: null
   scope: project
   owners:
@@ -4114,7 +4114,7 @@ deployments:
   content_hash: sha256:0f32542d8a01518c8e75df2f11708a669e0f6bd51b2dd8ed6bb7ca3a5b7ba6d8
 - kind: project-relative
   target: claude
-  value: .claude/skills/flo-boilerplategit/references/pre-commit.md
+  value: .claude/skills/floo-boilerplategit/references/pre-commit.md
   runtime: null
   scope: project
   owners:
@@ -4123,7 +4123,7 @@ deployments:
   content_hash: sha256:7716fbaecdce1635d9a5247bb4f39869aa7ec9f125f03e64402a3f9c42b627b7
 - kind: project-relative
   target: claude
-  value: .claude/skills/flo-boilerplategit/references/readme.md
+  value: .claude/skills/floo-boilerplategit/references/readme.md
   runtime: null
   scope: project
   owners:
@@ -4132,7 +4132,7 @@ deployments:
   content_hash: sha256:574ea958878945d7d4fb790eec905de979cf08bc00016df3401773ae73c2c6f0
 - kind: project-relative
   target: claude
-  value: .claude/skills/flo-boilerplategit/references/release-please.md
+  value: .claude/skills/floo-boilerplategit/references/release-please.md
   runtime: null
   scope: project
   owners:
@@ -4141,7 +4141,7 @@ deployments:
   content_hash: sha256:a25b03bfda5a876a6eabe98cb235bde651562e4f7377f7b59b7c067cab1f35b0
 - kind: project-relative
   target: claude
-  value: .claude/skills/flo-boilerplategit/references/renovate.md
+  value: .claude/skills/floo-boilerplategit/references/renovate.md
   runtime: null
   scope: project
   owners:
@@ -4150,7 +4150,7 @@ deployments:
   content_hash: sha256:d5ed3db42aaf02d892b935d8c24703c33020a01545373abffce4c5c089a929c2
 - kind: project-relative
   target: claude
-  value: .claude/skills/flo-boilerplategit/references/security.md
+  value: .claude/skills/floo-boilerplategit/references/security.md
   runtime: null
   scope: project
   owners:
@@ -4159,7 +4159,7 @@ deployments:
   content_hash: sha256:d36f39b124ceb68a354c1c22a4cda2d3845e59d82dbe71345c4c47afa8b29abf
 - kind: project-relative
   target: claude
-  value: .claude/skills/flo-caveman
+  value: .claude/skills/floo-caveman
   runtime: null
   scope: project
   owners:
@@ -4168,16 +4168,16 @@ deployments:
   content_hash: null
 - kind: project-relative
   target: claude
-  value: .claude/skills/flo-caveman/SKILL.md
+  value: .claude/skills/floo-caveman/SKILL.md
   runtime: null
   scope: project
   owners:
   - .
   active_owner: .
-  content_hash: sha256:6d2e8d888212fe198a76cd1c28c8bc1e74b25642f9f0a9636060086ba01acf85
+  content_hash: sha256:9404667ac90dce58be61e82a74a0c8698a0857e00562dab37bc31397bd40886b
 - kind: project-relative
   target: claude
-  value: .claude/skills/flo-conventional-comments
+  value: .claude/skills/floo-conventional-comments
   runtime: null
   scope: project
   owners:
@@ -4186,16 +4186,16 @@ deployments:
   content_hash: null
 - kind: project-relative
   target: claude
-  value: .claude/skills/flo-conventional-comments/SKILL.md
+  value: .claude/skills/floo-conventional-comments/SKILL.md
   runtime: null
   scope: project
   owners:
   - .
   active_owner: .
-  content_hash: sha256:388808e2149c7e956d40980294c4edc75b2badeb9dfc37874249ca20657601e3
+  content_hash: sha256:7a7348c324495f5d0e14b24a2686c4d25fc7d651f69c2f482368b309a0c0142a
 - kind: project-relative
   target: claude
-  value: .claude/skills/flo-conventional-comments/refrences/matrix.md
+  value: .claude/skills/floo-conventional-comments/refrences/matrix.md
   runtime: null
   scope: project
   owners:
@@ -4204,7 +4204,7 @@ deployments:
   content_hash: sha256:89de6d4c36c175a644c5dec7ececa96f2cf06501ebcfbe3e3cbb51aeb9610488
 - kind: project-relative
   target: claude
-  value: .claude/skills/flo-devops-craftsmanship
+  value: .claude/skills/floo-devops-craftsmanship
   runtime: null
   scope: project
   owners:
@@ -4213,16 +4213,16 @@ deployments:
   content_hash: null
 - kind: project-relative
   target: claude
-  value: .claude/skills/flo-devops-craftsmanship/SKILL.md
+  value: .claude/skills/floo-devops-craftsmanship/SKILL.md
   runtime: null
   scope: project
   owners:
   - .
   active_owner: .
-  content_hash: sha256:fd3196beb5f68510d17e982c2d3f811ce5796032e2b22164fc93b18cf0cae422
+  content_hash: sha256:7a7c3c43d7da853a40ff7c9b18d083e6bcf41c7d983b8003e0b942efd548855e
 - kind: project-relative
   target: claude
-  value: .claude/skills/flo-devops-craftsmanship/references/examples.md
+  value: .claude/skills/floo-devops-craftsmanship/references/examples.md
   runtime: null
   scope: project
   owners:
@@ -4231,7 +4231,7 @@ deployments:
   content_hash: sha256:1e89ce761164862d2f31c41c6392d737ac4c84d5fbbc0af939fb241aa4fe8978
 - kind: project-relative
   target: claude
-  value: .claude/skills/flo-ios-craftsmanship
+  value: .claude/skills/floo-ios-craftsmanship
   runtime: null
   scope: project
   owners:
@@ -4240,16 +4240,16 @@ deployments:
   content_hash: null
 - kind: project-relative
   target: claude
-  value: .claude/skills/flo-ios-craftsmanship/SKILL.md
+  value: .claude/skills/floo-ios-craftsmanship/SKILL.md
   runtime: null
   scope: project
   owners:
   - .
   active_owner: .
-  content_hash: sha256:fb295b2d4619b168132ce8e61d425fbf4aaf1b71d9da37ab053f777576b2e06c
+  content_hash: sha256:941f6d7780e1e33bc16f9964f948311dc7acb43e694fa9a76cf49138953ef359
 - kind: project-relative
   target: claude
-  value: .claude/skills/flo-ios-craftsmanship/references/example-inline.md
+  value: .claude/skills/floo-ios-craftsmanship/references/example-inline.md
   runtime: null
   scope: project
   owners:
@@ -4258,7 +4258,7 @@ deployments:
   content_hash: sha256:f7e52879085b638b0dcb6a47e869e1922c0adc7418afe4fa0933ba568f818549
 - kind: project-relative
   target: claude
-  value: .claude/skills/flo-ios-craftsmanship/references/examples.md
+  value: .claude/skills/floo-ios-craftsmanship/references/examples.md
   runtime: null
   scope: project
   owners:
@@ -4267,7 +4267,7 @@ deployments:
   content_hash: sha256:578cfbb9f3338687fce0ad4b84c9088787388e4a19a8e966513071ece00b96af
 - kind: project-relative
   target: claude
-  value: .claude/skills/flo-software-craftsmanship
+  value: .claude/skills/floo-software-craftsmanship
   runtime: null
   scope: project
   owners:
@@ -4276,16 +4276,16 @@ deployments:
   content_hash: null
 - kind: project-relative
   target: claude
-  value: .claude/skills/flo-software-craftsmanship/SKILL.md
+  value: .claude/skills/floo-software-craftsmanship/SKILL.md
   runtime: null
   scope: project
   owners:
   - .
   active_owner: .
-  content_hash: sha256:d0911325d4fcaa0a9bbe11c3a4e3614b6bd284767d2c7904a8b5074f29a4e154
+  content_hash: sha256:2930f70ce05e13f36f7dac8850122620f3c04f79a7b31ebda94b9ae95dece5a3
 - kind: project-relative
   target: claude
-  value: .claude/skills/flo-software-craftsmanship/references/examples.md
+  value: .claude/skills/floo-software-craftsmanship/references/examples.md
   runtime: null
   scope: project
   owners:
@@ -4294,7 +4294,7 @@ deployments:
   content_hash: sha256:4604eece7de28e5281bfcf092dd79cac84df5607b7906b90a4f18333f1ffa3ef
 - kind: project-relative
   target: claude
-  value: .claude/skills/flo-testing-craftsmanship
+  value: .claude/skills/floo-testing-craftsmanship
   runtime: null
   scope: project
   owners:
@@ -4303,16 +4303,16 @@ deployments:
   content_hash: null
 - kind: project-relative
   target: claude
-  value: .claude/skills/flo-testing-craftsmanship/SKILL.md
+  value: .claude/skills/floo-testing-craftsmanship/SKILL.md
   runtime: null
   scope: project
   owners:
   - .
   active_owner: .
-  content_hash: sha256:c2d650460436717a30fbbf04648f47f8d272efd286f1d1f29354bcac2696fe78
+  content_hash: sha256:95fc48185fd8db710fa55ac3b0e0314666c6a455f76500e36056a934943cf677
 - kind: project-relative
   target: claude
-  value: .claude/skills/flo-testing-craftsmanship/references/examples.md
+  value: .claude/skills/floo-testing-craftsmanship/references/examples.md
   runtime: null
   scope: project
   owners:
@@ -4321,7 +4321,7 @@ deployments:
   content_hash: sha256:0a9cf62cc6549e2075686b000c97d712d461daf03bebfbd5ed0a7f76aa71eba4
 - kind: project-relative
   target: claude
-  value: .claude/skills/flo-verify-precommitall
+  value: .claude/skills/floo-verify-precommitall
   runtime: null
   scope: project
   owners:
@@ -4330,13 +4330,13 @@ deployments:
   content_hash: null
 - kind: project-relative
   target: claude
-  value: .claude/skills/flo-verify-precommitall/SKILL.md
+  value: .claude/skills/floo-verify-precommitall/SKILL.md
   runtime: null
   scope: project
   owners:
   - .
   active_owner: .
-  content_hash: sha256:eae4ebad9f9e892283a890f7072159dd918922bce297e76278a3aababda1d40a
+  content_hash: sha256:e51eb4aaac64551a6f21135253d2896ba83e43d0ec2a02a914249808674b5941
 - kind: project-relative
   target: claude
   value: .claude/skills/grill-me
@@ -6373,31 +6373,22 @@ deployments:
   content_hash: sha256:f5f891478683cb1eb0d07aef277606135560f0491993a45181a141627d080362
 - kind: project-relative
   target: codex
-  value: .codex/agents/flo-devops.toml
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:3a143b93be7e709cec0b82d0f0b928f155f9f73b993c82f4dcbe7b8e635a05cc
-- kind: project-relative
-  target: codex
   value: .codex/agents/floo-coder.toml
   runtime: null
   scope: project
   owners:
   - .
   active_owner: .
-  content_hash: sha256:79bfb1d69ae5eb90a09fe044f023e239eda5fe79a85fb0813baf30f8f2e741cf
+  content_hash: sha256:1c96b8e3150d98066caff026dae7039f94ade478c63d846d5184d8ac1c49ae5e
 - kind: project-relative
-  target: copilot
-  value: .github/agents/flo-devops.agent.md
+  target: codex
+  value: .codex/agents/floo-devops.toml
   runtime: null
   scope: project
   owners:
   - .
   active_owner: .
-  content_hash: sha256:5604736291e92e64e27dc71f00a12fef1ce6fd3737d227bfe1e3a7a8a76991b4
+  content_hash: sha256:5da69c58b8c7693b00da805f2c996b480f3ca1a6187843f72d384f385f29f3cc
 - kind: project-relative
   target: copilot
   value: .github/agents/floo-coder.agent.md
@@ -6406,28 +6397,37 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:c031da6cc17e25b1872b6d69181c037807430bacb1bf277c7a702c801f561f97
+  content_hash: sha256:1e31108eb4505babd56492447a34d24ac2b5f7c0a3c97a0d59a9c6b92ca466fb
 - kind: project-relative
   target: copilot
-  value: .github/prompts/flo-boilerplategit.prompt.md
+  value: .github/agents/floo-devops.agent.md
   runtime: null
   scope: project
   owners:
   - .
   active_owner: .
-  content_hash: sha256:223c1d251f0ecad9ae4e9485c566b59dafac3700021d9a2dac9ab33e8fbce8c7
+  content_hash: sha256:b8b5627961d0db8cefe345e7e4011275e1fa3513c3f76d186e87664834c03270
 - kind: project-relative
   target: copilot
-  value: .github/prompts/flo-precommit-all.prompt.md
+  value: .github/prompts/floo-boilerplategit.prompt.md
   runtime: null
   scope: project
   owners:
   - .
   active_owner: .
-  content_hash: sha256:9205424b92f91826c51c4b324deb61925f4839ccfbd470866e0aa1c4207ec6f2
+  content_hash: sha256:f84cf31d795e9665c57804ae1a4e3af4e75bbd2b26f1d150d4e7d4c254a568ab
+- kind: project-relative
+  target: copilot
+  value: .github/prompts/floo-precommit-all.prompt.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:c3102993230b1e00cde58cc63aaf1352527ddc7dd1cd343a08322c0c4d9455b7
 - kind: project-relative
   target: legacy
-  value: .agents/skills/flo-android-craftsmanship
+  value: .agents/skills/floo-android-craftsmanship
   runtime: null
   scope: project
   owners:
@@ -6436,16 +6436,16 @@ deployments:
   content_hash: null
 - kind: project-relative
   target: legacy
-  value: .agents/skills/flo-android-craftsmanship/SKILL.md
+  value: .agents/skills/floo-android-craftsmanship/SKILL.md
   runtime: null
   scope: project
   owners:
   - .
   active_owner: .
-  content_hash: sha256:faa6297ad79ace8f9372f3a6d89c905bc613cbcc9083402bba62a76e5b274ae9
+  content_hash: sha256:eff53ecb4a50916c9cb5e59be983fefbfe6551fb556f5f28d9586fdaf1bfe6b5
 - kind: project-relative
   target: legacy
-  value: .agents/skills/flo-android-craftsmanship/references/examples.md
+  value: .agents/skills/floo-android-craftsmanship/references/examples.md
   runtime: null
   scope: project
   owners:
@@ -6454,7 +6454,7 @@ deployments:
   content_hash: sha256:3900d2c5dfba5673bd3b3d7c6d6c23aacf0579702708ebde4108d7933c127430
 - kind: project-relative
   target: legacy
-  value: .agents/skills/flo-boilerplategit
+  value: .agents/skills/floo-boilerplategit
   runtime: null
   scope: project
   owners:
@@ -6463,16 +6463,16 @@ deployments:
   content_hash: null
 - kind: project-relative
   target: legacy
-  value: .agents/skills/flo-boilerplategit/SKILL.md
+  value: .agents/skills/floo-boilerplategit/SKILL.md
   runtime: null
   scope: project
   owners:
   - .
   active_owner: .
-  content_hash: sha256:66c2e2ead2e41a8ca9c90f7d4a54710549d1f034cd4cef2cbc2bd7cbe74c0189
+  content_hash: sha256:c4077c3a25e6916719649571306e9e5c52d5b8fbc96a60a94258d291fc9ab5a8
 - kind: project-relative
   target: legacy
-  value: .agents/skills/flo-boilerplategit/references/agents.md
+  value: .agents/skills/floo-boilerplategit/references/agents.md
   runtime: null
   scope: project
   owners:
@@ -6481,7 +6481,7 @@ deployments:
   content_hash: sha256:de3c136c8ce8878f88e3fb8b53d8010ed6567a6161d28b86a3900f6d257efaac
 - kind: project-relative
   target: legacy
-  value: .agents/skills/flo-boilerplategit/references/apm.md
+  value: .agents/skills/floo-boilerplategit/references/apm.md
   runtime: null
   scope: project
   owners:
@@ -6490,7 +6490,7 @@ deployments:
   content_hash: sha256:f203115ac74f175ade4ab3252f0390c68f7ade626044a089fabad7f54d0f557c
 - kind: project-relative
   target: legacy
-  value: .agents/skills/flo-boilerplategit/references/codeowners.md
+  value: .agents/skills/floo-boilerplategit/references/codeowners.md
   runtime: null
   scope: project
   owners:
@@ -6499,7 +6499,7 @@ deployments:
   content_hash: sha256:6d365f87616bc2d2fc6589daebe105dffd79af91d0fcc65453055738a59fe0eb
 - kind: project-relative
   target: legacy
-  value: .agents/skills/flo-boilerplategit/references/editorconfig.md
+  value: .agents/skills/floo-boilerplategit/references/editorconfig.md
   runtime: null
   scope: project
   owners:
@@ -6508,7 +6508,7 @@ deployments:
   content_hash: sha256:0c2e7f20fb17c032ea4b50fe7efe71b317a370797f7331c6c3b9f69df9dbea85
 - kind: project-relative
   target: legacy
-  value: .agents/skills/flo-boilerplategit/references/github-templates.md
+  value: .agents/skills/floo-boilerplategit/references/github-templates.md
   runtime: null
   scope: project
   owners:
@@ -6517,7 +6517,7 @@ deployments:
   content_hash: sha256:4fea4421102ac9c3d793666db27522bb7ce2b5cb66da6269f583fd40a5d1d482
 - kind: project-relative
   target: legacy
-  value: .agents/skills/flo-boilerplategit/references/gitignore.md
+  value: .agents/skills/floo-boilerplategit/references/gitignore.md
   runtime: null
   scope: project
   owners:
@@ -6526,7 +6526,7 @@ deployments:
   content_hash: sha256:1ad6f5e425874a8fddac2dd09435f601b83a9c9618ea392202411e42043e4aa2
 - kind: project-relative
   target: legacy
-  value: .agents/skills/flo-boilerplategit/references/license.md
+  value: .agents/skills/floo-boilerplategit/references/license.md
   runtime: null
   scope: project
   owners:
@@ -6535,7 +6535,7 @@ deployments:
   content_hash: sha256:0f32542d8a01518c8e75df2f11708a669e0f6bd51b2dd8ed6bb7ca3a5b7ba6d8
 - kind: project-relative
   target: legacy
-  value: .agents/skills/flo-boilerplategit/references/pre-commit.md
+  value: .agents/skills/floo-boilerplategit/references/pre-commit.md
   runtime: null
   scope: project
   owners:
@@ -6544,7 +6544,7 @@ deployments:
   content_hash: sha256:7716fbaecdce1635d9a5247bb4f39869aa7ec9f125f03e64402a3f9c42b627b7
 - kind: project-relative
   target: legacy
-  value: .agents/skills/flo-boilerplategit/references/readme.md
+  value: .agents/skills/floo-boilerplategit/references/readme.md
   runtime: null
   scope: project
   owners:
@@ -6553,7 +6553,7 @@ deployments:
   content_hash: sha256:574ea958878945d7d4fb790eec905de979cf08bc00016df3401773ae73c2c6f0
 - kind: project-relative
   target: legacy
-  value: .agents/skills/flo-boilerplategit/references/release-please.md
+  value: .agents/skills/floo-boilerplategit/references/release-please.md
   runtime: null
   scope: project
   owners:
@@ -6562,7 +6562,7 @@ deployments:
   content_hash: sha256:a25b03bfda5a876a6eabe98cb235bde651562e4f7377f7b59b7c067cab1f35b0
 - kind: project-relative
   target: legacy
-  value: .agents/skills/flo-boilerplategit/references/renovate.md
+  value: .agents/skills/floo-boilerplategit/references/renovate.md
   runtime: null
   scope: project
   owners:
@@ -6571,7 +6571,7 @@ deployments:
   content_hash: sha256:d5ed3db42aaf02d892b935d8c24703c33020a01545373abffce4c5c089a929c2
 - kind: project-relative
   target: legacy
-  value: .agents/skills/flo-boilerplategit/references/security.md
+  value: .agents/skills/floo-boilerplategit/references/security.md
   runtime: null
   scope: project
   owners:
@@ -6580,7 +6580,7 @@ deployments:
   content_hash: sha256:d36f39b124ceb68a354c1c22a4cda2d3845e59d82dbe71345c4c47afa8b29abf
 - kind: project-relative
   target: legacy
-  value: .agents/skills/flo-caveman
+  value: .agents/skills/floo-caveman
   runtime: null
   scope: project
   owners:
@@ -6589,16 +6589,16 @@ deployments:
   content_hash: null
 - kind: project-relative
   target: legacy
-  value: .agents/skills/flo-caveman/SKILL.md
+  value: .agents/skills/floo-caveman/SKILL.md
   runtime: null
   scope: project
   owners:
   - .
   active_owner: .
-  content_hash: sha256:6d2e8d888212fe198a76cd1c28c8bc1e74b25642f9f0a9636060086ba01acf85
+  content_hash: sha256:9404667ac90dce58be61e82a74a0c8698a0857e00562dab37bc31397bd40886b
 - kind: project-relative
   target: legacy
-  value: .agents/skills/flo-conventional-comments
+  value: .agents/skills/floo-conventional-comments
   runtime: null
   scope: project
   owners:
@@ -6607,16 +6607,16 @@ deployments:
   content_hash: null
 - kind: project-relative
   target: legacy
-  value: .agents/skills/flo-conventional-comments/SKILL.md
+  value: .agents/skills/floo-conventional-comments/SKILL.md
   runtime: null
   scope: project
   owners:
   - .
   active_owner: .
-  content_hash: sha256:388808e2149c7e956d40980294c4edc75b2badeb9dfc37874249ca20657601e3
+  content_hash: sha256:7a7348c324495f5d0e14b24a2686c4d25fc7d651f69c2f482368b309a0c0142a
 - kind: project-relative
   target: legacy
-  value: .agents/skills/flo-conventional-comments/refrences/matrix.md
+  value: .agents/skills/floo-conventional-comments/refrences/matrix.md
   runtime: null
   scope: project
   owners:
@@ -6625,7 +6625,7 @@ deployments:
   content_hash: sha256:89de6d4c36c175a644c5dec7ececa96f2cf06501ebcfbe3e3cbb51aeb9610488
 - kind: project-relative
   target: legacy
-  value: .agents/skills/flo-devops-craftsmanship
+  value: .agents/skills/floo-devops-craftsmanship
   runtime: null
   scope: project
   owners:
@@ -6634,16 +6634,16 @@ deployments:
   content_hash: null
 - kind: project-relative
   target: legacy
-  value: .agents/skills/flo-devops-craftsmanship/SKILL.md
+  value: .agents/skills/floo-devops-craftsmanship/SKILL.md
   runtime: null
   scope: project
   owners:
   - .
   active_owner: .
-  content_hash: sha256:fd3196beb5f68510d17e982c2d3f811ce5796032e2b22164fc93b18cf0cae422
+  content_hash: sha256:7a7c3c43d7da853a40ff7c9b18d083e6bcf41c7d983b8003e0b942efd548855e
 - kind: project-relative
   target: legacy
-  value: .agents/skills/flo-devops-craftsmanship/references/examples.md
+  value: .agents/skills/floo-devops-craftsmanship/references/examples.md
   runtime: null
   scope: project
   owners:
@@ -6652,7 +6652,7 @@ deployments:
   content_hash: sha256:1e89ce761164862d2f31c41c6392d737ac4c84d5fbbc0af939fb241aa4fe8978
 - kind: project-relative
   target: legacy
-  value: .agents/skills/flo-ios-craftsmanship
+  value: .agents/skills/floo-ios-craftsmanship
   runtime: null
   scope: project
   owners:
@@ -6661,16 +6661,16 @@ deployments:
   content_hash: null
 - kind: project-relative
   target: legacy
-  value: .agents/skills/flo-ios-craftsmanship/SKILL.md
+  value: .agents/skills/floo-ios-craftsmanship/SKILL.md
   runtime: null
   scope: project
   owners:
   - .
   active_owner: .
-  content_hash: sha256:fb295b2d4619b168132ce8e61d425fbf4aaf1b71d9da37ab053f777576b2e06c
+  content_hash: sha256:941f6d7780e1e33bc16f9964f948311dc7acb43e694fa9a76cf49138953ef359
 - kind: project-relative
   target: legacy
-  value: .agents/skills/flo-ios-craftsmanship/references/example-inline.md
+  value: .agents/skills/floo-ios-craftsmanship/references/example-inline.md
   runtime: null
   scope: project
   owners:
@@ -6679,7 +6679,7 @@ deployments:
   content_hash: sha256:f7e52879085b638b0dcb6a47e869e1922c0adc7418afe4fa0933ba568f818549
 - kind: project-relative
   target: legacy
-  value: .agents/skills/flo-ios-craftsmanship/references/examples.md
+  value: .agents/skills/floo-ios-craftsmanship/references/examples.md
   runtime: null
   scope: project
   owners:
@@ -6688,7 +6688,7 @@ deployments:
   content_hash: sha256:578cfbb9f3338687fce0ad4b84c9088787388e4a19a8e966513071ece00b96af
 - kind: project-relative
   target: legacy
-  value: .agents/skills/flo-software-craftsmanship
+  value: .agents/skills/floo-software-craftsmanship
   runtime: null
   scope: project
   owners:
@@ -6697,16 +6697,16 @@ deployments:
   content_hash: null
 - kind: project-relative
   target: legacy
-  value: .agents/skills/flo-software-craftsmanship/SKILL.md
+  value: .agents/skills/floo-software-craftsmanship/SKILL.md
   runtime: null
   scope: project
   owners:
   - .
   active_owner: .
-  content_hash: sha256:d0911325d4fcaa0a9bbe11c3a4e3614b6bd284767d2c7904a8b5074f29a4e154
+  content_hash: sha256:2930f70ce05e13f36f7dac8850122620f3c04f79a7b31ebda94b9ae95dece5a3
 - kind: project-relative
   target: legacy
-  value: .agents/skills/flo-software-craftsmanship/references/examples.md
+  value: .agents/skills/floo-software-craftsmanship/references/examples.md
   runtime: null
   scope: project
   owners:
@@ -6715,7 +6715,7 @@ deployments:
   content_hash: sha256:4604eece7de28e5281bfcf092dd79cac84df5607b7906b90a4f18333f1ffa3ef
 - kind: project-relative
   target: legacy
-  value: .agents/skills/flo-testing-craftsmanship
+  value: .agents/skills/floo-testing-craftsmanship
   runtime: null
   scope: project
   owners:
@@ -6724,16 +6724,16 @@ deployments:
   content_hash: null
 - kind: project-relative
   target: legacy
-  value: .agents/skills/flo-testing-craftsmanship/SKILL.md
+  value: .agents/skills/floo-testing-craftsmanship/SKILL.md
   runtime: null
   scope: project
   owners:
   - .
   active_owner: .
-  content_hash: sha256:c2d650460436717a30fbbf04648f47f8d272efd286f1d1f29354bcac2696fe78
+  content_hash: sha256:95fc48185fd8db710fa55ac3b0e0314666c6a455f76500e36056a934943cf677
 - kind: project-relative
   target: legacy
-  value: .agents/skills/flo-testing-craftsmanship/references/examples.md
+  value: .agents/skills/floo-testing-craftsmanship/references/examples.md
   runtime: null
   scope: project
   owners:
@@ -6742,7 +6742,7 @@ deployments:
   content_hash: sha256:0a9cf62cc6549e2075686b000c97d712d461daf03bebfbd5ed0a7f76aa71eba4
 - kind: project-relative
   target: legacy
-  value: .agents/skills/flo-verify-precommitall
+  value: .agents/skills/floo-verify-precommitall
   runtime: null
   scope: project
   owners:
@@ -6751,162 +6751,162 @@ deployments:
   content_hash: null
 - kind: project-relative
   target: legacy
-  value: .agents/skills/flo-verify-precommitall/SKILL.md
+  value: .agents/skills/floo-verify-precommitall/SKILL.md
   runtime: null
   scope: project
   owners:
   - .
   active_owner: .
-  content_hash: sha256:eae4ebad9f9e892283a890f7072159dd918922bce297e76278a3aababda1d40a
+  content_hash: sha256:e51eb4aaac64551a6f21135253d2896ba83e43d0ec2a02a914249808674b5941
 local_deployed_files:
-- .agents/skills/flo-android-craftsmanship
-- .agents/skills/flo-android-craftsmanship/SKILL.md
-- .agents/skills/flo-android-craftsmanship/references/examples.md
-- .agents/skills/flo-boilerplategit
-- .agents/skills/flo-boilerplategit/SKILL.md
-- .agents/skills/flo-boilerplategit/references/agents.md
-- .agents/skills/flo-boilerplategit/references/apm.md
-- .agents/skills/flo-boilerplategit/references/codeowners.md
-- .agents/skills/flo-boilerplategit/references/editorconfig.md
-- .agents/skills/flo-boilerplategit/references/github-templates.md
-- .agents/skills/flo-boilerplategit/references/gitignore.md
-- .agents/skills/flo-boilerplategit/references/license.md
-- .agents/skills/flo-boilerplategit/references/pre-commit.md
-- .agents/skills/flo-boilerplategit/references/readme.md
-- .agents/skills/flo-boilerplategit/references/release-please.md
-- .agents/skills/flo-boilerplategit/references/renovate.md
-- .agents/skills/flo-boilerplategit/references/security.md
-- .agents/skills/flo-caveman
-- .agents/skills/flo-caveman/SKILL.md
-- .agents/skills/flo-conventional-comments
-- .agents/skills/flo-conventional-comments/SKILL.md
-- .agents/skills/flo-conventional-comments/refrences/matrix.md
-- .agents/skills/flo-devops-craftsmanship
-- .agents/skills/flo-devops-craftsmanship/SKILL.md
-- .agents/skills/flo-devops-craftsmanship/references/examples.md
-- .agents/skills/flo-ios-craftsmanship
-- .agents/skills/flo-ios-craftsmanship/SKILL.md
-- .agents/skills/flo-ios-craftsmanship/references/example-inline.md
-- .agents/skills/flo-ios-craftsmanship/references/examples.md
-- .agents/skills/flo-software-craftsmanship
-- .agents/skills/flo-software-craftsmanship/SKILL.md
-- .agents/skills/flo-software-craftsmanship/references/examples.md
-- .agents/skills/flo-testing-craftsmanship
-- .agents/skills/flo-testing-craftsmanship/SKILL.md
-- .agents/skills/flo-testing-craftsmanship/references/examples.md
-- .agents/skills/flo-verify-precommitall
-- .agents/skills/flo-verify-precommitall/SKILL.md
-- .claude/agents/flo-devops.md
+- .agents/skills/floo-android-craftsmanship
+- .agents/skills/floo-android-craftsmanship/SKILL.md
+- .agents/skills/floo-android-craftsmanship/references/examples.md
+- .agents/skills/floo-boilerplategit
+- .agents/skills/floo-boilerplategit/SKILL.md
+- .agents/skills/floo-boilerplategit/references/agents.md
+- .agents/skills/floo-boilerplategit/references/apm.md
+- .agents/skills/floo-boilerplategit/references/codeowners.md
+- .agents/skills/floo-boilerplategit/references/editorconfig.md
+- .agents/skills/floo-boilerplategit/references/github-templates.md
+- .agents/skills/floo-boilerplategit/references/gitignore.md
+- .agents/skills/floo-boilerplategit/references/license.md
+- .agents/skills/floo-boilerplategit/references/pre-commit.md
+- .agents/skills/floo-boilerplategit/references/readme.md
+- .agents/skills/floo-boilerplategit/references/release-please.md
+- .agents/skills/floo-boilerplategit/references/renovate.md
+- .agents/skills/floo-boilerplategit/references/security.md
+- .agents/skills/floo-caveman
+- .agents/skills/floo-caveman/SKILL.md
+- .agents/skills/floo-conventional-comments
+- .agents/skills/floo-conventional-comments/SKILL.md
+- .agents/skills/floo-conventional-comments/refrences/matrix.md
+- .agents/skills/floo-devops-craftsmanship
+- .agents/skills/floo-devops-craftsmanship/SKILL.md
+- .agents/skills/floo-devops-craftsmanship/references/examples.md
+- .agents/skills/floo-ios-craftsmanship
+- .agents/skills/floo-ios-craftsmanship/SKILL.md
+- .agents/skills/floo-ios-craftsmanship/references/example-inline.md
+- .agents/skills/floo-ios-craftsmanship/references/examples.md
+- .agents/skills/floo-software-craftsmanship
+- .agents/skills/floo-software-craftsmanship/SKILL.md
+- .agents/skills/floo-software-craftsmanship/references/examples.md
+- .agents/skills/floo-testing-craftsmanship
+- .agents/skills/floo-testing-craftsmanship/SKILL.md
+- .agents/skills/floo-testing-craftsmanship/references/examples.md
+- .agents/skills/floo-verify-precommitall
+- .agents/skills/floo-verify-precommitall/SKILL.md
 - .claude/agents/floo-coder.md
-- .claude/commands/flo-boilerplategit.md
-- .claude/commands/flo-precommit-all.md
-- .claude/skills/flo-android-craftsmanship
-- .claude/skills/flo-android-craftsmanship/SKILL.md
-- .claude/skills/flo-android-craftsmanship/references/examples.md
-- .claude/skills/flo-boilerplategit
-- .claude/skills/flo-boilerplategit/SKILL.md
-- .claude/skills/flo-boilerplategit/references/agents.md
-- .claude/skills/flo-boilerplategit/references/apm.md
-- .claude/skills/flo-boilerplategit/references/codeowners.md
-- .claude/skills/flo-boilerplategit/references/editorconfig.md
-- .claude/skills/flo-boilerplategit/references/github-templates.md
-- .claude/skills/flo-boilerplategit/references/gitignore.md
-- .claude/skills/flo-boilerplategit/references/license.md
-- .claude/skills/flo-boilerplategit/references/pre-commit.md
-- .claude/skills/flo-boilerplategit/references/readme.md
-- .claude/skills/flo-boilerplategit/references/release-please.md
-- .claude/skills/flo-boilerplategit/references/renovate.md
-- .claude/skills/flo-boilerplategit/references/security.md
-- .claude/skills/flo-caveman
-- .claude/skills/flo-caveman/SKILL.md
-- .claude/skills/flo-conventional-comments
-- .claude/skills/flo-conventional-comments/SKILL.md
-- .claude/skills/flo-conventional-comments/refrences/matrix.md
-- .claude/skills/flo-devops-craftsmanship
-- .claude/skills/flo-devops-craftsmanship/SKILL.md
-- .claude/skills/flo-devops-craftsmanship/references/examples.md
-- .claude/skills/flo-ios-craftsmanship
-- .claude/skills/flo-ios-craftsmanship/SKILL.md
-- .claude/skills/flo-ios-craftsmanship/references/example-inline.md
-- .claude/skills/flo-ios-craftsmanship/references/examples.md
-- .claude/skills/flo-software-craftsmanship
-- .claude/skills/flo-software-craftsmanship/SKILL.md
-- .claude/skills/flo-software-craftsmanship/references/examples.md
-- .claude/skills/flo-testing-craftsmanship
-- .claude/skills/flo-testing-craftsmanship/SKILL.md
-- .claude/skills/flo-testing-craftsmanship/references/examples.md
-- .claude/skills/flo-verify-precommitall
-- .claude/skills/flo-verify-precommitall/SKILL.md
-- .codex/agents/flo-devops.toml
+- .claude/agents/floo-devops.md
+- .claude/commands/floo-boilerplategit.md
+- .claude/commands/floo-precommit-all.md
+- .claude/skills/floo-android-craftsmanship
+- .claude/skills/floo-android-craftsmanship/SKILL.md
+- .claude/skills/floo-android-craftsmanship/references/examples.md
+- .claude/skills/floo-boilerplategit
+- .claude/skills/floo-boilerplategit/SKILL.md
+- .claude/skills/floo-boilerplategit/references/agents.md
+- .claude/skills/floo-boilerplategit/references/apm.md
+- .claude/skills/floo-boilerplategit/references/codeowners.md
+- .claude/skills/floo-boilerplategit/references/editorconfig.md
+- .claude/skills/floo-boilerplategit/references/github-templates.md
+- .claude/skills/floo-boilerplategit/references/gitignore.md
+- .claude/skills/floo-boilerplategit/references/license.md
+- .claude/skills/floo-boilerplategit/references/pre-commit.md
+- .claude/skills/floo-boilerplategit/references/readme.md
+- .claude/skills/floo-boilerplategit/references/release-please.md
+- .claude/skills/floo-boilerplategit/references/renovate.md
+- .claude/skills/floo-boilerplategit/references/security.md
+- .claude/skills/floo-caveman
+- .claude/skills/floo-caveman/SKILL.md
+- .claude/skills/floo-conventional-comments
+- .claude/skills/floo-conventional-comments/SKILL.md
+- .claude/skills/floo-conventional-comments/refrences/matrix.md
+- .claude/skills/floo-devops-craftsmanship
+- .claude/skills/floo-devops-craftsmanship/SKILL.md
+- .claude/skills/floo-devops-craftsmanship/references/examples.md
+- .claude/skills/floo-ios-craftsmanship
+- .claude/skills/floo-ios-craftsmanship/SKILL.md
+- .claude/skills/floo-ios-craftsmanship/references/example-inline.md
+- .claude/skills/floo-ios-craftsmanship/references/examples.md
+- .claude/skills/floo-software-craftsmanship
+- .claude/skills/floo-software-craftsmanship/SKILL.md
+- .claude/skills/floo-software-craftsmanship/references/examples.md
+- .claude/skills/floo-testing-craftsmanship
+- .claude/skills/floo-testing-craftsmanship/SKILL.md
+- .claude/skills/floo-testing-craftsmanship/references/examples.md
+- .claude/skills/floo-verify-precommitall
+- .claude/skills/floo-verify-precommitall/SKILL.md
 - .codex/agents/floo-coder.toml
-- .github/agents/flo-devops.agent.md
+- .codex/agents/floo-devops.toml
 - .github/agents/floo-coder.agent.md
-- .github/prompts/flo-boilerplategit.prompt.md
-- .github/prompts/flo-precommit-all.prompt.md
+- .github/agents/floo-devops.agent.md
+- .github/prompts/floo-boilerplategit.prompt.md
+- .github/prompts/floo-precommit-all.prompt.md
 local_deployed_file_hashes:
-  .agents/skills/flo-android-craftsmanship/SKILL.md: sha256:faa6297ad79ace8f9372f3a6d89c905bc613cbcc9083402bba62a76e5b274ae9
-  .agents/skills/flo-android-craftsmanship/references/examples.md: sha256:3900d2c5dfba5673bd3b3d7c6d6c23aacf0579702708ebde4108d7933c127430
-  .agents/skills/flo-boilerplategit/SKILL.md: sha256:66c2e2ead2e41a8ca9c90f7d4a54710549d1f034cd4cef2cbc2bd7cbe74c0189
-  .agents/skills/flo-boilerplategit/references/agents.md: sha256:de3c136c8ce8878f88e3fb8b53d8010ed6567a6161d28b86a3900f6d257efaac
-  .agents/skills/flo-boilerplategit/references/apm.md: sha256:f203115ac74f175ade4ab3252f0390c68f7ade626044a089fabad7f54d0f557c
-  .agents/skills/flo-boilerplategit/references/codeowners.md: sha256:6d365f87616bc2d2fc6589daebe105dffd79af91d0fcc65453055738a59fe0eb
-  .agents/skills/flo-boilerplategit/references/editorconfig.md: sha256:0c2e7f20fb17c032ea4b50fe7efe71b317a370797f7331c6c3b9f69df9dbea85
-  .agents/skills/flo-boilerplategit/references/github-templates.md: sha256:4fea4421102ac9c3d793666db27522bb7ce2b5cb66da6269f583fd40a5d1d482
-  .agents/skills/flo-boilerplategit/references/gitignore.md: sha256:1ad6f5e425874a8fddac2dd09435f601b83a9c9618ea392202411e42043e4aa2
-  .agents/skills/flo-boilerplategit/references/license.md: sha256:0f32542d8a01518c8e75df2f11708a669e0f6bd51b2dd8ed6bb7ca3a5b7ba6d8
-  .agents/skills/flo-boilerplategit/references/pre-commit.md: sha256:7716fbaecdce1635d9a5247bb4f39869aa7ec9f125f03e64402a3f9c42b627b7
-  .agents/skills/flo-boilerplategit/references/readme.md: sha256:574ea958878945d7d4fb790eec905de979cf08bc00016df3401773ae73c2c6f0
-  .agents/skills/flo-boilerplategit/references/release-please.md: sha256:a25b03bfda5a876a6eabe98cb235bde651562e4f7377f7b59b7c067cab1f35b0
-  .agents/skills/flo-boilerplategit/references/renovate.md: sha256:d5ed3db42aaf02d892b935d8c24703c33020a01545373abffce4c5c089a929c2
-  .agents/skills/flo-boilerplategit/references/security.md: sha256:d36f39b124ceb68a354c1c22a4cda2d3845e59d82dbe71345c4c47afa8b29abf
-  .agents/skills/flo-caveman/SKILL.md: sha256:6d2e8d888212fe198a76cd1c28c8bc1e74b25642f9f0a9636060086ba01acf85
-  .agents/skills/flo-conventional-comments/SKILL.md: sha256:388808e2149c7e956d40980294c4edc75b2badeb9dfc37874249ca20657601e3
-  .agents/skills/flo-conventional-comments/refrences/matrix.md: sha256:89de6d4c36c175a644c5dec7ececa96f2cf06501ebcfbe3e3cbb51aeb9610488
-  .agents/skills/flo-devops-craftsmanship/SKILL.md: sha256:fd3196beb5f68510d17e982c2d3f811ce5796032e2b22164fc93b18cf0cae422
-  .agents/skills/flo-devops-craftsmanship/references/examples.md: sha256:1e89ce761164862d2f31c41c6392d737ac4c84d5fbbc0af939fb241aa4fe8978
-  .agents/skills/flo-ios-craftsmanship/SKILL.md: sha256:fb295b2d4619b168132ce8e61d425fbf4aaf1b71d9da37ab053f777576b2e06c
-  .agents/skills/flo-ios-craftsmanship/references/example-inline.md: sha256:f7e52879085b638b0dcb6a47e869e1922c0adc7418afe4fa0933ba568f818549
-  .agents/skills/flo-ios-craftsmanship/references/examples.md: sha256:578cfbb9f3338687fce0ad4b84c9088787388e4a19a8e966513071ece00b96af
-  .agents/skills/flo-software-craftsmanship/SKILL.md: sha256:d0911325d4fcaa0a9bbe11c3a4e3614b6bd284767d2c7904a8b5074f29a4e154
-  .agents/skills/flo-software-craftsmanship/references/examples.md: sha256:4604eece7de28e5281bfcf092dd79cac84df5607b7906b90a4f18333f1ffa3ef
-  .agents/skills/flo-testing-craftsmanship/SKILL.md: sha256:c2d650460436717a30fbbf04648f47f8d272efd286f1d1f29354bcac2696fe78
-  .agents/skills/flo-testing-craftsmanship/references/examples.md: sha256:0a9cf62cc6549e2075686b000c97d712d461daf03bebfbd5ed0a7f76aa71eba4
-  .agents/skills/flo-verify-precommitall/SKILL.md: sha256:eae4ebad9f9e892283a890f7072159dd918922bce297e76278a3aababda1d40a
-  .claude/agents/flo-devops.md: sha256:5604736291e92e64e27dc71f00a12fef1ce6fd3737d227bfe1e3a7a8a76991b4
-  .claude/agents/floo-coder.md: sha256:c031da6cc17e25b1872b6d69181c037807430bacb1bf277c7a702c801f561f97
-  .claude/commands/flo-boilerplategit.md: sha256:4af1b00169bf2c08b0e7aaf2b53e42d5eb0e1aeb7368ff284b179c3aa8e0c535
-  .claude/commands/flo-precommit-all.md: sha256:b4debd14b419859b860b54d695dd81f1911667478775a61d975feb94a9b5cef2
-  .claude/skills/flo-android-craftsmanship/SKILL.md: sha256:faa6297ad79ace8f9372f3a6d89c905bc613cbcc9083402bba62a76e5b274ae9
-  .claude/skills/flo-android-craftsmanship/references/examples.md: sha256:3900d2c5dfba5673bd3b3d7c6d6c23aacf0579702708ebde4108d7933c127430
-  .claude/skills/flo-boilerplategit/SKILL.md: sha256:66c2e2ead2e41a8ca9c90f7d4a54710549d1f034cd4cef2cbc2bd7cbe74c0189
-  .claude/skills/flo-boilerplategit/references/agents.md: sha256:de3c136c8ce8878f88e3fb8b53d8010ed6567a6161d28b86a3900f6d257efaac
-  .claude/skills/flo-boilerplategit/references/apm.md: sha256:f203115ac74f175ade4ab3252f0390c68f7ade626044a089fabad7f54d0f557c
-  .claude/skills/flo-boilerplategit/references/codeowners.md: sha256:6d365f87616bc2d2fc6589daebe105dffd79af91d0fcc65453055738a59fe0eb
-  .claude/skills/flo-boilerplategit/references/editorconfig.md: sha256:0c2e7f20fb17c032ea4b50fe7efe71b317a370797f7331c6c3b9f69df9dbea85
-  .claude/skills/flo-boilerplategit/references/github-templates.md: sha256:4fea4421102ac9c3d793666db27522bb7ce2b5cb66da6269f583fd40a5d1d482
-  .claude/skills/flo-boilerplategit/references/gitignore.md: sha256:1ad6f5e425874a8fddac2dd09435f601b83a9c9618ea392202411e42043e4aa2
-  .claude/skills/flo-boilerplategit/references/license.md: sha256:0f32542d8a01518c8e75df2f11708a669e0f6bd51b2dd8ed6bb7ca3a5b7ba6d8
-  .claude/skills/flo-boilerplategit/references/pre-commit.md: sha256:7716fbaecdce1635d9a5247bb4f39869aa7ec9f125f03e64402a3f9c42b627b7
-  .claude/skills/flo-boilerplategit/references/readme.md: sha256:574ea958878945d7d4fb790eec905de979cf08bc00016df3401773ae73c2c6f0
-  .claude/skills/flo-boilerplategit/references/release-please.md: sha256:a25b03bfda5a876a6eabe98cb235bde651562e4f7377f7b59b7c067cab1f35b0
-  .claude/skills/flo-boilerplategit/references/renovate.md: sha256:d5ed3db42aaf02d892b935d8c24703c33020a01545373abffce4c5c089a929c2
-  .claude/skills/flo-boilerplategit/references/security.md: sha256:d36f39b124ceb68a354c1c22a4cda2d3845e59d82dbe71345c4c47afa8b29abf
-  .claude/skills/flo-caveman/SKILL.md: sha256:6d2e8d888212fe198a76cd1c28c8bc1e74b25642f9f0a9636060086ba01acf85
-  .claude/skills/flo-conventional-comments/SKILL.md: sha256:388808e2149c7e956d40980294c4edc75b2badeb9dfc37874249ca20657601e3
-  .claude/skills/flo-conventional-comments/refrences/matrix.md: sha256:89de6d4c36c175a644c5dec7ececa96f2cf06501ebcfbe3e3cbb51aeb9610488
-  .claude/skills/flo-devops-craftsmanship/SKILL.md: sha256:fd3196beb5f68510d17e982c2d3f811ce5796032e2b22164fc93b18cf0cae422
-  .claude/skills/flo-devops-craftsmanship/references/examples.md: sha256:1e89ce761164862d2f31c41c6392d737ac4c84d5fbbc0af939fb241aa4fe8978
-  .claude/skills/flo-ios-craftsmanship/SKILL.md: sha256:fb295b2d4619b168132ce8e61d425fbf4aaf1b71d9da37ab053f777576b2e06c
-  .claude/skills/flo-ios-craftsmanship/references/example-inline.md: sha256:f7e52879085b638b0dcb6a47e869e1922c0adc7418afe4fa0933ba568f818549
-  .claude/skills/flo-ios-craftsmanship/references/examples.md: sha256:578cfbb9f3338687fce0ad4b84c9088787388e4a19a8e966513071ece00b96af
-  .claude/skills/flo-software-craftsmanship/SKILL.md: sha256:d0911325d4fcaa0a9bbe11c3a4e3614b6bd284767d2c7904a8b5074f29a4e154
-  .claude/skills/flo-software-craftsmanship/references/examples.md: sha256:4604eece7de28e5281bfcf092dd79cac84df5607b7906b90a4f18333f1ffa3ef
-  .claude/skills/flo-testing-craftsmanship/SKILL.md: sha256:c2d650460436717a30fbbf04648f47f8d272efd286f1d1f29354bcac2696fe78
-  .claude/skills/flo-testing-craftsmanship/references/examples.md: sha256:0a9cf62cc6549e2075686b000c97d712d461daf03bebfbd5ed0a7f76aa71eba4
-  .claude/skills/flo-verify-precommitall/SKILL.md: sha256:eae4ebad9f9e892283a890f7072159dd918922bce297e76278a3aababda1d40a
-  .codex/agents/flo-devops.toml: sha256:3a143b93be7e709cec0b82d0f0b928f155f9f73b993c82f4dcbe7b8e635a05cc
-  .codex/agents/floo-coder.toml: sha256:79bfb1d69ae5eb90a09fe044f023e239eda5fe79a85fb0813baf30f8f2e741cf
-  .github/agents/flo-devops.agent.md: sha256:5604736291e92e64e27dc71f00a12fef1ce6fd3737d227bfe1e3a7a8a76991b4
-  .github/agents/floo-coder.agent.md: sha256:c031da6cc17e25b1872b6d69181c037807430bacb1bf277c7a702c801f561f97
-  .github/prompts/flo-boilerplategit.prompt.md: sha256:223c1d251f0ecad9ae4e9485c566b59dafac3700021d9a2dac9ab33e8fbce8c7
-  .github/prompts/flo-precommit-all.prompt.md: sha256:9205424b92f91826c51c4b324deb61925f4839ccfbd470866e0aa1c4207ec6f2
+  .agents/skills/floo-android-craftsmanship/SKILL.md: sha256:eff53ecb4a50916c9cb5e59be983fefbfe6551fb556f5f28d9586fdaf1bfe6b5
+  .agents/skills/floo-android-craftsmanship/references/examples.md: sha256:3900d2c5dfba5673bd3b3d7c6d6c23aacf0579702708ebde4108d7933c127430
+  .agents/skills/floo-boilerplategit/SKILL.md: sha256:c4077c3a25e6916719649571306e9e5c52d5b8fbc96a60a94258d291fc9ab5a8
+  .agents/skills/floo-boilerplategit/references/agents.md: sha256:de3c136c8ce8878f88e3fb8b53d8010ed6567a6161d28b86a3900f6d257efaac
+  .agents/skills/floo-boilerplategit/references/apm.md: sha256:f203115ac74f175ade4ab3252f0390c68f7ade626044a089fabad7f54d0f557c
+  .agents/skills/floo-boilerplategit/references/codeowners.md: sha256:6d365f87616bc2d2fc6589daebe105dffd79af91d0fcc65453055738a59fe0eb
+  .agents/skills/floo-boilerplategit/references/editorconfig.md: sha256:0c2e7f20fb17c032ea4b50fe7efe71b317a370797f7331c6c3b9f69df9dbea85
+  .agents/skills/floo-boilerplategit/references/github-templates.md: sha256:4fea4421102ac9c3d793666db27522bb7ce2b5cb66da6269f583fd40a5d1d482
+  .agents/skills/floo-boilerplategit/references/gitignore.md: sha256:1ad6f5e425874a8fddac2dd09435f601b83a9c9618ea392202411e42043e4aa2
+  .agents/skills/floo-boilerplategit/references/license.md: sha256:0f32542d8a01518c8e75df2f11708a669e0f6bd51b2dd8ed6bb7ca3a5b7ba6d8
+  .agents/skills/floo-boilerplategit/references/pre-commit.md: sha256:7716fbaecdce1635d9a5247bb4f39869aa7ec9f125f03e64402a3f9c42b627b7
+  .agents/skills/floo-boilerplategit/references/readme.md: sha256:574ea958878945d7d4fb790eec905de979cf08bc00016df3401773ae73c2c6f0
+  .agents/skills/floo-boilerplategit/references/release-please.md: sha256:a25b03bfda5a876a6eabe98cb235bde651562e4f7377f7b59b7c067cab1f35b0
+  .agents/skills/floo-boilerplategit/references/renovate.md: sha256:d5ed3db42aaf02d892b935d8c24703c33020a01545373abffce4c5c089a929c2
+  .agents/skills/floo-boilerplategit/references/security.md: sha256:d36f39b124ceb68a354c1c22a4cda2d3845e59d82dbe71345c4c47afa8b29abf
+  .agents/skills/floo-caveman/SKILL.md: sha256:9404667ac90dce58be61e82a74a0c8698a0857e00562dab37bc31397bd40886b
+  .agents/skills/floo-conventional-comments/SKILL.md: sha256:7a7348c324495f5d0e14b24a2686c4d25fc7d651f69c2f482368b309a0c0142a
+  .agents/skills/floo-conventional-comments/refrences/matrix.md: sha256:89de6d4c36c175a644c5dec7ececa96f2cf06501ebcfbe3e3cbb51aeb9610488
+  .agents/skills/floo-devops-craftsmanship/SKILL.md: sha256:7a7c3c43d7da853a40ff7c9b18d083e6bcf41c7d983b8003e0b942efd548855e
+  .agents/skills/floo-devops-craftsmanship/references/examples.md: sha256:1e89ce761164862d2f31c41c6392d737ac4c84d5fbbc0af939fb241aa4fe8978
+  .agents/skills/floo-ios-craftsmanship/SKILL.md: sha256:941f6d7780e1e33bc16f9964f948311dc7acb43e694fa9a76cf49138953ef359
+  .agents/skills/floo-ios-craftsmanship/references/example-inline.md: sha256:f7e52879085b638b0dcb6a47e869e1922c0adc7418afe4fa0933ba568f818549
+  .agents/skills/floo-ios-craftsmanship/references/examples.md: sha256:578cfbb9f3338687fce0ad4b84c9088787388e4a19a8e966513071ece00b96af
+  .agents/skills/floo-software-craftsmanship/SKILL.md: sha256:2930f70ce05e13f36f7dac8850122620f3c04f79a7b31ebda94b9ae95dece5a3
+  .agents/skills/floo-software-craftsmanship/references/examples.md: sha256:4604eece7de28e5281bfcf092dd79cac84df5607b7906b90a4f18333f1ffa3ef
+  .agents/skills/floo-testing-craftsmanship/SKILL.md: sha256:95fc48185fd8db710fa55ac3b0e0314666c6a455f76500e36056a934943cf677
+  .agents/skills/floo-testing-craftsmanship/references/examples.md: sha256:0a9cf62cc6549e2075686b000c97d712d461daf03bebfbd5ed0a7f76aa71eba4
+  .agents/skills/floo-verify-precommitall/SKILL.md: sha256:e51eb4aaac64551a6f21135253d2896ba83e43d0ec2a02a914249808674b5941
+  .claude/agents/floo-coder.md: sha256:1e31108eb4505babd56492447a34d24ac2b5f7c0a3c97a0d59a9c6b92ca466fb
+  .claude/agents/floo-devops.md: sha256:b8b5627961d0db8cefe345e7e4011275e1fa3513c3f76d186e87664834c03270
+  .claude/commands/floo-boilerplategit.md: sha256:bdefaee9b6fc256b2abb5bcdeb99193afb4c8de2b3b0b0b0cef2ea0df1878085
+  .claude/commands/floo-precommit-all.md: sha256:a9685b0221e6639a6ec484bbf3a1b3d23176f5f0c0ead5441ed9b2169dea2352
+  .claude/skills/floo-android-craftsmanship/SKILL.md: sha256:eff53ecb4a50916c9cb5e59be983fefbfe6551fb556f5f28d9586fdaf1bfe6b5
+  .claude/skills/floo-android-craftsmanship/references/examples.md: sha256:3900d2c5dfba5673bd3b3d7c6d6c23aacf0579702708ebde4108d7933c127430
+  .claude/skills/floo-boilerplategit/SKILL.md: sha256:c4077c3a25e6916719649571306e9e5c52d5b8fbc96a60a94258d291fc9ab5a8
+  .claude/skills/floo-boilerplategit/references/agents.md: sha256:de3c136c8ce8878f88e3fb8b53d8010ed6567a6161d28b86a3900f6d257efaac
+  .claude/skills/floo-boilerplategit/references/apm.md: sha256:f203115ac74f175ade4ab3252f0390c68f7ade626044a089fabad7f54d0f557c
+  .claude/skills/floo-boilerplategit/references/codeowners.md: sha256:6d365f87616bc2d2fc6589daebe105dffd79af91d0fcc65453055738a59fe0eb
+  .claude/skills/floo-boilerplategit/references/editorconfig.md: sha256:0c2e7f20fb17c032ea4b50fe7efe71b317a370797f7331c6c3b9f69df9dbea85
+  .claude/skills/floo-boilerplategit/references/github-templates.md: sha256:4fea4421102ac9c3d793666db27522bb7ce2b5cb66da6269f583fd40a5d1d482
+  .claude/skills/floo-boilerplategit/references/gitignore.md: sha256:1ad6f5e425874a8fddac2dd09435f601b83a9c9618ea392202411e42043e4aa2
+  .claude/skills/floo-boilerplategit/references/license.md: sha256:0f32542d8a01518c8e75df2f11708a669e0f6bd51b2dd8ed6bb7ca3a5b7ba6d8
+  .claude/skills/floo-boilerplategit/references/pre-commit.md: sha256:7716fbaecdce1635d9a5247bb4f39869aa7ec9f125f03e64402a3f9c42b627b7
+  .claude/skills/floo-boilerplategit/references/readme.md: sha256:574ea958878945d7d4fb790eec905de979cf08bc00016df3401773ae73c2c6f0
+  .claude/skills/floo-boilerplategit/references/release-please.md: sha256:a25b03bfda5a876a6eabe98cb235bde651562e4f7377f7b59b7c067cab1f35b0
+  .claude/skills/floo-boilerplategit/references/renovate.md: sha256:d5ed3db42aaf02d892b935d8c24703c33020a01545373abffce4c5c089a929c2
+  .claude/skills/floo-boilerplategit/references/security.md: sha256:d36f39b124ceb68a354c1c22a4cda2d3845e59d82dbe71345c4c47afa8b29abf
+  .claude/skills/floo-caveman/SKILL.md: sha256:9404667ac90dce58be61e82a74a0c8698a0857e00562dab37bc31397bd40886b
+  .claude/skills/floo-conventional-comments/SKILL.md: sha256:7a7348c324495f5d0e14b24a2686c4d25fc7d651f69c2f482368b309a0c0142a
+  .claude/skills/floo-conventional-comments/refrences/matrix.md: sha256:89de6d4c36c175a644c5dec7ececa96f2cf06501ebcfbe3e3cbb51aeb9610488
+  .claude/skills/floo-devops-craftsmanship/SKILL.md: sha256:7a7c3c43d7da853a40ff7c9b18d083e6bcf41c7d983b8003e0b942efd548855e
+  .claude/skills/floo-devops-craftsmanship/references/examples.md: sha256:1e89ce761164862d2f31c41c6392d737ac4c84d5fbbc0af939fb241aa4fe8978
+  .claude/skills/floo-ios-craftsmanship/SKILL.md: sha256:941f6d7780e1e33bc16f9964f948311dc7acb43e694fa9a76cf49138953ef359
+  .claude/skills/floo-ios-craftsmanship/references/example-inline.md: sha256:f7e52879085b638b0dcb6a47e869e1922c0adc7418afe4fa0933ba568f818549
+  .claude/skills/floo-ios-craftsmanship/references/examples.md: sha256:578cfbb9f3338687fce0ad4b84c9088787388e4a19a8e966513071ece00b96af
+  .claude/skills/floo-software-craftsmanship/SKILL.md: sha256:2930f70ce05e13f36f7dac8850122620f3c04f79a7b31ebda94b9ae95dece5a3
+  .claude/skills/floo-software-craftsmanship/references/examples.md: sha256:4604eece7de28e5281bfcf092dd79cac84df5607b7906b90a4f18333f1ffa3ef
+  .claude/skills/floo-testing-craftsmanship/SKILL.md: sha256:95fc48185fd8db710fa55ac3b0e0314666c6a455f76500e36056a934943cf677
+  .claude/skills/floo-testing-craftsmanship/references/examples.md: sha256:0a9cf62cc6549e2075686b000c97d712d461daf03bebfbd5ed0a7f76aa71eba4
+  .claude/skills/floo-verify-precommitall/SKILL.md: sha256:e51eb4aaac64551a6f21135253d2896ba83e43d0ec2a02a914249808674b5941
+  .codex/agents/floo-coder.toml: sha256:1c96b8e3150d98066caff026dae7039f94ade478c63d846d5184d8ac1c49ae5e
+  .codex/agents/floo-devops.toml: sha256:5da69c58b8c7693b00da805f2c996b480f3ca1a6187843f72d384f385f29f3cc
+  .github/agents/floo-coder.agent.md: sha256:1e31108eb4505babd56492447a34d24ac2b5f7c0a3c97a0d59a9c6b92ca466fb
+  .github/agents/floo-devops.agent.md: sha256:b8b5627961d0db8cefe345e7e4011275e1fa3513c3f76d186e87664834c03270
+  .github/prompts/floo-boilerplategit.prompt.md: sha256:f84cf31d795e9665c57804ae1a4e3af4e75bbd2b26f1d150d4e7d4c254a568ab
+  .github/prompts/floo-precommit-all.prompt.md: sha256:c3102993230b1e00cde58cc63aaf1352527ddc7dd1cd343a08322c0c4d9455b7

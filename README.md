@@ -41,7 +41,7 @@ apm install AlonsoFloo/skills.git#v2.7.0
 <!-- x-release-please-start-version -->
 
 ```bash
-apm install AlonsoFloo/skills/.apm/skills/flo-software-craftsmanship#v2.7.0
+apm install AlonsoFloo/skills/.apm/skills/floo-software-craftsmanship#v2.7.0
 ```
 
 <!-- x-release-please-end -->
