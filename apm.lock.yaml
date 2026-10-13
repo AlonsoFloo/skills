@@ -4217,6 +4217,24 @@ deployments:
   content_hash: sha256:89de6d4c36c175a644c5dec7ececa96f2cf06501ebcfbe3e3cbb51aeb9610488
 - kind: project-relative
   target: claude
+  value: .claude/skills/floo-data2viz
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/floo-data2viz/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:ba19563a2a1b2a2976aef2eddec69d9086ab4bf9fd3628e269ce17e5e2277bb4
+- kind: project-relative
+  target: claude
   value: .claude/skills/floo-devops-craftsmanship
   runtime: null
   scope: project
@@ -6647,6 +6665,24 @@ deployments:
   content_hash: sha256:89de6d4c36c175a644c5dec7ececa96f2cf06501ebcfbe3e3cbb51aeb9610488
 - kind: project-relative
   target: legacy
+  value: .agents/skills/floo-data2viz
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/floo-data2viz/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:ba19563a2a1b2a2976aef2eddec69d9086ab4bf9fd3628e269ce17e5e2277bb4
+- kind: project-relative
+  target: legacy
   value: .agents/skills/floo-devops-craftsmanship
   runtime: null
   scope: project
@@ -6803,6 +6839,8 @@ local_deployed_files:
 - .agents/skills/floo-conventional-comments
 - .agents/skills/floo-conventional-comments/SKILL.md
 - .agents/skills/floo-conventional-comments/refrences/matrix.md
+- .agents/skills/floo-data2viz
+- .agents/skills/floo-data2viz/SKILL.md
 - .agents/skills/floo-devops-craftsmanship
 - .agents/skills/floo-devops-craftsmanship/SKILL.md
 - .agents/skills/floo-devops-craftsmanship/references/examples.md
@@ -6844,6 +6882,8 @@ local_deployed_files:
 - .claude/skills/floo-conventional-comments
 - .claude/skills/floo-conventional-comments/SKILL.md
 - .claude/skills/floo-conventional-comments/refrences/matrix.md
+- .claude/skills/floo-data2viz
+- .claude/skills/floo-data2viz/SKILL.md
 - .claude/skills/floo-devops-craftsmanship
 - .claude/skills/floo-devops-craftsmanship/SKILL.md
 - .claude/skills/floo-devops-craftsmanship/references/examples.md
@@ -6884,6 +6924,7 @@ local_deployed_file_hashes:
   .agents/skills/floo-caveman/SKILL.md: sha256:d93ccd08945755fb5a9d4d9913af8061a788d08f8c7492447485962b97d88826
   .agents/skills/floo-conventional-comments/SKILL.md: sha256:7795b9f4cfb46f2ee17dde467015ebd2b71507357eb25cfeccd69559cbaebf80
   .agents/skills/floo-conventional-comments/refrences/matrix.md: sha256:89de6d4c36c175a644c5dec7ececa96f2cf06501ebcfbe3e3cbb51aeb9610488
+  .agents/skills/floo-data2viz/SKILL.md: sha256:ba19563a2a1b2a2976aef2eddec69d9086ab4bf9fd3628e269ce17e5e2277bb4
   .agents/skills/floo-devops-craftsmanship/SKILL.md: sha256:1c353d9814884cc55ea88f9c7f0b835dbebc48294e8b683d80491cfe340fc179
   .agents/skills/floo-devops-craftsmanship/references/examples.md: sha256:1e89ce761164862d2f31c41c6392d737ac4c84d5fbbc0af939fb241aa4fe8978
   .agents/skills/floo-ios-craftsmanship/SKILL.md: sha256:7fb040fa42f5ae6342e14ea305b2ec59c35112d2ca23f27d8ae4d8565e2ce523
@@ -6916,6 +6957,7 @@ local_deployed_file_hashes:
   .claude/skills/floo-caveman/SKILL.md: sha256:d93ccd08945755fb5a9d4d9913af8061a788d08f8c7492447485962b97d88826
   .claude/skills/floo-conventional-comments/SKILL.md: sha256:7795b9f4cfb46f2ee17dde467015ebd2b71507357eb25cfeccd69559cbaebf80
   .claude/skills/floo-conventional-comments/refrences/matrix.md: sha256:89de6d4c36c175a644c5dec7ececa96f2cf06501ebcfbe3e3cbb51aeb9610488
+  .claude/skills/floo-data2viz/SKILL.md: sha256:ba19563a2a1b2a2976aef2eddec69d9086ab4bf9fd3628e269ce17e5e2277bb4
   .claude/skills/floo-devops-craftsmanship/SKILL.md: sha256:1c353d9814884cc55ea88f9c7f0b835dbebc48294e8b683d80491cfe340fc179
   .claude/skills/floo-devops-craftsmanship/references/examples.md: sha256:1e89ce761164862d2f31c41c6392d737ac4c84d5fbbc0af939fb241aa4fe8978
   .claude/skills/floo-ios-craftsmanship/SKILL.md: sha256:7fb040fa42f5ae6342e14ea305b2ec59c35112d2ca23f27d8ae4d8565e2ce523
