@@ -36,12 +36,12 @@ dependencies:
     # Starting 2.2.0 it introduced Agent portable plugin that miss behave with APM 0.29.0
     # Since then, the skill folder is pinned
     - AvdLee/Swift-Concurrency-Agent-Skill/skills/swift-concurrency#45fa49e4e0b2af4d43b1cb458903f8030ac993bd #2.3.0
-    - AvdLee/SwiftUI-Agent-Skill/skills/swiftui-expert-skill#9808b069e9603d2a1f26b8364b67415623ab3edb # 5.2.0
+    - AvdLee/SwiftUI-Agent-Skill/skills/swiftui-expert-skill#9897311e3e42cc77e87603226e74bea711092fbd # 5.2.1
 
     # Jetpack Compose animations and Kotlin control-flow best practices.
-    - chrisbanes/skills/skills/compose-animations#ca44bf79ffa94ec1df15023789512e059c95ea89 # 2026.9.30
-    - chrisbanes/skills/skills/kotlin-control-flow#ca44bf79ffa94ec1df15023789512e059c95ea89 # 2026.9.30
-    - chrisbanes/skills/skills/kotlin-concurrency-and-flow#ca44bf79ffa94ec1df15023789512e059c95ea89 # 2026.9.30
+    - chrisbanes/skills/skills/compose-animations#b3702515bb0579521b7e94845c664c0707669ff8 # 2026.10.2
+    - chrisbanes/skills/skills/kotlin-control-flow#b3702515bb0579521b7e94845c664c0707669ff8 # 2026.10.2
+    - chrisbanes/skills/skills/kotlin-concurrency-and-flow#b3702515bb0579521b7e94845c664c0707669ff8 # 2026.10.2
 
     # Jetpack Compose modifier ordering and efficient modifier chains.
     - skydoves/compose-performance-skills/modifiers/ordering-modifier-chains#main

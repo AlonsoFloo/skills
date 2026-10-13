@@ -553,8 +553,8 @@ dependencies:
   materialization_repo_url: AvdLee/SwiftUI-Agent-Skill
   name: swiftui-expert-skill
   host: github.com
-  resolved_commit: 9808b069e9603d2a1f26b8364b67415623ab3edb
-  resolved_ref: 9808b069e9603d2a1f26b8364b67415623ab3edb
+  resolved_commit: 9897311e3e42cc77e87603226e74bea711092fbd
+  resolved_ref: 9897311e3e42cc77e87603226e74bea711092fbd
   version: unknown
   virtual_path: skills/swiftui-expert-skill
   is_virtual: true
@@ -665,7 +665,7 @@ dependencies:
   - .claude/skills/swiftui-expert-skill/scripts/instruments_parser/xml_utils.py
   - .claude/skills/swiftui-expert-skill/scripts/record_trace.py
   deployed_file_hashes:
-    .agents/skills/swiftui-expert-skill/SKILL.md: sha256:7c448e80cc00e4c8a91fd1afae1dad857cb2fb9a6ae7ca38f45838d99ddf0543
+    .agents/skills/swiftui-expert-skill/SKILL.md: sha256:3b794f9cb46efb016eafcad2fcedce7127c74d60c50a949619e0bcd2bc38351f
     .agents/skills/swiftui-expert-skill/agents/openai.yaml: sha256:48dc200e480dac5598a4b7d3e3635fd5431e21d9dfef77e08b724fbb9871ced0
     .agents/skills/swiftui-expert-skill/assets/logo-small.png: sha256:befad5069b4c95bbb3612e41e2b7fde601de7e022d8cc0d07570f0c7ec234d11
     .agents/skills/swiftui-expert-skill/assets/logo.png: sha256:ab58235e3739a6c83ea8e29f5847ddc65895a6aa3772e17e901dacee101258a6
@@ -680,9 +680,9 @@ dependencies:
     .agents/skills/swiftui-expert-skill/references/environment-patterns.md: sha256:0425978dc6aceb1c009ff35ebd789caca6aae1315b39f3aacbd748f5b4a5a2e6
     .agents/skills/swiftui-expert-skill/references/focus-patterns.md: sha256:35e411675ba93ce92b9b652c804d8349b7f693a9928017b201ae802077e73ab6
     .agents/skills/swiftui-expert-skill/references/image-optimization.md: sha256:1b2fd159a815e4afdf6288341d3a377aa0b5f8d8fc4551c73409bd64228fb806
-    .agents/skills/swiftui-expert-skill/references/iphone-duo.md: sha256:444246612a039ccb919c8184c32f728a39599a3ecd1246771506131d3e900f2e
-    .agents/skills/swiftui-expert-skill/references/latest-apis.md: sha256:29b0dfa2dfb6efdc16f00f04840b0262b542fe0a8b2e8a3ed36add0402675ee4
-    .agents/skills/swiftui-expert-skill/references/layout-best-practices.md: sha256:5d567a5ea69237b1c222b72f6a1a49947305e1ebb40f7668dc7edf19b5fef1fa
+    .agents/skills/swiftui-expert-skill/references/iphone-duo.md: sha256:f1129c5806860b0d66c9855ab10e964f75c24a98fd8702c1510f64ba4ec2c19f
+    .agents/skills/swiftui-expert-skill/references/latest-apis.md: sha256:19ba6a56dd5bf7f13c7c3032756a75a5ec04a56ca956a48c2ed4e6af530026b2
+    .agents/skills/swiftui-expert-skill/references/layout-best-practices.md: sha256:95b8b6df0111301d4ea75c5db7b6eed2cb01bf69c4468b1cde5ef8f90f3298b7
     .agents/skills/swiftui-expert-skill/references/liquid-glass.md: sha256:a96ff9cbd81c37ab268cdba9971b80e7ca7c2e75a141582c60ee78fa334ae89e
     .agents/skills/swiftui-expert-skill/references/list-patterns.md: sha256:2002b89b5c869e54b69f4ab3e61f9a3d715fd6b56a1d5284fe900dc2353f0537
     .agents/skills/swiftui-expert-skill/references/localization.md: sha256:f6adcf85da40bd011e9aa585cd45cca96223f2d8f9ec4f55b5bda87c2538d574
@@ -693,7 +693,7 @@ dependencies:
     .agents/skills/swiftui-expert-skill/references/performance-patterns.md: sha256:2e2643503ae283f2a99f31b5a97abbf141d15c61f1c6271640cfef9333940818
     .agents/skills/swiftui-expert-skill/references/previews.md: sha256:fdf50f169607ddb7e9c03218957df2b2d733e211f591ac86c99816ca058ede01
     .agents/skills/swiftui-expert-skill/references/scroll-patterns.md: sha256:82bc253cccc9f4ff11fe7af49259246dfaf8ad4d06960c90dfdeacaa97ab5bd6
-    .agents/skills/swiftui-expert-skill/references/sheet-navigation-patterns.md: sha256:709735aa839ed7059064477645139eb1abc6d3a1d608777f10e4aa416276027c
+    .agents/skills/swiftui-expert-skill/references/sheet-navigation-patterns.md: sha256:48349b929e54bf2bbc7213cc20af8bb56d2bfa5de452b58a3ea9056dbb2d8ef6
     .agents/skills/swiftui-expert-skill/references/soft-deprecation.md: sha256:ac907d3729e75747c6b19e9cc6a911337c05b8ff1c25695495ce7cda9d2f5548
     .agents/skills/swiftui-expert-skill/references/state-management.md: sha256:49a0e00334f94176d5c5a4835061238fdbc9c67dd8dce73b847718eab8a1c5a2
     .agents/skills/swiftui-expert-skill/references/styled-text-editing.md: sha256:f8dc9bb560107ff8f9e286e3876929f0285c2548195e0c7dda0daa6de70e58fd
@@ -716,7 +716,7 @@ dependencies:
     .agents/skills/swiftui-expert-skill/scripts/instruments_parser/xctrace.py: sha256:b680bddb80d7f63ff97b7ba69b1c9ddda57d4080d601e9a1a47f09e81c2870ce
     .agents/skills/swiftui-expert-skill/scripts/instruments_parser/xml_utils.py: sha256:f0f4476f0f1f0ce9ad5779509b59c2c77b0f7438a57d358aa76e715e7a23b4d6
     .agents/skills/swiftui-expert-skill/scripts/record_trace.py: sha256:7d9c33de1146a274f6ca45790a25f4421ea697893e18a0a6b2ccfb401e245891
-    .claude/skills/swiftui-expert-skill/SKILL.md: sha256:7c448e80cc00e4c8a91fd1afae1dad857cb2fb9a6ae7ca38f45838d99ddf0543
+    .claude/skills/swiftui-expert-skill/SKILL.md: sha256:3b794f9cb46efb016eafcad2fcedce7127c74d60c50a949619e0bcd2bc38351f
     .claude/skills/swiftui-expert-skill/agents/openai.yaml: sha256:48dc200e480dac5598a4b7d3e3635fd5431e21d9dfef77e08b724fbb9871ced0
     .claude/skills/swiftui-expert-skill/assets/logo-small.png: sha256:befad5069b4c95bbb3612e41e2b7fde601de7e022d8cc0d07570f0c7ec234d11
     .claude/skills/swiftui-expert-skill/assets/logo.png: sha256:ab58235e3739a6c83ea8e29f5847ddc65895a6aa3772e17e901dacee101258a6
@@ -731,9 +731,9 @@ dependencies:
     .claude/skills/swiftui-expert-skill/references/environment-patterns.md: sha256:0425978dc6aceb1c009ff35ebd789caca6aae1315b39f3aacbd748f5b4a5a2e6
     .claude/skills/swiftui-expert-skill/references/focus-patterns.md: sha256:35e411675ba93ce92b9b652c804d8349b7f693a9928017b201ae802077e73ab6
     .claude/skills/swiftui-expert-skill/references/image-optimization.md: sha256:1b2fd159a815e4afdf6288341d3a377aa0b5f8d8fc4551c73409bd64228fb806
-    .claude/skills/swiftui-expert-skill/references/iphone-duo.md: sha256:444246612a039ccb919c8184c32f728a39599a3ecd1246771506131d3e900f2e
-    .claude/skills/swiftui-expert-skill/references/latest-apis.md: sha256:29b0dfa2dfb6efdc16f00f04840b0262b542fe0a8b2e8a3ed36add0402675ee4
-    .claude/skills/swiftui-expert-skill/references/layout-best-practices.md: sha256:5d567a5ea69237b1c222b72f6a1a49947305e1ebb40f7668dc7edf19b5fef1fa
+    .claude/skills/swiftui-expert-skill/references/iphone-duo.md: sha256:f1129c5806860b0d66c9855ab10e964f75c24a98fd8702c1510f64ba4ec2c19f
+    .claude/skills/swiftui-expert-skill/references/latest-apis.md: sha256:19ba6a56dd5bf7f13c7c3032756a75a5ec04a56ca956a48c2ed4e6af530026b2
+    .claude/skills/swiftui-expert-skill/references/layout-best-practices.md: sha256:95b8b6df0111301d4ea75c5db7b6eed2cb01bf69c4468b1cde5ef8f90f3298b7
     .claude/skills/swiftui-expert-skill/references/liquid-glass.md: sha256:a96ff9cbd81c37ab268cdba9971b80e7ca7c2e75a141582c60ee78fa334ae89e
     .claude/skills/swiftui-expert-skill/references/list-patterns.md: sha256:2002b89b5c869e54b69f4ab3e61f9a3d715fd6b56a1d5284fe900dc2353f0537
     .claude/skills/swiftui-expert-skill/references/localization.md: sha256:f6adcf85da40bd011e9aa585cd45cca96223f2d8f9ec4f55b5bda87c2538d574
@@ -744,7 +744,7 @@ dependencies:
     .claude/skills/swiftui-expert-skill/references/performance-patterns.md: sha256:2e2643503ae283f2a99f31b5a97abbf141d15c61f1c6271640cfef9333940818
     .claude/skills/swiftui-expert-skill/references/previews.md: sha256:fdf50f169607ddb7e9c03218957df2b2d733e211f591ac86c99816ca058ede01
     .claude/skills/swiftui-expert-skill/references/scroll-patterns.md: sha256:82bc253cccc9f4ff11fe7af49259246dfaf8ad4d06960c90dfdeacaa97ab5bd6
-    .claude/skills/swiftui-expert-skill/references/sheet-navigation-patterns.md: sha256:709735aa839ed7059064477645139eb1abc6d3a1d608777f10e4aa416276027c
+    .claude/skills/swiftui-expert-skill/references/sheet-navigation-patterns.md: sha256:48349b929e54bf2bbc7213cc20af8bb56d2bfa5de452b58a3ea9056dbb2d8ef6
     .claude/skills/swiftui-expert-skill/references/soft-deprecation.md: sha256:ac907d3729e75747c6b19e9cc6a911337c05b8ff1c25695495ce7cda9d2f5548
     .claude/skills/swiftui-expert-skill/references/state-management.md: sha256:49a0e00334f94176d5c5a4835061238fdbc9c67dd8dce73b847718eab8a1c5a2
     .claude/skills/swiftui-expert-skill/references/styled-text-editing.md: sha256:f8dc9bb560107ff8f9e286e3876929f0285c2548195e0c7dda0daa6de70e58fd
@@ -767,12 +767,12 @@ dependencies:
     .claude/skills/swiftui-expert-skill/scripts/instruments_parser/xctrace.py: sha256:b680bddb80d7f63ff97b7ba69b1c9ddda57d4080d601e9a1a47f09e81c2870ce
     .claude/skills/swiftui-expert-skill/scripts/instruments_parser/xml_utils.py: sha256:f0f4476f0f1f0ce9ad5779509b59c2c77b0f7438a57d358aa76e715e7a23b4d6
     .claude/skills/swiftui-expert-skill/scripts/record_trace.py: sha256:7d9c33de1146a274f6ca45790a25f4421ea697893e18a0a6b2ccfb401e245891
-  content_hash: sha256:23ef655ff5dacad574f3eb100f6b9042e07ed9a7fbab153836baf35a786c6031
+  content_hash: sha256:9e0ae37c3e00e0cb9327ea59be5ba563b7a5e59b04e2b5e4075cea160bab1205
 - repo_url: chrisbanes/skills
   name: compose-animations
   host: github.com
-  resolved_commit: ca44bf79ffa94ec1df15023789512e059c95ea89
-  resolved_ref: ca44bf79ffa94ec1df15023789512e059c95ea89
+  resolved_commit: b3702515bb0579521b7e94845c664c0707669ff8
+  resolved_ref: b3702515bb0579521b7e94845c664c0707669ff8
   version: unknown
   virtual_path: skills/compose-animations
   is_virtual: true
@@ -793,8 +793,8 @@ dependencies:
 - repo_url: chrisbanes/skills
   name: kotlin-concurrency-and-flow
   host: github.com
-  resolved_commit: ca44bf79ffa94ec1df15023789512e059c95ea89
-  resolved_ref: ca44bf79ffa94ec1df15023789512e059c95ea89
+  resolved_commit: b3702515bb0579521b7e94845c664c0707669ff8
+  resolved_ref: b3702515bb0579521b7e94845c664c0707669ff8
   version: unknown
   virtual_path: skills/kotlin-concurrency-and-flow
   is_virtual: true
@@ -819,8 +819,8 @@ dependencies:
 - repo_url: chrisbanes/skills
   name: kotlin-control-flow
   host: github.com
-  resolved_commit: ca44bf79ffa94ec1df15023789512e059c95ea89
-  resolved_ref: ca44bf79ffa94ec1df15023789512e059c95ea89
+  resolved_commit: b3702515bb0579521b7e94845c664c0707669ff8
+  resolved_ref: b3702515bb0579521b7e94845c664c0707669ff8
   version: unknown
   virtual_path: skills/kotlin-control-flow
   is_virtual: true
@@ -3179,7 +3179,7 @@ deployments:
   owners:
   - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
   active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
-  content_hash: sha256:7c448e80cc00e4c8a91fd1afae1dad857cb2fb9a6ae7ca38f45838d99ddf0543
+  content_hash: sha256:3b794f9cb46efb016eafcad2fcedce7127c74d60c50a949619e0bcd2bc38351f
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/swiftui-expert-skill/agents/openai.yaml
@@ -3314,7 +3314,7 @@ deployments:
   owners:
   - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
   active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
-  content_hash: sha256:444246612a039ccb919c8184c32f728a39599a3ecd1246771506131d3e900f2e
+  content_hash: sha256:f1129c5806860b0d66c9855ab10e964f75c24a98fd8702c1510f64ba4ec2c19f
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/swiftui-expert-skill/references/latest-apis.md
@@ -3323,7 +3323,7 @@ deployments:
   owners:
   - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
   active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
-  content_hash: sha256:29b0dfa2dfb6efdc16f00f04840b0262b542fe0a8b2e8a3ed36add0402675ee4
+  content_hash: sha256:19ba6a56dd5bf7f13c7c3032756a75a5ec04a56ca956a48c2ed4e6af530026b2
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/swiftui-expert-skill/references/layout-best-practices.md
@@ -3332,7 +3332,7 @@ deployments:
   owners:
   - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
   active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
-  content_hash: sha256:5d567a5ea69237b1c222b72f6a1a49947305e1ebb40f7668dc7edf19b5fef1fa
+  content_hash: sha256:95b8b6df0111301d4ea75c5db7b6eed2cb01bf69c4468b1cde5ef8f90f3298b7
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/swiftui-expert-skill/references/liquid-glass.md
@@ -3431,7 +3431,7 @@ deployments:
   owners:
   - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
   active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
-  content_hash: sha256:709735aa839ed7059064477645139eb1abc6d3a1d608777f10e4aa416276027c
+  content_hash: sha256:48349b929e54bf2bbc7213cc20af8bb56d2bfa5de452b58a3ea9056dbb2d8ef6
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/swiftui-expert-skill/references/soft-deprecation.md
@@ -5924,7 +5924,7 @@ deployments:
   owners:
   - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
   active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
-  content_hash: sha256:7c448e80cc00e4c8a91fd1afae1dad857cb2fb9a6ae7ca38f45838d99ddf0543
+  content_hash: sha256:3b794f9cb46efb016eafcad2fcedce7127c74d60c50a949619e0bcd2bc38351f
 - kind: project-relative
   target: claude
   value: .claude/skills/swiftui-expert-skill/agents/openai.yaml
@@ -6059,7 +6059,7 @@ deployments:
   owners:
   - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
   active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
-  content_hash: sha256:444246612a039ccb919c8184c32f728a39599a3ecd1246771506131d3e900f2e
+  content_hash: sha256:f1129c5806860b0d66c9855ab10e964f75c24a98fd8702c1510f64ba4ec2c19f
 - kind: project-relative
   target: claude
   value: .claude/skills/swiftui-expert-skill/references/latest-apis.md
@@ -6068,7 +6068,7 @@ deployments:
   owners:
   - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
   active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
-  content_hash: sha256:29b0dfa2dfb6efdc16f00f04840b0262b542fe0a8b2e8a3ed36add0402675ee4
+  content_hash: sha256:19ba6a56dd5bf7f13c7c3032756a75a5ec04a56ca956a48c2ed4e6af530026b2
 - kind: project-relative
   target: claude
   value: .claude/skills/swiftui-expert-skill/references/layout-best-practices.md
@@ -6077,7 +6077,7 @@ deployments:
   owners:
   - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
   active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
-  content_hash: sha256:5d567a5ea69237b1c222b72f6a1a49947305e1ebb40f7668dc7edf19b5fef1fa
+  content_hash: sha256:95b8b6df0111301d4ea75c5db7b6eed2cb01bf69c4468b1cde5ef8f90f3298b7
 - kind: project-relative
   target: claude
   value: .claude/skills/swiftui-expert-skill/references/liquid-glass.md
@@ -6176,7 +6176,7 @@ deployments:
   owners:
   - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
   active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
-  content_hash: sha256:709735aa839ed7059064477645139eb1abc6d3a1d608777f10e4aa416276027c
+  content_hash: sha256:48349b929e54bf2bbc7213cc20af8bb56d2bfa5de452b58a3ea9056dbb2d8ef6
 - kind: project-relative
   target: claude
   value: .claude/skills/swiftui-expert-skill/references/soft-deprecation.md
