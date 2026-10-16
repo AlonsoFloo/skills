@@ -20,8 +20,9 @@ metadata:
 > Testing conventions, structured behavioral layout & reactive stream testing
 
 Treat the rules below as engineering guidance for AI coding assistants, code
-reviewers, and software engineers. For comprehensive examples and deep dives,
-see [references/examples.md](references/examples.md).
+reviewers, and software engineers. Each rule links to its own
+reference file in [references/](references/) with extended examples and deep
+dives.
 
 ## Rule 1: Standardize Unit Test Naming Conventions
 
@@ -44,7 +45,7 @@ fun `given valid credentials - on login - it should emit success state`() { ... 
 ```
 
 *See
-[references/examples.md#rule-1-standardize-unit-test-naming-conventions](references/examples.md#rule-1-standardize-unit-test-naming-conventions)
+[references/rule01.example.md](references/rule01.example.md)
 for detailed reference cases.*
 
 ______________________________________________________________________
@@ -89,7 +90,7 @@ fun `given active user - on get profile - it should return profile data`() {
 ```
 
 *See
-[references/examples.md#rule-2-structure-unit-tests-with-setup-run-assert](references/examples.md#rule-2-structure-unit-tests-with-setup-run-assert)
+[references/rule02.example.md](references/rule02.example.md)
 for detailed reference cases.*
 
 ______________________________________________________________________
@@ -135,5 +136,5 @@ fun `given data - on load - it should emit loading then success`() = runTest {
 ```
 
 *See
-[references/examples.md#rule-3-use-turbine-for-testing-kotlin-flows](references/examples.md#rule-3-use-turbine-for-testing-kotlin-flows)
+[references/rule03.example.md](references/rule03.example.md)
 for detailed reference cases.*

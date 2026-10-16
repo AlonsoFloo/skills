@@ -21,8 +21,9 @@ metadata:
 > Modern iOS architecture, Swift memory safety & SwiftUI craftsmanship
 
 Treat the rules below as engineering guidance for AI coding assistants, code
-reviewers, and software engineers. For comprehensive examples and deep dives,
-see [references/examples.md](references/examples.md).
+reviewers, and software engineers. Each rule links to its own
+reference file in [references/](references/) with extended examples and deep
+dives.
 
 ## Rule 1: Prevent Memory Leaks (`self` and `weak` references)
 
@@ -48,7 +49,7 @@ networkManager.fetchData { [weak self] result in
 ```
 
 *See
-[references/examples.md#rule-1-prevent-memory-leaks-self-and-weak-references](references/examples.md#rule-1-prevent-memory-leaks-self-and-weak-references)
+[references/rule01.example.md](references/rule01.example.md)
 for detailed reference cases.*
 
 ______________________________________________________________________
@@ -80,7 +81,7 @@ extension View {
 ```
 
 *See
-[references/examples.md#rule-2-stateless-viewmodifiers-belong-in-extension-helpers-swiftui](references/examples.md#rule-2-stateless-viewmodifiers-belong-in-extension-helpers-swiftui)
+[references/rule02.example.md](references/rule02.example.md)
 for detailed reference cases.*
 
 ______________________________________________________________________
@@ -173,6 +174,6 @@ extension Sequence where Element: BinaryInteger {
 ```
 
 *See
-[references/example-inline.md](references/example-inline.md)
+[references/rule03.example.md](references/rule03.example.md)
 for the full deep dive: all attributes, interaction matrix, ABI implications,
 and when **not** to annotate.*

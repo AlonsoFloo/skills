@@ -1,0 +1,41 @@
+# Rule 1: Never Duplicate UI State Variables — Reference Examples
+
+Deep dive for [SKILL.md — Rule 1](../SKILL.md).
+
+______________________________________________________________________
+
+## Single Source of Truth
+
+ViewModel state should be driven entirely through explicit data streams like
+`StateFlow`.
+
+```kotlin
+data class UserListUiState(
+    val users: List<User> = emptyList(),
+    val searchQuery: String = "",
+    val isLoading: Boolean = false,
+    val errorMessage: String? = null
+)
+
+class UserListViewModel(
+    private val userRepository: UserRepository
+) : ViewModel() {
+
+    private val _uiState = MutableStateFlow(UserListUiState())
+    val uiState: StateFlow<UserListUiState> = _uiState.asStateFlow()
+
+    fun onSearchQueryChanged(query: String) {
+        _uiState.update { it.copy(searchQuery = query) }
+        fetchUsers(query)
+    }
+
+    private fun fetchUsers(query: String) {
+        viewModelScope.launch {
+            _uiState.update { it.copy(isLoading = true) }
+            runCatching { userRepository.searchUsers(query) }
+                .onSuccess { users -> _uiState.update { it.copy(users = users, isLoading = false) } }
+                .onFailure { err -> _uiState.update { it.copy(errorMessage = err.message, isLoading = false) } }
+        }
+    }
+}
+```

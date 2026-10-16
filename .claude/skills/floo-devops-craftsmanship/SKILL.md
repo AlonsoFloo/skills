@@ -19,8 +19,9 @@ metadata:
 > DevOps, AI-assisted development conventions & supply-chain security
 
 Treat the rules below as engineering guidance for AI coding assistants, code
-reviewers, and software engineers. For comprehensive examples and deep dives,
-see [references/examples.md](references/examples.md).
+reviewers, and software engineers. Each rule links to its own
+reference file in [references/](references/) with extended examples and deep
+dives.
 
 ## Commit & Push Policy
 
@@ -52,7 +53,7 @@ feat(auth): AI. refactor biometric authentication flow using Koin DI
 ```
 
 *See
-[references/examples.md#rule-1-enforce-detailed-commit-messages-for-ai-assisted-code](references/examples.md#rule-1-enforce-detailed-commit-messages-for-ai-assisted-code)
+[references/rule01.example.md](references/rule01.example.md)
 for detailed reference cases.*
 
 ______________________________________________________________________
@@ -77,5 +78,5 @@ FROM node:20.11.1-alpine@sha256:c77dc7458157121287973...
 ```
 
 *See
-[references/examples.md#rule-2-pin-dependencies-and-enforce-cryptographic-digests](references/examples.md#rule-2-pin-dependencies-and-enforce-cryptographic-digests)
+[references/rule02.example.md](references/rule02.example.md)
 for detailed reference cases.*

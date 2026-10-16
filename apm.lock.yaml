@@ -4034,16 +4034,34 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:309cace2e85e4e984cb61e2b8d323ce25e35ac5804510fb8d287a25ac33eb395
+  content_hash: sha256:6f779300d6ab8b3b3cfef86cf962985f49f19e762c0bb1543f5ea3cec370096c
 - kind: project-relative
   target: claude
-  value: .claude/skills/floo-android-craftsmanship/references/examples.md
+  value: .claude/skills/floo-android-craftsmanship/references/rule01.example.md
   runtime: null
   scope: project
   owners:
   - .
   active_owner: .
-  content_hash: sha256:3900d2c5dfba5673bd3b3d7c6d6c23aacf0579702708ebde4108d7933c127430
+  content_hash: sha256:213f3646e5d89fbbcae12e088baabbdb1ba166114df6862b295370483a13fe82
+- kind: project-relative
+  target: claude
+  value: .claude/skills/floo-android-craftsmanship/references/rule02.example.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:e057e4cec6d9385991a6012ef995251ba2ad1c30cf8f054326ef13ff6af5bae4
+- kind: project-relative
+  target: claude
+  value: .claude/skills/floo-android-craftsmanship/references/rule03.example.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:a6bb5e688b332455017f3b4955ad31712dced41a4abc26b0d7e7b2eba62f55d6
 - kind: project-relative
   target: claude
   value: .claude/skills/floo-boilerplategit
@@ -4250,16 +4268,25 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:befae4e27ab6d3c6dbe3c83adb150abf781bca79e6eec3ecd258fa66ca6d471b
+  content_hash: sha256:0c3daca8c9553093647eb4adb884f0446df04ec009db322fc11147693bdc65c7
 - kind: project-relative
   target: claude
-  value: .claude/skills/floo-devops-craftsmanship/references/examples.md
+  value: .claude/skills/floo-devops-craftsmanship/references/rule01.example.md
   runtime: null
   scope: project
   owners:
   - .
   active_owner: .
-  content_hash: sha256:1e89ce761164862d2f31c41c6392d737ac4c84d5fbbc0af939fb241aa4fe8978
+  content_hash: sha256:b15be535da19ca51db7b9cfebd6945c62a3817309a17b3eb348c2832443ebf14
+- kind: project-relative
+  target: claude
+  value: .claude/skills/floo-devops-craftsmanship/references/rule02.example.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:693dc44c5d93b3950e41209f47109a4ff085c168c4ec187adab47cd668e7a459
 - kind: project-relative
   target: claude
   value: .claude/skills/floo-ios-craftsmanship
@@ -4277,25 +4304,34 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:7fb040fa42f5ae6342e14ea305b2ec59c35112d2ca23f27d8ae4d8565e2ce523
+  content_hash: sha256:2e1605d2b2fd042e73624b0d1c1a9de108b437876a604636b8eeafbe68108414
 - kind: project-relative
   target: claude
-  value: .claude/skills/floo-ios-craftsmanship/references/example-inline.md
+  value: .claude/skills/floo-ios-craftsmanship/references/rule01.example.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:ba9b18e34251b7a6e437023acde192648c1ee812c4225385377747d0121a496a
+- kind: project-relative
+  target: claude
+  value: .claude/skills/floo-ios-craftsmanship/references/rule02.example.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:c33f87b53b992bcbd5e797e16100c32527d8a016bd57c133afa796d17a009dc0
+- kind: project-relative
+  target: claude
+  value: .claude/skills/floo-ios-craftsmanship/references/rule03.example.md
   runtime: null
   scope: project
   owners:
   - .
   active_owner: .
   content_hash: sha256:f7e52879085b638b0dcb6a47e869e1922c0adc7418afe4fa0933ba568f818549
-- kind: project-relative
-  target: claude
-  value: .claude/skills/floo-ios-craftsmanship/references/examples.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:578cfbb9f3338687fce0ad4b84c9088787388e4a19a8e966513071ece00b96af
 - kind: project-relative
   target: claude
   value: .claude/skills/floo-software-craftsmanship
@@ -4313,16 +4349,124 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:abcfa746b6d6cddab3b8d0dd44a18562c491123ee8f05d5cacb5707ae0293f63
+  content_hash: sha256:177b6ef36076362468c63149de942e7b4300ce495d32fd7fd48eb8971b97107a
 - kind: project-relative
   target: claude
-  value: .claude/skills/floo-software-craftsmanship/references/examples.md
+  value: .claude/skills/floo-software-craftsmanship/references/rule01.example.md
   runtime: null
   scope: project
   owners:
   - .
   active_owner: .
-  content_hash: sha256:973ea27ca957fbc949c03c048332085390dddf120992a157dc0ba22c37e779a1
+  content_hash: sha256:5b3a2a565a16c94c62da89d507a4dc02fff26f35180fe8f1adcfafbbecf5073a
+- kind: project-relative
+  target: claude
+  value: .claude/skills/floo-software-craftsmanship/references/rule02.example.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:50811f852797dd9f8db17f7e82d2143df5be80ab16ea3bee343ad89e27f1415f
+- kind: project-relative
+  target: claude
+  value: .claude/skills/floo-software-craftsmanship/references/rule03.example.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:832281d06b282b1c49e686ba1d3ae3bccf93315f7743c1b255480d73c5eeef69
+- kind: project-relative
+  target: claude
+  value: .claude/skills/floo-software-craftsmanship/references/rule04.example.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:78cc3a6e70882d7907ef04569c4a8daef4539b4b2a83c56e3d09f7ed435974cf
+- kind: project-relative
+  target: claude
+  value: .claude/skills/floo-software-craftsmanship/references/rule05.example.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:acb095551a6156024bde3d62faab1bfcd9c52964b277e332e66f0d0f05c8f0be
+- kind: project-relative
+  target: claude
+  value: .claude/skills/floo-software-craftsmanship/references/rule06.example.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:e306672a3cdc55dcc98e282afc2447f0e79c35232abef35a8a53b2793ca66606
+- kind: project-relative
+  target: claude
+  value: .claude/skills/floo-software-craftsmanship/references/rule07.example.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:86c73d5982ed83762a19a6519e68f89b0fe5e219e521a2d580ea690f578170fe
+- kind: project-relative
+  target: claude
+  value: .claude/skills/floo-software-craftsmanship/references/rule08.example.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:8b02ed4c032cb7885d525c04b6f09de7686c1d49e189cf39b508e349939d1dbd
+- kind: project-relative
+  target: claude
+  value: .claude/skills/floo-software-craftsmanship/references/rule09.example.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:4c42081e8974f508cac6a1a40266020d34e693a5c222aaec8378c74fd0bbf2e0
+- kind: project-relative
+  target: claude
+  value: .claude/skills/floo-software-craftsmanship/references/rule10.example.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:27c472b94829b8e24c5173657290c579624bf2aa009299f47e4fb1a820deeab4
+- kind: project-relative
+  target: claude
+  value: .claude/skills/floo-software-craftsmanship/references/rule11.example.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:e8168353a83102b3493898363348fc05871812829365cc36b2c4ad94f6b47b1c
+- kind: project-relative
+  target: claude
+  value: .claude/skills/floo-software-craftsmanship/references/rule12.example.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:b0f470c6d83d0b38368ed79290a25ec75617bd2c0ed86d949adb2cb490d06a30
+- kind: project-relative
+  target: claude
+  value: .claude/skills/floo-software-craftsmanship/references/rule13.example.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:794c5e0c307e2a1f7ec4520efd8dc37e6ca4b4cff840d452c3b3354de760797e
 - kind: project-relative
   target: claude
   value: .claude/skills/floo-testing-craftsmanship
@@ -4340,16 +4484,34 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:bbf380085c578827f80c8a942defe77e1d12e720a6a30202972feeda4f6b62da
+  content_hash: sha256:c7e529fe5f3b090a73cf7b77c65f210a5470098a5da02844d22b21b0861754a0
 - kind: project-relative
   target: claude
-  value: .claude/skills/floo-testing-craftsmanship/references/examples.md
+  value: .claude/skills/floo-testing-craftsmanship/references/rule01.example.md
   runtime: null
   scope: project
   owners:
   - .
   active_owner: .
-  content_hash: sha256:0a9cf62cc6549e2075686b000c97d712d461daf03bebfbd5ed0a7f76aa71eba4
+  content_hash: sha256:d09033de2adc4ff6a923e62a78aa0afb6164a2718231d190d331290443633556
+- kind: project-relative
+  target: claude
+  value: .claude/skills/floo-testing-craftsmanship/references/rule02.example.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:4a27f34fdfc1cb1a71cc5410f9707260e438abb79be1999f31ca74f057b9a108
+- kind: project-relative
+  target: claude
+  value: .claude/skills/floo-testing-craftsmanship/references/rule03.example.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:6e813001d01ef5432f0f18b586fac43537b40d7043410edc2a0b647d26ebcda8
 - kind: project-relative
   target: claude
   value: .claude/skills/floo-verify-precommitall
@@ -6482,16 +6644,34 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:309cace2e85e4e984cb61e2b8d323ce25e35ac5804510fb8d287a25ac33eb395
+  content_hash: sha256:6f779300d6ab8b3b3cfef86cf962985f49f19e762c0bb1543f5ea3cec370096c
 - kind: project-relative
   target: legacy
-  value: .agents/skills/floo-android-craftsmanship/references/examples.md
+  value: .agents/skills/floo-android-craftsmanship/references/rule01.example.md
   runtime: null
   scope: project
   owners:
   - .
   active_owner: .
-  content_hash: sha256:3900d2c5dfba5673bd3b3d7c6d6c23aacf0579702708ebde4108d7933c127430
+  content_hash: sha256:213f3646e5d89fbbcae12e088baabbdb1ba166114df6862b295370483a13fe82
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/floo-android-craftsmanship/references/rule02.example.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:e057e4cec6d9385991a6012ef995251ba2ad1c30cf8f054326ef13ff6af5bae4
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/floo-android-craftsmanship/references/rule03.example.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:a6bb5e688b332455017f3b4955ad31712dced41a4abc26b0d7e7b2eba62f55d6
 - kind: project-relative
   target: legacy
   value: .agents/skills/floo-boilerplategit
@@ -6698,16 +6878,25 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:befae4e27ab6d3c6dbe3c83adb150abf781bca79e6eec3ecd258fa66ca6d471b
+  content_hash: sha256:0c3daca8c9553093647eb4adb884f0446df04ec009db322fc11147693bdc65c7
 - kind: project-relative
   target: legacy
-  value: .agents/skills/floo-devops-craftsmanship/references/examples.md
+  value: .agents/skills/floo-devops-craftsmanship/references/rule01.example.md
   runtime: null
   scope: project
   owners:
   - .
   active_owner: .
-  content_hash: sha256:1e89ce761164862d2f31c41c6392d737ac4c84d5fbbc0af939fb241aa4fe8978
+  content_hash: sha256:b15be535da19ca51db7b9cfebd6945c62a3817309a17b3eb348c2832443ebf14
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/floo-devops-craftsmanship/references/rule02.example.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:693dc44c5d93b3950e41209f47109a4ff085c168c4ec187adab47cd668e7a459
 - kind: project-relative
   target: legacy
   value: .agents/skills/floo-ios-craftsmanship
@@ -6725,25 +6914,34 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:7fb040fa42f5ae6342e14ea305b2ec59c35112d2ca23f27d8ae4d8565e2ce523
+  content_hash: sha256:2e1605d2b2fd042e73624b0d1c1a9de108b437876a604636b8eeafbe68108414
 - kind: project-relative
   target: legacy
-  value: .agents/skills/floo-ios-craftsmanship/references/example-inline.md
+  value: .agents/skills/floo-ios-craftsmanship/references/rule01.example.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:ba9b18e34251b7a6e437023acde192648c1ee812c4225385377747d0121a496a
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/floo-ios-craftsmanship/references/rule02.example.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:c33f87b53b992bcbd5e797e16100c32527d8a016bd57c133afa796d17a009dc0
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/floo-ios-craftsmanship/references/rule03.example.md
   runtime: null
   scope: project
   owners:
   - .
   active_owner: .
   content_hash: sha256:f7e52879085b638b0dcb6a47e869e1922c0adc7418afe4fa0933ba568f818549
-- kind: project-relative
-  target: legacy
-  value: .agents/skills/floo-ios-craftsmanship/references/examples.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:578cfbb9f3338687fce0ad4b84c9088787388e4a19a8e966513071ece00b96af
 - kind: project-relative
   target: legacy
   value: .agents/skills/floo-software-craftsmanship
@@ -6761,16 +6959,124 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:abcfa746b6d6cddab3b8d0dd44a18562c491123ee8f05d5cacb5707ae0293f63
+  content_hash: sha256:177b6ef36076362468c63149de942e7b4300ce495d32fd7fd48eb8971b97107a
 - kind: project-relative
   target: legacy
-  value: .agents/skills/floo-software-craftsmanship/references/examples.md
+  value: .agents/skills/floo-software-craftsmanship/references/rule01.example.md
   runtime: null
   scope: project
   owners:
   - .
   active_owner: .
-  content_hash: sha256:973ea27ca957fbc949c03c048332085390dddf120992a157dc0ba22c37e779a1
+  content_hash: sha256:5b3a2a565a16c94c62da89d507a4dc02fff26f35180fe8f1adcfafbbecf5073a
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/floo-software-craftsmanship/references/rule02.example.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:50811f852797dd9f8db17f7e82d2143df5be80ab16ea3bee343ad89e27f1415f
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/floo-software-craftsmanship/references/rule03.example.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:832281d06b282b1c49e686ba1d3ae3bccf93315f7743c1b255480d73c5eeef69
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/floo-software-craftsmanship/references/rule04.example.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:78cc3a6e70882d7907ef04569c4a8daef4539b4b2a83c56e3d09f7ed435974cf
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/floo-software-craftsmanship/references/rule05.example.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:acb095551a6156024bde3d62faab1bfcd9c52964b277e332e66f0d0f05c8f0be
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/floo-software-craftsmanship/references/rule06.example.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:e306672a3cdc55dcc98e282afc2447f0e79c35232abef35a8a53b2793ca66606
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/floo-software-craftsmanship/references/rule07.example.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:86c73d5982ed83762a19a6519e68f89b0fe5e219e521a2d580ea690f578170fe
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/floo-software-craftsmanship/references/rule08.example.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:8b02ed4c032cb7885d525c04b6f09de7686c1d49e189cf39b508e349939d1dbd
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/floo-software-craftsmanship/references/rule09.example.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:4c42081e8974f508cac6a1a40266020d34e693a5c222aaec8378c74fd0bbf2e0
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/floo-software-craftsmanship/references/rule10.example.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:27c472b94829b8e24c5173657290c579624bf2aa009299f47e4fb1a820deeab4
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/floo-software-craftsmanship/references/rule11.example.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:e8168353a83102b3493898363348fc05871812829365cc36b2c4ad94f6b47b1c
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/floo-software-craftsmanship/references/rule12.example.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:b0f470c6d83d0b38368ed79290a25ec75617bd2c0ed86d949adb2cb490d06a30
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/floo-software-craftsmanship/references/rule13.example.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:794c5e0c307e2a1f7ec4520efd8dc37e6ca4b4cff840d452c3b3354de760797e
 - kind: project-relative
   target: legacy
   value: .agents/skills/floo-testing-craftsmanship
@@ -6788,16 +7094,34 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:bbf380085c578827f80c8a942defe77e1d12e720a6a30202972feeda4f6b62da
+  content_hash: sha256:c7e529fe5f3b090a73cf7b77c65f210a5470098a5da02844d22b21b0861754a0
 - kind: project-relative
   target: legacy
-  value: .agents/skills/floo-testing-craftsmanship/references/examples.md
+  value: .agents/skills/floo-testing-craftsmanship/references/rule01.example.md
   runtime: null
   scope: project
   owners:
   - .
   active_owner: .
-  content_hash: sha256:0a9cf62cc6549e2075686b000c97d712d461daf03bebfbd5ed0a7f76aa71eba4
+  content_hash: sha256:d09033de2adc4ff6a923e62a78aa0afb6164a2718231d190d331290443633556
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/floo-testing-craftsmanship/references/rule02.example.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:4a27f34fdfc1cb1a71cc5410f9707260e438abb79be1999f31ca74f057b9a108
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/floo-testing-craftsmanship/references/rule03.example.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:6e813001d01ef5432f0f18b586fac43537b40d7043410edc2a0b647d26ebcda8
 - kind: project-relative
   target: legacy
   value: .agents/skills/floo-verify-precommitall
@@ -6819,7 +7143,9 @@ deployments:
 local_deployed_files:
 - .agents/skills/floo-android-craftsmanship
 - .agents/skills/floo-android-craftsmanship/SKILL.md
-- .agents/skills/floo-android-craftsmanship/references/examples.md
+- .agents/skills/floo-android-craftsmanship/references/rule01.example.md
+- .agents/skills/floo-android-craftsmanship/references/rule02.example.md
+- .agents/skills/floo-android-craftsmanship/references/rule03.example.md
 - .agents/skills/floo-boilerplategit
 - .agents/skills/floo-boilerplategit/SKILL.md
 - .agents/skills/floo-boilerplategit/references/agents.md
@@ -6843,17 +7169,33 @@ local_deployed_files:
 - .agents/skills/floo-data2viz/SKILL.md
 - .agents/skills/floo-devops-craftsmanship
 - .agents/skills/floo-devops-craftsmanship/SKILL.md
-- .agents/skills/floo-devops-craftsmanship/references/examples.md
+- .agents/skills/floo-devops-craftsmanship/references/rule01.example.md
+- .agents/skills/floo-devops-craftsmanship/references/rule02.example.md
 - .agents/skills/floo-ios-craftsmanship
 - .agents/skills/floo-ios-craftsmanship/SKILL.md
-- .agents/skills/floo-ios-craftsmanship/references/example-inline.md
-- .agents/skills/floo-ios-craftsmanship/references/examples.md
+- .agents/skills/floo-ios-craftsmanship/references/rule01.example.md
+- .agents/skills/floo-ios-craftsmanship/references/rule02.example.md
+- .agents/skills/floo-ios-craftsmanship/references/rule03.example.md
 - .agents/skills/floo-software-craftsmanship
 - .agents/skills/floo-software-craftsmanship/SKILL.md
-- .agents/skills/floo-software-craftsmanship/references/examples.md
+- .agents/skills/floo-software-craftsmanship/references/rule01.example.md
+- .agents/skills/floo-software-craftsmanship/references/rule02.example.md
+- .agents/skills/floo-software-craftsmanship/references/rule03.example.md
+- .agents/skills/floo-software-craftsmanship/references/rule04.example.md
+- .agents/skills/floo-software-craftsmanship/references/rule05.example.md
+- .agents/skills/floo-software-craftsmanship/references/rule06.example.md
+- .agents/skills/floo-software-craftsmanship/references/rule07.example.md
+- .agents/skills/floo-software-craftsmanship/references/rule08.example.md
+- .agents/skills/floo-software-craftsmanship/references/rule09.example.md
+- .agents/skills/floo-software-craftsmanship/references/rule10.example.md
+- .agents/skills/floo-software-craftsmanship/references/rule11.example.md
+- .agents/skills/floo-software-craftsmanship/references/rule12.example.md
+- .agents/skills/floo-software-craftsmanship/references/rule13.example.md
 - .agents/skills/floo-testing-craftsmanship
 - .agents/skills/floo-testing-craftsmanship/SKILL.md
-- .agents/skills/floo-testing-craftsmanship/references/examples.md
+- .agents/skills/floo-testing-craftsmanship/references/rule01.example.md
+- .agents/skills/floo-testing-craftsmanship/references/rule02.example.md
+- .agents/skills/floo-testing-craftsmanship/references/rule03.example.md
 - .agents/skills/floo-verify-precommitall
 - .agents/skills/floo-verify-precommitall/SKILL.md
 - .claude/agents/floo-coder.md
@@ -6862,7 +7204,9 @@ local_deployed_files:
 - .claude/commands/floo-run-precommit-all.md
 - .claude/skills/floo-android-craftsmanship
 - .claude/skills/floo-android-craftsmanship/SKILL.md
-- .claude/skills/floo-android-craftsmanship/references/examples.md
+- .claude/skills/floo-android-craftsmanship/references/rule01.example.md
+- .claude/skills/floo-android-craftsmanship/references/rule02.example.md
+- .claude/skills/floo-android-craftsmanship/references/rule03.example.md
 - .claude/skills/floo-boilerplategit
 - .claude/skills/floo-boilerplategit/SKILL.md
 - .claude/skills/floo-boilerplategit/references/agents.md
@@ -6886,17 +7230,33 @@ local_deployed_files:
 - .claude/skills/floo-data2viz/SKILL.md
 - .claude/skills/floo-devops-craftsmanship
 - .claude/skills/floo-devops-craftsmanship/SKILL.md
-- .claude/skills/floo-devops-craftsmanship/references/examples.md
+- .claude/skills/floo-devops-craftsmanship/references/rule01.example.md
+- .claude/skills/floo-devops-craftsmanship/references/rule02.example.md
 - .claude/skills/floo-ios-craftsmanship
 - .claude/skills/floo-ios-craftsmanship/SKILL.md
-- .claude/skills/floo-ios-craftsmanship/references/example-inline.md
-- .claude/skills/floo-ios-craftsmanship/references/examples.md
+- .claude/skills/floo-ios-craftsmanship/references/rule01.example.md
+- .claude/skills/floo-ios-craftsmanship/references/rule02.example.md
+- .claude/skills/floo-ios-craftsmanship/references/rule03.example.md
 - .claude/skills/floo-software-craftsmanship
 - .claude/skills/floo-software-craftsmanship/SKILL.md
-- .claude/skills/floo-software-craftsmanship/references/examples.md
+- .claude/skills/floo-software-craftsmanship/references/rule01.example.md
+- .claude/skills/floo-software-craftsmanship/references/rule02.example.md
+- .claude/skills/floo-software-craftsmanship/references/rule03.example.md
+- .claude/skills/floo-software-craftsmanship/references/rule04.example.md
+- .claude/skills/floo-software-craftsmanship/references/rule05.example.md
+- .claude/skills/floo-software-craftsmanship/references/rule06.example.md
+- .claude/skills/floo-software-craftsmanship/references/rule07.example.md
+- .claude/skills/floo-software-craftsmanship/references/rule08.example.md
+- .claude/skills/floo-software-craftsmanship/references/rule09.example.md
+- .claude/skills/floo-software-craftsmanship/references/rule10.example.md
+- .claude/skills/floo-software-craftsmanship/references/rule11.example.md
+- .claude/skills/floo-software-craftsmanship/references/rule12.example.md
+- .claude/skills/floo-software-craftsmanship/references/rule13.example.md
 - .claude/skills/floo-testing-craftsmanship
 - .claude/skills/floo-testing-craftsmanship/SKILL.md
-- .claude/skills/floo-testing-craftsmanship/references/examples.md
+- .claude/skills/floo-testing-craftsmanship/references/rule01.example.md
+- .claude/skills/floo-testing-craftsmanship/references/rule02.example.md
+- .claude/skills/floo-testing-craftsmanship/references/rule03.example.md
 - .claude/skills/floo-verify-precommitall
 - .claude/skills/floo-verify-precommitall/SKILL.md
 - .codex/agents/floo-coder.toml
@@ -6906,8 +7266,10 @@ local_deployed_files:
 - .github/prompts/floo-run-boilerplategit.prompt.md
 - .github/prompts/floo-run-precommit-all.prompt.md
 local_deployed_file_hashes:
-  .agents/skills/floo-android-craftsmanship/SKILL.md: sha256:309cace2e85e4e984cb61e2b8d323ce25e35ac5804510fb8d287a25ac33eb395
-  .agents/skills/floo-android-craftsmanship/references/examples.md: sha256:3900d2c5dfba5673bd3b3d7c6d6c23aacf0579702708ebde4108d7933c127430
+  .agents/skills/floo-android-craftsmanship/SKILL.md: sha256:6f779300d6ab8b3b3cfef86cf962985f49f19e762c0bb1543f5ea3cec370096c
+  .agents/skills/floo-android-craftsmanship/references/rule01.example.md: sha256:213f3646e5d89fbbcae12e088baabbdb1ba166114df6862b295370483a13fe82
+  .agents/skills/floo-android-craftsmanship/references/rule02.example.md: sha256:e057e4cec6d9385991a6012ef995251ba2ad1c30cf8f054326ef13ff6af5bae4
+  .agents/skills/floo-android-craftsmanship/references/rule03.example.md: sha256:a6bb5e688b332455017f3b4955ad31712dced41a4abc26b0d7e7b2eba62f55d6
   .agents/skills/floo-boilerplategit/SKILL.md: sha256:41fc6b50f39058f043da4fd5a07374c31c1cf77e0e603ad048a86f9d2ca8f511
   .agents/skills/floo-boilerplategit/references/agents.md: sha256:de3c136c8ce8878f88e3fb8b53d8010ed6567a6161d28b86a3900f6d257efaac
   .agents/skills/floo-boilerplategit/references/apm.md: sha256:f203115ac74f175ade4ab3252f0390c68f7ade626044a089fabad7f54d0f557c
@@ -6925,22 +7287,40 @@ local_deployed_file_hashes:
   .agents/skills/floo-conventional-comments/SKILL.md: sha256:7795b9f4cfb46f2ee17dde467015ebd2b71507357eb25cfeccd69559cbaebf80
   .agents/skills/floo-conventional-comments/refrences/matrix.md: sha256:89de6d4c36c175a644c5dec7ececa96f2cf06501ebcfbe3e3cbb51aeb9610488
   .agents/skills/floo-data2viz/SKILL.md: sha256:ba19563a2a1b2a2976aef2eddec69d9086ab4bf9fd3628e269ce17e5e2277bb4
-  .agents/skills/floo-devops-craftsmanship/SKILL.md: sha256:befae4e27ab6d3c6dbe3c83adb150abf781bca79e6eec3ecd258fa66ca6d471b
-  .agents/skills/floo-devops-craftsmanship/references/examples.md: sha256:1e89ce761164862d2f31c41c6392d737ac4c84d5fbbc0af939fb241aa4fe8978
-  .agents/skills/floo-ios-craftsmanship/SKILL.md: sha256:7fb040fa42f5ae6342e14ea305b2ec59c35112d2ca23f27d8ae4d8565e2ce523
-  .agents/skills/floo-ios-craftsmanship/references/example-inline.md: sha256:f7e52879085b638b0dcb6a47e869e1922c0adc7418afe4fa0933ba568f818549
-  .agents/skills/floo-ios-craftsmanship/references/examples.md: sha256:578cfbb9f3338687fce0ad4b84c9088787388e4a19a8e966513071ece00b96af
-  .agents/skills/floo-software-craftsmanship/SKILL.md: sha256:abcfa746b6d6cddab3b8d0dd44a18562c491123ee8f05d5cacb5707ae0293f63
-  .agents/skills/floo-software-craftsmanship/references/examples.md: sha256:973ea27ca957fbc949c03c048332085390dddf120992a157dc0ba22c37e779a1
-  .agents/skills/floo-testing-craftsmanship/SKILL.md: sha256:bbf380085c578827f80c8a942defe77e1d12e720a6a30202972feeda4f6b62da
-  .agents/skills/floo-testing-craftsmanship/references/examples.md: sha256:0a9cf62cc6549e2075686b000c97d712d461daf03bebfbd5ed0a7f76aa71eba4
+  .agents/skills/floo-devops-craftsmanship/SKILL.md: sha256:0c3daca8c9553093647eb4adb884f0446df04ec009db322fc11147693bdc65c7
+  .agents/skills/floo-devops-craftsmanship/references/rule01.example.md: sha256:b15be535da19ca51db7b9cfebd6945c62a3817309a17b3eb348c2832443ebf14
+  .agents/skills/floo-devops-craftsmanship/references/rule02.example.md: sha256:693dc44c5d93b3950e41209f47109a4ff085c168c4ec187adab47cd668e7a459
+  .agents/skills/floo-ios-craftsmanship/SKILL.md: sha256:2e1605d2b2fd042e73624b0d1c1a9de108b437876a604636b8eeafbe68108414
+  .agents/skills/floo-ios-craftsmanship/references/rule01.example.md: sha256:ba9b18e34251b7a6e437023acde192648c1ee812c4225385377747d0121a496a
+  .agents/skills/floo-ios-craftsmanship/references/rule02.example.md: sha256:c33f87b53b992bcbd5e797e16100c32527d8a016bd57c133afa796d17a009dc0
+  .agents/skills/floo-ios-craftsmanship/references/rule03.example.md: sha256:f7e52879085b638b0dcb6a47e869e1922c0adc7418afe4fa0933ba568f818549
+  .agents/skills/floo-software-craftsmanship/SKILL.md: sha256:177b6ef36076362468c63149de942e7b4300ce495d32fd7fd48eb8971b97107a
+  .agents/skills/floo-software-craftsmanship/references/rule01.example.md: sha256:5b3a2a565a16c94c62da89d507a4dc02fff26f35180fe8f1adcfafbbecf5073a
+  .agents/skills/floo-software-craftsmanship/references/rule02.example.md: sha256:50811f852797dd9f8db17f7e82d2143df5be80ab16ea3bee343ad89e27f1415f
+  .agents/skills/floo-software-craftsmanship/references/rule03.example.md: sha256:832281d06b282b1c49e686ba1d3ae3bccf93315f7743c1b255480d73c5eeef69
+  .agents/skills/floo-software-craftsmanship/references/rule04.example.md: sha256:78cc3a6e70882d7907ef04569c4a8daef4539b4b2a83c56e3d09f7ed435974cf
+  .agents/skills/floo-software-craftsmanship/references/rule05.example.md: sha256:acb095551a6156024bde3d62faab1bfcd9c52964b277e332e66f0d0f05c8f0be
+  .agents/skills/floo-software-craftsmanship/references/rule06.example.md: sha256:e306672a3cdc55dcc98e282afc2447f0e79c35232abef35a8a53b2793ca66606
+  .agents/skills/floo-software-craftsmanship/references/rule07.example.md: sha256:86c73d5982ed83762a19a6519e68f89b0fe5e219e521a2d580ea690f578170fe
+  .agents/skills/floo-software-craftsmanship/references/rule08.example.md: sha256:8b02ed4c032cb7885d525c04b6f09de7686c1d49e189cf39b508e349939d1dbd
+  .agents/skills/floo-software-craftsmanship/references/rule09.example.md: sha256:4c42081e8974f508cac6a1a40266020d34e693a5c222aaec8378c74fd0bbf2e0
+  .agents/skills/floo-software-craftsmanship/references/rule10.example.md: sha256:27c472b94829b8e24c5173657290c579624bf2aa009299f47e4fb1a820deeab4
+  .agents/skills/floo-software-craftsmanship/references/rule11.example.md: sha256:e8168353a83102b3493898363348fc05871812829365cc36b2c4ad94f6b47b1c
+  .agents/skills/floo-software-craftsmanship/references/rule12.example.md: sha256:b0f470c6d83d0b38368ed79290a25ec75617bd2c0ed86d949adb2cb490d06a30
+  .agents/skills/floo-software-craftsmanship/references/rule13.example.md: sha256:794c5e0c307e2a1f7ec4520efd8dc37e6ca4b4cff840d452c3b3354de760797e
+  .agents/skills/floo-testing-craftsmanship/SKILL.md: sha256:c7e529fe5f3b090a73cf7b77c65f210a5470098a5da02844d22b21b0861754a0
+  .agents/skills/floo-testing-craftsmanship/references/rule01.example.md: sha256:d09033de2adc4ff6a923e62a78aa0afb6164a2718231d190d331290443633556
+  .agents/skills/floo-testing-craftsmanship/references/rule02.example.md: sha256:4a27f34fdfc1cb1a71cc5410f9707260e438abb79be1999f31ca74f057b9a108
+  .agents/skills/floo-testing-craftsmanship/references/rule03.example.md: sha256:6e813001d01ef5432f0f18b586fac43537b40d7043410edc2a0b647d26ebcda8
   .agents/skills/floo-verify-precommitall/SKILL.md: sha256:57ab5b22c6badd0aeeed6a95f09d497a184b0baba41c56970487597bfe35138a
   .claude/agents/floo-coder.md: sha256:8d3bc0d835b97ab0a6971078ee6748d4151ef10214d4de2ae469b4b4a9a16da3
   .claude/agents/floo-devops.md: sha256:1304d3f2965cd33a3dcdf71f048b210e9d5528b61c740734b81b8ff4545e0aa5
   .claude/commands/floo-run-boilerplategit.md: sha256:bdefaee9b6fc256b2abb5bcdeb99193afb4c8de2b3b0b0b0cef2ea0df1878085
   .claude/commands/floo-run-precommit-all.md: sha256:a9685b0221e6639a6ec484bbf3a1b3d23176f5f0c0ead5441ed9b2169dea2352
-  .claude/skills/floo-android-craftsmanship/SKILL.md: sha256:309cace2e85e4e984cb61e2b8d323ce25e35ac5804510fb8d287a25ac33eb395
-  .claude/skills/floo-android-craftsmanship/references/examples.md: sha256:3900d2c5dfba5673bd3b3d7c6d6c23aacf0579702708ebde4108d7933c127430
+  .claude/skills/floo-android-craftsmanship/SKILL.md: sha256:6f779300d6ab8b3b3cfef86cf962985f49f19e762c0bb1543f5ea3cec370096c
+  .claude/skills/floo-android-craftsmanship/references/rule01.example.md: sha256:213f3646e5d89fbbcae12e088baabbdb1ba166114df6862b295370483a13fe82
+  .claude/skills/floo-android-craftsmanship/references/rule02.example.md: sha256:e057e4cec6d9385991a6012ef995251ba2ad1c30cf8f054326ef13ff6af5bae4
+  .claude/skills/floo-android-craftsmanship/references/rule03.example.md: sha256:a6bb5e688b332455017f3b4955ad31712dced41a4abc26b0d7e7b2eba62f55d6
   .claude/skills/floo-boilerplategit/SKILL.md: sha256:41fc6b50f39058f043da4fd5a07374c31c1cf77e0e603ad048a86f9d2ca8f511
   .claude/skills/floo-boilerplategit/references/agents.md: sha256:de3c136c8ce8878f88e3fb8b53d8010ed6567a6161d28b86a3900f6d257efaac
   .claude/skills/floo-boilerplategit/references/apm.md: sha256:f203115ac74f175ade4ab3252f0390c68f7ade626044a089fabad7f54d0f557c
@@ -6958,15 +7338,31 @@ local_deployed_file_hashes:
   .claude/skills/floo-conventional-comments/SKILL.md: sha256:7795b9f4cfb46f2ee17dde467015ebd2b71507357eb25cfeccd69559cbaebf80
   .claude/skills/floo-conventional-comments/refrences/matrix.md: sha256:89de6d4c36c175a644c5dec7ececa96f2cf06501ebcfbe3e3cbb51aeb9610488
   .claude/skills/floo-data2viz/SKILL.md: sha256:ba19563a2a1b2a2976aef2eddec69d9086ab4bf9fd3628e269ce17e5e2277bb4
-  .claude/skills/floo-devops-craftsmanship/SKILL.md: sha256:befae4e27ab6d3c6dbe3c83adb150abf781bca79e6eec3ecd258fa66ca6d471b
-  .claude/skills/floo-devops-craftsmanship/references/examples.md: sha256:1e89ce761164862d2f31c41c6392d737ac4c84d5fbbc0af939fb241aa4fe8978
-  .claude/skills/floo-ios-craftsmanship/SKILL.md: sha256:7fb040fa42f5ae6342e14ea305b2ec59c35112d2ca23f27d8ae4d8565e2ce523
-  .claude/skills/floo-ios-craftsmanship/references/example-inline.md: sha256:f7e52879085b638b0dcb6a47e869e1922c0adc7418afe4fa0933ba568f818549
-  .claude/skills/floo-ios-craftsmanship/references/examples.md: sha256:578cfbb9f3338687fce0ad4b84c9088787388e4a19a8e966513071ece00b96af
-  .claude/skills/floo-software-craftsmanship/SKILL.md: sha256:abcfa746b6d6cddab3b8d0dd44a18562c491123ee8f05d5cacb5707ae0293f63
-  .claude/skills/floo-software-craftsmanship/references/examples.md: sha256:973ea27ca957fbc949c03c048332085390dddf120992a157dc0ba22c37e779a1
-  .claude/skills/floo-testing-craftsmanship/SKILL.md: sha256:bbf380085c578827f80c8a942defe77e1d12e720a6a30202972feeda4f6b62da
-  .claude/skills/floo-testing-craftsmanship/references/examples.md: sha256:0a9cf62cc6549e2075686b000c97d712d461daf03bebfbd5ed0a7f76aa71eba4
+  .claude/skills/floo-devops-craftsmanship/SKILL.md: sha256:0c3daca8c9553093647eb4adb884f0446df04ec009db322fc11147693bdc65c7
+  .claude/skills/floo-devops-craftsmanship/references/rule01.example.md: sha256:b15be535da19ca51db7b9cfebd6945c62a3817309a17b3eb348c2832443ebf14
+  .claude/skills/floo-devops-craftsmanship/references/rule02.example.md: sha256:693dc44c5d93b3950e41209f47109a4ff085c168c4ec187adab47cd668e7a459
+  .claude/skills/floo-ios-craftsmanship/SKILL.md: sha256:2e1605d2b2fd042e73624b0d1c1a9de108b437876a604636b8eeafbe68108414
+  .claude/skills/floo-ios-craftsmanship/references/rule01.example.md: sha256:ba9b18e34251b7a6e437023acde192648c1ee812c4225385377747d0121a496a
+  .claude/skills/floo-ios-craftsmanship/references/rule02.example.md: sha256:c33f87b53b992bcbd5e797e16100c32527d8a016bd57c133afa796d17a009dc0
+  .claude/skills/floo-ios-craftsmanship/references/rule03.example.md: sha256:f7e52879085b638b0dcb6a47e869e1922c0adc7418afe4fa0933ba568f818549
+  .claude/skills/floo-software-craftsmanship/SKILL.md: sha256:177b6ef36076362468c63149de942e7b4300ce495d32fd7fd48eb8971b97107a
+  .claude/skills/floo-software-craftsmanship/references/rule01.example.md: sha256:5b3a2a565a16c94c62da89d507a4dc02fff26f35180fe8f1adcfafbbecf5073a
+  .claude/skills/floo-software-craftsmanship/references/rule02.example.md: sha256:50811f852797dd9f8db17f7e82d2143df5be80ab16ea3bee343ad89e27f1415f
+  .claude/skills/floo-software-craftsmanship/references/rule03.example.md: sha256:832281d06b282b1c49e686ba1d3ae3bccf93315f7743c1b255480d73c5eeef69
+  .claude/skills/floo-software-craftsmanship/references/rule04.example.md: sha256:78cc3a6e70882d7907ef04569c4a8daef4539b4b2a83c56e3d09f7ed435974cf
+  .claude/skills/floo-software-craftsmanship/references/rule05.example.md: sha256:acb095551a6156024bde3d62faab1bfcd9c52964b277e332e66f0d0f05c8f0be
+  .claude/skills/floo-software-craftsmanship/references/rule06.example.md: sha256:e306672a3cdc55dcc98e282afc2447f0e79c35232abef35a8a53b2793ca66606
+  .claude/skills/floo-software-craftsmanship/references/rule07.example.md: sha256:86c73d5982ed83762a19a6519e68f89b0fe5e219e521a2d580ea690f578170fe
+  .claude/skills/floo-software-craftsmanship/references/rule08.example.md: sha256:8b02ed4c032cb7885d525c04b6f09de7686c1d49e189cf39b508e349939d1dbd
+  .claude/skills/floo-software-craftsmanship/references/rule09.example.md: sha256:4c42081e8974f508cac6a1a40266020d34e693a5c222aaec8378c74fd0bbf2e0
+  .claude/skills/floo-software-craftsmanship/references/rule10.example.md: sha256:27c472b94829b8e24c5173657290c579624bf2aa009299f47e4fb1a820deeab4
+  .claude/skills/floo-software-craftsmanship/references/rule11.example.md: sha256:e8168353a83102b3493898363348fc05871812829365cc36b2c4ad94f6b47b1c
+  .claude/skills/floo-software-craftsmanship/references/rule12.example.md: sha256:b0f470c6d83d0b38368ed79290a25ec75617bd2c0ed86d949adb2cb490d06a30
+  .claude/skills/floo-software-craftsmanship/references/rule13.example.md: sha256:794c5e0c307e2a1f7ec4520efd8dc37e6ca4b4cff840d452c3b3354de760797e
+  .claude/skills/floo-testing-craftsmanship/SKILL.md: sha256:c7e529fe5f3b090a73cf7b77c65f210a5470098a5da02844d22b21b0861754a0
+  .claude/skills/floo-testing-craftsmanship/references/rule01.example.md: sha256:d09033de2adc4ff6a923e62a78aa0afb6164a2718231d190d331290443633556
+  .claude/skills/floo-testing-craftsmanship/references/rule02.example.md: sha256:4a27f34fdfc1cb1a71cc5410f9707260e438abb79be1999f31ca74f057b9a108
+  .claude/skills/floo-testing-craftsmanship/references/rule03.example.md: sha256:6e813001d01ef5432f0f18b586fac43537b40d7043410edc2a0b647d26ebcda8
   .claude/skills/floo-verify-precommitall/SKILL.md: sha256:57ab5b22c6badd0aeeed6a95f09d497a184b0baba41c56970487597bfe35138a
   .codex/agents/floo-coder.toml: sha256:c0abbd35798a0720e7ddd3bcc1f81203242f027aadf8128b2f1d097efb2c7f00
   .codex/agents/floo-devops.toml: sha256:20930c971e5a1d7ae98b628fe2539ef31ee87c86237f7dc6b989b8637cb0ed4f
