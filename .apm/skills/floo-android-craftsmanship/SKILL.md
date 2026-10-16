@@ -21,8 +21,9 @@ metadata:
 > craftsmanship
 
 Treat the rules below as engineering guidance for AI coding assistants, code
-reviewers, and software engineers. For comprehensive examples and deep dives,
-see [references/examples.md](references/examples.md).
+reviewers, and software engineers. Each rule links to its own
+reference file in [references/](references/) with extended examples and deep
+dives.
 
 ## Rule 1: Never Duplicate UI State Variables
 
@@ -54,7 +55,7 @@ class UserListViewModel : ViewModel() {
 ```
 
 *See
-[references/examples.md#rule-1-never-duplicate-ui-state-variables](references/examples.md#rule-1-never-duplicate-ui-state-variables)
+[references/rule01.example.md](references/rule01.example.md)
 for detailed reference cases.*
 
 ______________________________________________________________________
@@ -91,7 +92,7 @@ fun UserScreen(viewModel: UserViewModel = hiltViewModel()) {
 ```
 
 *See
-[references/examples.md#rule-2-strictly-follow-modern-android-standard-architecture](references/examples.md#rule-2-strictly-follow-modern-android-standard-architecture)
+[references/rule02.example.md](references/rule02.example.md)
 for detailed reference cases.*
 
 ______________________________________________________________________
@@ -116,5 +117,5 @@ fun Modifier.defaultPadding(): Modifier = this.padding(16.dp)
 ```
 
 *See
-[references/examples.md#rule-3-stateless-viewmodifiers-belong-in-extension-helpers-compose](references/examples.md#rule-3-stateless-viewmodifiers-belong-in-extension-helpers-compose)
+[references/rule03.example.md](references/rule03.example.md)
 for detailed reference cases.*

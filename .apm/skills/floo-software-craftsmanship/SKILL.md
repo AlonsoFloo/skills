@@ -22,8 +22,9 @@ metadata:
 
 Treat the rules below as engineering guidance for AI coding assistants, code
 reviewers, and software engineers. When a rule is context-dependent, prefer
-explicit domain reasoning over mechanical application. For comprehensive
-examples and deep dives, see [references/examples.md](references/examples.md).
+explicit domain reasoning over mechanical application. Each rule links to its own
+reference file in [references/](references/) with extended examples and deep
+dives.
 
 ## Rule 1: Avoid Booleans for Complex State or Results
 
@@ -54,7 +55,7 @@ sealed class PageState {
 ```
 
 *See
-[references/examples.md#rule-1-avoid-booleans-for-complex-state-or-results](references/examples.md#rule-1-avoid-booleans-for-complex-state-or-results)
+[references/rule01.example.md](references/rule01.example.md)
 for detailed reference cases.*
 
 ______________________________________________________________________
@@ -92,7 +93,7 @@ class PaymentProcessor(private val strategies: Map<PaymentType, PaymentStrategy>
 ```
 
 *See
-[references/examples.md#rule-2-prefer-strategy-pattern-over-unbounded-switches](references/examples.md#rule-2-prefer-strategy-pattern-over-unbounded-switches)
+[references/rule02.example.md](references/rule02.example.md)
 for detailed reference cases.*
 
 ______________________________________________________________________
@@ -130,7 +131,7 @@ class NetworkRequest private constructor(
 ```
 
 *See
-[references/examples.md#rule-3-enforce-immutability-post-construction](references/examples.md#rule-3-enforce-immutability-post-construction)
+[references/rule03.example.md](references/rule03.example.md)
 for detailed reference cases.*
 
 ______________________________________________________________________
@@ -155,7 +156,7 @@ than parallelizing already fast components.
 ```
 
 *See
-[references/examples.md#rule-4-amdahls-law](references/examples.md#rule-4-amdahls-law)
+[references/rule04.example.md](references/rule04.example.md)
 for detailed reference cases.*
 
 ______________________________________________________________________
@@ -179,7 +180,7 @@ val zipCode = user.getZipCode()
 ```
 
 *See
-[references/examples.md#rule-5-law-of-demeter-principle-of-least-knowledge](references/examples.md#rule-5-law-of-demeter-principle-of-least-knowledge)
+[references/rule05.example.md](references/rule05.example.md)
 for detailed reference cases.*
 
 ______________________________________________________________________
@@ -207,7 +208,7 @@ class EmailNotifier { fun sendWelcome(user: User) { ... } }
 ```
 
 *See
-[references/examples.md#rule-6-solid-principles](references/examples.md#rule-6-solid-principles)
+[references/rule06.example.md](references/rule06.example.md)
 for detailed reference cases.*
 
 ______________________________________________________________________
@@ -240,7 +241,7 @@ data class NonEmptyList<out T>(val head: T, val tail: List<T>) {
 ```
 
 *See
-[references/examples.md#rule-7-parse-dont-validate](references/examples.md#rule-7-parse-dont-validate)
+[references/rule07.example.md](references/rule07.example.md)
 for detailed reference cases.*
 
 ______________________________________________________________________
@@ -267,7 +268,7 @@ data class UserResponse(val id: String, val username: String, val email: String 
 ```
 
 *See
-[references/examples.md#rule-8-postels-law-robustness-principle](references/examples.md#rule-8-postels-law-robustness-principle)
+[references/rule08.example.md](references/rule08.example.md)
 for detailed reference cases.*
 
 ______________________________________________________________________
@@ -293,7 +294,7 @@ reference, and condition for removal.
 ```
 
 *See
-[references/examples.md#rule-9-isolate-quirky-workarounds-in-dedicated-spaces](references/examples.md#rule-9-isolate-quirky-workarounds-in-dedicated-spaces)
+[references/rule09.example.md](references/rule09.example.md)
 for detailed reference cases.*
 
 ______________________________________________________________________
@@ -317,7 +318,7 @@ until empirical benchmarks prove a bottleneck exists.
 ```
 
 *See
-[references/examples.md#rule-10-knuths-optimization-principle](references/examples.md#rule-10-knuths-optimization-principle)
+[references/rule10.example.md](references/rule10.example.md)
 for detailed reference cases.*
 
 ______________________________________________________________________
@@ -341,7 +342,7 @@ class SimpleUserRepository(private val api: UserApi) { ... }
 ```
 
 *See
-[references/examples.md#rule-11-yagni-you-arent-gonna-need-it](references/examples.md#rule-11-yagni-you-arent-gonna-need-it)
+[references/rule11.example.md](references/rule11.example.md)
 for detailed reference cases.*
 
 ______________________________________________________________________
@@ -393,7 +394,7 @@ Use the most natural scope for the language and domain:
 
 A top-level declaration should therefore be treated as an explicit architectural decision, not the default place to put code.
 
-*See [references/examples.md#rule-12-prefer-scoped-declarations-over-top-level-state-and-behavior](references/examples.md#rule-12-prefer-scoped-declarations-over-top-level-state-and-behavior) for examples in Swift, Kotlin, JavaScript, Java, and Python.*
+*See [references/rule12.example.md](references/rule12.example.md) for examples in Swift, Kotlin, JavaScript, Java, and Python.*
 
 ______________________________________________________________________
 
@@ -436,5 +437,5 @@ In one sentence: if a closure exists to receive an asynchronous result, it must
 become a return type.
 
 *See
-[references/examples.md#rule-13-prefer-structured-concurrency-over-callbacks](references/examples.md#rule-13-prefer-structured-concurrency-over-callbacks)
+[references/rule13.example.md](references/rule13.example.md)
 for detailed reference cases.*
