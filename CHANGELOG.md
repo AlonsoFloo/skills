@@ -1,5 +1,15 @@
 # Changelog
 
+## [2.9.0](https://github.com/AlonsoFloo/skills/compare/v2.8.1...v2.9.0) (2026-10-16)
+
+
+### Features
+
+* **agents:** AI. allow commit and push in cloud agent sessions ([#65](https://github.com/AlonsoFloo/skills/issues/65)) ([14ff884](https://github.com/AlonsoFloo/skills/commit/14ff884b0956a59380049e56ce29c3ad4e91cc75))
+* **floo-software-craftsmanship:** Add rule 13 on structured concurrency over callbacks ([#66](https://github.com/AlonsoFloo/skills/issues/66)) ([7c576c3](https://github.com/AlonsoFloo/skills/commit/7c576c30b0a0765b84e19232d48e4deb5363cf7b))
+* **skills:** Add floo-data2viz skill ([#62](https://github.com/AlonsoFloo/skills/issues/62)) ([d41e855](https://github.com/AlonsoFloo/skills/commit/d41e8558a0384182431e6827124c7b63a6014bf9))
+* **skills:** AI. split craftsmanship examples into one file per rule ([#64](https://github.com/AlonsoFloo/skills/issues/64)) ([9fa7fe1](https://github.com/AlonsoFloo/skills/commit/9fa7fe1c45e0fa0288ff37f42ae36c8c553a3211))
+
 ## [2.8.1](https://github.com/AlonsoFloo/skills/compare/v2.8.0...v2.8.1) (2026-10-11)
 
 
