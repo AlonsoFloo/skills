@@ -4313,7 +4313,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:a45e3b7cee4ec457d7cb26b449b603ea6c98423bd0c45a54531500b5acee36d3
+  content_hash: sha256:3b2bb3a33e6b19d7d010cd746c03889debe6ee86f1998473b1634e3827a0c73c
 - kind: project-relative
   target: claude
   value: .claude/skills/floo-software-craftsmanship/references/examples.md
@@ -4322,7 +4322,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:4604eece7de28e5281bfcf092dd79cac84df5607b7906b90a4f18333f1ffa3ef
+  content_hash: sha256:973ea27ca957fbc949c03c048332085390dddf120992a157dc0ba22c37e779a1
 - kind: project-relative
   target: claude
   value: .claude/skills/floo-testing-craftsmanship
@@ -6761,7 +6761,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:a45e3b7cee4ec457d7cb26b449b603ea6c98423bd0c45a54531500b5acee36d3
+  content_hash: sha256:3b2bb3a33e6b19d7d010cd746c03889debe6ee86f1998473b1634e3827a0c73c
 - kind: project-relative
   target: legacy
   value: .agents/skills/floo-software-craftsmanship/references/examples.md
@@ -6770,7 +6770,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:4604eece7de28e5281bfcf092dd79cac84df5607b7906b90a4f18333f1ffa3ef
+  content_hash: sha256:973ea27ca957fbc949c03c048332085390dddf120992a157dc0ba22c37e779a1
 - kind: project-relative
   target: legacy
   value: .agents/skills/floo-testing-craftsmanship
@@ -6930,8 +6930,8 @@ local_deployed_file_hashes:
   .agents/skills/floo-ios-craftsmanship/SKILL.md: sha256:7fb040fa42f5ae6342e14ea305b2ec59c35112d2ca23f27d8ae4d8565e2ce523
   .agents/skills/floo-ios-craftsmanship/references/example-inline.md: sha256:f7e52879085b638b0dcb6a47e869e1922c0adc7418afe4fa0933ba568f818549
   .agents/skills/floo-ios-craftsmanship/references/examples.md: sha256:578cfbb9f3338687fce0ad4b84c9088787388e4a19a8e966513071ece00b96af
-  .agents/skills/floo-software-craftsmanship/SKILL.md: sha256:a45e3b7cee4ec457d7cb26b449b603ea6c98423bd0c45a54531500b5acee36d3
-  .agents/skills/floo-software-craftsmanship/references/examples.md: sha256:4604eece7de28e5281bfcf092dd79cac84df5607b7906b90a4f18333f1ffa3ef
+  .agents/skills/floo-software-craftsmanship/SKILL.md: sha256:3b2bb3a33e6b19d7d010cd746c03889debe6ee86f1998473b1634e3827a0c73c
+  .agents/skills/floo-software-craftsmanship/references/examples.md: sha256:973ea27ca957fbc949c03c048332085390dddf120992a157dc0ba22c37e779a1
   .agents/skills/floo-testing-craftsmanship/SKILL.md: sha256:bbf380085c578827f80c8a942defe77e1d12e720a6a30202972feeda4f6b62da
   .agents/skills/floo-testing-craftsmanship/references/examples.md: sha256:0a9cf62cc6549e2075686b000c97d712d461daf03bebfbd5ed0a7f76aa71eba4
   .agents/skills/floo-verify-precommitall/SKILL.md: sha256:57ab5b22c6badd0aeeed6a95f09d497a184b0baba41c56970487597bfe35138a
@@ -6963,8 +6963,8 @@ local_deployed_file_hashes:
   .claude/skills/floo-ios-craftsmanship/SKILL.md: sha256:7fb040fa42f5ae6342e14ea305b2ec59c35112d2ca23f27d8ae4d8565e2ce523
   .claude/skills/floo-ios-craftsmanship/references/example-inline.md: sha256:f7e52879085b638b0dcb6a47e869e1922c0adc7418afe4fa0933ba568f818549
   .claude/skills/floo-ios-craftsmanship/references/examples.md: sha256:578cfbb9f3338687fce0ad4b84c9088787388e4a19a8e966513071ece00b96af
-  .claude/skills/floo-software-craftsmanship/SKILL.md: sha256:a45e3b7cee4ec457d7cb26b449b603ea6c98423bd0c45a54531500b5acee36d3
-  .claude/skills/floo-software-craftsmanship/references/examples.md: sha256:4604eece7de28e5281bfcf092dd79cac84df5607b7906b90a4f18333f1ffa3ef
+  .claude/skills/floo-software-craftsmanship/SKILL.md: sha256:3b2bb3a33e6b19d7d010cd746c03889debe6ee86f1998473b1634e3827a0c73c
+  .claude/skills/floo-software-craftsmanship/references/examples.md: sha256:973ea27ca957fbc949c03c048332085390dddf120992a157dc0ba22c37e779a1
   .claude/skills/floo-testing-craftsmanship/SKILL.md: sha256:bbf380085c578827f80c8a942defe77e1d12e720a6a30202972feeda4f6b62da
   .claude/skills/floo-testing-craftsmanship/references/examples.md: sha256:0a9cf62cc6549e2075686b000c97d712d461daf03bebfbd5ed0a7f76aa71eba4
   .claude/skills/floo-verify-precommitall/SKILL.md: sha256:57ab5b22c6badd0aeeed6a95f09d497a184b0baba41c56970487597bfe35138a
