@@ -394,3 +394,47 @@ Use the most natural scope for the language and domain:
 A top-level declaration should therefore be treated as an explicit architectural decision, not the default place to put code.
 
 *See [references/examples.md#rule-12-prefer-scoped-declarations-over-top-level-state-and-behavior](references/examples.md#rule-12-prefer-scoped-declarations-over-top-level-state-and-behavior) for examples in Swift, Kotlin, JavaScript, Java, and Python.*
+
+______________________________________________________________________
+
+## Rule 13: Prefer Structured Concurrency Over Callbacks
+
+**Description:** In data layers, asynchronous results travel through the return
+type. With structured concurrency the caller owns the lifecycle, errors
+propagate naturally, and the signature states exactly what it produces.
+
+The rules:
+
+- Single result → `suspend fun` (Kotlin) / `async throws` (Swift) returning the
+  value.
+- Stream of events (progress, updates, observation) → `Flow<T>` (Kotlin) /
+  `AsyncStream<T>` (Swift) as the return type.
+- Synchronous closures (`map`, `filter`, configuration, DSLs, builders) → OK.
+- UI (Compose, SwiftUI) → OK and idiomatic: `onClick`, `onValueChange` lift a UI
+  event from child to parent, with no data logic.
+- Callback-based third-party libraries (e.g. Ktor `onDownload`) → consume them
+  internally, but wrap them in the data source to expose a `Flow`. The rule
+  applies to your API, not to your dependencies.
+
+**❌ DON'T**
+
+```kotlin
+fun getUser(id: String, onResult: (User) -> Unit, onError: (Throwable) -> Unit)
+
+fun download(url: String, onProgress: (Float) -> Unit, onDone: (File) -> Unit)
+```
+
+**✅ DO**
+
+```kotlin
+suspend fun getUser(id: String): User
+
+fun download(url: String): Flow<DownloadState>
+```
+
+In one sentence: if a closure exists to receive an asynchronous result, it must
+become a return type.
+
+*See
+[references/examples.md#rule-13-prefer-structured-concurrency-over-callbacks](references/examples.md#rule-13-prefer-structured-concurrency-over-callbacks)
+for detailed reference cases.*
