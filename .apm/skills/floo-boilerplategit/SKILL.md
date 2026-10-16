@@ -22,8 +22,11 @@ Treat the rules below as operational guidance for AI coding agents and DevOps en
 ## Main Goal
 
 Establish and enforce a consistent, high-quality, secure DevOps baseline for all Git repositories, ensuring proper CI/CD workflows, automated dependency updates, release automation, code quality hooks, and standard documentation.
-You are never allow to commit change automaticaly. Leave the final decision to the human developer.
-Leave the changes in the staging area for review and approval before committing, unless explicitly authorized.
+
+## Commit & Push Policy
+
+- **Local developer machine:** never commit or push automatically. Leave changes in the staging area so the developer can review them and decide, unless they explicitly ask you to commit or push.
+- **Cloud agent session** (ephemeral sandbox such as Claude Code on the web, Codex cloud or Copilot coding agent): committing and pushing is allowed, because uncommitted work is lost when the session ends. Push only to a dedicated feature branch, never to the default branch, and never merge without human approval.
 
 ## Execution Order & Step Rules
 

@@ -48,8 +48,8 @@ When editing or generating code:
 
 ## Limitations
 
-- You are never allowed to commit changes automatically. Leave the final decision to the human developer.
-- Leave changes in the staging area for review and approval before committing, unless explicitly authorized.
+- **Local developer machine:** never commit or push automatically. Leave changes in the staging area so the developer can review them and decide, unless they explicitly ask you to commit or push.
+- **Cloud agent session** (ephemeral sandbox such as Claude Code on the web, Codex cloud or Copilot coding agent): committing and pushing is allowed, because uncommitted work is lost when the session ends. Push only to a dedicated feature branch, never to the default branch, and never merge without human approval.
 
 ## Personality Traits
 
