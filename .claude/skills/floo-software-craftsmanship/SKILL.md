@@ -400,22 +400,21 @@ ______________________________________________________________________
 ## Rule 13: Prefer Structured Concurrency Over Callbacks
 
 **Description:** In data layers, asynchronous results travel through the return
-type, never through a closure parameter. An asynchronous callback is an
-implicit, anonymous contract: it hides control flow, ignores cancellation and
-error handling, and degrades with every change (`onError`, `onStart`,
-`onProgress`…). With structured concurrency the caller owns the lifecycle,
-errors propagate naturally, and the signature states exactly what it produces.
+type. With structured concurrency the caller owns the lifecycle, errors
+propagate naturally, and the signature states exactly what it produces.
 
-- **Single result** → `suspend fun` (Kotlin) / `async throws` (Swift) returning
-  the value.
-- **Stream of events** (progress, updates, observation) → `Flow<T>` (Kotlin) /
+The rules:
+
+- Single result → `suspend fun` (Kotlin) / `async throws` (Swift) returning the
+  value.
+- Stream of events (progress, updates, observation) → `Flow<T>` (Kotlin) /
   `AsyncStream<T>` (Swift) as the return type.
-- **Synchronous closures** (`map`, `filter`, configuration, DSLs, builders) → OK.
-- **UI (Compose, SwiftUI)** → OK and idiomatic: `onClick`, `onValueChange` lift a
-  UI event from child to parent, with no data logic.
-- **Callback-based third-party libraries** (e.g. Ktor `onDownload`) → consume
-  them internally, but wrap them in the data source to expose a `Flow`. The rule
-  applies to *your* API, not to your dependencies.
+- Synchronous closures (`map`, `filter`, configuration, DSLs, builders) → OK.
+- UI (Compose, SwiftUI) → OK and idiomatic: `onClick`, `onValueChange` lift a UI
+  event from child to parent, with no data logic.
+- Callback-based third-party libraries (e.g. Ktor `onDownload`) → consume them
+  internally, but wrap them in the data source to expose a `Flow`. The rule
+  applies to your API, not to your dependencies.
 
 **❌ DON'T**
 
