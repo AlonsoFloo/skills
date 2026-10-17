@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.9.1](https://github.com/AlonsoFloo/skills/compare/v2.9.0...v2.9.1) (2026-10-17)
+
+
+### Bug Fixes
+
+* **floo-boilerplategit:** Align apm.yml template targets with root config ([#67](https://github.com/AlonsoFloo/skills/issues/67)) ([0b7f6c6](https://github.com/AlonsoFloo/skills/commit/0b7f6c6c8918eb6577c8c330f89078abb4fe0fc2))
+
 ## [2.9.0](https://github.com/AlonsoFloo/skills/compare/v2.8.1...v2.9.0) (2026-10-16)
 
 
