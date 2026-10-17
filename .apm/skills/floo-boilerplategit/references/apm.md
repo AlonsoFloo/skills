@@ -19,9 +19,8 @@ license: {LICENSE_TYPE}
 targets:
   - agent-skills
   - copilot
-  - antigravity
-  - opencode
   - codex
+  - claude
 
 dependencies:
   apm: []
