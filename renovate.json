@@ -49,13 +49,15 @@
       },
       {
         "matchUpdateTypes": ["patch"],
-        "matchManagers": ["npm", "pip", "dockerfile"],
+        "matchManagers": ["npm", "pip", "dockerfile", "docker-compose"],
+        "groupName": "patch dependencies (automerge)",
         "automerge": true,
         "automergeType": "pr"
       },
       {
         "matchManagers": ["github-actions", "pre-commit", "apm"],
         "matchUpdateTypes": ["minor", "patch"],
+        "groupName": "tooling non-major (automerge)",
         "automerge": true,
         "automergeType": "pr"
       },
