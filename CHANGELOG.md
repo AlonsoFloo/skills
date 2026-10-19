@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.9.2](https://github.com/AlonsoFloo/skills/compare/v2.9.1...v2.9.2) (2026-10-19)
+
+
+### Bug Fixes
+
+* **floo-boilerplategit:** Split automerge-eligible Renovate updates into their own groups ([#69](https://github.com/AlonsoFloo/skills/issues/69)) ([479128c](https://github.com/AlonsoFloo/skills/commit/479128cbd1d789885d8da6331c0ce4d72377752f))
+
 ## [2.9.1](https://github.com/AlonsoFloo/skills/compare/v2.9.0...v2.9.1) (2026-10-17)
 
 
