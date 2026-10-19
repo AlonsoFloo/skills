@@ -39,9 +39,9 @@ dependencies:
     - AvdLee/SwiftUI-Agent-Skill/skills/swiftui-expert-skill#9897311e3e42cc77e87603226e74bea711092fbd # 5.2.1
 
     # Jetpack Compose animations and Kotlin control-flow best practices.
-    - chrisbanes/skills/skills/compose-animations#b3702515bb0579521b7e94845c664c0707669ff8 # 2026.10.2
-    - chrisbanes/skills/skills/kotlin-control-flow#b3702515bb0579521b7e94845c664c0707669ff8 # 2026.10.2
-    - chrisbanes/skills/skills/kotlin-concurrency-and-flow#b3702515bb0579521b7e94845c664c0707669ff8 # 2026.10.2
+    - chrisbanes/skills/skills/compose-animations#c3b83285434c185e2ffbcd689c7b73a5a7892070 # 2026.10.8
+    - chrisbanes/skills/skills/kotlin-control-flow#c3b83285434c185e2ffbcd689c7b73a5a7892070 # 2026.10.8
+    - chrisbanes/skills/skills/kotlin-concurrency-and-flow#c3b83285434c185e2ffbcd689c7b73a5a7892070 # 2026.10.8
 
     # Jetpack Compose modifier ordering and efficient modifier chains.
     - skydoves/compose-performance-skills/modifiers/ordering-modifier-chains#main
@@ -54,9 +54,9 @@ dependencies:
     - github/awesome-copilot/skills/security-review#main
 
     # Engeneering skills curated by Matt Pocock
-    - mattpocock/skills/skills/productivity/grill-me#6acc160e4e0cd062dbbbd7a1b26ae92855edf07e #v1.2.3
-    - mattpocock/skills/skills/productivity/grilling#6acc160e4e0cd062dbbbd7a1b26ae92855edf07e #v1.2.3
-    - mattpocock/skills/skills/engineering/domain-modeling#6acc160e4e0cd062dbbbd7a1b26ae92855edf07e #v1.2.3
+    - mattpocock/skills/skills/productivity/grill-me#24fe0ef7737efae15c87225755e9f6f5965e4888 # v1.3.1
+    - mattpocock/skills/skills/productivity/grilling#24fe0ef7737efae15c87225755e9f6f5965e4888 # v1.3.1
+    - mattpocock/skills/skills/engineering/domain-modeling#24fe0ef7737efae15c87225755e9f6f5965e4888 # v1.3.1
 
 devDependencies:
   apm:
