@@ -771,8 +771,8 @@ dependencies:
 - repo_url: chrisbanes/skills
   name: compose-animations
   host: github.com
-  resolved_commit: c3b83285434c185e2ffbcd689c7b73a5a7892070
-  resolved_ref: c3b83285434c185e2ffbcd689c7b73a5a7892070
+  resolved_commit: c0e4a74e4a016b166305ee4d6c4e11413e234c90
+  resolved_ref: c0e4a74e4a016b166305ee4d6c4e11413e234c90
   version: unknown
   virtual_path: skills/compose-animations
   is_virtual: true
@@ -793,8 +793,8 @@ dependencies:
 - repo_url: chrisbanes/skills
   name: kotlin-concurrency-and-flow
   host: github.com
-  resolved_commit: c3b83285434c185e2ffbcd689c7b73a5a7892070
-  resolved_ref: c3b83285434c185e2ffbcd689c7b73a5a7892070
+  resolved_commit: c0e4a74e4a016b166305ee4d6c4e11413e234c90
+  resolved_ref: c0e4a74e4a016b166305ee4d6c4e11413e234c90
   version: unknown
   virtual_path: skills/kotlin-concurrency-and-flow
   is_virtual: true
@@ -819,8 +819,8 @@ dependencies:
 - repo_url: chrisbanes/skills
   name: kotlin-control-flow
   host: github.com
-  resolved_commit: c3b83285434c185e2ffbcd689c7b73a5a7892070
-  resolved_ref: c3b83285434c185e2ffbcd689c7b73a5a7892070
+  resolved_commit: c0e4a74e4a016b166305ee4d6c4e11413e234c90
+  resolved_ref: c0e4a74e4a016b166305ee4d6c4e11413e234c90
   version: unknown
   virtual_path: skills/kotlin-control-flow
   is_virtual: true

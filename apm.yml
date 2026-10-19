@@ -39,9 +39,9 @@ dependencies:
     - AvdLee/SwiftUI-Agent-Skill/skills/swiftui-expert-skill#9897311e3e42cc77e87603226e74bea711092fbd # 5.2.1
 
     # Jetpack Compose animations and Kotlin control-flow best practices.
-    - chrisbanes/skills/skills/compose-animations#c3b83285434c185e2ffbcd689c7b73a5a7892070 # 2026.10.8
-    - chrisbanes/skills/skills/kotlin-control-flow#c3b83285434c185e2ffbcd689c7b73a5a7892070 # 2026.10.8
-    - chrisbanes/skills/skills/kotlin-concurrency-and-flow#c3b83285434c185e2ffbcd689c7b73a5a7892070 # 2026.10.8
+    - chrisbanes/skills/skills/compose-animations#c0e4a74e4a016b166305ee4d6c4e11413e234c90 # 2026.10.9
+    - chrisbanes/skills/skills/kotlin-control-flow#c0e4a74e4a016b166305ee4d6c4e11413e234c90 # 2026.10.9
+    - chrisbanes/skills/skills/kotlin-concurrency-and-flow#c0e4a74e4a016b166305ee4d6c4e11413e234c90 # 2026.10.9
 
     # Jetpack Compose modifier ordering and efficient modifier chains.
     - skydoves/compose-performance-skills/modifiers/ordering-modifier-chains#main
