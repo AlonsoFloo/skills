@@ -63,7 +63,7 @@
       },
       {
         "matchManagers": ["apm"],
-        "automerge": true,
+        "automerge": false,
         "groupName": "APM dependencies"
       }
     ]
