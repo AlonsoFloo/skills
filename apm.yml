@@ -24,13 +24,13 @@ dependencies:
 
     # Android development skills and best practices.
     # Repo format weird, have to load manually from the skills folder, since the root repo is not a skill.
-    - android/skills/system/edge-to-edge#42dc2270e96032bd860bb94511e440aa00a43125 # v1.0.13
-    - android/skills/performance/r8-analyzer#42dc2270e96032bd860bb94511e440aa00a43125 # v1.0.13
-    - android/skills/navigation/navigation-3#42dc2270e96032bd860bb94511e440aa00a43125 # v1.0.13
-    - android/skills/jetpack-compose/adaptive#42dc2270e96032bd860bb94511e440aa00a43125 # v1.0.13
-    - android/skills/jetpack-compose/theming/styles#42dc2270e96032bd860bb94511e440aa00a43125 # v1.0.13
-    - android/skills/device-ai/appfunctions#42dc2270e96032bd860bb94511e440aa00a43125 # v1.0.13
-    - android/skills/identity/restore-credentials#42dc2270e96032bd860bb94511e440aa00a43125 # v1.0.13
+    - android/skills/system/edge-to-edge#5bda39f154fb859a08d45e2392f3568e049f83fb # v1.0.15
+    - android/skills/performance/r8-analyzer#5bda39f154fb859a08d45e2392f3568e049f83fb # v1.0.15
+    - android/skills/navigation/navigation-3#5bda39f154fb859a08d45e2392f3568e049f83fb # v1.0.15
+    - android/skills/jetpack-compose/adaptive#5bda39f154fb859a08d45e2392f3568e049f83fb # v1.0.15
+    - android/skills/jetpack-compose/theming/styles#5bda39f154fb859a08d45e2392f3568e049f83fb # v1.0.15
+    - android/skills/device-ai/appfunctions#5bda39f154fb859a08d45e2392f3568e049f83fb # v1.0.15
+    - android/skills/identity/restore-credentials#5bda39f154fb859a08d45e2392f3568e049f83fb # v1.0.15
 
     # Swift concurrency: async/await, actors, Sendable, structured concurrency, and modern Swift concurrency patterns.
     # Starting 2.2.0 it introduced Agent portable plugin that miss behave with APM 0.29.0
@@ -39,9 +39,9 @@ dependencies:
     - AvdLee/SwiftUI-Agent-Skill/skills/swiftui-expert-skill#9897311e3e42cc77e87603226e74bea711092fbd # 5.2.1
 
     # Jetpack Compose animations and Kotlin control-flow best practices.
-    - chrisbanes/skills/skills/compose-animations#c0e4a74e4a016b166305ee4d6c4e11413e234c90 # 2026.10.9
-    - chrisbanes/skills/skills/kotlin-control-flow#c0e4a74e4a016b166305ee4d6c4e11413e234c90 # 2026.10.9
-    - chrisbanes/skills/skills/kotlin-concurrency-and-flow#c0e4a74e4a016b166305ee4d6c4e11413e234c90 # 2026.10.9
+    - chrisbanes/skills/skills/compose-animations#1806b68d63ec66e6b3bf9662d70a4e1b85bd273f # 2026.10.15
+    - chrisbanes/skills/skills/kotlin-control-flow#1806b68d63ec66e6b3bf9662d70a4e1b85bd273f # 2026.10.15
+    - chrisbanes/skills/skills/kotlin-concurrency-and-flow#1806b68d63ec66e6b3bf9662d70a4e1b85bd273f # 2026.10.15
 
     # Jetpack Compose modifier ordering and efficient modifier chains.
     - skydoves/compose-performance-skills/modifiers/ordering-modifier-chains#main
