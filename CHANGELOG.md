@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.9.3](https://github.com/AlonsoFloo/skills/compare/v2.9.2...v2.9.3) (2026-11-02)
+
+
+### Bug Fixes
+
+* **apm:** Restore dependency skills deleted by APM 0.35.0 ([#76](https://github.com/AlonsoFloo/skills/issues/76)) ([cc5d960](https://github.com/AlonsoFloo/skills/commit/cc5d9608afa19eadc8ab5d02346bbefa8c44379d))
+
 ## [2.9.2](https://github.com/AlonsoFloo/skills/compare/v2.9.1...v2.9.2) (2026-10-19)
 
 
