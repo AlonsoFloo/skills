@@ -1811,7 +1811,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:294342913c4a083ae02c82f7433c5c0cb29e4156abff21e0bccc3a1b78630b06
+  content_hash: sha256:732f98346f39b86a0b56c93a1fb4fd0a2fc810fd326be220dd4e9a2b70dcd95b
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/floo-code-review-and-quality/references/security.md
@@ -4232,7 +4232,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:293f875cc0d8c0ae01f47ffed60eae673dda003df8296c8bb7f35260039c615a
+  content_hash: sha256:459660852f894e6d8fa44c42774023a517f3118f3f80a4d2a00fc26fc46d8f88
 - kind: project-relative
   target: claude
   value: .claude/commands/floo-run-precommit-all.md
@@ -4781,7 +4781,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:294342913c4a083ae02c82f7433c5c0cb29e4156abff21e0bccc3a1b78630b06
+  content_hash: sha256:732f98346f39b86a0b56c93a1fb4fd0a2fc810fd326be220dd4e9a2b70dcd95b
 - kind: project-relative
   target: claude
   value: .claude/skills/floo-code-review-and-quality/references/security.md
@@ -7220,7 +7220,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:915d892dea417d6ec95f11fc60b3c33a544b5c426d0d1a1a2b439c1619186e92
+  content_hash: sha256:979032eecbc39e28cdcee2816670e246e440c5cbf929f9308e25bcfc141778d7
 - kind: project-relative
   target: copilot
   value: .github/prompts/floo-run-precommit-all.prompt.md
@@ -7384,7 +7384,7 @@ local_deployed_file_hashes:
   .agents/skills/floo-boilerplategit/references/renovate.md: sha256:9e717b011b8c8bd199d5aef43df1b1177beab3905b1aeeaa3a869f2a541bea51
   .agents/skills/floo-boilerplategit/references/security.md: sha256:d36f39b124ceb68a354c1c22a4cda2d3845e59d82dbe71345c4c47afa8b29abf
   .agents/skills/floo-caveman/SKILL.md: sha256:d93ccd08945755fb5a9d4d9913af8061a788d08f8c7492447485962b97d88826
-  .agents/skills/floo-code-review-and-quality/SKILL.md: sha256:294342913c4a083ae02c82f7433c5c0cb29e4156abff21e0bccc3a1b78630b06
+  .agents/skills/floo-code-review-and-quality/SKILL.md: sha256:732f98346f39b86a0b56c93a1fb4fd0a2fc810fd326be220dd4e9a2b70dcd95b
   .agents/skills/floo-code-review-and-quality/references/security.md: sha256:a0f5a2ce38ec299045ccb8993f43a65786576cd0dc5473aacb2b3c4073a3bc37
   .agents/skills/floo-code-review-and-quality/references/taste.md: sha256:302eb0726b513ab35ff614bfb717979763c4a22d56067f5dfa3866abd399bf53
   .agents/skills/floo-conventional-comments/SKILL.md: sha256:7795b9f4cfb46f2ee17dde467015ebd2b71507357eb25cfeccd69559cbaebf80
@@ -7419,7 +7419,7 @@ local_deployed_file_hashes:
   .claude/agents/floo-coder.md: sha256:8d3bc0d835b97ab0a6971078ee6748d4151ef10214d4de2ae469b4b4a9a16da3
   .claude/agents/floo-devops.md: sha256:1304d3f2965cd33a3dcdf71f048b210e9d5528b61c740734b81b8ff4545e0aa5
   .claude/commands/floo-run-boilerplategit.md: sha256:bdefaee9b6fc256b2abb5bcdeb99193afb4c8de2b3b0b0b0cef2ea0df1878085
-  .claude/commands/floo-run-pr-review.md: sha256:293f875cc0d8c0ae01f47ffed60eae673dda003df8296c8bb7f35260039c615a
+  .claude/commands/floo-run-pr-review.md: sha256:459660852f894e6d8fa44c42774023a517f3118f3f80a4d2a00fc26fc46d8f88
   .claude/commands/floo-run-precommit-all.md: sha256:a9685b0221e6639a6ec484bbf3a1b3d23176f5f0c0ead5441ed9b2169dea2352
   .claude/skills/floo-android-craftsmanship/SKILL.md: sha256:6f779300d6ab8b3b3cfef86cf962985f49f19e762c0bb1543f5ea3cec370096c
   .claude/skills/floo-android-craftsmanship/references/rule01.example.md: sha256:213f3646e5d89fbbcae12e088baabbdb1ba166114df6862b295370483a13fe82
@@ -7439,7 +7439,7 @@ local_deployed_file_hashes:
   .claude/skills/floo-boilerplategit/references/renovate.md: sha256:9e717b011b8c8bd199d5aef43df1b1177beab3905b1aeeaa3a869f2a541bea51
   .claude/skills/floo-boilerplategit/references/security.md: sha256:d36f39b124ceb68a354c1c22a4cda2d3845e59d82dbe71345c4c47afa8b29abf
   .claude/skills/floo-caveman/SKILL.md: sha256:d93ccd08945755fb5a9d4d9913af8061a788d08f8c7492447485962b97d88826
-  .claude/skills/floo-code-review-and-quality/SKILL.md: sha256:294342913c4a083ae02c82f7433c5c0cb29e4156abff21e0bccc3a1b78630b06
+  .claude/skills/floo-code-review-and-quality/SKILL.md: sha256:732f98346f39b86a0b56c93a1fb4fd0a2fc810fd326be220dd4e9a2b70dcd95b
   .claude/skills/floo-code-review-and-quality/references/security.md: sha256:a0f5a2ce38ec299045ccb8993f43a65786576cd0dc5473aacb2b3c4073a3bc37
   .claude/skills/floo-code-review-and-quality/references/taste.md: sha256:302eb0726b513ab35ff614bfb717979763c4a22d56067f5dfa3866abd399bf53
   .claude/skills/floo-conventional-comments/SKILL.md: sha256:7795b9f4cfb46f2ee17dde467015ebd2b71507357eb25cfeccd69559cbaebf80
@@ -7476,5 +7476,5 @@ local_deployed_file_hashes:
   .github/agents/floo-coder.agent.md: sha256:8d3bc0d835b97ab0a6971078ee6748d4151ef10214d4de2ae469b4b4a9a16da3
   .github/agents/floo-devops.agent.md: sha256:1304d3f2965cd33a3dcdf71f048b210e9d5528b61c740734b81b8ff4545e0aa5
   .github/prompts/floo-run-boilerplategit.prompt.md: sha256:f84cf31d795e9665c57804ae1a4e3af4e75bbd2b26f1d150d4e7d4c254a568ab
-  .github/prompts/floo-run-pr-review.prompt.md: sha256:915d892dea417d6ec95f11fc60b3c33a544b5c426d0d1a1a2b439c1619186e92
+  .github/prompts/floo-run-pr-review.prompt.md: sha256:979032eecbc39e28cdcee2816670e246e440c5cbf929f9308e25bcfc141778d7
   .github/prompts/floo-run-precommit-all.prompt.md: sha256:c3102993230b1e00cde58cc63aaf1352527ddc7dd1cd343a08322c0c4d9455b7
