@@ -1820,7 +1820,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:a0f5a2ce38ec299045ccb8993f43a65786576cd0dc5473aacb2b3c4073a3bc37
+  content_hash: sha256:2c0edf1de3e3ecebad4fbc2ac1389faa59355e94410974c4eeedeebd3e2cabd3
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/floo-code-review-and-quality/references/taste.md
@@ -1829,7 +1829,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:302eb0726b513ab35ff614bfb717979763c4a22d56067f5dfa3866abd399bf53
+  content_hash: sha256:055d0c108b6ce7b82cc537f114511d32f600522de8946e64e5137b8d05003945
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/floo-conventional-comments
@@ -4790,7 +4790,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:a0f5a2ce38ec299045ccb8993f43a65786576cd0dc5473aacb2b3c4073a3bc37
+  content_hash: sha256:2c0edf1de3e3ecebad4fbc2ac1389faa59355e94410974c4eeedeebd3e2cabd3
 - kind: project-relative
   target: claude
   value: .claude/skills/floo-code-review-and-quality/references/taste.md
@@ -4799,7 +4799,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:302eb0726b513ab35ff614bfb717979763c4a22d56067f5dfa3866abd399bf53
+  content_hash: sha256:055d0c108b6ce7b82cc537f114511d32f600522de8946e64e5137b8d05003945
 - kind: project-relative
   target: claude
   value: .claude/skills/floo-conventional-comments
@@ -7385,8 +7385,8 @@ local_deployed_file_hashes:
   .agents/skills/floo-boilerplategit/references/security.md: sha256:d36f39b124ceb68a354c1c22a4cda2d3845e59d82dbe71345c4c47afa8b29abf
   .agents/skills/floo-caveman/SKILL.md: sha256:d93ccd08945755fb5a9d4d9913af8061a788d08f8c7492447485962b97d88826
   .agents/skills/floo-code-review-and-quality/SKILL.md: sha256:732f98346f39b86a0b56c93a1fb4fd0a2fc810fd326be220dd4e9a2b70dcd95b
-  .agents/skills/floo-code-review-and-quality/references/security.md: sha256:a0f5a2ce38ec299045ccb8993f43a65786576cd0dc5473aacb2b3c4073a3bc37
-  .agents/skills/floo-code-review-and-quality/references/taste.md: sha256:302eb0726b513ab35ff614bfb717979763c4a22d56067f5dfa3866abd399bf53
+  .agents/skills/floo-code-review-and-quality/references/security.md: sha256:2c0edf1de3e3ecebad4fbc2ac1389faa59355e94410974c4eeedeebd3e2cabd3
+  .agents/skills/floo-code-review-and-quality/references/taste.md: sha256:055d0c108b6ce7b82cc537f114511d32f600522de8946e64e5137b8d05003945
   .agents/skills/floo-conventional-comments/SKILL.md: sha256:7795b9f4cfb46f2ee17dde467015ebd2b71507357eb25cfeccd69559cbaebf80
   .agents/skills/floo-conventional-comments/refrences/matrix.md: sha256:89de6d4c36c175a644c5dec7ececa96f2cf06501ebcfbe3e3cbb51aeb9610488
   .agents/skills/floo-data2viz/SKILL.md: sha256:ba19563a2a1b2a2976aef2eddec69d9086ab4bf9fd3628e269ce17e5e2277bb4
@@ -7440,8 +7440,8 @@ local_deployed_file_hashes:
   .claude/skills/floo-boilerplategit/references/security.md: sha256:d36f39b124ceb68a354c1c22a4cda2d3845e59d82dbe71345c4c47afa8b29abf
   .claude/skills/floo-caveman/SKILL.md: sha256:d93ccd08945755fb5a9d4d9913af8061a788d08f8c7492447485962b97d88826
   .claude/skills/floo-code-review-and-quality/SKILL.md: sha256:732f98346f39b86a0b56c93a1fb4fd0a2fc810fd326be220dd4e9a2b70dcd95b
-  .claude/skills/floo-code-review-and-quality/references/security.md: sha256:a0f5a2ce38ec299045ccb8993f43a65786576cd0dc5473aacb2b3c4073a3bc37
-  .claude/skills/floo-code-review-and-quality/references/taste.md: sha256:302eb0726b513ab35ff614bfb717979763c4a22d56067f5dfa3866abd399bf53
+  .claude/skills/floo-code-review-and-quality/references/security.md: sha256:2c0edf1de3e3ecebad4fbc2ac1389faa59355e94410974c4eeedeebd3e2cabd3
+  .claude/skills/floo-code-review-and-quality/references/taste.md: sha256:055d0c108b6ce7b82cc537f114511d32f600522de8946e64e5137b8d05003945
   .claude/skills/floo-conventional-comments/SKILL.md: sha256:7795b9f4cfb46f2ee17dde467015ebd2b71507357eb25cfeccd69559cbaebf80
   .claude/skills/floo-conventional-comments/refrences/matrix.md: sha256:89de6d4c36c175a644c5dec7ececa96f2cf06501ebcfbe3e3cbb51aeb9610488
   .claude/skills/floo-data2viz/SKILL.md: sha256:ba19563a2a1b2a2976aef2eddec69d9086ab4bf9fd3628e269ce17e5e2277bb4

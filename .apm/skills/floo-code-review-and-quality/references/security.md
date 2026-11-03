@@ -1,9 +1,5 @@
 # Security Checklist
 
-Walk every item that applies to the touched code. For each finding, state the
-attack path: who can trigger it, with what input, and what they gain. Exploitable
-issues and leaks of secrets or personal data are `issue(blocking)`.
-
 ## Input and Untrusted Data
 
 - User input is validated and sanitized at the boundary, then parsed into a
