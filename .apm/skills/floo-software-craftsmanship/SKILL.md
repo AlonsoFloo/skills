@@ -411,6 +411,11 @@ The rules:
 - Stream of events (progress, updates, observation) → `Flow<T>` (Kotlin) /
   `AsyncStream<T>` (Swift) as the return type.
 - Synchronous closures (`map`, `filter`, configuration, DSLs, builders) → OK.
+- Closures stored as dependencies (a factory or provider injected through a
+  constructor or DI) → NOT OK: declare a named factory type (`fun interface` in
+  Kotlin, `protocol` in Swift). A function type is an anonymous contract: no
+  name, no documentation, ambiguous in a DI graph, and hard to fake or verify
+  in unit tests.
 - UI (Compose, SwiftUI) → OK and idiomatic: `onClick`, `onValueChange` lift a UI
   event from child to parent, with no data logic.
 - Callback-based third-party libraries (e.g. Ktor `onDownload`) → consume them
@@ -423,6 +428,8 @@ The rules:
 fun getUser(id: String, onResult: (User) -> Unit, onError: (Throwable) -> Unit)
 
 fun download(url: String, onProgress: (Float) -> Unit, onDone: (File) -> Unit)
+
+class SyncWorker(private val createClient: () -> HttpClient)
 ```
 
 **✅ DO**
@@ -431,10 +438,17 @@ fun download(url: String, onProgress: (Float) -> Unit, onDone: (File) -> Unit)
 suspend fun getUser(id: String): User
 
 fun download(url: String): Flow<DownloadState>
+
+fun interface HttpClientFactory {
+    fun create(): HttpClient
+}
+
+class SyncWorker(private val clientFactory: HttpClientFactory)
 ```
 
 In one sentence: if a closure exists to receive an asynchronous result, it must
-become a return type.
+become a return type; if a closure is stored as a dependency, it must become a
+named type.
 
 *See
 [references/rule13.example.md](references/rule13.example.md)

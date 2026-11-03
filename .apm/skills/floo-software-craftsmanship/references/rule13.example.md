@@ -18,6 +18,15 @@ This is an application of the Dependency Inversion Principle (Rule 6): explicit,
 named contracts instead of anonymous callbacks. It is also the standard remedy
 for "callback hell".
 
+The same reasoning applies to closures stored as dependencies, even when they
+are synchronous. A factory injected as `() -> HttpClient` (by hand or through
+DI) is still an anonymous contract: it cannot be searched for or documented,
+two factories with the same signature need qualifiers to be told apart in a DI
+graph, and a test has to hand-roll a capturing lambda to count calls or control
+what each call returns. A named factory type (`fun interface` in Kotlin,
+`protocol` in Swift) keeps the lambda syntax at the call site while giving the
+dependency a name, a contract, and a natural fake.
+
 | Case                                                    | Expected shape                                                      |
 | ------------------------------------------------------- | ------------------------------------------------------------------- |
 | Single result                                           | `suspend fun` (Kotlin) / `async throws` (Swift)                     |
@@ -25,6 +34,7 @@ for "callback hell".
 | Synchronous closures (`map`, `filter`, config, DSL)     | OK                                                                  |
 | UI events (Compose, SwiftUI `onClick`, `onValueChange`) | OK and idiomatic                                                    |
 | Callback-based third-party library (e.g. Ktor)          | Consumed internally, wrapped to expose a `Flow` / `AsyncStream`     |
+| Factory or provider stored as a dependency (incl. DI)   | Named factory type: `fun interface` (Kotlin) / `protocol` (Swift)   |
 
 ## Kotlin
 
@@ -68,6 +78,23 @@ fun download(url: String): Flow<DownloadState> = channelFlow {
 }
 ```
 
+Factory stored as a dependency:
+
+```kotlin
+// ❌ Anonymous contract, even when provided by DI
+class SyncWorker(private val createClient: () -> HttpClient)
+
+// ✅ Named contract, still constructible with a lambda
+fun interface HttpClientFactory {
+    fun create(): HttpClient
+}
+
+class SyncWorker(private val clientFactory: HttpClientFactory)
+
+// Test
+val worker = SyncWorker { FakeHttpClient() }
+```
+
 UI events stay as closures in Compose:
 
 ```kotlin
@@ -97,6 +124,24 @@ Stream of events:
 func download(url: URL) -> AsyncThrowingStream<DownloadState, Error>
 ```
 
+Factory stored as a dependency:
+
+```swift
+// ❌
+final class SyncWorker {
+    private let makeClient: () -> HTTPClient
+}
+
+// ✅
+protocol HTTPClientFactory {
+    func make() -> HTTPClient
+}
+
+final class SyncWorker {
+    private let clientFactory: HTTPClientFactory
+}
+```
+
 UI events stay as closures in SwiftUI:
 
 ```swift
@@ -108,4 +153,5 @@ struct SaveButton: View {
 ## Summary
 
 > **If a closure exists to receive an asynchronous result, it must become a
-> return type.**
+> return type. If a closure is stored as a dependency, it must become a named
+> type.**
