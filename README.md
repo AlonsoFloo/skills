@@ -31,7 +31,7 @@ To install this tool on your machine or repo, run:
 <!-- x-release-please-start-version -->
 
 ```bash
-apm install AlonsoFloo/skills.git#v2.9.3
+apm install AlonsoFloo/skills.git#v2.10.0
 ```
 
 <!-- x-release-please-end -->
@@ -41,7 +41,7 @@ apm install AlonsoFloo/skills.git#v2.9.3
 <!-- x-release-please-start-version -->
 
 ```bash
-apm install AlonsoFloo/skills/.apm/skills/floo-software-craftsmanship#v2.9.3
+apm install AlonsoFloo/skills/.apm/skills/floo-software-craftsmanship#v2.10.0
 ```
 
 <!-- x-release-please-end -->

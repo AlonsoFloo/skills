@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.10.0](https://github.com/AlonsoFloo/skills/compare/v2.9.3...v2.10.0) (2026-11-03)
+
+
+### Features
+
+* **skills:** Add floo-code-review-and-quality skill and floo-run-pr-review command ([#81](https://github.com/AlonsoFloo/skills/issues/81)) ([7f47e28](https://github.com/AlonsoFloo/skills/commit/7f47e28f5ff17225f0acab7a7af3bc306020ad1f))
+
 ## [2.9.3](https://github.com/AlonsoFloo/skills/compare/v2.9.2...v2.9.3) (2026-11-02)
 
 
