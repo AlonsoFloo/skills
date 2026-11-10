@@ -24,25 +24,25 @@ dependencies:
 
     # Android development skills and best practices.
     # Repo format weird, have to load manually from the skills folder, since the root repo is not a skill.
-    - android/skills/system/edge-to-edge#5bda39f154fb859a08d45e2392f3568e049f83fb # v1.0.15
-    - android/skills/performance/r8-analyzer#5bda39f154fb859a08d45e2392f3568e049f83fb # v1.0.15
-    - android/skills/navigation/navigation-3#5bda39f154fb859a08d45e2392f3568e049f83fb # v1.0.15
-    - android/skills/jetpack-compose/adaptive#5bda39f154fb859a08d45e2392f3568e049f83fb # v1.0.15
+    - android/skills/system/edge-to-edge#5815d27fda564aa9f07ebdcb5e57ed3e8d904e0d # v1.0.21
+    - android/skills/performance/r8-analyzer#5815d27fda564aa9f07ebdcb5e57ed3e8d904e0d # v1.0.21
+    - android/skills/navigation/navigation-3#5815d27fda564aa9f07ebdcb5e57ed3e8d904e0d # v1.0.21
+    - android/skills/jetpack-compose/adaptive#5815d27fda564aa9f07ebdcb5e57ed3e8d904e0d # v1.0.21
     - android/skills/jetpack-compose/theming/styles#5bda39f154fb859a08d45e2392f3568e049f83fb # v1.0.15
-    - android/skills/device-ai/appfunctions#5bda39f154fb859a08d45e2392f3568e049f83fb # v1.0.15
-    - android/skills/identity/restore-credentials#5bda39f154fb859a08d45e2392f3568e049f83fb # v1.0.15
+    - android/skills/device-ai/appfunctions#5815d27fda564aa9f07ebdcb5e57ed3e8d904e0d # v1.0.21
+    - android/skills/identity/restore-credentials#5815d27fda564aa9f07ebdcb5e57ed3e8d904e0d # v1.0.21
     - android/skills/devtools/android-cli#5815d27fda564aa9f07ebdcb5e57ed3e8d904e0d # v1.0.21
 
     # Swift concurrency: async/await, actors, Sendable, structured concurrency, and modern Swift concurrency patterns.
     # Starting 2.2.0 it introduced Agent portable plugin that miss behave with APM 0.29.0
     # Since then, the skill folder is pinned
-    - AvdLee/Swift-Concurrency-Agent-Skill/skills/swift-concurrency#45fa49e4e0b2af4d43b1cb458903f8030ac993bd #2.3.0
-    - AvdLee/SwiftUI-Agent-Skill/skills/swiftui-expert-skill#9897311e3e42cc77e87603226e74bea711092fbd # 5.2.1
+    - AvdLee/Swift-Concurrency-Agent-Skill/skills/swift-concurrency#3b1580d8398e0b5408b3bf0bada0e941a1cfc642 #2.3.1
+    - AvdLee/SwiftUI-Agent-Skill/skills/swiftui-expert-skill#62bd760f005093d1e2e4de5db156e456a5f96400 # 5.3.0
 
     # Jetpack Compose animations and Kotlin control-flow best practices.
-    - chrisbanes/skills/skills/compose-animations#1806b68d63ec66e6b3bf9662d70a4e1b85bd273f # 2026.10.15
-    - chrisbanes/skills/skills/kotlin-control-flow#1806b68d63ec66e6b3bf9662d70a4e1b85bd273f # 2026.10.15
-    - chrisbanes/skills/skills/kotlin-concurrency-and-flow#1806b68d63ec66e6b3bf9662d70a4e1b85bd273f # 2026.10.15
+    - chrisbanes/skills/skills/compose-animations#8df9735a751cfabe5ddae457f28b0a8ea3d4092b # 2026.11.3
+    - chrisbanes/skills/skills/kotlin-control-flow#8df9735a751cfabe5ddae457f28b0a8ea3d4092b # 2026.11.3
+    - chrisbanes/skills/skills/kotlin-concurrency-and-flow#8df9735a751cfabe5ddae457f28b0a8ea3d4092b # 2026.11.3
 
     # Jetpack Compose modifier ordering and efficient modifier chains.
     - skydoves/compose-performance-skills/modifiers/ordering-modifier-chains#main
@@ -55,9 +55,9 @@ dependencies:
     - github/awesome-copilot/skills/security-review#main
 
     # Engeneering skills curated by Matt Pocock
-    - mattpocock/skills/skills/productivity/grill-me#24fe0ef7737efae15c87225755e9f6f5965e4888 # v1.3.1
-    - mattpocock/skills/skills/productivity/grilling#24fe0ef7737efae15c87225755e9f6f5965e4888 # v1.3.1
-    - mattpocock/skills/skills/engineering/domain-modeling#24fe0ef7737efae15c87225755e9f6f5965e4888 # v1.3.1
+    - mattpocock/skills/skills/productivity/grill-me#d1478fcb140db0b93c0c8df17bcfd311844749d0 # v1.3.2
+    - mattpocock/skills/skills/productivity/grilling#d1478fcb140db0b93c0c8df17bcfd311844749d0 # v1.3.2
+    - mattpocock/skills/skills/engineering/domain-modeling#d1478fcb140db0b93c0c8df17bcfd311844749d0 # v1.3.2
 
 devDependencies:
   apm:
