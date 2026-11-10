@@ -44,6 +44,24 @@ dependencies:
     .claude/skills/appfunctions/references/migrate-to-service-entry-point.md: sha256:9f7944fbab543e01b32589b90032d547340ab8370e4c1d31c4a923a840462311
   content_hash: sha256:ed6ba26322f5e564971323a852ff21d80c3eee4c22dea7890741bd1ff00fe7e9
 - repo_url: android/skills
+  name: android-cli
+  host: github.com
+  resolved_commit: 5815d27fda564aa9f07ebdcb5e57ed3e8d904e0d
+  resolved_ref: 5815d27fda564aa9f07ebdcb5e57ed3e8d904e0d
+  version: unknown
+  virtual_path: devtools/android-cli
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/android-cli
+  - .agents/skills/android-cli/SKILL.md
+  - .claude/skills/android-cli
+  - .claude/skills/android-cli/SKILL.md
+  deployed_file_hashes:
+    .agents/skills/android-cli/SKILL.md: sha256:2d35bb178b30581a9d4a31c30cf4895861a095863a9d8434a134fd10c2fca0b3
+    .claude/skills/android-cli/SKILL.md: sha256:2d35bb178b30581a9d4a31c30cf4895861a095863a9d8434a134fd10c2fca0b3
+  content_hash: sha256:bbe53f7481bc5de0a5fa1152ca113bff161b3e6aec6a228820c2485e4d861873
+- repo_url: android/skills
   name: restore-credentials
   host: github.com
   resolved_commit: 5bda39f154fb859a08d45e2392f3568e049f83fb
@@ -1389,6 +1407,24 @@ deployments:
   - android/skills/jetpack-compose/adaptive
   active_owner: android/skills/jetpack-compose/adaptive
   content_hash: sha256:4b4ada7a50201bcf9ab90b0d9f00cc2ceb16513d1de7f63c12d634318a2ec20d
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/android-cli
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/devtools/android-cli
+  active_owner: android/skills/devtools/android-cli
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/android-cli/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/devtools/android-cli
+  active_owner: android/skills/devtools/android-cli
+  content_hash: sha256:2d35bb178b30581a9d4a31c30cf4895861a095863a9d8434a134fd10c2fca0b3
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/appfunctions
@@ -4359,6 +4395,24 @@ deployments:
   - android/skills/jetpack-compose/adaptive
   active_owner: android/skills/jetpack-compose/adaptive
   content_hash: sha256:4b4ada7a50201bcf9ab90b0d9f00cc2ceb16513d1de7f63c12d634318a2ec20d
+- kind: project-relative
+  target: claude
+  value: .claude/skills/android-cli
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/devtools/android-cli
+  active_owner: android/skills/devtools/android-cli
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/android-cli/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/devtools/android-cli
+  active_owner: android/skills/devtools/android-cli
+  content_hash: sha256:2d35bb178b30581a9d4a31c30cf4895861a095863a9d8434a134fd10c2fca0b3
 - kind: project-relative
   target: claude
   value: .claude/skills/appfunctions
