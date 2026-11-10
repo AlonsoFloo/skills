@@ -55,7 +55,6 @@ dependencies:
     - github/awesome-copilot/skills/security-review#main
 
     # Engeneering skills curated by Matt Pocock
-    - mattpocock/skills/skills/productivity/grill-me#d1478fcb140db0b93c0c8df17bcfd311844749d0 # v1.3.2
     - mattpocock/skills/skills/productivity/grilling#d1478fcb140db0b93c0c8df17bcfd311844749d0 # v1.3.2
     - mattpocock/skills/skills/engineering/domain-modeling#d1478fcb140db0b93c0c8df17bcfd311844749d0 # v1.3.2
 
