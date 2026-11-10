@@ -182,6 +182,60 @@ dependencies:
     .claude/skills/adaptive/references/tooltips.md: sha256:c87d96b2da4488cbbfd097a25a6b4557c48de055df96c7602bd7cb2966d2e4e9
   content_hash: sha256:fff430e5173ef8a6d92b1b3dd9820d449f6f805bf77f9b69d411ff88cdbf4570
 - repo_url: android/skills
+  name: jetpack-compose-performance
+  host: github.com
+  resolved_commit: 5815d27fda564aa9f07ebdcb5e57ed3e8d904e0d
+  resolved_ref: 5815d27fda564aa9f07ebdcb5e57ed3e8d904e0d
+  version: unknown
+  virtual_path: jetpack-compose/jetpack-compose-performance
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/jetpack-compose-performance
+  - .agents/skills/jetpack-compose-performance/SKILL.md
+  - .agents/skills/jetpack-compose-performance/references/android/develop/ui/compose/custom-modifiers.md
+  - .agents/skills/jetpack-compose-performance/references/android/develop/ui/compose/performance/backwards-write.md
+  - .agents/skills/jetpack-compose-performance/references/android/develop/ui/compose/performance/stability/strongskipping.md
+  - .agents/skills/jetpack-compose-performance/references/animation.md
+  - .agents/skills/jetpack-compose-performance/references/effects-and-threading.md
+  - .agents/skills/jetpack-compose-performance/references/graphics-performance.md
+  - .agents/skills/jetpack-compose-performance/references/layouts.md
+  - .agents/skills/jetpack-compose-performance/references/lazy-layouts.md
+  - .agents/skills/jetpack-compose-performance/references/state-and-stability.md
+  - .claude/skills/jetpack-compose-performance
+  - .claude/skills/jetpack-compose-performance/SKILL.md
+  - .claude/skills/jetpack-compose-performance/references/android/develop/ui/compose/custom-modifiers.md
+  - .claude/skills/jetpack-compose-performance/references/android/develop/ui/compose/performance/backwards-write.md
+  - .claude/skills/jetpack-compose-performance/references/android/develop/ui/compose/performance/stability/strongskipping.md
+  - .claude/skills/jetpack-compose-performance/references/animation.md
+  - .claude/skills/jetpack-compose-performance/references/effects-and-threading.md
+  - .claude/skills/jetpack-compose-performance/references/graphics-performance.md
+  - .claude/skills/jetpack-compose-performance/references/layouts.md
+  - .claude/skills/jetpack-compose-performance/references/lazy-layouts.md
+  - .claude/skills/jetpack-compose-performance/references/state-and-stability.md
+  deployed_file_hashes:
+    .agents/skills/jetpack-compose-performance/SKILL.md: sha256:a1680a1ae079faa47fc706bf034b88d4c4c4903dfa4187e98e0af8b056e1848b
+    .agents/skills/jetpack-compose-performance/references/android/develop/ui/compose/custom-modifiers.md: sha256:b4ede8f37dc56c54f3621a5ad21f91a649450a9854bc1bacc1a24eb65fe31b38
+    .agents/skills/jetpack-compose-performance/references/android/develop/ui/compose/performance/backwards-write.md: sha256:e9b5b1afa36dca37f9548a8d706cc8474b3f03e61bc77037dfa6ab7b1a2169b7
+    .agents/skills/jetpack-compose-performance/references/android/develop/ui/compose/performance/stability/strongskipping.md: sha256:3a69e68553d6d628e8787b3e499766798e73d86779a149c800fff7bb4340cce4
+    .agents/skills/jetpack-compose-performance/references/animation.md: sha256:fe21a3bc55b85b807e3655f427f00e3898a7a0da0590a9fe2825a20d43e440fe
+    .agents/skills/jetpack-compose-performance/references/effects-and-threading.md: sha256:4a612526c8e9d28d26fb51b1d942d1b34a1fa2316dfe43d2869206dda49bbfa3
+    .agents/skills/jetpack-compose-performance/references/graphics-performance.md: sha256:3dc5881c2fb8eb4bcbf59b410008d995321a5fd2583e98194ee42407bdb7d266
+    .agents/skills/jetpack-compose-performance/references/layouts.md: sha256:619da0bd169a2a2c1b7e99868ab358a3be8c06f25f2bef0dd15353670ce12c06
+    .agents/skills/jetpack-compose-performance/references/lazy-layouts.md: sha256:68a0a4f43d311e4d57238ce745d0de775b1948748ab462608d5cbfe8f07b9bfe
+    .agents/skills/jetpack-compose-performance/references/state-and-stability.md: sha256:46aff96f166d19d1b2f5510c35679a0efac4fe9f578b4a1e186f5017a696ba37
+    .claude/skills/jetpack-compose-performance/SKILL.md: sha256:a1680a1ae079faa47fc706bf034b88d4c4c4903dfa4187e98e0af8b056e1848b
+    .claude/skills/jetpack-compose-performance/references/android/develop/ui/compose/custom-modifiers.md: sha256:b4ede8f37dc56c54f3621a5ad21f91a649450a9854bc1bacc1a24eb65fe31b38
+    .claude/skills/jetpack-compose-performance/references/android/develop/ui/compose/performance/backwards-write.md: sha256:e9b5b1afa36dca37f9548a8d706cc8474b3f03e61bc77037dfa6ab7b1a2169b7
+    .claude/skills/jetpack-compose-performance/references/android/develop/ui/compose/performance/stability/strongskipping.md: sha256:3a69e68553d6d628e8787b3e499766798e73d86779a149c800fff7bb4340cce4
+    .claude/skills/jetpack-compose-performance/references/animation.md: sha256:fe21a3bc55b85b807e3655f427f00e3898a7a0da0590a9fe2825a20d43e440fe
+    .claude/skills/jetpack-compose-performance/references/effects-and-threading.md: sha256:4a612526c8e9d28d26fb51b1d942d1b34a1fa2316dfe43d2869206dda49bbfa3
+    .claude/skills/jetpack-compose-performance/references/graphics-performance.md: sha256:3dc5881c2fb8eb4bcbf59b410008d995321a5fd2583e98194ee42407bdb7d266
+    .claude/skills/jetpack-compose-performance/references/layouts.md: sha256:619da0bd169a2a2c1b7e99868ab358a3be8c06f25f2bef0dd15353670ce12c06
+    .claude/skills/jetpack-compose-performance/references/lazy-layouts.md: sha256:68a0a4f43d311e4d57238ce745d0de775b1948748ab462608d5cbfe8f07b9bfe
+    .claude/skills/jetpack-compose-performance/references/state-and-stability.md: sha256:46aff96f166d19d1b2f5510c35679a0efac4fe9f578b4a1e186f5017a696ba37
+  content_hash: sha256:333fae93ad9f596bd44926fd253bed62d32d83f4ef0a942fa84f4e483d23ba36
+- repo_url: android/skills
   name: styles
   host: github.com
   resolved_commit: 5bda39f154fb859a08d45e2392f3568e049f83fb
@@ -396,6 +450,24 @@ dependencies:
     .claude/skills/r8-analyzer/scripts/keep_radius_pb2.py: sha256:37f0f038d7870c71b8d3cdd5b9b9361d79bde265e2754e3ffd511f53107a2e1a
   content_hash: sha256:7bee16200224e69abcdcc421b1705c90d8b20b2c683a9985b96785e179239d54
 - repo_url: android/skills
+  name: android-intent-security
+  host: github.com
+  resolved_commit: 5815d27fda564aa9f07ebdcb5e57ed3e8d904e0d
+  resolved_ref: 5815d27fda564aa9f07ebdcb5e57ed3e8d904e0d
+  version: unknown
+  virtual_path: security/android-intent-security
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/android-intent-security
+  - .agents/skills/android-intent-security/SKILL.md
+  - .claude/skills/android-intent-security
+  - .claude/skills/android-intent-security/SKILL.md
+  deployed_file_hashes:
+    .agents/skills/android-intent-security/SKILL.md: sha256:21b8e2a94bc4388585d10eaa1a84951cf0760a705303750a23d9b502e840bb7e
+    .claude/skills/android-intent-security/SKILL.md: sha256:21b8e2a94bc4388585d10eaa1a84951cf0760a705303750a23d9b502e840bb7e
+  content_hash: sha256:542449e369e384ea76cd7ee9bf2348dc484a5d3f30bccc0c7117e89f37694ae4
+- repo_url: android/skills
   name: edge-to-edge
   host: github.com
   resolved_commit: 5815d27fda564aa9f07ebdcb5e57ed3e8d904e0d
@@ -413,6 +485,40 @@ dependencies:
     .agents/skills/edge-to-edge/SKILL.md: sha256:4ca04cb6a5330b96e51410bc815f878b4ca642fba46fe5e1ad724c94e04d6eb8
     .claude/skills/edge-to-edge/SKILL.md: sha256:4ca04cb6a5330b96e51410bc815f878b4ca642fba46fe5e1ad724c94e04d6eb8
   content_hash: sha256:7db3c09f145f5bad71b09da526dad46cb8b2ace56e62e87aa2ca7e81a0b4790e
+- repo_url: android/skills
+  name: testing-setup
+  host: github.com
+  resolved_commit: 5815d27fda564aa9f07ebdcb5e57ed3e8d904e0d
+  resolved_ref: 5815d27fda564aa9f07ebdcb5e57ed3e8d904e0d
+  version: unknown
+  virtual_path: testing/testing-setup
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/testing-setup
+  - .agents/skills/testing-setup/SKILL.md
+  - .agents/skills/testing-setup/references/android/develop/ui/compose/testing/common-patterns.md
+  - .agents/skills/testing-setup/references/android/studio/preview/compose-screenshot-testing-with-testsuites.md
+  - .agents/skills/testing-setup/references/android/studio/preview/compose-screenshot-testing.md
+  - .agents/skills/testing-setup/references/android/training/dependency-injection/hilt-testing.md
+  - .claude/skills/testing-setup
+  - .claude/skills/testing-setup/SKILL.md
+  - .claude/skills/testing-setup/references/android/develop/ui/compose/testing/common-patterns.md
+  - .claude/skills/testing-setup/references/android/studio/preview/compose-screenshot-testing-with-testsuites.md
+  - .claude/skills/testing-setup/references/android/studio/preview/compose-screenshot-testing.md
+  - .claude/skills/testing-setup/references/android/training/dependency-injection/hilt-testing.md
+  deployed_file_hashes:
+    .agents/skills/testing-setup/SKILL.md: sha256:613970834fedb22c5f85bbc900e600e9a17cd953157af5a7e953e5938d7c2457
+    .agents/skills/testing-setup/references/android/develop/ui/compose/testing/common-patterns.md: sha256:57fc697835d875cae7179d1b164db371e1b8c37881719fb32be51c09fa5c8c35
+    .agents/skills/testing-setup/references/android/studio/preview/compose-screenshot-testing-with-testsuites.md: sha256:4b4ada7a50201bcf9ab90b0d9f00cc2ceb16513d1de7f63c12d634318a2ec20d
+    .agents/skills/testing-setup/references/android/studio/preview/compose-screenshot-testing.md: sha256:d9b9c86efe82e0aa841f43435e4a29466794e75dd452e84a29fdc4f332a4d699
+    .agents/skills/testing-setup/references/android/training/dependency-injection/hilt-testing.md: sha256:5e774a6ab09c0f469b4712ea8c468402b38dd4a19dce9570bacc49ad9af9c814
+    .claude/skills/testing-setup/SKILL.md: sha256:613970834fedb22c5f85bbc900e600e9a17cd953157af5a7e953e5938d7c2457
+    .claude/skills/testing-setup/references/android/develop/ui/compose/testing/common-patterns.md: sha256:57fc697835d875cae7179d1b164db371e1b8c37881719fb32be51c09fa5c8c35
+    .claude/skills/testing-setup/references/android/studio/preview/compose-screenshot-testing-with-testsuites.md: sha256:4b4ada7a50201bcf9ab90b0d9f00cc2ceb16513d1de7f63c12d634318a2ec20d
+    .claude/skills/testing-setup/references/android/studio/preview/compose-screenshot-testing.md: sha256:d9b9c86efe82e0aa841f43435e4a29466794e75dd452e84a29fdc4f332a4d699
+    .claude/skills/testing-setup/references/android/training/dependency-injection/hilt-testing.md: sha256:5e774a6ab09c0f469b4712ea8c468402b38dd4a19dce9570bacc49ad9af9c814
+  content_hash: sha256:2d1090689966e496966fa71047db0190f2ecbd310e3a6d00b0b372cb44673954
 - repo_url: anthropics/skills
   name: skill-creator
   host: github.com
@@ -837,6 +943,28 @@ dependencies:
     .claude/skills/compose-animations/references/animated-content.md: sha256:dcad71b0849571086196e5155ddf352b160c236a5470585fbe7b8121095f13cc
   content_hash: sha256:34afb12a6f51e8005ee5152bed17c0d11202d1eaccfe8270c4a93fe0ce43b055
 - repo_url: chrisbanes/skills
+  name: compose-ui-testing-patterns
+  host: github.com
+  resolved_commit: 8df9735a751cfabe5ddae457f28b0a8ea3d4092b
+  resolved_ref: 8df9735a751cfabe5ddae457f28b0a8ea3d4092b
+  version: unknown
+  virtual_path: skills/compose-ui-testing-patterns
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/compose-ui-testing-patterns
+  - .agents/skills/compose-ui-testing-patterns/SKILL.md
+  - .agents/skills/compose-ui-testing-patterns/references/interaction-state.md
+  - .claude/skills/compose-ui-testing-patterns
+  - .claude/skills/compose-ui-testing-patterns/SKILL.md
+  - .claude/skills/compose-ui-testing-patterns/references/interaction-state.md
+  deployed_file_hashes:
+    .agents/skills/compose-ui-testing-patterns/SKILL.md: sha256:a2d2d398dfa9f9dfe6ea94f53c3fc9b52e00b38fd203f1d154799f2b5e3ea09a
+    .agents/skills/compose-ui-testing-patterns/references/interaction-state.md: sha256:6f5dc22030d3527249355d71bd44d999f5abe947c910a42d91762672ed9b87cc
+    .claude/skills/compose-ui-testing-patterns/SKILL.md: sha256:a2d2d398dfa9f9dfe6ea94f53c3fc9b52e00b38fd203f1d154799f2b5e3ea09a
+    .claude/skills/compose-ui-testing-patterns/references/interaction-state.md: sha256:6f5dc22030d3527249355d71bd44d999f5abe947c910a42d91762672ed9b87cc
+  content_hash: sha256:7b4a7eb863bbf3d4d30e8ab41b674a5dd005265e1da69c1bd9d10d2d26b52b25
+- repo_url: chrisbanes/skills
   name: kotlin-concurrency-and-flow
   host: github.com
   resolved_commit: 8df9735a751cfabe5ddae457f28b0a8ea3d4092b
@@ -1208,6 +1336,32 @@ dependencies:
     .claude/skills/kotlin-tooling-native-build-performance/scripts/audit-native-build.sh: sha256:94af58014fb24aaf1e7757ce804ea19e4023cc778da77ac0d725bd19aa0ba9e7
   content_hash: sha256:7e3006733279967947c086cdc83f7fae97c3f4f3eefbf7eb25d69a0eb4ed06ab
 - repo_url: mattpocock/skills
+  name: diagnosing-bugs
+  host: github.com
+  resolved_commit: d1478fcb140db0b93c0c8df17bcfd311844749d0
+  resolved_ref: d1478fcb140db0b93c0c8df17bcfd311844749d0
+  version: unknown
+  virtual_path: skills/engineering/diagnosing-bugs
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/diagnosing-bugs
+  - .agents/skills/diagnosing-bugs/SKILL.md
+  - .agents/skills/diagnosing-bugs/agents/openai.yaml
+  - .agents/skills/diagnosing-bugs/scripts/hitl-loop.template.sh
+  - .claude/skills/diagnosing-bugs
+  - .claude/skills/diagnosing-bugs/SKILL.md
+  - .claude/skills/diagnosing-bugs/agents/openai.yaml
+  - .claude/skills/diagnosing-bugs/scripts/hitl-loop.template.sh
+  deployed_file_hashes:
+    .agents/skills/diagnosing-bugs/SKILL.md: sha256:849198df88cdb65fd0d97236604c1fca7ff2f22d2f705f9724a800d0266b118d
+    .agents/skills/diagnosing-bugs/agents/openai.yaml: sha256:3e430dbe4334a87597488c060cb3dc3786bb00c9182877d6f5ec41f62490e90b
+    .agents/skills/diagnosing-bugs/scripts/hitl-loop.template.sh: sha256:35103539fc36873eea36074769ad454f9379d6fc8b2dc0e26ce987fd3bfe5503
+    .claude/skills/diagnosing-bugs/SKILL.md: sha256:849198df88cdb65fd0d97236604c1fca7ff2f22d2f705f9724a800d0266b118d
+    .claude/skills/diagnosing-bugs/agents/openai.yaml: sha256:3e430dbe4334a87597488c060cb3dc3786bb00c9182877d6f5ec41f62490e90b
+    .claude/skills/diagnosing-bugs/scripts/hitl-loop.template.sh: sha256:35103539fc36873eea36074769ad454f9379d6fc8b2dc0e26ce987fd3bfe5503
+  content_hash: sha256:9b24ecaf15dd8d5594f973c590c6904d90dd3b50f8853fefd2341b7fd4a156bf
+- repo_url: mattpocock/skills
   name: domain-modeling
   host: github.com
   resolved_commit: d1478fcb140db0b93c0c8df17bcfd311844749d0
@@ -1238,6 +1392,36 @@ dependencies:
     .claude/skills/domain-modeling/agents/openai.yaml: sha256:f6bf2aa996c6e6f53fdd0708e18a0d16a56aed8322cca59fedbe3c0d2c75f06b
   content_hash: sha256:467f5e92529c2a4637440dce99841814b0864a8528714188ec91b78d900df540
 - repo_url: mattpocock/skills
+  name: tdd
+  host: github.com
+  resolved_commit: d1478fcb140db0b93c0c8df17bcfd311844749d0
+  resolved_ref: d1478fcb140db0b93c0c8df17bcfd311844749d0
+  version: unknown
+  virtual_path: skills/engineering/tdd
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/tdd
+  - .agents/skills/tdd/SKILL.md
+  - .agents/skills/tdd/agents/openai.yaml
+  - .agents/skills/tdd/mocking.md
+  - .agents/skills/tdd/tests.md
+  - .claude/skills/tdd
+  - .claude/skills/tdd/SKILL.md
+  - .claude/skills/tdd/agents/openai.yaml
+  - .claude/skills/tdd/mocking.md
+  - .claude/skills/tdd/tests.md
+  deployed_file_hashes:
+    .agents/skills/tdd/SKILL.md: sha256:5505d25bbaa8fc14a79e4d20163936958992a2995b7f1dd1d6197edc9ed722e0
+    .agents/skills/tdd/agents/openai.yaml: sha256:ea6f01cf1b8c06a4b0f5b649d74b1b8ce8685e72af1b38d70d877693e092af0b
+    .agents/skills/tdd/mocking.md: sha256:3ceb807fdf4a47d6a93d4d9a891e5ba6d362a6247bd08adc451feebfc17361ef
+    .agents/skills/tdd/tests.md: sha256:859f9e592c188fda4fc7277dd180e4ce9c7a2e13f6efe1f6f29eccc9d28c106a
+    .claude/skills/tdd/SKILL.md: sha256:5505d25bbaa8fc14a79e4d20163936958992a2995b7f1dd1d6197edc9ed722e0
+    .claude/skills/tdd/agents/openai.yaml: sha256:ea6f01cf1b8c06a4b0f5b649d74b1b8ce8685e72af1b38d70d877693e092af0b
+    .claude/skills/tdd/mocking.md: sha256:3ceb807fdf4a47d6a93d4d9a891e5ba6d362a6247bd08adc451feebfc17361ef
+    .claude/skills/tdd/tests.md: sha256:859f9e592c188fda4fc7277dd180e4ce9c7a2e13f6efe1f6f29eccc9d28c106a
+  content_hash: sha256:ef3cbb31aa8b1f8a3f9b6a042c230dc9312019e84cdc6337f60890f177fd5764
+- repo_url: mattpocock/skills
   name: grilling
   host: github.com
   resolved_commit: d1478fcb140db0b93c0c8df17bcfd311844749d0
@@ -1259,6 +1443,32 @@ dependencies:
     .claude/skills/grilling/SKILL.md: sha256:a146842ed93ca43d833550fa9adf02e58cb63c83fea9d4b4522995b82242d4e2
     .claude/skills/grilling/agents/openai.yaml: sha256:1411d7df7d99b7e621a1ff8283c8133cc2464be63d064e52d8ce169c6800ee9b
   content_hash: sha256:823f08ad33368a9626991e6782f7ae14b958e39ef8503f6bdb3b98a58d237a58
+- repo_url: mattpocock/skills
+  name: writing-for-agents
+  host: github.com
+  resolved_commit: d1478fcb140db0b93c0c8df17bcfd311844749d0
+  resolved_ref: d1478fcb140db0b93c0c8df17bcfd311844749d0
+  version: unknown
+  virtual_path: skills/productivity/writing-for-agents
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/writing-for-agents
+  - .agents/skills/writing-for-agents/SKILL-MECHANICS.md
+  - .agents/skills/writing-for-agents/SKILL.md
+  - .agents/skills/writing-for-agents/agents/openai.yaml
+  - .claude/skills/writing-for-agents
+  - .claude/skills/writing-for-agents/SKILL-MECHANICS.md
+  - .claude/skills/writing-for-agents/SKILL.md
+  - .claude/skills/writing-for-agents/agents/openai.yaml
+  deployed_file_hashes:
+    .agents/skills/writing-for-agents/SKILL-MECHANICS.md: sha256:c768e6307c7c10728c401c213f2c4ba71c542127eeb7ad2956aabd15a0fa0059
+    .agents/skills/writing-for-agents/SKILL.md: sha256:551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a
+    .agents/skills/writing-for-agents/agents/openai.yaml: sha256:eacb24b2a618cfb81dacb0416f4fdd75ddf3a8060f8ddb99aae1b1e301907e4b
+    .claude/skills/writing-for-agents/SKILL-MECHANICS.md: sha256:c768e6307c7c10728c401c213f2c4ba71c542127eeb7ad2956aabd15a0fa0059
+    .claude/skills/writing-for-agents/SKILL.md: sha256:551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a
+    .claude/skills/writing-for-agents/agents/openai.yaml: sha256:eacb24b2a618cfb81dacb0416f4fdd75ddf3a8060f8ddb99aae1b1e301907e4b
+  content_hash: sha256:8365ebe1d0c343d3d46970526f30fcf7c5e0c5e49fd39a3c882977024626ff3c
 - repo_url: skydoves/compose-performance-skills
   name: ordering-modifier-chains
   host: github.com
@@ -1478,6 +1688,24 @@ deployments:
   content_hash: sha256:2d35bb178b30581a9d4a31c30cf4895861a095863a9d8434a134fd10c2fca0b3
 - kind: project-relative
   target: agent-skills
+  value: .agents/skills/android-intent-security
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/security/android-intent-security
+  active_owner: android/skills/security/android-intent-security
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/android-intent-security/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/security/android-intent-security
+  active_owner: android/skills/security/android-intent-security
+  content_hash: sha256:21b8e2a94bc4388585d10eaa1a84951cf0760a705303750a23d9b502e840bb7e
+- kind: project-relative
+  target: agent-skills
   value: .agents/skills/appfunctions
   runtime: null
   scope: project
@@ -1595,6 +1823,33 @@ deployments:
   content_hash: sha256:dcad71b0849571086196e5155ddf352b160c236a5470585fbe7b8121095f13cc
 - kind: project-relative
   target: agent-skills
+  value: .agents/skills/compose-ui-testing-patterns
+  runtime: null
+  scope: project
+  owners:
+  - chrisbanes/skills/skills/compose-ui-testing-patterns
+  active_owner: chrisbanes/skills/skills/compose-ui-testing-patterns
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/compose-ui-testing-patterns/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - chrisbanes/skills/skills/compose-ui-testing-patterns
+  active_owner: chrisbanes/skills/skills/compose-ui-testing-patterns
+  content_hash: sha256:a2d2d398dfa9f9dfe6ea94f53c3fc9b52e00b38fd203f1d154799f2b5e3ea09a
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/compose-ui-testing-patterns/references/interaction-state.md
+  runtime: null
+  scope: project
+  owners:
+  - chrisbanes/skills/skills/compose-ui-testing-patterns
+  active_owner: chrisbanes/skills/skills/compose-ui-testing-patterns
+  content_hash: sha256:6f5dc22030d3527249355d71bd44d999f5abe947c910a42d91762672ed9b87cc
+- kind: project-relative
+  target: agent-skills
   value: .agents/skills/conventional-branch
   runtime: null
   scope: project
@@ -1629,6 +1884,42 @@ deployments:
   - github/awesome-copilot/skills/conventional-commit
   active_owner: github/awesome-copilot/skills/conventional-commit
   content_hash: sha256:250235f71b8c501a7744ded911281292324bcd1a2d014e34b25041e2d2c8bf73
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/diagnosing-bugs
+  runtime: null
+  scope: project
+  owners:
+  - mattpocock/skills/skills/engineering/diagnosing-bugs
+  active_owner: mattpocock/skills/skills/engineering/diagnosing-bugs
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/diagnosing-bugs/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - mattpocock/skills/skills/engineering/diagnosing-bugs
+  active_owner: mattpocock/skills/skills/engineering/diagnosing-bugs
+  content_hash: sha256:849198df88cdb65fd0d97236604c1fca7ff2f22d2f705f9724a800d0266b118d
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/diagnosing-bugs/agents/openai.yaml
+  runtime: null
+  scope: project
+  owners:
+  - mattpocock/skills/skills/engineering/diagnosing-bugs
+  active_owner: mattpocock/skills/skills/engineering/diagnosing-bugs
+  content_hash: sha256:3e430dbe4334a87597488c060cb3dc3786bb00c9182877d6f5ec41f62490e90b
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/diagnosing-bugs/scripts/hitl-loop.template.sh
+  runtime: null
+  scope: project
+  owners:
+  - mattpocock/skills/skills/engineering/diagnosing-bugs
+  active_owner: mattpocock/skills/skills/engineering/diagnosing-bugs
+  content_hash: sha256:35103539fc36873eea36074769ad454f9379d6fc8b2dc0e26ce987fd3bfe5503
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/domain-modeling
@@ -2268,6 +2559,105 @@ deployments:
   - mattpocock/skills/skills/productivity/grilling
   active_owner: mattpocock/skills/skills/productivity/grilling
   content_hash: sha256:1411d7df7d99b7e621a1ff8283c8133cc2464be63d064e52d8ce169c6800ee9b
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/jetpack-compose-performance
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/jetpack-compose/jetpack-compose-performance
+  active_owner: android/skills/jetpack-compose/jetpack-compose-performance
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/jetpack-compose-performance/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/jetpack-compose/jetpack-compose-performance
+  active_owner: android/skills/jetpack-compose/jetpack-compose-performance
+  content_hash: sha256:a1680a1ae079faa47fc706bf034b88d4c4c4903dfa4187e98e0af8b056e1848b
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/jetpack-compose-performance/references/android/develop/ui/compose/custom-modifiers.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/jetpack-compose/jetpack-compose-performance
+  active_owner: android/skills/jetpack-compose/jetpack-compose-performance
+  content_hash: sha256:b4ede8f37dc56c54f3621a5ad21f91a649450a9854bc1bacc1a24eb65fe31b38
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/jetpack-compose-performance/references/android/develop/ui/compose/performance/backwards-write.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/jetpack-compose/jetpack-compose-performance
+  active_owner: android/skills/jetpack-compose/jetpack-compose-performance
+  content_hash: sha256:e9b5b1afa36dca37f9548a8d706cc8474b3f03e61bc77037dfa6ab7b1a2169b7
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/jetpack-compose-performance/references/android/develop/ui/compose/performance/stability/strongskipping.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/jetpack-compose/jetpack-compose-performance
+  active_owner: android/skills/jetpack-compose/jetpack-compose-performance
+  content_hash: sha256:3a69e68553d6d628e8787b3e499766798e73d86779a149c800fff7bb4340cce4
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/jetpack-compose-performance/references/animation.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/jetpack-compose/jetpack-compose-performance
+  active_owner: android/skills/jetpack-compose/jetpack-compose-performance
+  content_hash: sha256:fe21a3bc55b85b807e3655f427f00e3898a7a0da0590a9fe2825a20d43e440fe
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/jetpack-compose-performance/references/effects-and-threading.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/jetpack-compose/jetpack-compose-performance
+  active_owner: android/skills/jetpack-compose/jetpack-compose-performance
+  content_hash: sha256:4a612526c8e9d28d26fb51b1d942d1b34a1fa2316dfe43d2869206dda49bbfa3
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/jetpack-compose-performance/references/graphics-performance.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/jetpack-compose/jetpack-compose-performance
+  active_owner: android/skills/jetpack-compose/jetpack-compose-performance
+  content_hash: sha256:3dc5881c2fb8eb4bcbf59b410008d995321a5fd2583e98194ee42407bdb7d266
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/jetpack-compose-performance/references/layouts.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/jetpack-compose/jetpack-compose-performance
+  active_owner: android/skills/jetpack-compose/jetpack-compose-performance
+  content_hash: sha256:619da0bd169a2a2c1b7e99868ab358a3be8c06f25f2bef0dd15353670ce12c06
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/jetpack-compose-performance/references/lazy-layouts.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/jetpack-compose/jetpack-compose-performance
+  active_owner: android/skills/jetpack-compose/jetpack-compose-performance
+  content_hash: sha256:68a0a4f43d311e4d57238ce745d0de775b1948748ab462608d5cbfe8f07b9bfe
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/jetpack-compose-performance/references/state-and-stability.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/jetpack-compose/jetpack-compose-performance
+  active_owner: android/skills/jetpack-compose/jetpack-compose-performance
+  content_hash: sha256:46aff96f166d19d1b2f5510c35679a0efac4fe9f578b4a1e186f5017a696ba37
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/kotlin-backend-jpa-entity-mapping
@@ -4259,6 +4649,105 @@ deployments:
   content_hash: sha256:7d9c33de1146a274f6ca45790a25f4421ea697893e18a0a6b2ccfb401e245891
 - kind: project-relative
   target: agent-skills
+  value: .agents/skills/tdd
+  runtime: null
+  scope: project
+  owners:
+  - mattpocock/skills/skills/engineering/tdd
+  active_owner: mattpocock/skills/skills/engineering/tdd
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/tdd/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - mattpocock/skills/skills/engineering/tdd
+  active_owner: mattpocock/skills/skills/engineering/tdd
+  content_hash: sha256:5505d25bbaa8fc14a79e4d20163936958992a2995b7f1dd1d6197edc9ed722e0
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/tdd/agents/openai.yaml
+  runtime: null
+  scope: project
+  owners:
+  - mattpocock/skills/skills/engineering/tdd
+  active_owner: mattpocock/skills/skills/engineering/tdd
+  content_hash: sha256:ea6f01cf1b8c06a4b0f5b649d74b1b8ce8685e72af1b38d70d877693e092af0b
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/tdd/mocking.md
+  runtime: null
+  scope: project
+  owners:
+  - mattpocock/skills/skills/engineering/tdd
+  active_owner: mattpocock/skills/skills/engineering/tdd
+  content_hash: sha256:3ceb807fdf4a47d6a93d4d9a891e5ba6d362a6247bd08adc451feebfc17361ef
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/tdd/tests.md
+  runtime: null
+  scope: project
+  owners:
+  - mattpocock/skills/skills/engineering/tdd
+  active_owner: mattpocock/skills/skills/engineering/tdd
+  content_hash: sha256:859f9e592c188fda4fc7277dd180e4ce9c7a2e13f6efe1f6f29eccc9d28c106a
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/testing-setup
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/testing/testing-setup
+  active_owner: android/skills/testing/testing-setup
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/testing-setup/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/testing/testing-setup
+  active_owner: android/skills/testing/testing-setup
+  content_hash: sha256:613970834fedb22c5f85bbc900e600e9a17cd953157af5a7e953e5938d7c2457
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/testing-setup/references/android/develop/ui/compose/testing/common-patterns.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/testing/testing-setup
+  active_owner: android/skills/testing/testing-setup
+  content_hash: sha256:57fc697835d875cae7179d1b164db371e1b8c37881719fb32be51c09fa5c8c35
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/testing-setup/references/android/studio/preview/compose-screenshot-testing-with-testsuites.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/testing/testing-setup
+  active_owner: android/skills/testing/testing-setup
+  content_hash: sha256:4b4ada7a50201bcf9ab90b0d9f00cc2ceb16513d1de7f63c12d634318a2ec20d
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/testing-setup/references/android/studio/preview/compose-screenshot-testing.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/testing/testing-setup
+  active_owner: android/skills/testing/testing-setup
+  content_hash: sha256:d9b9c86efe82e0aa841f43435e4a29466794e75dd452e84a29fdc4f332a4d699
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/testing-setup/references/android/training/dependency-injection/hilt-testing.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/testing/testing-setup
+  active_owner: android/skills/testing/testing-setup
+  content_hash: sha256:5e774a6ab09c0f469b4712ea8c468402b38dd4a19dce9570bacc49ad9af9c814
+- kind: project-relative
+  target: agent-skills
   value: .agents/skills/using-efficient-effects
   runtime: null
   scope: project
@@ -4275,6 +4764,42 @@ deployments:
   - skydoves/compose-performance-skills/side-effects/using-efficient-effects
   active_owner: skydoves/compose-performance-skills/side-effects/using-efficient-effects
   content_hash: sha256:f5f891478683cb1eb0d07aef277606135560f0491993a45181a141627d080362
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/writing-for-agents
+  runtime: null
+  scope: project
+  owners:
+  - mattpocock/skills/skills/productivity/writing-for-agents
+  active_owner: mattpocock/skills/skills/productivity/writing-for-agents
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/writing-for-agents/SKILL-MECHANICS.md
+  runtime: null
+  scope: project
+  owners:
+  - mattpocock/skills/skills/productivity/writing-for-agents
+  active_owner: mattpocock/skills/skills/productivity/writing-for-agents
+  content_hash: sha256:c768e6307c7c10728c401c213f2c4ba71c542127eeb7ad2956aabd15a0fa0059
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/writing-for-agents/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - mattpocock/skills/skills/productivity/writing-for-agents
+  active_owner: mattpocock/skills/skills/productivity/writing-for-agents
+  content_hash: sha256:551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/writing-for-agents/agents/openai.yaml
+  runtime: null
+  scope: project
+  owners:
+  - mattpocock/skills/skills/productivity/writing-for-agents
+  active_owner: mattpocock/skills/skills/productivity/writing-for-agents
+  content_hash: sha256:eacb24b2a618cfb81dacb0416f4fdd75ddf3a8060f8ddb99aae1b1e301907e4b
 - kind: project-relative
   target: claude
   value: .claude/agents/floo-coder.md
@@ -4502,6 +5027,24 @@ deployments:
   content_hash: sha256:2d35bb178b30581a9d4a31c30cf4895861a095863a9d8434a134fd10c2fca0b3
 - kind: project-relative
   target: claude
+  value: .claude/skills/android-intent-security
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/security/android-intent-security
+  active_owner: android/skills/security/android-intent-security
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/android-intent-security/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/security/android-intent-security
+  active_owner: android/skills/security/android-intent-security
+  content_hash: sha256:21b8e2a94bc4388585d10eaa1a84951cf0760a705303750a23d9b502e840bb7e
+- kind: project-relative
+  target: claude
   value: .claude/skills/appfunctions
   runtime: null
   scope: project
@@ -4619,6 +5162,33 @@ deployments:
   content_hash: sha256:dcad71b0849571086196e5155ddf352b160c236a5470585fbe7b8121095f13cc
 - kind: project-relative
   target: claude
+  value: .claude/skills/compose-ui-testing-patterns
+  runtime: null
+  scope: project
+  owners:
+  - chrisbanes/skills/skills/compose-ui-testing-patterns
+  active_owner: chrisbanes/skills/skills/compose-ui-testing-patterns
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/compose-ui-testing-patterns/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - chrisbanes/skills/skills/compose-ui-testing-patterns
+  active_owner: chrisbanes/skills/skills/compose-ui-testing-patterns
+  content_hash: sha256:a2d2d398dfa9f9dfe6ea94f53c3fc9b52e00b38fd203f1d154799f2b5e3ea09a
+- kind: project-relative
+  target: claude
+  value: .claude/skills/compose-ui-testing-patterns/references/interaction-state.md
+  runtime: null
+  scope: project
+  owners:
+  - chrisbanes/skills/skills/compose-ui-testing-patterns
+  active_owner: chrisbanes/skills/skills/compose-ui-testing-patterns
+  content_hash: sha256:6f5dc22030d3527249355d71bd44d999f5abe947c910a42d91762672ed9b87cc
+- kind: project-relative
+  target: claude
   value: .claude/skills/conventional-branch
   runtime: null
   scope: project
@@ -4653,6 +5223,42 @@ deployments:
   - github/awesome-copilot/skills/conventional-commit
   active_owner: github/awesome-copilot/skills/conventional-commit
   content_hash: sha256:250235f71b8c501a7744ded911281292324bcd1a2d014e34b25041e2d2c8bf73
+- kind: project-relative
+  target: claude
+  value: .claude/skills/diagnosing-bugs
+  runtime: null
+  scope: project
+  owners:
+  - mattpocock/skills/skills/engineering/diagnosing-bugs
+  active_owner: mattpocock/skills/skills/engineering/diagnosing-bugs
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/diagnosing-bugs/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - mattpocock/skills/skills/engineering/diagnosing-bugs
+  active_owner: mattpocock/skills/skills/engineering/diagnosing-bugs
+  content_hash: sha256:849198df88cdb65fd0d97236604c1fca7ff2f22d2f705f9724a800d0266b118d
+- kind: project-relative
+  target: claude
+  value: .claude/skills/diagnosing-bugs/agents/openai.yaml
+  runtime: null
+  scope: project
+  owners:
+  - mattpocock/skills/skills/engineering/diagnosing-bugs
+  active_owner: mattpocock/skills/skills/engineering/diagnosing-bugs
+  content_hash: sha256:3e430dbe4334a87597488c060cb3dc3786bb00c9182877d6f5ec41f62490e90b
+- kind: project-relative
+  target: claude
+  value: .claude/skills/diagnosing-bugs/scripts/hitl-loop.template.sh
+  runtime: null
+  scope: project
+  owners:
+  - mattpocock/skills/skills/engineering/diagnosing-bugs
+  active_owner: mattpocock/skills/skills/engineering/diagnosing-bugs
+  content_hash: sha256:35103539fc36873eea36074769ad454f9379d6fc8b2dc0e26ce987fd3bfe5503
 - kind: project-relative
   target: claude
   value: .claude/skills/domain-modeling
@@ -5292,6 +5898,105 @@ deployments:
   - mattpocock/skills/skills/productivity/grilling
   active_owner: mattpocock/skills/skills/productivity/grilling
   content_hash: sha256:1411d7df7d99b7e621a1ff8283c8133cc2464be63d064e52d8ce169c6800ee9b
+- kind: project-relative
+  target: claude
+  value: .claude/skills/jetpack-compose-performance
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/jetpack-compose/jetpack-compose-performance
+  active_owner: android/skills/jetpack-compose/jetpack-compose-performance
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/jetpack-compose-performance/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/jetpack-compose/jetpack-compose-performance
+  active_owner: android/skills/jetpack-compose/jetpack-compose-performance
+  content_hash: sha256:a1680a1ae079faa47fc706bf034b88d4c4c4903dfa4187e98e0af8b056e1848b
+- kind: project-relative
+  target: claude
+  value: .claude/skills/jetpack-compose-performance/references/android/develop/ui/compose/custom-modifiers.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/jetpack-compose/jetpack-compose-performance
+  active_owner: android/skills/jetpack-compose/jetpack-compose-performance
+  content_hash: sha256:b4ede8f37dc56c54f3621a5ad21f91a649450a9854bc1bacc1a24eb65fe31b38
+- kind: project-relative
+  target: claude
+  value: .claude/skills/jetpack-compose-performance/references/android/develop/ui/compose/performance/backwards-write.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/jetpack-compose/jetpack-compose-performance
+  active_owner: android/skills/jetpack-compose/jetpack-compose-performance
+  content_hash: sha256:e9b5b1afa36dca37f9548a8d706cc8474b3f03e61bc77037dfa6ab7b1a2169b7
+- kind: project-relative
+  target: claude
+  value: .claude/skills/jetpack-compose-performance/references/android/develop/ui/compose/performance/stability/strongskipping.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/jetpack-compose/jetpack-compose-performance
+  active_owner: android/skills/jetpack-compose/jetpack-compose-performance
+  content_hash: sha256:3a69e68553d6d628e8787b3e499766798e73d86779a149c800fff7bb4340cce4
+- kind: project-relative
+  target: claude
+  value: .claude/skills/jetpack-compose-performance/references/animation.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/jetpack-compose/jetpack-compose-performance
+  active_owner: android/skills/jetpack-compose/jetpack-compose-performance
+  content_hash: sha256:fe21a3bc55b85b807e3655f427f00e3898a7a0da0590a9fe2825a20d43e440fe
+- kind: project-relative
+  target: claude
+  value: .claude/skills/jetpack-compose-performance/references/effects-and-threading.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/jetpack-compose/jetpack-compose-performance
+  active_owner: android/skills/jetpack-compose/jetpack-compose-performance
+  content_hash: sha256:4a612526c8e9d28d26fb51b1d942d1b34a1fa2316dfe43d2869206dda49bbfa3
+- kind: project-relative
+  target: claude
+  value: .claude/skills/jetpack-compose-performance/references/graphics-performance.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/jetpack-compose/jetpack-compose-performance
+  active_owner: android/skills/jetpack-compose/jetpack-compose-performance
+  content_hash: sha256:3dc5881c2fb8eb4bcbf59b410008d995321a5fd2583e98194ee42407bdb7d266
+- kind: project-relative
+  target: claude
+  value: .claude/skills/jetpack-compose-performance/references/layouts.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/jetpack-compose/jetpack-compose-performance
+  active_owner: android/skills/jetpack-compose/jetpack-compose-performance
+  content_hash: sha256:619da0bd169a2a2c1b7e99868ab358a3be8c06f25f2bef0dd15353670ce12c06
+- kind: project-relative
+  target: claude
+  value: .claude/skills/jetpack-compose-performance/references/lazy-layouts.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/jetpack-compose/jetpack-compose-performance
+  active_owner: android/skills/jetpack-compose/jetpack-compose-performance
+  content_hash: sha256:68a0a4f43d311e4d57238ce745d0de775b1948748ab462608d5cbfe8f07b9bfe
+- kind: project-relative
+  target: claude
+  value: .claude/skills/jetpack-compose-performance/references/state-and-stability.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/jetpack-compose/jetpack-compose-performance
+  active_owner: android/skills/jetpack-compose/jetpack-compose-performance
+  content_hash: sha256:46aff96f166d19d1b2f5510c35679a0efac4fe9f578b4a1e186f5017a696ba37
 - kind: project-relative
   target: claude
   value: .claude/skills/kotlin-backend-jpa-entity-mapping
@@ -7283,6 +7988,105 @@ deployments:
   content_hash: sha256:7d9c33de1146a274f6ca45790a25f4421ea697893e18a0a6b2ccfb401e245891
 - kind: project-relative
   target: claude
+  value: .claude/skills/tdd
+  runtime: null
+  scope: project
+  owners:
+  - mattpocock/skills/skills/engineering/tdd
+  active_owner: mattpocock/skills/skills/engineering/tdd
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/tdd/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - mattpocock/skills/skills/engineering/tdd
+  active_owner: mattpocock/skills/skills/engineering/tdd
+  content_hash: sha256:5505d25bbaa8fc14a79e4d20163936958992a2995b7f1dd1d6197edc9ed722e0
+- kind: project-relative
+  target: claude
+  value: .claude/skills/tdd/agents/openai.yaml
+  runtime: null
+  scope: project
+  owners:
+  - mattpocock/skills/skills/engineering/tdd
+  active_owner: mattpocock/skills/skills/engineering/tdd
+  content_hash: sha256:ea6f01cf1b8c06a4b0f5b649d74b1b8ce8685e72af1b38d70d877693e092af0b
+- kind: project-relative
+  target: claude
+  value: .claude/skills/tdd/mocking.md
+  runtime: null
+  scope: project
+  owners:
+  - mattpocock/skills/skills/engineering/tdd
+  active_owner: mattpocock/skills/skills/engineering/tdd
+  content_hash: sha256:3ceb807fdf4a47d6a93d4d9a891e5ba6d362a6247bd08adc451feebfc17361ef
+- kind: project-relative
+  target: claude
+  value: .claude/skills/tdd/tests.md
+  runtime: null
+  scope: project
+  owners:
+  - mattpocock/skills/skills/engineering/tdd
+  active_owner: mattpocock/skills/skills/engineering/tdd
+  content_hash: sha256:859f9e592c188fda4fc7277dd180e4ce9c7a2e13f6efe1f6f29eccc9d28c106a
+- kind: project-relative
+  target: claude
+  value: .claude/skills/testing-setup
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/testing/testing-setup
+  active_owner: android/skills/testing/testing-setup
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/testing-setup/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/testing/testing-setup
+  active_owner: android/skills/testing/testing-setup
+  content_hash: sha256:613970834fedb22c5f85bbc900e600e9a17cd953157af5a7e953e5938d7c2457
+- kind: project-relative
+  target: claude
+  value: .claude/skills/testing-setup/references/android/develop/ui/compose/testing/common-patterns.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/testing/testing-setup
+  active_owner: android/skills/testing/testing-setup
+  content_hash: sha256:57fc697835d875cae7179d1b164db371e1b8c37881719fb32be51c09fa5c8c35
+- kind: project-relative
+  target: claude
+  value: .claude/skills/testing-setup/references/android/studio/preview/compose-screenshot-testing-with-testsuites.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/testing/testing-setup
+  active_owner: android/skills/testing/testing-setup
+  content_hash: sha256:4b4ada7a50201bcf9ab90b0d9f00cc2ceb16513d1de7f63c12d634318a2ec20d
+- kind: project-relative
+  target: claude
+  value: .claude/skills/testing-setup/references/android/studio/preview/compose-screenshot-testing.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/testing/testing-setup
+  active_owner: android/skills/testing/testing-setup
+  content_hash: sha256:d9b9c86efe82e0aa841f43435e4a29466794e75dd452e84a29fdc4f332a4d699
+- kind: project-relative
+  target: claude
+  value: .claude/skills/testing-setup/references/android/training/dependency-injection/hilt-testing.md
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/testing/testing-setup
+  active_owner: android/skills/testing/testing-setup
+  content_hash: sha256:5e774a6ab09c0f469b4712ea8c468402b38dd4a19dce9570bacc49ad9af9c814
+- kind: project-relative
+  target: claude
   value: .claude/skills/using-efficient-effects
   runtime: null
   scope: project
@@ -7299,6 +8103,42 @@ deployments:
   - skydoves/compose-performance-skills/side-effects/using-efficient-effects
   active_owner: skydoves/compose-performance-skills/side-effects/using-efficient-effects
   content_hash: sha256:f5f891478683cb1eb0d07aef277606135560f0491993a45181a141627d080362
+- kind: project-relative
+  target: claude
+  value: .claude/skills/writing-for-agents
+  runtime: null
+  scope: project
+  owners:
+  - mattpocock/skills/skills/productivity/writing-for-agents
+  active_owner: mattpocock/skills/skills/productivity/writing-for-agents
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/writing-for-agents/SKILL-MECHANICS.md
+  runtime: null
+  scope: project
+  owners:
+  - mattpocock/skills/skills/productivity/writing-for-agents
+  active_owner: mattpocock/skills/skills/productivity/writing-for-agents
+  content_hash: sha256:c768e6307c7c10728c401c213f2c4ba71c542127eeb7ad2956aabd15a0fa0059
+- kind: project-relative
+  target: claude
+  value: .claude/skills/writing-for-agents/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - mattpocock/skills/skills/productivity/writing-for-agents
+  active_owner: mattpocock/skills/skills/productivity/writing-for-agents
+  content_hash: sha256:551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a
+- kind: project-relative
+  target: claude
+  value: .claude/skills/writing-for-agents/agents/openai.yaml
+  runtime: null
+  scope: project
+  owners:
+  - mattpocock/skills/skills/productivity/writing-for-agents
+  active_owner: mattpocock/skills/skills/productivity/writing-for-agents
+  content_hash: sha256:eacb24b2a618cfb81dacb0416f4fdd75ddf3a8060f8ddb99aae1b1e301907e4b
 - kind: project-relative
   target: codex
   value: .codex/agents/floo-coder.toml
