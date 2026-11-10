@@ -34,8 +34,7 @@ If the task targets Kotlin, Android, or Kotlin Multiplatform, you may load:
 
 - `floo-android-craftsmanship`
 - `compose-animations`
-- `ordering-modifier-chains`
-- `using-efficient-effects`
+- `jetpack-compose-performance`
 - All skills prefixed with `kotlin-`
 - All skills containing `android` keywords
 

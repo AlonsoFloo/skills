@@ -450,24 +450,6 @@ dependencies:
     .claude/skills/r8-analyzer/scripts/keep_radius_pb2.py: sha256:37f0f038d7870c71b8d3cdd5b9b9361d79bde265e2754e3ffd511f53107a2e1a
   content_hash: sha256:7bee16200224e69abcdcc421b1705c90d8b20b2c683a9985b96785e179239d54
 - repo_url: android/skills
-  name: android-intent-security
-  host: github.com
-  resolved_commit: 5815d27fda564aa9f07ebdcb5e57ed3e8d904e0d
-  resolved_ref: 5815d27fda564aa9f07ebdcb5e57ed3e8d904e0d
-  version: unknown
-  virtual_path: security/android-intent-security
-  is_virtual: true
-  package_type: claude_skill
-  deployed_files:
-  - .agents/skills/android-intent-security
-  - .agents/skills/android-intent-security/SKILL.md
-  - .claude/skills/android-intent-security
-  - .claude/skills/android-intent-security/SKILL.md
-  deployed_file_hashes:
-    .agents/skills/android-intent-security/SKILL.md: sha256:21b8e2a94bc4388585d10eaa1a84951cf0760a705303750a23d9b502e840bb7e
-    .claude/skills/android-intent-security/SKILL.md: sha256:21b8e2a94bc4388585d10eaa1a84951cf0760a705303750a23d9b502e840bb7e
-  content_hash: sha256:542449e369e384ea76cd7ee9bf2348dc484a5d3f30bccc0c7117e89f37694ae4
-- repo_url: android/skills
   name: edge-to-edge
   host: github.com
   resolved_commit: 5815d27fda564aa9f07ebdcb5e57ed3e8d904e0d
@@ -485,40 +467,6 @@ dependencies:
     .agents/skills/edge-to-edge/SKILL.md: sha256:4ca04cb6a5330b96e51410bc815f878b4ca642fba46fe5e1ad724c94e04d6eb8
     .claude/skills/edge-to-edge/SKILL.md: sha256:4ca04cb6a5330b96e51410bc815f878b4ca642fba46fe5e1ad724c94e04d6eb8
   content_hash: sha256:7db3c09f145f5bad71b09da526dad46cb8b2ace56e62e87aa2ca7e81a0b4790e
-- repo_url: android/skills
-  name: testing-setup
-  host: github.com
-  resolved_commit: 5815d27fda564aa9f07ebdcb5e57ed3e8d904e0d
-  resolved_ref: 5815d27fda564aa9f07ebdcb5e57ed3e8d904e0d
-  version: unknown
-  virtual_path: testing/testing-setup
-  is_virtual: true
-  package_type: claude_skill
-  deployed_files:
-  - .agents/skills/testing-setup
-  - .agents/skills/testing-setup/SKILL.md
-  - .agents/skills/testing-setup/references/android/develop/ui/compose/testing/common-patterns.md
-  - .agents/skills/testing-setup/references/android/studio/preview/compose-screenshot-testing-with-testsuites.md
-  - .agents/skills/testing-setup/references/android/studio/preview/compose-screenshot-testing.md
-  - .agents/skills/testing-setup/references/android/training/dependency-injection/hilt-testing.md
-  - .claude/skills/testing-setup
-  - .claude/skills/testing-setup/SKILL.md
-  - .claude/skills/testing-setup/references/android/develop/ui/compose/testing/common-patterns.md
-  - .claude/skills/testing-setup/references/android/studio/preview/compose-screenshot-testing-with-testsuites.md
-  - .claude/skills/testing-setup/references/android/studio/preview/compose-screenshot-testing.md
-  - .claude/skills/testing-setup/references/android/training/dependency-injection/hilt-testing.md
-  deployed_file_hashes:
-    .agents/skills/testing-setup/SKILL.md: sha256:613970834fedb22c5f85bbc900e600e9a17cd953157af5a7e953e5938d7c2457
-    .agents/skills/testing-setup/references/android/develop/ui/compose/testing/common-patterns.md: sha256:57fc697835d875cae7179d1b164db371e1b8c37881719fb32be51c09fa5c8c35
-    .agents/skills/testing-setup/references/android/studio/preview/compose-screenshot-testing-with-testsuites.md: sha256:4b4ada7a50201bcf9ab90b0d9f00cc2ceb16513d1de7f63c12d634318a2ec20d
-    .agents/skills/testing-setup/references/android/studio/preview/compose-screenshot-testing.md: sha256:d9b9c86efe82e0aa841f43435e4a29466794e75dd452e84a29fdc4f332a4d699
-    .agents/skills/testing-setup/references/android/training/dependency-injection/hilt-testing.md: sha256:5e774a6ab09c0f469b4712ea8c468402b38dd4a19dce9570bacc49ad9af9c814
-    .claude/skills/testing-setup/SKILL.md: sha256:613970834fedb22c5f85bbc900e600e9a17cd953157af5a7e953e5938d7c2457
-    .claude/skills/testing-setup/references/android/develop/ui/compose/testing/common-patterns.md: sha256:57fc697835d875cae7179d1b164db371e1b8c37881719fb32be51c09fa5c8c35
-    .claude/skills/testing-setup/references/android/studio/preview/compose-screenshot-testing-with-testsuites.md: sha256:4b4ada7a50201bcf9ab90b0d9f00cc2ceb16513d1de7f63c12d634318a2ec20d
-    .claude/skills/testing-setup/references/android/studio/preview/compose-screenshot-testing.md: sha256:d9b9c86efe82e0aa841f43435e4a29466794e75dd452e84a29fdc4f332a4d699
-    .claude/skills/testing-setup/references/android/training/dependency-injection/hilt-testing.md: sha256:5e774a6ab09c0f469b4712ea8c468402b38dd4a19dce9570bacc49ad9af9c814
-  content_hash: sha256:2d1090689966e496966fa71047db0190f2ecbd310e3a6d00b0b372cb44673954
 - repo_url: anthropics/skills
   name: skill-creator
   host: github.com
@@ -1365,42 +1313,6 @@ dependencies:
     .claude/skills/grilling/SKILL.md: sha256:a146842ed93ca43d833550fa9adf02e58cb63c83fea9d4b4522995b82242d4e2
     .claude/skills/grilling/agents/openai.yaml: sha256:1411d7df7d99b7e621a1ff8283c8133cc2464be63d064e52d8ce169c6800ee9b
   content_hash: sha256:823f08ad33368a9626991e6782f7ae14b958e39ef8503f6bdb3b98a58d237a58
-- repo_url: skydoves/compose-performance-skills
-  name: ordering-modifier-chains
-  host: github.com
-  resolved_commit: 1b32f81724c0d71fe9ef093ca44697f559fdab6e
-  resolved_ref: main
-  version: unknown
-  virtual_path: modifiers/ordering-modifier-chains
-  is_virtual: true
-  package_type: claude_skill
-  deployed_files:
-  - .agents/skills/ordering-modifier-chains
-  - .agents/skills/ordering-modifier-chains/SKILL.md
-  - .claude/skills/ordering-modifier-chains
-  - .claude/skills/ordering-modifier-chains/SKILL.md
-  deployed_file_hashes:
-    .agents/skills/ordering-modifier-chains/SKILL.md: sha256:57b72424fb4f25e33b8a4144e9eaaae01b11fff2d375514e00b56e5fa0934c8a
-    .claude/skills/ordering-modifier-chains/SKILL.md: sha256:57b72424fb4f25e33b8a4144e9eaaae01b11fff2d375514e00b56e5fa0934c8a
-  content_hash: sha256:962358a48cabb3897a56ecd46997fbd8094bf2b0722086e26f17e7c7dbaf70bf
-- repo_url: skydoves/compose-performance-skills
-  name: using-efficient-effects
-  host: github.com
-  resolved_commit: 1b32f81724c0d71fe9ef093ca44697f559fdab6e
-  resolved_ref: main
-  version: unknown
-  virtual_path: side-effects/using-efficient-effects
-  is_virtual: true
-  package_type: claude_skill
-  deployed_files:
-  - .agents/skills/using-efficient-effects
-  - .agents/skills/using-efficient-effects/SKILL.md
-  - .claude/skills/using-efficient-effects
-  - .claude/skills/using-efficient-effects/SKILL.md
-  deployed_file_hashes:
-    .agents/skills/using-efficient-effects/SKILL.md: sha256:f5f891478683cb1eb0d07aef277606135560f0491993a45181a141627d080362
-    .claude/skills/using-efficient-effects/SKILL.md: sha256:f5f891478683cb1eb0d07aef277606135560f0491993a45181a141627d080362
-  content_hash: sha256:30de443599bceda2de9c7c6de5e8cf7ac6e94c7d3bc8ceecb55698b34f020f68
 deployments:
 - kind: project-relative
   target: agent-skills
@@ -1582,24 +1494,6 @@ deployments:
   - android/skills/devtools/android-cli
   active_owner: android/skills/devtools/android-cli
   content_hash: sha256:2d35bb178b30581a9d4a31c30cf4895861a095863a9d8434a134fd10c2fca0b3
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/android-intent-security
-  runtime: null
-  scope: project
-  owners:
-  - android/skills/security/android-intent-security
-  active_owner: android/skills/security/android-intent-security
-  content_hash: null
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/android-intent-security/SKILL.md
-  runtime: null
-  scope: project
-  owners:
-  - android/skills/security/android-intent-security
-  active_owner: android/skills/security/android-intent-security
-  content_hash: sha256:21b8e2a94bc4388585d10eaa1a84951cf0760a705303750a23d9b502e840bb7e
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/appfunctions
@@ -3357,24 +3251,6 @@ deployments:
   content_hash: sha256:ad5f13e3d5ee1bc849d2da5941d4f99a3e2a5748d52fcdfde96d1bc21bf47acb
 - kind: project-relative
   target: agent-skills
-  value: .agents/skills/ordering-modifier-chains
-  runtime: null
-  scope: project
-  owners:
-  - skydoves/compose-performance-skills/modifiers/ordering-modifier-chains
-  active_owner: skydoves/compose-performance-skills/modifiers/ordering-modifier-chains
-  content_hash: null
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/ordering-modifier-chains/SKILL.md
-  runtime: null
-  scope: project
-  owners:
-  - skydoves/compose-performance-skills/modifiers/ordering-modifier-chains
-  active_owner: skydoves/compose-performance-skills/modifiers/ordering-modifier-chains
-  content_hash: sha256:57b72424fb4f25e33b8a4144e9eaaae01b11fff2d375514e00b56e5fa0934c8a
-- kind: project-relative
-  target: agent-skills
   value: .agents/skills/r8-analyzer
   runtime: null
   scope: project
@@ -4481,78 +4357,6 @@ deployments:
   active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
   content_hash: sha256:7d9c33de1146a274f6ca45790a25f4421ea697893e18a0a6b2ccfb401e245891
 - kind: project-relative
-  target: agent-skills
-  value: .agents/skills/testing-setup
-  runtime: null
-  scope: project
-  owners:
-  - android/skills/testing/testing-setup
-  active_owner: android/skills/testing/testing-setup
-  content_hash: null
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/testing-setup/SKILL.md
-  runtime: null
-  scope: project
-  owners:
-  - android/skills/testing/testing-setup
-  active_owner: android/skills/testing/testing-setup
-  content_hash: sha256:613970834fedb22c5f85bbc900e600e9a17cd953157af5a7e953e5938d7c2457
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/testing-setup/references/android/develop/ui/compose/testing/common-patterns.md
-  runtime: null
-  scope: project
-  owners:
-  - android/skills/testing/testing-setup
-  active_owner: android/skills/testing/testing-setup
-  content_hash: sha256:57fc697835d875cae7179d1b164db371e1b8c37881719fb32be51c09fa5c8c35
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/testing-setup/references/android/studio/preview/compose-screenshot-testing-with-testsuites.md
-  runtime: null
-  scope: project
-  owners:
-  - android/skills/testing/testing-setup
-  active_owner: android/skills/testing/testing-setup
-  content_hash: sha256:4b4ada7a50201bcf9ab90b0d9f00cc2ceb16513d1de7f63c12d634318a2ec20d
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/testing-setup/references/android/studio/preview/compose-screenshot-testing.md
-  runtime: null
-  scope: project
-  owners:
-  - android/skills/testing/testing-setup
-  active_owner: android/skills/testing/testing-setup
-  content_hash: sha256:d9b9c86efe82e0aa841f43435e4a29466794e75dd452e84a29fdc4f332a4d699
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/testing-setup/references/android/training/dependency-injection/hilt-testing.md
-  runtime: null
-  scope: project
-  owners:
-  - android/skills/testing/testing-setup
-  active_owner: android/skills/testing/testing-setup
-  content_hash: sha256:5e774a6ab09c0f469b4712ea8c468402b38dd4a19dce9570bacc49ad9af9c814
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/using-efficient-effects
-  runtime: null
-  scope: project
-  owners:
-  - skydoves/compose-performance-skills/side-effects/using-efficient-effects
-  active_owner: skydoves/compose-performance-skills/side-effects/using-efficient-effects
-  content_hash: null
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/using-efficient-effects/SKILL.md
-  runtime: null
-  scope: project
-  owners:
-  - skydoves/compose-performance-skills/side-effects/using-efficient-effects
-  active_owner: skydoves/compose-performance-skills/side-effects/using-efficient-effects
-  content_hash: sha256:f5f891478683cb1eb0d07aef277606135560f0491993a45181a141627d080362
-- kind: project-relative
   target: claude
   value: .claude/agents/floo-coder.md
   runtime: null
@@ -4560,7 +4364,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:8d3bc0d835b97ab0a6971078ee6748d4151ef10214d4de2ae469b4b4a9a16da3
+  content_hash: sha256:1bc82720b4fa17370e4ed81b319f60cd31cbd456876f00925ff26ecdaa72d37a
 - kind: project-relative
   target: claude
   value: .claude/agents/floo-devops.md
@@ -4777,24 +4581,6 @@ deployments:
   - android/skills/devtools/android-cli
   active_owner: android/skills/devtools/android-cli
   content_hash: sha256:2d35bb178b30581a9d4a31c30cf4895861a095863a9d8434a134fd10c2fca0b3
-- kind: project-relative
-  target: claude
-  value: .claude/skills/android-intent-security
-  runtime: null
-  scope: project
-  owners:
-  - android/skills/security/android-intent-security
-  active_owner: android/skills/security/android-intent-security
-  content_hash: null
-- kind: project-relative
-  target: claude
-  value: .claude/skills/android-intent-security/SKILL.md
-  runtime: null
-  scope: project
-  owners:
-  - android/skills/security/android-intent-security
-  active_owner: android/skills/security/android-intent-security
-  content_hash: sha256:21b8e2a94bc4388585d10eaa1a84951cf0760a705303750a23d9b502e840bb7e
 - kind: project-relative
   target: claude
   value: .claude/skills/appfunctions
@@ -6552,24 +6338,6 @@ deployments:
   content_hash: sha256:ad5f13e3d5ee1bc849d2da5941d4f99a3e2a5748d52fcdfde96d1bc21bf47acb
 - kind: project-relative
   target: claude
-  value: .claude/skills/ordering-modifier-chains
-  runtime: null
-  scope: project
-  owners:
-  - skydoves/compose-performance-skills/modifiers/ordering-modifier-chains
-  active_owner: skydoves/compose-performance-skills/modifiers/ordering-modifier-chains
-  content_hash: null
-- kind: project-relative
-  target: claude
-  value: .claude/skills/ordering-modifier-chains/SKILL.md
-  runtime: null
-  scope: project
-  owners:
-  - skydoves/compose-performance-skills/modifiers/ordering-modifier-chains
-  active_owner: skydoves/compose-performance-skills/modifiers/ordering-modifier-chains
-  content_hash: sha256:57b72424fb4f25e33b8a4144e9eaaae01b11fff2d375514e00b56e5fa0934c8a
-- kind: project-relative
-  target: claude
   value: .claude/skills/r8-analyzer
   runtime: null
   scope: project
@@ -7676,78 +7444,6 @@ deployments:
   active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
   content_hash: sha256:7d9c33de1146a274f6ca45790a25f4421ea697893e18a0a6b2ccfb401e245891
 - kind: project-relative
-  target: claude
-  value: .claude/skills/testing-setup
-  runtime: null
-  scope: project
-  owners:
-  - android/skills/testing/testing-setup
-  active_owner: android/skills/testing/testing-setup
-  content_hash: null
-- kind: project-relative
-  target: claude
-  value: .claude/skills/testing-setup/SKILL.md
-  runtime: null
-  scope: project
-  owners:
-  - android/skills/testing/testing-setup
-  active_owner: android/skills/testing/testing-setup
-  content_hash: sha256:613970834fedb22c5f85bbc900e600e9a17cd953157af5a7e953e5938d7c2457
-- kind: project-relative
-  target: claude
-  value: .claude/skills/testing-setup/references/android/develop/ui/compose/testing/common-patterns.md
-  runtime: null
-  scope: project
-  owners:
-  - android/skills/testing/testing-setup
-  active_owner: android/skills/testing/testing-setup
-  content_hash: sha256:57fc697835d875cae7179d1b164db371e1b8c37881719fb32be51c09fa5c8c35
-- kind: project-relative
-  target: claude
-  value: .claude/skills/testing-setup/references/android/studio/preview/compose-screenshot-testing-with-testsuites.md
-  runtime: null
-  scope: project
-  owners:
-  - android/skills/testing/testing-setup
-  active_owner: android/skills/testing/testing-setup
-  content_hash: sha256:4b4ada7a50201bcf9ab90b0d9f00cc2ceb16513d1de7f63c12d634318a2ec20d
-- kind: project-relative
-  target: claude
-  value: .claude/skills/testing-setup/references/android/studio/preview/compose-screenshot-testing.md
-  runtime: null
-  scope: project
-  owners:
-  - android/skills/testing/testing-setup
-  active_owner: android/skills/testing/testing-setup
-  content_hash: sha256:d9b9c86efe82e0aa841f43435e4a29466794e75dd452e84a29fdc4f332a4d699
-- kind: project-relative
-  target: claude
-  value: .claude/skills/testing-setup/references/android/training/dependency-injection/hilt-testing.md
-  runtime: null
-  scope: project
-  owners:
-  - android/skills/testing/testing-setup
-  active_owner: android/skills/testing/testing-setup
-  content_hash: sha256:5e774a6ab09c0f469b4712ea8c468402b38dd4a19dce9570bacc49ad9af9c814
-- kind: project-relative
-  target: claude
-  value: .claude/skills/using-efficient-effects
-  runtime: null
-  scope: project
-  owners:
-  - skydoves/compose-performance-skills/side-effects/using-efficient-effects
-  active_owner: skydoves/compose-performance-skills/side-effects/using-efficient-effects
-  content_hash: null
-- kind: project-relative
-  target: claude
-  value: .claude/skills/using-efficient-effects/SKILL.md
-  runtime: null
-  scope: project
-  owners:
-  - skydoves/compose-performance-skills/side-effects/using-efficient-effects
-  active_owner: skydoves/compose-performance-skills/side-effects/using-efficient-effects
-  content_hash: sha256:f5f891478683cb1eb0d07aef277606135560f0491993a45181a141627d080362
-- kind: project-relative
   target: codex
   value: .codex/agents/floo-coder.toml
   runtime: null
@@ -7755,7 +7451,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:c0abbd35798a0720e7ddd3bcc1f81203242f027aadf8128b2f1d097efb2c7f00
+  content_hash: sha256:268a06b58ebc5006cf316d9d43105fd13b35fab23b44a0534963d191ff3285ff
 - kind: project-relative
   target: codex
   value: .codex/agents/floo-devops.toml
@@ -7773,7 +7469,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:8d3bc0d835b97ab0a6971078ee6748d4151ef10214d4de2ae469b4b4a9a16da3
+  content_hash: sha256:1bc82720b4fa17370e4ed81b319f60cd31cbd456876f00925ff26ecdaa72d37a
 - kind: project-relative
   target: copilot
   value: .github/agents/floo-devops.agent.md
@@ -7996,7 +7692,7 @@ local_deployed_file_hashes:
   .agents/skills/floo-testing-craftsmanship/references/rule02.example.md: sha256:4a27f34fdfc1cb1a71cc5410f9707260e438abb79be1999f31ca74f057b9a108
   .agents/skills/floo-testing-craftsmanship/references/rule03.example.md: sha256:6e813001d01ef5432f0f18b586fac43537b40d7043410edc2a0b647d26ebcda8
   .agents/skills/floo-verify-precommitall/SKILL.md: sha256:57ab5b22c6badd0aeeed6a95f09d497a184b0baba41c56970487597bfe35138a
-  .claude/agents/floo-coder.md: sha256:8d3bc0d835b97ab0a6971078ee6748d4151ef10214d4de2ae469b4b4a9a16da3
+  .claude/agents/floo-coder.md: sha256:1bc82720b4fa17370e4ed81b319f60cd31cbd456876f00925ff26ecdaa72d37a
   .claude/agents/floo-devops.md: sha256:1304d3f2965cd33a3dcdf71f048b210e9d5528b61c740734b81b8ff4545e0aa5
   .claude/commands/floo-run-boilerplategit.md: sha256:bdefaee9b6fc256b2abb5bcdeb99193afb4c8de2b3b0b0b0cef2ea0df1878085
   .claude/commands/floo-run-pr-review.md: sha256:459660852f894e6d8fa44c42774023a517f3118f3f80a4d2a00fc26fc46d8f88
@@ -8051,9 +7747,9 @@ local_deployed_file_hashes:
   .claude/skills/floo-testing-craftsmanship/references/rule02.example.md: sha256:4a27f34fdfc1cb1a71cc5410f9707260e438abb79be1999f31ca74f057b9a108
   .claude/skills/floo-testing-craftsmanship/references/rule03.example.md: sha256:6e813001d01ef5432f0f18b586fac43537b40d7043410edc2a0b647d26ebcda8
   .claude/skills/floo-verify-precommitall/SKILL.md: sha256:57ab5b22c6badd0aeeed6a95f09d497a184b0baba41c56970487597bfe35138a
-  .codex/agents/floo-coder.toml: sha256:c0abbd35798a0720e7ddd3bcc1f81203242f027aadf8128b2f1d097efb2c7f00
+  .codex/agents/floo-coder.toml: sha256:268a06b58ebc5006cf316d9d43105fd13b35fab23b44a0534963d191ff3285ff
   .codex/agents/floo-devops.toml: sha256:20930c971e5a1d7ae98b628fe2539ef31ee87c86237f7dc6b989b8637cb0ed4f
-  .github/agents/floo-coder.agent.md: sha256:8d3bc0d835b97ab0a6971078ee6748d4151ef10214d4de2ae469b4b4a9a16da3
+  .github/agents/floo-coder.agent.md: sha256:1bc82720b4fa17370e4ed81b319f60cd31cbd456876f00925ff26ecdaa72d37a
   .github/agents/floo-devops.agent.md: sha256:1304d3f2965cd33a3dcdf71f048b210e9d5528b61c740734b81b8ff4545e0aa5
   .github/prompts/floo-run-boilerplategit.prompt.md: sha256:f84cf31d795e9665c57804ae1a4e3af4e75bbd2b26f1d150d4e7d4c254a568ab
   .github/prompts/floo-run-pr-review.prompt.md: sha256:979032eecbc39e28cdcee2816670e246e440c5cbf929f9308e25bcfc141778d7
