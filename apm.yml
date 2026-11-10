@@ -32,6 +32,7 @@ dependencies:
     - android/skills/device-ai/appfunctions#5815d27fda564aa9f07ebdcb5e57ed3e8d904e0d # v1.0.21
     - android/skills/identity/restore-credentials#5815d27fda564aa9f07ebdcb5e57ed3e8d904e0d # v1.0.21
     - android/skills/devtools/android-cli#5815d27fda564aa9f07ebdcb5e57ed3e8d904e0d # v1.0.21
+    - android/skills/jetpack-compose/jetpack-compose-performance#5815d27fda564aa9f07ebdcb5e57ed3e8d904e0d # v1.0.21
 
     # Swift concurrency: async/await, actors, Sendable, structured concurrency, and modern Swift concurrency patterns.
     # Starting 2.2.0 it introduced Agent portable plugin that miss behave with APM 0.29.0
@@ -43,10 +44,6 @@ dependencies:
     - chrisbanes/skills/skills/compose-animations#8df9735a751cfabe5ddae457f28b0a8ea3d4092b # 2026.11.3
     - chrisbanes/skills/skills/kotlin-control-flow#8df9735a751cfabe5ddae457f28b0a8ea3d4092b # 2026.11.3
     - chrisbanes/skills/skills/kotlin-concurrency-and-flow#8df9735a751cfabe5ddae457f28b0a8ea3d4092b # 2026.11.3
-
-    # Jetpack Compose modifier ordering and efficient modifier chains.
-    - skydoves/compose-performance-skills/modifiers/ordering-modifier-chains#main
-    - skydoves/compose-performance-skills/side-effects/using-efficient-effects#main
 
     # Curated skills from awesome-copilot.
     - github/awesome-copilot/skills/apple-appstore-reviewer#main
