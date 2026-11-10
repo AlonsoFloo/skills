@@ -42,11 +42,10 @@ dependencies:
     - AvdLee/Swift-Concurrency-Agent-Skill/skills/swift-concurrency#3b1580d8398e0b5408b3bf0bada0e941a1cfc642 #2.3.1
     - AvdLee/SwiftUI-Agent-Skill/skills/swiftui-expert-skill#62bd760f005093d1e2e4de5db156e456a5f96400 # 5.3.0
 
-    # Jetpack Compose animations, UI testing and Kotlin control-flow best practices.
+    # Jetpack Compose animations and Kotlin control-flow best practices.
     - chrisbanes/skills/skills/compose-animations#8df9735a751cfabe5ddae457f28b0a8ea3d4092b # 2026.11.3
     - chrisbanes/skills/skills/kotlin-control-flow#8df9735a751cfabe5ddae457f28b0a8ea3d4092b # 2026.11.3
     - chrisbanes/skills/skills/kotlin-concurrency-and-flow#8df9735a751cfabe5ddae457f28b0a8ea3d4092b # 2026.11.3
-    - chrisbanes/skills/skills/compose-ui-testing-patterns#8df9735a751cfabe5ddae457f28b0a8ea3d4092b # 2026.11.3
 
     # Jetpack Compose modifier ordering and efficient modifier chains.
     - skydoves/compose-performance-skills/modifiers/ordering-modifier-chains#main
@@ -61,9 +60,6 @@ dependencies:
     # Engeneering skills curated by Matt Pocock
     - mattpocock/skills/skills/productivity/grilling#d1478fcb140db0b93c0c8df17bcfd311844749d0 # v1.3.2
     - mattpocock/skills/skills/engineering/domain-modeling#d1478fcb140db0b93c0c8df17bcfd311844749d0 # v1.3.2
-    - mattpocock/skills/skills/engineering/tdd#d1478fcb140db0b93c0c8df17bcfd311844749d0 # v1.3.2
-    - mattpocock/skills/skills/engineering/diagnosing-bugs#d1478fcb140db0b93c0c8df17bcfd311844749d0 # v1.3.2
-    - mattpocock/skills/skills/productivity/writing-for-agents#d1478fcb140db0b93c0c8df17bcfd311844749d0 # v1.3.2
 
 devDependencies:
   apm:
