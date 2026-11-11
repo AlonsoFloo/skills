@@ -1,6 +1,6 @@
 ---
 name: floo-code-review-and-quality
-description: Review a pull request, merge request, branch or local diff in five steps (craftsmanship rules, Florian's taste, security, tests, language-specific skills) and report findings as Conventional Comments with reproduction steps and suggestions. Use whenever the user asks to review code, review a PR or MR, audit a diff before merge, check code quality, or says "review", "code review", "PR review", "relis ce code", even if they do not name this skill.
+description: Review a pull request, merge request, branch or local diff in six steps (correctness, craftsmanship rules, Florian's taste, security, tests, language-specific skills) and report findings as Conventional Comments with reproduction steps and suggestions. Use whenever the user asks to review code, review a PR or MR, audit a diff before merge, check code quality, or says "review", "code review", "PR review", "relis ce code", even if they do not name this skill.
 license: Complete terms in LICENSE
 metadata:
   author: github.com/AlonsoFloo
@@ -39,6 +39,20 @@ When reviewing code — whether written by you, another agent, or a human:
 Every change can orphan code. Take this into consideration when doing the
 review.
 
+### Signal Over Noise
+
+Every finding must be worth the author's time. Report a rule violation only when
+you can name what it costs in this change: a bug, a race, code that cannot be
+tested, or a pattern a new public API would lock in. If you cannot name the
+cost, drop it. A review with three findings that matter beats one with fifteen
+that the author has to sort.
+
+- Judge the lines the diff adds or changes. Pre-existing code is in scope only
+  when the diff makes it worse.
+- One comment per rule, listing every location, instead of one per line.
+- A rule violation is `issue (blocking)` only when it causes a bug or locks a
+  bad pattern into a public API. Otherwise it is a non-blocking `suggestion`.
+
 ### Scope
 
 - Read enough surrounding code to judge the diff (callers, implementations,
@@ -59,34 +73,45 @@ Before looking at code, understand the intent:
 Use the PR description, linked issues, commits and branch name. If the intent is
 unclear, state your assumption and ask a `question`.
 
-## Step 1: Software Craftsmanship
+## Step 1: Correctness
 
-Load `floo-software-craftsmanship` and check every rule against the change, plus
-correctness against the intent from Step 0.
+Check that the change does what Step 0 says it should: logic errors, unhandled
+failures, leaked resources, state left inconsistent on error, concurrency bugs.
 
-## Step 2: Taste
+## Step 2: Software Craftsmanship
+
+Load `floo-software-craftsmanship` and go through its rules one by one. For each
+rule, look for its "Spot it in review" signal in the changed lines. Most rules
+will not apply to a given diff, and that is expected: the walk exists so that no
+rule is skipped, not so that each one produces a comment. Read the rule's
+reference file before reporting a borderline case, and report only what passes
+[Signal Over Noise](#signal-over-noise).
+
+## Step 3: Taste
 
 Check the change against [references/taste.md](references/taste.md).
 
-## Step 3: Security
+## Step 4: Security
 
 Check the change against [references/security.md](references/security.md).
 Describe the attack path for each finding.
 
-## Step 4: Tests
+## Step 5: Tests
 
-Load `floo-testing-craftsmanship` and check every rule against the tests. Then
+Load `floo-testing-craftsmanship` and go through its rules against the tests the
+same way as in Step 2. Then
 challenge their coherence: each behavior change from Step 0 has a test, each
 test asserts what its name promises, edge and error cases are covered, and a bug
 fix has a test that fails without it.
 
-## Step 5: Language and Platform
+## Step 6: Language and Platform
 
 From the touched files, identify the languages, frameworks and APIs used. Check
 your available skills and load every one that matches what the diff uses (e.g.
 `floo-ios-craftsmanship`, `floo-android-craftsmanship`, `swift-concurrency`,
-`edge-to-edge`). Then check that the change is idiomatic and coherent with the
-patterns the code base already uses.
+`edge-to-edge`). Go through the rules of each loaded skill the same way as in
+Step 2. Then check that the change is idiomatic and coherent with the patterns
+the code base already uses.
 
 ## Output
 
@@ -108,6 +133,7 @@ contains a code block.
 
 **Intent:** <one sentence from Step 0>
 **Verdict:** <Approve | Request changes> - <one-line reason>
+**Rules checked:** <each rule skill walked, e.g. craftsmanship 1-13, testing 1-3, android 1-3>
 
 ### 1. `path/to/File.kt:42` - <short title>
 
