@@ -33,6 +33,8 @@ using combinations of boolean flags creates invalid state space (e.g.
 `isLoading = true` and `isSuccess = true`). Always model complex domain states
 using explicit enum, sealed class, or union types.
 
+**Spot it in review:** Two or more booleans (fields, properties or results) that together describe one state or outcome. A single independent flag (`isEnabled`, an `includeHeader` parameter) is fine.
+
 **❌ DON'T**
 
 ```kotlin
@@ -66,6 +68,8 @@ ______________________________________________________________________
 conditional before implementation, avoid giant `switch` or `when` trees.
 Encapsulate variations using the Strategy Pattern or polymorphism to preserve
 the Open/Closed Principle.
+
+**Spot it in review:** A `when` / `switch` on a string, number or type tag whose cases form an open-ended list (formats, providers, payment types), often with an `else` fallback. An exhaustive `when` over a sealed type or a fixed enum is fine.
 
 **❌ DON'T**
 
@@ -105,6 +109,8 @@ strictly immutable. Continuous post-construction mutation invites thread-safety
 risks and subtle side effects. Encapsulate mutable state inside a dedicated
 Builder or temporary construction block.
 
+**Spot it in review:** A type exposes `var` properties or mutable collections, or shared state is mutated after construction. Local mutable variables inside a function are fine.
+
 **❌ DON'T**
 
 ```kotlin
@@ -143,6 +149,8 @@ is strictly capped by the parts that must run sequentially (e.g., locks, file
 I/O, UI rendering). Focus optimization efforts on sequential bottlenecks rather
 than parallelizing already fast components.
 
+**Spot it in review:** Added parallelism (threads, coroutines, worker pools) whose work all goes through one lock, connection, file or the main thread.
+
 **❌ DON'T**
 
 ```kotlin
@@ -167,6 +175,8 @@ ______________________________________________________________________
 objects it instantiates, or its direct component sub-objects. Avoid reaching
 through nested object chains (e.g. `a.getB().getC().getD().doSomething()`).
 
+**Spot it in review:** A call reaching through three or more objects' internals (`order.customer.account.address`) to get data or behavior. Fluent chains on one type (collection operators, builders) are fine.
+
 **❌ DON'T**
 
 ```kotlin
@@ -190,6 +200,8 @@ ______________________________________________________________________
 **Description:** Enforce the 5 core software architecture principles: Single
 Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, and
 Dependency Inversion.
+
+**Spot it in review:** A new class or function with several reasons to change (I/O, business rules, formatting, transport), or a concrete dependency that blocks substitution in tests.
 
 **❌ DON'T**
 
@@ -219,6 +231,8 @@ ______________________________________________________________________
 data type, forcing downstream functions to re-check validity. Parsing transforms
 an unrefined type into a refined domain type at system boundaries, serving as a
 static proof of validity.
+
+**Spot it in review:** The same check repeated in several places, or input checked and then passed on as the raw type (a `String` email, an `Int` id) instead of a refined type built at the boundary.
 
 **❌ DON'T**
 
@@ -252,6 +266,8 @@ ______________________________________________________________________
 spec-compliant data) and liberal in what you accept (parse inputs forgivingly,
 ignoring unknown fields with sensible defaults).
 
+**Spot it in review:** Decoding external data in a way that fails on unknown fields or missing optional ones, or producing output that is not strictly spec-compliant.
+
 **❌ DON'T**
 
 ```kotlin
@@ -279,6 +295,8 @@ ______________________________________________________________________
 isolate it in a dedicated file and document the exact reason, bug ticket
 reference, and condition for removal.
 
+**Spot it in review:** A hack, magic delay or offset, or vendor workaround inline in regular code, without a bug reference and a removal condition.
+
 **❌ DON'T**
 
 ```css
@@ -305,6 +323,8 @@ ______________________________________________________________________
 readable, correct code first. Do not add complex caching or manual memory hacks
 until empirical benchmarks prove a bottleneck exists.
 
+**Spot it in review:** A cache, bit trick, pool or manual memory tuning added without a measured bottleneck behind it.
+
 **❌ DON'T**
 
 ```kotlin
@@ -328,6 +348,8 @@ ______________________________________________________________________
 **Description:** Implement features only when you actually need them, never when
 you merely foresee that you might need them. Unused abstraction layers add
 complexity and surface area for bugs.
+
+**Spot it in review:** An abstraction with a single implementation and no stated need, or an unused type parameter, option or extension point.
 
 **❌ DON'T**
 
@@ -356,6 +378,8 @@ Top-level declarations are reserved for things that are explicitly intended to b
 All feature-specific or contextual code must have an explicit owner or scope: an extension, private helper, feature/module scope, data type, object, class, namespace, or another cohesive abstraction.
 
 The goal is not to ban top-level declarations. The goal is to make scope intentional: if a variable or function belongs to a concept, that concept should own it.
+
+**Spot it in review:** A new top-level variable or function that belongs to a feature or a type. Private constants and genuinely general helpers are fine.
 
 **❌ DON'T**
 
@@ -421,6 +445,8 @@ The rules:
 - Callback-based third-party libraries (e.g. Ktor `onDownload`) → consume them
   internally, but wrap them in the data source to expose a `Flow`. The rule
   applies to your API, not to your dependencies.
+
+**Spot it in review:** A data-layer API returning its result through `on…` callbacks, or a function type stored as a constructor dependency. UI event lambdas and synchronous closures are fine.
 
 **❌ DON'T**
 
