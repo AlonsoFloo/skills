@@ -379,7 +379,9 @@ All feature-specific or contextual code must have an explicit owner or scope: an
 
 The goal is not to ban top-level declarations. The goal is to make scope intentional: if a variable or function belongs to a concept, that concept should own it.
 
-**Spot it in review:** A new top-level variable or function that belongs to a feature or a type. Private constants and genuinely general helpers are fine.
+Tests never justify top-level scope: do not expose a function only so a test can call it. Test it through its owner, or inject it as a named collaborator.
+
+**Spot it in review:** A new top-level variable or function that belongs to a feature or a type, or one exposed only for tests. Private constants and genuinely general helpers are fine.
 
 **❌ DON'T**
 
@@ -391,6 +393,9 @@ fun formatUserName(user: User): String =
 
 fun calculateOrderTotal(order: Order): Money =
     /* ... */
+
+internal fun applyDiscount(total: Money, code: DiscountCode): Money = // only called by tests
+    /* ... */
 ```
 
 **✅ DO**
@@ -401,7 +406,11 @@ private const val MAX_RETRIES = 3
 fun User.formatName(): String =
     "$firstName $lastName"
 
-class OrderTotals {
+fun interface DiscountPolicy {
+    fun apply(total: Money, code: DiscountCode): Money
+}
+
+class OrderTotals(private val discountPolicy: DiscountPolicy) {
     fun calculate(order: Order): Money =
         /* ... */
 }

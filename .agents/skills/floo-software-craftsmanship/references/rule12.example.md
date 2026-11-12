@@ -8,7 +8,7 @@ The principle is language-independent:
 
 > **Top-level variables and functions are for intentionally general-purpose declarations. Everything else should have an explicit owner or scope.**
 
-This is primarily about ownership and discoverability. When code belongs to a feature, type, domain concept, or implementation detail, put it there.
+This is primarily about ownership and discoverability. When code belongs to a feature, type, domain concept, or implementation detail, put it there. Tests never decide scope: a function exposed only so a test can call it needs an owner or an injected collaborator.
 
 ## Swift
 
@@ -24,6 +24,11 @@ func formatUserName(_ user: User) -> String {
 func calculateOrderTotal(_ order: Order) -> Money {
     // ...
 }
+
+// only called by tests
+func applyDiscount(_ total: Money, code: DiscountCode) -> Money {
+    // ...
+}
 ```
 
 ### ✅ DO
@@ -37,7 +42,13 @@ extension User {
     }
 }
 
+protocol DiscountPolicy {
+    func apply(_ total: Money, code: DiscountCode) -> Money
+}
+
 struct OrderTotals {
+    let discountPolicy: DiscountPolicy
+
     func calculate(_ order: Order) -> Money {
         // ...
     }
@@ -56,6 +67,9 @@ fun formatUserName(user: User): String =
 
 fun calculateOrderTotal(order: Order): Money =
     // ...
+
+internal fun applyDiscount(total: Money, code: DiscountCode): Money = // only called by tests
+    // ...
 ```
 
 ### ✅ DO
@@ -66,7 +80,11 @@ private const val MAX_RETRIES = 3
 fun User.formatName(): String =
     "$firstName $lastName"
 
-class OrderTotals {
+fun interface DiscountPolicy {
+    fun apply(total: Money, code: DiscountCode): Money
+}
+
+class OrderTotals(private val discountPolicy: DiscountPolicy) {
     fun calculate(order: Order): Money =
         // ...
 }
