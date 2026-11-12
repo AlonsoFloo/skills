@@ -1,6 +1,6 @@
 ---
 name: floo-code-review-and-quality
-description: Review the quality of a pull request, merge request, branch or local diff against the craftsmanship rules, Florian's taste, testing rules, language-specific skills and, on request, a security checklist, and report findings as Conventional Comments with suggestions. Use whenever the user asks to review code, review a PR or MR, audit a diff before merge, check code quality, or says "review", "code review", "PR review", "relis ce code", even if they do not name this skill.
+description: Review the quality of a pull request, merge request, branch or local diff against the craftsmanship rules, Florian's taste, testing rules and language-specific skills, and report findings as Conventional Comments with suggestions. Use whenever the user asks to review code, review a PR or MR, audit a diff before merge, check code quality, or says "review", "code review", "PR review", "relis ce code", even if they do not name this skill.
 license: Complete terms in LICENSE
 metadata:
   author: github.com/AlonsoFloo
@@ -94,13 +94,7 @@ challenge their coherence: each behavior change from Step 0 has a test, each
 test asserts what its name promises, edge and error cases are covered, and a bug
 fix has a test that fails without it.
 
-## Step 4: Security (only when requested)
-
-Run this step only when the user or the calling workflow asks for it. Check the
-change against [references/security.md](references/security.md) and describe
-the attack path for each finding.
-
-## Step 5: Language and Platform
+## Step 4: Language and Platform
 
 From the touched files, identify the languages, frameworks and APIs used. Check
 your available skills and load every one that matches what the diff uses (e.g.
