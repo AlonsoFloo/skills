@@ -1,7 +1,8 @@
 # Where Bugs Hide
 
 A menu of bug families, not a checklist to report against. For each changed
-function, pick the families that fit what it does and try their values.
+function, pick the families that fit what it does and try their values. A
+family that applies is not a finding: report only what a trace proves.
 
 ## Logic
 

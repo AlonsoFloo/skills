@@ -26,12 +26,11 @@ Without subagents, run the passes one after the other in this order.
 1. **Bugs:** the `floo-bug-hunting` skill on the diff.
 1. **Security:** the `security-review` skill, scoped to the changed files and
    the code they reach. Skip its dependency audit unless the diff changes a
-   dependency. It does not cover Kotlin, Swift, Android or iOS, so also check
-   the diff against `references/security.md` of the
-   `floo-code-review-and-quality` skill. Return findings only: no patch is
-   applied.
-1. **Quality:** the `floo-code-review-and-quality` skill on the diff, as its
-   quality pass.
+   dependency. It does not cover Kotlin, Swift, Android or iOS, so also run
+   the "Security" step of `floo-code-review-and-quality`, and that step only.
+   Return findings only: no patch is applied.
+1. **Quality:** the `floo-code-review-and-quality` skill on the diff, without
+   its "Security" step.
 
 Each pass returns its own report.
 

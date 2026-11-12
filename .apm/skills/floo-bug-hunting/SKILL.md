@@ -32,6 +32,10 @@ return a wrong result, crash, corrupt data or hang. Nothing else.
   the callers of what changed and the functions it calls, including
   pre-existing code: a new call into an old function that breaks on the new
   inputs is a bug of this change.
+- **No noise.** Report only a failure you traced from a reachable input to a
+  wrong outcome. Do not report "could fail", defensive-code wishes, missing
+  validation without a caller that sends the bad value, or code nothing calls.
+  One finding per root cause, listing every place it shows.
 
 ## Method
 
