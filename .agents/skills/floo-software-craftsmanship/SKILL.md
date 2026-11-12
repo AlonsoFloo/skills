@@ -379,9 +379,9 @@ All feature-specific or contextual code must have an explicit owner or scope: an
 
 The goal is not to ban top-level declarations. The goal is to make scope intentional: if a variable or function belongs to a concept, that concept should own it.
 
-Unit tests never justify top-level scope. Do not move a function to the top level, or widen it to `public` or `internal`, only so that a test can call it: tests verify the architecture, they do not drive it. When nothing but a test needs the function, test it through its owner's behavior, or extract it into a named collaborator (interface or protocol) that the owner receives through injection and the test can exercise or fake.
+Tests never justify top-level scope: do not expose a function only so a test can call it. Test it through its owner, or inject it as a named collaborator.
 
-**Spot it in review:** A new top-level variable or function that belongs to a feature or a type, or a function made top-level or less private whose only caller outside its owner is a test. Private constants and genuinely general helpers are fine.
+**Spot it in review:** A new top-level variable or function that belongs to a feature or a type, or one exposed only for tests. Private constants and genuinely general helpers are fine.
 
 **❌ DON'T**
 
@@ -393,6 +393,9 @@ fun formatUserName(user: User): String =
 
 fun calculateOrderTotal(order: Order): Money =
     /* ... */
+
+internal fun applyDiscount(total: Money, code: DiscountCode): Money = // only called by tests
+    /* ... */
 ```
 
 **✅ DO**
@@ -403,29 +406,13 @@ private const val MAX_RETRIES = 3
 fun User.formatName(): String =
     "$firstName $lastName"
 
-class OrderTotals {
-    fun calculate(order: Order): Money =
-        /* ... */
-}
-```
-
-**❌ DON'T**
-
-```kotlin
-// Top-level and internal only so CheckoutTest can call it
-internal fun applyDiscount(total: Money, code: DiscountCode): Money =
-    /* ... */
-```
-
-**✅ DO**
-
-```kotlin
 fun interface DiscountPolicy {
     fun apply(total: Money, code: DiscountCode): Money
 }
 
-class Checkout(private val discountPolicy: DiscountPolicy) {
-    fun execute(order: Order) { /* ... */ }
+class OrderTotals(private val discountPolicy: DiscountPolicy) {
+    fun calculate(order: Order): Money =
+        /* ... */
 }
 ```
 
