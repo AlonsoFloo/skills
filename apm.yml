@@ -46,7 +46,7 @@ dependencies:
     - chrisbanes/skills/skills/kotlin-concurrency-and-flow#8df9735a751cfabe5ddae457f28b0a8ea3d4092b # 2026.11.3
 
     # Security audit: Cloudflare's source-first vulnerability review workflow (no tags upstream).
-    # Kept for later use, not imported yet.
+    # Heavy (~5k lines): kept commented, import on demand.
     # - cloudflare/security-audit-skill/skills/security-audit#main
 
     # Curated skills from awesome-copilot.
