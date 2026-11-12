@@ -239,6 +239,55 @@ def clamp(value: int, minimum: int, maximum: int) -> int:
     return min(max(value, minimum), maximum)
 ```
 
+## Test-only exposure
+
+Making a declaration top-level, or less private, so that a unit test can reach it is the same mistake: the test, not the domain, chose the scope. If a test is the only caller outside the owner, either test through the owner's behavior, or extract a named collaborator and inject it.
+
+### ❌ DON'T
+
+```kotlin
+// Only CheckoutTest calls this outside Checkout
+internal fun applyDiscount(total: Money, code: DiscountCode): Money =
+    // ...
+```
+
+```swift
+// Was private, made internal so CheckoutTests can call it
+func applyDiscount(_ total: Money, code: DiscountCode) -> Money {
+    // ...
+}
+```
+
+### ✅ DO
+
+```kotlin
+fun interface DiscountPolicy {
+    fun apply(total: Money, code: DiscountCode): Money
+}
+
+class Checkout(private val discountPolicy: DiscountPolicy) {
+    fun execute(order: Order) {
+        // ...
+    }
+}
+```
+
+```swift
+protocol DiscountPolicy {
+    func apply(_ total: Money, code: DiscountCode) -> Money
+}
+
+struct Checkout {
+    let discountPolicy: DiscountPolicy
+
+    func execute(_ order: Order) {
+        // ...
+    }
+}
+```
+
+`DiscountPolicy` is now a real part of the design: it has a name, its own tests, and `Checkout` tests can fake it.
+
 ## Summary
 
 | Language              | Preferred scope                                               |
