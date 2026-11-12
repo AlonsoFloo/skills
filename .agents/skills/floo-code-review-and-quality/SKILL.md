@@ -1,6 +1,6 @@
 ---
 name: floo-code-review-and-quality
-description: Review a pull request, merge request, branch or local diff in six steps (correctness, craftsmanship rules, Florian's taste, security, tests, language-specific skills) and report findings as Conventional Comments with reproduction steps and suggestions. Use whenever the user asks to review code, review a PR or MR, audit a diff before merge, check code quality, or says "review", "code review", "PR review", "relis ce code", even if they do not name this skill.
+description: Review the quality of a pull request, merge request, branch or local diff against the craftsmanship rules, Florian's taste, testing rules and language-specific skills, and report findings as Conventional Comments with suggestions. Use whenever the user asks to review code, review a PR or MR, audit a diff before merge, check code quality, or says "review", "code review", "PR review", "relis ce code", even if they do not name this skill.
 license: Complete terms in LICENSE
 metadata:
   author: github.com/AlonsoFloo
@@ -73,12 +73,7 @@ Before looking at code, understand the intent:
 Use the PR description, linked issues, commits and branch name. If the intent is
 unclear, state your assumption and ask a `question`.
 
-## Step 1: Correctness
-
-Check that the change does what Step 0 says it should: logic errors, unhandled
-failures, leaked resources, state left inconsistent on error, concurrency bugs.
-
-## Step 2: Software Craftsmanship
+## Step 1: Software Craftsmanship
 
 Load `floo-software-craftsmanship` and go through its rules one by one. For each
 rule, look for its "Spot it in review" signal in the changed lines. Most rules
@@ -87,30 +82,25 @@ rule is skipped, not so that each one produces a comment. Read the rule's
 reference file before reporting a borderline case, and report only what passes
 [Signal Over Noise](#signal-over-noise).
 
-## Step 3: Taste
+## Step 2: Taste
 
 Check the change against [references/taste.md](references/taste.md).
 
-## Step 4: Security
-
-Check the change against [references/security.md](references/security.md).
-Describe the attack path for each finding.
-
-## Step 5: Tests
+## Step 3: Tests
 
 Load `floo-testing-craftsmanship` and go through its rules against the tests the
-same way as in Step 2. Then
+same way as in Step 1. Then
 challenge their coherence: each behavior change from Step 0 has a test, each
 test asserts what its name promises, edge and error cases are covered, and a bug
 fix has a test that fails without it.
 
-## Step 6: Language and Platform
+## Step 4: Language and Platform
 
 From the touched files, identify the languages, frameworks and APIs used. Check
 your available skills and load every one that matches what the diff uses (e.g.
 `floo-ios-craftsmanship`, `floo-android-craftsmanship`, `swift-concurrency`,
 `edge-to-edge`). Go through the rules of each loaded skill the same way as in
-Step 2. Then check that the change is idiomatic and coherent with the patterns
+Step 1. Then check that the change is idiomatic and coherent with the patterns
 the code base already uses.
 
 ## Output
@@ -129,7 +119,7 @@ contains a code block.
 ### Report template
 
 ````markdown
-## Review: <PR title>
+## Quality review: <PR title>
 
 **Intent:** <one sentence from Step 0>
 **Verdict:** <Approve | Request changes> - <one-line reason>
