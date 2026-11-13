@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.11.1](https://github.com/AlonsoFloo/skills/compare/v2.11.0...v2.11.1) (2026-11-13)
+
+
+### Bug Fixes
+
+* **devops-craftsmanship:** AI. stop AI commit examples claiming a human review ([#93](https://github.com/AlonsoFloo/skills/issues/93)) ([fd079da](https://github.com/AlonsoFloo/skills/commit/fd079da167d23f0c6a5a2e3823d2c66e0b054e2d))
+
 ## [2.11.0](https://github.com/AlonsoFloo/skills/compare/v2.10.0...v2.11.0) (2026-11-12)
 
 
