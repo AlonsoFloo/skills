@@ -33,7 +33,8 @@ dives.
 **Description:** When utilizing AI coding assistants, git commit messages must
 be thorough and detailed. Document intent, architectural reasoning, modified
 files, human review steps, and tests performed to ensure auditability. Prefix
-commit messages with `AI.`.
+commit messages with `AI.`. State only what actually happened: never claim a
+human review or a test that did not take place.
 
 **❌ DON'T**
 
@@ -49,7 +50,6 @@ feat(auth): AI. refactor biometric authentication flow using Koin DI
 - Replace direct BiometricPrompt instantiation with BiometricSecretSigner contract
 - Add unit tests using FakeBiometricSecretSigner test double
 - Verify automated UI test passes on Android API 34 and iOS simulator
-- AI-assisted generation reviewed and verified by engineering team
 ```
 
 *See

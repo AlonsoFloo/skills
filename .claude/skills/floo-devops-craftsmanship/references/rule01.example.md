@@ -15,5 +15,4 @@ refactor(database): AI. migrate Room database schema to v4 with auto-migration
 - Generated AutoMigrationSpec from v3 to v4 adding user_preferences table
 - Updated UserDatabase test suite to verify migration integrity against schema JSON
 - Executed local migration benchmarks ensuring <15ms execution
-- AI generated code reviewed and verified by database guild
 ```
