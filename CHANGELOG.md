@@ -1,5 +1,22 @@
 # Changelog
 
+## [2.11.0](https://github.com/AlonsoFloo/skills/compare/v2.10.0...v2.11.0) (2026-11-12)
+
+
+### Features
+
+* **apm:** Force update all APMs ([#86](https://github.com/AlonsoFloo/skills/issues/86)) ([2f18089](https://github.com/AlonsoFloo/skills/commit/2f18089f0cc16079a6905c5427c11d74a3722e44))
+* **apm:** Replace skydoves skills with android jetpack-compose-performance ([#88](https://github.com/AlonsoFloo/skills/issues/88)) ([af97691](https://github.com/AlonsoFloo/skills/commit/af9769192debbd4695ad6cf291f87205998196ec))
+* **code-review:** Walk every craftsmanship rule and keep only high-value findings ([#89](https://github.com/AlonsoFloo/skills/issues/89)) ([04c5ddc](https://github.com/AlonsoFloo/skills/commit/04c5ddcf726fbfb0cb1a6d6ecf31e8a723d28396))
+* **craftsmanship:** Forbid top-level or widened functions exposed only for tests ([#90](https://github.com/AlonsoFloo/skills/issues/90)) ([b431196](https://github.com/AlonsoFloo/skills/commit/b43119691743ff060000aedd7d4e220be98b2ad2))
+* **review:** Split review into bug, security and quality passes ([#91](https://github.com/AlonsoFloo/skills/issues/91)) ([a4e45d3](https://github.com/AlonsoFloo/skills/commit/a4e45d3367084c636d5c56670db742c652d08801))
+* **skills:** Add android-cli skill from android/skills v1.0.21 ([#84](https://github.com/AlonsoFloo/skills/issues/84)) ([e424177](https://github.com/AlonsoFloo/skills/commit/e42417790aed00ab4eb83a2c44d4b6b526894f95))
+
+
+### Bug Fixes
+
+* **apm:** Drop grill-me duplicate of grilling ([#87](https://github.com/AlonsoFloo/skills/issues/87)) ([6c55e11](https://github.com/AlonsoFloo/skills/commit/6c55e11ff05a61a311b6c8629f6ef774465e9fc2))
+
 ## [2.10.0](https://github.com/AlonsoFloo/skills/compare/v2.9.3...v2.10.0) (2026-11-03)
 
 
