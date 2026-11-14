@@ -20,7 +20,7 @@ includes: auto
 dependencies:
   apm:
     # Kotlin development best practices and Kotlin-specific agent guidance.
-    - Kotlin/kotlin-agent-skills#main
+    - Kotlin/kotlin-agent-skills#087f5689c1934135ed58718cdf524525e452b7e9 # main
 
     # Android development skills and best practices.
     # Repo format weird, have to load manually from the skills folder, since the root repo is not a skill.
@@ -28,7 +28,7 @@ dependencies:
     - android/skills/performance/r8-analyzer#5815d27fda564aa9f07ebdcb5e57ed3e8d904e0d # v1.0.21
     - android/skills/navigation/navigation-3#5815d27fda564aa9f07ebdcb5e57ed3e8d904e0d # v1.0.21
     - android/skills/jetpack-compose/adaptive#5815d27fda564aa9f07ebdcb5e57ed3e8d904e0d # v1.0.21
-    - android/skills/jetpack-compose/theming/styles#5bda39f154fb859a08d45e2392f3568e049f83fb # v1.0.15
+    - android/skills/jetpack-compose/theming/styles#bf68e2d66a992a1e6aeb7e9263293cc23fcbf475 # v1.0.20
     - android/skills/device-ai/appfunctions#5815d27fda564aa9f07ebdcb5e57ed3e8d904e0d # v1.0.21
     - android/skills/identity/restore-credentials#5815d27fda564aa9f07ebdcb5e57ed3e8d904e0d # v1.0.21
     - android/skills/devtools/android-cli#5815d27fda564aa9f07ebdcb5e57ed3e8d904e0d # v1.0.21
