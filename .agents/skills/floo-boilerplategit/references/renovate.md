@@ -51,7 +51,7 @@
       },
       {
         "matchUpdateTypes": ["patch"],
-        "matchManagers": ["npm", "pip", "dockerfile", "docker-compose"],
+        "matchManagers": ["npm", "pip_requirements", "dockerfile", "docker-compose"],
         "groupName": "patch dependencies (automerge)",
         "automerge": true,
         "automergeType": "pr"
