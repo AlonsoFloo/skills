@@ -64,6 +64,8 @@ ______________________________________________________________________
 checksums/digests. Never rely on floating range tags like `latest` or `^1.0.0`.
 Pin third-party artifacts to specific cryptographic digests (SHA-256) to
 guarantee artifact integrity and prevent supply chain attacks.
+For GitHub Actions, pin to the full commit SHA and put the full tag of that
+commit in a trailing comment (`# v7.0.1`, never `# v7`).
 
 **❌ DON'T**
 
@@ -71,10 +73,19 @@ guarantee artifact integrity and prevent supply chain attacks.
 FROM node:latest
 ```
 
+```yaml
+- uses: actions/checkout@v7
+- uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+```
+
 **✅ DO**
 
 ```dockerfile
 FROM node:20.11.1-alpine@sha256:c77dc7458157121287973...
+```
+
+```yaml
+- uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 ```
 
 *See

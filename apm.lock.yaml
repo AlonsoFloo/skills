@@ -1977,7 +1977,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:8907f7ae58ba6129b1cf4891d6ff9b2a0f87ea821392cf62989057992047a5b7
+  content_hash: sha256:5840209b263c0fad4a7da04ab7b2762bd87d29a3fdae3e6648c68ea5856a150f
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/floo-devops-craftsmanship/references/rule01.example.md
@@ -5019,7 +5019,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:8907f7ae58ba6129b1cf4891d6ff9b2a0f87ea821392cf62989057992047a5b7
+  content_hash: sha256:5840209b263c0fad4a7da04ab7b2762bd87d29a3fdae3e6648c68ea5856a150f
 - kind: project-relative
   target: claude
   value: .claude/skills/floo-devops-craftsmanship/references/rule01.example.md
@@ -7543,7 +7543,7 @@ local_deployed_file_hashes:
   .agents/skills/floo-conventional-comments/SKILL.md: sha256:7795b9f4cfb46f2ee17dde467015ebd2b71507357eb25cfeccd69559cbaebf80
   .agents/skills/floo-conventional-comments/refrences/matrix.md: sha256:89de6d4c36c175a644c5dec7ececa96f2cf06501ebcfbe3e3cbb51aeb9610488
   .agents/skills/floo-data2viz/SKILL.md: sha256:ba19563a2a1b2a2976aef2eddec69d9086ab4bf9fd3628e269ce17e5e2277bb4
-  .agents/skills/floo-devops-craftsmanship/SKILL.md: sha256:8907f7ae58ba6129b1cf4891d6ff9b2a0f87ea821392cf62989057992047a5b7
+  .agents/skills/floo-devops-craftsmanship/SKILL.md: sha256:5840209b263c0fad4a7da04ab7b2762bd87d29a3fdae3e6648c68ea5856a150f
   .agents/skills/floo-devops-craftsmanship/references/rule01.example.md: sha256:0b1fc09694d579143edfc72d10f3cc7c3426423a874b9fe6c75fc795111e46ca
   .agents/skills/floo-devops-craftsmanship/references/rule02.example.md: sha256:693dc44c5d93b3950e41209f47109a4ff085c168c4ec187adab47cd668e7a459
   .agents/skills/floo-ios-craftsmanship/SKILL.md: sha256:2e1605d2b2fd042e73624b0d1c1a9de108b437876a604636b8eeafbe68108414
@@ -7599,7 +7599,7 @@ local_deployed_file_hashes:
   .claude/skills/floo-conventional-comments/SKILL.md: sha256:7795b9f4cfb46f2ee17dde467015ebd2b71507357eb25cfeccd69559cbaebf80
   .claude/skills/floo-conventional-comments/refrences/matrix.md: sha256:89de6d4c36c175a644c5dec7ececa96f2cf06501ebcfbe3e3cbb51aeb9610488
   .claude/skills/floo-data2viz/SKILL.md: sha256:ba19563a2a1b2a2976aef2eddec69d9086ab4bf9fd3628e269ce17e5e2277bb4
-  .claude/skills/floo-devops-craftsmanship/SKILL.md: sha256:8907f7ae58ba6129b1cf4891d6ff9b2a0f87ea821392cf62989057992047a5b7
+  .claude/skills/floo-devops-craftsmanship/SKILL.md: sha256:5840209b263c0fad4a7da04ab7b2762bd87d29a3fdae3e6648c68ea5856a150f
   .claude/skills/floo-devops-craftsmanship/references/rule01.example.md: sha256:0b1fc09694d579143edfc72d10f3cc7c3426423a874b9fe6c75fc795111e46ca
   .claude/skills/floo-devops-craftsmanship/references/rule02.example.md: sha256:693dc44c5d93b3950e41209f47109a4ff085c168c4ec187adab47cd668e7a459
   .claude/skills/floo-ios-craftsmanship/SKILL.md: sha256:2e1605d2b2fd042e73624b0d1c1a9de108b437876a604636b8eeafbe68108414
