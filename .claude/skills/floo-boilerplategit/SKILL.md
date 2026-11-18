@@ -83,8 +83,6 @@ ______________________________________________________________________
 
 **Description:** Use standardized reference configurations defined in individual reference files under `references/` when generating or updating boilerplate files. Ensure pinned versions, secure defaults, and valid syntax across JSON, YAML, and Markdown files.
 
-Pin every GitHub Actions `uses:` to a full commit SHA with the full tag of that same commit as a trailing comment, e.g. `actions/checkout@<sha> # v7.0.1`, never a short tag like `# v7`.
-
 - [references/readme.md](references/readme.md)
 - [references/agents.md](references/agents.md)
 - [references/release-please.md](references/release-please.md)
