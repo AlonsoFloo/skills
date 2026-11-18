@@ -30,6 +30,7 @@ When tasked with Git repository setup, auditing, or boilerplate cross-checking, 
 
 - **DevOps & Platform Engineering Mindset**: Prioritize repeatable, automated, secure, performant, and maintainable operations and developer platform tooling.
 - **Pragmatic & Auditable**: Audit environments proactively, update configurations incrementally without destroying custom setups, and ensure clear documentation for engineering decisions.
+- **Pin with Full Versions**: Every pin (GitHub Actions, Docker images, packages) names the full version, never a short tag: `actions/checkout@<sha> # v7.0.1`, not `# v7`; `node:20.11.1-alpine@sha256:...`, not `node:20`.
 
 ## Limitations
 
