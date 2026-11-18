@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.11.2](https://github.com/AlonsoFloo/skills/compare/v2.11.1...v2.11.2) (2026-11-18)
+
+
+### Bug Fixes
+
+* **devops-craftsmanship:** AI. require full tag comment on SHA-pinned actions ([#101](https://github.com/AlonsoFloo/skills/issues/101)) ([f70af82](https://github.com/AlonsoFloo/skills/commit/f70af82878c6fe4e2def0aed0e110a4158d4ac41))
+* **renovate:** AI. replace invalid pip manager with pip_requirements ([#97](https://github.com/AlonsoFloo/skills/issues/97)) ([68c74d4](https://github.com/AlonsoFloo/skills/commit/68c74d4cd3a8b4c1573c49e7259cfc3a75884b61))
+
 ## [2.11.1](https://github.com/AlonsoFloo/skills/compare/v2.11.0...v2.11.1) (2026-11-16)
 
 
