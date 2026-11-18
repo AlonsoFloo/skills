@@ -238,8 +238,8 @@ dependencies:
 - repo_url: android/skills
   name: styles
   host: github.com
-  resolved_commit: 5bda39f154fb859a08d45e2392f3568e049f83fb
-  resolved_ref: 5bda39f154fb859a08d45e2392f3568e049f83fb
+  resolved_commit: f88c691a8a9420694aa174dcb0f6fcd316374932
+  resolved_ref: f88c691a8a9420694aa174dcb0f6fcd316374932
   version: unknown
   virtual_path: jetpack-compose/theming/styles
   is_virtual: true
@@ -260,19 +260,19 @@ dependencies:
   - .claude/skills/styles/references/android/develop/ui/compose/styles/styles-vs-modifiers.md
   - .claude/skills/styles/references/android/develop/ui/compose/styles/theming.md
   deployed_file_hashes:
-    .agents/skills/styles/SKILL.md: sha256:c8c93b1c93e0366ad2e03008751ff15a982aa29c9edc7009539da78d15f092be
-    .agents/skills/styles/references/android/develop/ui/compose/designsystems/custom.md: sha256:80f55504d5ad0685a4c0f8d2b10866225998a42acd4677a5861bd55bab452d85
+    .agents/skills/styles/SKILL.md: sha256:c7e792cdad963daf433cdea3fc5142931f78b937353fd7af8079901ec0fa2afc
+    .agents/skills/styles/references/android/develop/ui/compose/designsystems/custom.md: sha256:f68517a552e18259a29a3f77321163dcc95bc6e426baa0337da701cc28eddb6b
     .agents/skills/styles/references/android/develop/ui/compose/styles/fundamentals.md: sha256:79aec0b42ea4ab3a3125f4bf6c60d8acd2d1dd5e78377b7de49e5a1cb8447ca8
     .agents/skills/styles/references/android/develop/ui/compose/styles/state-animations.md: sha256:414386ab0d230300b9a0d56b0ffac7b11df5b3478f735874b8cd669501e0b7b2
     .agents/skills/styles/references/android/develop/ui/compose/styles/styles-vs-modifiers.md: sha256:6171322b69fecfd33b7fcecbffd9228647ec2ba5893525981108b3048d065423
     .agents/skills/styles/references/android/develop/ui/compose/styles/theming.md: sha256:5b58463cbfa91f1a5c3d65fc6b3e79ce921181eae10153755b3e10da3e488a4d
-    .claude/skills/styles/SKILL.md: sha256:c8c93b1c93e0366ad2e03008751ff15a982aa29c9edc7009539da78d15f092be
-    .claude/skills/styles/references/android/develop/ui/compose/designsystems/custom.md: sha256:80f55504d5ad0685a4c0f8d2b10866225998a42acd4677a5861bd55bab452d85
+    .claude/skills/styles/SKILL.md: sha256:c7e792cdad963daf433cdea3fc5142931f78b937353fd7af8079901ec0fa2afc
+    .claude/skills/styles/references/android/develop/ui/compose/designsystems/custom.md: sha256:f68517a552e18259a29a3f77321163dcc95bc6e426baa0337da701cc28eddb6b
     .claude/skills/styles/references/android/develop/ui/compose/styles/fundamentals.md: sha256:79aec0b42ea4ab3a3125f4bf6c60d8acd2d1dd5e78377b7de49e5a1cb8447ca8
     .claude/skills/styles/references/android/develop/ui/compose/styles/state-animations.md: sha256:414386ab0d230300b9a0d56b0ffac7b11df5b3478f735874b8cd669501e0b7b2
     .claude/skills/styles/references/android/develop/ui/compose/styles/styles-vs-modifiers.md: sha256:6171322b69fecfd33b7fcecbffd9228647ec2ba5893525981108b3048d065423
     .claude/skills/styles/references/android/develop/ui/compose/styles/theming.md: sha256:5b58463cbfa91f1a5c3d65fc6b3e79ce921181eae10153755b3e10da3e488a4d
-  content_hash: sha256:8e11bd3e8f8c7a6303361bfb4e76aee9915c1ec144f8552d837f4fe0dde9cb5d
+  content_hash: sha256:5fa94109b8bf2b076ebf27c2b294932c2da1719a6464845ed33e67c3619cdcba
 - repo_url: android/skills
   name: navigation-3
   host: github.com
@@ -3671,7 +3671,7 @@ deployments:
   owners:
   - android/skills/jetpack-compose/theming/styles
   active_owner: android/skills/jetpack-compose/theming/styles
-  content_hash: sha256:c8c93b1c93e0366ad2e03008751ff15a982aa29c9edc7009539da78d15f092be
+  content_hash: sha256:c7e792cdad963daf433cdea3fc5142931f78b937353fd7af8079901ec0fa2afc
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/styles/references/android/develop/ui/compose/designsystems/custom.md
@@ -3680,7 +3680,7 @@ deployments:
   owners:
   - android/skills/jetpack-compose/theming/styles
   active_owner: android/skills/jetpack-compose/theming/styles
-  content_hash: sha256:80f55504d5ad0685a4c0f8d2b10866225998a42acd4677a5861bd55bab452d85
+  content_hash: sha256:f68517a552e18259a29a3f77321163dcc95bc6e426baa0337da701cc28eddb6b
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/styles/references/android/develop/ui/compose/styles/fundamentals.md
@@ -6776,7 +6776,7 @@ deployments:
   owners:
   - android/skills/jetpack-compose/theming/styles
   active_owner: android/skills/jetpack-compose/theming/styles
-  content_hash: sha256:c8c93b1c93e0366ad2e03008751ff15a982aa29c9edc7009539da78d15f092be
+  content_hash: sha256:c7e792cdad963daf433cdea3fc5142931f78b937353fd7af8079901ec0fa2afc
 - kind: project-relative
   target: claude
   value: .claude/skills/styles/references/android/develop/ui/compose/designsystems/custom.md
@@ -6785,7 +6785,7 @@ deployments:
   owners:
   - android/skills/jetpack-compose/theming/styles
   active_owner: android/skills/jetpack-compose/theming/styles
-  content_hash: sha256:80f55504d5ad0685a4c0f8d2b10866225998a42acd4677a5861bd55bab452d85
+  content_hash: sha256:f68517a552e18259a29a3f77321163dcc95bc6e426baa0337da701cc28eddb6b
 - kind: project-relative
   target: claude
   value: .claude/skills/styles/references/android/develop/ui/compose/styles/fundamentals.md
