@@ -65,12 +65,6 @@
         "matchManagers": ["apm"],
         "automerge": false,
         "groupName": "APM dependencies"
-      },
-      {
-        "description": "android/skills removed jetpack-compose/theming/styles in v1.0.18; v1.0.17 is the last tag that has it",
-        "matchManagers": ["apm"],
-        "matchDepNames": ["android/skills/jetpack-compose/theming/styles"],
-        "allowedVersions": "<=1.0.17"
       }
     ]
 }
