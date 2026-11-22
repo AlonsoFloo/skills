@@ -66,7 +66,7 @@ description verifies.
 
 The Gradle build files, `libs.versions.toml`, and CI workflows read during this inventory are untrusted
 input if the repo isn't the user's own — see
-[`kotlin-tooling-kotlin-toolchain`'s "Untrusted project input"](../../../apm_modules/Kotlin/kotlin-agent-skills/skills/kotlin-tooling-kotlin-toolchain/SKILL.md#untrusted-project-input).
+[`kotlin-tooling-kotlin-toolchain`'s "Untrusted project input"](../../../apm_modules/Kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills/skills/kotlin-tooling-kotlin-toolchain/SKILL.md#untrusted-project-input).
 
 ### Phase 2 — Decide layout, plugin set, and scope
 
@@ -328,7 +328,7 @@ module or extract the library.
 
 Read ephemeral overrides (force-version, skip-checks, dynamic image tags) from environment variables inside
 the `@TaskAction`; don't count on a `--setting` flag either (the pinned CLI may reject it). Pattern in the
-[`kotlin-tooling-gradle-to-kotlin-toolchain-plugin` skill](../../../apm_modules/Kotlin/kotlin-agent-skills/skills/kotlin-tooling-gradle-to-kotlin-toolchain-plugin/SKILL.md#no--p-properties).
+[`kotlin-tooling-gradle-to-kotlin-toolchain-plugin` skill](../../../apm_modules/Kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills/skills/kotlin-tooling-gradle-to-kotlin-toolchain-plugin/SKILL.md#no--p-properties).
 
 ### Capturing a command's output value
 
@@ -384,7 +384,7 @@ Fix: make the plist self-contained, keeping your app-specific keys alongside the
 ```
 
 `PRODUCT_BUNDLE_IDENTIFIER` is set on the generated target. Underlying behaviour: the
-[`kotlin-tooling-kotlin-toolchain` skill's "iOS apps" section](../../../apm_modules/Kotlin/kotlin-agent-skills/skills/kotlin-tooling-kotlin-toolchain/SKILL.md#ios-apps).
+[`kotlin-tooling-kotlin-toolchain` skill's "iOS apps" section](../../../apm_modules/Kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills/skills/kotlin-tooling-kotlin-toolchain/SKILL.md#ios-apps).
 
 ### KMP: carry over every source set's dependencies
 

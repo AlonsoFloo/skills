@@ -1,5 +1,10 @@
-lockfile_version: '1'
-apm_version: 0.35.0
+lockfile_version: '4'
+apm_version: 0.37.0
+manifest_targets:
+- agent-skills
+- claude
+- codex
+- copilot
 dependencies:
 - repo_url: android/skills
   name: appfunctions
@@ -12,6 +17,7 @@ dependencies:
   package_type: claude_skill
   deployed_files:
   - .agents/skills/appfunctions
+  - .agents/skills/appfunctions/LICENSE.txt
   - .agents/skills/appfunctions/SKILL.md
   - .agents/skills/appfunctions/references/adb-interaction-testing.md
   - .agents/skills/appfunctions/references/context.md
@@ -20,6 +26,7 @@ dependencies:
   - .agents/skills/appfunctions/references/kdoc-refinement-optimization.md
   - .agents/skills/appfunctions/references/migrate-to-service-entry-point.md
   - .claude/skills/appfunctions
+  - .claude/skills/appfunctions/LICENSE.txt
   - .claude/skills/appfunctions/SKILL.md
   - .claude/skills/appfunctions/references/adb-interaction-testing.md
   - .claude/skills/appfunctions/references/context.md
@@ -28,6 +35,7 @@ dependencies:
   - .claude/skills/appfunctions/references/kdoc-refinement-optimization.md
   - .claude/skills/appfunctions/references/migrate-to-service-entry-point.md
   deployed_file_hashes:
+    .agents/skills/appfunctions/LICENSE.txt: sha256:58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd
     .agents/skills/appfunctions/SKILL.md: sha256:161a64851884046163d5501db6b9932110ce81458098689262b79b3ed09f437d
     .agents/skills/appfunctions/references/adb-interaction-testing.md: sha256:6fe6114a38d9edd48c1c5dca20b80157d2074f20edb67d0faaf75877e0d43ee9
     .agents/skills/appfunctions/references/context.md: sha256:758c07a9439b3ebc5ab0b3c7093008f1524d1c8a895eb2b3cfb9be4aadc68e0b
@@ -35,6 +43,7 @@ dependencies:
     .agents/skills/appfunctions/references/implementation-configuration.md: sha256:031ea2bde57ae6a967f77cffa2f1191287a743f95483cc69577df960e867e4bc
     .agents/skills/appfunctions/references/kdoc-refinement-optimization.md: sha256:926bc1a83e982d8ff71d4c616a63694fde09b497990d8d40b87f9730f63fa896
     .agents/skills/appfunctions/references/migrate-to-service-entry-point.md: sha256:159599491e62df27c7bc750e467ef043b976e43fd70ea4cdece092e86bc4f93e
+    .claude/skills/appfunctions/LICENSE.txt: sha256:58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd
     .claude/skills/appfunctions/SKILL.md: sha256:161a64851884046163d5501db6b9932110ce81458098689262b79b3ed09f437d
     .claude/skills/appfunctions/references/adb-interaction-testing.md: sha256:6fe6114a38d9edd48c1c5dca20b80157d2074f20edb67d0faaf75877e0d43ee9
     .claude/skills/appfunctions/references/context.md: sha256:758c07a9439b3ebc5ab0b3c7093008f1524d1c8a895eb2b3cfb9be4aadc68e0b
@@ -42,7 +51,11 @@ dependencies:
     .claude/skills/appfunctions/references/implementation-configuration.md: sha256:031ea2bde57ae6a967f77cffa2f1191287a743f95483cc69577df960e867e4bc
     .claude/skills/appfunctions/references/kdoc-refinement-optimization.md: sha256:926bc1a83e982d8ff71d4c616a63694fde09b497990d8d40b87f9730f63fa896
     .claude/skills/appfunctions/references/migrate-to-service-entry-point.md: sha256:159599491e62df27c7bc750e467ef043b976e43fd70ea4cdece092e86bc4f93e
-  content_hash: sha256:8a937641811d645d67969548a164cc7b82d628295a4585017bb9acf3edf7ccf7
+  content_hash: sha256:22e14529eaef3a147915e11933acd74c41e68075462b322ae158fd720348b212
+  carried_licenses:
+  - path: LICENSE.txt
+    source: LICENSE.txt
+    hash: sha256:58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd
 - repo_url: android/skills
   name: android-cli
   host: github.com
@@ -54,13 +67,21 @@ dependencies:
   package_type: claude_skill
   deployed_files:
   - .agents/skills/android-cli
+  - .agents/skills/android-cli/LICENSE.txt
   - .agents/skills/android-cli/SKILL.md
   - .claude/skills/android-cli
+  - .claude/skills/android-cli/LICENSE.txt
   - .claude/skills/android-cli/SKILL.md
   deployed_file_hashes:
+    .agents/skills/android-cli/LICENSE.txt: sha256:58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd
     .agents/skills/android-cli/SKILL.md: sha256:2d35bb178b30581a9d4a31c30cf4895861a095863a9d8434a134fd10c2fca0b3
+    .claude/skills/android-cli/LICENSE.txt: sha256:58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd
     .claude/skills/android-cli/SKILL.md: sha256:2d35bb178b30581a9d4a31c30cf4895861a095863a9d8434a134fd10c2fca0b3
-  content_hash: sha256:bbe53f7481bc5de0a5fa1152ca113bff161b3e6aec6a228820c2485e4d861873
+  content_hash: sha256:52b5a17a62c963db1aecfa1d67019fef1700a4b340d0f087545ef90bf8edc4cc
+  carried_licenses:
+  - path: LICENSE.txt
+    source: LICENSE.txt
+    hash: sha256:58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd
 - repo_url: android/skills
   name: restore-credentials
   host: github.com
@@ -72,6 +93,7 @@ dependencies:
   package_type: claude_skill
   deployed_files:
   - .agents/skills/restore-credentials
+  - .agents/skills/restore-credentials/LICENSE.txt
   - .agents/skills/restore-credentials/SKILL.md
   - .agents/skills/restore-credentials/references/android/guide/topics/manifest/application-element.md
   - .agents/skills/restore-credentials/references/android/identity/passkeys/create-passkeys.md
@@ -79,6 +101,7 @@ dependencies:
   - .agents/skills/restore-credentials/references/android/identity/sign-in/test-restore-credentials.md
   - .agents/skills/restore-credentials/references/android/studio/preview/backup-restore-testing.md
   - .claude/skills/restore-credentials
+  - .claude/skills/restore-credentials/LICENSE.txt
   - .claude/skills/restore-credentials/SKILL.md
   - .claude/skills/restore-credentials/references/android/guide/topics/manifest/application-element.md
   - .claude/skills/restore-credentials/references/android/identity/passkeys/create-passkeys.md
@@ -86,19 +109,25 @@ dependencies:
   - .claude/skills/restore-credentials/references/android/identity/sign-in/test-restore-credentials.md
   - .claude/skills/restore-credentials/references/android/studio/preview/backup-restore-testing.md
   deployed_file_hashes:
+    .agents/skills/restore-credentials/LICENSE.txt: sha256:58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd
     .agents/skills/restore-credentials/SKILL.md: sha256:c594f1a914f55d7661005bd328bf3b0f7094a806ed88de22c70a84b402fc4828
     .agents/skills/restore-credentials/references/android/guide/topics/manifest/application-element.md: sha256:4ae9445ff82dcbad38ba2a118d71d17ef844727639a93a281041e1117b2c7e59
     .agents/skills/restore-credentials/references/android/identity/passkeys/create-passkeys.md: sha256:c96a08a2ef4ed3312ae05547dd5a28492755cfaf1cc395bc5f50376f151757e1
     .agents/skills/restore-credentials/references/android/identity/passkeys/sign-in-with-passkeys.md: sha256:04e21eaf82b230e200c1aea9e660566470484fd5a4d6383a2c0fb91f5451e608
     .agents/skills/restore-credentials/references/android/identity/sign-in/test-restore-credentials.md: sha256:d9900986f8a5b40eb217c76a133378cfafcc1c0e61581805949bac306fa373e7
     .agents/skills/restore-credentials/references/android/studio/preview/backup-restore-testing.md: sha256:6396046be55a7015816b11b58a3a4a8dc6408efa5f39c0c312b60aa581629e3d
+    .claude/skills/restore-credentials/LICENSE.txt: sha256:58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd
     .claude/skills/restore-credentials/SKILL.md: sha256:c594f1a914f55d7661005bd328bf3b0f7094a806ed88de22c70a84b402fc4828
     .claude/skills/restore-credentials/references/android/guide/topics/manifest/application-element.md: sha256:4ae9445ff82dcbad38ba2a118d71d17ef844727639a93a281041e1117b2c7e59
     .claude/skills/restore-credentials/references/android/identity/passkeys/create-passkeys.md: sha256:c96a08a2ef4ed3312ae05547dd5a28492755cfaf1cc395bc5f50376f151757e1
     .claude/skills/restore-credentials/references/android/identity/passkeys/sign-in-with-passkeys.md: sha256:04e21eaf82b230e200c1aea9e660566470484fd5a4d6383a2c0fb91f5451e608
     .claude/skills/restore-credentials/references/android/identity/sign-in/test-restore-credentials.md: sha256:d9900986f8a5b40eb217c76a133378cfafcc1c0e61581805949bac306fa373e7
     .claude/skills/restore-credentials/references/android/studio/preview/backup-restore-testing.md: sha256:6396046be55a7015816b11b58a3a4a8dc6408efa5f39c0c312b60aa581629e3d
-  content_hash: sha256:8562c530890530317eaec753fe2caee01f75341e5bfa6d7d6f2641cac0de8ae1
+  content_hash: sha256:0593b5c946a2e2666335a3133baa663e863b1585a177df3b19b2c04d1e14f1f1
+  carried_licenses:
+  - path: LICENSE.txt
+    source: LICENSE.txt
+    hash: sha256:58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd
 - repo_url: android/skills
   name: adaptive
   host: github.com
@@ -110,6 +139,7 @@ dependencies:
   package_type: claude_skill
   deployed_files:
   - .agents/skills/adaptive
+  - .agents/skills/adaptive/LICENSE.txt
   - .agents/skills/adaptive/SKILL.md
   - .agents/skills/adaptive/references/android/develop/ui/compose/layouts/adaptive/flexbox/container-behavior.md
   - .agents/skills/adaptive/references/android/develop/ui/compose/layouts/adaptive/flexbox/get-started.md
@@ -128,6 +158,7 @@ dependencies:
   - .agents/skills/adaptive/references/keyboard_shortcuts.md
   - .agents/skills/adaptive/references/tooltips.md
   - .claude/skills/adaptive
+  - .claude/skills/adaptive/LICENSE.txt
   - .claude/skills/adaptive/SKILL.md
   - .claude/skills/adaptive/references/android/develop/ui/compose/layouts/adaptive/flexbox/container-behavior.md
   - .claude/skills/adaptive/references/android/develop/ui/compose/layouts/adaptive/flexbox/get-started.md
@@ -146,6 +177,7 @@ dependencies:
   - .claude/skills/adaptive/references/keyboard_shortcuts.md
   - .claude/skills/adaptive/references/tooltips.md
   deployed_file_hashes:
+    .agents/skills/adaptive/LICENSE.txt: sha256:58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd
     .agents/skills/adaptive/SKILL.md: sha256:c1e674393d0ea57d04349f8ec85df5b7e043d4ea1cbbe5b0c5989ac3dac456a1
     .agents/skills/adaptive/references/android/develop/ui/compose/layouts/adaptive/flexbox/container-behavior.md: sha256:7a33b15b827dbf21557a2ac808d3e0c2653cf33cc4c58277f2eb94ebfa41aa5f
     .agents/skills/adaptive/references/android/develop/ui/compose/layouts/adaptive/flexbox/get-started.md: sha256:3f9cd51f4de0096cc33d926a3b0870cf1230ea51ea10b2778a9c79abe382f143
@@ -163,6 +195,7 @@ dependencies:
     .agents/skills/adaptive/references/foldable-tabletop.md: sha256:5133e364ce466df05a3c012565f237b6fa27f853dbc92d2d65982045c20f2a79
     .agents/skills/adaptive/references/keyboard_shortcuts.md: sha256:72c2876b4c805f00b00c948f00f0e41d9a3d2c9207a38262f45cd2ab03327513
     .agents/skills/adaptive/references/tooltips.md: sha256:c87d96b2da4488cbbfd097a25a6b4557c48de055df96c7602bd7cb2966d2e4e9
+    .claude/skills/adaptive/LICENSE.txt: sha256:58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd
     .claude/skills/adaptive/SKILL.md: sha256:c1e674393d0ea57d04349f8ec85df5b7e043d4ea1cbbe5b0c5989ac3dac456a1
     .claude/skills/adaptive/references/android/develop/ui/compose/layouts/adaptive/flexbox/container-behavior.md: sha256:7a33b15b827dbf21557a2ac808d3e0c2653cf33cc4c58277f2eb94ebfa41aa5f
     .claude/skills/adaptive/references/android/develop/ui/compose/layouts/adaptive/flexbox/get-started.md: sha256:3f9cd51f4de0096cc33d926a3b0870cf1230ea51ea10b2778a9c79abe382f143
@@ -180,7 +213,11 @@ dependencies:
     .claude/skills/adaptive/references/foldable-tabletop.md: sha256:5133e364ce466df05a3c012565f237b6fa27f853dbc92d2d65982045c20f2a79
     .claude/skills/adaptive/references/keyboard_shortcuts.md: sha256:72c2876b4c805f00b00c948f00f0e41d9a3d2c9207a38262f45cd2ab03327513
     .claude/skills/adaptive/references/tooltips.md: sha256:c87d96b2da4488cbbfd097a25a6b4557c48de055df96c7602bd7cb2966d2e4e9
-  content_hash: sha256:fff430e5173ef8a6d92b1b3dd9820d449f6f805bf77f9b69d411ff88cdbf4570
+  content_hash: sha256:dc44a9d698b0587535e4917d7cfaf7085c37b26dc484b88390867bb14a507629
+  carried_licenses:
+  - path: LICENSE.txt
+    source: LICENSE.txt
+    hash: sha256:58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd
 - repo_url: android/skills
   name: jetpack-compose-performance
   host: github.com
@@ -192,6 +229,7 @@ dependencies:
   package_type: claude_skill
   deployed_files:
   - .agents/skills/jetpack-compose-performance
+  - .agents/skills/jetpack-compose-performance/LICENSE.txt
   - .agents/skills/jetpack-compose-performance/SKILL.md
   - .agents/skills/jetpack-compose-performance/references/android/develop/ui/compose/custom-modifiers.md
   - .agents/skills/jetpack-compose-performance/references/android/develop/ui/compose/performance/backwards-write.md
@@ -203,6 +241,7 @@ dependencies:
   - .agents/skills/jetpack-compose-performance/references/lazy-layouts.md
   - .agents/skills/jetpack-compose-performance/references/state-and-stability.md
   - .claude/skills/jetpack-compose-performance
+  - .claude/skills/jetpack-compose-performance/LICENSE.txt
   - .claude/skills/jetpack-compose-performance/SKILL.md
   - .claude/skills/jetpack-compose-performance/references/android/develop/ui/compose/custom-modifiers.md
   - .claude/skills/jetpack-compose-performance/references/android/develop/ui/compose/performance/backwards-write.md
@@ -214,6 +253,7 @@ dependencies:
   - .claude/skills/jetpack-compose-performance/references/lazy-layouts.md
   - .claude/skills/jetpack-compose-performance/references/state-and-stability.md
   deployed_file_hashes:
+    .agents/skills/jetpack-compose-performance/LICENSE.txt: sha256:58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd
     .agents/skills/jetpack-compose-performance/SKILL.md: sha256:a1680a1ae079faa47fc706bf034b88d4c4c4903dfa4187e98e0af8b056e1848b
     .agents/skills/jetpack-compose-performance/references/android/develop/ui/compose/custom-modifiers.md: sha256:b4ede8f37dc56c54f3621a5ad21f91a649450a9854bc1bacc1a24eb65fe31b38
     .agents/skills/jetpack-compose-performance/references/android/develop/ui/compose/performance/backwards-write.md: sha256:e9b5b1afa36dca37f9548a8d706cc8474b3f03e61bc77037dfa6ab7b1a2169b7
@@ -224,6 +264,7 @@ dependencies:
     .agents/skills/jetpack-compose-performance/references/layouts.md: sha256:619da0bd169a2a2c1b7e99868ab358a3be8c06f25f2bef0dd15353670ce12c06
     .agents/skills/jetpack-compose-performance/references/lazy-layouts.md: sha256:68a0a4f43d311e4d57238ce745d0de775b1948748ab462608d5cbfe8f07b9bfe
     .agents/skills/jetpack-compose-performance/references/state-and-stability.md: sha256:46aff96f166d19d1b2f5510c35679a0efac4fe9f578b4a1e186f5017a696ba37
+    .claude/skills/jetpack-compose-performance/LICENSE.txt: sha256:58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd
     .claude/skills/jetpack-compose-performance/SKILL.md: sha256:a1680a1ae079faa47fc706bf034b88d4c4c4903dfa4187e98e0af8b056e1848b
     .claude/skills/jetpack-compose-performance/references/android/develop/ui/compose/custom-modifiers.md: sha256:b4ede8f37dc56c54f3621a5ad21f91a649450a9854bc1bacc1a24eb65fe31b38
     .claude/skills/jetpack-compose-performance/references/android/develop/ui/compose/performance/backwards-write.md: sha256:e9b5b1afa36dca37f9548a8d706cc8474b3f03e61bc77037dfa6ab7b1a2169b7
@@ -234,7 +275,11 @@ dependencies:
     .claude/skills/jetpack-compose-performance/references/layouts.md: sha256:619da0bd169a2a2c1b7e99868ab358a3be8c06f25f2bef0dd15353670ce12c06
     .claude/skills/jetpack-compose-performance/references/lazy-layouts.md: sha256:68a0a4f43d311e4d57238ce745d0de775b1948748ab462608d5cbfe8f07b9bfe
     .claude/skills/jetpack-compose-performance/references/state-and-stability.md: sha256:46aff96f166d19d1b2f5510c35679a0efac4fe9f578b4a1e186f5017a696ba37
-  content_hash: sha256:333fae93ad9f596bd44926fd253bed62d32d83f4ef0a942fa84f4e483d23ba36
+  content_hash: sha256:58778a9f7d8a532cec93702954cec42dccc1c8c2445b642b084294795ab9d7fb
+  carried_licenses:
+  - path: LICENSE.txt
+    source: LICENSE.txt
+    hash: sha256:58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd
 - repo_url: android/skills
   name: navigation-3
   host: github.com
@@ -246,6 +291,7 @@ dependencies:
   package_type: claude_skill
   deployed_files:
   - .agents/skills/navigation-3
+  - .agents/skills/navigation-3/LICENSE.txt
   - .agents/skills/navigation-3/SKILL.md
   - .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/index.md
   - .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/migration-guide.md
@@ -275,6 +321,7 @@ dependencies:
   - .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/scenes-twopane.md
   - .agents/skills/navigation-3/references/android/guide/navigation/type-safe-destinations.md
   - .claude/skills/navigation-3
+  - .claude/skills/navigation-3/LICENSE.txt
   - .claude/skills/navigation-3/SKILL.md
   - .claude/skills/navigation-3/references/android/guide/navigation/navigation-3/index.md
   - .claude/skills/navigation-3/references/android/guide/navigation/navigation-3/migration-guide.md
@@ -304,6 +351,7 @@ dependencies:
   - .claude/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/scenes-twopane.md
   - .claude/skills/navigation-3/references/android/guide/navigation/type-safe-destinations.md
   deployed_file_hashes:
+    .agents/skills/navigation-3/LICENSE.txt: sha256:58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd
     .agents/skills/navigation-3/SKILL.md: sha256:da661728611eb5b0e474128ee8aeb926ac916e5ceff3589310e3916da0df9cc3
     .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/index.md: sha256:a6170dc40e2769e1034d51a5021b0b6dbc5df9bc9d9bbcae3c576a0647d0b6cf
     .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/migration-guide.md: sha256:9dc0676a5066ae09359e31fdb7e55fb98fd6ebb22e2ab9d7f111bc26aec46e50
@@ -332,6 +380,7 @@ dependencies:
     .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/scenes-listdetail.md: sha256:2a19b4d03973c179eb4e4be8f95f9b728af34b55015619dde73dcd72af916e8c
     .agents/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/scenes-twopane.md: sha256:d0cb99ae3054cf463a598fd348d3d9a07aa4b6805ab22121bdc11561a60b1f64
     .agents/skills/navigation-3/references/android/guide/navigation/type-safe-destinations.md: sha256:ad5f13e3d5ee1bc849d2da5941d4f99a3e2a5748d52fcdfde96d1bc21bf47acb
+    .claude/skills/navigation-3/LICENSE.txt: sha256:58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd
     .claude/skills/navigation-3/SKILL.md: sha256:da661728611eb5b0e474128ee8aeb926ac916e5ceff3589310e3916da0df9cc3
     .claude/skills/navigation-3/references/android/guide/navigation/navigation-3/index.md: sha256:a6170dc40e2769e1034d51a5021b0b6dbc5df9bc9d9bbcae3c576a0647d0b6cf
     .claude/skills/navigation-3/references/android/guide/navigation/navigation-3/migration-guide.md: sha256:9dc0676a5066ae09359e31fdb7e55fb98fd6ebb22e2ab9d7f111bc26aec46e50
@@ -360,7 +409,11 @@ dependencies:
     .claude/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/scenes-listdetail.md: sha256:2a19b4d03973c179eb4e4be8f95f9b728af34b55015619dde73dcd72af916e8c
     .claude/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/scenes-twopane.md: sha256:d0cb99ae3054cf463a598fd348d3d9a07aa4b6805ab22121bdc11561a60b1f64
     .claude/skills/navigation-3/references/android/guide/navigation/type-safe-destinations.md: sha256:ad5f13e3d5ee1bc849d2da5941d4f99a3e2a5748d52fcdfde96d1bc21bf47acb
-  content_hash: sha256:dcb07490b9571c0dcd9f4d8be31372164c015ceafa9787520d0740dea2e7a1dc
+  content_hash: sha256:f317e723f507efbe197f752c8e3c93d3ab394988c7727ce9301a1e53e3ae1f38
+  carried_licenses:
+  - path: LICENSE.txt
+    source: LICENSE.txt
+    hash: sha256:58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd
 - repo_url: android/skills
   name: r8-analyzer
   host: github.com
@@ -372,6 +425,7 @@ dependencies:
   package_type: claude_skill
   deployed_files:
   - .agents/skills/r8-analyzer
+  - .agents/skills/r8-analyzer/LICENSE.txt
   - .agents/skills/r8-analyzer/SKILL.md
   - .agents/skills/r8-analyzer/references/CONFIGURATION.md
   - .agents/skills/r8-analyzer/references/FULL_BUILD_CONFIG_ANALYZER.md
@@ -382,6 +436,7 @@ dependencies:
   - .agents/skills/r8-analyzer/scripts/convert_pb_to_json.py
   - .agents/skills/r8-analyzer/scripts/keep_radius_pb2.py
   - .claude/skills/r8-analyzer
+  - .claude/skills/r8-analyzer/LICENSE.txt
   - .claude/skills/r8-analyzer/SKILL.md
   - .claude/skills/r8-analyzer/references/CONFIGURATION.md
   - .claude/skills/r8-analyzer/references/FULL_BUILD_CONFIG_ANALYZER.md
@@ -392,6 +447,7 @@ dependencies:
   - .claude/skills/r8-analyzer/scripts/convert_pb_to_json.py
   - .claude/skills/r8-analyzer/scripts/keep_radius_pb2.py
   deployed_file_hashes:
+    .agents/skills/r8-analyzer/LICENSE.txt: sha256:58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd
     .agents/skills/r8-analyzer/SKILL.md: sha256:b6001b06ff0ebcbe87b98534a239c8c22b818b97681972db50d5b26466d2bf06
     .agents/skills/r8-analyzer/references/CONFIGURATION.md: sha256:61669860168d5c1f9628f4eb49d68b28e06d60f301a550107d96c030a1389ab2
     .agents/skills/r8-analyzer/references/FULL_BUILD_CONFIG_ANALYZER.md: sha256:e35ee7cebcf2c2bff5f17b5691ad9ac3a58bc2755ae5d7c3f326a9911d3e6f06
@@ -401,6 +457,7 @@ dependencies:
     .agents/skills/r8-analyzer/scripts/analyze.py: sha256:59b55ac94cc1509e244792edeef26111b048d130eb74b6eb4f14ad5f1f30473b
     .agents/skills/r8-analyzer/scripts/convert_pb_to_json.py: sha256:06397052c96d80cc0ffd7077faf197555c2e9c9363a7fff59ae84f28169998e2
     .agents/skills/r8-analyzer/scripts/keep_radius_pb2.py: sha256:37f0f038d7870c71b8d3cdd5b9b9361d79bde265e2754e3ffd511f53107a2e1a
+    .claude/skills/r8-analyzer/LICENSE.txt: sha256:58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd
     .claude/skills/r8-analyzer/SKILL.md: sha256:b6001b06ff0ebcbe87b98534a239c8c22b818b97681972db50d5b26466d2bf06
     .claude/skills/r8-analyzer/references/CONFIGURATION.md: sha256:61669860168d5c1f9628f4eb49d68b28e06d60f301a550107d96c030a1389ab2
     .claude/skills/r8-analyzer/references/FULL_BUILD_CONFIG_ANALYZER.md: sha256:e35ee7cebcf2c2bff5f17b5691ad9ac3a58bc2755ae5d7c3f326a9911d3e6f06
@@ -410,7 +467,11 @@ dependencies:
     .claude/skills/r8-analyzer/scripts/analyze.py: sha256:59b55ac94cc1509e244792edeef26111b048d130eb74b6eb4f14ad5f1f30473b
     .claude/skills/r8-analyzer/scripts/convert_pb_to_json.py: sha256:06397052c96d80cc0ffd7077faf197555c2e9c9363a7fff59ae84f28169998e2
     .claude/skills/r8-analyzer/scripts/keep_radius_pb2.py: sha256:37f0f038d7870c71b8d3cdd5b9b9361d79bde265e2754e3ffd511f53107a2e1a
-  content_hash: sha256:7bee16200224e69abcdcc421b1705c90d8b20b2c683a9985b96785e179239d54
+  content_hash: sha256:9faa08d99d49a9a859048b8d442fda8d013f723087440dc0fecfb22bd1335198
+  carried_licenses:
+  - path: LICENSE.txt
+    source: LICENSE.txt
+    hash: sha256:58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd
 - repo_url: android/skills
   name: edge-to-edge
   host: github.com
@@ -422,13 +483,21 @@ dependencies:
   package_type: claude_skill
   deployed_files:
   - .agents/skills/edge-to-edge
+  - .agents/skills/edge-to-edge/LICENSE.txt
   - .agents/skills/edge-to-edge/SKILL.md
   - .claude/skills/edge-to-edge
+  - .claude/skills/edge-to-edge/LICENSE.txt
   - .claude/skills/edge-to-edge/SKILL.md
   deployed_file_hashes:
+    .agents/skills/edge-to-edge/LICENSE.txt: sha256:58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd
     .agents/skills/edge-to-edge/SKILL.md: sha256:4ca04cb6a5330b96e51410bc815f878b4ca642fba46fe5e1ad724c94e04d6eb8
+    .claude/skills/edge-to-edge/LICENSE.txt: sha256:58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd
     .claude/skills/edge-to-edge/SKILL.md: sha256:4ca04cb6a5330b96e51410bc815f878b4ca642fba46fe5e1ad724c94e04d6eb8
-  content_hash: sha256:7db3c09f145f5bad71b09da526dad46cb8b2ace56e62e87aa2ca7e81a0b4790e
+  content_hash: sha256:a6a32c77cc3e75528b6d3f05daafd94a71f19713fa3a7463c7f3b77a409ba6bb
+  carried_licenses:
+  - path: LICENSE.txt
+    source: LICENSE.txt
+    hash: sha256:58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd
 - repo_url: anthropics/skills
   name: skill-creator
   host: github.com
@@ -514,7 +583,7 @@ dependencies:
     .claude/skills/skill-creator/scripts/run_eval.py: sha256:43e3b8f80dbf69c343967ba77e268fae991d9fa3ed68b32a0ff02532cd48657f
     .claude/skills/skill-creator/scripts/run_loop.py: sha256:7bd6f674203168520517eec94c55f493c0d154339b061b4d7c0f0dad187d0f21
     .claude/skills/skill-creator/scripts/utils.py: sha256:3af8ae62c40c73ab712207436a0d9a981e845f25c5a7040229eb189cc8e45bb1
-  content_hash: sha256:b2bfe91d69ca99994c0566baede889e7d2b9bb8791c6b6106c5d387392f717f6
+  content_hash: sha256:412558e2d4103a965f8bd319273797a4787f1d4635c2b16f1df0d77d7e0680f4
   is_dev: true
 - repo_url: avdlee/swift-concurrency-agent-skill
   materialization_repo_url: AvdLee/Swift-Concurrency-Agent-Skill
@@ -528,6 +597,7 @@ dependencies:
   package_type: claude_skill
   deployed_files:
   - .agents/skills/swift-concurrency
+  - .agents/skills/swift-concurrency/LICENSE
   - .agents/skills/swift-concurrency/SKILL.md
   - .agents/skills/swift-concurrency/agents/openai.yaml
   - .agents/skills/swift-concurrency/assets/logo-small.png
@@ -549,6 +619,7 @@ dependencies:
   - .agents/skills/swift-concurrency/references/testing.md
   - .agents/skills/swift-concurrency/references/threading.md
   - .claude/skills/swift-concurrency
+  - .claude/skills/swift-concurrency/LICENSE
   - .claude/skills/swift-concurrency/SKILL.md
   - .claude/skills/swift-concurrency/agents/openai.yaml
   - .claude/skills/swift-concurrency/assets/logo-small.png
@@ -570,6 +641,7 @@ dependencies:
   - .claude/skills/swift-concurrency/references/testing.md
   - .claude/skills/swift-concurrency/references/threading.md
   deployed_file_hashes:
+    .agents/skills/swift-concurrency/LICENSE: sha256:8f5fd8e5cddb015b5627e45e68b256356586144288a4a0a3db87e38bcb0c9155
     .agents/skills/swift-concurrency/SKILL.md: sha256:8c667b2ff988251c7c291abe046b77d7b8fcfbe3b5ed36961e25e224b1ead491
     .agents/skills/swift-concurrency/agents/openai.yaml: sha256:ee6afe3f6c048fa77f73510f5536abc8f399bc48c8641dc308343ed37ee53cfc
     .agents/skills/swift-concurrency/assets/logo-small.png: sha256:f1f69d278df362306d16809151486fad79fc08d6b3018aeabea4580507392f93
@@ -590,6 +662,7 @@ dependencies:
     .agents/skills/swift-concurrency/references/tasks.md: sha256:0401a762683454149d5ca532684901f4fb5597a6821acacc8d49d037db9a37e9
     .agents/skills/swift-concurrency/references/testing.md: sha256:3df9e839b3338dd473115d9ac8787a42d91b50a537fe40c55cf66d21034679db
     .agents/skills/swift-concurrency/references/threading.md: sha256:0a4e44bd27fdf852cf5f8f5aa64cfe15ba229fb7c885b3f69ed2afdbfac8752a
+    .claude/skills/swift-concurrency/LICENSE: sha256:8f5fd8e5cddb015b5627e45e68b256356586144288a4a0a3db87e38bcb0c9155
     .claude/skills/swift-concurrency/SKILL.md: sha256:8c667b2ff988251c7c291abe046b77d7b8fcfbe3b5ed36961e25e224b1ead491
     .claude/skills/swift-concurrency/agents/openai.yaml: sha256:ee6afe3f6c048fa77f73510f5536abc8f399bc48c8641dc308343ed37ee53cfc
     .claude/skills/swift-concurrency/assets/logo-small.png: sha256:f1f69d278df362306d16809151486fad79fc08d6b3018aeabea4580507392f93
@@ -610,7 +683,11 @@ dependencies:
     .claude/skills/swift-concurrency/references/tasks.md: sha256:0401a762683454149d5ca532684901f4fb5597a6821acacc8d49d037db9a37e9
     .claude/skills/swift-concurrency/references/testing.md: sha256:3df9e839b3338dd473115d9ac8787a42d91b50a537fe40c55cf66d21034679db
     .claude/skills/swift-concurrency/references/threading.md: sha256:0a4e44bd27fdf852cf5f8f5aa64cfe15ba229fb7c885b3f69ed2afdbfac8752a
-  content_hash: sha256:86c6c12b5d51aa0272b353dce04df3d9c081a1dee130f790a90362edfe7a460e
+  content_hash: sha256:8636b14bd0e6bd840a9f1e1b29db6915af1f316257f1213e9c0d9bba5bd2324c
+  carried_licenses:
+  - path: LICENSE
+    source: LICENSE
+    hash: sha256:8f5fd8e5cddb015b5627e45e68b256356586144288a4a0a3db87e38bcb0c9155
 - repo_url: avdlee/swiftui-agent-skill
   materialization_repo_url: AvdLee/SwiftUI-Agent-Skill
   name: swiftui-expert-skill
@@ -623,6 +700,7 @@ dependencies:
   package_type: claude_skill
   deployed_files:
   - .agents/skills/swiftui-expert-skill
+  - .agents/skills/swiftui-expert-skill/LICENSE
   - .agents/skills/swiftui-expert-skill/SKILL.md
   - .agents/skills/swiftui-expert-skill/agents/openai.yaml
   - .agents/skills/swiftui-expert-skill/assets/logo-small.png
@@ -675,6 +753,7 @@ dependencies:
   - .agents/skills/swiftui-expert-skill/scripts/instruments_parser/xml_utils.py
   - .agents/skills/swiftui-expert-skill/scripts/record_trace.py
   - .claude/skills/swiftui-expert-skill
+  - .claude/skills/swiftui-expert-skill/LICENSE
   - .claude/skills/swiftui-expert-skill/SKILL.md
   - .claude/skills/swiftui-expert-skill/agents/openai.yaml
   - .claude/skills/swiftui-expert-skill/assets/logo-small.png
@@ -727,6 +806,7 @@ dependencies:
   - .claude/skills/swiftui-expert-skill/scripts/instruments_parser/xml_utils.py
   - .claude/skills/swiftui-expert-skill/scripts/record_trace.py
   deployed_file_hashes:
+    .agents/skills/swiftui-expert-skill/LICENSE: sha256:8f5fd8e5cddb015b5627e45e68b256356586144288a4a0a3db87e38bcb0c9155
     .agents/skills/swiftui-expert-skill/SKILL.md: sha256:6fa1d5188176628a00e7f032298e640f5191185904e305983cc8a2fa6e2c31d5
     .agents/skills/swiftui-expert-skill/agents/openai.yaml: sha256:48dc200e480dac5598a4b7d3e3635fd5431e21d9dfef77e08b724fbb9871ced0
     .agents/skills/swiftui-expert-skill/assets/logo-small.png: sha256:befad5069b4c95bbb3612e41e2b7fde601de7e022d8cc0d07570f0c7ec234d11
@@ -778,6 +858,7 @@ dependencies:
     .agents/skills/swiftui-expert-skill/scripts/instruments_parser/xctrace.py: sha256:aea84c39cb9edc4e28ed3e57a974bd2d88097e0bc8985f46231ab569595441fb
     .agents/skills/swiftui-expert-skill/scripts/instruments_parser/xml_utils.py: sha256:f0f4476f0f1f0ce9ad5779509b59c2c77b0f7438a57d358aa76e715e7a23b4d6
     .agents/skills/swiftui-expert-skill/scripts/record_trace.py: sha256:7d9c33de1146a274f6ca45790a25f4421ea697893e18a0a6b2ccfb401e245891
+    .claude/skills/swiftui-expert-skill/LICENSE: sha256:8f5fd8e5cddb015b5627e45e68b256356586144288a4a0a3db87e38bcb0c9155
     .claude/skills/swiftui-expert-skill/SKILL.md: sha256:6fa1d5188176628a00e7f032298e640f5191185904e305983cc8a2fa6e2c31d5
     .claude/skills/swiftui-expert-skill/agents/openai.yaml: sha256:48dc200e480dac5598a4b7d3e3635fd5431e21d9dfef77e08b724fbb9871ced0
     .claude/skills/swiftui-expert-skill/assets/logo-small.png: sha256:befad5069b4c95bbb3612e41e2b7fde601de7e022d8cc0d07570f0c7ec234d11
@@ -829,7 +910,11 @@ dependencies:
     .claude/skills/swiftui-expert-skill/scripts/instruments_parser/xctrace.py: sha256:aea84c39cb9edc4e28ed3e57a974bd2d88097e0bc8985f46231ab569595441fb
     .claude/skills/swiftui-expert-skill/scripts/instruments_parser/xml_utils.py: sha256:f0f4476f0f1f0ce9ad5779509b59c2c77b0f7438a57d358aa76e715e7a23b4d6
     .claude/skills/swiftui-expert-skill/scripts/record_trace.py: sha256:7d9c33de1146a274f6ca45790a25f4421ea697893e18a0a6b2ccfb401e245891
-  content_hash: sha256:0502fc74b5c715097828172c8695d66a27f2d58ce5d88bcb6ef587faa8ba5508
+  content_hash: sha256:42e3459e2522169f9f7ba58fc7376d9085a21005e39cb89a3fb7acad81d1bbef
+  carried_licenses:
+  - path: LICENSE
+    source: LICENSE
+    hash: sha256:8f5fd8e5cddb015b5627e45e68b256356586144288a4a0a3db87e38bcb0c9155
 - repo_url: chrisbanes/skills
   name: compose-animations
   host: github.com
@@ -841,17 +926,25 @@ dependencies:
   package_type: claude_skill
   deployed_files:
   - .agents/skills/compose-animations
+  - .agents/skills/compose-animations/LICENSE
   - .agents/skills/compose-animations/SKILL.md
   - .agents/skills/compose-animations/references/animated-content.md
   - .claude/skills/compose-animations
+  - .claude/skills/compose-animations/LICENSE
   - .claude/skills/compose-animations/SKILL.md
   - .claude/skills/compose-animations/references/animated-content.md
   deployed_file_hashes:
+    .agents/skills/compose-animations/LICENSE: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
     .agents/skills/compose-animations/SKILL.md: sha256:eb94fc221017aad7c80b5414847379ac856b2f1c1363d1b67758701df2f5c217
     .agents/skills/compose-animations/references/animated-content.md: sha256:dcad71b0849571086196e5155ddf352b160c236a5470585fbe7b8121095f13cc
+    .claude/skills/compose-animations/LICENSE: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
     .claude/skills/compose-animations/SKILL.md: sha256:eb94fc221017aad7c80b5414847379ac856b2f1c1363d1b67758701df2f5c217
     .claude/skills/compose-animations/references/animated-content.md: sha256:dcad71b0849571086196e5155ddf352b160c236a5470585fbe7b8121095f13cc
-  content_hash: sha256:34afb12a6f51e8005ee5152bed17c0d11202d1eaccfe8270c4a93fe0ce43b055
+  content_hash: sha256:bf213c28d3337c6526356712de463e8d423d1518c34e67170a277f0da2a6b7b2
+  carried_licenses:
+  - path: LICENSE
+    source: LICENSE
+    hash: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
 - repo_url: chrisbanes/skills
   name: kotlin-concurrency-and-flow
   host: github.com
@@ -863,21 +956,29 @@ dependencies:
   package_type: claude_skill
   deployed_files:
   - .agents/skills/kotlin-concurrency-and-flow
+  - .agents/skills/kotlin-concurrency-and-flow/LICENSE
   - .agents/skills/kotlin-concurrency-and-flow/SKILL.md
   - .agents/skills/kotlin-concurrency-and-flow/references/flow-state-events.md
   - .agents/skills/kotlin-concurrency-and-flow/references/structured-concurrency.md
   - .claude/skills/kotlin-concurrency-and-flow
+  - .claude/skills/kotlin-concurrency-and-flow/LICENSE
   - .claude/skills/kotlin-concurrency-and-flow/SKILL.md
   - .claude/skills/kotlin-concurrency-and-flow/references/flow-state-events.md
   - .claude/skills/kotlin-concurrency-and-flow/references/structured-concurrency.md
   deployed_file_hashes:
+    .agents/skills/kotlin-concurrency-and-flow/LICENSE: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
     .agents/skills/kotlin-concurrency-and-flow/SKILL.md: sha256:56398cb404c19c5e7719bb833f2380dd44d7d6e478e8a1454ea677c2867e11b9
     .agents/skills/kotlin-concurrency-and-flow/references/flow-state-events.md: sha256:dcbbe576d065061049504c94145cd3250e33b54e1ff49143fcd23d8329e43278
     .agents/skills/kotlin-concurrency-and-flow/references/structured-concurrency.md: sha256:c6726b464150d21164986f1c08fdfc0f1a62ef907ea0416ca9fdbb1028156808
+    .claude/skills/kotlin-concurrency-and-flow/LICENSE: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
     .claude/skills/kotlin-concurrency-and-flow/SKILL.md: sha256:56398cb404c19c5e7719bb833f2380dd44d7d6e478e8a1454ea677c2867e11b9
     .claude/skills/kotlin-concurrency-and-flow/references/flow-state-events.md: sha256:dcbbe576d065061049504c94145cd3250e33b54e1ff49143fcd23d8329e43278
     .claude/skills/kotlin-concurrency-and-flow/references/structured-concurrency.md: sha256:c6726b464150d21164986f1c08fdfc0f1a62ef907ea0416ca9fdbb1028156808
-  content_hash: sha256:8acf45f5133f76ddc23dc8b3729d4be80f3d3402884003107bbdb18136212e09
+  content_hash: sha256:a2141226adcb4e89e49c84150d2f054ab9d326821c1dcb19b41a6345db219e48
+  carried_licenses:
+  - path: LICENSE
+    source: LICENSE
+    hash: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
 - repo_url: chrisbanes/skills
   name: kotlin-control-flow
   host: github.com
@@ -889,13 +990,21 @@ dependencies:
   package_type: claude_skill
   deployed_files:
   - .agents/skills/kotlin-control-flow
+  - .agents/skills/kotlin-control-flow/LICENSE
   - .agents/skills/kotlin-control-flow/SKILL.md
   - .claude/skills/kotlin-control-flow
+  - .claude/skills/kotlin-control-flow/LICENSE
   - .claude/skills/kotlin-control-flow/SKILL.md
   deployed_file_hashes:
+    .agents/skills/kotlin-control-flow/LICENSE: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
     .agents/skills/kotlin-control-flow/SKILL.md: sha256:dd45004142078e8fd8b231a18906db452af06da5ead09446ef0b2ec703d5159b
+    .claude/skills/kotlin-control-flow/LICENSE: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
     .claude/skills/kotlin-control-flow/SKILL.md: sha256:dd45004142078e8fd8b231a18906db452af06da5ead09446ef0b2ec703d5159b
-  content_hash: sha256:5eb2e691de770e770e20e8e25a23d5d55d81d4b66264423daa5e1e2219b2e4fd
+  content_hash: sha256:56646497f61aff099fc792c218828d2c0489724ecefa3d51816084230ba9d08f
+  carried_licenses:
+  - path: LICENSE
+    source: LICENSE
+    hash: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
 - repo_url: github/awesome-copilot
   name: apple-appstore-reviewer
   host: github.com
@@ -907,13 +1016,21 @@ dependencies:
   package_type: claude_skill
   deployed_files:
   - .agents/skills/apple-appstore-reviewer
+  - .agents/skills/apple-appstore-reviewer/LICENSE
   - .agents/skills/apple-appstore-reviewer/SKILL.md
   - .claude/skills/apple-appstore-reviewer
+  - .claude/skills/apple-appstore-reviewer/LICENSE
   - .claude/skills/apple-appstore-reviewer/SKILL.md
   deployed_file_hashes:
+    .agents/skills/apple-appstore-reviewer/LICENSE: sha256:e32449d23085399adc1222f7a17408b730550258e51627c153cb108ca9955823
     .agents/skills/apple-appstore-reviewer/SKILL.md: sha256:09cb2403169f3789733648751cb93b16e6cb314e064d68d44cfca98cfe518e4e
+    .claude/skills/apple-appstore-reviewer/LICENSE: sha256:e32449d23085399adc1222f7a17408b730550258e51627c153cb108ca9955823
     .claude/skills/apple-appstore-reviewer/SKILL.md: sha256:09cb2403169f3789733648751cb93b16e6cb314e064d68d44cfca98cfe518e4e
-  content_hash: sha256:51a510267e56656f0120930c7ac180494e6e955602e3c5904e8eef0aad5de3dc
+  content_hash: sha256:7da41d086240d601feea72c029bdc8797a543ad71be32fa403fa98ea2209faab
+  carried_licenses:
+  - path: LICENSE
+    source: LICENSE
+    hash: sha256:e32449d23085399adc1222f7a17408b730550258e51627c153cb108ca9955823
 - repo_url: github/awesome-copilot
   name: conventional-branch
   host: github.com
@@ -925,13 +1042,21 @@ dependencies:
   package_type: claude_skill
   deployed_files:
   - .agents/skills/conventional-branch
+  - .agents/skills/conventional-branch/LICENSE
   - .agents/skills/conventional-branch/SKILL.md
   - .claude/skills/conventional-branch
+  - .claude/skills/conventional-branch/LICENSE
   - .claude/skills/conventional-branch/SKILL.md
   deployed_file_hashes:
+    .agents/skills/conventional-branch/LICENSE: sha256:e32449d23085399adc1222f7a17408b730550258e51627c153cb108ca9955823
     .agents/skills/conventional-branch/SKILL.md: sha256:f96662c6fafb93e7a87e04f4dfe143032fbeaa4dbb86d08a356097472c75cc6f
+    .claude/skills/conventional-branch/LICENSE: sha256:e32449d23085399adc1222f7a17408b730550258e51627c153cb108ca9955823
     .claude/skills/conventional-branch/SKILL.md: sha256:f96662c6fafb93e7a87e04f4dfe143032fbeaa4dbb86d08a356097472c75cc6f
-  content_hash: sha256:12238ae18d36e1f57007483a406dd2f3a427f42e23948344630ca0d45136ff7d
+  content_hash: sha256:b4e4145480b3daf1edc3fd06f7c553cf9c528878bb3832d65cb27a569584d48c
+  carried_licenses:
+  - path: LICENSE
+    source: LICENSE
+    hash: sha256:e32449d23085399adc1222f7a17408b730550258e51627c153cb108ca9955823
 - repo_url: github/awesome-copilot
   name: conventional-commit
   host: github.com
@@ -943,13 +1068,21 @@ dependencies:
   package_type: claude_skill
   deployed_files:
   - .agents/skills/conventional-commit
+  - .agents/skills/conventional-commit/LICENSE
   - .agents/skills/conventional-commit/SKILL.md
   - .claude/skills/conventional-commit
+  - .claude/skills/conventional-commit/LICENSE
   - .claude/skills/conventional-commit/SKILL.md
   deployed_file_hashes:
+    .agents/skills/conventional-commit/LICENSE: sha256:e32449d23085399adc1222f7a17408b730550258e51627c153cb108ca9955823
     .agents/skills/conventional-commit/SKILL.md: sha256:250235f71b8c501a7744ded911281292324bcd1a2d014e34b25041e2d2c8bf73
+    .claude/skills/conventional-commit/LICENSE: sha256:e32449d23085399adc1222f7a17408b730550258e51627c153cb108ca9955823
     .claude/skills/conventional-commit/SKILL.md: sha256:250235f71b8c501a7744ded911281292324bcd1a2d014e34b25041e2d2c8bf73
-  content_hash: sha256:f29c9486cede6c7b2df0cfb0a2e4aa67446552b991bcf17d1b309e903171f03d
+  content_hash: sha256:050b209f7a540376125a6c5be453472ac29e28b94fd30c45621138e606252e9f
+  carried_licenses:
+  - path: LICENSE
+    source: LICENSE
+    hash: sha256:e32449d23085399adc1222f7a17408b730550258e51627c153cb108ca9955823
 - repo_url: github/awesome-copilot
   name: security-review
   host: github.com
@@ -961,6 +1094,7 @@ dependencies:
   package_type: claude_skill
   deployed_files:
   - .agents/skills/security-review
+  - .agents/skills/security-review/LICENSE
   - .agents/skills/security-review/SKILL.md
   - .agents/skills/security-review/references/language-patterns.md
   - .agents/skills/security-review/references/report-format.md
@@ -968,6 +1102,7 @@ dependencies:
   - .agents/skills/security-review/references/vuln-categories.md
   - .agents/skills/security-review/references/vulnerable-packages.md
   - .claude/skills/security-review
+  - .claude/skills/security-review/LICENSE
   - .claude/skills/security-review/SKILL.md
   - .claude/skills/security-review/references/language-patterns.md
   - .claude/skills/security-review/references/report-format.md
@@ -975,31 +1110,41 @@ dependencies:
   - .claude/skills/security-review/references/vuln-categories.md
   - .claude/skills/security-review/references/vulnerable-packages.md
   deployed_file_hashes:
+    .agents/skills/security-review/LICENSE: sha256:e32449d23085399adc1222f7a17408b730550258e51627c153cb108ca9955823
     .agents/skills/security-review/SKILL.md: sha256:002392d88637b89e4cbc409a0531834970937f3b57c0b448a17e04b5ca6d356c
     .agents/skills/security-review/references/language-patterns.md: sha256:ddfbcbb68b9d605789c85a168a274219f0ad86f5fc76b46b5332eb42f0c042b3
     .agents/skills/security-review/references/report-format.md: sha256:688ef9f2862303527314eb17a090a72d512b907a685f5d1f122d6ebd5ae66db1
     .agents/skills/security-review/references/secret-patterns.md: sha256:38f84f60021490d785f33fc70f2ce784888d2a751781a881372e6862e7e11288
     .agents/skills/security-review/references/vuln-categories.md: sha256:d06159479bd92b9dcf3a2842e09f7712f1fd297c0bc9792fe20bc3cb69188df5
     .agents/skills/security-review/references/vulnerable-packages.md: sha256:8693a6a258bad18a8a1d0925bc1eae9c744071ff37a36b8f1da83adca93608af
+    .claude/skills/security-review/LICENSE: sha256:e32449d23085399adc1222f7a17408b730550258e51627c153cb108ca9955823
     .claude/skills/security-review/SKILL.md: sha256:002392d88637b89e4cbc409a0531834970937f3b57c0b448a17e04b5ca6d356c
     .claude/skills/security-review/references/language-patterns.md: sha256:ddfbcbb68b9d605789c85a168a274219f0ad86f5fc76b46b5332eb42f0c042b3
     .claude/skills/security-review/references/report-format.md: sha256:688ef9f2862303527314eb17a090a72d512b907a685f5d1f122d6ebd5ae66db1
     .claude/skills/security-review/references/secret-patterns.md: sha256:38f84f60021490d785f33fc70f2ce784888d2a751781a881372e6862e7e11288
     .claude/skills/security-review/references/vuln-categories.md: sha256:d06159479bd92b9dcf3a2842e09f7712f1fd297c0bc9792fe20bc3cb69188df5
     .claude/skills/security-review/references/vulnerable-packages.md: sha256:8693a6a258bad18a8a1d0925bc1eae9c744071ff37a36b8f1da83adca93608af
-  content_hash: sha256:a0fc25587c016178c9cf6238ac8702695fa761694965192472487f92093db571
+  content_hash: sha256:ef21be383ea53d84c0c9a663cfa299328c935aa30b996b69d5f9b955fb54d7aa
+  carried_licenses:
+  - path: LICENSE
+    source: LICENSE
+    hash: sha256:e32449d23085399adc1222f7a17408b730550258e51627c153cb108ca9955823
 - repo_url: kotlin/kotlin-agent-skills
   materialization_repo_url: Kotlin/kotlin-agent-skills
-  name: c4201117800b20d8
+  name: kotlin-agent-skills
   host: github.com
   resolved_commit: 087f5689c1934135ed58718cdf524525e452b7e9
   resolved_ref: main
-  version: 087f568
-  package_type: skill_bundle
+  version: 1.1.0
+  virtual_path: plugins/kotlin-agent-skills
+  is_virtual: true
+  package_type: marketplace_plugin
   deployed_files:
   - .agents/skills/kotlin-backend-jpa-entity-mapping
+  - .agents/skills/kotlin-backend-jpa-entity-mapping/LICENSE
   - .agents/skills/kotlin-backend-jpa-entity-mapping/SKILL.md
   - .agents/skills/kotlin-tooling-agp9-migration
+  - .agents/skills/kotlin-tooling-agp9-migration/LICENSE
   - .agents/skills/kotlin-tooling-agp9-migration/SKILL.md
   - .agents/skills/kotlin-tooling-agp9-migration/assets/checklist.md
   - .agents/skills/kotlin-tooling-agp9-migration/references/DSL-REFERENCE.md
@@ -1011,6 +1156,7 @@ dependencies:
   - .agents/skills/kotlin-tooling-agp9-migration/references/VERSION-MATRIX.md
   - .agents/skills/kotlin-tooling-agp9-migration/scripts/analyze-project.sh
   - .agents/skills/kotlin-tooling-cocoapods-spm-migration
+  - .agents/skills/kotlin-tooling-cocoapods-spm-migration/LICENSE
   - .agents/skills/kotlin-tooling-cocoapods-spm-migration/SKILL.md
   - .agents/skills/kotlin-tooling-cocoapods-spm-migration/references/cocoapods-extras-patterns.md
   - .agents/skills/kotlin-tooling-cocoapods-spm-migration/references/common-pods-mapping.md
@@ -1018,14 +1164,18 @@ dependencies:
   - .agents/skills/kotlin-tooling-cocoapods-spm-migration/references/migration-report-template.md
   - .agents/skills/kotlin-tooling-cocoapods-spm-migration/references/troubleshooting.md
   - .agents/skills/kotlin-tooling-gradle-to-kotlin-toolchain-plugin
+  - .agents/skills/kotlin-tooling-gradle-to-kotlin-toolchain-plugin/LICENSE
   - .agents/skills/kotlin-tooling-gradle-to-kotlin-toolchain-plugin/SKILL.md
   - .agents/skills/kotlin-tooling-gradle-to-kotlin-toolchain-plugin/references/examples.md
   - .agents/skills/kotlin-tooling-gradle-to-kotlin-toolchain-project
+  - .agents/skills/kotlin-tooling-gradle-to-kotlin-toolchain-project/LICENSE
   - .agents/skills/kotlin-tooling-gradle-to-kotlin-toolchain-project/SKILL.md
   - .agents/skills/kotlin-tooling-gradle-to-kotlin-toolchain-project/references/examples.md
   - .agents/skills/kotlin-tooling-immutable-collections-0-5-x-migration
+  - .agents/skills/kotlin-tooling-immutable-collections-0-5-x-migration/LICENSE
   - .agents/skills/kotlin-tooling-immutable-collections-0-5-x-migration/SKILL.md
   - .agents/skills/kotlin-tooling-java-to-kotlin
+  - .agents/skills/kotlin-tooling-java-to-kotlin/LICENSE
   - .agents/skills/kotlin-tooling-java-to-kotlin/SKILL.md
   - .agents/skills/kotlin-tooling-java-to-kotlin/assets/checklist.md
   - .agents/skills/kotlin-tooling-java-to-kotlin/references/CONVERSION-METHODOLOGY.md
@@ -1044,13 +1194,16 @@ dependencies:
   - .agents/skills/kotlin-tooling-java-to-kotlin/references/frameworks/SPRING.md
   - .agents/skills/kotlin-tooling-kotlin-toolchain
   - .agents/skills/kotlin-tooling-kotlin-toolchain-plugin-authoring
+  - .agents/skills/kotlin-tooling-kotlin-toolchain-plugin-authoring/LICENSE
   - .agents/skills/kotlin-tooling-kotlin-toolchain-plugin-authoring/SKILL.md
   - .agents/skills/kotlin-tooling-kotlin-toolchain-plugin-authoring/references/examples.md
+  - .agents/skills/kotlin-tooling-kotlin-toolchain/LICENSE
   - .agents/skills/kotlin-tooling-kotlin-toolchain/SKILL.md
   - .agents/skills/kotlin-tooling-kotlin-toolchain/evals/EVALUATION.md
   - .agents/skills/kotlin-tooling-kotlin-toolchain/evals/evals.json
   - .agents/skills/kotlin-tooling-kotlin-toolchain/references/examples.md
   - .agents/skills/kotlin-tooling-native-build-performance
+  - .agents/skills/kotlin-tooling-native-build-performance/LICENSE
   - .agents/skills/kotlin-tooling-native-build-performance/SKILL.md
   - .agents/skills/kotlin-tooling-native-build-performance/evals/EVALUATION.md
   - .agents/skills/kotlin-tooling-native-build-performance/references/artifacts-and-targets.md
@@ -1059,8 +1212,10 @@ dependencies:
   - .agents/skills/kotlin-tooling-native-build-performance/references/exports-and-generated-code.md
   - .agents/skills/kotlin-tooling-native-build-performance/scripts/audit-native-build.sh
   - .claude/skills/kotlin-backend-jpa-entity-mapping
+  - .claude/skills/kotlin-backend-jpa-entity-mapping/LICENSE
   - .claude/skills/kotlin-backend-jpa-entity-mapping/SKILL.md
   - .claude/skills/kotlin-tooling-agp9-migration
+  - .claude/skills/kotlin-tooling-agp9-migration/LICENSE
   - .claude/skills/kotlin-tooling-agp9-migration/SKILL.md
   - .claude/skills/kotlin-tooling-agp9-migration/assets/checklist.md
   - .claude/skills/kotlin-tooling-agp9-migration/references/DSL-REFERENCE.md
@@ -1072,6 +1227,7 @@ dependencies:
   - .claude/skills/kotlin-tooling-agp9-migration/references/VERSION-MATRIX.md
   - .claude/skills/kotlin-tooling-agp9-migration/scripts/analyze-project.sh
   - .claude/skills/kotlin-tooling-cocoapods-spm-migration
+  - .claude/skills/kotlin-tooling-cocoapods-spm-migration/LICENSE
   - .claude/skills/kotlin-tooling-cocoapods-spm-migration/SKILL.md
   - .claude/skills/kotlin-tooling-cocoapods-spm-migration/references/cocoapods-extras-patterns.md
   - .claude/skills/kotlin-tooling-cocoapods-spm-migration/references/common-pods-mapping.md
@@ -1079,14 +1235,18 @@ dependencies:
   - .claude/skills/kotlin-tooling-cocoapods-spm-migration/references/migration-report-template.md
   - .claude/skills/kotlin-tooling-cocoapods-spm-migration/references/troubleshooting.md
   - .claude/skills/kotlin-tooling-gradle-to-kotlin-toolchain-plugin
+  - .claude/skills/kotlin-tooling-gradle-to-kotlin-toolchain-plugin/LICENSE
   - .claude/skills/kotlin-tooling-gradle-to-kotlin-toolchain-plugin/SKILL.md
   - .claude/skills/kotlin-tooling-gradle-to-kotlin-toolchain-plugin/references/examples.md
   - .claude/skills/kotlin-tooling-gradle-to-kotlin-toolchain-project
+  - .claude/skills/kotlin-tooling-gradle-to-kotlin-toolchain-project/LICENSE
   - .claude/skills/kotlin-tooling-gradle-to-kotlin-toolchain-project/SKILL.md
   - .claude/skills/kotlin-tooling-gradle-to-kotlin-toolchain-project/references/examples.md
   - .claude/skills/kotlin-tooling-immutable-collections-0-5-x-migration
+  - .claude/skills/kotlin-tooling-immutable-collections-0-5-x-migration/LICENSE
   - .claude/skills/kotlin-tooling-immutable-collections-0-5-x-migration/SKILL.md
   - .claude/skills/kotlin-tooling-java-to-kotlin
+  - .claude/skills/kotlin-tooling-java-to-kotlin/LICENSE
   - .claude/skills/kotlin-tooling-java-to-kotlin/SKILL.md
   - .claude/skills/kotlin-tooling-java-to-kotlin/assets/checklist.md
   - .claude/skills/kotlin-tooling-java-to-kotlin/references/CONVERSION-METHODOLOGY.md
@@ -1105,13 +1265,16 @@ dependencies:
   - .claude/skills/kotlin-tooling-java-to-kotlin/references/frameworks/SPRING.md
   - .claude/skills/kotlin-tooling-kotlin-toolchain
   - .claude/skills/kotlin-tooling-kotlin-toolchain-plugin-authoring
+  - .claude/skills/kotlin-tooling-kotlin-toolchain-plugin-authoring/LICENSE
   - .claude/skills/kotlin-tooling-kotlin-toolchain-plugin-authoring/SKILL.md
   - .claude/skills/kotlin-tooling-kotlin-toolchain-plugin-authoring/references/examples.md
+  - .claude/skills/kotlin-tooling-kotlin-toolchain/LICENSE
   - .claude/skills/kotlin-tooling-kotlin-toolchain/SKILL.md
   - .claude/skills/kotlin-tooling-kotlin-toolchain/evals/EVALUATION.md
   - .claude/skills/kotlin-tooling-kotlin-toolchain/evals/evals.json
   - .claude/skills/kotlin-tooling-kotlin-toolchain/references/examples.md
   - .claude/skills/kotlin-tooling-native-build-performance
+  - .claude/skills/kotlin-tooling-native-build-performance/LICENSE
   - .claude/skills/kotlin-tooling-native-build-performance/SKILL.md
   - .claude/skills/kotlin-tooling-native-build-performance/evals/EVALUATION.md
   - .claude/skills/kotlin-tooling-native-build-performance/references/artifacts-and-targets.md
@@ -1120,7 +1283,9 @@ dependencies:
   - .claude/skills/kotlin-tooling-native-build-performance/references/exports-and-generated-code.md
   - .claude/skills/kotlin-tooling-native-build-performance/scripts/audit-native-build.sh
   deployed_file_hashes:
+    .agents/skills/kotlin-backend-jpa-entity-mapping/LICENSE: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
     .agents/skills/kotlin-backend-jpa-entity-mapping/SKILL.md: sha256:5d9c864a55c5ad29f54a807820672a9b5e0360ee33006c63a396a31bef0d8f4e
+    .agents/skills/kotlin-tooling-agp9-migration/LICENSE: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
     .agents/skills/kotlin-tooling-agp9-migration/SKILL.md: sha256:eec4224102bdea5779f7a181a4f3dc946efee5b7398b207c1467f1f84aeaa0a6
     .agents/skills/kotlin-tooling-agp9-migration/assets/checklist.md: sha256:bccb1adb33a00368e09b94d4cce19b3f3b60da0dab6441664249c078d3dce31c
     .agents/skills/kotlin-tooling-agp9-migration/references/DSL-REFERENCE.md: sha256:aeeb39d3c4ce1d901e9e4d2b5be3b815b9e43169bb488e0c6661cba0ef5220d4
@@ -1131,17 +1296,22 @@ dependencies:
     .agents/skills/kotlin-tooling-agp9-migration/references/PLUGIN-COMPATIBILITY.md: sha256:ec47b996d9459c435fb2ca0588bb35189bc81370c533fee8f38cec93755e92a8
     .agents/skills/kotlin-tooling-agp9-migration/references/VERSION-MATRIX.md: sha256:81537c09a682c476beec70fe7b0075799b7393857f2227164709b66a2446c256
     .agents/skills/kotlin-tooling-agp9-migration/scripts/analyze-project.sh: sha256:6f3929ae06341793e373f24bf868f4aa026efc3a0b819e03473e28c84da57f5d
+    .agents/skills/kotlin-tooling-cocoapods-spm-migration/LICENSE: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
     .agents/skills/kotlin-tooling-cocoapods-spm-migration/SKILL.md: sha256:06d75416ed876c18d950493a5aefe6ef5dd5cb955ec0c1d6c1c45cac8ab839ca
     .agents/skills/kotlin-tooling-cocoapods-spm-migration/references/cocoapods-extras-patterns.md: sha256:38e9886bc1a3706b4b9fdfd51f38940ce47708e8d524276df160ca8af530f629
     .agents/skills/kotlin-tooling-cocoapods-spm-migration/references/common-pods-mapping.md: sha256:6f3cb5a2c2a0b096720ad4cb97a744e004e9598b3b4e26b5b8420633c14e5791
     .agents/skills/kotlin-tooling-cocoapods-spm-migration/references/dsl-reference.md: sha256:67b05e2de0f117463f8d743e624a9241f6820bea0380292b5b026a58050b5145
     .agents/skills/kotlin-tooling-cocoapods-spm-migration/references/migration-report-template.md: sha256:ea0d1fa2f4db039ad04f919a964f634ccd1b890336852574399eeaa74e84e7f5
     .agents/skills/kotlin-tooling-cocoapods-spm-migration/references/troubleshooting.md: sha256:aee1e42d1f4dd6e8fafba6de59896e1d6b667ada352de6d0e8c0bdc2971108da
-    .agents/skills/kotlin-tooling-gradle-to-kotlin-toolchain-plugin/SKILL.md: sha256:fed52bd5f8f62a7d72a65f51f5eaeabaceb589e7a22796ae20a7bc47e4bc0c40
+    .agents/skills/kotlin-tooling-gradle-to-kotlin-toolchain-plugin/LICENSE: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
+    .agents/skills/kotlin-tooling-gradle-to-kotlin-toolchain-plugin/SKILL.md: sha256:1b1a3ceb19fd64fcd4e7d25f45d9b2be3305e703037329024ece427a44a02228
     .agents/skills/kotlin-tooling-gradle-to-kotlin-toolchain-plugin/references/examples.md: sha256:e5e38dc31ea60cd2da058906d7f4ba32729c1db4dfb4f62f11e9286c9e1ed9b9
-    .agents/skills/kotlin-tooling-gradle-to-kotlin-toolchain-project/SKILL.md: sha256:e385a8611479fba258f330da0a188dc95313759d3a41b4f128f110856a21516c
+    .agents/skills/kotlin-tooling-gradle-to-kotlin-toolchain-project/LICENSE: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
+    .agents/skills/kotlin-tooling-gradle-to-kotlin-toolchain-project/SKILL.md: sha256:568800b306d94aa038e6c5dba94629aa1a5cd0a45365a66648c1c1ac183a8ac7
     .agents/skills/kotlin-tooling-gradle-to-kotlin-toolchain-project/references/examples.md: sha256:1509ed330079ce1276e1c9ef3dba006eaaecedca7afafa71e066201423363c5e
+    .agents/skills/kotlin-tooling-immutable-collections-0-5-x-migration/LICENSE: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
     .agents/skills/kotlin-tooling-immutable-collections-0-5-x-migration/SKILL.md: sha256:7b161da34a28fc5a6855b6e1b6c1749fbc754eaa29b911ec0cc8bb532b0c9d26
+    .agents/skills/kotlin-tooling-java-to-kotlin/LICENSE: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
     .agents/skills/kotlin-tooling-java-to-kotlin/SKILL.md: sha256:5b372715adac4df37e3261040ead2d0c937a5e06a55178fa5ff0fcc95adc1944
     .agents/skills/kotlin-tooling-java-to-kotlin/assets/checklist.md: sha256:b2cafa681d87c3d6b9ce730954943ccc306e0c3c5d96f3f7eb0d6726d108bb40
     .agents/skills/kotlin-tooling-java-to-kotlin/references/CONVERSION-METHODOLOGY.md: sha256:b83aaed4331d632065008872bb5db9898f4bb3c14a76b73e166b2509ab48f4ea
@@ -1158,12 +1328,15 @@ dependencies:
     .agents/skills/kotlin-tooling-java-to-kotlin/references/frameworks/RETROFIT.md: sha256:b79fd49230bb9cf2b9a2b05ddb772de8ba4b5d80ddc00dc7b3a33550e2988f22
     .agents/skills/kotlin-tooling-java-to-kotlin/references/frameworks/RXJAVA.md: sha256:87cad42db77a79c9c2a8bc24d051f0526300fb0682de239e30bbd88748608b82
     .agents/skills/kotlin-tooling-java-to-kotlin/references/frameworks/SPRING.md: sha256:b07412f7dbcd9cb7d543370e69e6e9d0faf4f4bd74608a0586fa0be93c881ae8
+    .agents/skills/kotlin-tooling-kotlin-toolchain-plugin-authoring/LICENSE: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
     .agents/skills/kotlin-tooling-kotlin-toolchain-plugin-authoring/SKILL.md: sha256:ff5cf4de344a0643ecca5679f4462431faf8d98436fbe16a885807cb46e773ef
     .agents/skills/kotlin-tooling-kotlin-toolchain-plugin-authoring/references/examples.md: sha256:fbadc3b768150d8dbcc3cf7484d07853b516ae2d71cfff3e21574175de40635f
-    .agents/skills/kotlin-tooling-kotlin-toolchain/SKILL.md: sha256:664b3e263c0eff58b400f21a770c87bbac39e248a85e62342c9406f4626de5bc
+    .agents/skills/kotlin-tooling-kotlin-toolchain/LICENSE: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
+    .agents/skills/kotlin-tooling-kotlin-toolchain/SKILL.md: sha256:f17861dc34a3f105546ce76fc7104228af4d960da892ab50cb0192022d814a57
     .agents/skills/kotlin-tooling-kotlin-toolchain/evals/EVALUATION.md: sha256:28b476aa482974bddf537da334544cfe59d1de3779bbd2b8d140d057f9ac7107
     .agents/skills/kotlin-tooling-kotlin-toolchain/evals/evals.json: sha256:5028e04c72a6f477ad5da26a052203f7fd8a94ecfc94bcc1d6de30c55597b894
-    .agents/skills/kotlin-tooling-kotlin-toolchain/references/examples.md: sha256:0da9fa2ff2dd1c29e3b1e5ca3d6fea44c411a01e809cb5ba5c0a6b9ef0a9a7e6
+    .agents/skills/kotlin-tooling-kotlin-toolchain/references/examples.md: sha256:bb3128a05d85e4f0fd4ba4cfdc43e5110f15bf8e2b612af5ebf0b385b40306fe
+    .agents/skills/kotlin-tooling-native-build-performance/LICENSE: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
     .agents/skills/kotlin-tooling-native-build-performance/SKILL.md: sha256:948fcecafa9fd0dcd447682e1fef7046b542be710ee27c2f25eade31c182455e
     .agents/skills/kotlin-tooling-native-build-performance/evals/EVALUATION.md: sha256:f7f4a9c7412e6e40e9b9fc66f4654fbc35c790c8a89a4ec77e1f3eeaf0219e7c
     .agents/skills/kotlin-tooling-native-build-performance/references/artifacts-and-targets.md: sha256:5dceccd55aa6b517b1f2e48b76b585958244ee66818ecbb4cfa056c0f8cc66ff
@@ -1171,7 +1344,9 @@ dependencies:
     .agents/skills/kotlin-tooling-native-build-performance/references/experimental.md: sha256:e0e83e36ebdd41f393082680ed06ff396077540544c5723cace80a2058a5eb1f
     .agents/skills/kotlin-tooling-native-build-performance/references/exports-and-generated-code.md: sha256:76d94b9a08e933f09eaae66e8a613f79726dbabc65f765e2130fabf93c0f87d3
     .agents/skills/kotlin-tooling-native-build-performance/scripts/audit-native-build.sh: sha256:94af58014fb24aaf1e7757ce804ea19e4023cc778da77ac0d725bd19aa0ba9e7
+    .claude/skills/kotlin-backend-jpa-entity-mapping/LICENSE: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
     .claude/skills/kotlin-backend-jpa-entity-mapping/SKILL.md: sha256:5d9c864a55c5ad29f54a807820672a9b5e0360ee33006c63a396a31bef0d8f4e
+    .claude/skills/kotlin-tooling-agp9-migration/LICENSE: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
     .claude/skills/kotlin-tooling-agp9-migration/SKILL.md: sha256:eec4224102bdea5779f7a181a4f3dc946efee5b7398b207c1467f1f84aeaa0a6
     .claude/skills/kotlin-tooling-agp9-migration/assets/checklist.md: sha256:bccb1adb33a00368e09b94d4cce19b3f3b60da0dab6441664249c078d3dce31c
     .claude/skills/kotlin-tooling-agp9-migration/references/DSL-REFERENCE.md: sha256:aeeb39d3c4ce1d901e9e4d2b5be3b815b9e43169bb488e0c6661cba0ef5220d4
@@ -1182,17 +1357,22 @@ dependencies:
     .claude/skills/kotlin-tooling-agp9-migration/references/PLUGIN-COMPATIBILITY.md: sha256:ec47b996d9459c435fb2ca0588bb35189bc81370c533fee8f38cec93755e92a8
     .claude/skills/kotlin-tooling-agp9-migration/references/VERSION-MATRIX.md: sha256:81537c09a682c476beec70fe7b0075799b7393857f2227164709b66a2446c256
     .claude/skills/kotlin-tooling-agp9-migration/scripts/analyze-project.sh: sha256:6f3929ae06341793e373f24bf868f4aa026efc3a0b819e03473e28c84da57f5d
+    .claude/skills/kotlin-tooling-cocoapods-spm-migration/LICENSE: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
     .claude/skills/kotlin-tooling-cocoapods-spm-migration/SKILL.md: sha256:06d75416ed876c18d950493a5aefe6ef5dd5cb955ec0c1d6c1c45cac8ab839ca
     .claude/skills/kotlin-tooling-cocoapods-spm-migration/references/cocoapods-extras-patterns.md: sha256:38e9886bc1a3706b4b9fdfd51f38940ce47708e8d524276df160ca8af530f629
     .claude/skills/kotlin-tooling-cocoapods-spm-migration/references/common-pods-mapping.md: sha256:6f3cb5a2c2a0b096720ad4cb97a744e004e9598b3b4e26b5b8420633c14e5791
     .claude/skills/kotlin-tooling-cocoapods-spm-migration/references/dsl-reference.md: sha256:67b05e2de0f117463f8d743e624a9241f6820bea0380292b5b026a58050b5145
     .claude/skills/kotlin-tooling-cocoapods-spm-migration/references/migration-report-template.md: sha256:ea0d1fa2f4db039ad04f919a964f634ccd1b890336852574399eeaa74e84e7f5
     .claude/skills/kotlin-tooling-cocoapods-spm-migration/references/troubleshooting.md: sha256:aee1e42d1f4dd6e8fafba6de59896e1d6b667ada352de6d0e8c0bdc2971108da
-    .claude/skills/kotlin-tooling-gradle-to-kotlin-toolchain-plugin/SKILL.md: sha256:fed52bd5f8f62a7d72a65f51f5eaeabaceb589e7a22796ae20a7bc47e4bc0c40
+    .claude/skills/kotlin-tooling-gradle-to-kotlin-toolchain-plugin/LICENSE: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
+    .claude/skills/kotlin-tooling-gradle-to-kotlin-toolchain-plugin/SKILL.md: sha256:1b1a3ceb19fd64fcd4e7d25f45d9b2be3305e703037329024ece427a44a02228
     .claude/skills/kotlin-tooling-gradle-to-kotlin-toolchain-plugin/references/examples.md: sha256:e5e38dc31ea60cd2da058906d7f4ba32729c1db4dfb4f62f11e9286c9e1ed9b9
-    .claude/skills/kotlin-tooling-gradle-to-kotlin-toolchain-project/SKILL.md: sha256:e385a8611479fba258f330da0a188dc95313759d3a41b4f128f110856a21516c
+    .claude/skills/kotlin-tooling-gradle-to-kotlin-toolchain-project/LICENSE: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
+    .claude/skills/kotlin-tooling-gradle-to-kotlin-toolchain-project/SKILL.md: sha256:568800b306d94aa038e6c5dba94629aa1a5cd0a45365a66648c1c1ac183a8ac7
     .claude/skills/kotlin-tooling-gradle-to-kotlin-toolchain-project/references/examples.md: sha256:1509ed330079ce1276e1c9ef3dba006eaaecedca7afafa71e066201423363c5e
+    .claude/skills/kotlin-tooling-immutable-collections-0-5-x-migration/LICENSE: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
     .claude/skills/kotlin-tooling-immutable-collections-0-5-x-migration/SKILL.md: sha256:7b161da34a28fc5a6855b6e1b6c1749fbc754eaa29b911ec0cc8bb532b0c9d26
+    .claude/skills/kotlin-tooling-java-to-kotlin/LICENSE: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
     .claude/skills/kotlin-tooling-java-to-kotlin/SKILL.md: sha256:5b372715adac4df37e3261040ead2d0c937a5e06a55178fa5ff0fcc95adc1944
     .claude/skills/kotlin-tooling-java-to-kotlin/assets/checklist.md: sha256:b2cafa681d87c3d6b9ce730954943ccc306e0c3c5d96f3f7eb0d6726d108bb40
     .claude/skills/kotlin-tooling-java-to-kotlin/references/CONVERSION-METHODOLOGY.md: sha256:b83aaed4331d632065008872bb5db9898f4bb3c14a76b73e166b2509ab48f4ea
@@ -1209,12 +1389,15 @@ dependencies:
     .claude/skills/kotlin-tooling-java-to-kotlin/references/frameworks/RETROFIT.md: sha256:b79fd49230bb9cf2b9a2b05ddb772de8ba4b5d80ddc00dc7b3a33550e2988f22
     .claude/skills/kotlin-tooling-java-to-kotlin/references/frameworks/RXJAVA.md: sha256:87cad42db77a79c9c2a8bc24d051f0526300fb0682de239e30bbd88748608b82
     .claude/skills/kotlin-tooling-java-to-kotlin/references/frameworks/SPRING.md: sha256:b07412f7dbcd9cb7d543370e69e6e9d0faf4f4bd74608a0586fa0be93c881ae8
+    .claude/skills/kotlin-tooling-kotlin-toolchain-plugin-authoring/LICENSE: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
     .claude/skills/kotlin-tooling-kotlin-toolchain-plugin-authoring/SKILL.md: sha256:ff5cf4de344a0643ecca5679f4462431faf8d98436fbe16a885807cb46e773ef
     .claude/skills/kotlin-tooling-kotlin-toolchain-plugin-authoring/references/examples.md: sha256:fbadc3b768150d8dbcc3cf7484d07853b516ae2d71cfff3e21574175de40635f
-    .claude/skills/kotlin-tooling-kotlin-toolchain/SKILL.md: sha256:664b3e263c0eff58b400f21a770c87bbac39e248a85e62342c9406f4626de5bc
+    .claude/skills/kotlin-tooling-kotlin-toolchain/LICENSE: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
+    .claude/skills/kotlin-tooling-kotlin-toolchain/SKILL.md: sha256:f17861dc34a3f105546ce76fc7104228af4d960da892ab50cb0192022d814a57
     .claude/skills/kotlin-tooling-kotlin-toolchain/evals/EVALUATION.md: sha256:28b476aa482974bddf537da334544cfe59d1de3779bbd2b8d140d057f9ac7107
     .claude/skills/kotlin-tooling-kotlin-toolchain/evals/evals.json: sha256:5028e04c72a6f477ad5da26a052203f7fd8a94ecfc94bcc1d6de30c55597b894
-    .claude/skills/kotlin-tooling-kotlin-toolchain/references/examples.md: sha256:0da9fa2ff2dd1c29e3b1e5ca3d6fea44c411a01e809cb5ba5c0a6b9ef0a9a7e6
+    .claude/skills/kotlin-tooling-kotlin-toolchain/references/examples.md: sha256:bb3128a05d85e4f0fd4ba4cfdc43e5110f15bf8e2b612af5ebf0b385b40306fe
+    .claude/skills/kotlin-tooling-native-build-performance/LICENSE: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
     .claude/skills/kotlin-tooling-native-build-performance/SKILL.md: sha256:948fcecafa9fd0dcd447682e1fef7046b542be710ee27c2f25eade31c182455e
     .claude/skills/kotlin-tooling-native-build-performance/evals/EVALUATION.md: sha256:f7f4a9c7412e6e40e9b9fc66f4654fbc35c790c8a89a4ec77e1f3eeaf0219e7c
     .claude/skills/kotlin-tooling-native-build-performance/references/artifacts-and-targets.md: sha256:5dceccd55aa6b517b1f2e48b76b585958244ee66818ecbb4cfa056c0f8cc66ff
@@ -1222,7 +1405,72 @@ dependencies:
     .claude/skills/kotlin-tooling-native-build-performance/references/experimental.md: sha256:e0e83e36ebdd41f393082680ed06ff396077540544c5723cace80a2058a5eb1f
     .claude/skills/kotlin-tooling-native-build-performance/references/exports-and-generated-code.md: sha256:76d94b9a08e933f09eaae66e8a613f79726dbabc65f765e2130fabf93c0f87d3
     .claude/skills/kotlin-tooling-native-build-performance/scripts/audit-native-build.sh: sha256:94af58014fb24aaf1e7757ce804ea19e4023cc778da77ac0d725bd19aa0ba9e7
-  content_hash: sha256:7e3006733279967947c086cdc83f7fae97c3f4f3eefbf7eb25d69a0eb4ed06ab
+  content_hash: sha256:156dd3626fb36a69d64542b307766ffb37c72265c673d3e572bd5dd1d7dd3c0e
+  declared_license: Apache-2.0
+  carried_licenses:
+  - path: .apm/skills/kotlin-backend-jpa-entity-mapping/LICENSE
+    source: LICENSE
+    hash: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
+  - path: .apm/skills/kotlin-tooling-agp9-migration/LICENSE
+    source: LICENSE
+    hash: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
+  - path: .apm/skills/kotlin-tooling-cocoapods-spm-migration/LICENSE
+    source: LICENSE
+    hash: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
+  - path: .apm/skills/kotlin-tooling-gradle-to-kotlin-toolchain-plugin/LICENSE
+    source: LICENSE
+    hash: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
+  - path: .apm/skills/kotlin-tooling-gradle-to-kotlin-toolchain-project/LICENSE
+    source: LICENSE
+    hash: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
+  - path: .apm/skills/kotlin-tooling-immutable-collections-0-5-x-migration/LICENSE
+    source: LICENSE
+    hash: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
+  - path: .apm/skills/kotlin-tooling-java-to-kotlin/LICENSE
+    source: LICENSE
+    hash: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
+  - path: .apm/skills/kotlin-tooling-kotlin-toolchain-plugin-authoring/LICENSE
+    source: LICENSE
+    hash: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
+  - path: .apm/skills/kotlin-tooling-kotlin-toolchain/LICENSE
+    source: LICENSE
+    hash: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
+  - path: .apm/skills/kotlin-tooling-native-build-performance/LICENSE
+    source: LICENSE
+    hash: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
+  - path: LICENSE
+    source: LICENSE
+    hash: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
+  - path: skills/kotlin-backend-jpa-entity-mapping/LICENSE
+    source: LICENSE
+    hash: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
+  - path: skills/kotlin-tooling-agp9-migration/LICENSE
+    source: LICENSE
+    hash: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
+  - path: skills/kotlin-tooling-cocoapods-spm-migration/LICENSE
+    source: LICENSE
+    hash: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
+  - path: skills/kotlin-tooling-gradle-to-kotlin-toolchain-plugin/LICENSE
+    source: LICENSE
+    hash: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
+  - path: skills/kotlin-tooling-gradle-to-kotlin-toolchain-project/LICENSE
+    source: LICENSE
+    hash: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
+  - path: skills/kotlin-tooling-immutable-collections-0-5-x-migration/LICENSE
+    source: LICENSE
+    hash: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
+  - path: skills/kotlin-tooling-java-to-kotlin/LICENSE
+    source: LICENSE
+    hash: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
+  - path: skills/kotlin-tooling-kotlin-toolchain-plugin-authoring/LICENSE
+    source: LICENSE
+    hash: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
+  - path: skills/kotlin-tooling-kotlin-toolchain/LICENSE
+    source: LICENSE
+    hash: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
+  - path: skills/kotlin-tooling-native-build-performance/LICENSE
+    source: LICENSE
+    hash: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
 - repo_url: mattpocock/skills
   name: domain-modeling
   host: github.com
@@ -1236,23 +1484,31 @@ dependencies:
   - .agents/skills/domain-modeling
   - .agents/skills/domain-modeling/ADR-FORMAT.md
   - .agents/skills/domain-modeling/GLOSSARY-FORMAT.md
+  - .agents/skills/domain-modeling/LICENSE
   - .agents/skills/domain-modeling/SKILL.md
   - .agents/skills/domain-modeling/agents/openai.yaml
   - .claude/skills/domain-modeling
   - .claude/skills/domain-modeling/ADR-FORMAT.md
   - .claude/skills/domain-modeling/GLOSSARY-FORMAT.md
+  - .claude/skills/domain-modeling/LICENSE
   - .claude/skills/domain-modeling/SKILL.md
   - .claude/skills/domain-modeling/agents/openai.yaml
   deployed_file_hashes:
     .agents/skills/domain-modeling/ADR-FORMAT.md: sha256:944c92aa790e8fbdc9199640b170979abb8a34ba8d0fe18c2a01a63bce140ca0
     .agents/skills/domain-modeling/GLOSSARY-FORMAT.md: sha256:21dcc40cdec8e151a829b98ab1517c1867bc444e3665134a98c6983411996801
+    .agents/skills/domain-modeling/LICENSE: sha256:0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5
     .agents/skills/domain-modeling/SKILL.md: sha256:7b925d7b1e341a2eeae33ad68a8a8c0ab889a38ddd22a7598e4c240e5a7556a3
     .agents/skills/domain-modeling/agents/openai.yaml: sha256:f6bf2aa996c6e6f53fdd0708e18a0d16a56aed8322cca59fedbe3c0d2c75f06b
     .claude/skills/domain-modeling/ADR-FORMAT.md: sha256:944c92aa790e8fbdc9199640b170979abb8a34ba8d0fe18c2a01a63bce140ca0
     .claude/skills/domain-modeling/GLOSSARY-FORMAT.md: sha256:21dcc40cdec8e151a829b98ab1517c1867bc444e3665134a98c6983411996801
+    .claude/skills/domain-modeling/LICENSE: sha256:0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5
     .claude/skills/domain-modeling/SKILL.md: sha256:7b925d7b1e341a2eeae33ad68a8a8c0ab889a38ddd22a7598e4c240e5a7556a3
     .claude/skills/domain-modeling/agents/openai.yaml: sha256:f6bf2aa996c6e6f53fdd0708e18a0d16a56aed8322cca59fedbe3c0d2c75f06b
-  content_hash: sha256:467f5e92529c2a4637440dce99841814b0864a8528714188ec91b78d900df540
+  content_hash: sha256:ab7acbca5aaf6e976caef1ccd1c14bac9459702f5b8e9d6d96e5a8ca8e3c7ee9
+  carried_licenses:
+  - path: LICENSE
+    source: LICENSE
+    hash: sha256:0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5
 - repo_url: mattpocock/skills
   name: grilling
   host: github.com
@@ -1264,17 +1520,25 @@ dependencies:
   package_type: claude_skill
   deployed_files:
   - .agents/skills/grilling
+  - .agents/skills/grilling/LICENSE
   - .agents/skills/grilling/SKILL.md
   - .agents/skills/grilling/agents/openai.yaml
   - .claude/skills/grilling
+  - .claude/skills/grilling/LICENSE
   - .claude/skills/grilling/SKILL.md
   - .claude/skills/grilling/agents/openai.yaml
   deployed_file_hashes:
+    .agents/skills/grilling/LICENSE: sha256:0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5
     .agents/skills/grilling/SKILL.md: sha256:a146842ed93ca43d833550fa9adf02e58cb63c83fea9d4b4522995b82242d4e2
     .agents/skills/grilling/agents/openai.yaml: sha256:1411d7df7d99b7e621a1ff8283c8133cc2464be63d064e52d8ce169c6800ee9b
+    .claude/skills/grilling/LICENSE: sha256:0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5
     .claude/skills/grilling/SKILL.md: sha256:a146842ed93ca43d833550fa9adf02e58cb63c83fea9d4b4522995b82242d4e2
     .claude/skills/grilling/agents/openai.yaml: sha256:1411d7df7d99b7e621a1ff8283c8133cc2464be63d064e52d8ce169c6800ee9b
-  content_hash: sha256:823f08ad33368a9626991e6782f7ae14b958e39ef8503f6bdb3b98a58d237a58
+  content_hash: sha256:e0e4918ef2675bf3bc0e48fa83c40446cd961c107afdf435cbc2daa774cb0efe
+  carried_licenses:
+  - path: LICENSE
+    source: LICENSE
+    hash: sha256:0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5
 deployments:
 - kind: project-relative
   target: agent-skills
@@ -1285,6 +1549,15 @@ deployments:
   - android/skills/jetpack-compose/adaptive
   active_owner: android/skills/jetpack-compose/adaptive
   content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/adaptive/LICENSE.txt
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/jetpack-compose/adaptive
+  active_owner: android/skills/jetpack-compose/adaptive
+  content_hash: sha256:58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/adaptive/SKILL.md
@@ -1449,6 +1722,15 @@ deployments:
   content_hash: null
 - kind: project-relative
   target: agent-skills
+  value: .agents/skills/android-cli/LICENSE.txt
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/devtools/android-cli
+  active_owner: android/skills/devtools/android-cli
+  content_hash: sha256:58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd
+- kind: project-relative
+  target: agent-skills
   value: .agents/skills/android-cli/SKILL.md
   runtime: null
   scope: project
@@ -1465,6 +1747,15 @@ deployments:
   - android/skills/device-ai/appfunctions
   active_owner: android/skills/device-ai/appfunctions
   content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/appfunctions/LICENSE.txt
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/device-ai/appfunctions
+  active_owner: android/skills/device-ai/appfunctions
+  content_hash: sha256:58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/appfunctions/SKILL.md
@@ -1539,6 +1830,15 @@ deployments:
   content_hash: null
 - kind: project-relative
   target: agent-skills
+  value: .agents/skills/apple-appstore-reviewer/LICENSE
+  runtime: null
+  scope: project
+  owners:
+  - github/awesome-copilot/skills/apple-appstore-reviewer
+  active_owner: github/awesome-copilot/skills/apple-appstore-reviewer
+  content_hash: sha256:e32449d23085399adc1222f7a17408b730550258e51627c153cb108ca9955823
+- kind: project-relative
+  target: agent-skills
   value: .agents/skills/apple-appstore-reviewer/SKILL.md
   runtime: null
   scope: project
@@ -1555,6 +1855,15 @@ deployments:
   - chrisbanes/skills/skills/compose-animations
   active_owner: chrisbanes/skills/skills/compose-animations
   content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/compose-animations/LICENSE
+  runtime: null
+  scope: project
+  owners:
+  - chrisbanes/skills/skills/compose-animations
+  active_owner: chrisbanes/skills/skills/compose-animations
+  content_hash: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/compose-animations/SKILL.md
@@ -1584,6 +1893,15 @@ deployments:
   content_hash: null
 - kind: project-relative
   target: agent-skills
+  value: .agents/skills/conventional-branch/LICENSE
+  runtime: null
+  scope: project
+  owners:
+  - github/awesome-copilot/skills/conventional-branch
+  active_owner: github/awesome-copilot/skills/conventional-branch
+  content_hash: sha256:e32449d23085399adc1222f7a17408b730550258e51627c153cb108ca9955823
+- kind: project-relative
+  target: agent-skills
   value: .agents/skills/conventional-branch/SKILL.md
   runtime: null
   scope: project
@@ -1600,6 +1918,15 @@ deployments:
   - github/awesome-copilot/skills/conventional-commit
   active_owner: github/awesome-copilot/skills/conventional-commit
   content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/conventional-commit/LICENSE
+  runtime: null
+  scope: project
+  owners:
+  - github/awesome-copilot/skills/conventional-commit
+  active_owner: github/awesome-copilot/skills/conventional-commit
+  content_hash: sha256:e32449d23085399adc1222f7a17408b730550258e51627c153cb108ca9955823
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/conventional-commit/SKILL.md
@@ -1638,6 +1965,15 @@ deployments:
   content_hash: sha256:21dcc40cdec8e151a829b98ab1517c1867bc444e3665134a98c6983411996801
 - kind: project-relative
   target: agent-skills
+  value: .agents/skills/domain-modeling/LICENSE
+  runtime: null
+  scope: project
+  owners:
+  - mattpocock/skills/skills/engineering/domain-modeling
+  active_owner: mattpocock/skills/skills/engineering/domain-modeling
+  content_hash: sha256:0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5
+- kind: project-relative
+  target: agent-skills
   value: .agents/skills/domain-modeling/SKILL.md
   runtime: null
   scope: project
@@ -1663,6 +1999,15 @@ deployments:
   - android/skills/system/edge-to-edge
   active_owner: android/skills/system/edge-to-edge
   content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/edge-to-edge/LICENSE.txt
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/system/edge-to-edge
+  active_owner: android/skills/system/edge-to-edge
+  content_hash: sha256:58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/edge-to-edge/SKILL.md
@@ -2250,6 +2595,15 @@ deployments:
   content_hash: null
 - kind: project-relative
   target: agent-skills
+  value: .agents/skills/grilling/LICENSE
+  runtime: null
+  scope: project
+  owners:
+  - mattpocock/skills/skills/productivity/grilling
+  active_owner: mattpocock/skills/skills/productivity/grilling
+  content_hash: sha256:0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5
+- kind: project-relative
+  target: agent-skills
   value: .agents/skills/grilling/SKILL.md
   runtime: null
   scope: project
@@ -2275,6 +2629,15 @@ deployments:
   - android/skills/jetpack-compose/jetpack-compose-performance
   active_owner: android/skills/jetpack-compose/jetpack-compose-performance
   content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/jetpack-compose-performance/LICENSE.txt
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/jetpack-compose/jetpack-compose-performance
+  active_owner: android/skills/jetpack-compose/jetpack-compose-performance
+  content_hash: sha256:58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/jetpack-compose-performance/SKILL.md
@@ -2371,17 +2734,26 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-backend-jpa-entity-mapping/LICENSE
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  content_hash: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/kotlin-backend-jpa-entity-mapping/SKILL.md
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:5d9c864a55c5ad29f54a807820672a9b5e0360ee33006c63a396a31bef0d8f4e
 - kind: project-relative
   target: agent-skills
@@ -2392,6 +2764,15 @@ deployments:
   - chrisbanes/skills/skills/kotlin-concurrency-and-flow
   active_owner: chrisbanes/skills/skills/kotlin-concurrency-and-flow
   content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-concurrency-and-flow/LICENSE
+  runtime: null
+  scope: project
+  owners:
+  - chrisbanes/skills/skills/kotlin-concurrency-and-flow
+  active_owner: chrisbanes/skills/skills/kotlin-concurrency-and-flow
+  content_hash: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/kotlin-concurrency-and-flow/SKILL.md
@@ -2430,6 +2811,15 @@ deployments:
   content_hash: null
 - kind: project-relative
   target: agent-skills
+  value: .agents/skills/kotlin-control-flow/LICENSE
+  runtime: null
+  scope: project
+  owners:
+  - chrisbanes/skills/skills/kotlin-control-flow
+  active_owner: chrisbanes/skills/skills/kotlin-control-flow
+  content_hash: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
+- kind: project-relative
+  target: agent-skills
   value: .agents/skills/kotlin-control-flow/SKILL.md
   runtime: null
   scope: project
@@ -2443,17 +2833,26 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-agp9-migration/LICENSE
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  content_hash: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/kotlin-tooling-agp9-migration/SKILL.md
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:eec4224102bdea5779f7a181a4f3dc946efee5b7398b207c1467f1f84aeaa0a6
 - kind: project-relative
   target: agent-skills
@@ -2461,8 +2860,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:bccb1adb33a00368e09b94d4cce19b3f3b60da0dab6441664249c078d3dce31c
 - kind: project-relative
   target: agent-skills
@@ -2470,8 +2869,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:aeeb39d3c4ce1d901e9e4d2b5be3b815b9e43169bb488e0c6661cba0ef5220d4
 - kind: project-relative
   target: agent-skills
@@ -2479,8 +2878,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:5b15e61f34e3821f40fb26d1a5a9cdce4c9cea1915b6be147df2d43ed883027f
 - kind: project-relative
   target: agent-skills
@@ -2488,8 +2887,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:77b614b62dd495d4954414cfbafdbd1ee4c888ead08ee8c4df20db64ad23f2bb
 - kind: project-relative
   target: agent-skills
@@ -2497,8 +2896,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:3cb0f06dd7c213603b39b086fe33685fa00d56d14bfbd59c53569a5faa1e21ef
 - kind: project-relative
   target: agent-skills
@@ -2506,8 +2905,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:381928ff702602d6384b3fc08402f74dc48f1b20a2085419202ce4191f8caaaf
 - kind: project-relative
   target: agent-skills
@@ -2515,8 +2914,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:ec47b996d9459c435fb2ca0588bb35189bc81370c533fee8f38cec93755e92a8
 - kind: project-relative
   target: agent-skills
@@ -2524,8 +2923,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:81537c09a682c476beec70fe7b0075799b7393857f2227164709b66a2446c256
 - kind: project-relative
   target: agent-skills
@@ -2533,8 +2932,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:6f3929ae06341793e373f24bf868f4aa026efc3a0b819e03473e28c84da57f5d
 - kind: project-relative
   target: agent-skills
@@ -2542,17 +2941,26 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-cocoapods-spm-migration/LICENSE
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  content_hash: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/kotlin-tooling-cocoapods-spm-migration/SKILL.md
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:06d75416ed876c18d950493a5aefe6ef5dd5cb955ec0c1d6c1c45cac8ab839ca
 - kind: project-relative
   target: agent-skills
@@ -2560,8 +2968,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:38e9886bc1a3706b4b9fdfd51f38940ce47708e8d524276df160ca8af530f629
 - kind: project-relative
   target: agent-skills
@@ -2569,8 +2977,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:6f3cb5a2c2a0b096720ad4cb97a744e004e9598b3b4e26b5b8420633c14e5791
 - kind: project-relative
   target: agent-skills
@@ -2578,8 +2986,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:67b05e2de0f117463f8d743e624a9241f6820bea0380292b5b026a58050b5145
 - kind: project-relative
   target: agent-skills
@@ -2587,8 +2995,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:ea0d1fa2f4db039ad04f919a964f634ccd1b890336852574399eeaa74e84e7f5
 - kind: project-relative
   target: agent-skills
@@ -2596,8 +3004,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:aee1e42d1f4dd6e8fafba6de59896e1d6b667ada352de6d0e8c0bdc2971108da
 - kind: project-relative
   target: agent-skills
@@ -2605,26 +3013,35 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-gradle-to-kotlin-toolchain-plugin/LICENSE
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  content_hash: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/kotlin-tooling-gradle-to-kotlin-toolchain-plugin/SKILL.md
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
-  content_hash: sha256:fed52bd5f8f62a7d72a65f51f5eaeabaceb589e7a22796ae20a7bc47e4bc0c40
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  content_hash: sha256:1b1a3ceb19fd64fcd4e7d25f45d9b2be3305e703037329024ece427a44a02228
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/kotlin-tooling-gradle-to-kotlin-toolchain-plugin/references/examples.md
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:e5e38dc31ea60cd2da058906d7f4ba32729c1db4dfb4f62f11e9286c9e1ed9b9
 - kind: project-relative
   target: agent-skills
@@ -2632,26 +3049,35 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-gradle-to-kotlin-toolchain-project/LICENSE
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  content_hash: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/kotlin-tooling-gradle-to-kotlin-toolchain-project/SKILL.md
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
-  content_hash: sha256:e385a8611479fba258f330da0a188dc95313759d3a41b4f128f110856a21516c
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  content_hash: sha256:568800b306d94aa038e6c5dba94629aa1a5cd0a45365a66648c1c1ac183a8ac7
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/kotlin-tooling-gradle-to-kotlin-toolchain-project/references/examples.md
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:1509ed330079ce1276e1c9ef3dba006eaaecedca7afafa71e066201423363c5e
 - kind: project-relative
   target: agent-skills
@@ -2659,17 +3085,26 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-immutable-collections-0-5-x-migration/LICENSE
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  content_hash: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/kotlin-tooling-immutable-collections-0-5-x-migration/SKILL.md
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:7b161da34a28fc5a6855b6e1b6c1749fbc754eaa29b911ec0cc8bb532b0c9d26
 - kind: project-relative
   target: agent-skills
@@ -2677,17 +3112,26 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-java-to-kotlin/LICENSE
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  content_hash: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/kotlin-tooling-java-to-kotlin/SKILL.md
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:5b372715adac4df37e3261040ead2d0c937a5e06a55178fa5ff0fcc95adc1944
 - kind: project-relative
   target: agent-skills
@@ -2695,8 +3139,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:b2cafa681d87c3d6b9ce730954943ccc306e0c3c5d96f3f7eb0d6726d108bb40
 - kind: project-relative
   target: agent-skills
@@ -2704,8 +3148,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:b83aaed4331d632065008872bb5db9898f4bb3c14a76b73e166b2509ab48f4ea
 - kind: project-relative
   target: agent-skills
@@ -2713,8 +3157,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:581cce6cb0b8c353c2f573435c9b2ba36a0f3768aee755680c652dd4067e5e34
 - kind: project-relative
   target: agent-skills
@@ -2722,8 +3166,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:ed52d352e63f7675677fa2ffb5f37ef97554a34b5176c34861031839031ac4b9
 - kind: project-relative
   target: agent-skills
@@ -2731,8 +3175,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:7ca1991006f3e009a18f4bf5276a02873c87c75201b34ba69eb0cc5c2cdcf0f5
 - kind: project-relative
   target: agent-skills
@@ -2740,8 +3184,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:02cf14d4d56cba141682bd8bfd5154d2018822a3aca6f477d8fb48bb91e08277
 - kind: project-relative
   target: agent-skills
@@ -2749,8 +3193,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:c407201a3629f1af4117e3b6b99a0cbebb7f7b62ef14fb9c3bb7e55250ea86ef
 - kind: project-relative
   target: agent-skills
@@ -2758,8 +3202,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:58141f5f63afe96944366bcd2e4d462f6ba4d55e2cfe5e8fd29e77ff51604c78
 - kind: project-relative
   target: agent-skills
@@ -2767,8 +3211,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:b7f2e11b740261ebec3a9afcd2fa4a7a0c82f082433986c4ba1ba62c64b0bf25
 - kind: project-relative
   target: agent-skills
@@ -2776,8 +3220,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:4d5f9ba64acc694cdade9d374e43548f083bacb40d2995ce424c4ff8c7836edd
 - kind: project-relative
   target: agent-skills
@@ -2785,8 +3229,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:221bdf1fae8def5ca083e84cf829b252baceea065eca10a42fa7279d6f8be23e
 - kind: project-relative
   target: agent-skills
@@ -2794,8 +3238,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:d0c708e5cf05598fa04760a1696bf2ad396f67933324ebaae51f475f4ec88d5a
 - kind: project-relative
   target: agent-skills
@@ -2803,8 +3247,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:b79fd49230bb9cf2b9a2b05ddb772de8ba4b5d80ddc00dc7b3a33550e2988f22
 - kind: project-relative
   target: agent-skills
@@ -2812,8 +3256,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:87cad42db77a79c9c2a8bc24d051f0526300fb0682de239e30bbd88748608b82
 - kind: project-relative
   target: agent-skills
@@ -2821,8 +3265,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:b07412f7dbcd9cb7d543370e69e6e9d0faf4f4bd74608a0586fa0be93c881ae8
 - kind: project-relative
   target: agent-skills
@@ -2830,8 +3274,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: null
 - kind: project-relative
   target: agent-skills
@@ -2839,17 +3283,26 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-kotlin-toolchain-plugin-authoring/LICENSE
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  content_hash: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/kotlin-tooling-kotlin-toolchain-plugin-authoring/SKILL.md
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:ff5cf4de344a0643ecca5679f4462431faf8d98436fbe16a885807cb46e773ef
 - kind: project-relative
   target: agent-skills
@@ -2857,26 +3310,35 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:fbadc3b768150d8dbcc3cf7484d07853b516ae2d71cfff3e21574175de40635f
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-kotlin-toolchain/LICENSE
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  content_hash: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/kotlin-tooling-kotlin-toolchain/SKILL.md
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
-  content_hash: sha256:664b3e263c0eff58b400f21a770c87bbac39e248a85e62342c9406f4626de5bc
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  content_hash: sha256:f17861dc34a3f105546ce76fc7104228af4d960da892ab50cb0192022d814a57
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/kotlin-tooling-kotlin-toolchain/evals/EVALUATION.md
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:28b476aa482974bddf537da334544cfe59d1de3779bbd2b8d140d057f9ac7107
 - kind: project-relative
   target: agent-skills
@@ -2884,8 +3346,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:5028e04c72a6f477ad5da26a052203f7fd8a94ecfc94bcc1d6de30c55597b894
 - kind: project-relative
   target: agent-skills
@@ -2893,26 +3355,35 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
-  content_hash: sha256:0da9fa2ff2dd1c29e3b1e5ca3d6fea44c411a01e809cb5ba5c0a6b9ef0a9a7e6
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  content_hash: sha256:bb3128a05d85e4f0fd4ba4cfdc43e5110f15bf8e2b612af5ebf0b385b40306fe
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/kotlin-tooling-native-build-performance
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/kotlin-tooling-native-build-performance/LICENSE
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  content_hash: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/kotlin-tooling-native-build-performance/SKILL.md
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:948fcecafa9fd0dcd447682e1fef7046b542be710ee27c2f25eade31c182455e
 - kind: project-relative
   target: agent-skills
@@ -2920,8 +3391,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:f7f4a9c7412e6e40e9b9fc66f4654fbc35c790c8a89a4ec77e1f3eeaf0219e7c
 - kind: project-relative
   target: agent-skills
@@ -2929,8 +3400,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:5dceccd55aa6b517b1f2e48b76b585958244ee66818ecbb4cfa056c0f8cc66ff
 - kind: project-relative
   target: agent-skills
@@ -2938,8 +3409,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:2f7f316e62d3b79adc9b80348b0f25b1ded3d9871d3a528dd1db3af3ecd792cf
 - kind: project-relative
   target: agent-skills
@@ -2947,8 +3418,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:e0e83e36ebdd41f393082680ed06ff396077540544c5723cace80a2058a5eb1f
 - kind: project-relative
   target: agent-skills
@@ -2956,8 +3427,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:76d94b9a08e933f09eaae66e8a613f79726dbabc65f765e2130fabf93c0f87d3
 - kind: project-relative
   target: agent-skills
@@ -2965,8 +3436,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:94af58014fb24aaf1e7757ce804ea19e4023cc778da77ac0d725bd19aa0ba9e7
 - kind: project-relative
   target: agent-skills
@@ -2977,6 +3448,15 @@ deployments:
   - android/skills/navigation/navigation-3
   active_owner: android/skills/navigation/navigation-3
   content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/navigation-3/LICENSE.txt
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/navigation/navigation-3
+  active_owner: android/skills/navigation/navigation-3
+  content_hash: sha256:58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/navigation-3/SKILL.md
@@ -3240,6 +3720,15 @@ deployments:
   content_hash: null
 - kind: project-relative
   target: agent-skills
+  value: .agents/skills/r8-analyzer/LICENSE.txt
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/performance/r8-analyzer
+  active_owner: android/skills/performance/r8-analyzer
+  content_hash: sha256:58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd
+- kind: project-relative
+  target: agent-skills
   value: .agents/skills/r8-analyzer/SKILL.md
   runtime: null
   scope: project
@@ -3330,6 +3819,15 @@ deployments:
   content_hash: null
 - kind: project-relative
   target: agent-skills
+  value: .agents/skills/restore-credentials/LICENSE.txt
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/identity/restore-credentials
+  active_owner: android/skills/identity/restore-credentials
+  content_hash: sha256:58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd
+- kind: project-relative
+  target: agent-skills
   value: .agents/skills/restore-credentials/SKILL.md
   runtime: null
   scope: project
@@ -3391,6 +3889,15 @@ deployments:
   - github/awesome-copilot/skills/security-review
   active_owner: github/awesome-copilot/skills/security-review
   content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/security-review/LICENSE
+  runtime: null
+  scope: project
+  owners:
+  - github/awesome-copilot/skills/security-review
+  active_owner: github/awesome-copilot/skills/security-review
+  content_hash: sha256:e32449d23085399adc1222f7a17408b730550258e51627c153cb108ca9955823
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/security-review/SKILL.md
@@ -3627,6 +4134,15 @@ deployments:
   content_hash: null
 - kind: project-relative
   target: agent-skills
+  value: .agents/skills/swift-concurrency/LICENSE
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swift-concurrency-agent-skill/skills/swift-concurrency
+  active_owner: avdlee/swift-concurrency-agent-skill/skills/swift-concurrency
+  content_hash: sha256:8f5fd8e5cddb015b5627e45e68b256356586144288a4a0a3db87e38bcb0c9155
+- kind: project-relative
+  target: agent-skills
   value: .agents/skills/swift-concurrency/SKILL.md
   runtime: null
   scope: project
@@ -3814,6 +4330,15 @@ deployments:
   - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
   active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
   content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/swiftui-expert-skill/LICENSE
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  content_hash: sha256:8f5fd8e5cddb015b5627e45e68b256356586144288a4a0a3db87e38bcb0c9155
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/swiftui-expert-skill/SKILL.md
@@ -4329,6 +4854,15 @@ deployments:
   content_hash: null
 - kind: project-relative
   target: claude
+  value: .claude/skills/adaptive/LICENSE.txt
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/jetpack-compose/adaptive
+  active_owner: android/skills/jetpack-compose/adaptive
+  content_hash: sha256:58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd
+- kind: project-relative
+  target: claude
   value: .claude/skills/adaptive/SKILL.md
   runtime: null
   scope: project
@@ -4491,6 +5025,15 @@ deployments:
   content_hash: null
 - kind: project-relative
   target: claude
+  value: .claude/skills/android-cli/LICENSE.txt
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/devtools/android-cli
+  active_owner: android/skills/devtools/android-cli
+  content_hash: sha256:58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd
+- kind: project-relative
+  target: claude
   value: .claude/skills/android-cli/SKILL.md
   runtime: null
   scope: project
@@ -4507,6 +5050,15 @@ deployments:
   - android/skills/device-ai/appfunctions
   active_owner: android/skills/device-ai/appfunctions
   content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/appfunctions/LICENSE.txt
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/device-ai/appfunctions
+  active_owner: android/skills/device-ai/appfunctions
+  content_hash: sha256:58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd
 - kind: project-relative
   target: claude
   value: .claude/skills/appfunctions/SKILL.md
@@ -4581,6 +5133,15 @@ deployments:
   content_hash: null
 - kind: project-relative
   target: claude
+  value: .claude/skills/apple-appstore-reviewer/LICENSE
+  runtime: null
+  scope: project
+  owners:
+  - github/awesome-copilot/skills/apple-appstore-reviewer
+  active_owner: github/awesome-copilot/skills/apple-appstore-reviewer
+  content_hash: sha256:e32449d23085399adc1222f7a17408b730550258e51627c153cb108ca9955823
+- kind: project-relative
+  target: claude
   value: .claude/skills/apple-appstore-reviewer/SKILL.md
   runtime: null
   scope: project
@@ -4597,6 +5158,15 @@ deployments:
   - chrisbanes/skills/skills/compose-animations
   active_owner: chrisbanes/skills/skills/compose-animations
   content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/compose-animations/LICENSE
+  runtime: null
+  scope: project
+  owners:
+  - chrisbanes/skills/skills/compose-animations
+  active_owner: chrisbanes/skills/skills/compose-animations
+  content_hash: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
 - kind: project-relative
   target: claude
   value: .claude/skills/compose-animations/SKILL.md
@@ -4626,6 +5196,15 @@ deployments:
   content_hash: null
 - kind: project-relative
   target: claude
+  value: .claude/skills/conventional-branch/LICENSE
+  runtime: null
+  scope: project
+  owners:
+  - github/awesome-copilot/skills/conventional-branch
+  active_owner: github/awesome-copilot/skills/conventional-branch
+  content_hash: sha256:e32449d23085399adc1222f7a17408b730550258e51627c153cb108ca9955823
+- kind: project-relative
+  target: claude
   value: .claude/skills/conventional-branch/SKILL.md
   runtime: null
   scope: project
@@ -4642,6 +5221,15 @@ deployments:
   - github/awesome-copilot/skills/conventional-commit
   active_owner: github/awesome-copilot/skills/conventional-commit
   content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/conventional-commit/LICENSE
+  runtime: null
+  scope: project
+  owners:
+  - github/awesome-copilot/skills/conventional-commit
+  active_owner: github/awesome-copilot/skills/conventional-commit
+  content_hash: sha256:e32449d23085399adc1222f7a17408b730550258e51627c153cb108ca9955823
 - kind: project-relative
   target: claude
   value: .claude/skills/conventional-commit/SKILL.md
@@ -4680,6 +5268,15 @@ deployments:
   content_hash: sha256:21dcc40cdec8e151a829b98ab1517c1867bc444e3665134a98c6983411996801
 - kind: project-relative
   target: claude
+  value: .claude/skills/domain-modeling/LICENSE
+  runtime: null
+  scope: project
+  owners:
+  - mattpocock/skills/skills/engineering/domain-modeling
+  active_owner: mattpocock/skills/skills/engineering/domain-modeling
+  content_hash: sha256:0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5
+- kind: project-relative
+  target: claude
   value: .claude/skills/domain-modeling/SKILL.md
   runtime: null
   scope: project
@@ -4705,6 +5302,15 @@ deployments:
   - android/skills/system/edge-to-edge
   active_owner: android/skills/system/edge-to-edge
   content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/edge-to-edge/LICENSE.txt
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/system/edge-to-edge
+  active_owner: android/skills/system/edge-to-edge
+  content_hash: sha256:58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd
 - kind: project-relative
   target: claude
   value: .claude/skills/edge-to-edge/SKILL.md
@@ -5292,6 +5898,15 @@ deployments:
   content_hash: null
 - kind: project-relative
   target: claude
+  value: .claude/skills/grilling/LICENSE
+  runtime: null
+  scope: project
+  owners:
+  - mattpocock/skills/skills/productivity/grilling
+  active_owner: mattpocock/skills/skills/productivity/grilling
+  content_hash: sha256:0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5
+- kind: project-relative
+  target: claude
   value: .claude/skills/grilling/SKILL.md
   runtime: null
   scope: project
@@ -5317,6 +5932,15 @@ deployments:
   - android/skills/jetpack-compose/jetpack-compose-performance
   active_owner: android/skills/jetpack-compose/jetpack-compose-performance
   content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/jetpack-compose-performance/LICENSE.txt
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/jetpack-compose/jetpack-compose-performance
+  active_owner: android/skills/jetpack-compose/jetpack-compose-performance
+  content_hash: sha256:58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd
 - kind: project-relative
   target: claude
   value: .claude/skills/jetpack-compose-performance/SKILL.md
@@ -5413,17 +6037,26 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/kotlin-backend-jpa-entity-mapping/LICENSE
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  content_hash: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
 - kind: project-relative
   target: claude
   value: .claude/skills/kotlin-backend-jpa-entity-mapping/SKILL.md
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:5d9c864a55c5ad29f54a807820672a9b5e0360ee33006c63a396a31bef0d8f4e
 - kind: project-relative
   target: claude
@@ -5434,6 +6067,15 @@ deployments:
   - chrisbanes/skills/skills/kotlin-concurrency-and-flow
   active_owner: chrisbanes/skills/skills/kotlin-concurrency-and-flow
   content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/kotlin-concurrency-and-flow/LICENSE
+  runtime: null
+  scope: project
+  owners:
+  - chrisbanes/skills/skills/kotlin-concurrency-and-flow
+  active_owner: chrisbanes/skills/skills/kotlin-concurrency-and-flow
+  content_hash: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
 - kind: project-relative
   target: claude
   value: .claude/skills/kotlin-concurrency-and-flow/SKILL.md
@@ -5472,6 +6114,15 @@ deployments:
   content_hash: null
 - kind: project-relative
   target: claude
+  value: .claude/skills/kotlin-control-flow/LICENSE
+  runtime: null
+  scope: project
+  owners:
+  - chrisbanes/skills/skills/kotlin-control-flow
+  active_owner: chrisbanes/skills/skills/kotlin-control-flow
+  content_hash: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
+- kind: project-relative
+  target: claude
   value: .claude/skills/kotlin-control-flow/SKILL.md
   runtime: null
   scope: project
@@ -5485,17 +6136,26 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/kotlin-tooling-agp9-migration/LICENSE
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  content_hash: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
 - kind: project-relative
   target: claude
   value: .claude/skills/kotlin-tooling-agp9-migration/SKILL.md
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:eec4224102bdea5779f7a181a4f3dc946efee5b7398b207c1467f1f84aeaa0a6
 - kind: project-relative
   target: claude
@@ -5503,8 +6163,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:bccb1adb33a00368e09b94d4cce19b3f3b60da0dab6441664249c078d3dce31c
 - kind: project-relative
   target: claude
@@ -5512,8 +6172,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:aeeb39d3c4ce1d901e9e4d2b5be3b815b9e43169bb488e0c6661cba0ef5220d4
 - kind: project-relative
   target: claude
@@ -5521,8 +6181,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:5b15e61f34e3821f40fb26d1a5a9cdce4c9cea1915b6be147df2d43ed883027f
 - kind: project-relative
   target: claude
@@ -5530,8 +6190,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:77b614b62dd495d4954414cfbafdbd1ee4c888ead08ee8c4df20db64ad23f2bb
 - kind: project-relative
   target: claude
@@ -5539,8 +6199,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:3cb0f06dd7c213603b39b086fe33685fa00d56d14bfbd59c53569a5faa1e21ef
 - kind: project-relative
   target: claude
@@ -5548,8 +6208,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:381928ff702602d6384b3fc08402f74dc48f1b20a2085419202ce4191f8caaaf
 - kind: project-relative
   target: claude
@@ -5557,8 +6217,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:ec47b996d9459c435fb2ca0588bb35189bc81370c533fee8f38cec93755e92a8
 - kind: project-relative
   target: claude
@@ -5566,8 +6226,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:81537c09a682c476beec70fe7b0075799b7393857f2227164709b66a2446c256
 - kind: project-relative
   target: claude
@@ -5575,8 +6235,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:6f3929ae06341793e373f24bf868f4aa026efc3a0b819e03473e28c84da57f5d
 - kind: project-relative
   target: claude
@@ -5584,17 +6244,26 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/kotlin-tooling-cocoapods-spm-migration/LICENSE
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  content_hash: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
 - kind: project-relative
   target: claude
   value: .claude/skills/kotlin-tooling-cocoapods-spm-migration/SKILL.md
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:06d75416ed876c18d950493a5aefe6ef5dd5cb955ec0c1d6c1c45cac8ab839ca
 - kind: project-relative
   target: claude
@@ -5602,8 +6271,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:38e9886bc1a3706b4b9fdfd51f38940ce47708e8d524276df160ca8af530f629
 - kind: project-relative
   target: claude
@@ -5611,8 +6280,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:6f3cb5a2c2a0b096720ad4cb97a744e004e9598b3b4e26b5b8420633c14e5791
 - kind: project-relative
   target: claude
@@ -5620,8 +6289,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:67b05e2de0f117463f8d743e624a9241f6820bea0380292b5b026a58050b5145
 - kind: project-relative
   target: claude
@@ -5629,8 +6298,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:ea0d1fa2f4db039ad04f919a964f634ccd1b890336852574399eeaa74e84e7f5
 - kind: project-relative
   target: claude
@@ -5638,8 +6307,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:aee1e42d1f4dd6e8fafba6de59896e1d6b667ada352de6d0e8c0bdc2971108da
 - kind: project-relative
   target: claude
@@ -5647,26 +6316,35 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/kotlin-tooling-gradle-to-kotlin-toolchain-plugin/LICENSE
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  content_hash: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
 - kind: project-relative
   target: claude
   value: .claude/skills/kotlin-tooling-gradle-to-kotlin-toolchain-plugin/SKILL.md
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
-  content_hash: sha256:fed52bd5f8f62a7d72a65f51f5eaeabaceb589e7a22796ae20a7bc47e4bc0c40
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  content_hash: sha256:1b1a3ceb19fd64fcd4e7d25f45d9b2be3305e703037329024ece427a44a02228
 - kind: project-relative
   target: claude
   value: .claude/skills/kotlin-tooling-gradle-to-kotlin-toolchain-plugin/references/examples.md
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:e5e38dc31ea60cd2da058906d7f4ba32729c1db4dfb4f62f11e9286c9e1ed9b9
 - kind: project-relative
   target: claude
@@ -5674,26 +6352,35 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/kotlin-tooling-gradle-to-kotlin-toolchain-project/LICENSE
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  content_hash: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
 - kind: project-relative
   target: claude
   value: .claude/skills/kotlin-tooling-gradle-to-kotlin-toolchain-project/SKILL.md
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
-  content_hash: sha256:e385a8611479fba258f330da0a188dc95313759d3a41b4f128f110856a21516c
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  content_hash: sha256:568800b306d94aa038e6c5dba94629aa1a5cd0a45365a66648c1c1ac183a8ac7
 - kind: project-relative
   target: claude
   value: .claude/skills/kotlin-tooling-gradle-to-kotlin-toolchain-project/references/examples.md
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:1509ed330079ce1276e1c9ef3dba006eaaecedca7afafa71e066201423363c5e
 - kind: project-relative
   target: claude
@@ -5701,17 +6388,26 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/kotlin-tooling-immutable-collections-0-5-x-migration/LICENSE
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  content_hash: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
 - kind: project-relative
   target: claude
   value: .claude/skills/kotlin-tooling-immutable-collections-0-5-x-migration/SKILL.md
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:7b161da34a28fc5a6855b6e1b6c1749fbc754eaa29b911ec0cc8bb532b0c9d26
 - kind: project-relative
   target: claude
@@ -5719,17 +6415,26 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/kotlin-tooling-java-to-kotlin/LICENSE
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  content_hash: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
 - kind: project-relative
   target: claude
   value: .claude/skills/kotlin-tooling-java-to-kotlin/SKILL.md
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:5b372715adac4df37e3261040ead2d0c937a5e06a55178fa5ff0fcc95adc1944
 - kind: project-relative
   target: claude
@@ -5737,8 +6442,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:b2cafa681d87c3d6b9ce730954943ccc306e0c3c5d96f3f7eb0d6726d108bb40
 - kind: project-relative
   target: claude
@@ -5746,8 +6451,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:b83aaed4331d632065008872bb5db9898f4bb3c14a76b73e166b2509ab48f4ea
 - kind: project-relative
   target: claude
@@ -5755,8 +6460,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:581cce6cb0b8c353c2f573435c9b2ba36a0f3768aee755680c652dd4067e5e34
 - kind: project-relative
   target: claude
@@ -5764,8 +6469,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:ed52d352e63f7675677fa2ffb5f37ef97554a34b5176c34861031839031ac4b9
 - kind: project-relative
   target: claude
@@ -5773,8 +6478,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:7ca1991006f3e009a18f4bf5276a02873c87c75201b34ba69eb0cc5c2cdcf0f5
 - kind: project-relative
   target: claude
@@ -5782,8 +6487,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:02cf14d4d56cba141682bd8bfd5154d2018822a3aca6f477d8fb48bb91e08277
 - kind: project-relative
   target: claude
@@ -5791,8 +6496,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:c407201a3629f1af4117e3b6b99a0cbebb7f7b62ef14fb9c3bb7e55250ea86ef
 - kind: project-relative
   target: claude
@@ -5800,8 +6505,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:58141f5f63afe96944366bcd2e4d462f6ba4d55e2cfe5e8fd29e77ff51604c78
 - kind: project-relative
   target: claude
@@ -5809,8 +6514,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:b7f2e11b740261ebec3a9afcd2fa4a7a0c82f082433986c4ba1ba62c64b0bf25
 - kind: project-relative
   target: claude
@@ -5818,8 +6523,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:4d5f9ba64acc694cdade9d374e43548f083bacb40d2995ce424c4ff8c7836edd
 - kind: project-relative
   target: claude
@@ -5827,8 +6532,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:221bdf1fae8def5ca083e84cf829b252baceea065eca10a42fa7279d6f8be23e
 - kind: project-relative
   target: claude
@@ -5836,8 +6541,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:d0c708e5cf05598fa04760a1696bf2ad396f67933324ebaae51f475f4ec88d5a
 - kind: project-relative
   target: claude
@@ -5845,8 +6550,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:b79fd49230bb9cf2b9a2b05ddb772de8ba4b5d80ddc00dc7b3a33550e2988f22
 - kind: project-relative
   target: claude
@@ -5854,8 +6559,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:87cad42db77a79c9c2a8bc24d051f0526300fb0682de239e30bbd88748608b82
 - kind: project-relative
   target: claude
@@ -5863,8 +6568,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:b07412f7dbcd9cb7d543370e69e6e9d0faf4f4bd74608a0586fa0be93c881ae8
 - kind: project-relative
   target: claude
@@ -5872,8 +6577,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: null
 - kind: project-relative
   target: claude
@@ -5881,17 +6586,26 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/kotlin-tooling-kotlin-toolchain-plugin-authoring/LICENSE
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  content_hash: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
 - kind: project-relative
   target: claude
   value: .claude/skills/kotlin-tooling-kotlin-toolchain-plugin-authoring/SKILL.md
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:ff5cf4de344a0643ecca5679f4462431faf8d98436fbe16a885807cb46e773ef
 - kind: project-relative
   target: claude
@@ -5899,26 +6613,35 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:fbadc3b768150d8dbcc3cf7484d07853b516ae2d71cfff3e21574175de40635f
+- kind: project-relative
+  target: claude
+  value: .claude/skills/kotlin-tooling-kotlin-toolchain/LICENSE
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  content_hash: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
 - kind: project-relative
   target: claude
   value: .claude/skills/kotlin-tooling-kotlin-toolchain/SKILL.md
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
-  content_hash: sha256:664b3e263c0eff58b400f21a770c87bbac39e248a85e62342c9406f4626de5bc
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  content_hash: sha256:f17861dc34a3f105546ce76fc7104228af4d960da892ab50cb0192022d814a57
 - kind: project-relative
   target: claude
   value: .claude/skills/kotlin-tooling-kotlin-toolchain/evals/EVALUATION.md
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:28b476aa482974bddf537da334544cfe59d1de3779bbd2b8d140d057f9ac7107
 - kind: project-relative
   target: claude
@@ -5926,8 +6649,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:5028e04c72a6f477ad5da26a052203f7fd8a94ecfc94bcc1d6de30c55597b894
 - kind: project-relative
   target: claude
@@ -5935,26 +6658,35 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
-  content_hash: sha256:0da9fa2ff2dd1c29e3b1e5ca3d6fea44c411a01e809cb5ba5c0a6b9ef0a9a7e6
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  content_hash: sha256:bb3128a05d85e4f0fd4ba4cfdc43e5110f15bf8e2b612af5ebf0b385b40306fe
 - kind: project-relative
   target: claude
   value: .claude/skills/kotlin-tooling-native-build-performance
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/kotlin-tooling-native-build-performance/LICENSE
+  runtime: null
+  scope: project
+  owners:
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  content_hash: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
 - kind: project-relative
   target: claude
   value: .claude/skills/kotlin-tooling-native-build-performance/SKILL.md
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:948fcecafa9fd0dcd447682e1fef7046b542be710ee27c2f25eade31c182455e
 - kind: project-relative
   target: claude
@@ -5962,8 +6694,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:f7f4a9c7412e6e40e9b9fc66f4654fbc35c790c8a89a4ec77e1f3eeaf0219e7c
 - kind: project-relative
   target: claude
@@ -5971,8 +6703,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:5dceccd55aa6b517b1f2e48b76b585958244ee66818ecbb4cfa056c0f8cc66ff
 - kind: project-relative
   target: claude
@@ -5980,8 +6712,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:2f7f316e62d3b79adc9b80348b0f25b1ded3d9871d3a528dd1db3af3ecd792cf
 - kind: project-relative
   target: claude
@@ -5989,8 +6721,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:e0e83e36ebdd41f393082680ed06ff396077540544c5723cace80a2058a5eb1f
 - kind: project-relative
   target: claude
@@ -5998,8 +6730,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:76d94b9a08e933f09eaae66e8a613f79726dbabc65f765e2130fabf93c0f87d3
 - kind: project-relative
   target: claude
@@ -6007,8 +6739,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - kotlin/kotlin-agent-skills
-  active_owner: kotlin/kotlin-agent-skills
+  - kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
+  active_owner: kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills
   content_hash: sha256:94af58014fb24aaf1e7757ce804ea19e4023cc778da77ac0d725bd19aa0ba9e7
 - kind: project-relative
   target: claude
@@ -6019,6 +6751,15 @@ deployments:
   - android/skills/navigation/navigation-3
   active_owner: android/skills/navigation/navigation-3
   content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/navigation-3/LICENSE.txt
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/navigation/navigation-3
+  active_owner: android/skills/navigation/navigation-3
+  content_hash: sha256:58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd
 - kind: project-relative
   target: claude
   value: .claude/skills/navigation-3/SKILL.md
@@ -6282,6 +7023,15 @@ deployments:
   content_hash: null
 - kind: project-relative
   target: claude
+  value: .claude/skills/r8-analyzer/LICENSE.txt
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/performance/r8-analyzer
+  active_owner: android/skills/performance/r8-analyzer
+  content_hash: sha256:58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd
+- kind: project-relative
+  target: claude
   value: .claude/skills/r8-analyzer/SKILL.md
   runtime: null
   scope: project
@@ -6372,6 +7122,15 @@ deployments:
   content_hash: null
 - kind: project-relative
   target: claude
+  value: .claude/skills/restore-credentials/LICENSE.txt
+  runtime: null
+  scope: project
+  owners:
+  - android/skills/identity/restore-credentials
+  active_owner: android/skills/identity/restore-credentials
+  content_hash: sha256:58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd
+- kind: project-relative
+  target: claude
   value: .claude/skills/restore-credentials/SKILL.md
   runtime: null
   scope: project
@@ -6433,6 +7192,15 @@ deployments:
   - github/awesome-copilot/skills/security-review
   active_owner: github/awesome-copilot/skills/security-review
   content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/security-review/LICENSE
+  runtime: null
+  scope: project
+  owners:
+  - github/awesome-copilot/skills/security-review
+  active_owner: github/awesome-copilot/skills/security-review
+  content_hash: sha256:e32449d23085399adc1222f7a17408b730550258e51627c153cb108ca9955823
 - kind: project-relative
   target: claude
   value: .claude/skills/security-review/SKILL.md
@@ -6669,6 +7437,15 @@ deployments:
   content_hash: null
 - kind: project-relative
   target: claude
+  value: .claude/skills/swift-concurrency/LICENSE
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swift-concurrency-agent-skill/skills/swift-concurrency
+  active_owner: avdlee/swift-concurrency-agent-skill/skills/swift-concurrency
+  content_hash: sha256:8f5fd8e5cddb015b5627e45e68b256356586144288a4a0a3db87e38bcb0c9155
+- kind: project-relative
+  target: claude
   value: .claude/skills/swift-concurrency/SKILL.md
   runtime: null
   scope: project
@@ -6856,6 +7633,15 @@ deployments:
   - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
   active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
   content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/swiftui-expert-skill/LICENSE
+  runtime: null
+  scope: project
+  owners:
+  - avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  active_owner: avdlee/swiftui-agent-skill/skills/swiftui-expert-skill
+  content_hash: sha256:8f5fd8e5cddb015b5627e45e68b256356586144288a4a0a3db87e38bcb0c9155
 - kind: project-relative
   target: claude
   value: .claude/skills/swiftui-expert-skill/SKILL.md
@@ -7378,6 +8164,50 @@ deployments:
   - .
   active_owner: .
   content_hash: sha256:c3102993230b1e00cde58cc63aaf1352527ddc7dd1cd343a08322c0c4d9455b7
+- kind: uri
+  target: mcp
+  value: kotlinlang
+  runtime: claude
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:6388a19f65d062c67b724a02fed88f601e039c38811f0973f3a2983e7f734628
+- kind: uri
+  target: mcp
+  value: kotlinlang
+  runtime: codex
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:8737f1fe28613789b89bf231903412f569df45f3829c36f937ee373b8b70864b
+- kind: uri
+  target: mcp
+  value: kotlinlang
+  runtime: copilot
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:6388a19f65d062c67b724a02fed88f601e039c38811f0973f3a2983e7f734628
+mcp_servers:
+- kotlinlang
+mcp_configs:
+  kotlinlang:
+    name: kotlinlang
+    transport: http
+    registry: false
+    url: https://mcp.kotlinlang.org/mcp
+mcp_target_servers:
+  claude:
+  - kotlinlang
+  codex:
+  - kotlinlang
+  copilot:
+  - kotlinlang
+mcp_config_provenance:
+  kotlinlang: kotlin-agent-skills
 local_deployed_files:
 - .agents/skills/floo-android-craftsmanship
 - .agents/skills/floo-android-craftsmanship/SKILL.md
