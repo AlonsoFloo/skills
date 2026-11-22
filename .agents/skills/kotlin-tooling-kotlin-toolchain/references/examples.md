@@ -21,7 +21,7 @@ Notes:
 
 - Each `modules:` entry is the path to a directory containing a `module.yaml`.
 - The top-level `plugins:` block is what makes a local plugin's id resolvable from a consumer module. See the
-  [`kotlin-tooling-kotlin-toolchain-plugin-authoring` skill](../../../../apm_modules/Kotlin/kotlin-agent-skills/skills/kotlin-tooling-kotlin-toolchain-plugin-authoring/SKILL.md) for more details.
+  [`kotlin-tooling-kotlin-toolchain-plugin-authoring` skill](../../../../apm_modules/Kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills/skills/kotlin-tooling-kotlin-toolchain-plugin-authoring/SKILL.md) for more details.
 - Project-wide settings do not live here — there is no project-level `settings:` block. Share configuration
   (Kotlin language version, common test dependencies, repositories) via module templates instead (see the
   [Templates](../SKILL.md#templates) section of the skill).

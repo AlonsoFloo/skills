@@ -174,7 +174,7 @@ points `INFOPLIST_FILE` at it, and uses it verbatim — it does not enable `GENE
   ```
 
 - `kotlin init` iOS apps never hit this; migrated projects with their own `Info.plist` do. See the
-  [`kotlin-tooling-gradle-to-kotlin-toolchain-project` skill](../../../apm_modules/Kotlin/kotlin-agent-skills/skills/kotlin-tooling-gradle-to-kotlin-toolchain-project/SKILL.md#ios-kmp-a-migrated-infoplist-loses-its-cfbundle-keys)
+  [`kotlin-tooling-gradle-to-kotlin-toolchain-project` skill](../../../apm_modules/Kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills/skills/kotlin-tooling-gradle-to-kotlin-toolchain-project/SKILL.md#ios-kmp-a-migrated-infoplist-loses-its-cfbundle-keys)
   for the Gradle/KMP case.
 - `module.xcodeproj` is created only when absent and is not regenerated when `module.yaml` changes. Delete
   it to force regeneration.
@@ -191,7 +191,7 @@ user explicitly asks.
 
 For anything the declarative YAML cannot express, use a local plugin — that is the supported escape hatch.
 Toolchain cannot consume Gradle plugins: reimplement the behaviour instead of adapting one — see the
-[`kotlin-tooling-gradle-to-kotlin-toolchain-plugin` skill](../../../apm_modules/Kotlin/kotlin-agent-skills/skills/kotlin-tooling-gradle-to-kotlin-toolchain-plugin/SKILL.md).
+[`kotlin-tooling-gradle-to-kotlin-toolchain-plugin` skill](../../../apm_modules/Kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills/skills/kotlin-tooling-gradle-to-kotlin-toolchain-plugin/SKILL.md).
 When a
 library's standard workflow includes a build-time step (code generation, schema compilation, resource
 transformation), implement that step as a local plugin. Do not hand-write the would-be-generated code and

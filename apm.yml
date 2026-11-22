@@ -20,7 +20,7 @@ includes: auto
 dependencies:
   apm:
     # Kotlin development best practices and Kotlin-specific agent guidance.
-    - Kotlin/kotlin-agent-skills#main
+    - Kotlin/kotlin-agent-skills/plugins/kotlin-agent-skills#main
 
     # Android development skills and best practices.
     # Repo format weird, have to load manually from the skills folder, since the root repo is not a skill.
